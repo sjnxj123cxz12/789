@@ -1,0 +1,55 @@
+
+X6gonzo.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Board
+  rotate: true
+  xy: 2, 2
+  size: 201, 264
+  orig: 201, 264
+  offset: 0, 0
+  index: -1
+Glow
+  rotate: true
+  xy: 304, 244
+  size: 250, 79
+  orig: 250, 79
+  offset: 0, 0
+  index: -1
+Gold
+  rotate: true
+  xy: 268, 62
+  size: 141, 120
+  orig: 141, 120
+  offset: 0, 0
+  index: -1
+Leaf 1
+  rotate: true
+  xy: 390, 187
+  size: 107, 97
+  orig: 107, 97
+  offset: 0, 0
+  index: -1
+Leaf 2
+  rotate: true
+  xy: 390, 78
+  size: 107, 97
+  orig: 107, 97
+  offset: 0, 0
+  index: -1
+Ring
+  rotate: false
+  xy: 2, 205
+  size: 300, 289
+  orig: 300, 289
+  offset: 0, 0
+  index: -1
+X6 Hu
+  rotate: true
+  xy: 385, 296
+  size: 198, 72
+  orig: 198, 72
+  offset: 0, 0
+  index: -1

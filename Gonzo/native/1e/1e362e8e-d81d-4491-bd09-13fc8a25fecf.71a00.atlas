@@ -1,0 +1,48 @@
+
+SapNo-Lobby-P100.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+500
+  rotate: false
+  xy: 208, 92
+  size: 73, 33
+  orig: 73, 33
+  offset: 0, 0
+  index: -1
+Purpil Base
+  rotate: false
+  xy: 208, 127
+  size: 257, 125
+  orig: 257, 125
+  offset: 0, 0
+  index: -1
+Purpil Diamond
+  rotate: true
+  xy: 597, 148
+  size: 104, 138
+  orig: 104, 138
+  offset: 0, 0
+  index: -1
+Purpil Voltex
+  rotate: false
+  xy: 2, 42
+  size: 204, 210
+  orig: 204, 210
+  offset: 0, 0
+  index: -1
+arcane_vertical
+  rotate: true
+  xy: 2, 2
+  size: 38, 109
+  orig: 38, 109
+  offset: 0, 0
+  index: -1
+flash_flare_pink
+  rotate: false
+  xy: 467, 124
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

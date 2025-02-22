@@ -1,0 +1,27 @@
+
+jldc_main_ui.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mainboard
+  rotate: false
+  xy: 2, 9
+  size: 498, 110
+  orig: 498, 110
+  offset: 0, 0
+  index: -1
+mainboard_bright
+  rotate: false
+  xy: 502, 3
+  size: 498, 110
+  orig: 498, 110
+  offset: 0, 0
+  index: -1
+sparkle
+  rotate: true
+  xy: 837, 476
+  size: 167, 28
+  orig: 171, 30
+  offset: 2, 1
+  index: -1

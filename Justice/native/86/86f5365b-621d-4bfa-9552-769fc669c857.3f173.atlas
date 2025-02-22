@@ -1,0 +1,265 @@
+
+jldc_main_ui.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Effect/E1
+  rotate: false
+  xy: 950, 226
+  size: 44, 44
+  orig: 46, 47
+  offset: 1, 1
+  index: -1
+Effect/E10
+  rotate: false
+  xy: 502, 288
+  size: 42, 46
+  orig: 46, 47
+  offset: 0, 0
+  index: -1
+Effect/E11
+  rotate: true
+  xy: 66, 122
+  size: 44, 45
+  orig: 46, 47
+  offset: 0, 0
+  index: -1
+Effect/E12
+  rotate: false
+  xy: 624, 258
+  size: 44, 44
+  orig: 46, 47
+  offset: 0, 0
+  index: -1
+Effect/E13
+  rotate: true
+  xy: 502, 427
+  size: 44, 43
+  orig: 46, 47
+  offset: 0, 0
+  index: -1
+Effect/E14
+  rotate: true
+  xy: 502, 473
+  size: 45, 43
+  orig: 46, 47
+  offset: 0, 1
+  index: -1
+Effect/E15
+  rotate: true
+  xy: 502, 381
+  size: 44, 43
+  orig: 46, 47
+  offset: 1, 1
+  index: -1
+Effect/E2
+  rotate: false
+  xy: 502, 336
+  size: 43, 43
+  orig: 46, 47
+  offset: 2, 2
+  index: -1
+Effect/E3
+  rotate: false
+  xy: 502, 180
+  size: 41, 43
+  orig: 46, 47
+  offset: 3, 3
+  index: -1
+Effect/E4
+  rotate: true
+  xy: 754, 221
+  size: 40, 41
+  orig: 46, 47
+  offset: 4, 5
+  index: -1
+Effect/E5
+  rotate: false
+  xy: 837, 417
+  size: 43, 41
+  orig: 46, 47
+  offset: 1, 5
+  index: -1
+Effect/E6
+  rotate: true
+  xy: 712, 260
+  size: 42, 40
+  orig: 46, 47
+  offset: 1, 6
+  index: -1
+Effect/E7
+  rotate: false
+  xy: 712, 218
+  size: 40, 40
+  orig: 46, 47
+  offset: 1, 6
+  index: -1
+Effect/E8
+  rotate: true
+  xy: 754, 263
+  size: 39, 42
+  orig: 46, 47
+  offset: 1, 4
+  index: -1
+Effect/E9
+  rotate: false
+  xy: 670, 258
+  size: 40, 44
+  orig: 46, 47
+  offset: 1, 2
+  index: -1
+JL
+  rotate: false
+  xy: 1002, 90
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+bat man down
+  rotate: false
+  xy: 882, 417
+  size: 42, 41
+  orig: 42, 41
+  offset: 0, 0
+  index: -1
+bat man down 1
+  rotate: true
+  xy: 2, 260
+  size: 108, 166
+  orig: 109, 167
+  offset: 0, 1
+  index: -1
+bat man down 2
+  rotate: false
+  xy: 2, 168
+  size: 159, 90
+  orig: 159, 90
+  offset: 0, 0
+  index: -1
+bat man up
+  rotate: false
+  xy: 624, 409
+  size: 92, 234
+  orig: 93, 234
+  offset: 0, 0
+  index: -1
+bat man up 1
+  rotate: true
+  xy: 826, 320
+  size: 93, 92
+  orig: 93, 92
+  offset: 0, 0
+  index: -1
+frame part 1
+  rotate: true
+  xy: 817, 415
+  size: 228, 18
+  orig: 228, 18
+  offset: 0, 0
+  index: -1
+frame part 2
+  rotate: false
+  xy: 547, 121
+  size: 25, 522
+  orig: 25, 522
+  offset: 0, 0
+  index: -1
+frame part 3
+  rotate: false
+  xy: 502, 117
+  size: 26, 61
+  orig: 26, 61
+  offset: 0, 0
+  index: -1
+frame part 4
+  rotate: false
+  xy: 624, 218
+  size: 33, 38
+  orig: 33, 38
+  offset: 0, 0
+  index: -1
+frame part 5
+  rotate: true
+  xy: 882, 517
+  size: 505, 27
+  orig: 505, 27
+  offset: 0, 0
+  index: -1
+frame part 6
+  rotate: true
+  xy: 574, 137
+  size: 506, 27
+  orig: 506, 27
+  offset: 0, 0
+  index: -1
+screen
+  rotate: false
+  xy: 2, 520
+  size: 543, 502
+  orig: 543, 502
+  offset: 0, 0
+  index: -1
+screen part 1
+  rotate: false
+  xy: 603, 144
+  size: 19, 499
+  orig: 20, 499
+  offset: 0, 0
+  index: -1
+slot colour
+  rotate: false
+  xy: 2, 440
+  size: 215, 9
+  orig: 215, 9
+  offset: 0, 0
+  index: -1
+slot colour 1
+  rotate: false
+  xy: 530, 121
+  size: 7, 57
+  orig: 7, 57
+  offset: 0, 0
+  index: -1
+superman down
+  rotate: true
+  xy: 920, 391
+  size: 24, 70
+  orig: 25, 70
+  offset: 1, 0
+  index: -1
+superman down 1
+  rotate: true
+  xy: 411, 203
+  size: 161, 87
+  orig: 162, 87
+  offset: 1, 0
+  index: -1
+superman down 2
+  rotate: false
+  xy: 718, 462
+  size: 97, 181
+  orig: 98, 181
+  offset: 1, 0
+  index: -1
+superman up
+  rotate: true
+  xy: 624, 304
+  size: 103, 200
+  orig: 103, 200
+  offset: 0, 0
+  index: -1
+superman up 1
+  rotate: true
+  xy: 867, 460
+  size: 55, 120
+  orig: 55, 121
+  offset: 0, 0
+  index: -1
+superman up 2
+  rotate: true
+  xy: 547, 645
+  size: 377, 333
+  orig: 377, 333
+  offset: 0, 0
+  index: -1

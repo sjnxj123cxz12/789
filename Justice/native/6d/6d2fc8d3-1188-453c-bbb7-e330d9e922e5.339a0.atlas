@@ -1,0 +1,216 @@
+
+jldc_symbols.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+supBG white
+  rotate: true
+  xy: 2, 396
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1
+wonBG
+  rotate: true
+  xy: 133, 389
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1
+wonBGicon
+  rotate: true
+  xy: 123, 221
+  size: 87, 105
+  orig: 87, 105
+  offset: 0, 0
+  index: -1
+wonder
+  rotate: false
+  xy: 735, 148
+  size: 122, 120
+  orig: 122, 121
+  offset: 0, 0
+  index: -1
+wonderwoman effect/E1
+  rotate: true
+  xy: 457, 589
+  size: 59, 63
+  orig: 115, 63
+  offset: 23, 0
+  index: -1
+wonderwoman effect/E11
+  rotate: false
+  xy: 610, 810
+  size: 114, 47
+  orig: 115, 63
+  offset: 0, 6
+  index: -1
+wonderwoman effect/E12
+  rotate: false
+  xy: 576, 758
+  size: 115, 50
+  orig: 115, 63
+  offset: 0, 7
+  index: -1
+wonderwoman effect/E13
+  rotate: false
+  xy: 523, 862
+  size: 115, 43
+  orig: 115, 63
+  offset: 0, 16
+  index: -1
+wonderwoman effect/E14
+  rotate: false
+  xy: 735, 858
+  size: 114, 44
+  orig: 115, 63
+  offset: 0, 16
+  index: -1
+wonderwoman effect/E15
+  rotate: false
+  xy: 221, 822
+  size: 115, 45
+  orig: 115, 63
+  offset: 0, 15
+  index: -1
+wonderwoman effect/E16
+  rotate: false
+  xy: 654, 905
+  size: 114, 40
+  orig: 115, 63
+  offset: 0, 20
+  index: -1
+wonderwoman effect/E17
+  rotate: false
+  xy: 770, 904
+  size: 114, 40
+  orig: 115, 63
+  offset: 0, 20
+  index: -1
+wonderwoman effect/E18
+  rotate: false
+  xy: 886, 904
+  size: 113, 40
+  orig: 115, 63
+  offset: 0, 20
+  index: -1
+wonderwoman effect/E19
+  rotate: false
+  xy: 302, 869
+  size: 110, 40
+  orig: 115, 63
+  offset: 1, 20
+  index: -1
+wonderwoman effect/E2
+  rotate: true
+  xy: 2, 614
+  size: 57, 61
+  orig: 115, 63
+  offset: 24, 0
+  index: -1
+wonderwoman effect/E20
+  rotate: false
+  xy: 545, 907
+  size: 107, 40
+  orig: 115, 63
+  offset: 3, 20
+  index: -1
+wonderwoman effect/E21
+  rotate: false
+  xy: 414, 865
+  size: 107, 40
+  orig: 115, 63
+  offset: 3, 20
+  index: -1
+wonderwoman effect/E22
+  rotate: false
+  xy: 846, 946
+  size: 107, 38
+  orig: 115, 63
+  offset: 3, 20
+  index: -1
+wonderwoman effect/E23
+  rotate: false
+  xy: 696, 947
+  size: 105, 37
+  orig: 115, 63
+  offset: 4, 21
+  index: -1
+wonderwoman effect/E3
+  rotate: true
+  xy: 883, 640
+  size: 56, 58
+  orig: 115, 63
+  offset: 25, 1
+  index: -1
+wonderwoman effect/E4
+  rotate: true
+  xy: 902, 698
+  size: 54, 57
+  orig: 115, 63
+  offset: 26, 1
+  index: -1
+wonderwoman effect/E5
+  rotate: false
+  xy: 2, 729
+  size: 52, 55
+  orig: 115, 63
+  offset: 27, 1
+  index: -1
+wonderwoman effect/E6
+  rotate: false
+  xy: 2, 673
+  size: 72, 54
+  orig: 115, 63
+  offset: 28, 1
+  index: -1
+wonderwoman effect/E7
+  rotate: false
+  xy: 729, 700
+  size: 100, 53
+  orig: 115, 63
+  offset: 14, 1
+  index: -1
+wonderwoman effect/E8
+  rotate: false
+  xy: 342, 764
+  size: 114, 50
+  orig: 115, 63
+  offset: 0, 2
+  index: -1
+wonderwoman effect/E9
+  rotate: false
+  xy: 494, 813
+  size: 114, 47
+  orig: 115, 63
+  offset: 0, 3
+  index: -1
+woneye
+  rotate: false
+  xy: 58, 1008
+  size: 45, 12
+  orig: 45, 12
+  offset: 0, 0
+  index: -1
+wonhair
+  rotate: false
+  xy: 600, 156
+  size: 133, 116
+  orig: 133, 116
+  offset: 0, 0
+  index: -1
+wonmark
+  rotate: false
+  xy: 510, 950
+  size: 70, 36
+  orig: 73, 38
+  offset: 2, 1
+  index: -1
+wonmark white
+  rotate: false
+  xy: 582, 949
+  size: 70, 36
+  orig: 73, 38
+  offset: 2, 1
+  index: -1

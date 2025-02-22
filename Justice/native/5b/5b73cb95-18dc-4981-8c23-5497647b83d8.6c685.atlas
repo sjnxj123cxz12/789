@@ -1,0 +1,55 @@
+
+jldc_symbols.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+supBG
+  rotate: true
+  xy: 775, 435
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1
+supBG white
+  rotate: true
+  xy: 2, 396
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1
+supBGicon
+  rotate: true
+  xy: 339, 290
+  size: 78, 101
+  orig: 78, 101
+  offset: 0, 0
+  index: -1
+superman
+  rotate: true
+  xy: 138, 70
+  size: 133, 135
+  orig: 133, 135
+  offset: 0, 0
+  index: -1
+suplaser
+  rotate: true
+  xy: 213, 659
+  size: 54, 68
+  orig: 56, 70
+  offset: 1, 1
+  index: -1
+supmark
+  rotate: false
+  xy: 140, 964
+  size: 47, 36
+  orig: 47, 36
+  offset: 0, 0
+  index: -1
+supmark white
+  rotate: false
+  xy: 515, 761
+  size: 59, 50
+  orig: 61, 51
+  offset: 1, 1
+  index: -1

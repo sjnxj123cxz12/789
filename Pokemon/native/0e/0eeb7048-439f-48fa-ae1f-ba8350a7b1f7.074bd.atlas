@@ -1,0 +1,55 @@
+
+NoHuPokemon.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NH_Back No Hu
+  rotate: false
+  xy: 2, 297
+  size: 954, 558
+  orig: 954, 558
+  offset: 0, 0
+  index: -1
+NH_Front No Hu
+  rotate: false
+  xy: 2, 2
+  size: 732, 293
+  orig: 732, 293
+  offset: 0, 0
+  index: -1
+NH_Glow 1
+  rotate: false
+  xy: 736, 54
+  size: 241, 241
+  orig: 241, 241
+  offset: 0, 0
+  index: -1
+NH_Glow 2
+  rotate: false
+  xy: 736, 54
+  size: 241, 241
+  orig: 241, 241
+  offset: 0, 0
+  index: -1
+NH_Glow 3
+  rotate: false
+  xy: 736, 54
+  size: 241, 241
+  orig: 241, 241
+  offset: 0, 0
+  index: -1
+NH_Glow 4
+  rotate: false
+  xy: 736, 54
+  size: 241, 241
+  orig: 241, 241
+  offset: 0, 0
+  index: -1
+NH_Line
+  rotate: false
+  xy: 958, 444
+  size: 978, 411
+  orig: 978, 411
+  offset: 0, 0
+  index: -1

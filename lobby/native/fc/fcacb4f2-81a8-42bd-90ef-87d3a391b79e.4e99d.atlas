@@ -1,0 +1,174 @@
+
+icon_fx.png
+size: 1467,405
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BAN
+  rotate: false
+  xy: 1255, 44
+  size: 181, 80
+  orig: 181, 80
+  offset: 0, 0
+  index: -1
+BG_2
+  rotate: false
+  xy: 0, 3
+  size: 231, 402
+  orig: 231, 402
+  offset: 0, 0
+  index: -1
+CA
+  rotate: false
+  xy: 949, 227
+  size: 119, 79
+  orig: 119, 79
+  offset: 0, 0
+  index: -1
+JP
+  rotate: false
+  xy: 647, 225
+  size: 247, 51
+  orig: 247, 51
+  offset: 0, 0
+  index: -1
+Shark
+  rotate: false
+  xy: 233, 114
+  size: 236, 291
+  orig: 236, 291
+  offset: 0, 0
+  index: -1
+eye_1
+  rotate: false
+  xy: 1097, 195
+  size: 42, 41
+  orig: 42, 41
+  offset: 0, 0
+  index: -1
+eye_2
+  rotate: false
+  xy: 896, 227
+  size: 51, 50
+  orig: 51, 50
+  offset: 0, 0
+  index: -1
+fish_1
+  rotate: false
+  xy: 788, 279
+  size: 117, 126
+  orig: 117, 126
+  offset: 0, 0
+  index: -1
+fx/Liquid_00
+  rotate: false
+  xy: 1186, 216
+  size: 278, 91
+  orig: 278, 91
+  offset: 0, 0
+  index: -1
+fx/Liquid_01
+  rotate: false
+  xy: 1141, 126
+  size: 284, 88
+  orig: 284, 88
+  offset: 0, 0
+  index: -1
+fx/Liquid_02
+  rotate: false
+  xy: 1186, 309
+  size: 281, 96
+  orig: 281, 96
+  offset: 0, 0
+  index: -1
+fx/Liquid_03
+  rotate: false
+  xy: 907, 308
+  size: 277, 97
+  orig: 277, 97
+  offset: 0, 0
+  index: -1
+fx_2/Fire_00
+  rotate: false
+  xy: 1142, 43
+  size: 111, 81
+  orig: 111, 81
+  offset: 0, 0
+  index: -1
+fx_2/Fire_01
+  rotate: false
+  xy: 898, 125
+  size: 197, 100
+  orig: 197, 100
+  offset: 0, 0
+  index: -1
+fx_2/Fire_02
+  rotate: false
+  xy: 471, 115
+  size: 212, 105
+  orig: 212, 105
+  offset: 0, 0
+  index: -1
+fx_2/Fire_03
+  rotate: false
+  xy: 685, 115
+  size: 211, 108
+  orig: 211, 108
+  offset: 0, 0
+  index: -1
+fx_2/Fire_04
+  rotate: false
+  xy: 574, 2
+  size: 206, 111
+  orig: 206, 111
+  offset: 0, 0
+  index: -1
+fx_2/Fire_05
+  rotate: false
+  xy: 233, 0
+  size: 204, 112
+  orig: 204, 112
+  offset: 0, 0
+  index: -1
+fx_2/Fire_06
+  rotate: false
+  xy: 782, 10
+  size: 193, 103
+  orig: 193, 103
+  offset: 0, 0
+  index: -1
+fx_2/Fire_07
+  rotate: false
+  xy: 977, 36
+  size: 163, 87
+  orig: 163, 87
+  offset: 0, 0
+  index: -1
+fx_2/Fire_08
+  rotate: false
+  xy: 1070, 238
+  size: 112, 68
+  orig: 112, 68
+  offset: 0, 0
+  index: -1
+gun
+  rotate: false
+  xy: 471, 222
+  size: 174, 183
+  orig: 174, 183
+  offset: 0, 0
+  index: -1
+gunpart
+  rotate: false
+  xy: 647, 278
+  size: 139, 127
+  orig: 139, 127
+  offset: 0, 0
+  index: -1
+rocket
+  rotate: false
+  xy: 439, 0
+  size: 133, 112
+  orig: 133, 112
+  offset: 0, 0
+  index: -1

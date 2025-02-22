@@ -1,0 +1,153 @@
+
+jldc_main_ui.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Quay nomal
+  rotate: false
+  xy: 170, 306
+  size: 239, 58
+  orig: 239, 58
+  offset: 0, 0
+  index: -1
+Quay nomal 2
+  rotate: false
+  xy: 170, 246
+  size: 239, 58
+  orig: 239, 58
+  offset: 0, 0
+  index: -1
+Spin btn effect/E1
+  rotate: true
+  xy: 973, 339
+  size: 50, 46
+  orig: 60, 71
+  offset: 10, 14
+  index: -1
+Spin btn effect/E10
+  rotate: false
+  xy: 502, 225
+  size: 41, 61
+  orig: 60, 71
+  offset: 10, 6
+  index: -1
+Spin btn effect/E11
+  rotate: true
+  xy: 926, 418
+  size: 40, 55
+  orig: 60, 71
+  offset: 11, 10
+  index: -1
+Spin btn effect/E12
+  rotate: true
+  xy: 113, 129
+  size: 37, 48
+  orig: 60, 71
+  offset: 13, 15
+  index: -1
+Spin btn effect/E13
+  rotate: false
+  xy: 983, 418
+  size: 34, 40
+  orig: 60, 71
+  offset: 15, 19
+  index: -1
+Spin btn effect/E14
+  rotate: true
+  xy: 659, 222
+  size: 34, 31
+  orig: 60, 71
+  offset: 15, 25
+  index: -1
+Spin btn effect/E15
+  rotate: true
+  xy: 785, 431
+  size: 29, 24
+  orig: 60, 71
+  offset: 17, 28
+  index: -1
+Spin btn effect/E16
+  rotate: true
+  xy: 477, 178
+  size: 23, 21
+  orig: 60, 71
+  offset: 20, 30
+  index: -1
+Spin btn effect/E17
+  rotate: false
+  xy: 1002, 70
+  size: 18, 18
+  orig: 60, 71
+  offset: 23, 32
+  index: -1
+Spin btn effect/E2
+  rotate: false
+  xy: 920, 339
+  size: 51, 50
+  orig: 60, 71
+  offset: 9, 14
+  index: -1
+Spin btn effect/E3
+  rotate: true
+  xy: 718, 409
+  size: 51, 65
+  orig: 60, 71
+  offset: 9, 0
+  index: -1
+Spin btn effect/E4
+  rotate: false
+  xy: 438, 366
+  size: 60, 71
+  orig: 60, 71
+  offset: 0, 0
+  index: -1
+Spin btn effect/E5
+  rotate: true
+  xy: 404, 144
+  size: 57, 71
+  orig: 60, 71
+  offset: 0, 0
+  index: -1
+Spin btn effect/E6
+  rotate: true
+  xy: 826, 263
+  size: 55, 68
+  orig: 60, 71
+  offset: 1, 1
+  index: -1
+Spin btn effect/E7
+  rotate: false
+  xy: 896, 252
+  size: 52, 66
+  orig: 60, 71
+  offset: 4, 2
+  index: -1
+Spin btn effect/E8
+  rotate: false
+  xy: 950, 272
+  size: 48, 65
+  orig: 60, 71
+  offset: 6, 3
+  index: -1
+Spin btn effect/E9
+  rotate: true
+  xy: 2, 121
+  size: 45, 62
+  orig: 60, 71
+  offset: 7, 5
+  index: -1
+Stop
+  rotate: false
+  xy: 163, 186
+  size: 239, 58
+  orig: 239, 58
+  offset: 0, 0
+  index: -1
+Stop_disable
+  rotate: false
+  xy: 163, 126
+  size: 239, 58
+  orig: 239, 58
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,125 @@
+
+SapNo-Lobby-P1000.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1.000
+  rotate: false
+  xy: 778, 386
+  size: 123, 47
+  orig: 123, 47
+  offset: 0, 0
+  index: -1
+Green Base
+  rotate: false
+  xy: 2, 314
+  size: 321, 194
+  orig: 321, 194
+  offset: 0, 0
+  index: -1
+Green Diamond
+  rotate: false
+  xy: 325, 348
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+Green Dot 1
+  rotate: false
+  xy: 325, 318
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1
+Green Dot 2
+  rotate: false
+  xy: 913, 454
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Green Dot 3
+  rotate: true
+  xy: 304, 130
+  size: 21, 15
+  orig: 21, 15
+  offset: 0, 0
+  index: -1
+Green Dot 4
+  rotate: false
+  xy: 255, 56
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+Green Dot 5
+  rotate: false
+  xy: 487, 353
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Green Glow
+  rotate: false
+  xy: 2, 74
+  size: 221, 238
+  orig: 221, 238
+  offset: 0, 0
+  index: -1
+Green Grow
+  rotate: false
+  xy: 487, 381
+  size: 159, 127
+  orig: 159, 127
+  offset: 0, 0
+  index: -1
+Green Wind 1
+  rotate: true
+  xy: 2, 2
+  size: 70, 184
+  orig: 70, 184
+  offset: 0, 0
+  index: -1
+Green Wind 2
+  rotate: true
+  xy: 225, 153
+  size: 159, 94
+  orig: 159, 94
+  offset: 0, 0
+  index: -1
+Green Wind 3
+  rotate: false
+  xy: 188, 9
+  size: 65, 63
+  orig: 65, 63
+  offset: 0, 0
+  index: -1
+Green Wind 4
+  rotate: false
+  xy: 913, 472
+  size: 57, 36
+  orig: 57, 36
+  offset: 0, 0
+  index: -1
+Wind
+  rotate: true
+  xy: 778, 435
+  size: 73, 133
+  orig: 73, 133
+  offset: 0, 0
+  index: -1
+diamond_green
+  rotate: false
+  xy: 648, 380
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+flames_flash_green
+  rotate: false
+  xy: 225, 74
+  size: 77, 77
+  orig: 77, 77
+  offset: 0, 0
+  index: -1

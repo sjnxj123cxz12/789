@@ -1,0 +1,139 @@
+
+jldc_symbols.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Flash effect/E1
+  rotate: false
+  xy: 307, 994
+  size: 26, 26
+  orig: 33, 32
+  offset: 4, 3
+  index: -1
+Flash effect/E10
+  rotate: true
+  xy: 815, 755
+  size: 51, 60
+  orig: 53, 62
+  offset: 1, 1
+  index: -1
+Flash effect/E11
+  rotate: false
+  xy: 137, 538
+  size: 65, 60
+  orig: 67, 64
+  offset: 1, 2
+  index: -1
+Flash effect/E12
+  rotate: false
+  xy: 612, 703
+  size: 58, 53
+  orig: 61, 55
+  offset: 1, 1
+  index: -1
+Flash effect/E13
+  rotate: true
+  xy: 943, 640
+  size: 56, 60
+  orig: 60, 63
+  offset: 2, 1
+  index: -1
+Flash effect/E2
+  rotate: false
+  xy: 370, 991
+  size: 29, 29
+  orig: 36, 35
+  offset: 3, 3
+  index: -1
+Flash effect/E3
+  rotate: true
+  xy: 555, 988
+  size: 32, 33
+  orig: 38, 39
+  offset: 3, 3
+  index: -1
+Flash effect/E4
+  rotate: false
+  xy: 189, 961
+  size: 37, 37
+  orig: 41, 39
+  offset: 2, 1
+  index: -1
+Flash effect/E5
+  rotate: true
+  xy: 136, 923
+  size: 39, 40
+  orig: 42, 42
+  offset: 1, 1
+  index: -1
+Flash effect/E6
+  rotate: false
+  xy: 228, 960
+  size: 42, 37
+  orig: 44, 41
+  offset: 1, 2
+  index: -1
+Flash effect/E7
+  rotate: true
+  xy: 272, 955
+  size: 37, 45
+  orig: 41, 47
+  offset: 2, 1
+  index: -1
+Flash effect/E8
+  rotate: true
+  xy: 387, 816
+  size: 47, 54
+  orig: 49, 56
+  offset: 1, 1
+  index: -1
+Flash effect/E9
+  rotate: false
+  xy: 41, 971
+  size: 49, 35
+  orig: 53, 41
+  offset: 1, 3
+  index: -1
+flash
+  rotate: true
+  xy: 328, 170
+  size: 110, 134
+  orig: 110, 134
+  offset: 0, 0
+  index: -1
+flash blur
+  rotate: false
+  xy: 421, 32
+  size: 137, 134
+  orig: 139, 134
+  offset: 1, 0
+  index: -1
+flashBG
+  rotate: true
+  xy: 264, 454
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1
+flashBGicon
+  rotate: true
+  xy: 363, 953
+  size: 35, 95
+  orig: 35, 95
+  offset: 0, 0
+  index: -1
+flashmark
+  rotate: false
+  xy: 338, 821
+  size: 47, 46
+  orig: 51, 47
+  offset: 2, 1
+  index: -1
+supBG white
+  rotate: true
+  xy: 2, 396
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,209 @@
+
+jldc_bigwin.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 2362
+  rotate: true
+  xy: 2, 396
+  size: 188, 172
+  orig: 188, 172
+  offset: 0, 0
+  index: -1
+Letter B
+  rotate: false
+  xy: 169, 234
+  size: 147, 160
+  orig: 147, 160
+  offset: 0, 0
+  index: -1
+Letter G
+  rotate: false
+  xy: 2, 237
+  size: 165, 157
+  orig: 165, 157
+  offset: 0, 0
+  index: -1
+Letter I
+  rotate: true
+  xy: 630, 77
+  size: 63, 155
+  orig: 63, 155
+  offset: 0, 0
+  index: -1
+WingE 1
+  rotate: true
+  xy: 720, 342
+  size: 84, 83
+  orig: 92, 88
+  offset: 4, 1
+  index: -1
+WingE 10
+  rotate: false
+  xy: 458, 2
+  size: 165, 136
+  orig: 174, 141
+  offset: 5, 4
+  index: -1
+WingE 11
+  rotate: false
+  xy: 787, 4
+  size: 163, 136
+  orig: 171, 141
+  offset: 4, 4
+  index: -1
+WingE 12
+  rotate: true
+  xy: 816, 268
+  size: 158, 134
+  orig: 168, 140
+  offset: 5, 4
+  index: -1
+WingE 13
+  rotate: true
+  xy: 737, 862
+  size: 152, 131
+  orig: 164, 139
+  offset: 6, 5
+  index: -1
+WingE 14
+  rotate: false
+  xy: 737, 730
+  size: 151, 130
+  orig: 161, 137
+  offset: 5, 4
+  index: -1
+WingE 15
+  rotate: false
+  xy: 816, 143
+  size: 143, 123
+  orig: 156, 135
+  offset: 7, 6
+  index: -1
+WingE 16
+  rotate: true
+  xy: 357, 446
+  size: 138, 117
+  orig: 150, 132
+  offset: 6, 8
+  index: -1
+WingE 17
+  rotate: false
+  xy: 870, 900
+  size: 133, 114
+  orig: 143, 126
+  offset: 5, 7
+  index: -1
+WingE 18
+  rotate: false
+  xy: 317, 7
+  size: 114, 92
+  orig: 135, 117
+  offset: 12, 15
+  index: -1
+WingE 19
+  rotate: false
+  xy: 163, 148
+  size: 101, 84
+  orig: 124, 103
+  offset: 11, 6
+  index: -1
+WingE 2
+  rotate: false
+  xy: 737, 628
+  size: 157, 100
+  orig: 165, 105
+  offset: 4, 1
+  index: -1
+WingE 20
+  rotate: false
+  xy: 625, 5
+  size: 90, 70
+  orig: 103, 79
+  offset: 4, 1
+  index: -1
+WingE 3
+  rotate: true
+  xy: 720, 428
+  size: 187, 124
+  orig: 195, 130
+  offset: 4, 1
+  index: -1
+WingE 4
+  rotate: false
+  xy: 127, 5
+  size: 188, 134
+  orig: 196, 141
+  offset: 4, 2
+  index: -1
+WingE 5
+  rotate: false
+  xy: 630, 142
+  size: 184, 136
+  orig: 191, 141
+  offset: 4, 3
+  index: -1
+WingE 6
+  rotate: false
+  xy: 176, 446
+  size: 179, 138
+  orig: 187, 142
+  offset: 4, 3
+  index: -1
+WingE 7
+  rotate: true
+  xy: 318, 270
+  size: 174, 138
+  orig: 182, 142
+  offset: 4, 3
+  index: -1
+WingE 8
+  rotate: false
+  xy: 458, 140
+  size: 170, 138
+  orig: 178, 142
+  offset: 4, 3
+  index: -1
+WingE 9
+  rotate: true
+  xy: 318, 101
+  size: 167, 138
+  orig: 176, 142
+  offset: 5, 3
+  index: -1
+body bình thường
+  rotate: false
+  xy: 2, 586
+  size: 480, 428
+  orig: 480, 428
+  offset: 0, 0
+  index: -1
+eye shut
+  rotate: true
+  xy: 127, 141
+  size: 94, 34
+  orig: 98, 38
+  offset: 2, 2
+  index: -1
+tay bright
+  rotate: true
+  xy: 2, 2
+  size: 233, 123
+  orig: 245, 124
+  offset: 1, 0
+  index: -1
+tóc trung bình
+  rotate: true
+  xy: 484, 280
+  size: 335, 234
+  orig: 385, 248
+  offset: 36, 14
+  index: -1
+win 1
+  rotate: true
+  xy: 484, 617
+  size: 397, 251
+  orig: 403, 256
+  offset: 3, 3
+  index: -1

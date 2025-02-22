@@ -1,0 +1,146 @@
+
+jldc_symbols.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+aqua
+  rotate: true
+  xy: 726, 643
+  size: 55, 98
+  orig: 55, 98
+  offset: 0, 0
+  index: -1
+aqua effect/E1
+  rotate: false
+  xy: 171, 770
+  size: 57, 50
+  orig: 57, 51
+  offset: 0, 1
+  index: -1
+aqua effect/E10
+  rotate: false
+  xy: 760, 755
+  size: 53, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+aqua effect/E11
+  rotate: false
+  xy: 877, 754
+  size: 55, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+aqua effect/E12
+  rotate: false
+  xy: 934, 754
+  size: 56, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+aqua effect/E13
+  rotate: false
+  xy: 56, 729
+  size: 56, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+aqua effect/E2
+  rotate: false
+  xy: 230, 770
+  size: 57, 50
+  orig: 57, 51
+  offset: 0, 1
+  index: -1
+aqua effect/E3
+  rotate: false
+  xy: 905, 807
+  size: 57, 49
+  orig: 57, 51
+  offset: 0, 2
+  index: -1
+aqua effect/E4
+  rotate: false
+  xy: 779, 808
+  size: 57, 48
+  orig: 57, 51
+  offset: 0, 2
+  index: -1
+aqua effect/E5
+  rotate: false
+  xy: 964, 807
+  size: 56, 49
+  orig: 57, 51
+  offset: 1, 1
+  index: -1
+aqua effect/E6
+  rotate: false
+  xy: 2, 786
+  size: 54, 49
+  orig: 57, 51
+  offset: 2, 1
+  index: -1
+aqua effect/E7
+  rotate: false
+  xy: 58, 782
+  size: 54, 49
+  orig: 57, 51
+  offset: 2, 1
+  index: -1
+aqua effect/E8
+  rotate: false
+  xy: 114, 778
+  size: 55, 49
+  orig: 57, 51
+  offset: 1, 1
+  index: -1
+aqua effect/E9
+  rotate: false
+  xy: 458, 761
+  size: 55, 50
+  orig: 57, 51
+  offset: 0, 1
+  index: -1
+aquaBG
+  rotate: true
+  xy: 798, 507
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1
+aquaBGicon
+  rotate: true
+  xy: 442, 282
+  size: 81, 97
+  orig: 81, 97
+  offset: 0, 0
+  index: -1
+aquahair
+  rotate: false
+  xy: 275, 34
+  size: 144, 134
+  orig: 144, 134
+  offset: 0, 0
+  index: -1
+aquamark
+  rotate: true
+  xy: 955, 946
+  size: 38, 40
+  orig: 40, 42
+  offset: 1, 1
+  index: -1
+aquamark white
+  rotate: true
+  xy: 2, 931
+  size: 38, 40
+  orig: 40, 42
+  offset: 1, 1
+  index: -1
+supBG white
+  rotate: true
+  xy: 2, 396
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1

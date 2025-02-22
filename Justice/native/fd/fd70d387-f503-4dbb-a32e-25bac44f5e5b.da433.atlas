@@ -1,0 +1,69 @@
+
+jldc_zones.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+frame1
+  rotate: false
+  xy: 114, 557
+  size: 344, 464
+  orig: 344, 464
+  offset: 0, 0
+  index: -1
+khung so
+  rotate: true
+  xy: 460, 641
+  size: 380, 146
+  orig: 380, 146
+  offset: 0, 0
+  index: -1
+light1aa
+  rotate: false
+  xy: 1416, 729
+  size: 96, 106
+  orig: 97, 108
+  offset: 1, 1
+  index: -1
+light1as
+  rotate: true
+  xy: 1359, 720
+  size: 301, 55
+  orig: 308, 59
+  offset: 3, 2
+  index: -1
+lighta
+  rotate: false
+  xy: 797, 567
+  size: 91, 73
+  orig: 92, 75
+  offset: 1, 1
+  index: -1
+sup left arm
+  rotate: false
+  xy: 1289, 700
+  size: 68, 321
+  orig: 69, 321
+  offset: 1, 0
+  index: -1
+sup rite arm
+  rotate: true
+  xy: 548, 12
+  size: 77, 321
+  orig: 77, 321
+  offset: 0, 0
+  index: -1
+superman
+  rotate: false
+  xy: 608, 642
+  size: 212, 379
+  orig: 215, 379
+  offset: 2, 0
+  index: -1
+symbol1
+  rotate: true
+  xy: 1443, 321
+  size: 102, 156
+  orig: 102, 156
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+jldc_symbols.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+batBG
+  rotate: true
+  xy: 2, 468
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1
+batBGicon
+  rotate: false
+  xy: 501, 365
+  size: 86, 74
+  orig: 86, 74
+  offset: 0, 0
+  index: -1
+batman
+  rotate: true
+  xy: 859, 138
+  size: 130, 132
+  orig: 132, 133
+  offset: 0, 0
+  index: -1
+batmark
+  rotate: false
+  xy: 808, 986
+  size: 88, 34
+  orig: 88, 34
+  offset: 0, 0
+  index: -1
+batmark white
+  rotate: false
+  xy: 898, 986
+  size: 88, 34
+  orig: 88, 34
+  offset: 0, 0
+  index: -1
+supBG white
+  rotate: true
+  xy: 2, 396
+  size: 70, 129
+  orig: 70, 129
+  offset: 0, 0
+  index: -1

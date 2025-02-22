@@ -1,0 +1,118 @@
+
+Nohurock.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Board
+  rotate: false
+  xy: 2, 379
+  size: 546, 128
+  orig: 546, 128
+  offset: 0, 0
+  index: -1
+H
+  rotate: true
+  xy: 550, 279
+  size: 155, 197
+  orig: 155, 197
+  offset: 0, 0
+  index: -1
+Inner Board
+  rotate: false
+  xy: 550, 436
+  size: 430, 71
+  orig: 430, 71
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 1911, 311
+  size: 196, 118
+  orig: 196, 118
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 1686, 245
+  size: 222, 119
+  orig: 222, 119
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 2, 2
+  size: 231, 118
+  orig: 231, 118
+  offset: 0, 0
+  index: -1
+N
+  rotate: true
+  xy: 513, 135
+  size: 142, 184
+  orig: 142, 184
+  offset: 0, 0
+  index: -1
+O
+  rotate: true
+  xy: 982, 359
+  size: 148, 255
+  orig: 148, 255
+  offset: 0, 0
+  index: -1
+Plate
+  rotate: false
+  xy: 874, 97
+  size: 152, 159
+  orig: 152, 159
+  offset: 0, 0
+  index: -1
+Rock-2
+  rotate: true
+  xy: 749, 258
+  size: 176, 182
+  orig: 176, 182
+  offset: 0, 0
+  index: -1
+Rock-3
+  rotate: false
+  xy: 1484, 291
+  size: 200, 216
+  orig: 200, 216
+  offset: 0, 0
+  index: -1
+Rock-4
+  rotate: true
+  xy: 1239, 266
+  size: 241, 243
+  orig: 241, 243
+  offset: 0, 0
+  index: -1
+Rock-5
+  rotate: false
+  xy: 2, 122
+  size: 253, 255
+  orig: 253, 255
+  offset: 0, 0
+  index: -1
+Rock-6
+  rotate: false
+  xy: 257, 129
+  size: 254, 248
+  orig: 254, 248
+  offset: 0, 0
+  index: -1
+Rock1
+  rotate: false
+  xy: 699, 101
+  size: 173, 155
+  orig: 173, 155
+  offset: 0, 0
+  index: -1
+U
+  rotate: true
+  xy: 1686, 366
+  size: 141, 223
+  orig: 141, 223
+  offset: 0, 0
+  index: -1

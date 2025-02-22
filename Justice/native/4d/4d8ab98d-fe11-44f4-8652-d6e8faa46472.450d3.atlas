@@ -1,0 +1,90 @@
+
+jldc_zones.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bat khung so
+  rotate: true
+  xy: 822, 642
+  size: 379, 146
+  orig: 379, 146
+  offset: 0, 0
+  index: -1
+bat symbol
+  rotate: true
+  xy: 380, 10
+  size: 79, 166
+  orig: 79, 166
+  offset: 0, 0
+  index: -1
+batman
+  rotate: false
+  xy: 951, 197
+  size: 244, 372
+  orig: 244, 372
+  offset: 0, 0
+  index: -1
+batman tay phai
+  rotate: false
+  xy: 1402, 22
+  size: 97, 190
+  orig: 99, 190
+  offset: 2, 0
+  index: -1
+batman tay trai
+  rotate: true
+  xy: 155, 7
+  size: 82, 223
+  orig: 83, 223
+  offset: 0, 0
+  index: -1
+batman vai phai
+  rotate: true
+  xy: 1152, 577
+  size: 69, 157
+  orig: 73, 159
+  offset: 3, 1
+  index: -1
+batman vai trai
+  rotate: true
+  xy: 529, 564
+  size: 75, 173
+  orig: 75, 173
+  offset: 0, 0
+  index: -1
+frame
+  rotate: false
+  xy: 114, 91
+  size: 343, 464
+  orig: 343, 464
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 704, 567
+  size: 91, 73
+  orig: 92, 75
+  offset: 1, 1
+  index: -1
+light1
+  rotate: true
+  xy: 1197, 275
+  size: 300, 55
+  orig: 308, 59
+  offset: 4, 2
+  index: -1
+light1a
+  rotate: false
+  xy: 1388, 598
+  size: 118, 120
+  orig: 122, 124
+  offset: 2, 2
+  index: -1
+small bat
+  rotate: false
+  xy: 114, 5
+  size: 39, 84
+  orig: 39, 84
+  offset: 0, 0
+  index: -1

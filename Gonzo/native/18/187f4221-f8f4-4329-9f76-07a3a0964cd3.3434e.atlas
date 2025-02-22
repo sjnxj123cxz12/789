@@ -1,0 +1,104 @@
+
+Gonzo.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Head1
+  rotate: false
+  xy: 118, 8
+  size: 118, 116
+  orig: 118, 116
+  offset: 0, 0
+  index: -1
+L1
+  rotate: false
+  xy: 812, 91
+  size: 58, 33
+  orig: 58, 33
+  offset: 0, 0
+  index: -1
+Layer 12
+  rotate: true
+  xy: 463, 28
+  size: 54, 68
+  orig: 54, 68
+  offset: 0, 0
+  index: -1
+Layer 13
+  rotate: false
+  xy: 355, 31
+  size: 55, 93
+  orig: 55, 93
+  offset: 0, 0
+  index: -1
+Layer 14
+  rotate: false
+  xy: 685, 63
+  size: 61, 61
+  orig: 61, 61
+  offset: 0, 0
+  index: -1
+Layer 15
+  rotate: false
+  xy: 238, 22
+  size: 61, 102
+  orig: 61, 102
+  offset: 0, 0
+  index: -1
+Layer 17
+  rotate: false
+  xy: 412, 40
+  size: 49, 84
+  orig: 49, 84
+  offset: 0, 0
+  index: -1
+Layer 21
+  rotate: true
+  xy: 463, 84
+  size: 40, 85
+  orig: 40, 85
+  offset: 0, 0
+  index: -1
+Layer 22
+  rotate: true
+  xy: 619, 74
+  size: 50, 64
+  orig: 50, 64
+  offset: 0, 0
+  index: -1
+Layer 25
+  rotate: false
+  xy: 748, 89
+  size: 62, 35
+  orig: 62, 35
+  offset: 0, 0
+  index: -1
+Layer 7
+  rotate: true
+  xy: 550, 77
+  size: 47, 67
+  orig: 47, 67
+  offset: 0, 0
+  index: -1
+R1
+  rotate: false
+  xy: 872, 94
+  size: 52, 30
+  orig: 52, 30
+  offset: 0, 0
+  index: -1
+body1
+  rotate: false
+  xy: 2, 2
+  size: 114, 122
+  orig: 114, 122
+  offset: 0, 0
+  index: -1
+handL
+  rotate: false
+  xy: 301, 27
+  size: 52, 97
+  orig: 52, 97
+  offset: 0, 0
+  index: -1

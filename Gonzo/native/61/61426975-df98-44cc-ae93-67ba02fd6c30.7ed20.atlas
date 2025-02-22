@@ -1,0 +1,69 @@
+
+SapNo-Lobby-P10000.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10.000
+  rotate: false
+  xy: 2, 25
+  size: 190, 55
+  orig: 190, 55
+  offset: 0, 0
+  index: -1
+Yellow Base
+  rotate: false
+  xy: 410, 182
+  size: 300, 320
+  orig: 300, 320
+  offset: 0, 0
+  index: -1
+Yellow Base Glow
+  rotate: false
+  xy: 772, 75
+  size: 212, 206
+  orig: 212, 206
+  offset: 0, 0
+  index: -1
+Yellow Orb
+  rotate: false
+  xy: 712, 283
+  size: 220, 219
+  orig: 220, 219
+  offset: 0, 0
+  index: -1
+Yellow Ring
+  rotate: true
+  xy: 2, 82
+  size: 420, 406
+  orig: 420, 406
+  offset: 0, 0
+  index: -1
+Yellow Thunder 1
+  rotate: true
+  xy: 410, 4
+  size: 176, 137
+  orig: 176, 137
+  offset: 0, 0
+  index: -1
+Yellow Thunder 2
+  rotate: true
+  xy: 679, 58
+  size: 122, 91
+  orig: 122, 91
+  offset: 0, 0
+  index: -1
+Yellow Thunder 3
+  rotate: true
+  xy: 194, 2
+  size: 78, 120
+  orig: 78, 120
+  offset: 0, 0
+  index: -1
+glow_point3_orange
+  rotate: false
+  xy: 549, 52
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
