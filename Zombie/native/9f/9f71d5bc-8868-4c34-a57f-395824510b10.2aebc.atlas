@@ -1,0 +1,90 @@
+
+Char-1.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/BG/Char/1
+  rotate: true
+  xy: 330, 57
+  size: 118, 141
+  orig: 118, 141
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char/2
+  rotate: false
+  xy: 205, 61
+  size: 123, 168
+  orig: 123, 168
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char/3
+  rotate: true
+  xy: 543, 365
+  size: 145, 247
+  orig: 145, 247
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char/4
+  rotate: false
+  xy: 350, 305
+  size: 191, 205
+  orig: 191, 205
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char/5
+  rotate: false
+  xy: 2, 2
+  size: 201, 227
+  orig: 201, 227
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char/6
+  rotate: true
+  xy: 501, 197
+  size: 70, 106
+  orig: 70, 106
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char/7
+  rotate: true
+  xy: 350, 177
+  size: 126, 149
+  orig: 126, 149
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char/8
+  rotate: true
+  xy: 543, 269
+  size: 94, 147
+  orig: 94, 147
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char/9
+  rotate: false
+  xy: 2, 231
+  size: 346, 279
+  orig: 346, 279
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/chem 2
+  rotate: false
+  xy: 692, 260
+  size: 111, 103
+  orig: 111, 103
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/chem 3
+  rotate: false
+  xy: 792, 419
+  size: 192, 91
+  orig: 192, 91
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/chem 4
+  rotate: true
+  xy: 473, 65
+  size: 110, 62
+  orig: 110, 62
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,90 @@
+
+Lobby-P10000.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/Lobby/Phong-100/8
+  rotate: false
+  xy: 687, 326
+  size: 10, 8
+  orig: 10, 8
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-100/9
+  rotate: false
+  xy: 474, 275
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-10000/1
+  rotate: true
+  xy: 268, 134
+  size: 152, 204
+  orig: 152, 204
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-10000/2
+  rotate: false
+  xy: 687, 336
+  size: 99, 166
+  orig: 99, 166
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-10000/3
+  rotate: false
+  xy: 221, 18
+  size: 49, 69
+  orig: 49, 69
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-10000/4
+  rotate: true
+  xy: 927, 397
+  size: 105, 61
+  orig: 105, 61
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-10000/5
+  rotate: false
+  xy: 788, 383
+  size: 137, 119
+  orig: 137, 119
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-10000/6
+  rotate: true
+  xy: 788, 262
+  size: 119, 136
+  orig: 119, 136
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/bg-4
+  rotate: false
+  xy: 487, 296
+  size: 198, 206
+  orig: 198, 206
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-1-1
+  rotate: false
+  xy: 268, 288
+  size: 217, 214
+  orig: 217, 214
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-1-2
+  rotate: false
+  xy: 2, 89
+  size: 264, 413
+  orig: 264, 413
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-4-3
+  rotate: false
+  xy: 2, 2
+  size: 217, 85
+  orig: 217, 85
+  offset: 0, 0
+  index: -1

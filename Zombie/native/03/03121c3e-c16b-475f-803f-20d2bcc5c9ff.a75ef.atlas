@@ -1,0 +1,433 @@
+
+Zombie-Thang-Coin.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/1
+  rotate: false
+  xy: 2, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/2
+  rotate: false
+  xy: 2, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/3
+  rotate: true
+  xy: 2, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/4
+  rotate: true
+  xy: 544, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/5
+  rotate: false
+  xy: 964, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/6
+  rotate: false
+  xy: 964, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/7
+  rotate: true
+  xy: 1086, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+
+Zombie-Thang-Coin2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/10
+  rotate: true
+  xy: 2, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/11
+  rotate: true
+  xy: 544, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/12
+  rotate: false
+  xy: 964, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/13
+  rotate: false
+  xy: 964, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/14
+  rotate: true
+  xy: 1086, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/8
+  rotate: false
+  xy: 2, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/9
+  rotate: false
+  xy: 2, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+
+Zombie-Thang-Coin3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/15
+  rotate: false
+  xy: 2, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/16
+  rotate: false
+  xy: 2, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/17
+  rotate: true
+  xy: 2, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/18
+  rotate: true
+  xy: 544, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/19
+  rotate: false
+  xy: 964, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/20
+  rotate: false
+  xy: 964, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/21
+  rotate: true
+  xy: 1086, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+
+Zombie-Thang-Coin4.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/22
+  rotate: false
+  xy: 2, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/23
+  rotate: false
+  xy: 2, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/24
+  rotate: true
+  xy: 2, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/25
+  rotate: true
+  xy: 544, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/26
+  rotate: false
+  xy: 964, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/27
+  rotate: false
+  xy: 964, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/28
+  rotate: true
+  xy: 1086, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+
+Zombie-Thang-Coin5.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/29
+  rotate: false
+  xy: 2, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/30
+  rotate: false
+  xy: 2, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/31
+  rotate: true
+  xy: 2, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/32
+  rotate: true
+  xy: 544, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/33
+  rotate: false
+  xy: 964, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/34
+  rotate: false
+  xy: 964, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/35
+  rotate: true
+  xy: 1086, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+
+Zombie-Thang-Coin6.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/36
+  rotate: false
+  xy: 2, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/37
+  rotate: false
+  xy: 2, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/38
+  rotate: true
+  xy: 2, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/39
+  rotate: true
+  xy: 544, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/40
+  rotate: false
+  xy: 964, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/41
+  rotate: false
+  xy: 964, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/42
+  rotate: true
+  xy: 1086, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+
+Zombie-Thang-Coin7.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/43
+  rotate: false
+  xy: 2, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/44
+  rotate: false
+  xy: 2, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/45
+  rotate: true
+  xy: 2, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/46
+  rotate: true
+  xy: 544, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/47
+  rotate: false
+  xy: 964, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/48
+  rotate: false
+  xy: 964, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/49
+  rotate: true
+  xy: 1086, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+
+Zombie-Thang-Coin8.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/50
+  rotate: false
+  xy: 2, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/51
+  rotate: false
+  xy: 2, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/52
+  rotate: true
+  xy: 2, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/53
+  rotate: true
+  xy: 544, 2
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/54
+  rotate: false
+  xy: 964, 1506
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1
+Coin/55
+  rotate: false
+  xy: 964, 964
+  size: 960, 540
+  orig: 960, 540
+  offset: 0, 0
+  index: -1

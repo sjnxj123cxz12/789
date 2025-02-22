@@ -1,0 +1,62 @@
+
+Char-2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/BG/Char-2/1
+  rotate: true
+  xy: 868, 347
+  size: 127, 142
+  orig: 127, 142
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char-2/2
+  rotate: false
+  xy: 490, 297
+  size: 162, 177
+  orig: 162, 177
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char-2/4
+  rotate: false
+  xy: 2, 2
+  size: 222, 210
+  orig: 222, 210
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char-2/5
+  rotate: true
+  xy: 654, 349
+  size: 125, 212
+  orig: 125, 212
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char-2/6
+  rotate: false
+  xy: 654, 306
+  size: 69, 41
+  orig: 69, 41
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char-2/7
+  rotate: false
+  xy: 226, 90
+  size: 118, 122
+  orig: 118, 122
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char-2/8
+  rotate: false
+  xy: 322, 291
+  size: 166, 183
+  orig: 166, 183
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/BG/Char-2/9
+  rotate: false
+  xy: 2, 214
+  size: 318, 260
+  orig: 318, 260
+  offset: 0, 0
+  index: -1

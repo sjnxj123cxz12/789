@@ -1,0 +1,62 @@
+
+Lobby-P1000.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/Lobby/Phong-100/8
+  rotate: false
+  xy: 775, 302
+  size: 10, 8
+  orig: 10, 8
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-100/9
+  rotate: false
+  xy: 556, 275
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-1000/1
+  rotate: false
+  xy: 268, 215
+  size: 286, 287
+  orig: 286, 287
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/Phong-1000/2
+  rotate: false
+  xy: 268, 59
+  size: 176, 154
+  orig: 176, 154
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/bg-3
+  rotate: false
+  xy: 775, 312
+  size: 200, 190
+  orig: 200, 190
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-1-1
+  rotate: false
+  xy: 556, 288
+  size: 217, 214
+  orig: 217, 214
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-1-2
+  rotate: false
+  xy: 2, 89
+  size: 264, 413
+  orig: 264, 413
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-3-3
+  rotate: false
+  xy: 2, 2
+  size: 163, 85
+  orig: 163, 85
+  offset: 0, 0
+  index: -1

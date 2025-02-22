@@ -1,0 +1,54 @@
+
+skeleton.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/bonus/effect-bom-thang
+  rotate: false
+  xy: 2, 2
+  size: 413, 450
+  orig: 413, 450
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/bonus/bom
+  rotate: false
+  xy: 2, 132
+  size: 348, 313
+  orig: 348, 313
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/bom-thua
+  rotate: false
+  xy: 2, 2
+  size: 348, 128
+  orig: 348, 128
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/x2
+  rotate: false
+  xy: 352, 321
+  size: 147, 124
+  orig: 147, 124
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/x3
+  rotate: false
+  xy: 352, 194
+  size: 146, 125
+  orig: 146, 125
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/x4
+  rotate: false
+  xy: 352, 67
+  size: 146, 125
+  orig: 146, 125
+  offset: 0, 0
+  index: -1

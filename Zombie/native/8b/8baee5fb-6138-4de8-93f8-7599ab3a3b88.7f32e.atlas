@@ -1,0 +1,132 @@
+
+Zombie-Thang.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/Image/NH
+  rotate: false
+  xy: 1282, 1678
+  size: 631, 368
+  orig: 631, 368
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/TL
+  rotate: false
+  xy: 1282, 1438
+  size: 644, 238
+  orig: 644, 238
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/TSL
+  rotate: true
+  xy: 462, 309
+  size: 510, 406
+  orig: 510, 406
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/char-3
+  rotate: true
+  xy: 893, 900
+  size: 424, 417
+  orig: 424, 417
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/char-4
+  rotate: false
+  xy: 1312, 1060
+  size: 411, 376
+  orig: 411, 376
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/char-5
+  rotate: false
+  xy: 2, 285
+  size: 458, 534
+  orig: 458, 534
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/da-1
+  rotate: true
+  xy: 1915, 1769
+  size: 277, 127
+  orig: 277, 127
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/da-2
+  rotate: false
+  xy: 1312, 908
+  size: 341, 150
+  orig: 341, 150
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/den-1
+  rotate: true
+  xy: 1002, 599
+  size: 197, 136
+  orig: 197, 136
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/fx-1
+  rotate: true
+  xy: 1725, 936
+  size: 500, 263
+  orig: 500, 263
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/fx-2
+  rotate: false
+  xy: 2, 2
+  size: 500, 281
+  orig: 500, 281
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/fx-4
+  rotate: false
+  xy: 504, 13
+  size: 368, 294
+  orig: 368, 294
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/fx-6
+  rotate: true
+  xy: 893, 798
+  size: 100, 260
+  orig: 100, 260
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/fx-7
+  rotate: false
+  xy: 870, 387
+  size: 128, 190
+  orig: 128, 190
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/fx-8
+  rotate: false
+  xy: 870, 387
+  size: 128, 190
+  orig: 128, 190
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/kinh-1
+  rotate: false
+  xy: 2, 821
+  size: 889, 503
+  orig: 889, 503
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/kinh-2
+  rotate: false
+  xy: 2, 1326
+  size: 1278, 720
+  orig: 1278, 720
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Image/zombie-2
+  rotate: false
+  xy: 870, 579
+  size: 130, 217
+  orig: 130, 217
+  offset: 0, 0
+  index: -1

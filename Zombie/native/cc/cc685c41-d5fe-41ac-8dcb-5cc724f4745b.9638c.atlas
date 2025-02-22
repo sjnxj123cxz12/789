@@ -1,0 +1,118 @@
+
+Lobby-ChoiThu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/Lobby/ChoiThu/1
+  rotate: true
+  xy: 390, 180
+  size: 106, 29
+  orig: 106, 29
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/10
+  rotate: false
+  xy: 807, 473
+  size: 99, 29
+  orig: 99, 29
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/11
+  rotate: false
+  xy: 487, 322
+  size: 61, 55
+  orig: 61, 55
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/2
+  rotate: false
+  xy: 487, 379
+  size: 96, 123
+  orig: 96, 123
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/3
+  rotate: false
+  xy: 585, 400
+  size: 113, 102
+  orig: 113, 102
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/4
+  rotate: false
+  xy: 221, 13
+  size: 35, 74
+  orig: 35, 74
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/5
+  rotate: true
+  xy: 700, 399
+  size: 103, 105
+  orig: 103, 105
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/6
+  rotate: false
+  xy: 268, 162
+  size: 120, 124
+  orig: 120, 124
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/6-1
+  rotate: false
+  xy: 379, 152
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/6-2
+  rotate: false
+  xy: 268, 104
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/7
+  rotate: false
+  xy: 421, 223
+  size: 38, 63
+  orig: 38, 63
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/8
+  rotate: true
+  xy: 268, 116
+  size: 44, 109
+  orig: 44, 109
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/ChoiThu/9
+  rotate: true
+  xy: 585, 389
+  size: 9, 107
+  orig: 9, 107
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-1-1
+  rotate: false
+  xy: 268, 288
+  size: 217, 214
+  orig: 217, 214
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-1-2
+  rotate: false
+  xy: 2, 89
+  size: 264, 413
+  orig: 264, 413
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Lobby/khung-1-3
+  rotate: false
+  xy: 2, 2
+  size: 217, 85
+  orig: 217, 85
+  offset: 0, 0
+  index: -1

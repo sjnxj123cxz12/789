@@ -1,0 +1,83 @@
+
+Bonus-FreeSpine.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+slots/Zombie/image/Bonus-Freespine/Freespine
+  rotate: true
+  xy: 576, 523
+  size: 476, 141
+  orig: 476, 141
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Bonus-Freespine/bonus
+  rotate: true
+  xy: 719, 604
+  size: 395, 151
+  orig: 395, 151
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Bonus-Freespine/free-cay
+  rotate: false
+  xy: 2, 70
+  size: 317, 355
+  orig: 317, 355
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Bonus-Freespine/fx
+  rotate: false
+  xy: 2, 427
+  size: 572, 572
+  orig: 572, 572
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Bonus-Freespine/fx-1
+  rotate: false
+  xy: 497, 185
+  size: 188, 240
+  orig: 188, 240
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/Bonus-Freespine/fx-2
+  rotate: false
+  xy: 321, 138
+  size: 174, 287
+  orig: 174, 287
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/Bia/1
+  rotate: false
+  xy: 872, 832
+  size: 136, 167
+  orig: 136, 167
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/Bia/6
+  rotate: false
+  xy: 321, 114
+  size: 39, 22
+  orig: 39, 22
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/Bia/7
+  rotate: false
+  xy: 2, 2
+  size: 70, 66
+  orig: 70, 66
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/Bia/8
+  rotate: false
+  xy: 719, 546
+  size: 66, 56
+  orig: 66, 56
+  offset: 0, 0
+  index: -1
+slots/Zombie/image/bonus/Bia/9
+  rotate: false
+  xy: 576, 504
+  size: 39, 17
+  orig: 39, 17
+  offset: 0, 0
+  index: -1
