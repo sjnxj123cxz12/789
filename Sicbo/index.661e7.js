@@ -1004,7 +1004,7 @@ function t() {}
 t.App = {
 USE_WSS: !0,
 HOST_SICBO: {
-host: "sicbo.dragonf1.xyz"
+host: "sicbo." + lngui.ConfigManager.instance.ConfigInfo.Api
 },
 ACCESS_TOKEN: "",
 GATE: "Web-hitclub.com",
@@ -1068,8 +1068,8 @@ e.prototype.onLoad = function() {
 var t = this;
 o.instance = this;
 this.NodeTooltip.active = !1;
-y.default.App.ACCESS_TOKEN = fzgui.UserManager.instance.mainUserInfo.GameToken;
-fzgui.UIWaitingLayout.showWaiting();
+y.default.App.ACCESS_TOKEN = lngui.UserManager.instance.mainUserInfo.GameToken;
+lngui.UIWaitingLayout.showWaiting();
 cc.game.setFrameRate(60);
 cc.game.on(cc.game.EVENT_HIDE, function() {
 t.utilWorkerStart();
@@ -1079,7 +1079,7 @@ t.utilWorkerEnd();
 });
 };
 e.prototype.getAccessToken = function() {
-y.default.App.ACCESS_TOKEN = fzgui.UserManager.instance.mainUserInfo.GameToken;
+y.default.App.ACCESS_TOKEN = lngui.UserManager.instance.mainUserInfo.GameToken;
 return y.default.App.ACCESS_TOKEN;
 };
 e.prototype.utilWorkerStart = function() {
@@ -1234,7 +1234,7 @@ t.A = [];
 r.default.getInstance().send(t);
 r.default.getInstance().close();
 S.default.GameData.getInstance().setDefaultData({});
-fzgui.UIScreenManager.instance.popToRootScreen2();
+lngui.UIScreenManager.instance.popToRootScreen2();
 };
 e.prototype.onDestroy = function() {
 y.default.App.ACCESS_TOKEN = null;
@@ -1988,12 +1988,12 @@ this.lblPage.string = this.page + "/" + this.maxPage;
 };
 e.prototype.onLoadDataHistory = function() {
 var t = this;
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 var e = this;
 this.content.removeAllChildren();
 this.template.active = !1;
 r.default.sendRequest("GET", u.default.App.HOST_SICBO.host, "api/sicbo/GetHistory?page=" + this.page, null, function(o, i) {
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 if (o) {
 e.onClose();
 h.default.instance.showMsg("Hệ thống đang bận, vui lòng tải lại sau!");
@@ -3000,14 +3000,14 @@ this.services.splice(n, 1);
 n--;
 }
 } else if (e.R && e.R.AccountID) {
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 this.sendPlayNow();
 setTimeout(function() {
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 }, 2e3);
 } else if (e.R && e.I === this.lastID.toString()) {
 this.lastID = 0;
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 } else e.I && (this.lastID.toString(), e.I);
 };
 e.prototype.onClose = function() {
@@ -3157,13 +3157,13 @@ this.pageIndex = 1;
 t.prototype.dismiss.call(this);
 };
 e.prototype.actBackPage = function() {
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 this.pageIndex--;
 this.pageIndex <= 1 && (this.pageIndex = 1);
 this.loadDataOnList();
 };
 e.prototype.actNextPage = function() {
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 this.pageIndex++;
 this.pageIndex >= this.maxPage && (this.pageIndex = this.maxPage);
 this.loadDataOnList();
@@ -3197,10 +3197,10 @@ this.btnNext.color = cc.Color.GRAY;
 this.btnNext.getComponent(cc.Button).interactable = !1;
 }
 this.lblPage.string = this.pageIndex + "/" + this.maxPage;
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 };
 e.prototype.onLoadData = function() {
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 var t = this;
 this.content.removeAllChildren();
 this.template.active = !1;
@@ -3932,12 +3932,12 @@ t.prototype.dismiss.call(this);
 };
 e.prototype.onLoadData = function() {
 var t = this;
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 var e = this;
 this.content.removeAllChildren();
 this.template.active = !1;
 r.default.sendRequest("GET", l.default.App.HOST_SICBO.host, "api/sicbo/GetBigWinner", null, function(o, i) {
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 if (o) {
 e.onClose();
 p.default.instance.showMsg("Hệ thống đang bận, vui lòng tải lại sau!");

@@ -1,5 +1,5 @@
-window.__require = function t(o, e, i) {
-function n(l, c) {
+window.__require = function t(o, e, n) {
+function i(l, c) {
 if (!e[l]) {
 if (!o[l]) {
 var r = l.split("/");
@@ -16,19 +16,19 @@ var p = e[l] = {
 exports: {}
 };
 o[l][0].call(p.exports, function(t) {
-return n(o[l][1][t] || t);
-}, p, p.exports, t, o, e, i);
+return i(o[l][1][t] || t);
+}, p, p.exports, t, o, e, n);
 }
 return e[l].exports;
 }
-for (var s = "function" == typeof __require && __require, l = 0; l < i.length; l++) n(i[l]);
-return n;
+for (var s = "function" == typeof __require && __require, l = 0; l < n.length; l++) i(n[l]);
+return i;
 }({
-SlotWildPopAudio: [ function(t, o, e) {
+SlotGonzoAudio: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "116987tgUlHfL3TwirAzxWy", "SlotWildPopAudio");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "c1f65X0oItAnYQZEDbDlxF9", "SlotGonzoAudio");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -36,21 +36,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/SlotAudio"), c = cc._decorator, r = c.ccclass, a = c.property, p = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.boom = null;
@@ -66,11 +66,11 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotAudio": void 0
 } ],
-SlotWildPopConfig: [ function(t, o, e) {
+SlotGonzoConfig: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "56d681H/Z1KDr3Nl6jw7TmG", "SlotWildPopConfig");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "f2571XccflMfoR/OJFGfp12", "SlotGonzoConfig");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -78,24 +78,24 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/SlotConfig"), c = cc._decorator, r = c.ccclass, a = c.property, p = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
-o.DISTANCE = 175;
+o.DISTANCE = 205;
 o.TIME_MOVE_ITEM_START_QUICK = 1;
 o.TIME_MOVE_ITEM_START = 1;
 o.TIME_MOVE_ITEM_QUICK = 1;
@@ -108,8 +108,6 @@ o.LIST_SKE_KEY = [];
 o.LIST_FRAME = [];
 o.TIME_ANIM_FREESPIN = 2;
 o.TIME_ANIM_BONUS = 10;
-o.TIME_SINGLE_LINE = 2;
-o.TIME_SINGLE_LINE_QUICK = 1.5;
 o.LINE = [ [ 5, 6, 7, 8, 9 ], [ 0, 1, 2, 3, 4 ], [ 10, 11, 12, 13, 14 ], [ 5, 6, 2, 8, 9 ], [ 5, 6, 12, 8, 9 ], [ 0, 1, 7, 3, 4 ], [ 10, 11, 7, 13, 14 ], [ 0, 11, 2, 13, 4 ], [ 10, 1, 12, 3, 14 ], [ 5, 1, 12, 3, 9 ], [ 10, 6, 2, 8, 14 ], [ 0, 6, 12, 8, 4 ], [ 5, 11, 7, 3, 9 ], [ 5, 1, 7, 13, 9 ], [ 10, 6, 7, 8, 14 ], [ 0, 6, 7, 8, 4 ], [ 5, 11, 12, 13, 9 ], [ 5, 1, 2, 3, 9 ], [ 10, 11, 7, 3, 4 ], [ 0, 1, 7, 13, 14 ] ];
 return o;
 }
@@ -126,8 +124,6 @@ s([ a([ cc.String ]) ], o.prototype, "LIST_SKE_KEY", void 0);
 s([ a([ cc.SpriteFrame ]) ], o.prototype, "LIST_FRAME", void 0);
 s([ a(cc.Integer) ], o.prototype, "TIME_ANIM_FREESPIN", void 0);
 s([ a(cc.Integer) ], o.prototype, "TIME_ANIM_BONUS", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_SINGLE_LINE", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_SINGLE_LINE_QUICK", void 0);
 return s([ r ], o);
 }(l.default);
 e.default = p;
@@ -135,11 +131,11 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotConfig": void 0
 } ],
-SlotWildPopEffect: [ function(t, o, e) {
+SlotGonzoEffect: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "ec43djUtuNGcplr+qaT89sg", "SlotWildPopEffect");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "efdf6u/7AJPE7SfxDGCbW/9", "SlotGonzoEffect");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -147,21 +143,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/SlotEffect"), c = t("../../base_slot/util/AudioUtil"), r = t("../../base_slot/util/FormatUtil"), a = cc._decorator, p = a.ccclass, u = a.property, h = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.nodeBonus = [];
@@ -178,25 +174,25 @@ o.prototype.init = function(o) {
 t.prototype.init.call(this, o);
 };
 o.prototype.showJackpot = function(t, o, e) {
-var i = this;
+var n = this;
 void 0 === t && (t = null);
 void 0 === o && (o = null);
 c.default.playSound(this.mSlot.mSlotAudio.jackpot, this.mSlot.mIsSound);
 this.mCallback = t;
 this.mTarget = o;
-var n = this;
+var i = this;
 this.nodeJackpot.active = !0;
 this.txtMoneyJackpot.string = r.default.formatNumber(e);
 var s = function() {
-n.node.stopAllActions();
-n.nodeJackpot.off(cc.Node.EventType.TOUCH_END, s.bind(n), n);
-n.nodeJackpot.active = !1;
-i.mCallback && i.mTarget && i.mCallback.call(i.mTarget);
+i.node.stopAllActions();
+i.nodeJackpot.off(cc.Node.EventType.TOUCH_END, s.bind(i), i);
+i.nodeJackpot.active = !1;
+n.mCallback && n.mTarget && n.mCallback.call(n.mTarget);
 };
 this.nodeJackpot.once(cc.Node.EventType.TOUCH_END, s.bind(this), this);
 this.node.stopAllActions();
 this.node.runAction(cc.sequence(cc.delayTime(this.mSlot.mSlotConfig.TIME_ANIM_JACKPOT), cc.callFunc(function() {
-n.mCallback && n.mTarget && n.mCallback.call(n.mTarget);
+i.mCallback && i.mTarget && i.mCallback.call(i.mTarget);
 }, this)));
 };
 o.prototype.showBigWin = function(t, o, e) {
@@ -205,13 +201,13 @@ void 0 === o && (o = null);
 c.default.playSound(this.mSlot.mSlotAudio.bigwin, this.mSlot.mIsSound);
 this.mCallback = t;
 this.mTarget = o;
-var i = this;
+var n = this;
 this.nodeBigwin.active = !0;
 this.txtMoneyBigwin.string = r.default.formatNumber(e);
 this.node.stopAllActions();
 this.node.runAction(cc.sequence(cc.delayTime(this.mSlot.mSlotConfig.TIME_ANIM_BIGWIN), cc.callFunc(function() {
-i.mCallback && i.mTarget && i.mCallback.call(i.mTarget);
-i.nodeBigwin.active = !1;
+n.mCallback && n.mTarget && n.mCallback.call(n.mTarget);
+n.nodeBigwin.active = !1;
 }, this)));
 };
 o.prototype.showWin = function(t, o, e) {
@@ -220,7 +216,7 @@ void 0 === o && (o = null);
 c.default.playSound(this.mSlot.mSlotAudio.win, this.mSlot.mIsSound);
 this.mCallback = t;
 this.mTarget = o;
-var i = this;
+var n = this;
 this.txtMoneyWin.node.active = !0;
 this.txtMoneyWin.string = r.default.formatNumber(e);
 this.txtMoneyWin.node.scale = 0;
@@ -228,31 +224,31 @@ this.txtMoneyWin.node.opacity = 0;
 this.txtMoneyWin.node.setPosition(0, 0);
 this.txtMoneyWin.node.stopAllActions();
 this.txtMoneyWin.node.runAction(cc.sequence(cc.spawn(cc.scaleTo(.2, 1.2, 1.2), cc.moveBy(.2, 0, 50), cc.fadeIn(.2)), cc.delayTime(.3), cc.spawn(cc.moveTo(.4, 80, -225).easing(cc.easeBackIn()), cc.scaleTo(.4, 1, 1)), cc.callFunc(function() {
-i.txtMoneyWin.node.active = !1;
-i.mSlotRoom.updateTotalWin(e);
-i.node.stopAllActions();
-i.node.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(function() {
-i.nodeWin.active = !1;
-i.mCallback && i.mTarget && i.mCallback.call(i.mTarget);
-}, i)));
-}, i)));
+n.txtMoneyWin.node.active = !1;
+n.mSlotRoom.updateTotalWin(e);
+n.node.stopAllActions();
+n.node.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(function() {
+n.nodeWin.active = !1;
+n.mCallback && n.mTarget && n.mCallback.call(n.mTarget);
+}, n)));
+}, n)));
 };
-o.prototype.showBonus = function(t, o, e, i) {
+o.prototype.showBonus = function(t, o, e, n) {
 void 0 === t && (t = null);
 void 0 === o && (o = null);
 c.default.playSound(this.mSlot.mSlotAudio.jackpot, this.mSlot.mIsSound);
 this.mCallback = t;
 this.mTarget = o;
-var n = this;
+var i = this;
 this.nodeBonus[e].active = !0;
 this.txtEffectBonus.node.active = !0;
-this.txtEffectBonus.string = r.default.formatNumber(i);
+this.txtEffectBonus.string = r.default.formatNumber(n);
 this.node.stopAllActions();
 this.node.runAction(cc.sequence(cc.delayTime(this.mSlot.mSlotConfig.TIME_ANIM_BONUS), cc.callFunc(function() {
-n.mCallback && n.mTarget && n.mCallback.call(n.mTarget, e);
-n.mSlotRoom.updateTotalWin(i);
-n.nodeBonus[e].active = !1;
-n.txtEffectBonus.node.active = !1;
+i.mCallback && i.mTarget && i.mCallback.call(i.mTarget, e);
+i.mSlotRoom.updateTotalWin(n);
+i.nodeBonus[e].active = !1;
+i.txtEffectBonus.node.active = !1;
 }, this)));
 };
 o.prototype.showFreespin = function(t, o, e) {
@@ -261,16 +257,16 @@ void 0 === o && (o = null);
 c.default.playSound(this.mSlot.mSlotAudio.jackpot, this.mSlot.mIsSound);
 this.mCallback = t;
 this.mTarget = o;
-var i = this;
+var n = this;
 this.nodeEffectFreespin.active = !0;
 this.txtEffectFreespin.string = e.toString();
 this.node.stopAllActions();
-this.node.runAction(cc.sequence(cc.delayTime(i.mSlot.mSlotConfig.TIME_ANIM_FREESPIN), cc.callFunc(function() {
-i.mCallback && i.mTarget && i.mCallback.call(i.mTarget);
-i.nodeEffectFreespin.active = !1;
-i.nodeNumFreespin.active = !0;
-i.txtNumFreespin.string = e.toString();
-}, i)));
+this.node.runAction(cc.sequence(cc.delayTime(n.mSlot.mSlotConfig.TIME_ANIM_FREESPIN), cc.callFunc(function() {
+n.mCallback && n.mTarget && n.mCallback.call(n.mTarget);
+n.nodeEffectFreespin.active = !1;
+n.nodeNumFreespin.active = !0;
+n.txtNumFreespin.string = e.toString();
+}, n)));
 };
 o.prototype.showNumFreespin = function(t) {
 if (t <= 0) this.nodeNumFreespin.active = !1; else {
@@ -293,14 +289,14 @@ cc._RF.pop();
 "../../base_slot/util/AudioUtil": void 0,
 "../../base_slot/util/FormatUtil": void 0
 } ],
-SlotWildPopEntity: [ function(t, o, e) {
+SlotGonzoEntity: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "71c5aEZAVVHbZUBqbbIa1Yi", "SlotWildPopEntity");
+cc._RF.push(o, "0828340qdpLTpowaT9ZkrFV", "SlotGonzoEntity");
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-e.DataSlotWildPopHistoryCell = e.DataSlotWildPopRankCell = e.DataSlotWildPopPlayNow = e.DataSlotWildPopLineWin = e.DataSlotWildPopSpin = void 0;
-var i = function() {
+e.DataSlotGonzoHistoryCell = e.DataSlotGonzoRankCell = e.DataSlotGonzoPlayNow = e.DataSlotGonzoLineWin = e.DataSlotGonzoSpin = void 0;
+var n = function() {
 function t() {
 this.accountId = 0;
 this.session = 0;
@@ -337,8 +333,8 @@ return t;
 };
 return t;
 }();
-e.DataSlotWildPopSpin = i;
-e.DataSlotWildPopLineWin = function() {
+e.DataSlotGonzoSpin = n;
+e.DataSlotGonzoLineWin = function() {
 this.id = 0;
 this.bonus = 0;
 this.jackpot = 0;
@@ -347,20 +343,20 @@ this.moneyWin = 0;
 this.listIdx = [];
 this.turn = -1;
 };
-e.DataSlotWildPopPlayNow = function() {
+e.DataSlotGonzoPlayNow = function() {
 this.accID = 0;
 this.accName = "";
 this.money = 0;
 };
-e.DataSlotWildPopRankCell = function() {};
-e.DataSlotWildPopHistoryCell = function() {};
+e.DataSlotGonzoRankCell = function() {};
+e.DataSlotGonzoHistoryCell = function() {};
 cc._RF.pop();
 }, {} ],
-SlotWildPopGuide: [ function(t, o, e) {
+SlotGonzoGuide: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "5f8f9eF/p5KDbYzNI3aeVxB", "SlotWildPopGuide");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "7ded1kk11xLHK+wtKnDZe34", "SlotGonzoGuide");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -368,21 +364,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = cc._decorator, c = l.ccclass, r = l.property, a = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.pageview = null;
@@ -403,15 +399,15 @@ this.pageview.scrollToPage(t, .2);
 };
 s([ r(cc.PageView) ], o.prototype, "pageview", void 0);
 return s([ c ], o);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 e.default = a;
 cc._RF.pop();
 }, {} ],
-SlotWildPopHandler: [ function(t, o, e) {
+SlotGonzoHandler: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "75e37HaGTJPSLy3vE6tVfoA", "SlotWildPopHandler");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "8aeeaX5KpNAxq+Zb1aeoHXf", "SlotGonzoHandler");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -419,26 +415,26 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("./SlotWildPopEntity"), c = t("./SlotWildPopVar"), r = t("../../base_slot/SlotHandler"), a = t("../../base_slot/SlotSelectRoom"), p = cc._decorator, u = p.ccclass, h = (p.property, 
+var l = t("./SlotGonzoEntity"), c = t("./SlotGonzoVar"), r = t("../../base_slot/SlotHandler"), a = t("../../base_slot/SlotSelectRoom"), p = cc._decorator, u = p.ccclass, h = (p.property, 
 function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.mSlot = null;
-o.mListenerKey = "WildPopListener";
+o.mListenerKey = "Gonzo";
 return o;
 }
 e = o;
@@ -456,14 +452,14 @@ e._instance = this;
 o.prototype.connect = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 cc.systemEvent.on(this.mListenerKey, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
-this.mSignalr.connect(this.mListenerKey, c.default.api.negotiate, c.default.api.hub, fzgui.UserManager.instance.mainUserInfo.cookie, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+this.mSignalr = new lngui.GateSignalR();
+this.mSignalr.connect(this.mListenerKey, c.default.api.negotiate, c.default.api.hub, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 o.prototype.closeWS = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 o.prototype.onWebSocketCallback = function(t) {
@@ -476,46 +472,46 @@ a.default.instance.unlockBtn(!0);
 } else {
 if (!t.M || !Array.isArray(t.M) || 0 == t.M.length) return;
 for (var o = t.M.length, e = 0; e < o; ++e) {
-var i = t.M[e];
-if ("object" == typeof i && "string" == typeof i.M && i.A && null != i.A[0] && null != i.A[0]) {
-var n = i.A[0];
-switch (i.M) {
+var n = t.M[e];
+if ("object" == typeof n && "string" == typeof n.M && n.A && null != n.A[0] && null != n.A[0]) {
+var i = n.A[0];
+switch (n.M) {
 case "joinGame":
 this.mSignalr.send("StopX2Game");
-this.onJoinGame(n);
+this.onJoinGame(i);
 break;
 
 case "PlayNow":
-this.onPlayNow(n);
+this.onPlayNow(i);
 break;
 
 case "resultSpin":
-this.onSpin(n);
+this.onSpin(i);
 break;
 
 case "message":
-this.onMessage(n);
+this.onMessage(i);
 break;
 
 case "history":
-this.onHistory(n);
+this.onHistory(i);
 break;
 
 case "honor":
-this.onGetRank(n);
+this.onGetRank(i);
 break;
 
 case "jackpotHistory":
-n.IsJackport = !0;
-this.onGetRank(n);
+i.IsJackport = !0;
+this.onGetRank(i);
 break;
 
 case "UpdateJackPot":
-this.onUpdateJackpot(i.A);
+this.onUpdateJackpot(n.A);
 break;
 
 case "XJackpotInfo":
-this.onGetPotInfo(n);
+this.onGetPotInfo(i);
 }
 }
 }
@@ -526,16 +522,16 @@ t && this.mSlot.onJoinGameSuccess(t);
 };
 o.prototype.onPlayNow = function(t) {
 if (this.mSlot) {
-var o = new l.DataSlotWildPopPlayNow();
+var o = new l.DataSlotGonzoPlayNow();
 o.accID = t.AccountID;
-o.accName = fzgui.UserManager.instance.mainUserInfo.UserName;
-o.money = fzgui.UserManager.instance.mainUserInfo.Money;
+o.accName = lngui.UserManager.instance.mainUserInfo.UserName;
+o.money = lngui.UserManager.instance.mainUserInfo.Money;
 this.mSlot.onPlayNow(o);
 }
 };
 o.prototype.onSpin = function(t) {
 if (this.mSlot) {
-var o = new l.DataSlotWildPopSpin();
+var o = new l.DataSlotGonzoSpin();
 o.accountId = t.AccountID;
 o.session = t.SpinData.SpinId;
 o.totalBet = t.BetValue * t.SpinData.LineData.split(",").length;
@@ -544,26 +540,26 @@ o.userMoney = t.Balance;
 o.jackpotCurrent = t.SpinData.JackpotValue;
 c.default.isPlaytryJackpotValue = t.SpinData.JackpotValue;
 o.listItem = t.SpinData.SlotsDataNoSap || [];
-for (var e = t.SpinData.PrizeDataNoSap || [], i = [], n = 0; n < e.length; n++) i = i.concat(e[n].map(function(t) {
-t.Turn = n + 1;
+for (var e = t.SpinData.PrizeDataNoSap || [], n = [], i = 0; i < e.length; i++) n = n.concat(e[i].map(function(t) {
+t.Turn = i + 1;
 return t;
 }));
-i.forEach(function(e) {
+n.forEach(function(e) {
 if (e.LineId <= 20 && e.LineId > 0) {
-(s = new l.DataSlotWildPopLineWin()).id = e.LineId;
+(s = new l.DataSlotGonzoLineWin()).id = e.LineId;
 s.bonus = t.BonusGame.PrizeValue;
 s.jackpot = 1 == t.SpinData.IsJackPot ? t.SpinData.PrizeValue : 0;
 s.freespin = t.SpinData.TotalFreeSpinPrizeValue;
 s.moneyWin = e.PrizeValue;
 s.turn = e.Turn;
-for (var n = 0; n < e.Items.length; n++) e.Items[n] = e.Items[n] - 1;
+for (var i = 0; i < e.Items.length; i++) e.Items[i] = e.Items[i] - 1;
 s.listIdx = e.Items;
 o.listLineWin.push(s);
 o.maxTurn < s.turn && (o.maxTurn = s.turn);
 } else {
-fzgui.ZLog.log("freespin hoac random", JSON.stringify(i));
+lngui.ZLog.log("freespin hoac random", JSON.stringify(n));
 var s;
-(s = new l.DataSlotWildPopLineWin()).id = e.LineId;
+(s = new l.DataSlotGonzoLineWin()).id = e.LineId;
 1 == e.PrizeId && (s.bonus = 5);
 2 == e.PrizeId && (s.bonus = 4);
 3 == e.PrizeId && (s.bonus = 3);
@@ -600,11 +596,11 @@ o.prototype.onMessage = function(t) {
 this.mSlot && this.mSlot.onMessage(t);
 };
 o.prototype.onHistory = function(t) {
-this.mSlot && cc.systemEvent.emit("SlotWildPop_get_history", t);
+this.mSlot && cc.systemEvent.emit("SlotGonzo_get_history", t);
 };
 o.prototype.onGetRank = function(t) {
-fzgui.ZLog.log("onGetRank ===========================" + JSON.stringify(t));
-this.mSlot && cc.systemEvent.emit("SlotWildPop_get_rank", t);
+lngui.ZLog.log("onGetRank ===========================" + JSON.stringify(t));
+this.mSlot && cc.systemEvent.emit("SlotGonzo_get_rank", t);
 };
 o.prototype.sendJoinRoom = function() {
 this.mSignalr.send("GetEventJackpot");
@@ -612,8 +608,8 @@ this.mSignalr.send("GetEventJackpot");
 o.prototype.sendSpin = function(t, o, e) {
 this.mSignalr.send("SpinMobile", [ e ]);
 };
-o.prototype.sendSpinTry = function(t, o, e, i) {
-this.mSignalr.send("SpinTry", [ t, o, e, i ]);
+o.prototype.sendSpinTry = function(t, o, e, n) {
+this.mSignalr.send("SpinTry", [ t, o, e, n ]);
 };
 o.prototype.sendGetRank = function(t) {
 this.mSignalr.send(t, []);
@@ -636,14 +632,14 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotHandler": void 0,
 "../../base_slot/SlotSelectRoom": void 0,
-"./SlotWildPopEntity": "SlotWildPopEntity",
-"./SlotWildPopVar": "SlotWildPopVar"
+"./SlotGonzoEntity": "SlotGonzoEntity",
+"./SlotGonzoVar": "SlotGonzoVar"
 } ],
-SlotWildPopHistoryCell: [ function(t, o, e) {
+SlotGonzoHistoryCell: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "b1ac7iJVmBFY7Wq5xHrJtJ+", "SlotWildPopHistoryCell");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "611f6CjbIdOB45a0LuOBUop", "SlotGonzoHistoryCell");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -651,21 +647,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/util/FormatUtil"), c = cc._decorator, r = c.ccclass, a = c.property, p = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.txtSession = null;
@@ -699,11 +695,11 @@ cc._RF.pop();
 }, {
 "../../base_slot/util/FormatUtil": void 0
 } ],
-SlotWildPopHistory: [ function(t, o, e) {
+SlotGonzoHistory: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "3b1e2eRkQJGxbUh1VSXZXPh", "SlotWildPopHistory");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "9e0eexw3DhOcKWRDTr1YQV2", "SlotGonzoHistory");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -711,22 +707,22 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotHistory"), c = t("./SlotWildPopHandler"), r = cc._decorator, a = r.ccclass, p = (r.property, 
+var l = t("../../base_slot/SlotHistory"), c = t("./SlotGonzoHandler"), r = cc._decorator, a = r.ccclass, p = (r.property, 
 function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.mSlot = null;
@@ -734,11 +730,11 @@ return o;
 }
 o.prototype.onLoad = function() {
 c.default.instance.sendHistory();
-cc.systemEvent.on("SlotWildPop_get_history", this.onEventGetHistory, this);
+cc.systemEvent.on("SlotGonzo_get_history", this.onEventGetHistory, this);
 this.scrollview.content.destroyAllChildren();
 };
 o.prototype.onDestroy = function() {
-cc.systemEvent.off("SlotWildPop_get_history", this.onEventGetHistory, this);
+cc.systemEvent.off("SlotGonzo_get_history", this.onEventGetHistory, this);
 };
 o.prototype.onEventGetHistory = function(t) {
 this.setData(1, t);
@@ -749,10 +745,10 @@ this.scrollview.content.destroyAllChildren();
 this.mListCell = [];
 var e = o.length;
 this.scrollview.content.height = e * (this.heightItem + this.spacing) + this.spacing;
-for (var i = this.spawnCount <= e ? this.spawnCount : e, n = 0; n < i; n++) {
-var s = cc.instantiate(this.cellHistory), l = s.getComponent("SlotWildPopHistoryCell");
-l.setData(this.mListDataCell[n], n);
-var c = -l.node.height * (.5 + n) - this.spacing * (n + 1);
+for (var n = this.spawnCount <= e ? this.spawnCount : e, i = 0; i < n; i++) {
+var s = cc.instantiate(this.cellHistory), l = s.getComponent("SlotGonzoHistoryCell");
+l.setData(this.mListDataCell[i], i);
+var c = -l.node.height * (.5 + i) - this.spacing * (i + 1);
 l.node.setPosition(0, c);
 this.scrollview.content.addChild(s);
 this.mListCell.push(l);
@@ -764,13 +760,13 @@ e.default = p;
 cc._RF.pop();
 }, {
 "../../base_slot/SlotHistory": void 0,
-"./SlotWildPopHandler": "SlotWildPopHandler"
+"./SlotGonzoHandler": "SlotGonzoHandler"
 } ],
-SlotWildPopIconLine: [ function(t, o, e) {
+SlotGonzoIconLine: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "b4485O1aGVDPpCg5z6zav6v", "SlotWildPopIconLine");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "42cdaZ1qUFOEKQRGQJG9m3C", "SlotGonzoIconLine");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -778,21 +774,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = cc._decorator, c = l.ccclass, r = l.property, a = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.sprLine = null;
@@ -838,11 +834,11 @@ return s([ c ], o);
 e.default = a;
 cc._RF.pop();
 }, {} ],
-SlotWildPopItem: [ function(t, o, e) {
+SlotGonzoItem: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "e91a3Qhx+lBmbBQVKwnDxVq", "SlotWildPopItem");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "53347jO/gRMKL1hD31ooEnJ", "SlotGonzoItem");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -850,21 +846,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/SlotItem"), c = t("../../base_slot/SlotConstant"), r = t("../../base_slot/util/AudioUtil"), a = t("../../base_slot/util/Util"), p = cc._decorator, u = p.ccclass, h = p.property, m = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.skeBorder = null;
@@ -890,9 +886,16 @@ this.setId(o);
 o.prototype.setId = function(t) {
 if (this.mId != t) {
 this.mId = t;
+if (3 == this.mId) {
 this.sprItem.node.active = !1;
 this.skeItem.node.active = !0;
-this.setSkeData(this.mId);
+this.skeItem.node.scale = .73;
+this.setSkeData(1);
+} else {
+this.sprItem.node.active = !0;
+this.skeItem.node.active = !1;
+this.setFrameItem(this.mId);
+}
 }
 };
 o.prototype.getRandomId = function() {
@@ -906,10 +909,17 @@ this.sprBorder.node.active = !1;
 };
 o.prototype.showIdle = function() {
 this.mTypeItem = c.SLOT_TYPE_ITEM.IDLE;
+if (3 == this.mId) {
 this.sprItem.node.active = !1;
 this.sprItem.node.color = cc.color(255, 255, 255);
 this.skeItem.node.active = !0;
 this.skeItem.node.color = cc.color(255, 255, 255);
+} else {
+this.sprItem.node.active = !0;
+this.sprItem.node.color = cc.color(255, 255, 255);
+this.skeItem.node.active = !1;
+this.skeItem.node.color = cc.color(255, 255, 255);
+}
 this.skeBorder.node.active = !1;
 this.skeBoomed.node.active = !1;
 this.sprBorder.node.active = !1;
@@ -917,22 +927,32 @@ this.sprBorder.node.active = !1;
 o.prototype.showLose = function() {
 if (this.mTypeItem != c.SLOT_TYPE_ITEM.LOSE) {
 this.mTypeItem = c.SLOT_TYPE_ITEM.LOSE;
+if (3 == this.mId) {
 this.sprItem.node.active = !1;
 this.sprItem.node.color = cc.color(100, 100, 100);
 this.skeItem.node.active = !0;
 this.skeItem.node.color = cc.color(100, 100, 100);
+} else {
+this.sprItem.node.active = !0;
+this.sprItem.node.color = cc.color(100, 100, 100);
+this.skeItem.node.active = !1;
+this.skeItem.node.color = cc.color(100, 100, 100);
+}
 this.skeBorder.node.active = !1;
 this.skeBoomed.node.active = !1;
 this.sprBorder.node.active = !1;
 }
 };
 o.prototype.setSkeData = function(t) {
-var o = -1;
-1 == t ? o = 0 : 2 == t ? o = 1 : 4 == t ? o = 2 : 5 == t ? o = 3 : 6 == t ? o = 4 : 7 == t ? o = 5 : 3 == t && (o = 6);
-this.skeItem.skeletonData = this.mSlot.mSlotConfig.LIST_SKE_ITEM[o];
-this.skeItem.animation = this.mSlot.mSlotConfig.LIST_SKE_KEY[o];
+var o = this.mSlot.mSlotConfig.LIST_SKE_ITEM[t - 1], e = this.mSlot.mSlotConfig.LIST_SKE_KEY[t - 1];
 this.skeItem.loop = !0;
-this.skeItem.setAnimation(0, "Idle", !0);
+this.skeItem.skeletonData = o;
+this.skeItem.animation = e;
+};
+o.prototype.setFrameItem = function(t) {
+var o = -1;
+1 == t ? o = 0 : 2 == t ? o = 1 : 4 == t ? o = 2 : 5 == t ? o = 3 : 6 == t ? o = 4 : 7 == t && (o = 5);
+this.sprItem.spriteFrame = this.mSlot.mSlotConfig.LIST_FRAME[o];
 };
 o.prototype.setBoom = function(t) {
 this.mIsBoom = t;
@@ -941,20 +961,43 @@ o.prototype.isBoom = function() {
 return this.mIsBoom;
 };
 o.prototype.showWin = function() {
+var t = this;
 if (this.mTypeItem != c.SLOT_TYPE_ITEM.WIN) {
 this.mTypeItem = c.SLOT_TYPE_ITEM.WIN;
+if (3 == this.mId) {
 this.sprItem.node.active = !1;
 this.sprItem.node.color = cc.color(255, 255, 255);
 this.skeItem.node.active = !0;
 this.skeItem.node.color = cc.color(255, 255, 255);
+} else {
+this.sprItem.node.active = !0;
+this.sprItem.node.color = cc.color(255, 255, 255);
+this.skeItem.node.active = !1;
+this.skeItem.node.color = cc.color(255, 255, 255);
+}
 if (this.mIsBoom) {
 this.sprBorder.node.active = !1;
 this.skeBorder.node.active = !0;
+this.skeBorder.node.active && this.skeBorder.node.runAction(cc.callFunc(function() {
+t.shakeEffect(t.sprItem.node, 1.5);
+}, this));
 } else {
 this.sprBorder.node.active = !0;
 this.skeBorder.node.active = !1;
 }
 }
+};
+o.prototype.shakeEffect = function(t, o) {
+try {
+t.runAction(cc.sequence(cc.rotateBy(.01, 4), cc.rotateBy(.01, -8), cc.rotateBy(.01, 8), cc.rotateBy(.01, -8), cc.rotateBy(.01, 8), cc.rotateBy(.01, -8), cc.rotateBy(.01, 8), cc.rotateBy(.01, -8), cc.rotateBy(.01, 4))).repeatForever();
+} catch (t) {
+return;
+}
+this.scheduleOnce(function() {
+t.stopAllActions();
+t.setPosition(cc.v2(0, 0));
+t.runAction(cc.rotateTo(0, 0));
+}, o);
 };
 o.prototype.showBoom = function() {
 r.default.playSound(this.mSlot.mSlotAudio.boom, this.mSlot.mIsSound);
@@ -978,9 +1021,9 @@ this.mIsBoom = !1;
 o.prototype.moveStart = function(t) {
 var o = this;
 this.mIndex = this.mIndex - t;
-var e = t * this.mSlot.mSlotConfig.DISTANCE, i = this.node.y - e, n = this.mSlotRoom.mIsQuickSpin ? this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START_QUICK : this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START;
+var e = t * this.mSlot.mSlotConfig.DISTANCE, n = this.node.y - e, i = this.mSlotRoom.mIsQuickSpin ? this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START_QUICK : this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START;
 this.node.stopAllActions();
-this.node.runAction(cc.sequence(cc.moveTo(n, this.node.x, i), cc.callFunc(function() {
+this.node.runAction(cc.sequence(cc.moveTo(i, this.node.x, n), cc.callFunc(function() {
 o.setBoom(!1);
 o.resetItem();
 o.mSlotReel.cbStopAllItemMoveStart();
@@ -989,9 +1032,9 @@ o.mSlotReel.cbStopAllItemMoveStart();
 o.prototype.moveStop = function(t) {
 var o = this;
 this.mIndex = this.mIndex - t;
-var e = this.mSlot.mSlotConfig.POS_ITEM[this.mIndex], i = this.mSlotRoom.mIsQuickSpin ? this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START_QUICK : this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START;
+var e = this.mSlot.mSlotConfig.POS_ITEM[this.mIndex], n = this.mSlotRoom.mIsQuickSpin ? this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START_QUICK : this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START;
 this.node.stopAllActions();
-this.node.runAction(cc.sequence(cc.moveTo(i, this.node.x, e).easing(cc.easeIn(5)), cc.callFunc(function() {
+this.node.runAction(cc.sequence(cc.moveTo(n, this.node.x, e).easing(cc.easeIn(5)), cc.callFunc(function() {
 o.skeEffectVaCham.node.active = !0;
 o.skeEffectVaCham.addAnimation(0, "animation", !1);
 o.skeEffectVaCham.setCompleteListener(this.onEventVacham.bind(o));
@@ -1001,9 +1044,9 @@ o.mSlotReel.cbStopAllItemMoveStop();
 o.prototype.moveBoom = function(t) {
 var o = this;
 this.mIndex = this.mIndex - t;
-var e = this.mSlot.mSlotConfig.POS_ITEM[this.mIndex], i = this.mSlotRoom.mIsQuickSpin ? this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START_QUICK : this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START;
+var e = this.mSlot.mSlotConfig.POS_ITEM[this.mIndex], n = this.mSlotRoom.mIsQuickSpin ? this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START_QUICK : this.mSlot.mSlotConfig.TIME_MOVE_ITEM_START;
 this.node.stopAllActions();
-this.node.runAction(cc.sequence(cc.moveTo(i, this.node.x, e).easing(cc.easeIn(5)), cc.callFunc(function() {
+this.node.runAction(cc.sequence(cc.moveTo(n, this.node.x, e).easing(cc.easeIn(5)), cc.callFunc(function() {
 o.setBoom(!1);
 o.skeEffectVaCham.node.active = !0;
 o.skeEffectVaCham.addAnimation(0, "animation", !1);
@@ -1032,11 +1075,11 @@ cc._RF.pop();
 "../../base_slot/util/AudioUtil": void 0,
 "../../base_slot/util/Util": void 0
 } ],
-SlotWildPopLine: [ function(t, o, e) {
+SlotGonzoLine: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "59212VDPrpD2Zpz4Vjno8LV", "SlotWildPopLine");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "ef525hUFllNiKmnQk1jGRN4", "SlotGonzoLine");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -1044,14 +1087,14 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
@@ -1059,7 +1102,7 @@ value: !0
 });
 var l = t("../../base_slot/SlotLine"), c = cc._decorator, r = c.ccclass, a = (c.property, 
 function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.mSlotMachine = null;
@@ -1084,11 +1127,11 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotLine": void 0
 } ],
-SlotWildPopMachine: [ function(t, o, e) {
+SlotGonzoMachine: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "fd43eS8/UxPva2gxN12HNu7", "SlotWildPopMachine");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "efdd6hhh1ZASo48eGIuJZvT", "SlotGonzoMachine");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -1096,21 +1139,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/SlotMachine"), c = t("../../base_slot/util/AudioUtil"), r = cc._decorator, a = r.ccclass, p = r.property, u = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.listSlotReel = [];
@@ -1129,8 +1172,8 @@ return o;
 }
 o.prototype.init = function(o) {
 t.prototype.init.call(this, o);
-for (var e = 0; e < 3; e++) for (var i = 0; i < 5; i++) this.mListSlotItemResult.push(this.listSlotReel[i].listItem[e]);
-fzgui.ZLog.log("mListSlotItemResult", this.mListSlotItemResult);
+for (var e = 0; e < 3; e++) for (var n = 0; n < 5; n++) this.mListSlotItemResult.push(this.listSlotReel[n].listItem[e]);
+lngui.ZLog.log("mListSlotItemResult", this.mListSlotItemResult);
 };
 o.prototype.spin = function() {
 this.mAudioIdSpin = c.default.playSound(this.mSlot.mSlotAudio.reelSpin, this.mSlot.mIsSound, !0);
@@ -1144,7 +1187,7 @@ this.mIsAllReelDoneStop = !1;
 };
 o.prototype.setLineSelect = function(t) {
 for (var o = 0; o < this.listSlotLine.length; o++) {
-for (var e = !0, i = 0; i < t.length; i++) if (this.listSlotLine[o].getId() === t[i]) {
+for (var e = !0, n = 0; n < t.length; n++) if (this.listSlotLine[o].getId() === t[n]) {
 e = !1;
 break;
 }
@@ -1153,8 +1196,8 @@ e ? this.listSlotLine[o].setSelect(!1) : this.listSlotLine[o].setSelect(!0);
 };
 o.prototype.stopSpin = function() {
 for (var t = this.mSlotRoom.mDataSpin.listItem[0], o = 0; o < this.listSlotReel.length; o++) {
-var e = o, i = o + 5, n = o + 10;
-this.listSlotReel[o].setIdItemResult([ t[n], t[i], t[e] ]);
+var e = o, n = o + 5, i = o + 10;
+this.listSlotReel[o].setIdItemResult([ t[i], t[n], t[e] ]);
 this.listSlotReel[o].stopSpin();
 }
 this.showLog(0, t);
@@ -1166,9 +1209,9 @@ var e = t.listIdx[o];
 this.mListSlotItemResult[e].setBoom(!0);
 }
 for (o = 0; o < this.mListSlotItemResult.length; o++) this.mListSlotItemResult[o].showLose();
-var i = this.getSlotLineById(t.id);
+var n = this.getSlotLineById(t.id);
 try {
-i.showWin();
+n.showWin();
 } catch (t) {
 return;
 }
@@ -1197,7 +1240,7 @@ this.mListSlotItemResult.push(e);
 };
 o.prototype.updateAllLine = function() {
 for (var t = 0; t < this.mSlot.mSlotConfig.LINE.length; t++) {
-for (var o = this.mSlot.mSlotConfig.LINE[t], e = [], i = 0; i < o.length; i++) e.push(this.mListSlotItemResult[o[i]]);
+for (var o = this.mSlot.mSlotConfig.LINE[t], e = [], n = 0; n < o.length; n++) e.push(this.mListSlotItemResult[o[n]]);
 this.listSlotLine[t].updateSlotItem(e);
 }
 };
@@ -1226,8 +1269,8 @@ this.mCountReelCompleteBoom++;
 if (this.mCountReelCompleteBoom == this.mNumReelExistBoom) {
 this.mCountReelCompleteBoom = 0;
 for (var t = this.mSlotRoom.mDataSpin.listItem[this.mSlotRoom.mTurnWinCurent - 1], o = 0; o < this.listSlotReel.length; o++) {
-var e = o, i = o + 5, n = o + 10;
-this.listSlotReel[o].setIdItemResult([ t[e], t[i], t[n] ]);
+var e = o, n = o + 5, i = o + 10;
+this.listSlotReel[o].setIdItemResult([ t[e], t[n], t[i] ]);
 this.listSlotReel[o].isBoom() && this.listSlotReel[o].showMoveBoom();
 }
 this.showLog(this.mSlotRoom.mTurnWinCurent - 1, t);
@@ -1256,11 +1299,11 @@ cc._RF.pop();
 "../../base_slot/SlotMachine": void 0,
 "../../base_slot/util/AudioUtil": void 0
 } ],
-SlotWildPopRank: [ function(t, o, e) {
+SlotGonzoRank: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "58a98bDWohM2IoENWdc1bIv", "SlotWildPopRank");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "765a27/MppOTY0YdijHRHgs", "SlotGonzoRank");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -1268,21 +1311,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("./SlotWildPopHandler"), c = cc._decorator, r = c.ccclass, a = c.property, p = function(t) {
-n(o, t);
+var l = t("./SlotGonzoHandler"), c = cc._decorator, r = c.ccclass, a = c.property, p = function(t) {
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.scrollview = null;
@@ -1305,13 +1348,13 @@ return o;
 o.prototype.onLoad = function() {
 l.default.instance.sendGetRank("GetHonor");
 this.scrollview.content.destroyAllChildren();
-cc.systemEvent.on("SlotWildPop_get_rank", this.onEventGetRank, this);
+cc.systemEvent.on("SlotGonzo_get_rank", this.onEventGetRank, this);
 };
 o.prototype.onBtn = function(t, o) {
 l.default.instance.sendGetRank(o);
 };
 o.prototype.onDestroy = function() {
-cc.systemEvent.off("SlotWildPop_get_rank", this.onEventGetRank, this);
+cc.systemEvent.off("SlotGonzo_get_rank", this.onEventGetRank, this);
 };
 o.prototype.onEventGetRank = function(t) {
 this.setData(t);
@@ -1321,17 +1364,17 @@ if (this.node.active) {
 this.updateTimer += t;
 if (this.updateTimer < this.updateInterval) return;
 this.updateTimer = 0;
-for (var o = this.bufferZone, e = this.scrollview.content.y < this.lastContentPosY, i = (this.heightItem + this.spacing) * this.mListCell.length, n = 0; n < this.mListCell.length; ++n) {
-var s = this.mListCell[n].node, l = this.getPositionInView(s);
+for (var o = this.bufferZone, e = this.scrollview.content.y < this.lastContentPosY, n = (this.heightItem + this.spacing) * this.mListCell.length, i = 0; i < this.mListCell.length; ++i) {
+var s = this.mListCell[i].node, l = this.getPositionInView(s);
 if (e) {
-if (l.y < -o && s.y + i < 0) {
-s.y = s.y + i;
-var c = this.mListCell[n], r = c.mIdx - this.mListCell.length;
+if (l.y < -o && s.y + n < 0) {
+s.y = s.y + n;
+var c = this.mListCell[i], r = c.mIdx - this.mListCell.length;
 c.setData(this.mListDataCell[r], r);
 }
-} else if (l.y > o && s.y - i > -this.scrollview.content.height) {
-s.y = s.y - i;
-var a = this.mListCell[n];
+} else if (l.y > o && s.y - n > -this.scrollview.content.height) {
+s.y = s.y - n;
+var a = this.mListCell[i];
 r = a.mIdx + this.mListCell.length;
 a.setData(this.mListDataCell[r], r);
 }
@@ -1351,15 +1394,15 @@ var o = t.length;
 this.scrollview.content.height = o * (this.heightItem + this.spacing) + this.spacing;
 this.spawnCount <= o && this.spawnCount;
 for (var e = 0; e < o; e++) {
-var i = cc.instantiate(this.cellRank), n = i.getComponent("SlotRankCell");
+var n = cc.instantiate(this.cellRank), i = n.getComponent("SlotRankCell");
 if (t.IsJackport) {
 this.mListDataCell[e].IsJackport = !0;
-n.setData(this.mListDataCell[e], e);
-} else n.setData(this.mListDataCell[e], e);
-var s = -i.height * (.5 + e) - this.spacing * (e + 1);
-i.setPosition(0, s);
-this.mListCell.push(n);
-this.scrollview.content.addChild(i);
+i.setData(this.mListDataCell[e], e);
+} else i.setData(this.mListDataCell[e], e);
+var s = -n.height * (.5 + e) - this.spacing * (e + 1);
+n.setPosition(0, s);
+this.mListCell.push(i);
+this.scrollview.content.addChild(n);
 }
 };
 o.prototype.onBtnThanglon = function() {
@@ -1380,17 +1423,17 @@ s([ a(cc.Integer) ], o.prototype, "spacing", void 0);
 s([ a(cc.Integer) ], o.prototype, "spawnCount", void 0);
 s([ a(cc.Integer) ], o.prototype, "bufferZone", void 0);
 return s([ r ], o);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 e.default = p;
 cc._RF.pop();
 }, {
-"./SlotWildPopHandler": "SlotWildPopHandler"
+"./SlotGonzoHandler": "SlotGonzoHandler"
 } ],
-SlotWildPopReel: [ function(t, o, e) {
+SlotGonzoReel: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "986cfjaUuJIU4dADSxryJQk", "SlotWildPopReel");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "89058k68ylGB7aAWCS456fM", "SlotGonzoReel");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -1398,21 +1441,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/SlotReel"), c = cc._decorator, r = c.ccclass, a = c.property, p = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.listItem = [];
@@ -1440,26 +1483,26 @@ this.mNumBoom = 0;
 o.prototype.spin = function() {
 t.prototype.spin.call(this);
 for (var o = 0; o < this.listItem.length; o++) ;
-var e = this.getSlotItemByIndex(2), i = this.getSlotItemByIndex(1), n = this.getSlotItemByIndex(0), s = this.mSlotMachine.mSlot.mSlotConfig.TIME_DELAY_SPIN_REEL, l = 0 * s, c = 5 * s + this.mId * s * .8, r = 10 * s + this.mId * s * .7;
+var e = this.getSlotItemByIndex(2), n = this.getSlotItemByIndex(1), i = this.getSlotItemByIndex(0), s = this.mSlotMachine.mSlot.mSlotConfig.TIME_DELAY_SPIN_REEL, l = 0 * s, c = 5 * s + this.mId * s * .8, r = 10 * s + this.mId * s * .7;
 this.node.stopAllActions();
 this.node.runAction(cc.sequence(cc.delayTime(l), cc.callFunc(function() {
-n.moveStart(3);
-}, this), cc.delayTime(c), cc.callFunc(function() {
 i.moveStart(3);
+}, this), cc.delayTime(c), cc.callFunc(function() {
+n.moveStart(3);
 }, this), cc.delayTime(r), cc.callFunc(function() {
 e.moveStart(3);
 }, this)));
 };
 o.prototype.stopSpin = function() {
 for (var t = 0; t < this.listItem.length; t++) ;
-var o = this.getSlotItemByIndex(5), e = this.getSlotItemByIndex(4), i = this.getSlotItemByIndex(3);
+var o = this.getSlotItemByIndex(5), e = this.getSlotItemByIndex(4), n = this.getSlotItemByIndex(3);
 o.setId(this.listIdItemResult[2]);
 e.setId(this.listIdItemResult[1]);
-i.setId(this.listIdItemResult[0]);
-var n = this.mSlotMachine.mSlot.mSlotConfig.TIME_DELAY_SPIN_REEL, s = 0 * n + this.mId * n, l = 5 * n + this.mId * n * .8, c = 10 * n + this.mId * n * .6;
+n.setId(this.listIdItemResult[0]);
+var i = this.mSlotMachine.mSlot.mSlotConfig.TIME_DELAY_SPIN_REEL, s = 0 * i + this.mId * i, l = 5 * i + this.mId * i * .8, c = 10 * i + this.mId * i * .6;
 this.node.stopAllActions();
 this.node.runAction(cc.sequence(cc.delayTime(s), cc.callFunc(function() {
-i.moveStop(3);
+n.moveStop(3);
 }, this), cc.delayTime(l), cc.callFunc(function() {
 e.moveStop(3);
 }, this), cc.delayTime(c), cc.callFunc(function() {
@@ -1507,14 +1550,14 @@ for (t = 0; t < this.listItem.length; t++) {
 var e = this.getSlotItemByIndex(t);
 if (e.isBoom()) {
 o++;
-var i = this.listItem.length - 1 + o;
-e.setIndex(i);
+var n = this.listItem.length - 1 + o;
+e.setIndex(n);
 e.setBoom(!1);
 e.showIdle();
 e.node.active = !1;
 } else if (this.listIdItemResult.length > 0) {
-var n = this.listIdItemResult.pop();
-e.setId(n);
+var i = this.listIdItemResult.pop();
+e.setId(i);
 if (0 != e.getIndex()) {
 this.mNumItemBoomMove++;
 e.moveBoom(o);
@@ -1573,11 +1616,11 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotReel": void 0
 } ],
-SlotWildPopRoomUI: [ function(t, o, e) {
+SlotGonzoRoomUI: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "f2ba90KmqlEKJ6+wZ/N/FaS", "SlotWildPopRoomUI");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "2515dq92RtPibKowCHuf5TE", "SlotGonzoRoomUI");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -1585,21 +1628,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/SlotRoomUI"), c = cc._decorator, r = c.ccclass, a = c.property, p = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.btnSelectLine = null;
@@ -1629,11 +1672,11 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotRoomUI": void 0
 } ],
-SlotWildPopRoom: [ function(t, o, e) {
+SlotGonzoRoom: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "43fc0c3ZlRFeKKKP6T56LSw", "SlotWildPopRoom");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "84d8aHuhiFLk7qQWw7kiT7M", "SlotGonzoRoom");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -1641,28 +1684,27 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("./SlotWildPop"), c = t("./SlotWildPopHandler"), r = t("./SlotWildPopVar"), a = t("../../base_slot/SlotRoom"), p = t("../../base_slot/SlotConstant"), u = t("./SlotWildPopIconLine"), h = cc._decorator, m = h.ccclass, f = h.property, d = function(t) {
-n(o, t);
+var l = t("./SlotGonzo"), c = t("./SlotGonzoIconLine"), r = t("./SlotGonzoHandler"), a = t("./SlotGonzoVar"), p = t("../../base_slot/SlotRoom"), u = t("../../base_slot/SlotConstant"), h = cc._decorator, m = h.ccclass, f = h.property, d = function(t) {
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.listIconLine = [];
 o.mSlotMachine = null;
 o.mSlotEffect = null;
 o.mSkeChar = null;
-o.prbSelectLine = null;
 o.mSlotRoomUI = null;
 o.mSlot = null;
 o.mDataSpin = null;
@@ -1671,6 +1713,7 @@ o.mIsJackpot = !1;
 o.mNumFreespin = 0;
 o.mIsInit = !1;
 o.mMoneyBonus = 0;
+o.prbSelectLine = null;
 return o;
 }
 e = o;
@@ -1686,13 +1729,13 @@ o.prototype.onLoad = function() {
 e._instance = this;
 };
 o.prototype.onEnable = function() {
-fzgui.EventDispatch.instance.add(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
 };
 o.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
 };
 o.prototype.onUpdateGold = function(t) {
-fzgui.UserManager.instance.mainUserInfo.Money = t;
+lngui.UserManager.instance.mainUserInfo.Money = t;
 this.updateUserMoney(t);
 };
 o.prototype.onDestroy = function() {
@@ -1711,7 +1754,7 @@ this.listIconLine[o].cbLeave = this.onLeaveLine.bind(this);
 this.listIconLine[o].tgLeave = this;
 }
 }
-this.mSlot.isTrial() ? this.mUserMoney = 5e7 : this.mUserMoney = fzgui.UserManager.instance.mainUserInfo.Money;
+this.mSlot.isTrial() ? this.mUserMoney = 5e7 : this.mUserMoney = lngui.UserManager.instance.mainUserInfo.Money;
 this.updateTotalWin(this.mMoneyWin);
 this.updateTotalBet();
 this.updateLineSelect(this.mSlotMachine.getNumLineSelect());
@@ -1740,15 +1783,20 @@ this.mTurnWinCurent = 1;
 this.mMoneyBonus = 0;
 };
 o.prototype.spin = function() {
+var o = this;
 t.prototype.spin.call(this);
-for (var o = 0; o < this.listIconLine.length; o++) this.listIconLine[o].setReady(!1);
+this.mSkeChar.setAnimation(0, "Idle", !1);
+this.mSkeChar.setCompleteListener(function() {
+o.mSkeChar.setAnimation(0, "Idle", !0);
+});
+for (var e = 0; e < this.listIconLine.length; e++) this.listIconLine[e].setReady(!1);
 this.mUserMoney -= this.getTotalBet();
 this.updateUserMoney(this.mUserMoney);
 this.mSlotRoomUI.interactableBtnSpin(!1);
 this.mSlotRoomUI.interactableBtnSelectLine(!1);
 this.mSlotRoomUI.interactableBtnBet(!1);
 this.mSlotRoomUI.interactableBtnBack(!1);
-l.default.instance.isTrial() ? c.default.instance.sendSpinTry("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20", 5e7, r.default.isPlaytryJackpotValue, 0) : c.default.instance.sendSpin(this.mSlot.mMoneyType, this.mSlot.getBetId(), this.mSlotMachine.getListLineSelect());
+l.default.instance.isTrial() ? r.default.instance.sendSpinTry("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20", 5e7, a.default.isPlaytryJackpotValue, 0) : r.default.instance.sendSpin(this.mSlot.mMoneyType, this.mSlot.getBetId(), this.mSlotMachine.getListLineSelect());
 };
 o.prototype.stopSpin = function(o) {
 t.prototype.stopSpin.call(this, o);
@@ -1759,20 +1807,29 @@ o.prototype.checkResult = function() {
 this.mSlotMachine.mIsAllReelDoneStart && this.mDataSpin && this.mSlotMachine.stopSpin();
 };
 o.prototype.showResult = function() {
-var t = this.mDataSpin.getLineWinByTurn(this.mTurnWinCurent);
-if (t) {
-if (t.jackpot > 0) {
+var t = this, o = this.mDataSpin.getLineWinByTurn(this.mTurnWinCurent);
+if (o) {
+this.mSkeChar.setAnimation(0, "Bonus-FreeSpine", !1);
+this.mSkeChar.setCompleteListener(function() {
+t.mSkeChar.setAnimation(0, "Idle-1", !0);
+});
+if (o.jackpot > 0) {
 this.mIsJackpot = !0;
 this.mSlot.isTrial();
-this.mSlotEffect.showJackpot(this.showResult, this, t.jackpot);
-} else if (t.bonus > 2 && t.bonus < 6) {
+this.mSlotEffect.showJackpot(this.showResult, this, o.jackpot);
+} else if (o.bonus > 2 && o.bonus < 6) {
 this.mSlot.isTrial();
-this.mSlotEffect.showBonus(this.showResult, this, t.bonus - 3, t.moneyWin);
-} else if (t.freespin > 0) {
-this.mNumFreespin += t.freespin;
+this.mSlotEffect.showBonus(this.showResult, this, o.bonus - 3, o.moneyWin);
+} else if (o.freespin > 0) {
+this.mNumFreespin += o.freespin;
 this.mSlotEffect.showFreespin(this.showResult, this, this.mNumFreespin);
-} else t.moneyWin > 0 && this.mSlotEffect.showWin(this.showResult, this, t.moneyWin);
-this.mSlotMachine.showLineWin(t);
+} else if (o.moneyWin > 0) this.mSlotEffect.showWin(this.showResult, this, o.moneyWin); else {
+this.mSkeChar.setAnimation(0, "Quay-3", !1);
+this.mSkeChar.setCompleteListener(function() {
+t.mSkeChar.setAnimation(0, "Idle-1", !0);
+});
+}
+this.mSlotMachine.showLineWin(o);
 } else {
 this.mTurnWinCurent++;
 this.mSlotMachine.checkBoom() ? this.mSlotMachine.showBoom() : this.checkNextSpin();
@@ -1792,19 +1849,19 @@ this.mTimeoutNextSpin = setTimeout(o.bind(this), 1e3 * this.mSlot.mSlotConfig.TI
 } else {
 if (this.mSlot.isTrial()) this.mUserMoney += this.mMoneyWin + this.mMoneyBonus; else {
 this.mUserMoney = this.mDataSpin.userMoney + this.mMoneyBonus;
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
 }
 this.updateUserMoney(this.mUserMoney);
 if (this.mIsAutoSpin) {
 clearTimeout(this.mTimeoutNextSpin);
 o = function() {
 clearTimeout(t.mTimeoutNextSpin);
-t.mState = p.SLOT_STATE.READY;
+t.mState = u.SLOT_STATE.READY;
 t.onBtnSpin();
 };
 this.mTimeoutNextSpin = setTimeout(o.bind(this), 1e3 * this.mSlot.mSlotConfig.TIME_DELAY_NEXT_SPIN);
 } else {
-this.mState = p.SLOT_STATE.READY;
+this.mState = u.SLOT_STATE.READY;
 for (var e = 0; e < this.listIconLine.length; e++) this.listIconLine[e].setReady(!0);
 this.mSlotRoomUI.interactableBtnSpin(!0);
 this.mSlotRoomUI.interactableBtnSelectLine(!0);
@@ -1823,41 +1880,41 @@ o.prototype.checkNextSpin = function() {
 this.mDataSpin.totalWin >= 15 * this.getTotalBet() && !this.mIsJackpot ? this.mSlotEffect.showBigWin(this.nextSpin, this, this.mMoneyWin) : this.nextSpin();
 };
 o.prototype.onBtnQuickSpin = function() {
-if (this.mUserMoney < this.getTotalBet()) l.default.instance.mTooltip.show("Số dư không đủ để quay"); else if (this.mState == p.SLOT_STATE.READY) {
+if (this.mUserMoney < this.getTotalBet()) l.default.instance.mTooltip.show("Số dư không đủ để quay"); else if (this.mState == u.SLOT_STATE.READY) {
 this.mIsQuickSpin = !0;
 this.mIsAutoSpin = !0;
 this.mSlotRoomUI.visibleBtnStopSpin(!0);
 this.mSlotRoomUI.visibleBtnAutoSpin(!1);
 this.mSlotRoomUI.visibleBtnQuickSpin(!1);
-this.mState == p.SLOT_STATE.READY && this.spin();
+this.mState == u.SLOT_STATE.READY && this.spin();
 } else l.default.instance.mTooltip.show("Không quay được khi chưa kết thúc phiên");
 };
 o.prototype.onBtnAutoSpin = function() {
-if (this.mUserMoney < this.getTotalBet()) l.default.instance.mTooltip.show("Số dư không đủ để quay"); else if (this.mState == p.SLOT_STATE.READY) {
+if (this.mUserMoney < this.getTotalBet()) l.default.instance.mTooltip.show("Số dư không đủ để quay"); else if (this.mState == u.SLOT_STATE.READY) {
 this.mIsAutoSpin = !0;
 this.mSlotRoomUI.visibleBtnStopSpin(!0);
 this.mSlotRoomUI.visibleBtnAutoSpin(!1);
 this.mSlotRoomUI.visibleBtnQuickSpin(!1);
-this.mState == p.SLOT_STATE.READY && this.spin();
+this.mState == u.SLOT_STATE.READY && this.spin();
 } else l.default.instance.mTooltip.show("Không quay được khi chưa kết thúc phiên");
 };
 o.prototype.onBtnAddBet = function() {
-if (this.mSlot.isTrial()) this.mSlot.mTooltip.show("Không sử dụng được chức năng này ở chơi thử"); else if (this.mState == p.SLOT_STATE.READY) {
+if (this.mSlot.isTrial()) this.mSlot.mTooltip.show("Không sử dụng được chức năng này ở chơi thử"); else if (this.mState == u.SLOT_STATE.READY) {
 this.mSlot.mRoomId++;
 this.mSlot.mRoomId > 3 && (this.mSlot.mRoomId = 1);
 this.updateBet(l.default.instance.getMoneyBet());
 this.updateTotalBet();
 this.onUpdatePot(this.mSlot.mListPot[this.mSlot.mRoomId - 1]);
-c.default.instance.sendPlayNow();
+r.default.instance.sendPlayNow();
 }
 };
 o.prototype.onBtnSetting = function() {
 if (this.mSlotRoomUI.btnSetting.isChecked) {
-this.mSlotRoomUI.btnMusic.node.runAction(cc.sequence(cc.delayTime(0), cc.moveTo(.2, cc.v2(570, 220)).easing(cc.easeElasticOut(.4))));
-this.mSlotRoomUI.btnSound.node.runAction(cc.sequence(cc.delayTime(.1), cc.moveTo(.2, cc.v2(570, 140)).easing(cc.easeElasticOut(.4))));
+this.mSlotRoomUI.btnMusic.node.runAction(cc.sequence(cc.delayTime(0), cc.moveTo(.2, cc.v2(570, 240)).easing(cc.easeElasticOut(.4))));
+this.mSlotRoomUI.btnSound.node.runAction(cc.sequence(cc.delayTime(.1), cc.moveTo(.2, cc.v2(570, 170)).easing(cc.easeElasticOut(.4))));
 } else {
-this.mSlotRoomUI.btnMusic.node.runAction(cc.sequence(cc.delayTime(0), cc.moveTo(.2, cc.v2(1e3, 260)).easing(cc.easeElasticIn(.4))));
-this.mSlotRoomUI.btnSound.node.runAction(cc.sequence(cc.delayTime(.1), cc.moveTo(.2, cc.v2(1e3, 210)).easing(cc.easeElasticIn(.4))));
+this.mSlotRoomUI.btnMusic.node.runAction(cc.sequence(cc.delayTime(0), cc.moveTo(.2, cc.v2(1e3, 240)).easing(cc.easeElasticIn(.4))));
+this.mSlotRoomUI.btnSound.node.runAction(cc.sequence(cc.delayTime(.1), cc.moveTo(.2, cc.v2(1e3, 170)).easing(cc.easeElasticIn(.4))));
 }
 };
 o.prototype.onBtnGuide = function() {};
@@ -1865,7 +1922,7 @@ o.prototype.onBtnHistory = function() {};
 o.prototype.onBtnRank = function() {};
 o.prototype.onBtnSelectLine = function() {
 var t = this;
-fzgui.UIPopupManager.instance.showPopupFromPrefab(this.prbSelectLine, function(o) {
+lngui.UIPopupManager.instance.showPopupFromPrefab(this.prbSelectLine, function(o) {
 o.init(t);
 });
 };
@@ -1882,7 +1939,7 @@ this.mSlotRoomUI.btnMusic.target.active = !this.mSlotRoomUI.btnMusic.isChecked;
 };
 var e;
 o._instance = null;
-s([ f([ u.default ]) ], o.prototype, "listIconLine", void 0);
+s([ f([ c.default ]) ], o.prototype, "listIconLine", void 0);
 s([ f({
 override: !0
 }) ], o.prototype, "mSlotMachine", void 0);
@@ -1890,27 +1947,27 @@ s([ f({
 override: !0
 }) ], o.prototype, "mSlotEffect", void 0);
 s([ f(sp.Skeleton) ], o.prototype, "mSkeChar", void 0);
-s([ f(cc.Prefab) ], o.prototype, "prbSelectLine", void 0);
 s([ f({
 override: !0
 }) ], o.prototype, "mSlotRoomUI", void 0);
+s([ f(cc.Prefab) ], o.prototype, "prbSelectLine", void 0);
 return e = s([ m ], o);
-}(a.default);
+}(p.default);
 e.default = d;
 cc._RF.pop();
 }, {
 "../../base_slot/SlotConstant": void 0,
 "../../base_slot/SlotRoom": void 0,
-"./SlotWildPop": "SlotWildPop",
-"./SlotWildPopHandler": "SlotWildPopHandler",
-"./SlotWildPopIconLine": "SlotWildPopIconLine",
-"./SlotWildPopVar": "SlotWildPopVar"
+"./SlotGonzo": "SlotGonzo",
+"./SlotGonzoHandler": "SlotGonzoHandler",
+"./SlotGonzoIconLine": "SlotGonzoIconLine",
+"./SlotGonzoVar": "SlotGonzoVar"
 } ],
-SlotWildPopSelectLine: [ function(t, o, e) {
+SlotGonzoSelectLine: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "bf2b7hWm1tAQJF23c7DE9hT", "SlotWildPopSelectLine");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "7bd66OyJcZKn4bqqkn35pwI", "SlotGonzoSelectLine");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -1918,22 +1975,22 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotSelectLine"), c = t("./SlotWildPopRoom"), r = cc._decorator, a = r.ccclass, p = (r.property, 
+var l = t("../../base_slot/SlotSelectLine"), c = t("./SlotGonzoRoom"), r = cc._decorator, a = r.ccclass, p = (r.property, 
 function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.mSlotRoom = null;
@@ -1944,11 +2001,11 @@ o.prototype.init = function(t) {
 this.mSlotRoom = t;
 this.mSlot = this.mSlotRoom.mSlot;
 for (var o = this.mSlotRoom.mSlotMachine.getNumLineSelect(), e = 0; e < this.listLineItem.length; e++) {
-for (var i = !1, n = 0; n < o.length; n++) if (o[n] == e + 1) {
-i = !0;
+for (var n = !1, i = 0; i < o.length; i++) if (o[i] == e + 1) {
+n = !0;
 break;
 }
-this.listLineItem[e].isChecked = i;
+this.listLineItem[e].isChecked = n;
 }
 };
 o.prototype.hide = function() {
@@ -1964,13 +2021,13 @@ e.default = p;
 cc._RF.pop();
 }, {
 "../../base_slot/SlotSelectLine": void 0,
-"./SlotWildPopRoom": "SlotWildPopRoom"
+"./SlotGonzoRoom": "SlotGonzoRoom"
 } ],
-SlotWildPopSelectRoom: [ function(t, o, e) {
+SlotGonzoSelectRoom: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "9b7bdStkjlBz6NTnlogyEs4", "SlotWildPopSelectRoom");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "f7b391dVcVJy7PJp4VZEm12", "SlotGonzoSelectRoom");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -1978,14 +2035,14 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
@@ -1993,7 +2050,7 @@ value: !0
 });
 var l = t("../../base_slot/SlotSelectRoom"), c = cc._decorator, r = c.ccclass, a = (c.property, 
 function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.mSlot = null;
@@ -2006,32 +2063,32 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotSelectRoom": void 0
 } ],
-SlotWildPopVar: [ function(t, o, e) {
+SlotGonzoVar: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "13d04U6T2NI5oh2YLgoUsp1", "SlotWildPopVar");
+cc._RF.push(o, "73188XF06NHZKlY/y27um8g", "SlotGonzoVar");
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var i = function() {
+var n = function() {
 function t() {}
 t.api = {
-negotiate: "https://wildpop.dragonf1.xyz/signalr/negotiate",
+negotiate: "https://gonzo.${lngui.ConfigManager.instance.ConfigInfo.Api}/signalr/negotiate",
 hub: "Rungramhub"
 };
-t.KEY_SOUND = "SlotWildPop_sound";
-t.KEY_MUSIC = "SlotWildPop_music";
+t.KEY_SOUND = "SlotGonzo_sound";
+t.KEY_MUSIC = "SlotGonzo_music";
 t.jackPot = [ 0, 5e5, 5e6, 5e7 ];
 t.isPlaytryJackpotValue = 5e7;
 return t;
 }();
-e.default = i;
+e.default = n;
 cc._RF.pop();
 }, {} ],
-SlotWildPopXPotCell: [ function(t, o, e) {
+SlotGonzoXPotCell: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "a8b53KOwitM8bmkunfDCVt8", "SlotWildPopXPotCell");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "494d1Y7ltlFaK0+r/RxXl1/", "SlotGonzoXPotCell");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -2039,14 +2096,14 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
@@ -2054,7 +2111,7 @@ value: !0
 });
 var l = t("../../base_slot/SlotXPotCell"), c = cc._decorator, r = c.ccclass, a = (c.property, 
 function(t) {
-n(o, t);
+i(o, t);
 function o() {
 return null !== t && t.apply(this, arguments) || this;
 }
@@ -2067,7 +2124,7 @@ this.txtPotCount.node.active = !0;
 t.NormalJackpot > 0 ? this.txtPotCount.string = "X6 SAU " + t.NormalJackpot + " HŨ" : this.txtPotCount.string = "X6 CÒN LẠI " + t.EventJackpotRemain + " HŨ";
 } else if (2 == t.RoomID) {
 this.txtPotCount.node.active = !0;
-t.NormalJackpot > 0 ? this.txtPotCount.string = "X3 SAU " + t.NormalJackpot + " HŨ" : this.txtPotCount.string = "X3 CÒN LẠI " + t.EventJackpotRemain + " HŨ";
+t.NormalJackpot > 0 ? this.txtPotCount.string = "X4 SAU " + t.NormalJackpot + " HŨ" : this.txtPotCount.string = "X4 CÒN LẠI " + t.EventJackpotRemain + " HŨ";
 } else if (3 == t.RoomID && t.NormalJackpot > 0) {
 this.txtPotCount.node.active = !0;
 t.NormalJackpot > 0 ? this.txtPotCount.string = "X2 SAU " + t.NormalJackpot + " HŨ" : this.txtPotCount.string = "X2 CÒN LẠI " + t.EventJackpotRemain + " HŨ";
@@ -2084,11 +2141,11 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotXPotCell": void 0
 } ],
-SlotWildPopXPot: [ function(t, o, e) {
+SlotGonzoXPot: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "0c99eyEkF9EeL7pIR2GGWVF", "SlotWildPopXPot");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "bbe36k6KYlG1IG76bvvZh7D", "SlotGonzoXPot");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -2096,21 +2153,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
 var l = t("../../base_slot/SlotXPot"), c = cc._decorator, r = c.ccclass, a = c.property, p = function(t) {
-n(o, t);
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.listPotCell = [];
@@ -2139,11 +2196,11 @@ cc._RF.pop();
 }, {
 "../../base_slot/SlotXPot": void 0
 } ],
-SlotWildPop: [ function(t, o, e) {
+SlotGonzo: [ function(t, o, e) {
 "use strict";
-cc._RF.push(o, "5bcddO/gqdKDZ0d4FH3ZqJp", "SlotWildPop");
-var i, n = this && this.__extends || (i = function(t, o) {
-return (i = Object.setPrototypeOf || {
+cc._RF.push(o, "ef10b8aighCe6oK2QM48j4u", "SlotGonzo");
+var n, i = this && this.__extends || (n = function(t, o) {
+return (n = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, o) {
 t.__proto__ = o;
@@ -2151,21 +2208,21 @@ t.__proto__ = o;
 for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e]);
 })(t, o);
 }, function(t, o) {
-i(t, o);
+n(t, o);
 function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var c = t.length - 1; c >= 0; c--) (n = t[c]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
+}), s = this && this.__decorate || function(t, o, e, n) {
+var i, s = arguments.length, l = s < 3 ? o : null === n ? n = Object.getOwnPropertyDescriptor(o, e) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, n); else for (var c = t.length - 1; c >= 0; c--) (i = t[c]) && (l = (s < 3 ? i(l) : s > 3 ? i(o, e, l) : i(o, e)) || l);
 return s > 3 && l && Object.defineProperty(o, e, l), l;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("./SlotWildPopSelectRoom"), c = t("./SlotWildPopRoom"), r = t("./SlotWildPopVar"), a = t("./SlotWildPopXPot"), p = t("../../base_slot/SlotConstant"), u = t("../../base_slot/Slot"), h = cc._decorator, m = h.ccclass, f = h.property, d = function(t) {
-n(o, t);
+var l = t("./SlotGonzoSelectRoom"), c = t("./SlotGonzoRoom"), r = t("./SlotGonzoVar"), a = t("./SlotGonzoXPot"), p = t("../../base_slot/Slot"), u = t("../../base_slot/SlotConstant"), h = cc._decorator, m = h.ccclass, f = h.property, d = function(t) {
+i(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
 o.mSlotPot = null;
@@ -2189,7 +2246,7 @@ configurable: !0
 o.prototype.onLoad = function() {
 e._instance = this;
 t.prototype.onLoad.call(this);
-this.mIdGame = p.GAME_ID.PUBG;
+this.mIdGame = u.GAME_ID.PUBG;
 var o = r.default.jackPot;
 if (o && o.length > 0) {
 this.mListPot[0] = o[0];
@@ -2201,9 +2258,9 @@ this.mSlotSelectRoom.init(this);
 this.mSlotPot.init(this);
 };
 o.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.mSlotNetwork.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.mSlotNetwork.connect, this);
 this.mSlotNetwork.closeWS();
-fzgui.ZLog.log("=====================CLOSE WS NOTI===============================");
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
 };
 o.prototype.onDestroy = function() {
 t.prototype.onDestroy.call(this);
@@ -2229,9 +2286,9 @@ o.prototype.onUpdatePot = function(t) {
 if (t) {
 var o = 0;
 for (var e in t) {
-var i = t[e];
-if (i > 0) {
-this.mListPot[o] = i;
+var n = t[e];
+if (n > 0) {
+this.mListPot[o] = n;
 o++;
 }
 }
@@ -2258,15 +2315,15 @@ override: !0
 s([ f(l.default) ], o.prototype, "mSlotSelectRoom", void 0);
 s([ f(c.default) ], o.prototype, "mSlotRoom", void 0);
 return e = s([ m ], o);
-}(u.default);
+}(p.default);
 e.default = d;
 cc._RF.pop();
 }, {
 "../../base_slot/Slot": void 0,
 "../../base_slot/SlotConstant": void 0,
-"./SlotWildPopRoom": "SlotWildPopRoom",
-"./SlotWildPopSelectRoom": "SlotWildPopSelectRoom",
-"./SlotWildPopVar": "SlotWildPopVar",
-"./SlotWildPopXPot": "SlotWildPopXPot"
+"./SlotGonzoRoom": "SlotGonzoRoom",
+"./SlotGonzoSelectRoom": "SlotGonzoSelectRoom",
+"./SlotGonzoVar": "SlotGonzoVar",
+"./SlotGonzoXPot": "SlotGonzoXPot"
 } ]
-}, {}, [ "SlotWildPop", "SlotWildPopAudio", "SlotWildPopConfig", "SlotWildPopEffect", "SlotWildPopEntity", "SlotWildPopGuide", "SlotWildPopHandler", "SlotWildPopHistory", "SlotWildPopHistoryCell", "SlotWildPopIconLine", "SlotWildPopItem", "SlotWildPopLine", "SlotWildPopMachine", "SlotWildPopRank", "SlotWildPopReel", "SlotWildPopRoom", "SlotWildPopRoomUI", "SlotWildPopSelectLine", "SlotWildPopSelectRoom", "SlotWildPopVar", "SlotWildPopXPot", "SlotWildPopXPotCell" ]);
+}, {}, [ "SlotGonzo", "SlotGonzoAudio", "SlotGonzoConfig", "SlotGonzoEffect", "SlotGonzoEntity", "SlotGonzoGuide", "SlotGonzoHandler", "SlotGonzoHistory", "SlotGonzoHistoryCell", "SlotGonzoIconLine", "SlotGonzoItem", "SlotGonzoLine", "SlotGonzoMachine", "SlotGonzoRank", "SlotGonzoReel", "SlotGonzoRoom", "SlotGonzoRoomUI", "SlotGonzoSelectLine", "SlotGonzoSelectRoom", "SlotGonzoVar", "SlotGonzoXPot", "SlotGonzoXPotCell" ]);

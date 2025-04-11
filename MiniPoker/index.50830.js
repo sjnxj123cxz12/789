@@ -214,7 +214,7 @@ function t() {}
 t.api = {
 hub: "minipokerhub",
 gate: "Web-hitclub.com",
-negotiate: "https://minipoker.dragonf1.xyz/signalr/negotiate",
+negotiate: "https://minipoker." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
 portal: "https://w-minipoker.luxy.club/",
 getAccountHistory: "https://w-minipoker.luxy.club/api/GameAPI/GetAccountHistory?betType=1&topCount=100",
 getTopWinners: "https://w-minipoker.luxy.club/api/GameAPI/GetTopWinners?betType=1&topCount=100"
@@ -279,14 +279,14 @@ this.mMinipokerMain = t;
 e.prototype.connect = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 cc.systemEvent.on(this.mListenerKey, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
+this.mSignalr = new lngui.GateSignalR();
 this.mSignalr.connect(this.mListenerKey, c.default.api.negotiate, c.default.api.hub, c.default.api.gate, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 e.prototype.closeWS = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 e.prototype.onResponeData = function(t) {
@@ -294,8 +294,8 @@ this.isEmpty(t) || t.s && "error" == t.s || this.onWebSocketCallback(t);
 };
 e.prototype.onWebSocketCallback = function(t) {
 if ("open" == t.s || "reconnect" == t.s) this.sendSignalR("GetEventJackpot", []); else {
-t.R && t.R.description && fzgui.UITextManager.showCenterNotification(t.R.description);
--51 === t.R && fzgui.UITextManager.showCenterNotification("Số dư không đủ");
+t.R && t.R.description && lngui.UITextManager.showCenterNotification(t.R.description);
+-51 === t.R && lngui.UITextManager.showCenterNotification("Số dư không đủ");
 if (!t.M || 0 == t.M.length) return;
 for (var e = t.M.length, o = 0; o < e; ++o) {
 var n = t.M[o];
@@ -312,7 +312,7 @@ this.mMinipokerMain && this.mMinipokerMain.setJackpotValue(r[this.mMinipokerMain
 break;
 
 case "message":
-fzgui.UITextManager.showCenterNotification(i);
+lngui.UITextManager.showCenterNotification(i);
 break;
 
 case "jackpot":
@@ -326,13 +326,13 @@ this.onGetEventInfo(i);
 break;
 
 case "pokerSlotAccountHistory":
-fzgui.UIPopupManager.instance.showPopupFromPrefab(this.mMinipokerMain.prefPopupHistory, function(t) {
+lngui.UIPopupManager.instance.showPopupFromPrefab(this.mMinipokerMain.prefPopupHistory, function(t) {
 t.loadContent(i);
 });
 break;
 
 case "pokerSlotTopWinner":
-fzgui.UIPopupManager.instance.showPopupFromPrefab(this.mMinipokerMain.prefPopupTop, function(t) {
+lngui.UIPopupManager.instance.showPopupFromPrefab(this.mMinipokerMain.prefPopupTop, function(t) {
 t.loadContent(i);
 });
 }
@@ -486,9 +486,9 @@ this.mMinipokerHandler.connect();
 this.nodeMain.on(cc.Node.EventType.TOUCH_START, function() {}, this);
 };
 e.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.mMinipokerHandler.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.mMinipokerHandler.connect, this);
 this.mMinipokerHandler.closeWS();
-fzgui.ZLog.log("=====================CLOSE WS NOTI===============================");
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
 };
 e.prototype.setDefault = function() {
 this.lblJackpot.data = 0;
@@ -516,7 +516,7 @@ this.lblJackpot.scheduleProgress(this.mJackpotValue, .2);
 e.prototype.endEffect = function() {};
 e.prototype.showResultSpin = function() {
 var t = this;
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mResultSpin.Balance);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mResultSpin.Balance);
 var e = "";
 switch (this.mResultSpin.Cards[0].CardTypeID) {
 case s.default.winType.CU_LU:
@@ -587,10 +587,10 @@ e.onTouchSpin();
 return;
 
 case -10004:
-fzgui.UITextManager.showCenterNotification("Bạn không đủ SUM để quay");
+lngui.UITextManager.showCenterNotification("Bạn không đủ SUM để quay");
 return;
 }
-if (t.ResponseStatus < 0) fzgui.UITextManager.showCenterNotification("Có lỗi xảy ra trong quá trình quay, mời bạn thử lại"); else {
+if (t.ResponseStatus < 0) lngui.UITextManager.showCenterNotification("Có lỗi xảy ra trong quá trình quay, mời bạn thử lại"); else {
 for (var o = 0; o < this.mArrCardUI.length; o++) {
 this.mResultSpin && this.mArrCardUI[o][0].setCard(this.mResultSpin.Cards[0]["CardID" + (o + 1)]);
 this.mArrCardUI[o][this.mArrCardUI[o].length - 1].setCard(t.Cards[0]["CardID" + (o + 1)]);
@@ -871,7 +871,7 @@ function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
 return r([ p ], e);
-}(fzgui.UINumericLabelHelper));
+}(lngui.UINumericLabelHelper));
 o.default = s;
 cc._RF.pop();
 }, {} ],
@@ -912,7 +912,7 @@ this.hide();
 }
 };
 return r([ p ], e);
-}(fzgui.UIPopup));
+}(lngui.UIPopup));
 o.default = s;
 cc._RF.pop();
 }, {} ],
@@ -977,7 +977,7 @@ this.mCurrentIndex++;
 r([ l(cc.ScrollView) ], e.prototype, "scvHistory", void 0);
 r([ l(cc.Prefab) ], e.prototype, "prefHistoryCell", void 0);
 return r([ s ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 o.default = a;
 cc._RF.pop();
 }, {
@@ -1044,7 +1044,7 @@ this.mCurrentIndex++;
 r([ l(cc.ScrollView) ], e.prototype, "scvTop", void 0);
 r([ l(cc.Prefab) ], e.prototype, "prefTopCell", void 0);
 return r([ s ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 o.default = a;
 cc._RF.pop();
 }, {

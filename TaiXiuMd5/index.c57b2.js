@@ -212,20 +212,25 @@ e.prototype.onLoad = function() {
 i._instance = this;
 };
 e.prototype.connect = function() {
+var t = {
+url: "https://chat." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
+ip: "http://18.138.207.162:8092/signalr/negotiate",
+hub: "chatHub"
+};
 cc.systemEvent.off(s.TxMd5Const.CHAT_TAIXIU_SOCKET_EVENT, this.onResponeData, this);
 cc.systemEvent.on(s.TxMd5Const.CHAT_TAIXIU_SOCKET_EVENT, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
-this.mSignalr.connect(s.TxMd5Const.CHAT_TAIXIU_SOCKET_EVENT, "https://chat.dragonf1.xyz/signalr/negotiate", "chatHub", fzgui.UserManager.instance.mainUserInfo.cookie, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+this.mSignalr = new lngui.GateSignalR();
+this.mSignalr.connect(s.TxMd5Const.CHAT_TAIXIU_SOCKET_EVENT, t.url, t.hub, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 e.prototype.onEnable = function() {
-fzgui.EventDispatch.instance.add(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.connect();
 };
 e.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.closeWS();
-fzgui.ZLog.log("=====================CLOSE WS NOTI===============================");
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
 };
 e.prototype.onResponeData = function(t) {
 this.isEmpty(t) || t.s && "error" == t.s || this.onWebSocketCallback(t);
@@ -240,7 +245,7 @@ this.isConnect = !0;
 this.connectSuccess();
 this.registerChat();
 }
-t.R < 0 && fzgui.UITextManager.showCenterNotification("Lỗi " + t.R);
+t.R < 0 && lngui.UITextManager.showCenterNotification("Lỗi " + t.R);
 if (t.M && Array.isArray(t.M) && 0 != t.M.length) for (var e = t.M.length, i = 0; i < e; ++i) {
 var n = t.M[i];
 if (n.A && null != n.A[0] && null != n.A[0]) {
@@ -259,16 +264,16 @@ e.prototype.pingPong = function() {
 this.sendSignalR("PingPong", []);
 };
 e.prototype.connectSuccess = function() {
-fzgui.ZLog.log("Connect Sucesss");
+lngui.ZLog.log("Connect Sucesss");
 };
 e.prototype.closeWS = function() {
 cc.systemEvent.off(s.TxMd5Const.CHAT_TAIXIU_SOCKET_EVENT, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 e.prototype.sendSignalR = function(t, e) {
-fzgui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
+lngui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
 e = e || [];
 this.mSignalr && this.mSignalr.send(t, e);
 };
@@ -325,11 +330,11 @@ this.TxMd5tInputChat.string = "";
 }
 };
 e.prototype.requestListLastMessages = function() {
-var t = this, e = {
+var t = this, e = "https://chat." + lngui.ConfigManager.instance.ConfigInfo.Api + "/Service/GetListLastMessages?", i = {
 channel: "taixiumd5",
-token: fzgui.UserManager.instance.mainUserInfo.GameToken
-}, i = fzgui.Https.packDataForRequest(e);
-fzgui.Https.getPackData("https://chat.dragonf1.xyz/Service/GetListLastMessages?" + i, function(e) {
+token: lngui.UserManager.instance.mainUserInfo.GameToken
+}, n = lngui.Https.packDataForRequest(i);
+lngui.Https.getPackData(e + n, function(e) {
 e && t.listLastMessages(e);
 });
 };
@@ -345,7 +350,7 @@ if (void 0 !== e && void 0 !== i) {
 if (e.length > 0 && i.length > 0) {
 var n = i, o = cc.instantiate(this.templateMessage), a = t.n, c = e;
 o.active = !0;
-a = (a.localeCompare(fzgui.UserManager.instance.mainUserInfo.NickName), c);
+a = (a.localeCompare(lngui.UserManager.instance.mainUserInfo.NickName), c);
 o.getComponent(cc.Label).string = a + ": " + n;
 if (1 == t.IsVipTx) {
 o.getChildByName("lb_name").getComponent(cc.Label).node.active = !1;
@@ -689,7 +694,7 @@ e.prototype.refreshHistoryTurnTxMd5 = function() {
 this.lvTaiContent.removeAllChildren();
 this.lvXiuContent.removeAllChildren();
 for (var t = 0; t < 2; t++) if (t && 0 < this.m_dataHisoryTurnTai.length) for (var e = 0; e < this.m_dataHisoryTurnTai.length; e++) this.addItemHisoryTurnTxMd5(1, e); else if (!t && 0 < this.m_dataHisoryTurnXiu.length) for (e = 0; e < this.m_dataHisoryTurnXiu.length; e++) this.addItemHisoryTurnTxMd5(2, e);
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 };
 e.prototype.addItemHisoryTurnTxMd5 = function(t, e) {
 var i;
@@ -706,10 +711,10 @@ n.getChildByName("line").getComponent(cc.Sprite).spriteFrame = null;
 1 == t ? this.lvTaiContent.addChild(n) : this.lvXiuContent.addChild(n);
 };
 e.prototype.touchcopyMd5 = function() {
-fzgui.PlatformInterface.copy(this.m_coinData[0].MD5Result);
+lngui.PlatformInterface.copy(this.m_coinData[0].MD5Result);
 };
 e.prototype.touchcopyResult = function() {
-fzgui.PlatformInterface.copy(this.m_coinData[0].OriginalResult);
+lngui.PlatformInterface.copy(this.m_coinData[0].OriginalResult);
 };
 var i;
 e._instance = null;
@@ -731,7 +736,7 @@ a([ u(cc.Node) ], e.prototype, "lvTaiContent", void 0);
 a([ u(cc.Node) ], e.prototype, "lvXiuContent", void 0);
 a([ u(cc.Node) ], e.prototype, "template", void 0);
 return i = a([ l ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 i.default = h;
 cc._RF.pop();
 }, {
@@ -984,14 +989,14 @@ enumerable: !1,
 configurable: !0
 });
 e.prototype.onEnable = function() {
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 this.NodeChiTiet.active = !1;
 i._instance = this;
 c.default.instance.sendSignalR("GetJackpotHistory", []);
 };
 e.prototype.showTopJackpotTxMd5 = function(t) {
 if (t) {
-t && fzgui.UIWaitingLayout.hideWaiting();
+t && lngui.UIWaitingLayout.hideWaiting();
 this._data = t;
 for (var e = 0; e < t.length; e++) {
 var i = t[e], n = i.SessionTime, o = i.LocationName, a = (i.Result, i.Data[0].Username), c = i.Data[1].Username, r = i.Data[2].Username, l = i.Data[0].JackpotValue, u = i.Data[1].JackpotValue, h = i.Data[2].JackpotValue;
@@ -1207,7 +1212,7 @@ configurable: !0
 });
 e.prototype.onLoad = function() {
 i._instance = this;
-this.ketQuaEnd = fzgui.UserManager.instance.mainUserInfo.Money;
+this.ketQuaEnd = lngui.UserManager.instance.mainUserInfo.Money;
 };
 e.prototype.onEnable = function() {
 this.imgBat2.active = !1;
@@ -1284,8 +1289,8 @@ this.btnChat.node.getComponent(cc.Sprite).spriteFrame = this.spfBtnChatShow;
 }
 };
 e.prototype.onTouchAllIn = function() {
-fzgui.AudioManager.instance.playSfx(this.Click, 1);
-this.m_llBetValue = fzgui.UserManager.instance.mainUserInfo.Money;
+lngui.AudioManager.instance.playSfx(this.Click, 1);
+this.m_llBetValue = lngui.UserManager.instance.mainUserInfo.Money;
 if (this.m_llBetValue > r.TxMd5Const.MAX_BET_TAI_XIU) {
 this.m_llBetValue = r.TxMd5Const.MAX_BET_TAI_XIU;
 this.showMessage("Chỉ đặt cửa trong khoảng 10 đến " + r.TxMd5Const.formatNumber(r.TxMd5Const.MAX_BET_TAI_XIU));
@@ -1293,7 +1298,7 @@ this.showMessage("Chỉ đặt cửa trong khoảng 10 đến " + r.TxMd5Const.f
 this.m_nBetGate == r.TxMd5Const.BetGate.GATE_XIU ? this.ebInputBetXiu.string = r.TxMd5Const.formatNumber(this.m_llBetValue) : this.ebInputBetTai.string = r.TxMd5Const.formatNumber(this.m_llBetValue);
 };
 e.prototype.touchCancel = function() {
-fzgui.AudioManager.instance.playSfx(this.Click, 1);
+lngui.AudioManager.instance.playSfx(this.Click, 1);
 this.showMenhGiaPanel(!1);
 this.panelKeypad.active = !1;
 this.panelNumberBig.active = !1;
@@ -1321,7 +1326,7 @@ this.keyPadValue = r.TxMd5Const.formatNumber(this.m_llBetValue);
 this.m_nBetGate == r.TxMd5Const.BetGate.GATE_XIU ? this.ebInputBetXiu.string = r.TxMd5Const.formatNumber(this.m_llBetValue) : this.ebInputBetTai.string = r.TxMd5Const.formatNumber(this.m_llBetValue);
 };
 e.prototype.touchKeyNumber = function(t) {
-fzgui.AudioManager.instance.playSfx(this.Click, 1);
+lngui.AudioManager.instance.playSfx(this.Click, 1);
 var e = t.target.name;
 e = (e = e.replace(/btn_/g, "")).replace("10", "000");
 this.keyPadValue += e;
@@ -1386,7 +1391,7 @@ this.m_lblMoneyWin.node.active = !1;
 }
 };
 e.prototype.callBet = function() {
-fzgui.AudioManager.instance.playSfx(this.Click, 1);
+lngui.AudioManager.instance.playSfx(this.Click, 1);
 this.m_lblMessage.string = "";
 if (0 != this.m_llBetValue) if (this.m_llBetValue < r.TxMd5Const.MIN_BET && 0 != this.m_llBetValue) this.showMessage("Đặt cửa không hợp lệ."); else if (this.m_llBetValue > r.TxMd5Const.MAX_BET_TAI_XIU) this.showMessage("Mỗi lần đặt cửa tối đa không được vượt quá " + r.TxMd5Const.convertToK(r.TxMd5Const.MAX_BET_TAI_XIU) + " Gold"); else {
 if (this.m_nBetType == r.TxMd5Const.BetType.BET_GOLD) if (this.m_nBetGate == r.TxMd5Const.BetGate.GATE_TAI) {
@@ -1417,7 +1422,7 @@ this.m_nBetGate == r.TxMd5Const.BetGate.GATE_XIU ? this.ebInputBetXiu.string = "
 e.prototype.betOfAccount = function(t) {
 if (t.length) {
 var e = t[0], i = t[1];
-i >= 0 && fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, i);
+i >= 0 && lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, i);
 var n = e.length;
 if (n > 0) for (var o = 0; o < n; o++) {
 var a = e[o].LocationID, c = e[o].BetValue;
@@ -1430,10 +1435,10 @@ e.prototype.setBettedVal = function(t, e) {
 t == r.TxMd5Const.BetGate.GATE_TAI ? this.m_lblBetedValueTai.string = r.TxMd5Const.formatNumber(e) : t == r.TxMd5Const.BetGate.GATE_XIU && (this.m_lblBetedValueXiu.string = r.TxMd5Const.formatNumber(e));
 };
 e.prototype.setBalance = function(t, e) {
-e < 0 || fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, e);
+e < 0 || lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, e);
 };
 e.prototype.callSelectValue = function(t) {
-fzgui.AudioManager.instance.playSfx(this.Click, 1);
+lngui.AudioManager.instance.playSfx(this.Click, 1);
 var e = t.target.name;
 e = (e = (e = e.replace(/btn_/g, "")).replace("M", "000000")).replace("K", "000");
 this.m_llBetValue += parseInt(e);
@@ -1654,7 +1659,7 @@ this.showScore();
 e.prototype.startAnimation = function() {
 var t = this;
 this.m_lblTimer.node.active = !1;
-fzgui.AudioManager.instance.playSfx(this.XucXac, 1);
+lngui.AudioManager.instance.playSfx(this.XucXac, 1);
 this.SkeXucXac.node.active = !0;
 this.SkeXucXac.setAnimation(0, "Idle", !1);
 this.SkeXucXac.setCompleteListener(function() {
@@ -1681,10 +1686,10 @@ this.m_isTouchNan = !1;
 }
 this.m_imgResult.active = !1;
 if (this.m_nLocationIDWin == r.TxMd5Const.BetGate.GATE_TAI) {
-fzgui.AudioManager.instance.playSfx(this.KetQua, 1);
+lngui.AudioManager.instance.playSfx(this.KetQua, 1);
 this.m_imgEffectTai.node.active = !0;
 } else if (this.m_nLocationIDWin == r.TxMd5Const.BetGate.GATE_XIU) {
-fzgui.AudioManager.instance.playSfx(this.KetQua, 1);
+lngui.AudioManager.instance.playSfx(this.KetQua, 1);
 this.m_imgEffectXiu.node.active = !0;
 }
 null != this._callback && this._callback(r.TxMd5Const.RETURN_RESULT, this.m_nLocationIDWin);
@@ -1703,10 +1708,10 @@ this.m_imgDice2.node.active = !0;
 this.m_imgDice3.node.active = !0;
 this.m_imgResult.active = !1;
 if (this.m_nLocationIDWin == r.TxMd5Const.BetGate.GATE_TAI) {
-fzgui.AudioManager.instance.playSfx(this.KetQua, 1);
+lngui.AudioManager.instance.playSfx(this.KetQua, 1);
 this.m_imgEffectTai.node.active = !0;
 } else if (this.m_nLocationIDWin == r.TxMd5Const.BetGate.GATE_XIU) {
-fzgui.AudioManager.instance.playSfx(this.KetQua, 1);
+lngui.AudioManager.instance.playSfx(this.KetQua, 1);
 this.m_imgEffectXiu.node.active = !0;
 }
 null != this._callback && this._callback(r.TxMd5Const.RETURN_RESULT, this.m_nLocationIDWin);
@@ -1753,10 +1758,10 @@ u.on(cc.Node.EventType.TOUCH_END, this.touchShowHistoryTurn, this, !0);
 };
 e.prototype.touchShowHistoryTurn = function(t) {
 r.TxMd5Const.diceNode.GameSessionID = parseInt(t.target.name);
-fzgui.UIPopupManager.instance.showPopupFromPrefab(this.HisTurn);
+lngui.UIPopupManager.instance.showPopupFromPrefab(this.HisTurn);
 };
 e.prototype.touchTai = function() {
-fzgui.AudioManager.instance.playSfx(this.Click, 1);
+lngui.AudioManager.instance.playSfx(this.Click, 1);
 if (this.m_nGameStatus != r.TxMd5Const.GameStatus.WAITING) {
 this.m_nBetGate = r.TxMd5Const.BetGate.GATE_TAI;
 this.m_llBetValue = 0;
@@ -1771,7 +1776,7 @@ this.showMenhGiaPanel(!0);
 } else this.showMessage("Đợi ván mới");
 };
 e.prototype.touchXiu = function() {
-fzgui.AudioManager.instance.playSfx(this.Click, 1);
+lngui.AudioManager.instance.playSfx(this.Click, 1);
 if (this.m_nGameStatus != r.TxMd5Const.GameStatus.WAITING) {
 this.m_nBetGate = r.TxMd5Const.BetGate.GATE_XIU;
 this.m_llBetValue = 0;
@@ -1800,13 +1805,13 @@ this.m_lblMessage.string = "";
 };
 e.prototype.setEventRank = function() {};
 e.prototype.touchEvent = function() {
-var t = fzgui.EBundle_Name.LOBBY;
-fzgui.BundleManager.instance.getPrefabFromBundle("prefabs/Prefab_Event_BigBang", t, function(t) {
-fzgui.UIPopupManager.instance.showPopupFromPrefab(t);
+var t = lngui.EBundle_Name.LOBBY;
+lngui.BundleManager.instance.getPrefabFromBundle("prefabs/Prefab_Event_BigBang", t, function(t) {
+lngui.UIPopupManager.instance.showPopupFromPrefab(t);
 });
 };
 e.prototype.touchcopy = function() {
-fzgui.PlatformInterface.copy(this.lblMd5.string);
+lngui.PlatformInterface.copy(this.lblMd5.string);
 };
 var i;
 e._instance = null;
@@ -1936,21 +1941,26 @@ i._instance = this;
 };
 e.prototype.connect = function() {
 console.log("Connect");
+var t = {
+url: "https://txmd5." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
+hub: "txhub",
+ip: "http://18.138.207.162:9001/signalr/negotiate"
+};
 cc.systemEvent.off(r.TxMd5Const.ON_TAIXIU_SOCKET, this.onResponeData, this);
 cc.systemEvent.on(r.TxMd5Const.ON_TAIXIU_SOCKET, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
-this.mSignalr.connect(r.TxMd5Const.ON_TAIXIU_SOCKET, "https://txmd5.dragonf1.xyz/signalr/negotiate", "txhub", fzgui.UserManager.instance.mainUserInfo.cookie, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+this.mSignalr = new lngui.GateSignalR();
+this.mSignalr.connect(r.TxMd5Const.ON_TAIXIU_SOCKET, t.url, t.hub, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 e.prototype.onEnable = function() {
-fzgui.ZLog.log("=====================CONNECT WS TxMd5===============================");
-fzgui.EventDispatch.instance.add(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.ZLog.log("=====================CONNECT WS TxMd5===============================");
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.connect();
 };
 e.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.closeWS();
-fzgui.ZLog.log("=====================CLOSE WS NOTI===============================");
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
 };
 e.prototype.onResponeData = function(t) {
 this.isEmpty(t) || t.s && "error" == t.s || this.onWebSocketCallback(t);
@@ -1968,44 +1978,44 @@ this.sendSignalR("GetEventRank", []);
 }
 if (t.R < 0) switch (t.R) {
 case -207:
-fzgui.UITextManager.showCenterNotification("Đã hết thời gian đặt cửa");
+lngui.UITextManager.showCenterNotification("Đã hết thời gian đặt cửa");
 break;
 
 case -208:
-fzgui.UITextManager.showCenterNotification("Không thể đặt cả 2 cửa trong 1 phiên");
+lngui.UITextManager.showCenterNotification("Không thể đặt cả 2 cửa trong 1 phiên");
 break;
 
 case -212:
 case -213:
-fzgui.UITextManager.showCenterNotification("Giá trị nhập không hợp lệ");
+lngui.UITextManager.showCenterNotification("Giá trị nhập không hợp lệ");
 break;
 
 case -232:
-fzgui.UITextManager.showCenterNotification("Định dạng dữ liệu lỗi");
+lngui.UITextManager.showCenterNotification("Định dạng dữ liệu lỗi");
 break;
 
 case -99:
-fzgui.UITextManager.showCenterNotification("Lỗi hệ thống");
+lngui.UITextManager.showCenterNotification("Lỗi hệ thống");
 break;
 
 case -102:
-fzgui.UITextManager.showCenterNotification("Access Token không hợp lệ");
+lngui.UITextManager.showCenterNotification("Access Token không hợp lệ");
 break;
 
 case -51:
-fzgui.UITextManager.showCenterNotification("Số dư không đủ");
+lngui.UITextManager.showCenterNotification("Số dư không đủ");
 break;
 
 case -52:
-fzgui.UITextManager.showCenterNotification("Vui lòng bảo mật tài khoản trước khi cược");
+lngui.UITextManager.showCenterNotification("Vui lòng bảo mật tài khoản trước khi cược");
 break;
 
 case -48:
-fzgui.UITextManager.showCenterNotification("Game đã bị khóa, vui lòng mở khóa để tiếp tục giao dịch");
+lngui.UITextManager.showCenterNotification("Game đã bị khóa, vui lòng mở khóa để tiếp tục giao dịch");
 break;
 
 default:
-fzgui.UITextManager.showCenterNotification("Đặt cửa thất bại");
+lngui.UITextManager.showCenterNotification("Đặt cửa thất bại");
 }
 if (t.M && Array.isArray(t.M) && 0 != t.M.length && t.M != []) for (var e = t.M.length, i = 0; i < e; ++i) {
 var n = t.M[i];
@@ -2062,16 +2072,16 @@ e.prototype.pingPong = function() {
 this.sendSignalR("PingPong", []);
 };
 e.prototype.connectSuccess = function() {
-fzgui.ZLog.log("Connect Sucesss");
+lngui.ZLog.log("Connect Sucesss");
 };
 e.prototype.closeWS = function() {
 cc.systemEvent.off(r.TxMd5Const.ON_TAIXIU_SOCKET, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 e.prototype.sendSignalR = function(t, e) {
-fzgui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
+lngui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
 e = e || [];
 this.mSignalr && this.mSignalr.send(t, e);
 };
@@ -2212,15 +2222,15 @@ r.setPosition(this.getPosforSC1(o, n));
 this.pnlSC1.addChild(r);
 }
 for (var l = 0, u = 0, h = 0, p = 0, d = t.length - 1; d >= 0; d--) {
-var m = new cc.Node(), g = m.addComponent(cc.Sprite), f = null;
+var m = new cc.Node(), g = m.addComponent(cc.Sprite), T = null;
 if (t[d].DiceSum > 10) {
-f = 0 == d ? this.nutdenActive : this.nutdenIcon;
+T = 0 == d ? this.nutdenActive : this.nutdenIcon;
 h++;
 } else {
-f = 0 == d ? this.nuttrangActive : this.nuttrangIcon;
+T = 0 == d ? this.nuttrangActive : this.nuttrangIcon;
 p++;
 }
-f && (g.spriteFrame = f);
+T && (g.spriteFrame = T);
 m.setPosition(this.getPosforSCmoi(u, l));
 this.pnlSC2.addChild(m);
 if (5 == ++l) {
@@ -2242,7 +2252,7 @@ this.lbSc2Duoi.string = "Xỉu: " + p;
 this.lbSc2Tren.string = "Tài: " + h;
 this.lb1.string = "Phiên gần nhất (#" + t[0].GameSessionID + ") - ";
 t[0].DiceSum > 10 && (this.lb2.string = "Tổng " + t[0].DiceSum + ": (" + t[0].Dice1 + "-" + t[0].Dice2 + "-" + t[0].Dice3 + ")");
-for (var T = t.length > 19 ? 19 : t.length, _ = (o = 0, T > 19 ? 19 : T); _ >= 0; _--) {
+for (var f = t.length > 19 ? 19 : t.length, _ = (o = 0, f > 19 ? 19 : f); _ >= 0; _--) {
 var y = new cc.Node(), C = y.addComponent(cc.Sprite);
 t[_].DiceSum > 10 ? C.spriteFrame = this.ballBlack : C.spriteFrame = this.ballWhite;
 y.setPosition(this.getPosforSC2(o, t[_].DiceSum));
@@ -2271,10 +2281,10 @@ this.pnlXX3.addChild(B, 1);
 } else {
 var D = this.drawLine(this.getPosforSC2(o - 1, t[_ + 1].DiceSum), this.getPosforSC2(o, t[_].DiceSum), 4, cc.color(255, 239, 135));
 this.pnlXXT.addChild(D, 1);
-var E = this.drawLine(this.getPosforSC3(o - 1, t[_ + 1].Dice1), this.getPosforSC3(o, t[_].Dice1), 2, cc.color(250, 255, 2));
-this.pnlXX1.addChild(E, 1);
-var I = this.drawLine(this.getPosforSC3(o - 1, t[_ + 1].Dice2), this.getPosforSC3(o, t[_].Dice2), 2, cc.color(255, 93, 117));
-this.pnlXX2.addChild(I, 1);
+var I = this.drawLine(this.getPosforSC3(o - 1, t[_ + 1].Dice1), this.getPosforSC3(o, t[_].Dice1), 2, cc.color(250, 255, 2));
+this.pnlXX1.addChild(I, 1);
+var E = this.drawLine(this.getPosforSC3(o - 1, t[_ + 1].Dice2), this.getPosforSC3(o, t[_].Dice2), 2, cc.color(255, 93, 117));
+this.pnlXX2.addChild(E, 1);
 var A = this.drawLine(this.getPosforSC3(o - 1, t[_ + 1].Dice3), this.getPosforSC3(o, t[_].Dice3), 2, cc.color(97, 239, 251));
 this.pnlXX3.addChild(A, 1);
 }
@@ -2357,7 +2367,7 @@ a([ l(cc.SpriteFrame) ], e.prototype, "ballRed", void 0);
 a([ l(cc.SpriteFrame) ], e.prototype, "ballBlue", void 0);
 a([ l(cc.PageView) ], e.prototype, "pageViewSC", void 0);
 return a([ r ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 i.default = u;
 cc._RF.pop();
 }, {
@@ -2407,13 +2417,13 @@ enumerable: !1,
 configurable: !0
 });
 e.prototype.onEnable = function() {
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 i._instance = this;
 c.default.instance.sendSignalR("GetTopAccounts", [ s.TxMd5Const.BetType.BET_GOLD, s.TxMd5Const.GameID.TAI_XIU, 10 ]);
 };
 e.prototype.showTopAccountsTaiXiu = function(t) {
 if (t.length) {
-t && fzgui.UIWaitingLayout.hideWaiting();
+t && lngui.UIWaitingLayout.hideWaiting();
 for (var e = t.length, i = 0; i < e; i++) {
 var n = t[i], o = n.UserName, a = n.PrizeValue, c = cc.instantiate(this.template);
 c.position = new cc.Vec3(0, 0, 0);

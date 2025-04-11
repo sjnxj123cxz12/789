@@ -248,14 +248,14 @@ return o;
 o.prototype.connect = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 cc.systemEvent.on(this.mListenerKey, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
+this.mSignalr = new lngui.GateSignalR();
 this.mSignalr.connect(this.mListenerKey, s.default.api.negotiate, s.default.api.hub, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 o.prototype.closeWS = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 o.prototype.onWebSocketCallback = function(t) {
@@ -283,11 +283,11 @@ if (0 == i.localeCompare("joinGame")) n.onJoinGame(l[0]); else if (0 == i.locale
 l[0] = l[0].split("|");
 n.onUpdateJackpot(l[0]);
 } else if (0 == i.localeCompare("resultSpin")) n.onSpin(l[0]); else if (0 == i.localeCompare("honor")) {
-var s = fzgui.UIPopupManager.instance.find(a.default);
-s ? s.getComponent(a.default).initData(n.mSlot, l[0]) : fzgui.UIPopupManager.instance.showPopupFromPrefab(n.mSlot.preRank, function(t) {
+var s = lngui.UIPopupManager.instance.find(a.default);
+s ? s.getComponent(a.default).initData(n.mSlot, l[0]) : lngui.UIPopupManager.instance.showPopupFromPrefab(n.mSlot.preRank, function(t) {
 t.initData(o.mSlot, l[0]);
 });
-} else 0 == i.localeCompare("history") && fzgui.UIPopupManager.instance.showPopupFromPrefab(n.mSlot.preHistory, function(t) {
+} else 0 == i.localeCompare("history") && lngui.UIPopupManager.instance.showPopupFromPrefab(n.mSlot.preHistory, function(t) {
 t.init(o.mSlot);
 t.setData(null, l[0]);
 });
@@ -303,11 +303,11 @@ Slots: [ 9, 10, 8, 10, 9, 6, 8, 9, 10, 0, 3, 0, 0, 3, 0 ],
 PrizeLines: []
 }
 }, o = new r.DataSlot3x3x2Spin();
-o.accountId = fzgui.UserManager.instance.mainUserInfo.AccountID;
+o.accountId = lngui.UserManager.instance.mainUserInfo.AccountID;
 o.session = t.SpinData.SpinID;
 o.totalBet = t.SpinData.TotalBetValue;
 o.totalWin = t.SpinData.PayLinePrizeValue;
-o.userMoney = fzgui.UserManager.instance.mainUserInfo.Money + this.mSlot.mSlotRoom.getTotalBet();
+o.userMoney = lngui.UserManager.instance.mainUserInfo.Money + this.mSlot.mSlotRoom.getTotalBet();
 o.listItem = t.SpinData.Slots || [];
 o.listLineWin = [];
 this.mSlot.mSlotRoom.showError(o);
@@ -410,7 +410,7 @@ this.mSlot = t;
 };
 o.prototype.onBtnDetail = function() {
 var t = this;
-fzgui.UIPopupManager.instance.showPopupFromPrefab(this.prePopupHistoryDetail, function(o) {
+lngui.UIPopupManager.instance.showPopupFromPrefab(this.prePopupHistoryDetail, function(o) {
 o.setData(t.mDataHistory, t.mSlot);
 });
 };
@@ -476,7 +476,7 @@ l([ p(cc.Label) ], o.prototype, "txtSession", void 0);
 l([ p(cc.Label) ], o.prototype, "txtMoneyWin", void 0);
 l([ p([ r.default ]) ], o.prototype, "listItem", void 0);
 return l([ a ], o);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 e.default = h;
 cc._RF.pop();
 }, {
@@ -1160,7 +1160,7 @@ this.mIsStateInit = !0;
 this.mSlotEffect.init(this);
 this.mSlotMachine.init(this);
 }
-this.mUserMoney = fzgui.UserManager.instance.mainUserInfo.Money;
+this.mUserMoney = lngui.UserManager.instance.mainUserInfo.Money;
 };
 o.prototype.setDefault = function() {
 this.node.stopAllActions();
@@ -1174,7 +1174,7 @@ this.setDefault();
 this.mSlotMachine.spin();
 this.mState = s.SLOT_STATE.SPINING;
 this.mUserMoney -= this.getTotalBet();
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
 this.mSlotRoomUI.interactableBtnSpin(!1);
 this.mSlot.btn100.interactable = !1;
 this.mSlot.btn1k.interactable = !1;
@@ -1221,7 +1221,7 @@ this.nextSpin();
 };
 o.prototype.nextSpin = function() {
 this.mUserMoney = this.mDataSpin.userMoney;
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
 this.mState = s.SLOT_STATE.READY;
 clearTimeout(this.mTimeoutNextSpin);
 if (this.mIsAutoSpin || this.mIsQuickSpin) this.mTimeoutNextSpin = setTimeout(this.onBtnSpin.bind(this), this.mSlot.mSlotConfig.TIME_DELAY_NEXT_SPIN); else {
@@ -1321,7 +1321,7 @@ value: !0
 var i = function() {
 function t() {}
 t.api = {
-negotiate: "https://larva.dragonf1.xyz/signalr/negotiate",
+negotiate: "https://larva." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
 hub: "larvahub",
 AccountHistory: "https://w-godzilla.luxy.club/api/SuperNova/AccountHistory",
 GetHonorHistory: "https://w-godzilla.luxy.club/api/SuperNova/GetHonorHistory",
@@ -1389,9 +1389,9 @@ o.prototype.onDestroy = function() {
 t.prototype.onDestroy.call(this);
 };
 o.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.mSlotNetwork.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.mSlotNetwork.connect, this);
 this.mSlotNetwork.closeWS();
-fzgui.ZLog.log("=====================CLOSE WS NOTI===============================");
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
 };
 o.prototype.connectSuccess = function() {
 this.mRoomId = 1;

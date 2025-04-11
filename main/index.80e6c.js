@@ -512,8 +512,8 @@ e.prototype.getTryBalance = function() {
 return this.tryBalance;
 };
 e.prototype.updateRealBalance = function(t) {
-fzgui.UserManager.instance.mainUserInfo.Money = t;
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.UserManager.instance.mainUserInfo.Money = t;
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 this.balance = t;
 };
 e.prototype.updateBalance = function(t) {
@@ -700,8 +700,8 @@ tooltip: "Thời gian rung"
 r([ a({
 tooltip: "Sự bù trừ của rung động x, y"
 }) ], e.prototype, "intensity", void 0);
-return r([ s, u("FzGUI/Movement/Shake") ], e);
-}(fzgui.BhvShake);
+return r([ s, u("lngui/Movement/Shake") ], e);
+}(lngui.BhvShake);
 o.default = l;
 cc._RF.pop();
 }, {} ],
@@ -736,8 +736,8 @@ i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.activeAtStart = !0;
-e.movement = fzgui.MOVEMENT.vertical;
-e.wave = fzgui.WAVE.sine;
+e.movement = lngui.MOVEMENT.vertical;
+e.wave = lngui.WAVE.sine;
 e.period = 4;
 e.periodRandom = 0;
 e.periodOffset = 0;
@@ -750,11 +750,11 @@ r([ a({
 tooltip: "Được kích hoạt ở chức năng bắt đầu"
 }) ], e.prototype, "activeAtStart", void 0);
 r([ a({
-type: cc.Enum(fzgui.MOVEMENT),
+type: cc.Enum(lngui.MOVEMENT),
 tooltip: "Loại thuộc tính nào được sử dụng cho chuyển động chu kỳ sin"
 }) ], e.prototype, "movement", void 0);
 r([ a({
-type: cc.Enum(fzgui.WAVE),
+type: cc.Enum(lngui.WAVE),
 tooltip: "Dạng Sóng"
 }) ], e.prototype, "wave", void 0);
 r([ a({
@@ -775,8 +775,8 @@ tooltip: "Phạm vi dao động"
 r([ a({
 tooltip: "Giá trị ngẫu nhiên của biên độ dao động"
 }) ], e.prototype, "magnitudeRandom", void 0);
-return r([ s, u("FzGUI/Movement/Sine (Chức năng chuyển động)") ], e);
-}(fzgui.BhvSine));
+return r([ s, u("lngui/Movement/Sine (Chức năng chuyển động)") ], e);
+}(lngui.BhvSine));
 o.default = l;
 cc._RF.pop();
 }, {} ],
@@ -872,7 +872,7 @@ r([ a(cc.Label) ], e.prototype, "lbMsg", void 0);
 r([ a(cc.Boolean) ], e.prototype, "autoDownload", void 0);
 r([ a(cc.Boolean) ], e.prototype, "isClicked", void 0);
 return r([ s ], e);
-}(fzgui.BundleDownLoad);
+}(lngui.BundleDownLoad);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -991,7 +991,7 @@ this.capcha.node.active = !1;
 e.prototype.sendGetCaptcha = function(t) {
 this.mUrl = t;
 var e = this;
-fzgui.Https.get(t, function(t) {
+lngui.Https.get(t, function(t) {
 var o = t;
 e.capchaId = o[0];
 var n = o[1];
@@ -1069,7 +1069,7 @@ r([ u(cc.Prefab) ], e.prototype, "POPUP_COMMON", void 0);
 r([ u(cc.Prefab) ], e.prototype, "TOOLTIP_MESSAGE", void 0);
 r([ u(c.default) ], e.prototype, "listPrefabDefined", void 0);
 return r([ a ], e);
-}(fzgui.CommonAssetDefined);
+}(lngui.CommonAssetDefined);
 o.default = l;
 cc._RF.pop();
 }, {
@@ -2595,7 +2595,7 @@ r([ a(cc.Label) ], e.prototype, "label", void 0);
 r([ a(cc.Sprite) ], e.prototype, "sprite", void 0);
 r([ a(cc.Toggle) ], e.prototype, "toggle", void 0);
 return r([ s() ], e);
-}(fzgui.DropDownItem);
+}(lngui.DropDownItem);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -2635,7 +2635,7 @@ return e;
 r([ a(cc.String) ], e.prototype, "optionString", void 0);
 r([ a(cc.SpriteFrame) ], e.prototype, "optionSf", void 0);
 return r([ s("DropDownOptionData") ], e);
-}(fzgui.DropDownOptionData);
+}(lngui.DropDownOptionData);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -2683,7 +2683,7 @@ r([ u(cc.Label) ], e.prototype, "labelItem", void 0);
 r([ u(cc.Sprite) ], e.prototype, "spriteItem", void 0);
 r([ u([ c.default ]) ], e.prototype, "optionDatas", void 0);
 return r([ a() ], e);
-}(fzgui.DropDown);
+}(lngui.DropDown);
 o.default = l;
 cc._RF.pop();
 }, {
@@ -2725,7 +2725,7 @@ return e;
 r([ a(cc.AudioClip) ], e.prototype, "audioClick", void 0);
 r([ a(cc.AudioClip) ], e.prototype, "musicPlay", void 0);
 return r([ s ], e);
-}(fzgui.ESoundDefined);
+}(lngui.ESoundDefined);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -3002,7 +3002,7 @@ r([ a(cc.Node) ], e.prototype, "nWidgetShowJackpot", void 0);
 r([ a(cc.Node) ], e.prototype, "nLayerMiniGame", void 0);
 r([ a(cc.String) ], e.prototype, "gameName", void 0);
 return r([ s ], e);
-}(fzgui.GameCoreManager);
+}(lngui.GameCoreManager);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -5381,40 +5381,70 @@ value: !0
 var c = cc._decorator, s = c.ccclass, a = (c.property, function(t) {
 i(e, t);
 function e() {
-return null !== t && t.apply(this, arguments) || this;
+var e = null !== t && t.apply(this, arguments) || this;
+e.UrlConfig = "https://tai.dsrcgoms.xyz/hit/config.json";
+e.Retry = 5;
+e.DefaultData = {
+Api: "mango1s.xyz",
+LinkTai: "https://tai.mango1s.xyz/hit/",
+Gate: "hit.club",
+BotOtp: "https://t.me/HitFunOtpBot",
+LiveChat: "https://secure.livechatinc.com/licence/18285171/v2/open_chat.cgi",
+VideoLiveTX: "https://gc-api.tieusi.online/live?gate=hit&game=taixiu&active=false",
+VideoLiveXD: "https://gc-api.tieusi.online/live?gate=hit&game=xocdia&active=false",
+HotUpdate: "1"
+};
+return e;
 }
 e.prototype.onLoad = function() {
 var t = this;
-fzgui.UIWaitingLayout.showWaiting();
-fzgui.Https.post("https://api.dragonf1.xyz/Authen/login", {
+this.GetConfig(this.UrlConfig);
+lngui.UIWaitingLayout.showWaiting();
+var e = {
 UserName: "luffytest",
 Password: "4297f44b13955235245b2497399d7a93",
+passraw: "123123",
 IpAddress: "",
 DeviceName: "Chrome",
 PlatformId: 4,
 UIID: "",
-gate: "789.club",
-MerchantId: 1002
-}, function(e, o) {
+MerchantId: 1002,
+gate: "hit.club",
+Sid: window.md5("luffytest".toLowerCase() + "zxc" + "123123".toLowerCase())
+};
+lngui.Https.post("https://api.dsrcgoms.xyz/user/login", e, function(e, o) {
 200 == e && t.onLoginSuccess(o);
 });
 };
 e.prototype.onLoginSuccess = function(t) {
 console.log(t);
-fzgui.UserManager.instance.mainUserInfo = t;
-fzgui.UserManager.instance.mainUserInfo.UserName = "linhnhicute";
-fzgui.UserManager.instance.mainUserInfo.PassWord = "4297f44b13955235245b2497399d7a93";
+lngui.UserManager.instance.mainUserInfo = t;
+lngui.UserManager.instance.mainUserInfo.UserName = "linhnhicute";
+lngui.UserManager.instance.mainUserInfo.PassWord = "4297f44b13955235245b2497399d7a93";
 this.destroy();
-this.setCookie(fzgui.Https.xhr);
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS);
-fzgui.UIWaitingLayout.hideWaiting();
+this.setCookie(lngui.Https.xhr);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.LOGIN_SUCCESS);
+lngui.UIWaitingLayout.hideWaiting();
 };
 e.prototype.setCookie = function(t) {
 cc.log("setCookie " + document.cookie);
 if (cc.sys.isNative) {
 t.getResponseHeader("Set-Cookie").split(";");
-fzgui.UserManager.instance.mainUserInfo.cookie = "";
+lngui.UserManager.instance.mainUserInfo.cookie = "";
 }
+};
+e.prototype.GetConfig = function(t) {
+var e = this;
+lngui.Https.get(t, function(t) {
+if (t) {
+lngui.ConfigManager.instance.ConfigInfo = t;
+console.log("Ngon rồi đại vương ơi!");
+} else if (e.Retry > 0) {
+e.GetConfig(e.UrlConfig);
+e.Retry--;
+console.log("Đang thử lại đại vương ơi!");
+} else lngui.ConfigManager.instance.ConfigInfo = e.DefaultData;
+});
 };
 return r([ s ], e);
 }(cc.Component));
@@ -5564,7 +5594,7 @@ i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.tabIndex = 0;
-e.guiType = fzgui.GUI_TYPE.POPUP;
+e.guiType = lngui.GUI_TYPE.POPUP;
 e.featurePrefab = null;
 e.isLoadFromUrl = !0;
 e.featurePrefabUrl = "";
@@ -5574,7 +5604,7 @@ return e;
 }
 r([ a ], e.prototype, "tabIndex", void 0);
 r([ a({
-type: cc.Enum(fzgui.GUI_TYPE)
+type: cc.Enum(lngui.GUI_TYPE)
 }) ], e.prototype, "guiType", void 0);
 r([ a({
 type: cc.Prefab,
@@ -5595,7 +5625,7 @@ return this.isLoadFromUrl;
 }) ], e.prototype, "bundleName", void 0);
 r([ a ], e.prototype, "isNotLogin", void 0);
 return r([ s ], e);
-}(fzgui.LoginFeature);
+}(lngui.LoginFeature);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -5969,7 +5999,7 @@ this.nBg.runAction(t);
 };
 r([ a(cc.Node) ], e.prototype, "nBg", void 0);
 return r([ s ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -6013,7 +6043,7 @@ e.exports = {
 HOST_U: "",
 IS_APPSTORE: !1,
 PORTAL: "test",
-HOST: fzgui.ConfigManager.instance.ConfigInfo.Api,
+HOST: lngui.ConfigManager.instance.ConfigInfo.Api,
 FB_LOGIN_URL: "http://fbook.hit-portal.site/Home/FbLogin",
 PING_TIME: 5,
 RECONNECT_TIME: 5
@@ -6211,10 +6241,10 @@ e.prototype.setPopupSlotsView = function(t) {
 return this.popupSlotsView = t;
 };
 e.prototype.showSlotsMessage = function(t) {
-return fzgui.UITextManager.showCenterNotification(t);
+return lngui.UITextManager.showCenterNotification(t);
 };
 e.prototype.showSlotsWin = function(t) {
-return fzgui.UITextManager.showCenterNotification(t);
+return lngui.UITextManager.showCenterNotification(t);
 };
 e.prototype.init = function() {
 return this.popupView.init();
@@ -6231,10 +6261,10 @@ e.prototype.getOTPPopup = function() {
 return this.popupView.getOTPPopup();
 };
 e.prototype.showMessage = function(t) {
-return fzgui.UIPopupManager.instance.showPopup(t);
+return lngui.UIPopupManager.instance.showPopup(t);
 };
 e.prototype.showMessageError = function(t) {
-return fzgui.UIPopupManager.instance.showPopup(t);
+return lngui.UIPopupManager.instance.showPopup(t);
 };
 e.prototype.showPopupOTP = function(t, e, o) {
 return this.popupView.showPopupOTP(t, e, o);
@@ -6252,10 +6282,10 @@ e.prototype.showPopupRequireLogin = function(t) {
 return this.popupView.showPopupRequireLogin(t);
 };
 e.prototype.showPopupOtherDevice = function(t, e) {
-return fzgui.UIPopupManager.instance.showPopup(t, e);
+return lngui.UIPopupManager.instance.showPopup(t, e);
 };
 e.prototype.showMiniMessage = function(t) {
-return fzgui.UITextManager.showCenterNotification(t);
+return lngui.UITextManager.showCenterNotification(t);
 };
 e.prototype.showPopupRequireEnableLocation = function() {
 return this.popupView.showPopupRequireEnableLocation();
@@ -6683,7 +6713,7 @@ cc.director.loadScene("lobby");
 } else location.reload();
 },
 quitRoomClicked: function() {
-fzgui.UIScreenManager.instance.popToRootScreen();
+lngui.UIScreenManager.instance.popToRootScreen();
 this.closePopup();
 },
 openSettingsClicked: function() {
@@ -6784,11 +6814,11 @@ e.prototype.sendRequest = function(t, e, n) {
 var i, r;
 try {
 console.log("===> ServerConnector.prototype.sendRequest=---\x3e" + o.HOST);
-var c = fzgui.ConfigManager.instance.ConfigInfo.Api;
+var c = lngui.ConfigManager.instance.ConfigInfo.Api;
 r = cc.loader.getXMLHttpRequest();
 var s = "https://" + t + c + "/" + e;
 console.log("urlRequest =====" + s);
-fzgui.UserManager.instance.mainUserInfo.GameToken && (s.includes("?") ? s += "&token=" + encodeURIComponent(fzgui.UserManager.instance.mainUserInfo.GameToken) : s += "?token=" + encodeURIComponent(fzgui.UserManager.instance.mainUserInfo.GameToken));
+lngui.UserManager.instance.mainUserInfo.GameToken && (s.includes("?") ? s += "&token=" + encodeURIComponent(lngui.UserManager.instance.mainUserInfo.GameToken) : s += "?token=" + encodeURIComponent(lngui.UserManager.instance.mainUserInfo.GameToken));
 console.log(s);
 r.timeout = 6e4;
 r.open("GET", s);
@@ -6805,11 +6835,11 @@ return console.log("Caught Exception: " + i.message);
 e.prototype.sendRequestPOST = function(t, e, o, n) {
 var i, r;
 try {
-var c = fzgui.ConfigManager.instance.ConfigInfo.Api;
-t === cc.SubdomainName.TREASURE && ("ibom2.cc" !== c && "ibom3.cc" !== c || (c = fzgui.ConfigManager.instance.ConfigInfo.Api));
+var c = lngui.ConfigManager.instance.ConfigInfo.Api;
+t === cc.SubdomainName.TREASURE && ("ibom2.cc" !== c && "ibom3.cc" !== c || (c = lngui.ConfigManager.instance.ConfigInfo.Api));
 r = cc.loader.getXMLHttpRequest();
 var s = "https://" + t + c + "/" + e;
-cc.ServerConnector.getInstance().getToken() && (s.includes("?"), s += "&token=" + encodeURIComponent(fzgui.UserManager.instance.mainUserInfo.GameToken));
+cc.ServerConnector.getInstance().getToken() && (s.includes("?"), s += "&token=" + encodeURIComponent(lngui.UserManager.instance.mainUserInfo.GameToken));
 r.timeout = 6e4;
 r.open(cc.RequestType.POST, s);
 r.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
@@ -7476,7 +7506,7 @@ e.prototype.disconnect = function() {
 if (this.mSignalr) {
 this.mSignalr.close();
 this.mSignalr = void 0;
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 }
 };
 e.prototype.isEmpty = function(t) {
@@ -7741,7 +7771,7 @@ r([ a(cc.Integer) ], e.prototype, "spacing", void 0);
 r([ a(cc.Integer) ], e.prototype, "spawnCount", void 0);
 r([ a(cc.Integer) ], e.prototype, "bufferZone", void 0);
 return r([ s ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -8218,7 +8248,7 @@ r([ a(cc.Integer) ], e.prototype, "spacing", void 0);
 r([ a(cc.Integer) ], e.prototype, "spawnCount", void 0);
 r([ a(cc.Integer) ], e.prototype, "bufferZone", void 0);
 return r([ s ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -8414,7 +8444,7 @@ e.btnSound = null;
 return e;
 }
 e.prototype.updatePot = function(t) {
-this.txtPot && t && t > 0 && fzgui.UINumericLabelHelper.scheduleForLabel(this.txtPot, t, .3);
+this.txtPot && t && t > 0 && lngui.UINumericLabelHelper.scheduleForLabel(this.txtPot, t, .3);
 };
 e.prototype.updateSession = function(t) {
 if (t && this.txtSession) {
@@ -8702,8 +8732,8 @@ e.prototype.onBtnGuide = function() {};
 e.prototype.onBtnHistory = function() {};
 e.prototype.onBtnRank = function() {};
 e.prototype.onBtnSelectLine = function() {
-fzgui.BundleManager.instance.getPrefabFromBundle("games/slotgame/slotpubg/prefabs/slot3SelectLine", "SlotRungRam", function(t) {
-fzgui.UIPopupManager.instance.showPopupFromPrefab(t);
+lngui.BundleManager.instance.getPrefabFromBundle("games/slotgame/slotpubg/prefabs/slot3SelectLine", "SlotRungRam", function(t) {
+lngui.UIPopupManager.instance.showPopupFromPrefab(t);
 });
 };
 e.prototype.onBtnAddBet = function() {};
@@ -9168,7 +9198,7 @@ r([ a(cc.Toggle) ], e.prototype, "btnTatCa", void 0);
 r([ a(cc.Toggle) ], e.prototype, "btnBoChon", void 0);
 r([ a([ cc.Toggle ]) ], e.prototype, "listLineItem", void 0);
 return r([ s ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -9256,8 +9286,8 @@ this.onBtnBack();
 }
 };
 e.prototype.onBtnBack = function() {
-fzgui.GameCoreManager.instance.onBackToLobby();
-this.mSlot.mIsTrail || fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.GameCoreManager.instance.onBackToLobby();
+this.mSlot.mIsTrail || lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 };
 e.prototype.onSelectRoom = function(t) {
 for (var e = 0; e < this.listRoom.length; e++) this.listRoom[e].interactable = !1;
@@ -9359,7 +9389,7 @@ this.onBtnBack();
 }
 };
 e.prototype.onBtnBack = function() {
-this.mSlot.mIsTrail || fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+this.mSlot.mIsTrail || lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 };
 e.prototype.onSelectRoom = function(t) {
 for (var e = 0; e < this.listRoom.length; e++) this.listRoom[e].interactable = !1;
@@ -10656,14 +10686,14 @@ var c = cc._decorator, s = c.ccclass, a = c.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
-e.type = fzgui.eAutoLayoutType.Raw;
+e.type = lngui.eAutoLayoutType.Raw;
 return e;
 }
 r([ a(cc.Enum({
-type: cc.Enum(fzgui.eAutoLayoutType)
+type: cc.Enum(lngui.eAutoLayoutType)
 })) ], e.prototype, "type", void 0);
 return r([ s ], e);
-}(fzgui.UIAutoLayout);
+}(lngui.UIAutoLayout);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -10703,7 +10733,7 @@ return e;
 r([ a(cc.SpriteFrame) ], e.prototype, "listSprite", void 0);
 r([ a(cc.Label) ], e.prototype, "lbAction", void 0);
 return r([ s ], e);
-}(fzgui.UIButtonCommon);
+}(lngui.UIButtonCommon);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -10751,7 +10781,7 @@ r([ a ], e.prototype, "propagateTouchEvent", void 0);
 r([ a ], e.prototype, "dragScale", void 0);
 r([ a ], e.prototype, "disableScrollViewWhileDrag", void 0);
 return r([ s ], e);
-}(fzgui.UIDragDrop);
+}(lngui.UIDragDrop);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -10793,7 +10823,7 @@ r([ a ], e.prototype, "draggable", void 0);
 r([ a ], e.prototype, "backToStartPosition", void 0);
 r([ a ], e.prototype, "autoFitEdge", void 0);
 return r([ s ], e);
-}(fzgui.UIDraggable);
+}(lngui.UIDraggable);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -10839,7 +10869,7 @@ r([ a ], e.prototype, "radius", void 0);
 r([ a ], e.prototype, "touchAnyWhereToStart", void 0);
 r([ a ], e.prototype, "followFinger", void 0);
 return r([ s ], e);
-}(fzgui.UIJoystick);
+}(lngui.UIJoystick);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -10874,7 +10904,7 @@ function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
 return r([ s ], e);
-}(fzgui.UINumericLabelHelper));
+}(lngui.UINumericLabelHelper));
 o.default = a;
 cc._RF.pop();
 }, {} ],
@@ -10959,7 +10989,7 @@ r([ a(cc.Node) ], e.prototype, "nCustomView", void 0);
 r([ a(cc.Node) ], e.prototype, "nActionContainer", void 0);
 r([ a(cc.Button) ], e.prototype, "btnClose", void 0);
 return r([ s ], e);
-}(fzgui.UIPopupCommon);
+}(lngui.UIPopupCommon);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -10994,7 +11024,7 @@ function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
 return r([ s ], e);
-}(fzgui.UIPopup));
+}(lngui.UIPopup));
 o.default = a;
 cc._RF.pop();
 }, {} ],
@@ -11032,7 +11062,7 @@ return e;
 }
 r([ a(cc.Boolean) ], e.prototype, "hideCurScreenOnShow", void 0);
 return r([ s ], e);
-}(fzgui.UIScreen);
+}(lngui.UIScreen);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -11066,19 +11096,19 @@ i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.handle = null;
-e.direction = fzgui.UIScrollBarDirection.VERTICAL;
+e.direction = lngui.UIScrollBarDirection.VERTICAL;
 e.enableAutoHide = !0;
 e.autoHideTime = 1;
 return e;
 }
 r([ a(cc.Sprite) ], e.prototype, "handle", void 0);
 r([ a({
-type: cc.Enum(fzgui.UIScrollBarDirection)
+type: cc.Enum(lngui.UIScrollBarDirection)
 }) ], e.prototype, "direction", void 0);
 r([ a(cc.Boolean) ], e.prototype, "enableAutoHide", void 0);
 r([ a(cc.Float) ], e.prototype, "autoHideTime", void 0);
 return r([ s ], e);
-}(fzgui.UIScrollBar);
+}(lngui.UIScrollBar);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -11158,7 +11188,7 @@ var c = t("./UIScrollBar"), s = cc._decorator, a = s.ccclass, u = s.property, l 
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
-e.direction = fzgui.UIScrollDirection.BOTH;
+e.direction = lngui.UIScrollDirection.BOTH;
 e.zoomScaleEnabled = !1;
 e.maxScale = 1;
 e.minScale = 1;
@@ -11175,7 +11205,7 @@ e.autoClearAutoZoomScale = !1;
 return e;
 }
 r([ u({
-type: cc.Enum(fzgui.UIScrollDirection)
+type: cc.Enum(lngui.UIScrollDirection)
 }) ], e.prototype, "direction", void 0);
 r([ u ], e.prototype, "zoomScaleEnabled", void 0);
 r([ u ], e.prototype, "maxScale", void 0);
@@ -11191,7 +11221,7 @@ r([ u(c.default) ], e.prototype, "verticalScrollBar", void 0);
 r([ u ], e.prototype, "autoClearAutoScroll", void 0);
 r([ u ], e.prototype, "autoClearAutoZoomScale", void 0);
 return r([ a ], e);
-}(fzgui.UIScrollView);
+}(lngui.UIScrollView);
 o.default = l;
 cc._RF.pop();
 }, {
@@ -11231,7 +11261,7 @@ return e;
 }
 e.prototype.onEnable = function() {
 this.node.getComponent(cc.Button) || this.node.addComponent(cc.Button);
-this.node.on(fzgui.ControlEvent.Click, this._onClicked, this);
+this.node.on(lngui.ControlEvent.Click, this._onClicked, this);
 this.node.on(cc.Node.EventType.MOUSE_ENTER, function() {
 this.node.runAction(cc.scaleTo(.2, .92, .92));
 }.bind(this));
@@ -11240,10 +11270,10 @@ this.node.runAction(cc.scaleTo(.2, 1, 1));
 }.bind(this));
 };
 e.prototype.onDisable = function() {
-this.node.off(fzgui.ControlEvent.Click, this._onClicked, this);
+this.node.off(lngui.ControlEvent.Click, this._onClicked, this);
 };
 e.prototype._onClicked = function() {
-fzgui.UIPopupManager.instance.showPopup(this.text);
+lngui.UIPopupManager.instance.showPopup(this.text);
 };
 r([ a ], e.prototype, "text", void 0);
 return r([ s ], e);
@@ -11291,7 +11321,7 @@ r([ u(cc.Node) ], e.prototype, "content", void 0);
 r([ u(cc.Label) ], e.prototype, "titleLabel", void 0);
 r([ u(cc.Integer) ], e.prototype, "startIndex", void 0);
 return r([ a ], e);
-}(fzgui.UITabbarController);
+}(lngui.UITabbarController);
 o.default = l;
 cc._RF.pop();
 }, {
@@ -11339,7 +11369,7 @@ r([ a(cc.Node) ], e.prototype, "nodeContent", void 0);
 r([ a(cc.Node) ], e.prototype, "nodeOn", void 0);
 r([ a(cc.Node) ], e.prototype, "nodeOff", void 0);
 return r([ s ], e);
-}(fzgui.UITabbarItem);
+}(lngui.UITabbarItem);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -11383,7 +11413,7 @@ r([ a(cc.Node) ], e.prototype, "nDeselected", void 0);
 r([ a(cc.Node) ], e.prototype, "nHighlighted", void 0);
 r([ a(cc.Node) ], e.prototype, "nUnhighlighted", void 0);
 return r([ s ], e);
-}(fzgui.UITableCell);
+}(lngui.UITableCell);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -11416,7 +11446,7 @@ var c = t("./UIScrollBar"), s = cc._decorator, a = s.ccclass, u = s.property, l 
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
-e.direction = fzgui.UIScrollDirection.BOTH;
+e.direction = lngui.UIScrollDirection.BOTH;
 e.zoomScaleEnabled = !1;
 e.maxScale = 1;
 e.minScale = 1;
@@ -11430,8 +11460,8 @@ e.horizontalScrollBar = null;
 e.verticalScrollBar = null;
 e.autoClearAutoScroll = !1;
 e.autoClearAutoZoomScale = !1;
-e.fillOrder = fzgui.UITableViewFillOrder.LEFT_TO_RIGHT__TOP_TO_BOTTOM;
-e.interactionMode = fzgui.UITableViewInteractionMode.NONE;
+e.fillOrder = lngui.UITableViewFillOrder.LEFT_TO_RIGHT__TOP_TO_BOTTOM;
+e.interactionMode = lngui.UITableViewInteractionMode.NONE;
 e.cellPagingEnabled = !1;
 e.numberOfPagingCell = 1;
 e.tableCell = null;
@@ -11439,7 +11469,7 @@ e.nEmpty = null;
 return e;
 }
 r([ u({
-type: cc.Enum(fzgui.UIScrollDirection)
+type: cc.Enum(lngui.UIScrollDirection)
 }) ], e.prototype, "direction", void 0);
 r([ u ], e.prototype, "zoomScaleEnabled", void 0);
 r([ u ], e.prototype, "maxScale", void 0);
@@ -11455,17 +11485,17 @@ r([ u(c.default) ], e.prototype, "verticalScrollBar", void 0);
 r([ u ], e.prototype, "autoClearAutoScroll", void 0);
 r([ u ], e.prototype, "autoClearAutoZoomScale", void 0);
 r([ u({
-type: cc.Enum(fzgui.UITableViewFillOrder)
+type: cc.Enum(lngui.UITableViewFillOrder)
 }) ], e.prototype, "fillOrder", void 0);
 r([ u({
-type: cc.Enum(fzgui.UITableViewInteractionMode)
+type: cc.Enum(lngui.UITableViewInteractionMode)
 }) ], e.prototype, "interactionMode", void 0);
 r([ u(cc.Boolean) ], e.prototype, "cellPagingEnabled", void 0);
 r([ u(cc.Integer) ], e.prototype, "numberOfPagingCell", void 0);
 r([ u(cc.Prefab) ], e.prototype, "tableCell", void 0);
 r([ u(cc.Node) ], e.prototype, "nEmpty", void 0);
 return r([ a ], e);
-}(fzgui.UITableView);
+}(lngui.UITableView);
 o.default = l;
 cc._RF.pop();
 }, {
@@ -11502,7 +11532,7 @@ function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
 return r([ s ], e);
-}(fzgui.UITextManager));
+}(lngui.UITextManager));
 o.default = a;
 cc._RF.pop();
 }, {} ],
@@ -11554,7 +11584,7 @@ r([ u({
 type: cc.Enum(c)
 }) ], e.prototype, "hideType", void 0);
 return r([ a ], e);
-}(fzgui.UITooltipHandler);
+}(lngui.UITooltipHandler);
 o.default = l;
 cc._RF.pop();
 }, {} ],
@@ -11590,17 +11620,17 @@ var e = null !== t && t.apply(this, arguments) || this;
 e.message = "";
 e.prefab = null;
 e.target = null;
-e.showType = fzgui.TooltipShowType.OnLongClick;
+e.showType = lngui.TooltipShowType.OnLongClick;
 return e;
 }
 r([ a ], e.prototype, "message", void 0);
 r([ a(cc.Prefab) ], e.prototype, "prefab", void 0);
 r([ a(cc.Node) ], e.prototype, "target", void 0);
 r([ a({
-type: cc.Enum(fzgui.TooltipShowType)
+type: cc.Enum(lngui.TooltipShowType)
 }) ], e.prototype, "showType", void 0);
 return r([ s ], e);
-}(fzgui.UITooltipListener);
+}(lngui.UITooltipListener);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -11635,7 +11665,7 @@ function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
 return r([ s ], e);
-}(fzgui.UITooltipManager));
+}(lngui.UITooltipManager));
 o.default = a;
 cc._RF.pop();
 }, {} ],
@@ -11717,7 +11747,7 @@ return e;
 r([ a(cc.Component.EventHandler) ], e.prototype, "touchEvent", void 0);
 r([ a ], e.prototype, "longClickEnabled", void 0);
 return r([ s ], e);
-}(fzgui.UITouchHandler);
+}(lngui.UITouchHandler);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -11780,7 +11810,7 @@ r([ a(cc.Node) ], e.prototype, "nFaded", void 0);
 r([ a(cc.Node) ], e.prototype, "nLoading", void 0);
 r([ a(cc.Label) ], e.prototype, "lbPercent", void 0);
 return r([ s ], e);
-}(fzgui.UIWaitingLayout);
+}(lngui.UIWaitingLayout);
 o.default = u;
 cc._RF.pop();
 }, {} ],
@@ -11815,7 +11845,7 @@ function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
 return r([ s ], e);
-}(fzgui.UIWindow));
+}(lngui.UIWindow));
 o.default = a;
 cc._RF.pop();
 }, {} ],
@@ -12298,71 +12328,71 @@ for (var o = 0; o < 16; o++) {
 var n = e + o, i = t[n];
 t[n] = 16711935 & (i << 8 | i >>> 24) | 4278255360 & (i << 24 | i >>> 8);
 }
-var r = this._hash.words, c = t[e + 0], a = t[e + 1], f = t[e + 2], d = t[e + 3], _ = t[e + 4], y = t[e + 5], g = t[e + 6], m = t[e + 7], b = t[e + 8], S = t[e + 9], T = t[e + 10], I = t[e + 11], v = t[e + 12], E = t[e + 13], O = t[e + 14], R = t[e + 15], A = r[0], N = r[1], C = r[2], M = r[3];
-A = u(A, N, C, M, c, 7, s[0]);
-M = u(M, A, N, C, a, 12, s[1]);
-C = u(C, M, A, N, f, 17, s[2]);
-N = u(N, C, M, A, d, 22, s[3]);
-A = u(A, N, C, M, _, 7, s[4]);
-M = u(M, A, N, C, y, 12, s[5]);
-C = u(C, M, A, N, g, 17, s[6]);
-N = u(N, C, M, A, m, 22, s[7]);
-A = u(A, N, C, M, b, 7, s[8]);
-M = u(M, A, N, C, S, 12, s[9]);
-C = u(C, M, A, N, T, 17, s[10]);
-N = u(N, C, M, A, I, 22, s[11]);
-A = u(A, N, C, M, v, 7, s[12]);
-M = u(M, A, N, C, E, 12, s[13]);
-C = u(C, M, A, N, O, 17, s[14]);
-A = l(A, N = u(N, C, M, A, R, 22, s[15]), C, M, a, 5, s[16]);
-M = l(M, A, N, C, g, 9, s[17]);
-C = l(C, M, A, N, I, 14, s[18]);
-N = l(N, C, M, A, c, 20, s[19]);
-A = l(A, N, C, M, y, 5, s[20]);
-M = l(M, A, N, C, T, 9, s[21]);
-C = l(C, M, A, N, R, 14, s[22]);
-N = l(N, C, M, A, _, 20, s[23]);
-A = l(A, N, C, M, S, 5, s[24]);
-M = l(M, A, N, C, O, 9, s[25]);
-C = l(C, M, A, N, d, 14, s[26]);
-N = l(N, C, M, A, b, 20, s[27]);
-A = l(A, N, C, M, E, 5, s[28]);
-M = l(M, A, N, C, f, 9, s[29]);
-C = l(C, M, A, N, m, 14, s[30]);
-A = p(A, N = l(N, C, M, A, v, 20, s[31]), C, M, y, 4, s[32]);
-M = p(M, A, N, C, b, 11, s[33]);
-C = p(C, M, A, N, I, 16, s[34]);
-N = p(N, C, M, A, O, 23, s[35]);
-A = p(A, N, C, M, a, 4, s[36]);
-M = p(M, A, N, C, _, 11, s[37]);
-C = p(C, M, A, N, m, 16, s[38]);
-N = p(N, C, M, A, T, 23, s[39]);
-A = p(A, N, C, M, E, 4, s[40]);
-M = p(M, A, N, C, c, 11, s[41]);
-C = p(C, M, A, N, d, 16, s[42]);
-N = p(N, C, M, A, g, 23, s[43]);
-A = p(A, N, C, M, S, 4, s[44]);
-M = p(M, A, N, C, v, 11, s[45]);
-C = p(C, M, A, N, R, 16, s[46]);
-A = h(A, N = p(N, C, M, A, f, 23, s[47]), C, M, c, 6, s[48]);
-M = h(M, A, N, C, m, 10, s[49]);
-C = h(C, M, A, N, O, 15, s[50]);
-N = h(N, C, M, A, y, 21, s[51]);
-A = h(A, N, C, M, v, 6, s[52]);
-M = h(M, A, N, C, d, 10, s[53]);
-C = h(C, M, A, N, T, 15, s[54]);
-N = h(N, C, M, A, a, 21, s[55]);
-A = h(A, N, C, M, b, 6, s[56]);
-M = h(M, A, N, C, R, 10, s[57]);
-C = h(C, M, A, N, g, 15, s[58]);
-N = h(N, C, M, A, E, 21, s[59]);
-A = h(A, N, C, M, _, 6, s[60]);
-M = h(M, A, N, C, I, 10, s[61]);
-C = h(C, M, A, N, f, 15, s[62]);
-N = h(N, C, M, A, S, 21, s[63]);
+var r = this._hash.words, c = t[e + 0], a = t[e + 1], f = t[e + 2], d = t[e + 3], _ = t[e + 4], y = t[e + 5], g = t[e + 6], m = t[e + 7], b = t[e + 8], S = t[e + 9], T = t[e + 10], I = t[e + 11], v = t[e + 12], E = t[e + 13], O = t[e + 14], R = t[e + 15], A = r[0], C = r[1], N = r[2], M = r[3];
+A = u(A, C, N, M, c, 7, s[0]);
+M = u(M, A, C, N, a, 12, s[1]);
+N = u(N, M, A, C, f, 17, s[2]);
+C = u(C, N, M, A, d, 22, s[3]);
+A = u(A, C, N, M, _, 7, s[4]);
+M = u(M, A, C, N, y, 12, s[5]);
+N = u(N, M, A, C, g, 17, s[6]);
+C = u(C, N, M, A, m, 22, s[7]);
+A = u(A, C, N, M, b, 7, s[8]);
+M = u(M, A, C, N, S, 12, s[9]);
+N = u(N, M, A, C, T, 17, s[10]);
+C = u(C, N, M, A, I, 22, s[11]);
+A = u(A, C, N, M, v, 7, s[12]);
+M = u(M, A, C, N, E, 12, s[13]);
+N = u(N, M, A, C, O, 17, s[14]);
+A = l(A, C = u(C, N, M, A, R, 22, s[15]), N, M, a, 5, s[16]);
+M = l(M, A, C, N, g, 9, s[17]);
+N = l(N, M, A, C, I, 14, s[18]);
+C = l(C, N, M, A, c, 20, s[19]);
+A = l(A, C, N, M, y, 5, s[20]);
+M = l(M, A, C, N, T, 9, s[21]);
+N = l(N, M, A, C, R, 14, s[22]);
+C = l(C, N, M, A, _, 20, s[23]);
+A = l(A, C, N, M, S, 5, s[24]);
+M = l(M, A, C, N, O, 9, s[25]);
+N = l(N, M, A, C, d, 14, s[26]);
+C = l(C, N, M, A, b, 20, s[27]);
+A = l(A, C, N, M, E, 5, s[28]);
+M = l(M, A, C, N, f, 9, s[29]);
+N = l(N, M, A, C, m, 14, s[30]);
+A = p(A, C = l(C, N, M, A, v, 20, s[31]), N, M, y, 4, s[32]);
+M = p(M, A, C, N, b, 11, s[33]);
+N = p(N, M, A, C, I, 16, s[34]);
+C = p(C, N, M, A, O, 23, s[35]);
+A = p(A, C, N, M, a, 4, s[36]);
+M = p(M, A, C, N, _, 11, s[37]);
+N = p(N, M, A, C, m, 16, s[38]);
+C = p(C, N, M, A, T, 23, s[39]);
+A = p(A, C, N, M, E, 4, s[40]);
+M = p(M, A, C, N, c, 11, s[41]);
+N = p(N, M, A, C, d, 16, s[42]);
+C = p(C, N, M, A, g, 23, s[43]);
+A = p(A, C, N, M, S, 4, s[44]);
+M = p(M, A, C, N, v, 11, s[45]);
+N = p(N, M, A, C, R, 16, s[46]);
+A = h(A, C = p(C, N, M, A, f, 23, s[47]), N, M, c, 6, s[48]);
+M = h(M, A, C, N, m, 10, s[49]);
+N = h(N, M, A, C, O, 15, s[50]);
+C = h(C, N, M, A, y, 21, s[51]);
+A = h(A, C, N, M, v, 6, s[52]);
+M = h(M, A, C, N, d, 10, s[53]);
+N = h(N, M, A, C, T, 15, s[54]);
+C = h(C, N, M, A, a, 21, s[55]);
+A = h(A, C, N, M, b, 6, s[56]);
+M = h(M, A, C, N, R, 10, s[57]);
+N = h(N, M, A, C, g, 15, s[58]);
+C = h(C, N, M, A, E, 21, s[59]);
+A = h(A, C, N, M, _, 6, s[60]);
+M = h(M, A, C, N, I, 10, s[61]);
+N = h(N, M, A, C, f, 15, s[62]);
+C = h(C, N, M, A, S, 21, s[63]);
 r[0] = r[0] + A | 0;
-r[1] = r[1] + N | 0;
-r[2] = r[2] + C | 0;
+r[1] = r[1] + C | 0;
+r[2] = r[2] + N | 0;
 r[3] = r[3] + M | 0;
 },
 _doFinalize: function() {
@@ -12568,15 +12598,15 @@ for (var o = 0; o < 16; o++) {
 var n = e + o, i = t[n];
 t[n] = 16711935 & (i << 8 | i >>> 24) | 4278255360 & (i << 24 | i >>> 8);
 }
-var r, h, b, S, T, I, v, E, O, R, A, N = this._hash.words, C = l.words, M = p.words, P = c.words, w = s.words, L = a.words, B = u.words;
-I = r = N[0];
-v = h = N[1];
-E = b = N[2];
-O = S = N[3];
-R = T = N[4];
+var r, h, b, S, T, I, v, E, O, R, A, C = this._hash.words, N = l.words, M = p.words, P = c.words, w = s.words, L = a.words, B = u.words;
+I = r = C[0];
+v = h = C[1];
+E = b = C[2];
+O = S = C[3];
+R = T = C[4];
 for (o = 0; o < 80; o += 1) {
 A = r + t[e + P[o]] | 0;
-A += o < 16 ? f(h, b, S) + C[0] : o < 32 ? d(h, b, S) + C[1] : o < 48 ? _(h, b, S) + C[2] : o < 64 ? y(h, b, S) + C[3] : g(h, b, S) + C[4];
+A += o < 16 ? f(h, b, S) + N[0] : o < 32 ? d(h, b, S) + N[1] : o < 48 ? _(h, b, S) + N[2] : o < 64 ? y(h, b, S) + N[3] : g(h, b, S) + N[4];
 A = (A = m(A |= 0, L[o])) + T | 0;
 r = T;
 T = S;
@@ -12592,12 +12622,12 @@ O = m(E, 10);
 E = v;
 v = A;
 }
-A = N[1] + b + O | 0;
-N[1] = N[2] + S + R | 0;
-N[2] = N[3] + T + I | 0;
-N[3] = N[4] + r + v | 0;
-N[4] = N[0] + h + E | 0;
-N[0] = A;
+A = C[1] + b + O | 0;
+C[1] = C[2] + S + R | 0;
+C[2] = C[3] + T + I | 0;
+C[3] = C[4] + r + v | 0;
+C[4] = C[0] + h + E | 0;
+C[0] = A;
 },
 _doFinalize: function() {
 var t = this._data, e = t.words, o = 8 * this._nDataBytes, n = 8 * t.sigBytes;
@@ -12804,14 +12834,14 @@ for (var o = this._state, n = this.blockSize / 2, i = 0; i < n; i++) {
 var r = t[e + 2 * i], c = t[e + 2 * i + 1];
 r = 16711935 & (r << 8 | r >>> 24) | 4278255360 & (r << 24 | r >>> 8);
 c = 16711935 & (c << 8 | c >>> 24) | 4278255360 & (c << 24 | c >>> 8);
-(N = o[i]).high ^= c;
-N.low ^= r;
+(C = o[i]).high ^= c;
+C.low ^= r;
 }
 for (var s = 0; s < 24; s++) {
 for (var h = 0; h < 5; h++) {
 for (var f = 0, d = 0, _ = 0; _ < 5; _++) {
-f ^= (N = o[h + 5 * _]).high;
-d ^= N.low;
+f ^= (C = o[h + 5 * _]).high;
+d ^= C.low;
 }
 var y = p[h];
 y.high = f;
@@ -12820,12 +12850,12 @@ y.low = d;
 for (h = 0; h < 5; h++) {
 var g = p[(h + 4) % 5], m = p[(h + 1) % 5], b = m.high, S = m.low;
 for (f = g.high ^ (b << 1 | S >>> 31), d = g.low ^ (S << 1 | b >>> 31), _ = 0; _ < 5; _++) {
-(N = o[h + 5 * _]).high ^= f;
-N.low ^= d;
+(C = o[h + 5 * _]).high ^= f;
+C.low ^= d;
 }
 }
 for (var T = 1; T < 25; T++) {
-var I = (N = o[T]).high, v = N.low, E = a[T];
+var I = (C = o[T]).high, v = C.low, E = a[T];
 E < 32 ? (f = I << E | v >>> 32 - E, d = v << E | I >>> 32 - E) : (f = v << E - 32 | I >>> 64 - E, 
 d = I << E - 32 | v >>> 64 - E);
 var O = p[u[T]];
@@ -12836,14 +12866,14 @@ var R = p[0], A = o[0];
 R.high = A.high;
 R.low = A.low;
 for (h = 0; h < 5; h++) for (_ = 0; _ < 5; _++) {
-var N = o[T = h + 5 * _], C = p[T], M = p[(h + 1) % 5 + 5 * _], P = p[(h + 2) % 5 + 5 * _];
-N.high = C.high ^ ~M.high & P.high;
-N.low = C.low ^ ~M.low & P.low;
+var C = o[T = h + 5 * _], N = p[T], M = p[(h + 1) % 5 + 5 * _], P = p[(h + 2) % 5 + 5 * _];
+C.high = N.high ^ ~M.high & P.high;
+C.low = N.low ^ ~M.low & P.low;
 }
-N = o[0];
+C = o[0];
 var w = l[s];
-N.high ^= w.high;
-N.low ^= w.low;
+C.high ^= w.high;
+C.low ^= w.low;
 }
 },
 _doFinalize: function() {
@@ -12883,32 +12913,32 @@ _doReset: function() {
 this._hash = new r.init([ new i.init(1779033703, 4089235720), new i.init(3144134277, 2227873595), new i.init(1013904242, 4271175723), new i.init(2773480762, 1595750129), new i.init(1359893119, 2917565137), new i.init(2600822924, 725511199), new i.init(528734635, 4215389547), new i.init(1541459225, 327033209) ]);
 },
 _doProcessBlock: function(t, e) {
-for (var o = this._hash.words, n = o[0], i = o[1], r = o[2], c = o[3], s = o[4], l = o[5], p = o[6], h = o[7], f = n.high, d = n.low, _ = i.high, y = i.low, g = r.high, m = r.low, b = c.high, S = c.low, T = s.high, I = s.low, v = l.high, E = l.low, O = p.high, R = p.low, A = h.high, N = h.low, C = f, M = d, P = _, w = y, L = g, B = m, D = b, U = S, F = T, k = I, V = v, H = E, G = O, j = R, x = A, W = N, K = 0; K < 80; K++) {
+for (var o = this._hash.words, n = o[0], i = o[1], r = o[2], c = o[3], s = o[4], l = o[5], p = o[6], h = o[7], f = n.high, d = n.low, _ = i.high, y = i.low, g = r.high, m = r.low, b = c.high, S = c.low, T = s.high, I = s.low, v = l.high, E = l.low, O = p.high, R = p.low, A = h.high, C = h.low, N = f, M = d, P = _, w = y, L = g, B = m, D = b, U = S, F = T, k = I, V = v, H = E, G = O, j = R, x = A, W = C, K = 0; K < 80; K++) {
 var Y = u[K];
-if (K < 16) var X = Y.high = 0 | t[e + 2 * K], z = Y.low = 0 | t[e + 2 * K + 1]; else {
-var J = u[K - 15], q = J.high, Q = J.low, Z = (q >>> 1 | Q << 31) ^ (q >>> 8 | Q << 24) ^ q >>> 7, $ = (Q >>> 1 | q << 31) ^ (Q >>> 8 | q << 24) ^ (Q >>> 7 | q << 25), tt = u[K - 2], et = tt.high, ot = tt.low, nt = (et >>> 19 | ot << 13) ^ (et << 3 | ot >>> 29) ^ et >>> 6, it = (ot >>> 19 | et << 13) ^ (ot << 3 | et >>> 29) ^ (ot >>> 6 | et << 26), rt = u[K - 7], ct = rt.high, st = rt.low, at = u[K - 16], ut = at.high, lt = at.low;
-X = (X = (X = Z + ct + ((z = $ + st) >>> 0 < $ >>> 0 ? 1 : 0)) + nt + ((z += it) >>> 0 < it >>> 0 ? 1 : 0)) + ut + ((z += lt) >>> 0 < lt >>> 0 ? 1 : 0);
+if (K < 16) var X = Y.high = 0 | t[e + 2 * K], J = Y.low = 0 | t[e + 2 * K + 1]; else {
+var z = u[K - 15], q = z.high, Q = z.low, Z = (q >>> 1 | Q << 31) ^ (q >>> 8 | Q << 24) ^ q >>> 7, $ = (Q >>> 1 | q << 31) ^ (Q >>> 8 | q << 24) ^ (Q >>> 7 | q << 25), tt = u[K - 2], et = tt.high, ot = tt.low, nt = (et >>> 19 | ot << 13) ^ (et << 3 | ot >>> 29) ^ et >>> 6, it = (ot >>> 19 | et << 13) ^ (ot << 3 | et >>> 29) ^ (ot >>> 6 | et << 26), rt = u[K - 7], ct = rt.high, st = rt.low, at = u[K - 16], ut = at.high, lt = at.low;
+X = (X = (X = Z + ct + ((J = $ + st) >>> 0 < $ >>> 0 ? 1 : 0)) + nt + ((J += it) >>> 0 < it >>> 0 ? 1 : 0)) + ut + ((J += lt) >>> 0 < lt >>> 0 ? 1 : 0);
 Y.high = X;
-Y.low = z;
+Y.low = J;
 }
-var pt, ht = F & V ^ ~F & G, ft = k & H ^ ~k & j, dt = C & P ^ C & L ^ P & L, _t = M & w ^ M & B ^ w & B, yt = (C >>> 28 | M << 4) ^ (C << 30 | M >>> 2) ^ (C << 25 | M >>> 7), gt = (M >>> 28 | C << 4) ^ (M << 30 | C >>> 2) ^ (M << 25 | C >>> 7), mt = (F >>> 14 | k << 18) ^ (F >>> 18 | k << 14) ^ (F << 23 | k >>> 9), bt = (k >>> 14 | F << 18) ^ (k >>> 18 | F << 14) ^ (k << 23 | F >>> 9), St = a[K], Tt = St.high, It = St.low, vt = x + mt + ((pt = W + bt) >>> 0 < W >>> 0 ? 1 : 0), Et = gt + _t;
+var pt, ht = F & V ^ ~F & G, ft = k & H ^ ~k & j, dt = N & P ^ N & L ^ P & L, _t = M & w ^ M & B ^ w & B, yt = (N >>> 28 | M << 4) ^ (N << 30 | M >>> 2) ^ (N << 25 | M >>> 7), gt = (M >>> 28 | N << 4) ^ (M << 30 | N >>> 2) ^ (M << 25 | N >>> 7), mt = (F >>> 14 | k << 18) ^ (F >>> 18 | k << 14) ^ (F << 23 | k >>> 9), bt = (k >>> 14 | F << 18) ^ (k >>> 18 | F << 14) ^ (k << 23 | F >>> 9), St = a[K], Tt = St.high, It = St.low, vt = x + mt + ((pt = W + bt) >>> 0 < W >>> 0 ? 1 : 0), Et = gt + _t;
 x = G;
 W = j;
 G = V;
 j = H;
 V = F;
 H = k;
-F = D + (vt = (vt = (vt = vt + ht + ((pt += ft) >>> 0 < ft >>> 0 ? 1 : 0)) + Tt + ((pt += It) >>> 0 < It >>> 0 ? 1 : 0)) + X + ((pt += z) >>> 0 < z >>> 0 ? 1 : 0)) + ((k = U + pt | 0) >>> 0 < U >>> 0 ? 1 : 0) | 0;
+F = D + (vt = (vt = (vt = vt + ht + ((pt += ft) >>> 0 < ft >>> 0 ? 1 : 0)) + Tt + ((pt += It) >>> 0 < It >>> 0 ? 1 : 0)) + X + ((pt += J) >>> 0 < J >>> 0 ? 1 : 0)) + ((k = U + pt | 0) >>> 0 < U >>> 0 ? 1 : 0) | 0;
 D = L;
 U = B;
 L = P;
 B = w;
-P = C;
+P = N;
 w = M;
-C = vt + (yt + dt + (Et >>> 0 < gt >>> 0 ? 1 : 0)) + ((M = pt + Et | 0) >>> 0 < pt >>> 0 ? 1 : 0) | 0;
+N = vt + (yt + dt + (Et >>> 0 < gt >>> 0 ? 1 : 0)) + ((M = pt + Et | 0) >>> 0 < pt >>> 0 ? 1 : 0) | 0;
 }
 d = n.low = d + M;
-n.high = f + C + (d >>> 0 < M >>> 0 ? 1 : 0);
+n.high = f + N + (d >>> 0 < M >>> 0 ? 1 : 0);
 y = i.low = y + w;
 i.high = _ + P + (y >>> 0 < w >>> 0 ? 1 : 0);
 m = r.low = m + B;
@@ -12921,8 +12951,8 @@ E = l.low = E + H;
 l.high = v + V + (E >>> 0 < H >>> 0 ? 1 : 0);
 R = p.low = R + j;
 p.high = O + G + (R >>> 0 < j >>> 0 ? 1 : 0);
-N = h.low = N + W;
-h.high = A + x + (N >>> 0 < W >>> 0 ? 1 : 0);
+C = h.low = C + W;
+h.high = A + x + (C >>> 0 < W >>> 0 ? 1 : 0);
 },
 _doFinalize: function() {
 var t = this._data, e = t.words, o = 8 * this._nDataBytes, n = 8 * t.sigBytes;

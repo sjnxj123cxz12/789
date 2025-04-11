@@ -97,7 +97,7 @@ void 0 === e && (e = 15);
 };
 e.prototype.showErrLoading = function(t) {
 cc.warn(t);
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 };
 e.prototype.update = function() {
 this.updateSize();
@@ -314,7 +314,7 @@ isLogined: !1
 t.App = {
 USE_WSS: !0,
 HOST_SHOOT_FISH: {
-host: "fish.dragonf1.xyz",
+host: "fish." + lngui.ConfigManager.instance.ConfigInfo.Api,
 gate: "?gate=Web-go88.top",
 port: 2053
 },
@@ -1288,13 +1288,13 @@ return e;
 o = e;
 e.prototype.onLoad = function() {
 var t = this;
-console.log(fzgui.UserManager.instance.mainUserInfo);
-r.default.Login.Token = fzgui.UserManager.instance.mainUserInfo.UserName + fzgui.UserManager.instance.mainUserInfo.PassWord + fzgui.UserManager.instance.mainUserInfo.Money;
+console.log(lngui.UserManager.instance.mainUserInfo);
+r.default.Login.Token = lngui.UserManager.instance.mainUserInfo.UserName + lngui.UserManager.instance.mainUserInfo.PassWord + lngui.UserManager.instance.mainUserInfo.Money;
 console.log("Configs.Login.Token: ", r.default.Login.Token);
-r.default.Login.Username = fzgui.UserManager.instance.mainUserInfo.UserName;
-r.default.Login.Nick = fzgui.UserManager.instance.mainUserInfo.UserName;
-r.default.Login.Password = fzgui.UserManager.instance.mainUserInfo.PassWord;
-r.default.Login.Coin = fzgui.UserManager.instance.mainUserInfo.Money;
+r.default.Login.Username = lngui.UserManager.instance.mainUserInfo.UserName;
+r.default.Login.Nick = lngui.UserManager.instance.mainUserInfo.UserName;
+r.default.Login.Password = lngui.UserManager.instance.mainUserInfo.PassWord;
+r.default.Login.Coin = lngui.UserManager.instance.mainUserInfo.Money;
 o.instance = this;
 this.play = this.playNode.getComponent(a.default);
 this.play.node.active = !1;
@@ -1323,18 +1323,18 @@ if (e) {
 a.default.SERVER_CONFIG = r.default.Login.FishConfigs;
 u.default.send(u.default.USER_UPDATE_COIN);
 if (r.default.Login.CoinFish <= 0) {
-fzgui.UITextManager.showCenterNotification("Tiền trong Bắn Cá của bạn đã hết, vui lòng chuyển vào thêm!");
+lngui.UITextManager.showCenterNotification("Tiền trong Bắn Cá của bạn đã hết, vui lòng chuyển vào thêm!");
 t.popupCoinTransfer.show();
 }
-} else fzgui.UITextManager.showCenterNotification("Đăng nhập thất bại, vui lòng thử lại.");
+} else lngui.UITextManager.showCenterNotification("Đăng nhập thất bại, vui lòng thử lại.");
 });
 p.default.getInstance().addOnClose(function() {
-fzgui.UITextManager.showCenterNotification("Mất kết nối, đang thử kết nối lại...");
+lngui.UITextManager.showCenterNotification("Mất kết nối, đang thử kết nối lại...");
 }, this);
 };
 e.prototype.actBack = function() {
-fzgui.GameCoreManager.instance.onBackToLobby();
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.GameCoreManager.instance.onBackToLobby();
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 };
 e.prototype.actHonors = function() {};
 e.prototype.actRoom1 = function() {
@@ -1740,7 +1740,7 @@ break;
 
 case "OnLeavePlayer":
 if ((a = o.playerId) == h.default.Login.UsernameFish) {
-1 == o.reason && fzgui.UIPopupManager.instance.showPopup("Bạn được mời ra khỏi phòng do không thao tác trong thời gian dài.");
+1 == o.reason && lngui.UIPopupManager.instance.showPopup("Bạn được mời ra khỏi phòng do không thao tác trong thời gian dài.");
 t.back();
 }
 if (null == (f = t.getPlayerByUsername(a))) break;
@@ -1944,16 +1944,16 @@ access_token: h.default.Login.Token
 if (e.ok) t.getState(!0); else {
 switch (e.err) {
 case 4:
-fzgui.UIPopupManager.instance.showPopup("Số dư không đủ vui lòng nạp thêm.");
+lngui.UIPopupManager.instance.showPopup("Số dư không đủ vui lòng nạp thêm.");
 break;
 
 case 1:
 m.default.getInstance().request("quit", null, function() {}, t);
-fzgui.UIPopupManager.instance.showPopup("Lỗi " + e.err + ", vui lòng thử lại.");
+lngui.UIPopupManager.instance.showPopup("Lỗi " + e.err + ", vui lòng thử lại.");
 break;
 
 default:
-fzgui.UIPopupManager.instance.showPopup("Lỗi " + e.err + ", không xác định.");
+lngui.UIPopupManager.instance.showPopup("Lỗi " + e.err + ", không xác định.");
 }
 t.show(!1);
 t.lobby.getComponent(f.default).show(!0);
@@ -1992,11 +1992,11 @@ u.default.numberTo(t.lblJackpot, t.listJackpot[t.betIdx], .3);
 };
 e.prototype.getState = function(t) {
 var e = this;
-t || fzgui.UIWaitingLayout.showWaiting();
+t || lngui.UIWaitingLayout.showWaiting();
 this.isStateGeted = !1;
 this.resetView();
 m.default.getInstance().request("state", null, function(i) {
-t || fzgui.UIWaitingLayout.hideWaiting();
+t || lngui.UIWaitingLayout.hideWaiting();
 for (var n = i.players, s = null, a = 0, r = 0; r < n.length; r++) if (n[r].playerId == h.default.Login.UsernameFish) {
 a = n[r].posIndex;
 s = n[r];
@@ -2063,7 +2063,7 @@ this.curIntervalFindTargetFish = Math.max(0, this.curIntervalFindTargetFish - t)
 if (this.curShootInterval > 0) this.curShootInterval = Math.max(0, this.curShootInterval - t); else if (this.isShoot) {
 this.curShootInterval = this.isFastShoot ? this.fastShootInterval : this.shootInterval;
 if (h.default.Login.CoinFish < this.listBet[this.betIdx]) {
-fzgui.UIPopupManager.instance.showPopup("Số dư không đủ, vui lòng nạp thêm.");
+lngui.UIPopupManager.instance.showPopup("Số dư không đủ, vui lòng nạp thêm.");
 this.isShoot = !1;
 this.toggleAuto.isChecked && this.stopAutoShoot();
 return;
@@ -2363,9 +2363,9 @@ e.prototype.back = function() {
 var t = this;
 this.isStateGeted = !1;
 this.stopAutoShoot();
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 m.default.getInstance().request("quit", null, function() {
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 t.resetView();
 t.show(!1);
 t.lobby.getComponent(f.default).show(!0);
@@ -2385,7 +2385,7 @@ void 0 === e && (e = 0);
 if (t) {
 if (!helper.getInfo()) {
 this.lobby.getComponent(f.default).show(!0);
-fzgui.UIPopupManager.instance.showPopup("Bạn chưa đăng nhập.");
+lngui.UIPopupManager.instance.showPopup("Bạn chưa đăng nhập.");
 return;
 }
 this.node.active = !0;
@@ -2523,8 +2523,8 @@ e.edbCoin.string = c.default.formatNumber(i);
 };
 t.prototype.submit = function() {
 var t = this, e = c.default.stringToInt(this.edbCoin.string);
-if (e <= 0) fzgui.UIPopupManager.instance.showPopup("Số Sum đã nhập không hợp lệ."); else if (e < 1e4) fzgui.UIPopupManager.instance.showPopup("Số Sum tối thiểu là 10,000 Sum."); else {
-fzgui.UIWaitingLayout.showWaiting();
+if (e <= 0) lngui.UIPopupManager.instance.showPopup("Số Sum đã nhập không hợp lệ."); else if (e < 1e4) lngui.UIPopupManager.instance.showPopup("Số Sum tối thiểu là 10,000 Sum."); else {
+lngui.UIWaitingLayout.showWaiting();
 h.default.getInstance().request("xxengCashin", {
 ccash: e,
 access_token: l.default.Login.Token,
@@ -2533,14 +2533,14 @@ nick: l.default.Login.Nick,
 password: l.default.Login.Password
 }, function(o) {
 console.log(o);
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 if (o.ok) {
 l.default.Login.CoinFish = o.newCash;
 l.default.Login.Coin -= e;
-fzgui.UserManager.instance.mainUserInfo.Money = fzgui.UserManager.instance.mainUserInfo.Money - e;
+lngui.UserManager.instance.mainUserInfo.Money = lngui.UserManager.instance.mainUserInfo.Money - e;
 r.default.send(r.default.USER_UPDATE_COIN);
 t.reset();
-} else fzgui.UIPopupManager.instance.showPopup("Vui lòng nạp thêm Sum.");
+} else lngui.UIPopupManager.instance.showPopup("Vui lòng nạp thêm Sum.");
 }, this.popup);
 }
 };
@@ -2580,8 +2580,8 @@ e.edbCoin.string = c.default.formatNumber(i);
 };
 t.prototype.submit = function() {
 var t = this, e = c.default.stringToInt(this.edbCoin.string);
-if (e <= 0) fzgui.UIPopupManager.instance.showPopup("Số Cá đã nhập không hợp lệ."); else if (e < 1e4) fzgui.UIPopupManager.instance.showPopup("Số Cá tối thiểu là 10,000 Cá."); else {
-fzgui.UIWaitingLayout.showWaiting();
+if (e <= 0) lngui.UIPopupManager.instance.showPopup("Số Cá đã nhập không hợp lệ."); else if (e < 1e4) lngui.UIPopupManager.instance.showPopup("Số Cá tối thiểu là 10,000 Cá."); else {
+lngui.UIWaitingLayout.showWaiting();
 h.default.getInstance().request("xxengCashin", {
 ccash: -e,
 access_token: l.default.Login.Token,
@@ -2590,14 +2590,14 @@ nick: l.default.Login.Nick,
 password: l.default.Login.Password
 }, function(o) {
 console.log(o);
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 if (o.ok) {
 l.default.Login.CoinFish = o.newCash;
 l.default.Login.Coin += e;
-fzgui.UserManager.instance.mainUserInfo.Money = fzgui.UserManager.instance.mainUserInfo.Money + e;
+lngui.UserManager.instance.mainUserInfo.Money = lngui.UserManager.instance.mainUserInfo.Money + e;
 r.default.send(r.default.USER_UPDATE_COIN);
 t.reset();
-} else fzgui.UIPopupManager.instance.showPopup("Số Sao không đủ để rút ra.");
+} else lngui.UIPopupManager.instance.showPopup("Số Sao không đủ để rút ra.");
 }, this.popup);
 }
 };
@@ -2835,7 +2835,7 @@ return this.instance;
 t.prototype.checkConnect = function(t) {
 this.onLogined = t;
 if (this.isConnected()) this.isLogined ? this.onLogined(this.isLogined) : this.login(); else {
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 this.connect();
 }
 };
@@ -2855,7 +2855,7 @@ access_token: n.default.Login.Token
 }, function(e) {
 console.log(e);
 t.isLogining = !1;
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 if (e.ok) {
 t.isLogined = !0;
 n.default.Login.CoinFish = e.cash;
@@ -3071,7 +3071,7 @@ t && (t.active = !1);
 },
 updateCoin: function(t) {
 if (!Global.isLogin) return !1;
-fzgui.UserManager.instance.mainUserInfo.Money = t;
+lngui.UserManager.instance.mainUserInfo.Money = t;
 },
 getInfo: function() {
 console.log(Global.isLogin);
@@ -3079,11 +3079,11 @@ return !!Global.isLogin && {
 username: Global.AccountInfo.UserName,
 password: Global.AccountInfo.PassWord,
 nick: Global.AccountInfo.accountFullName,
-gold: fzgui.UserManager.instance.mainUserInfo.Money
+gold: lngui.UserManager.instance.mainUserInfo.Money
 };
 },
 getToken: function() {
-return Global.AccountInfo.UserName + Global.AccountInfo.PassWord + fzgui.UserManager.instance.mainUserInfo.Money;
+return Global.AccountInfo.UserName + Global.AccountInfo.PassWord + lngui.UserManager.instance.mainUserInfo.Money;
 }
 };
 cc._RF.pop();

@@ -141,7 +141,7 @@ e.prototype.onLoad = function() {};
 a([ c(cc.Sprite) ], e.prototype, "sprContent", void 0);
 a([ c([ cc.SpriteFrame ]) ], e.prototype, "sprFrame", void 0);
 return a([ s ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
 }, {} ],
@@ -296,7 +296,7 @@ var e = t.currentTarget;
 t.type === cc.Node.EventType.TOUCH_END && (e.tagName === this.TAG_ENABLE_LINE ? this.setBtnStatus(e, !1) : this.setBtnStatus(e, !0));
 };
 e.prototype.changeLine = function() {
-if (0 === this.countEnableLine()) fzgui.UITextManager.showCenterNotification("Bạn hãy chọn ít nhất 1 dòng"); else {
+if (0 === this.countEnableLine()) lngui.UITextManager.showCenterNotification("Bạn hãy chọn ít nhất 1 dòng"); else {
 r.ThanThuConst.nLineBet = this.countEnableLine();
 r.ThanThuConst.choseLine = this.getStrEnableLine();
 s.default.instance.onChangeLine();
@@ -304,7 +304,7 @@ s.default.instance.onChangeLine();
 };
 a([ h(cc.Node) ], e.prototype, "pnlMid", void 0);
 return a([ u ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 n.default = l;
 cc._RF.pop();
 }, {
@@ -322,15 +322,15 @@ var o = function() {
 function t() {}
 t.isBtnClickable = function(t) {
 if (this._freeSpin) {
-t || fzgui.UITextManager.showCenterNotification("Hiện đang trong tiến trình quay miễn phí");
+t || lngui.UITextManager.showCenterNotification("Hiện đang trong tiến trình quay miễn phí");
 return !1;
 }
 if (this._autoSpin) {
-t || fzgui.UITextManager.showCenterNotification("Hiện đang trong tiến trình tự động quay");
+t || lngui.UITextManager.showCenterNotification("Hiện đang trong tiến trình tự động quay");
 return !1;
 }
 if (this._resultSpin) {
-t || fzgui.UITextManager.showCenterNotification("Hiện đang trong tiến trình quay");
+t || lngui.UITextManager.showCenterNotification("Hiện đang trong tiến trình quay");
 return !1;
 }
 return !0;
@@ -579,7 +579,7 @@ e._instance = null;
 a([ h(cc.Node) ], e.prototype, "pnlMid", void 0);
 a([ h(cc.Prefab) ], e.prototype, "itemGame", void 0);
 return n = a([ u ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 n.default = l;
 cc._RF.pop();
 }, {
@@ -683,7 +683,7 @@ a([ l(cc.ScrollView) ], e.prototype, "scrollview", void 0);
 a([ l(cc.Node) ], e.prototype, "content", void 0);
 a([ l(cc.AudioClip) ], e.prototype, "button_click", void 0);
 return n = a([ h ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 n.default = p;
 cc._RF.pop();
 }, {
@@ -800,19 +800,19 @@ configurable: !0
 e.prototype.onLoad = function() {
 n._instance = this;
 u.default.instance.connect();
-this.txtNickName.string = fzgui.UserManager.instance.mainUserInfo.NickName;
-this.txtXuBalance.string = s.default.formatNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+this.txtNickName.string = lngui.UserManager.instance.mainUserInfo.NickName;
+this.txtXuBalance.string = s.default.formatNumber(lngui.UserManager.instance.mainUserInfo.Money);
 this.node.runAction(cc.repeatForever(cc.sequence(cc.delayTime(.1), cc.callFunc(this.setJackpot, this))));
 };
 e.prototype.onEnable = function() {
-fzgui.EventDispatch.instance.add(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
 };
 e.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
 };
 e.prototype.onUpdateGold = function(t) {
-fzgui.UserManager.instance.mainUserInfo.Money = t;
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtXuBalance, t, .2);
+lngui.UserManager.instance.mainUserInfo.Money = t;
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtXuBalance, t, .2);
 };
 e.prototype.show = function(t) {
 this.node.active = t;
@@ -822,12 +822,12 @@ e.prototype.setJackpot = function() {
 for (var t = 0; t < 3; t++) this.txtJackPot[t].scheduleProgress(c.ThanThuConst.jackpot[t + 1]);
 };
 e.prototype.actBack = function() {
-fzgui.GameCoreManager.instance.onBackToLobby();
+lngui.GameCoreManager.instance.onBackToLobby();
 };
 e.prototype.actHonors = function() {};
 e.prototype.actHistory = function() {};
 e.prototype.actRoom = function(t, e) {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
 c.ThanThuConst.roomValue = e;
 };
 var n;
@@ -929,19 +929,19 @@ this.setBalance();
 this.bgFreeSpin.active = !1;
 this.node.runAction(cc.repeatForever(cc.sequence(cc.delayTime(.1), cc.callFunc(this.setJackpot, this))));
 c.ThanThuConst.isMainGame = !0;
-fzgui.EventDispatch.instance.add(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
 var t = setInterval(function() {
 1 == c.ThanThuConst.IsEvent && clearInterval(t);
 0 == c.ThanThuConst.IsEvent && clearInterval(t);
 }, 500);
 };
 e.prototype.onUpdateGold = function(t) {
-fzgui.UserManager.instance.mainUserInfo.Money = t;
+lngui.UserManager.instance.mainUserInfo.Money = t;
 this.txtXuBalance.scheduleProgress(t, .2);
 };
 e.prototype.onDisable = function() {
-fzgui.UIWindowManager.instance.removeAllWindows();
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
+lngui.UIWindowManager.instance.removeAllWindows();
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateGold, this);
 c.ThanThuConst.isMainGame = !1;
 console.log("backtomain");
 };
@@ -979,8 +979,8 @@ this.initGameIcon();
 };
 e.prototype.initPnlBottom = function() {
 this.btnRoom.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
-if (c.ThanThuConst._isPlayTry) fzgui.UITextManager.showCenterNotification("Bạn không thể chọn phòng trong phần chơi miễn phí"); else if (c.ThanThuConst.isBtnClickable(!1)) {
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
+if (c.ThanThuConst._isPlayTry) lngui.UITextManager.showCenterNotification("Bạn không thể chọn phòng trong phần chơi miễn phí"); else if (c.ThanThuConst.isBtnClickable(!1)) {
 console.log(c.ThanThuConst.roomValue);
 switch (c.ThanThuConst.roomValue) {
 case 100:
@@ -1002,19 +1002,19 @@ this.txtXuThang.scheduleProgress(0);
 }, this);
 this.txtChonDongNumber.string = c.ThanThuConst._chonDongNumberCounter;
 this.btnChonDong.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
-c.ThanThuConst._isPlayTry ? fzgui.UITextManager.showCenterNotification("Bạn không thể chọn dòng trong phần chơi miễn phí") : c.ThanThuConst.isBtnClickable(!0);
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
+c.ThanThuConst._isPlayTry ? lngui.UITextManager.showCenterNotification("Bạn không thể chọn dòng trong phần chơi miễn phí") : c.ThanThuConst.isBtnClickable(!0);
 }, this);
 this.btnQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
-if (fzgui.UserManager.instance.mainUserInfo.Money < c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet) fzgui.UITextManager.showCenterNotification("Số dư không đủ để thực hiện."); else {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
+if (lngui.UserManager.instance.mainUserInfo.Money < c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet) lngui.UITextManager.showCenterNotification("Số dư không đủ để thực hiện."); else {
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
 this.btnQuay.interactable && this.callSpin();
 }
 }.bind(this));
 this.btnTuQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
-if (fzgui.UserManager.instance.mainUserInfo.Money < c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet) fzgui.UITextManager.showCenterNotification("Số dư không đủ để thực hiện."); else {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
-if (c.ThanThuConst._isPlayTry) fzgui.UITextManager.showCenterNotification("Bạn không thể tự quay trong phần chơi miễn phí"); else if (c.ThanThuConst.isBtnClickable(!1)) {
+if (lngui.UserManager.instance.mainUserInfo.Money < c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet) lngui.UITextManager.showCenterNotification("Số dư không đủ để thực hiện."); else {
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
+if (c.ThanThuConst._isPlayTry) lngui.UITextManager.showCenterNotification("Bạn không thể tự quay trong phần chơi miễn phí"); else if (c.ThanThuConst.isBtnClickable(!1)) {
 c.ThanThuConst._autoSpin = !0;
 c.ThanThuConst.spinSpeed = 1;
 this.touchBtnTuQuay();
@@ -1022,22 +1022,22 @@ this.touchBtnTuQuay();
 }
 }, this);
 this.btnDungTuQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
 c.ThanThuConst._autoSpin = !1;
 c.ThanThuConst.spinSpeed = 1;
 this.touchBtnTuQuay();
 }, this);
 this.btnDungTuQuay.node.active = !1;
 this.btnSieuToc.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
-if (fzgui.UserManager.instance.mainUserInfo.Money < c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet) fzgui.UITextManager.showCenterNotification("Số dư không đủ để thực hiện."); else if (c.ThanThuConst._isPlayTry) fzgui.UITextManager.showCenterNotification("Bạn không thể quay nhanh trong phần chơi miễn phí"); else if (c.ThanThuConst.isBtnClickable(!1)) {
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
+if (lngui.UserManager.instance.mainUserInfo.Money < c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet) lngui.UITextManager.showCenterNotification("Số dư không đủ để thực hiện."); else if (c.ThanThuConst._isPlayTry) lngui.UITextManager.showCenterNotification("Bạn không thể quay nhanh trong phần chơi miễn phí"); else if (c.ThanThuConst.isBtnClickable(!1)) {
 c.ThanThuConst._autoSpin = !0;
 c.ThanThuConst.spinSpeed = 3;
 this.touchBtnTuQuay();
 }
 }, this);
 this.btnDungSieuToc.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
 c.ThanThuConst._autoSpin = !1;
 c.ThanThuConst.spinSpeed = 1;
 this.touchBtnTuQuay();
@@ -1092,11 +1092,11 @@ this.node.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(this.callSpin, this
 return;
 
 case -10004:
-fzgui.UITextManager.showCenterNotification("Số dư của bạn không đủ để thực hiện");
+lngui.UITextManager.showCenterNotification("Số dư của bạn không đủ để thực hiện");
 return;
 }
-c.ThanThuConst._isPlayTry ? this.txtXuBalance.scheduleProgress(this.txtXuBalance.data - c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet) : fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.txtXuBalance.data - c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet);
-if (t.SpinData.ResponseStatus < 0) fzgui.UITextManager.showCenterNotification("Có lỗi xảy ra trong quá trình quay, mời bạn thử lại"); else {
+c.ThanThuConst._isPlayTry ? this.txtXuBalance.scheduleProgress(this.txtXuBalance.data - c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet) : lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.txtXuBalance.data - c.ThanThuConst.roomValue * c.ThanThuConst.nLineBet);
+if (t.SpinData.ResponseStatus < 0) lngui.UITextManager.showCenterNotification("Có lỗi xảy ra trong quá trình quay, mời bạn thử lại"); else {
 this.txtSession.string = "Phiên:\n#" + t.SpinData.SpinId;
 c.ThanThuConst._resultSpin = t;
 this.hideWinBigNode();
@@ -1148,7 +1148,7 @@ this.beginRoll();
 e.prototype.beginRoll = function() {
 cc.log("beginRoll");
 cc.log(c.ThanThuConst._resultSpin.SpinData);
-fzgui.AudioManager.instance.playSfx(this.spin_reel, 1);
+lngui.AudioManager.instance.playSfx(this.spin_reel, 1);
 for (var t = 0; t < 5; t++) {
 this._nodeCol[t].stopAllActions();
 this._nodeCol[t].y = 0;
@@ -1203,7 +1203,7 @@ break;
 
 case c.ThanThuConst.WINBIG.HUXU:
 n = 2;
-fzgui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.pauseMusic();
 break;
 
 default:
@@ -1214,7 +1214,7 @@ if (t === c.ThanThuConst.WINBIG.HUXU) {
 c.ThanThuConst._autoSpin = !1;
 c.ThanThuConst.spinSpeed = 1;
 this.touchBtnTuQuay();
-fzgui.AudioManager.instance.playSfx(this.bg_game, 1);
+lngui.AudioManager.instance.playSfx(this.bg_game, 1);
 } else this._nodeCol[0].runAction(cc.sequence(cc.delayTime(n), cc.callFunc(function() {
 this.hideWinBigDecorLayer();
 c.ThanThuConst._resultSpin.BonusGame.BonusGameData && this.showMiniGameNode(c.ThanThuConst._resultSpin);
@@ -1237,7 +1237,7 @@ this._winBig && this._winBig.active && this._winBig.getComponent(s.default).hide
 e.prototype.commitSpinResult = function() {
 this.txtXuThang.scheduleProgress(c.ThanThuConst._resultSpin.SpinData.PrizeValue);
 if (!c.ThanThuConst._isPlayTry) {
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, c.ThanThuConst._resultSpin.Balance);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, c.ThanThuConst._resultSpin.Balance);
 c.ThanThuConst.jackpot[c.ThanThuConst.roomType] = c.ThanThuConst._resultSpin.SpinData.JackpotValue;
 this.setJackpot();
 }
@@ -1251,13 +1251,13 @@ c.ThanThuConst._freeSpin = c.ThanThuConst._resultSpin.SpinData.TotalFreeSpin;
 this._maxFreeSpin = this._maxFreeSpin || 0;
 this._maxFreeSpin < c.ThanThuConst._freeSpin && (this._maxFreeSpin = c.ThanThuConst._freeSpin);
 if (0 === c.ThanThuConst._freeSpin && this._maxFreeSpin && c.ThanThuConst._resultSpin.SpinData.PrizeValueFreeSpins) {
-fzgui.UITextManager.showCenterNotification("BẠN ĐÃ THẮNG " + l.default.formatNumber(c.ThanThuConst._resultSpin.SpinData.PrizeValueFreeSpins) + " " + c.ThanThuConst.balanceUnitName + " TRONG FREESPIN");
+lngui.UITextManager.showCenterNotification("BẠN ĐÃ THẮNG " + l.default.formatNumber(c.ThanThuConst._resultSpin.SpinData.PrizeValueFreeSpins) + " " + c.ThanThuConst.balanceUnitName + " TRONG FREESPIN");
 this._maxFreeSpin = 0;
 }
 }
 if (c.ThanThuConst._resultSpin.SpinData.PrizeValue) {
-fzgui.AudioManager.instance.playSfx(this.tien_tang, 1);
-fzgui.AudioManager.instance.playSfx(this.win, 1);
+lngui.AudioManager.instance.playSfx(this.tien_tang, 1);
+lngui.AudioManager.instance.playSfx(this.win, 1);
 }
 c.ThanThuConst._resultSpin = null;
 this.btnQuay.interactable = !0;
@@ -1279,7 +1279,7 @@ if (c.ThanThuConst._isPlayTry) return;
 e.prototype.setBalance = function() {
 if (this.txtXuBalance) {
 if (c.ThanThuConst._isPlayTry) return;
-this.txtXuBalance.scheduleProgress(fzgui.UserManager.instance.mainUserInfo.Money);
+this.txtXuBalance.scheduleProgress(lngui.UserManager.instance.mainUserInfo.Money);
 }
 };
 e.prototype.showWonLine = function() {
@@ -1348,7 +1348,7 @@ a([ T(cc.AudioClip) ], e.prototype, "win", void 0);
 a([ T(cc.AudioClip) ], e.prototype, "bg_game", void 0);
 a([ T(cc.AudioClip) ], e.prototype, "spin_reel", void 0);
 return n = a([ d ], e);
-}(fzgui.UIScreen);
+}(lngui.UIScreen);
 n.default = f;
 cc._RF.pop();
 }, {
@@ -1483,7 +1483,7 @@ if (t.PrizeValue > 0) {
 this._btnMiniGameNode[e].getChildByName("nodePrize").active = !0;
 this._btnMiniGameNode[e].getChildByName("nodePrize").getChildByName("txtPrize").getComponent(r.default).scheduleProgress(t.PrizeValue);
 this._btnMiniGameNode[e].getChildByName("nodePrize").runAction(cc.jumpBy(.5, 0, -45, 50, 1));
-fzgui.AudioManager.instance.playSfx(this.tien_tang, 1);
+lngui.AudioManager.instance.playSfx(this.tien_tang, 1);
 } else this._btnMiniGameNode[e].getChildByName("nodeSpine").getComponent(sp.Skeleton).setAnimation(0, "idle_0", !1);
 this._btnMiniGameNode_btn[e].active = !1;
 if (6 === t.CurrentStep) {
@@ -1492,10 +1492,10 @@ this.parseFinishBonus();
 }
 };
 e.prototype.parseFinishBonus = function() {
-fzgui.UITextManager.showCenterNotification("BẠN ĐÃ THẮNG " + s.default.formatNumber(this._resultSpin.BonusGame.PrizeValue) + " " + u.ThanThuConst.balanceUnitName + " TRONG BONUS GAME");
+lngui.UITextManager.showCenterNotification("BẠN ĐÃ THẮNG " + s.default.formatNumber(this._resultSpin.BonusGame.PrizeValue) + " " + u.ThanThuConst.balanceUnitName + " TRONG BONUS GAME");
 this.txtPrizeJumpEffect.scheduleProgress(this._resultSpin.BonusGame.PrizeValue);
-fzgui.AudioManager.instance.playSfx(this.tien_tang, 1);
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money + this._resultSpin.BonusGame.PrizeValue);
+lngui.AudioManager.instance.playSfx(this.tien_tang, 1);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money + this._resultSpin.BonusGame.PrizeValue);
 this._pnlMiniGame.active = !0;
 this.node.runAction(cc.sequence(cc.delayTime(2), cc.callFunc(function() {
 h.default.instance.closeMiniGameNode();
@@ -1569,19 +1569,23 @@ n._instance = this;
 };
 e.prototype.connect = function() {
 console.log("Connect");
+var t = {
+url: "https://thanthu." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
+hub: "longvuonghub"
+};
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 cc.systemEvent.on(this.mListenerKey, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
-fzgui.UIWaitingLayout.showWaiting();
-this.mSignalr.connect(this.mListenerKey, "https://thanthu.dragonf1.xyz/signalr/negotiate", "longvuonghub", fzgui.UserManager.instance.mainUserInfo.cookie, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+this.mSignalr = new lngui.GateSignalR();
+lngui.UIWaitingLayout.showWaiting();
+this.mSignalr.connect(this.mListenerKey, t.url, t.hub, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 e.prototype.onEnable = function() {
-fzgui.EventDispatch.instance.add(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.connect();
 };
 e.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.closeWS();
 console.log("=====================CLOSE WS NOTI===============================");
 };
@@ -1599,7 +1603,7 @@ this.sendSignalR("GetEventJackpot", []);
 this.sendSignalR("GetJackpot", []);
 this.connectSuccess();
 }
-t.R < 0 && fzgui.UITextManager.showCenterNotification("Lỗi " + t.R);
+t.R < 0 && lngui.UITextManager.showCenterNotification("Lỗi " + t.R);
 if (t.M && Array.isArray(t.M) && 0 != t.M.length) for (var e = t.M.length, n = 0; n < e; ++n) {
 var o = t.M[n];
 if (o.A && null != o.A[0] && null != o.A[0]) {
@@ -1608,7 +1612,7 @@ switch (o.M) {
 case "joinGame":
 if (i.IsPlayTry) r.default.instance.parseJoinTryPlay(i); else {
 this.sendSignalR("StopX2Game", []);
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 i.BonusGame.BonusItemsData && this.sendSignalR("PlayBonusGameAll", []);
 }
 break;
@@ -1620,7 +1624,7 @@ case "UpdateJackPot":
 break;
 
 case "resultSpin":
-fzgui.ZLog.log("====CONNECT-WS-NOTI====" + JSON.stringify(t));
+lngui.ZLog.log("====CONNECT-WS-NOTI====" + JSON.stringify(t));
 s.ThanThuConst._isPlayTry ? r.default.instance.parseSpin(i) : r.default && r.default.instance.parseSpin(i);
 break;
 
@@ -1652,19 +1656,19 @@ l.default.instance.init(i);
 }
 };
 e.prototype.connectSuccess = function() {
-fzgui.ZLog.log("Connect Sucesss");
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.ZLog.log("Connect Sucesss");
+lngui.UIWaitingLayout.hideWaiting();
 };
 e.prototype.closeWS = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 this.isConnect = !0;
 this.isConnect = !1;
 };
 e.prototype.sendSignalR = function(t, e) {
-fzgui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
+lngui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
 e = e || [];
 this.mSignalr && this.mSignalr.send(t, e);
 };
@@ -1721,19 +1725,19 @@ e.SpfIsMusic = [];
 return e;
 }
 e.prototype.onLoad = function() {
-fzgui.AudioManager.instance.sfxVolume = 1;
-fzgui.AudioManager.instance.musicVolume = 1;
+lngui.AudioManager.instance.sfxVolume = 1;
+lngui.AudioManager.instance.musicVolume = 1;
 };
 e.prototype.touchBtnBack = function() {
 if (r.ThanThuConst.isBtnClickable(!1)) {
-fzgui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.pauseMusic();
 if (1 == r.ThanThuConst.isMainGame) {
-fzgui.UIScreenManager.instance.popScreen();
-r.ThanThuConst._isPlayTry || fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.UIScreenManager.instance.popScreen();
+r.ThanThuConst._isPlayTry || lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 } else {
-fzgui.UIScreenManager.instance.popToRootScreen();
+lngui.UIScreenManager.instance.popToRootScreen();
 s.default.instance.onDisable();
-r.ThanThuConst._isPlayTry || fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+r.ThanThuConst._isPlayTry || lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 }
 }
 };
@@ -1745,21 +1749,21 @@ this.pnlSetting.active = !1;
 }.bind(this), 5e3);
 };
 e.prototype.touchBtnSound = function() {
-if (0 == fzgui.AudioManager.instance.sfxVolume) {
+if (0 == lngui.AudioManager.instance.sfxVolume) {
 this.btnSound.getComponent(cc.Sprite).spriteFrame = this.SpfIsSound[1];
-fzgui.AudioManager.instance.sfxVolume = 1;
+lngui.AudioManager.instance.sfxVolume = 1;
 } else {
 this.btnSound.getComponent(cc.Sprite).spriteFrame = this.SpfIsSound[0];
-fzgui.AudioManager.instance.sfxVolume = 0;
+lngui.AudioManager.instance.sfxVolume = 0;
 }
 };
 e.prototype.touchBtnMusic = function() {
-if (0 == fzgui.AudioManager.instance.musicVolume) {
+if (0 == lngui.AudioManager.instance.musicVolume) {
 this.btnMusic.getComponent(cc.Sprite).spriteFrame = this.SpfIsMusic[1];
-fzgui.AudioManager.instance.musicVolume = 1;
+lngui.AudioManager.instance.musicVolume = 1;
 } else {
 this.btnMusic.getComponent(cc.Sprite).spriteFrame = this.SpfIsMusic[0];
-fzgui.AudioManager.instance.musicVolume = 0;
+lngui.AudioManager.instance.musicVolume = 0;
 }
 };
 a([ h(cc.Button) ], e.prototype, "btnSetting", void 0);
@@ -1770,7 +1774,7 @@ a([ h(cc.Node) ], e.prototype, "btnBangThuong", void 0);
 a([ h([ cc.SpriteFrame ]) ], e.prototype, "SpfIsSound", void 0);
 a([ h([ cc.SpriteFrame ]) ], e.prototype, "SpfIsMusic", void 0);
 return a([ u ], e);
-}(fzgui.UIScreen);
+}(lngui.UIScreen);
 n.default = l;
 cc._RF.pop();
 }, {
@@ -1808,7 +1812,7 @@ function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
 return a([ s ], e);
-}(fzgui.UINumericLabelHelper));
+}(lngui.UINumericLabelHelper));
 n.default = c;
 cc._RF.pop();
 }, {} ],
@@ -1961,7 +1965,7 @@ n._instance = this;
 this.touchBtnLsHu(null, 1);
 };
 e.prototype.touchBtnLsHu = function(t, e) {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
 1 == e ? s.default.instance.sendSignalR("GetHonor", []) : s.default.instance.sendSignalR("getjackpothistory", []);
 this.content.removeAllChildren();
 };
@@ -2041,7 +2045,7 @@ a([ h(cc.Node) ], e.prototype, "content", void 0);
 a([ h(cc.AudioClip) ], e.prototype, "button_click", void 0);
 a([ h([ cc.SpriteFrame ]) ], e.prototype, "ls_sf_title", void 0);
 return n = a([ u ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 n.default = l;
 cc._RF.pop();
 }, {
@@ -2152,29 +2156,29 @@ break;
 
 case s.ThanThuConst.WINBIG.BONUS:
 this.showBonus();
-fzgui.AudioManager.instance.playSfx(this.bonus, 1);
+lngui.AudioManager.instance.playSfx(this.bonus, 1);
 break;
 
 case s.ThanThuConst.WINBIG.GIAUTO:
 this.showGiauTo(e);
-fzgui.AudioManager.instance.playSfx(this.giau_to, 1);
+lngui.AudioManager.instance.playSfx(this.giau_to, 1);
 break;
 
 case s.ThanThuConst.WINBIG.THANGLON:
 this.showThangLon(e);
-fzgui.AudioManager.instance.playSfx(this.big_win, 1);
+lngui.AudioManager.instance.playSfx(this.big_win, 1);
 break;
 
 case s.ThanThuConst.WINBIG.HUXU:
 this.showHuXu(e);
-fzgui.AudioManager.instance.playSfx(this.jackpot, 1);
+lngui.AudioManager.instance.playSfx(this.jackpot, 1);
 break;
 
 default:
 this.layoutTouchable.active = !1;
 this.pnlDecor.active = !1;
 this.useBmfXu(e);
-e ? fzgui.AudioManager.instance.playSfx(this.win, 1) : fzgui.AudioManager.instance.playSfx(this.soduKhongdu, 1);
+e ? lngui.AudioManager.instance.playSfx(this.win, 1) : lngui.AudioManager.instance.playSfx(this.soduKhongdu, 1);
 }
 this.node.active = !0;
 this.layoutTouchable.stopAllActions();
@@ -2205,7 +2209,7 @@ this.txtThangLon.scheduleProgress(t);
 this.node_ThangLon.runAction(cc.scaleTo(2, 1.5));
 };
 e.prototype.showHuXu = function(t) {
-fzgui.AudioManager.instance.playSfx(this.jackpot, 1);
+lngui.AudioManager.instance.playSfx(this.jackpot, 1);
 this.node_NoHu.active = !0;
 this.txtNoHu.scheduleProgress(0);
 this.txtNoHu.scheduleProgress(t);

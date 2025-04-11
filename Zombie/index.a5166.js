@@ -1,34 +1,34 @@
-window.__require = function t(e, n, o) {
-function i(s, a) {
+window.__require = function t(e, n, i) {
+function o(s, a) {
 if (!n[s]) {
 if (!e[s]) {
 var r = s.split("/");
 r = r[r.length - 1];
 if (!e[r]) {
-var u = "function" == typeof __require && __require;
-if (!a && u) return u(r, !0);
+var l = "function" == typeof __require && __require;
+if (!a && l) return l(r, !0);
 if (c) return c(r, !0);
 throw new Error("Cannot find module '" + s + "'");
 }
 s = r;
 }
-var p = n[s] = {
+var u = n[s] = {
 exports: {}
 };
-e[s][0].call(p.exports, function(t) {
-return i(e[s][1][t] || t);
-}, p, p.exports, t, e, n, o);
+e[s][0].call(u.exports, function(t) {
+return o(e[s][1][t] || t);
+}, u, u.exports, t, e, n, i);
 }
 return n[s].exports;
 }
-for (var c = "function" == typeof __require && __require, s = 0; s < o.length; s++) i(o[s]);
-return i;
+for (var c = "function" == typeof __require && __require, s = 0; s < i.length; s++) o(i[s]);
+return o;
 }({
 "Zom.AudioDefined": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "0a15cBsRk1P2aYb0I56kC96", "Zom.AudioDefined");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -36,21 +36,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = cc._decorator, a = s.ccclass, r = s.property, u = function(t) {
-i(e, t);
+var s = cc._decorator, a = s.ccclass, r = s.property, l = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.bg_game = null;
@@ -101,14 +101,14 @@ c([ r(cc.AudioClip) ], e.prototype, "tien_tang", void 0);
 c([ r(cc.AudioClip) ], e.prototype, "win", void 0);
 return n = c([ a ], e);
 }(cc.Component);
-n.default = u;
+n.default = l;
 cc._RF.pop();
 }, {} ],
 "Zom.BangThuong": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "d217e2xL4tFlIAvjEMEFxE6", "Zom.BangThuong");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -116,21 +116,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("../Zom.Const"), a = cc._decorator, r = a.ccclass, u = a.property, p = function(t) {
-i(e, t);
+var s = t("../Zom.Const"), a = cc._decorator, r = a.ccclass, l = a.property, u = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.sprFrame = [];
@@ -150,11 +150,11 @@ default:
 this.sprContent.spriteFrame = this.sprContent.spriteFrame = this.sprFrame[2];
 }
 };
-c([ u(cc.Sprite) ], e.prototype, "sprContent", void 0);
-c([ u([ cc.SpriteFrame ]) ], e.prototype, "sprFrame", void 0);
+c([ l(cc.Sprite) ], e.prototype, "sprContent", void 0);
+c([ l([ cc.SpriteFrame ]) ], e.prototype, "sprFrame", void 0);
 return c([ r ], e);
-}(fzgui.UIPopup);
-n.default = p;
+}(lngui.UIPopup);
+n.default = u;
 cc._RF.pop();
 }, {
 "../Zom.Const": "Zom.Const"
@@ -162,8 +162,8 @@ cc._RF.pop();
 "Zom.Button": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "86881q4c6lIMo3KLzopw7Wa", "Zom.Button");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -171,21 +171,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = cc._decorator, a = s.ccclass, r = s.property, u = function(t) {
-i(e, t);
+var s = cc._decorator, a = s.ccclass, r = s.property, l = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e._isBtnSetting = !1;
@@ -215,21 +215,21 @@ this.touchBtnSetting();
 };
 e.prototype.touchBtnBack = function() {};
 e.prototype.touchMusic = function() {
-if (0 == fzgui.AudioManager.instance.musicVolume) {
+if (0 == lngui.AudioManager.instance.musicVolume) {
 this.btnMusic.getComponent(cc.Sprite).spriteFrame = this.SpfIsMusic[1];
-fzgui.AudioManager.instance.musicVolume = 1;
+lngui.AudioManager.instance.musicVolume = 1;
 } else {
 this.btnMusic.getComponent(cc.Sprite).spriteFrame = this.SpfIsMusic[0];
-fzgui.AudioManager.instance.musicVolume = 0;
+lngui.AudioManager.instance.musicVolume = 0;
 }
 };
 e.prototype.touchSound = function() {
-if (0 == fzgui.AudioManager.instance.sfxVolume) {
+if (0 == lngui.AudioManager.instance.sfxVolume) {
 this.btnSound.getComponent(cc.Sprite).spriteFrame = this.SpfIsSound[1];
-fzgui.AudioManager.instance.sfxVolume = 1;
+lngui.AudioManager.instance.sfxVolume = 1;
 } else {
 this.btnSound.getComponent(cc.Sprite).spriteFrame = this.SpfIsSound[0];
-fzgui.AudioManager.instance.sfxVolume = 0;
+lngui.AudioManager.instance.sfxVolume = 0;
 }
 };
 c([ r(cc.Button) ], e.prototype, "btnBack", void 0);
@@ -241,14 +241,14 @@ c([ r([ cc.SpriteFrame ]) ], e.prototype, "SpfIsMusic", void 0);
 c([ r([ cc.SpriteFrame ]) ], e.prototype, "SpfIsSound", void 0);
 return c([ a ], e);
 }(cc.Component);
-n.default = u;
+n.default = l;
 cc._RF.pop();
 }, {} ],
 "Zom.ChonDong": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "06f5eHFkWBMfo0Jzz39L2Qn", "Zom.ChonDong");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -256,21 +256,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("../Zom.Const"), a = t("../Zom.MainGame"), r = cc._decorator, u = r.ccclass, p = r.property, l = function(t) {
-i(e, t);
+var s = t("../Zom.Const"), a = t("../Zom.MainGame"), r = cc._decorator, l = r.ccclass, u = r.property, p = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e._arrayBtnDong = [];
@@ -323,16 +323,16 @@ var e = t.currentTarget;
 t.type === cc.Node.EventType.TOUCH_END && (e.tagName === this.TAG_ENABLE_LINE ? this.setBtnStatus(e, !1) : this.setBtnStatus(e, !0));
 };
 e.prototype.changeLine = function() {
-if (0 === this.countEnableLine()) fzgui.UITextManager.showCenterNotification("Bạn hãy chọn ít nhất 1 dòng"); else {
+if (0 === this.countEnableLine()) lngui.UITextManager.showCenterNotification("Bạn hãy chọn ít nhất 1 dòng"); else {
 s.ZomConst.nLineBet = this.countEnableLine();
 s.ZomConst.choseLine = this.getStrEnableLine();
 a.default.instance.onChangeLine();
 }
 };
-c([ p(cc.Node) ], e.prototype, "pnlMid", void 0);
-return c([ u ], e);
-}(fzgui.UIPopup);
-n.default = l;
+c([ u(cc.Node) ], e.prototype, "pnlMid", void 0);
+return c([ l ], e);
+}(lngui.UIPopup);
+n.default = p;
 cc._RF.pop();
 }, {
 "../Zom.Const": "Zom.Const",
@@ -345,23 +345,23 @@ Object.defineProperty(n, "__esModule", {
 value: !0
 });
 n.ZomConst = void 0;
-var o = t("./Zom.MainGame"), i = function() {
+var i = t("./Zom.MainGame"), o = function() {
 function t() {}
 t.isBtnClickable = function(t) {
 if (this._isPlayTry) {
-t || fzgui.UITextManager.showCenterNotification("Bạn không thể chọn phòng trong phần chơi miễn phí");
+t || lngui.UITextManager.showCenterNotification("Bạn không thể chọn phòng trong phần chơi miễn phí");
 return !1;
 }
 if (this._freeSpin) {
-t || fzgui.UITextManager.showCenterNotification("Hiện đang trong tiến trình quay miễn phí");
+t || lngui.UITextManager.showCenterNotification("Hiện đang trong tiến trình quay miễn phí");
 return !1;
 }
 if (this._autoSpin) {
-t || fzgui.UITextManager.showCenterNotification("Hiện đang trong tiến trình tự động quay");
+t || lngui.UITextManager.showCenterNotification("Hiện đang trong tiến trình tự động quay");
 return !1;
 }
-if (this._resultSpin || !o.default.instance.btnQuay.interactable) {
-t || fzgui.UITextManager.showCenterNotification("Hiện đang trong tiến trình quay");
+if (this._resultSpin || !i.default.instance.btnQuay.interactable) {
+t || lngui.UITextManager.showCenterNotification("Hiện đang trong tiến trình quay");
 return !1;
 }
 return !0;
@@ -456,7 +456,7 @@ AccountID: 346107
 };
 return t;
 }();
-n.ZomConst = i;
+n.ZomConst = o;
 cc._RF.pop();
 }, {
 "./Zom.MainGame": "Zom.MainGame"
@@ -464,8 +464,8 @@ cc._RF.pop();
 "Zom.HistoryDetail": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "c1444ARZ/hGOoiLAbVtNtOy", "Zom.HistoryDetail");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -473,21 +473,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("../common/Utils"), a = t("../Zom.Const"), r = cc._decorator, u = r.ccclass, p = r.property, l = function(t) {
-i(e, t);
+var s = t("../common/Utils"), a = t("../Zom.Const"), r = cc._decorator, l = r.ccclass, u = r.property, p = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.imgItem = [];
@@ -515,25 +515,25 @@ this._icons[n] = [];
 this._iconsPos[n] = [];
 this._nodeCol[n] = this._pnlSlot.getChildByName("nodeCol" + n);
 this._nodeCol[n].y -= (this._nodeItemNumber - 3) * this._nodeItemDistant;
-for (var o = 0; o < 3; o++) {
-this._iconsPos[n][o] = cc.v2(0, this._nodeItemBottomPos + this._nodeItemDistant * o);
-var i = e[n + (10 - 5 * o)];
-cc.log(i);
+for (var i = 0; i < 3; i++) {
+this._iconsPos[n][i] = cc.v2(0, this._nodeItemBottomPos + this._nodeItemDistant * i);
+var o = e[n + (10 - 5 * i)];
+cc.log(o);
 var c = new cc.Node();
-c.addComponent(cc.Sprite).spriteFrame = this.imgItem[i];
+c.addComponent(cc.Sprite).spriteFrame = this.imgItem[o];
 c.setScale(this._nodeItemScale);
-c.setPosition(this._iconsPos[n][o]);
+c.setPosition(this._iconsPos[n][i]);
 this._nodeCol[n].addChild(c);
-this._icons[n][o + this._nodeItemNumber - 3] = c;
+this._icons[n][i + this._nodeItemNumber - 3] = c;
 }
 }
 };
-c([ p(cc.Node) ], e.prototype, "pnlMid", void 0);
-c([ p(cc.Prefab) ], e.prototype, "itemGame", void 0);
-c([ p([ cc.SpriteFrame ]) ], e.prototype, "imgItem", void 0);
-return c([ u ], e);
-}(fzgui.UIPopup);
-n.default = l;
+c([ u(cc.Node) ], e.prototype, "pnlMid", void 0);
+c([ u(cc.Prefab) ], e.prototype, "itemGame", void 0);
+c([ u([ cc.SpriteFrame ]) ], e.prototype, "imgItem", void 0);
+return c([ l ], e);
+}(lngui.UIPopup);
+n.default = p;
 cc._RF.pop();
 }, {
 "../Zom.Const": "Zom.Const",
@@ -542,8 +542,8 @@ cc._RF.pop();
 "Zom.History": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "49d17TPPAlAlLRK8LC6NIm6", "Zom.History");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -551,21 +551,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("../common/Utils"), a = t("../Zom.Const"), r = t("../network/Zom.NetworkClient"), u = cc._decorator, p = u.ccclass, l = u.property, h = function(t) {
-i(e, t);
+var s = t("../common/Utils"), a = t("../Zom.Const"), r = t("../network/Zom.NetworkClient"), l = cc._decorator, u = l.ccclass, p = l.property, h = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.itemPerPage = 50;
@@ -626,12 +626,12 @@ a.ZomConst.data = e;
 };
 var n;
 e._instance = null;
-c([ l(cc.Node) ], e.prototype, "pnlItem", void 0);
-c([ l(cc.ScrollView) ], e.prototype, "scrollview", void 0);
-c([ l(cc.Node) ], e.prototype, "content", void 0);
-c([ l(cc.AudioClip) ], e.prototype, "button_click", void 0);
-return n = c([ p ], e);
-}(fzgui.UIPopup);
+c([ p(cc.Node) ], e.prototype, "pnlItem", void 0);
+c([ p(cc.ScrollView) ], e.prototype, "scrollview", void 0);
+c([ p(cc.Node) ], e.prototype, "content", void 0);
+c([ p(cc.AudioClip) ], e.prototype, "button_click", void 0);
+return n = c([ u ], e);
+}(lngui.UIPopup);
 n.default = h;
 cc._RF.pop();
 }, {
@@ -642,8 +642,8 @@ cc._RF.pop();
 "Zom.ItemGame": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "663026NDhVAd7X+oXF2PXYX", "Zom.ItemGame");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -651,21 +651,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = cc._decorator, a = s.ccclass, r = s.property, u = function(t) {
-i(e, t);
+var s = cc._decorator, a = s.ccclass, r = s.property, l = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.arrItemSkeleton = [];
@@ -688,18 +688,18 @@ this.node.width = 163;
 };
 e.prototype.init = function(t, e, n) {
 if (3 == e && n) {
-var o = (i = new cc.Node()).addComponent(sp.Skeleton);
-o.skeletonData = this.arrItemSkeleton[0];
-o.premultipliedAlpha = !1;
-o.debugSlots = !1;
-o.debugBones = !1;
-100 == t ? o.animation = "Item3_1_A" : 1e3 == t ? o.animation = "Item3_2_A" : 1e4 != t && 0 != t || (o.animation = "Item3_3_A");
-o.loop = !0;
-i.parent = this.node;
+var i = (o = new cc.Node()).addComponent(sp.Skeleton);
+i.skeletonData = this.arrItemSkeleton[0];
+i.premultipliedAlpha = !1;
+i.debugSlots = !1;
+i.debugBones = !1;
+100 == t ? i.animation = "Item3_1_A" : 1e3 == t ? i.animation = "Item3_2_A" : 1e4 != t && 0 != t || (i.animation = "Item3_3_A");
+i.loop = !0;
+o.parent = this.node;
 } else {
-var i;
-(i = new cc.Node()).addComponent(cc.Sprite).spriteFrame = this.tpSpriteFrame[e];
-i.parent = this.node;
+var o;
+(o = new cc.Node()).addComponent(cc.Sprite).spriteFrame = this.tpSpriteFrame[e];
+o.parent = this.node;
 }
 };
 var n;
@@ -708,14 +708,14 @@ c([ r([ sp.SkeletonData ]) ], e.prototype, "arrItemSkeleton", void 0);
 c([ r([ cc.SpriteFrame ]) ], e.prototype, "tpSpriteFrame", void 0);
 return n = c([ a ], e);
 }(cc.Component);
-n.default = u;
+n.default = l;
 cc._RF.pop();
 }, {} ],
 "Zom.Lobby": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "81022lf5s9HBIB1f+57qNLA", "Zom.Lobby");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -723,21 +723,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("./common/Utils"), a = t("./Zom.Const"), r = cc._decorator, u = r.ccclass, p = r.property, l = function(t) {
-i(e, t);
+var s = t("./common/Utils"), a = t("./Zom.Const"), r = cc._decorator, l = r.ccclass, u = r.property, p = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.txtNickName = null;
@@ -758,20 +758,20 @@ configurable: !0
 });
 e.prototype.onEnable = function() {
 n._instance = this;
-this.txtNickName.string = fzgui.UserManager.instance.mainUserInfo.NickName;
-this.txtXuBalance.string = s.default.formatNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+this.txtNickName.string = lngui.UserManager.instance.mainUserInfo.NickName;
+this.txtXuBalance.string = s.default.formatNumber(lngui.UserManager.instance.mainUserInfo.Money);
 this.node.runAction(cc.repeatForever(cc.sequence(cc.delayTime(.1), cc.callFunc(this.setJackpot, this))));
-fzgui.AudioManager.instance.playMusic(this.soundBgLobby);
+lngui.AudioManager.instance.playMusic(this.soundBgLobby);
 };
 e.prototype.show = function(t) {
 this.node.active = t;
 return this.node.active;
 };
 e.prototype.setJackpot = function() {
-for (var t = 0; t < 3; t++) fzgui.UINumericLabelHelper.scheduleForLabel(this.txtJackPot[t], a.ZomConst.jackpot[t + 1], .2);
+for (var t = 0; t < 3; t++) lngui.UINumericLabelHelper.scheduleForLabel(this.txtJackPot[t], a.ZomConst.jackpot[t + 1], .2);
 };
 e.prototype.actBack = function() {
-fzgui.GameCoreManager.instance.onBackToLobby();
+lngui.GameCoreManager.instance.onBackToLobby();
 };
 e.prototype.actRoom = function(t, e) {
 a.ZomConst.roomType = e;
@@ -779,14 +779,14 @@ a.ZomConst.roomValue = [ 0, 100, 1e3, 1e4 ][e];
 };
 var n;
 e._instance = null;
-c([ p(cc.Label) ], e.prototype, "txtNickName", void 0);
-c([ p(cc.Label) ], e.prototype, "txtXuBalance", void 0);
-c([ p([ cc.Label ]) ], e.prototype, "txtJackPot", void 0);
-c([ p(cc.AudioClip) ], e.prototype, "button_click", void 0);
-c([ p(cc.AudioClip) ], e.prototype, "soundBgLobby", void 0);
-return n = c([ u ], e);
-}(fzgui.UIScreen);
-n.default = l;
+c([ u(cc.Label) ], e.prototype, "txtNickName", void 0);
+c([ u(cc.Label) ], e.prototype, "txtXuBalance", void 0);
+c([ u([ cc.Label ]) ], e.prototype, "txtJackPot", void 0);
+c([ u(cc.AudioClip) ], e.prototype, "button_click", void 0);
+c([ u(cc.AudioClip) ], e.prototype, "soundBgLobby", void 0);
+return n = c([ l ], e);
+}(lngui.UIScreen);
+n.default = p;
 cc._RF.pop();
 }, {
 "./Zom.Const": "Zom.Const",
@@ -795,8 +795,8 @@ cc._RF.pop();
 "Zom.MainGame": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "68989OjzXpEG5DHpoyZeGzA", "Zom.MainGame");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -804,21 +804,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("./Zom.WinBig"), a = t("./Zom.Const"), r = t("./common/Utils"), u = t("./network/Zom.NetworkClient"), p = cc._decorator, l = p.ccclass, h = p.property, d = function(t) {
-i(e, t);
+var s = t("./Zom.WinBig"), a = t("./Zom.Const"), r = t("./common/Utils"), l = t("./network/Zom.NetworkClient"), u = cc._decorator, p = u.ccclass, h = u.property, d = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e._icons = [];
@@ -853,9 +853,9 @@ configurable: !0
 });
 e.prototype.onEnable = function() {
 n._instance = this;
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtBalance, fzgui.UserManager.instance.mainUserInfo.Money, .5 / this._spinSpeed);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtBalance, lngui.UserManager.instance.mainUserInfo.Money, .5 / this._spinSpeed);
 this.node.runAction(cc.repeatForever(cc.sequence(cc.delayTime(.1), cc.callFunc(function() {
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtJackpot, a.ZomConst.jackpot[a.ZomConst.roomType], .5 / this._spinSpeed);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtJackpot, a.ZomConst.jackpot[a.ZomConst.roomType], .5 / this._spinSpeed);
 }, this))));
 this.initPnlMid();
 this.initPnlBottom();
@@ -869,7 +869,7 @@ case 0:
 a.ZomConst._isPlayTry = !0;
 a.ZomConst.roomType = 3;
 a.ZomConst.roomValue = 1e4;
-u.default.instance.sendSignalR("PlayTry", [ !0 ]);
+l.default.instance.sendSignalR("PlayTry", [ !0 ]);
 this.sprBg.spriteFrame = this.sprBgArr[0];
 this.sprBg2.spriteFrame = this.sprBgArr[1];
 break;
@@ -903,7 +903,7 @@ this.sprChar.setAnimation(0, "Idle", !0);
 this.sprBg.spriteFrame = this.sprBgArr[6];
 this.sprBg2.spriteFrame = this.sprBgArr[7];
 }
-u.default.instance.sendSignalR("PlayNow", [ a.ZomConst.roomType ]);
+l.default.instance.sendSignalR("PlayNow", [ a.ZomConst.roomType ]);
 this.txtRoomValue.string = r.default.formatNumber(a.ZomConst.roomValue);
 this.txtXuCuoc.string = r.default.formatNumber(a.ZomConst.roomValue * this._chonDongNumberCounter);
 };
@@ -915,7 +915,7 @@ this.txtChonDongNumber.string = this._chonDongNumberCounter.toString();
 this.pnlSpinSpeed.runAction(cc.sequence(cc.scaleTo(0, 0, 0), cc.hide()));
 this.btnRoom.node.on(cc.Node.EventType.TOUCH_END, function() {
 if (a.ZomConst.isBtnClickable(!1)) {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
 switch (a.ZomConst.roomValue) {
 case 100:
 this.initRoomVar(1e3);
@@ -936,7 +936,7 @@ this.txtXuThang.string = "0";
 }, this);
 this.btnChonDong.node.on(cc.Node.EventType.TOUCH_END, function() {
 if (a.ZomConst.isBtnClickable(!1)) {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
 this._chonDongNumberCounter++;
 this._chonDongNumberCounter > 25 && (this._chonDongNumberCounter = 1);
 this.updateChonDong();
@@ -944,7 +944,7 @@ this.updateChonDong();
 }, this);
 this.btnDongTang.node.on(cc.Node.EventType.TOUCH_END, function() {
 if (a.ZomConst.isBtnClickable(!1)) {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
 this._chonDongNumberCounter++;
 this._chonDongNumberCounter > 25 && (this._chonDongNumberCounter = 1);
 this.updateChonDong();
@@ -952,7 +952,7 @@ this.updateChonDong();
 }, this);
 this.btnDongGiam.node.on(cc.Node.EventType.TOUCH_END, function() {
 if (a.ZomConst.isBtnClickable(!1)) {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
 this._chonDongNumberCounter--;
 this._chonDongNumberCounter < 1 && (this._chonDongNumberCounter = 25);
 this.updateChonDong();
@@ -960,12 +960,12 @@ this.updateChonDong();
 }, this);
 this.btnQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
 if (a.ZomConst.isBtnClickable(!1)) {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
 this.callSpin();
 }
 }, this);
 this.btnTuQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
 if (this._isPnlSpinSpeed) {
 this._isPnlSpinSpeed = !this._isPnlSpinSpeed;
 this.pnlSpinSpeed.runAction(cc.sequence(cc.scaleTo(.15, 0, 0), cc.hide()));
@@ -975,15 +975,15 @@ this.pnlSpinSpeed.runAction(cc.sequence(cc.show(), cc.scaleTo(.15, 1, 1)));
 }
 }, this);
 this.btnDungTuQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
-fzgui.AudioManager.instance.playMusic(this.soundBgGame);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playMusic(this.soundBgGame);
 this._autoSpin = !1;
 this._spinSpeed = 1;
 this.touchBtnTuQuay();
 }, this);
 for (var t = function(t) {
 e.btnSieuToc[t].node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
 this._autoSpin = !0;
 this._spinSpeed = t + 1;
 this.touchBtnTuQuay();
@@ -993,10 +993,10 @@ this.pnlSpinSpeed.runAction(cc.sequence(cc.scaleTo(.15, 0, 0), cc.hide()));
 }, e = this, n = 0; n < 3; n++) t(n);
 };
 e.prototype.touchBtnTuQuay = function() {
-fzgui.AudioManager.instance.playSfx(this.soundClick, 1);
+lngui.AudioManager.instance.playSfx(this.soundClick, 1);
 if (this._spinSpeed >= 1) {
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.AudioManager.instance.playMusic(this.soundSpinSpeed);
+lngui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.playMusic(this.soundSpinSpeed);
 }
 this.btnTuQuay.node.active = !(this._autoSpin && this._spinSpeed >= 1);
 this.btnDungTuQuay.node.active = this._autoSpin && this._spinSpeed >= 1;
@@ -1024,7 +1024,7 @@ this._nodeCol[t].y -= (this._nodeItemNumber - 3) * this._nodeItemDistant;
 for (var e = 0; e < this._nodeItemNumber; e++) {
 this._iconsPos[t][e] = cc.v2(0, this._nodeItemBottomPos + this._nodeItemDistant * e);
 if (e >= this._nodeItemNumber - 3) {
-var n = fzgui.Utils.getRandomInt(1, this.imgItem.length - 1);
+var n = lngui.Utils.getRandomInt(1, this.imgItem.length - 1);
 this._icons[t][e] = new cc.Node();
 this._icons[t][e].addComponent(cc.Sprite).spriteFrame = this.imgItem[n];
 this._icons[t][e].setPosition(this._iconsPos[t][e].x, this._iconsPos[t][e].y + 500);
@@ -1052,7 +1052,7 @@ this._resultSpin = null;
 this.btnQuay.interactable = !0;
 }
 }, this)));
-this._freeSpin ? u.default.instance.sendSignalR("Spin", [ 25, 1 ]) : u.default.instance.sendSignalR("Spin", [ this._chonDongNumberCounter, 1 ]);
+this._freeSpin ? l.default.instance.sendSignalR("Spin", [ 25, 1 ]) : l.default.instance.sendSignalR("Spin", [ this._chonDongNumberCounter, 1 ]);
 };
 e.prototype.parseSlotInfo = function(t) {
 this.txtChonDongNumber.string = this._chonDongNumberCounter.toString();
@@ -1081,19 +1081,19 @@ for (var t = 1; t <= 25; t++) this._sprLine[t].active = !1;
 var e = this._resultSpin.SpinData.Slots;
 cc.log(e);
 this._delayRollIndexStart = 6;
-var n = 0, o = 0;
+var n = 0, i = 0;
 for (t = 0; t < 4; t++) {
-for (var i = !1, c = !1, s = 0; s < 3; s++) {
-if (2 === e[t + (10 - 5 * s)] && !i) {
+for (var o = !1, c = !1, s = 0; s < 3; s++) {
+if (2 === e[t + (10 - 5 * s)] && !o) {
 n++;
-i = !0;
+o = !0;
 }
 if (3 === e[t + (10 - 5 * s)] && !c) {
-o++;
+i++;
 c = !0;
 }
 }
-(2 === n || 2 === o) && this._delayRollIndexStart > 5 && (this._delayRollIndexStart = t);
+(2 === n || 2 === i) && this._delayRollIndexStart > 5 && (this._delayRollIndexStart = t);
 }
 for (t = 0; t < 5; t++) for (s = 0; s < 3; s++) {
 this._icons[t][s] && this._icons[t][s].removeFromParent();
@@ -1106,7 +1106,7 @@ this._nodeCol[t].addChild(a);
 this._icons[t][s + this._nodeItemNumber - 3] = a;
 }
 if (!this._icons[0][3]) for (t = 0; t < 5; t++) for (s = 3; s < this._nodeItemNumber - 3; s++) {
-var r = fzgui.Utils.getRandomInt(1, this.imgItem.length - 1);
+var r = lngui.Utils.getRandomInt(1, this.imgItem.length - 1);
 this._icons[t][s] = new cc.Node();
 this._icons[t][s].addComponent(cc.Sprite).spriteFrame = this.imgItem[r];
 this._icons[t][s].setScale(this._nodeItemScale);
@@ -1158,20 +1158,20 @@ this.beginRoll();
 };
 e.prototype.beginRoll = function() {
 cc.log("beginRoll");
-fzgui.AudioManager.instance.playSfx(this.soundSpin, 1);
-for (var t = 2.44 / this._spinSpeed, e = .3 / this._spinSpeed, n = t + e, o = 0; o < 5; o++) {
-this._nodeCol[o].stopAllActions();
-this._nodeCol[o].y = 0;
-var i = [ cc.delayTime(.125 * o) ];
+lngui.AudioManager.instance.playSfx(this.soundSpin, 1);
+for (var t = 2.44 / this._spinSpeed, e = .3 / this._spinSpeed, n = t + e, i = 0; i < 5; i++) {
+this._nodeCol[i].stopAllActions();
+this._nodeCol[i].y = 0;
+var o = [ cc.delayTime(.125 * i) ];
 if (1 === this._delayRollIndexStart) {
-if (0 === o || 1 === o) i.push(cc.moveBy(1 * t, 0, -this._nodeItemDistant * (Math.round(.25 * this._nodeItemNumber) - 2.5))); else if (2 === o) {
-i.push(cc.moveBy(2 * t, 0, -this._nodeItemDistant * (Math.round(.5 * this._nodeItemNumber) - 2.5)));
-this._spinEffect[o].runAction(cc.sequence(cc.delayTime(n + .125 * o), cc.callFunc(function(t) {
+if (0 === i || 1 === i) o.push(cc.moveBy(1 * t, 0, -this._nodeItemDistant * (Math.round(.25 * this._nodeItemNumber) - 2.5))); else if (2 === i) {
+o.push(cc.moveBy(2 * t, 0, -this._nodeItemDistant * (Math.round(.5 * this._nodeItemNumber) - 2.5)));
+this._spinEffect[i].runAction(cc.sequence(cc.delayTime(n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 }, this), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 })));
-this._btnEffect[this._delayRollIndexStart].runAction(cc.sequence(cc.delayTime(n + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[this._delayRollIndexStart].runAction(cc.sequence(cc.delayTime(n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1180,7 +1180,7 @@ this.animationWait(t);
 t.stopAllActions();
 t.opacity = 0;
 }, this._btnEffect[this._delayRollIndexStart])));
-this._btnEffect[o].runAction(cc.sequence(cc.delayTime(n + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[i].runAction(cc.sequence(cc.delayTime(n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1188,15 +1188,15 @@ this.animationWait(t);
 }, this), cc.delayTime(2 * n), cc.callFunc(function(t) {
 t.opacity = 0;
 t.stopAllActions();
-}, this._btnEffect[o])));
-} else if (3 === o) {
-i.push(cc.moveBy(3 * t, 0, -this._nodeItemDistant * (Math.round(.75 * this._nodeItemNumber) - 2.5)));
-this._spinEffect[o].runAction(cc.sequence(cc.delayTime(2 * n + .125 * o), cc.callFunc(function(t) {
+}, this._btnEffect[i])));
+} else if (3 === i) {
+o.push(cc.moveBy(3 * t, 0, -this._nodeItemDistant * (Math.round(.75 * this._nodeItemNumber) - 2.5)));
+this._spinEffect[i].runAction(cc.sequence(cc.delayTime(2 * n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 }), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 })));
-this._btnEffect[o].runAction(cc.sequence(cc.delayTime(2 * n + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[i].runAction(cc.sequence(cc.delayTime(2 * n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1204,15 +1204,15 @@ this.animationWait(t);
 }, this), cc.delayTime(2 * n), cc.callFunc(function(t) {
 t.opacity = 0;
 t.stopAllActions();
-}, this._btnEffect[o])));
-} else if (4 === o) {
-i.push(cc.moveBy(4 * t, 0, -this._nodeItemDistant * (Math.round(1 * this._nodeItemNumber) - 2.5)));
-this._spinEffect[o].runAction(cc.sequence(cc.delayTime(3 * n + .125 * o), cc.callFunc(function(t) {
+}, this._btnEffect[i])));
+} else if (4 === i) {
+o.push(cc.moveBy(4 * t, 0, -this._nodeItemDistant * (Math.round(1 * this._nodeItemNumber) - 2.5)));
+this._spinEffect[i].runAction(cc.sequence(cc.delayTime(3 * n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 }), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 })));
-this._btnEffect[o].runAction(cc.sequence(cc.delayTime(3 * n + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[i].runAction(cc.sequence(cc.delayTime(3 * n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1220,17 +1220,17 @@ this.animationWait(t);
 }, this), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 t.stopAllActions();
-}, this._btnEffect[o])));
+}, this._btnEffect[i])));
 }
 } else if (2 === this._delayRollIndexStart) {
-if (0 === o || 1 === o || 2 === o) i.push(cc.moveBy(1 * t, 0, -this._nodeItemDistant * (Math.round(.25 * this._nodeItemNumber) - 2.5))); else if (3 === o) {
-i.push(cc.moveBy(2 * t, 0, -this._nodeItemDistant * (Math.round(.5 * this._nodeItemNumber) - 2.5)));
-this._spinEffect[o].runAction(cc.sequence(cc.delayTime(n + .125 * o), cc.callFunc(function(t) {
+if (0 === i || 1 === i || 2 === i) o.push(cc.moveBy(1 * t, 0, -this._nodeItemDistant * (Math.round(.25 * this._nodeItemNumber) - 2.5))); else if (3 === i) {
+o.push(cc.moveBy(2 * t, 0, -this._nodeItemDistant * (Math.round(.5 * this._nodeItemNumber) - 2.5)));
+this._spinEffect[i].runAction(cc.sequence(cc.delayTime(n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 }, this), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 })));
-this._btnEffect[this._delayRollIndexStart].runAction(cc.sequence(cc.delayTime(n + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[this._delayRollIndexStart].runAction(cc.sequence(cc.delayTime(n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1239,7 +1239,7 @@ this.animationWait(t);
 t.opacity = 0;
 t.stopAllActions();
 }, this._btnEffect[this._delayRollIndexStart])));
-this._btnEffect[o].runAction(cc.sequence(cc.delayTime(n + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[i].runAction(cc.sequence(cc.delayTime(n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1247,15 +1247,15 @@ this.animationWait(t);
 }, this), cc.delayTime(2 * n), cc.callFunc(function(t) {
 t.opacity = 0;
 t.stopAllActions();
-}, this._btnEffect[o])));
-} else if (4 === o) {
-i.push(cc.moveBy(3 * t, 0, -this._nodeItemDistant * (Math.round(.75 * this._nodeItemNumber) - 2.5)));
-this._spinEffect[o].runAction(cc.sequence(cc.delayTime(2 * n + .125 * o), cc.callFunc(function(t) {
+}, this._btnEffect[i])));
+} else if (4 === i) {
+o.push(cc.moveBy(3 * t, 0, -this._nodeItemDistant * (Math.round(.75 * this._nodeItemNumber) - 2.5)));
+this._spinEffect[i].runAction(cc.sequence(cc.delayTime(2 * n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 }), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 })));
-this._btnEffect[o].runAction(cc.sequence(cc.delayTime(2 * n + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[i].runAction(cc.sequence(cc.delayTime(2 * n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1263,17 +1263,17 @@ this.animationWait(t);
 }, this), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 t.stopAllActions();
-}, this._btnEffect[o])));
+}, this._btnEffect[i])));
 }
 } else if (3 === this._delayRollIndexStart) {
-if (0 === o || 1 === o || 2 === o || 3 === o) i.push(cc.moveBy(1 * t, 0, -this._nodeItemDistant * (Math.round(.25 * this._nodeItemNumber) - 2.5))); else if (4 === o) {
-i.push(cc.moveBy(2 * t, 0, -this._nodeItemDistant * (Math.round(.5 * this._nodeItemNumber) - 2.5)));
-this._spinEffect[o].runAction(cc.sequence(cc.delayTime(n + .125 * o), cc.callFunc(function(t) {
+if (0 === i || 1 === i || 2 === i || 3 === i) o.push(cc.moveBy(1 * t, 0, -this._nodeItemDistant * (Math.round(.25 * this._nodeItemNumber) - 2.5))); else if (4 === i) {
+o.push(cc.moveBy(2 * t, 0, -this._nodeItemDistant * (Math.round(.5 * this._nodeItemNumber) - 2.5)));
+this._spinEffect[i].runAction(cc.sequence(cc.delayTime(n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 }), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 })));
-this._btnEffect[this._delayRollIndexStart].runAction(cc.sequence(cc.delayTime(n + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[this._delayRollIndexStart].runAction(cc.sequence(cc.delayTime(n + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1282,7 +1282,7 @@ this.animationWait(t);
 t.opacity = 0;
 t.stopAllActions();
 }, this._btnEffect[this._delayRollIndexStart])));
-this._btnEffect[o].runAction(cc.sequence(cc.delayTime(t + .125 * o), cc.callFunc(function(t) {
+this._btnEffect[i].runAction(cc.sequence(cc.delayTime(t + .125 * i), cc.callFunc(function(t) {
 t.opacity = 255;
 t.runAction(cc.sequence(cc.delayTime(.1), cc.callFunc(function(t) {
 this.animationWait(t);
@@ -1290,12 +1290,12 @@ this.animationWait(t);
 }, this), cc.delayTime(n), cc.callFunc(function(t) {
 t.opacity = 0;
 t.stopAllActions();
-}, this._btnEffect[o])));
+}, this._btnEffect[i])));
 }
-} else i.push(cc.moveBy(1 * t, 0, -this._nodeItemDistant * (Math.round(.25 * this._nodeItemNumber) - 2.5)));
-i.push(cc.moveBy(e, 0, .5 * this._nodeItemDistant).easing(cc.easeElasticOut(2)));
-4 === o && i.push(cc.callFunc(this.finishRoll, this));
-this._nodeCol[o].runAction(cc.sequence(i));
+} else o.push(cc.moveBy(1 * t, 0, -this._nodeItemDistant * (Math.round(.25 * this._nodeItemNumber) - 2.5)));
+o.push(cc.moveBy(e, 0, .5 * this._nodeItemDistant).easing(cc.easeElasticOut(2)));
+4 === i && o.push(cc.callFunc(this.finishRoll, this));
+this._nodeCol[i].runAction(cc.sequence(o));
 }
 };
 e.prototype.finishRoll = function() {
@@ -1303,16 +1303,16 @@ cc.log("finishRoll");
 if (null != this._resultSpin.SpinData.PrizeLines && this._resultSpin.SpinData.PrizeLines.length > 0) {
 var t = [], e = this._resultSpin.SpinData.PrizeLines;
 for (var n in e) {
-var o = e[n].LineID;
-o < 1 || o > 25 || e[n].PrizeValue <= 0 || t.push(o);
+var i = e[n].LineID;
+i < 1 || i > 25 || e[n].PrizeValue <= 0 || t.push(i);
 }
 for (var n in t) this._sprLine[t[n]].active = !0;
 this._LineArray = t;
-var i = [], c = e;
-for (var n in c) i.push(c[n].Items);
-this._ItemArray = i;
+var o = [], c = e;
+for (var n in c) o.push(c[n].Items);
+this._ItemArray = o;
 var s = [];
-for (var n in i) for (var a in i[n]) s[i[n][a]] = !0;
+for (var n in o) for (var a in o[n]) s[o[n][a]] = !0;
 }
 this.showSpecialWonLayer();
 };
@@ -1343,8 +1343,8 @@ n = .3;
 }
 if (this._resultSpin.SpinData.PayLinePrizeValue) switch (t) {
 case a.ZomConst.WINBIG.GIAUTO:
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.AudioManager.instance.playSfx(this.soundThangSieuLon, 1);
+lngui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.playSfx(this.soundThangSieuLon, 1);
 this._nodeCol[0].runAction(cc.sequence(cc.delayTime(.6), cc.callFunc(function() {
 this.showWinBigNode(t, this._resultSpin.SpinData.PayLinePrizeValue);
 }, this)));
@@ -1352,8 +1352,8 @@ break;
 
 case a.ZomConst.WINBIG.HUXU:
 case a.ZomConst.WINBIG.THANGLON:
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.AudioManager.instance.playSfx(this.soundThangLon, 1);
+lngui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.playSfx(this.soundThangLon, 1);
 this._nodeCol[0].runAction(cc.sequence(cc.delayTime(.33), cc.callFunc(function() {
 this.showWinBigNode(t, this._resultSpin.SpinData.PayLinePrizeValue);
 }, this)));
@@ -1368,8 +1368,8 @@ if (t === a.ZomConst.WINBIG.HUXU) {
 this.btnDungTuQuay.node.active = !1;
 this._autoSpin = !1;
 this._spinSpeed = 1;
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.AudioManager.instance.playSfx(this.soundNoHu, 1);
+lngui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.playSfx(this.soundNoHu, 1);
 } else this._nodeCol[0].runAction(cc.sequence(cc.delayTime(n), cc.callFunc(function() {
 this.hideWinBigDecorLayer();
 this.commitSpinResult();
@@ -1393,17 +1393,17 @@ t = this._resultSpin.BonusGame.BonusItemsData[this._resultSpin.BonusGame.BonusIt
 } catch (t) {}
 this.setPrizeValue(this._resultSpin.SpinData.PayLinePrizeValue + t);
 if (a.ZomConst._isPlayTry) {
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtBalance, this._resultSpin.Account.TotalStar, .5 / this._spinSpeed);
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtJackpot, this._resultSpin.SlotInfo.Jackpot, .5 / this._spinSpeed);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtBalance, this._resultSpin.Account.TotalStar, .5 / this._spinSpeed);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtJackpot, this._resultSpin.SlotInfo.Jackpot, .5 / this._spinSpeed);
 a.ZomConst.jackpot[0] = this._resultSpin.SlotInfo.Jackpot;
 } else {
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtBalance, this._resultSpin.Account.TotalStar, .5 / this._spinSpeed);
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this._resultSpin.Account.TotalStar);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtBalance, this._resultSpin.Account.TotalStar, .5 / this._spinSpeed);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this._resultSpin.Account.TotalStar);
 a.ZomConst.jackpot[a.ZomConst.roomType] = this._resultSpin.SlotInfo.Jackpot;
 this.setJackpot();
 }
 this._resultSpin && (this._freeSpin = this._resultSpin.SlotInfo.FreeSpins);
-0 === this._resultSpin.SlotInfo.FreeSpins && this._resultSpin.SlotInfo.TotalFreeSpins > 0 && this._resultSpin.SlotInfo.TotalFreeSpinPrizeValue && fzgui.UITextManager.showCenterNotification("Chúc mừng bạn đã quay được " + this._resultSpin.SlotInfo.TotalFreeSpins + " lượt miễn phí với tổng giải thưởng là " + r.default.formatNumber(this._resultSpin.SlotInfo.TotalFreeSpinPrizeValue));
+0 === this._resultSpin.SlotInfo.FreeSpins && this._resultSpin.SlotInfo.TotalFreeSpins > 0 && this._resultSpin.SlotInfo.TotalFreeSpinPrizeValue && lngui.UITextManager.showCenterNotification("Chúc mừng bạn đã quay được " + this._resultSpin.SlotInfo.TotalFreeSpins + " lượt miễn phí với tổng giải thưởng là " + r.default.formatNumber(this._resultSpin.SlotInfo.TotalFreeSpinPrizeValue));
 this._resultSpin = null;
 this.btnQuay.interactable = !0;
 this.bgFreeSpin.active = this._freeSpin > 0;
@@ -1416,7 +1416,7 @@ this.schedule(this.showWonLine, 1);
 }
 };
 e.prototype.setPrizeValue = function(t) {
-cc.js.isNumber(t) && fzgui.UINumericLabelHelper.scheduleForLabel(this.txtXuThang, t, .5 / this._spinSpeed);
+cc.js.isNumber(t) && lngui.UINumericLabelHelper.scheduleForLabel(this.txtXuThang, t, .5 / this._spinSpeed);
 };
 e.prototype.showWonLine = function() {
 if (!this._resultSpin && this._ItemArray && this._LineArray) {
@@ -1424,12 +1424,12 @@ var t = this._LineArray[0], e = this._ItemArray[0];
 this._LineArray.splice(0, 1);
 this._ItemArray.splice(0, 1);
 for (var n = 1; n <= 25; n++) this._sprLine[n].active = !1;
-for (n = 0; n < 5; n++) for (var o = 0; o < 3; o++) this._icons[n][o + this._nodeItemNumber - 3].stopAllActions();
+for (n = 0; n < 5; n++) for (var i = 0; i < 3; i++) this._icons[n][i + this._nodeItemNumber - 3].stopAllActions();
 this._sprLine[t] && (this._sprLine[t].active = !0);
-for (var i in e) {
-var c = e[i];
-n = (c - 1) % 5, o = Math.ceil((c - n - 10) / -5);
-this._icons[n][o + this._nodeItemNumber - 3].color = cc.Color.WHITE;
+for (var o in e) {
+var c = e[o];
+n = (c - 1) % 5, i = Math.ceil((c - n - 10) / -5);
+this._icons[n][i + this._nodeItemNumber - 3].color = cc.Color.WHITE;
 }
 this._LineArray.push(t);
 this._ItemArray.push(e);
@@ -1452,7 +1452,7 @@ this.txtXuCuoc.string = r.default.formatNumber(a.ZomConst.roomValue * this._chon
 }
 };
 e.prototype.setJackpot = function() {
-a.ZomConst._isPlayTry || fzgui.UINumericLabelHelper.scheduleForLabel(this.txtJackpot, a.ZomConst.jackpot[a.ZomConst.roomType], .5 / this._spinSpeed);
+a.ZomConst._isPlayTry || lngui.UINumericLabelHelper.scheduleForLabel(this.txtJackpot, a.ZomConst.jackpot[a.ZomConst.roomType], .5 / this._spinSpeed);
 };
 var n;
 e._instance = null;
@@ -1502,8 +1502,8 @@ c([ h(cc.AudioClip) ], e.prototype, "soundThangSieuLon", void 0);
 c([ h(cc.AudioClip) ], e.prototype, "soundThangLon", void 0);
 c([ h(cc.AudioClip) ], e.prototype, "soundNoHu", void 0);
 c([ h(cc.AudioClip) ], e.prototype, "soundSpinSpeed", void 0);
-return n = c([ l ], e);
-}(fzgui.UIScreen);
+return n = c([ p ], e);
+}(lngui.UIScreen);
 n.default = d;
 cc._RF.pop();
 }, {
@@ -1515,8 +1515,8 @@ cc._RF.pop();
 "Zom.MiniGame": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "3cc18jMq/ZAUJjMXqkP1t4i", "Zom.MiniGame");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -1524,21 +1524,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("./common/Utils"), a = t("./network/Zom.NetworkClient"), r = cc._decorator, u = r.ccclass, p = r.property, l = function(t) {
-i(e, t);
+var s = t("./common/Utils"), a = t("./network/Zom.NetworkClient"), r = cc._decorator, l = r.ccclass, u = r.property, p = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e._totalPrize = 0;
@@ -1593,7 +1593,7 @@ this.txtTimer.string = this._timer.toString();
 if (0 === this._timer) {
 a.default.instance.sendSignalR("PlayBonusGameAll", []);
 this._pnlPhase3.active = !0;
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtPrizeJumpEffect, this.miniPrizeValue, .3);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtPrizeJumpEffect, this.miniPrizeValue, .3);
 this.node.runAction(cc.sequence(cc.delayTime(5.5), cc.callFunc(function() {
 this.hide();
 }, this)));
@@ -1608,8 +1608,8 @@ this._timer = 15;
 this.txtTimer.string = this._timer.toString();
 this._totalPrize = this._totalPrize + n.PrizeValue;
 this._btnMiniGameNode[e].getChildByName("pnlOpen").getComponent(sp.Skeleton).setAnimation(0, "Attack-" + s.default.randomRangeInt(1, 2) + "-Coin", !1);
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtPrizeJumpEffect, this._totalPrize, .3);
-fzgui.UINumericLabelHelper.scheduleForLabel(this._btnMiniGameNode[e].getChildByName("txtPrize").getComponent(cc.Label), n.PrizeValue, .3);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtPrizeJumpEffect, this._totalPrize, .3);
+lngui.UINumericLabelHelper.scheduleForLabel(this._btnMiniGameNode[e].getChildByName("txtPrize").getComponent(cc.Label), n.PrizeValue, .3);
 this._btnMiniGameNode[e].getChildByName("txtPrize").active = !0;
 this._btnMiniGameNode[e].getChildByName("txtPrize").runAction(cc.spawn(cc.scaleTo(1, 1).easing(cc.easeElasticOut(3)), cc.moveBy(.2, 0, 30)));
 this._btnMiniGameNode[e].getChildByName("btnClick").active = !1;
@@ -1626,7 +1626,7 @@ this._pnlPhase3.active = !1;
 };
 e.prototype.touchPnlXOpen = function(t, e) {
 cc.log(this._stepBtnX);
-var n = this._resultSpin.BonusGame.BonusItemsData[this._stepBtnX], o = this;
+var n = this._resultSpin.BonusGame.BonusItemsData[this._stepBtnX], i = this;
 this._stepBtnX++;
 this._pnlXObj[e].getChildByName("nodeSpine").getComponent(sp.Skeleton).setAnimation(0, "Attack-1", !1);
 n.Multiplier = Math.round(n.Multiplier);
@@ -1635,14 +1635,14 @@ n.Multiplier < 1 && (n.Multiplier = 1);
 this._pnlXObj[e].getChildByName("miniX" + n.Multiplier).runAction(cc.sequence(cc.delayTime(.4), cc.show()));
 this.node.runAction(cc.sequence(cc.delayTime(1.5), cc.callFunc(function() {
 var t = s.default.randomRangeInt(1, 4);
-o._pnlXObj[e].getChildByName("nodeSpine").getComponent(sp.Skeleton).setAnimation(0, "Attack-2", !1);
-o._pnlXObj[e].getChildByName("miniX" + t).active = !0;
-}, o), cc.delayTime(4), cc.callFunc(function() {
+i._pnlXObj[e].getChildByName("nodeSpine").getComponent(sp.Skeleton).setAnimation(0, "Attack-2", !1);
+i._pnlXObj[e].getChildByName("miniX" + t).active = !0;
+}, i), cc.delayTime(4), cc.callFunc(function() {
 a.default.instance.sendSignalR("PlayBonusGameAll", []);
 this._pnlPhase1.active = !1;
 this._pnlPhase2.active = !1;
 this._pnlPhase3.active = !0;
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtTotal, this._totalPrize.toString(), .3);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtTotal, this._totalPrize.toString(), .3);
 }, this), cc.delayTime(5.5), cc.callFunc(function() {
 this.hide();
 }, this)));
@@ -1652,13 +1652,13 @@ t.prototype.hide.call(this);
 };
 var n;
 e._instance = null;
-c([ p(cc.Node) ], e.prototype, "pnlMid", void 0);
-c([ p(cc.Label) ], e.prototype, "txtTimer", void 0);
-c([ p(cc.Label) ], e.prototype, "txtTotal", void 0);
-c([ p(cc.Label) ], e.prototype, "txtPrizeJumpEffect", void 0);
-return n = c([ u ], e);
-}(fzgui.UIPopup);
-n.default = l;
+c([ u(cc.Node) ], e.prototype, "pnlMid", void 0);
+c([ u(cc.Label) ], e.prototype, "txtTimer", void 0);
+c([ u(cc.Label) ], e.prototype, "txtTotal", void 0);
+c([ u(cc.Label) ], e.prototype, "txtPrizeJumpEffect", void 0);
+return n = c([ l ], e);
+}(lngui.UIPopup);
+n.default = p;
 cc._RF.pop();
 }, {
 "./common/Utils": void 0,
@@ -1667,8 +1667,8 @@ cc._RF.pop();
 "Zom.NetworkClient": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "e3dabh5BmpIRJsOS39PZ5AZ", "Zom.NetworkClient");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -1676,22 +1676,22 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("../Zom.MainGame"), a = t("../Zom.Const"), r = t("../popup/Zom.VinhDanh"), u = t("../popup/Zom.History"), p = t("../Zom.MiniGame"), l = t("../Zom.X2"), h = cc._decorator, d = h.ccclass, m = (h.property, 
+var s = t("../Zom.MainGame"), a = t("../Zom.Const"), r = t("../popup/Zom.VinhDanh"), l = t("../popup/Zom.History"), u = t("../Zom.MiniGame"), p = t("../Zom.X2"), h = cc._decorator, d = h.ccclass, m = (h.property, 
 function(t) {
-i(e, t);
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.mSignalr = null;
@@ -1713,20 +1713,25 @@ n._instance = this;
 };
 e.prototype.connect = function() {
 console.log("Connect");
+var t = {
+url: "https://thantai." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
+ip: "http://18.138.207.162:8002/signalr/negotiate",
+hub: "taydukyhub"
+};
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 cc.systemEvent.on(this.mListenerKey, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
-this.mSignalr.connect(this.mListenerKey, "https://thantai.dragonf1.xyz/signalr/negotiate", "taydukyhub", fzgui.UserManager.instance.mainUserInfo.cookie, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+this.mSignalr = new lngui.GateSignalR();
+this.mSignalr.connect(this.mListenerKey, t.url, t.hub, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 e.prototype.onEnable = function() {
-fzgui.EventDispatch.instance.add(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.connect();
 };
 e.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.closeWS();
-fzgui.ZLog.log("=====================CLOSE WS NOTI===============================");
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
 };
 e.prototype.onResponeData = function(t) {
 this.isEmpty(t) || t.s && "error" == t.s || this.onWebSocketCallback(t);
@@ -1744,59 +1749,59 @@ this.schedule(function() {
 this.sendSignalR("GetJackpotString", []);
 }, 5);
 }
-t.R < 0 && fzgui.UITextManager.showCenterNotification("Lỗi " + t.R);
+t.R < 0 && lngui.UITextManager.showCenterNotification("Lỗi " + t.R);
 if (t.M && Array.isArray(t.M) && 0 != t.M.length) for (var e = t.M.length, n = 0; n < e; ++n) {
-var o = t.M[n];
-if (o.A && null != o.A[0] && null != o.A[0]) {
-var i = o.A[0];
-switch (o.M) {
+var i = t.M[n];
+if (i.A && null != i.A[0] && null != i.A[0]) {
+var o = i.A[0];
+switch (i.M) {
 case "jackpot":
-for (var c = 0; c < 3; c++) a.ZomConst.jackpot[c + 1] = i.split("|")[c];
+for (var c = 0; c < 3; c++) a.ZomConst.jackpot[c + 1] = o.split("|")[c];
 break;
 
 case "resultSpin":
-s.default.instance.parseSpin(i);
+s.default.instance.parseSpin(o);
 break;
 
 case "joinGame":
 this.sendSignalR("StopX2Game", []);
-i.BonusGame.BonusItemsData && this.sendSignalR("PlayBonusGameAll", []);
-s.default.instance.parseSlotInfo(i.SlotInfo);
+o.BonusGame.BonusItemsData && this.sendSignalR("PlayBonusGameAll", []);
+s.default.instance.parseSlotInfo(o.SlotInfo);
 break;
 
 case "statistic":
-r.default.instance.parseData(i);
+r.default.instance.parseData(o);
 break;
 
 case "history":
-u.default.instance.parseData(i);
+l.default.instance.parseData(o);
 break;
 
 case "bonus":
-p.default.instance.parseMiniGame(i);
+u.default.instance.parseMiniGame(o);
 break;
 
 case "resultX2Game":
-l.default.instance.parseData(i);
+p.default.instance.parseData(o);
 break;
 
 case "message":
-fzgui.UITextManager.showCenterNotification(i);
+lngui.UITextManager.showCenterNotification(o);
 }
 }
 }
 };
 e.prototype.connectSuccess = function() {
-fzgui.ZLog.log("Connect Sucesss");
+lngui.ZLog.log("Connect Sucesss");
 };
 e.prototype.closeWS = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 e.prototype.sendSignalR = function(t, e) {
-fzgui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
+lngui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
 e = e || [];
 this.mSignalr && this.mSignalr.send(t, e);
 };
@@ -1817,8 +1822,8 @@ cc._RF.pop();
 "Zom.TopBar": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "257344wsshNqoX5R6Xu2GoY", "Zom.TopBar");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -1826,21 +1831,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("./Zom.Const"), a = cc._decorator, r = a.ccclass, u = a.property, p = function(t) {
-i(e, t);
+var s = t("./Zom.Const"), a = cc._decorator, r = a.ccclass, l = a.property, u = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.SpfIsSound = [];
@@ -1849,14 +1854,14 @@ return e;
 }
 e.prototype.onLoad = function() {
 this.pnlSetting.active = !1;
-fzgui.AudioManager.instance.sfxVolume = 1;
-fzgui.AudioManager.instance.musicVolume = 1;
+lngui.AudioManager.instance.sfxVolume = 1;
+lngui.AudioManager.instance.musicVolume = 1;
 };
 e.prototype.touchBtnBack = function() {
 if (s.ZomConst.isBtnClickable(!1)) {
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.GameCoreManager.instance.onBackToLobby();
-} else fzgui.UITextManager.showCenterNotification("Bạn không được rời bàn khi đang quay!");
+lngui.AudioManager.instance.pauseMusic();
+lngui.GameCoreManager.instance.onBackToLobby();
+} else lngui.UITextManager.showCenterNotification("Bạn không được rời bàn khi đang quay!");
 };
 e.prototype.touchBtnSetting = function() {
 this.pnlSetting.active = !0;
@@ -1866,33 +1871,33 @@ this.pnlSetting.active = !1;
 }.bind(this), 5e3);
 };
 e.prototype.touchBtnSound = function() {
-if (0 == fzgui.AudioManager.instance.sfxVolume) {
+if (0 == lngui.AudioManager.instance.sfxVolume) {
 this.btnSound.getComponent(cc.Sprite).spriteFrame = this.SpfIsSound[1];
-fzgui.AudioManager.instance.sfxVolume = 1;
+lngui.AudioManager.instance.sfxVolume = 1;
 } else {
 this.btnSound.getComponent(cc.Sprite).spriteFrame = this.SpfIsSound[0];
-fzgui.AudioManager.instance.sfxVolume = 0;
+lngui.AudioManager.instance.sfxVolume = 0;
 }
 };
 e.prototype.touchBtnMusic = function() {
-if (0 == fzgui.AudioManager.instance.musicVolume) {
+if (0 == lngui.AudioManager.instance.musicVolume) {
 this.btnMusic.getComponent(cc.Sprite).spriteFrame = this.SpfIsMusic[1];
-fzgui.AudioManager.instance.musicVolume = 1;
+lngui.AudioManager.instance.musicVolume = 1;
 } else {
 this.btnMusic.getComponent(cc.Sprite).spriteFrame = this.SpfIsMusic[0];
-fzgui.AudioManager.instance.musicVolume = 0;
+lngui.AudioManager.instance.musicVolume = 0;
 }
 };
-c([ u(cc.Button) ], e.prototype, "btnSetting", void 0);
-c([ u(cc.Node) ], e.prototype, "pnlSetting", void 0);
-c([ u(cc.Node) ], e.prototype, "btnSound", void 0);
-c([ u(cc.Node) ], e.prototype, "btnMusic", void 0);
-c([ u(cc.Node) ], e.prototype, "btnBangThuong", void 0);
-c([ u([ cc.SpriteFrame ]) ], e.prototype, "SpfIsSound", void 0);
-c([ u([ cc.SpriteFrame ]) ], e.prototype, "SpfIsMusic", void 0);
+c([ l(cc.Button) ], e.prototype, "btnSetting", void 0);
+c([ l(cc.Node) ], e.prototype, "pnlSetting", void 0);
+c([ l(cc.Node) ], e.prototype, "btnSound", void 0);
+c([ l(cc.Node) ], e.prototype, "btnMusic", void 0);
+c([ l(cc.Node) ], e.prototype, "btnBangThuong", void 0);
+c([ l([ cc.SpriteFrame ]) ], e.prototype, "SpfIsSound", void 0);
+c([ l([ cc.SpriteFrame ]) ], e.prototype, "SpfIsMusic", void 0);
 return c([ r ], e);
 }(cc.Component);
-n.default = p;
+n.default = u;
 cc._RF.pop();
 }, {
 "./Zom.Const": "Zom.Const"
@@ -1900,8 +1905,8 @@ cc._RF.pop();
 "Zom.VinhDanh": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "fefa3IgOAdIeqo9a66fOZe/", "Zom.VinhDanh");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -1909,21 +1914,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("../common/Utils"), a = t("../network/Zom.NetworkClient"), r = cc._decorator, u = r.ccclass, p = r.property, l = function(t) {
-i(e, t);
+var s = t("../common/Utils"), a = t("../network/Zom.NetworkClient"), r = cc._decorator, l = r.ccclass, u = r.property, p = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.itemPerPage = 50;
@@ -1944,7 +1949,7 @@ a.default.instance.sendSignalR("GetStatistic", [ !1 ]);
 n._instance = this;
 };
 e.prototype.touchBtnLsHu = function(t, e) {
-fzgui.AudioManager.instance.playSfx(this.button_click, 1);
+lngui.AudioManager.instance.playSfx(this.button_click, 1);
 1 == e ? a.default.instance.sendSignalR("GetHonor", []) : a.default.instance.sendSignalR("getjackpothistory", []);
 };
 e.prototype.parseData = function(t) {
@@ -2009,13 +2014,13 @@ this.content.addChild(e);
 };
 var n;
 e._instance = null;
-c([ p(cc.Node) ], e.prototype, "pnlItem", void 0);
-c([ p(cc.ScrollView) ], e.prototype, "scrollview", void 0);
-c([ p(cc.Node) ], e.prototype, "content", void 0);
-c([ p(cc.AudioClip) ], e.prototype, "button_click", void 0);
-return n = c([ u ], e);
-}(fzgui.UIPopup);
-n.default = l;
+c([ u(cc.Node) ], e.prototype, "pnlItem", void 0);
+c([ u(cc.ScrollView) ], e.prototype, "scrollview", void 0);
+c([ u(cc.Node) ], e.prototype, "content", void 0);
+c([ u(cc.AudioClip) ], e.prototype, "button_click", void 0);
+return n = c([ l ], e);
+}(lngui.UIPopup);
+n.default = p;
 cc._RF.pop();
 }, {
 "../common/Utils": void 0,
@@ -2024,8 +2029,8 @@ cc._RF.pop();
 "Zom.WinBig": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "0523eoz3ORIOIt/ixcvW7B0", "Zom.WinBig");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -2033,21 +2038,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("./Zom.Const"), a = cc._decorator, r = a.ccclass, u = a.property, p = function(t) {
-i(e, t);
+var s = t("./Zom.Const"), a = cc._decorator, r = a.ccclass, l = a.property, u = function(t) {
+o(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
@@ -2094,28 +2099,28 @@ break;
 
 case s.ZomConst.WINBIG.BONUS:
 this.showBonus();
-fzgui.AudioManager.instance.playSfx(this.bonus, 1);
+lngui.AudioManager.instance.playSfx(this.bonus, 1);
 break;
 
 case s.ZomConst.WINBIG.GIAUTO:
 this.showGiauTo(e);
-fzgui.AudioManager.instance.playSfx(this.thangLon, 1);
+lngui.AudioManager.instance.playSfx(this.thangLon, 1);
 break;
 
 case s.ZomConst.WINBIG.THANGLON:
 this.showThangLon(e);
-fzgui.AudioManager.instance.playSfx(this.thangSieuLon, 1);
+lngui.AudioManager.instance.playSfx(this.thangSieuLon, 1);
 break;
 
 case s.ZomConst.WINBIG.HUXU:
 this.showHuXu(e);
-fzgui.AudioManager.instance.playSfx(this.jackpot, 1);
+lngui.AudioManager.instance.playSfx(this.jackpot, 1);
 break;
 
 default:
 this.pnlDecor.active = !1;
 this.useBmfXu(e);
-e ? fzgui.AudioManager.instance.playSfx(this.win, 1) : fzgui.AudioManager.instance.playSfx(this.fail, 1);
+e ? lngui.AudioManager.instance.playSfx(this.win, 1) : lngui.AudioManager.instance.playSfx(this.fail, 1);
 }
 this.node.active = !0;
 this.pnlDecor.stopAllActions();
@@ -2134,51 +2139,51 @@ this.useBmfXu(0);
 e.prototype.showGiauTo = function(t) {
 this.node_GiauTo.active = !0;
 this.txtGiauTo.string = "0";
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtGiauTo, t, .2);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtGiauTo, t, .2);
 this.node_GiauTo.runAction(cc.scaleTo(2, 1.5));
 };
 e.prototype.showThangLon = function(t) {
 this.node_ThangLon.active = !0;
 this.txtThangLon.string = "0";
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtThangLon, t, .2);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtThangLon, t, .2);
 this.node_ThangLon.runAction(cc.scaleTo(2, 1.5));
 };
 e.prototype.showHuXu = function(t) {
-fzgui.AudioManager.instance.playSfx(this.jackpot, 1);
+lngui.AudioManager.instance.playSfx(this.jackpot, 1);
 this.node_NoHu.active = !0;
 this.txtNoHu.string = "0";
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtNoHu, t, .2);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtNoHu, t, .2);
 this.node_NoHu.runAction(cc.scaleTo(3, 1.5));
 };
 e.prototype.useBmfXu = function(t) {
 if (t > 0) {
-fzgui.UINumericLabelHelper.scheduleForLabel(this.txtWinNormal, t, .2);
+lngui.UINumericLabelHelper.scheduleForLabel(this.txtWinNormal, t, .2);
 this.node_WinNormal.active = !0;
 this.node_WinNormal.runAction(cc.spawn(cc.show(), cc.moveTo(0, cc.v2(-123, -210)), cc.scaleTo(0, 1)));
 this.node_WinNormal.runAction(cc.sequence(cc.delayTime(1), cc.spawn(cc.moveTo(.4, cc.v2(91, -326)), cc.scaleTo(.4, .4)), cc.hide()));
 } else this.node_WinNormal.active = !1;
 };
-c([ u(cc.Node) ], e.prototype, "layoutTouchable", void 0);
-c([ u(cc.Node) ], e.prototype, "pnlDecor", void 0);
-c([ u(cc.Node) ], e.prototype, "node_GiauTo", void 0);
-c([ u(cc.Node) ], e.prototype, "node_NoHu", void 0);
-c([ u(cc.Node) ], e.prototype, "node_ThangLon", void 0);
-c([ u(cc.Node) ], e.prototype, "node_MienPhi", void 0);
-c([ u(cc.Node) ], e.prototype, "node_Minigame", void 0);
-c([ u(cc.Node) ], e.prototype, "node_WinNormal", void 0);
-c([ u(cc.Label) ], e.prototype, "txtGiauTo", void 0);
-c([ u(cc.Label) ], e.prototype, "txtNoHu", void 0);
-c([ u(cc.Label) ], e.prototype, "txtThangLon", void 0);
-c([ u(cc.Label) ], e.prototype, "txtWinNormal", void 0);
-c([ u(cc.AudioClip) ], e.prototype, "bonus", void 0);
-c([ u(cc.AudioClip) ], e.prototype, "thangSieuLon", void 0);
-c([ u(cc.AudioClip) ], e.prototype, "thangLon", void 0);
-c([ u(cc.AudioClip) ], e.prototype, "jackpot", void 0);
-c([ u(cc.AudioClip) ], e.prototype, "win", void 0);
-c([ u(cc.AudioClip) ], e.prototype, "fail", void 0);
+c([ l(cc.Node) ], e.prototype, "layoutTouchable", void 0);
+c([ l(cc.Node) ], e.prototype, "pnlDecor", void 0);
+c([ l(cc.Node) ], e.prototype, "node_GiauTo", void 0);
+c([ l(cc.Node) ], e.prototype, "node_NoHu", void 0);
+c([ l(cc.Node) ], e.prototype, "node_ThangLon", void 0);
+c([ l(cc.Node) ], e.prototype, "node_MienPhi", void 0);
+c([ l(cc.Node) ], e.prototype, "node_Minigame", void 0);
+c([ l(cc.Node) ], e.prototype, "node_WinNormal", void 0);
+c([ l(cc.Label) ], e.prototype, "txtGiauTo", void 0);
+c([ l(cc.Label) ], e.prototype, "txtNoHu", void 0);
+c([ l(cc.Label) ], e.prototype, "txtThangLon", void 0);
+c([ l(cc.Label) ], e.prototype, "txtWinNormal", void 0);
+c([ l(cc.AudioClip) ], e.prototype, "bonus", void 0);
+c([ l(cc.AudioClip) ], e.prototype, "thangSieuLon", void 0);
+c([ l(cc.AudioClip) ], e.prototype, "thangLon", void 0);
+c([ l(cc.AudioClip) ], e.prototype, "jackpot", void 0);
+c([ l(cc.AudioClip) ], e.prototype, "win", void 0);
+c([ l(cc.AudioClip) ], e.prototype, "fail", void 0);
 return c([ r ], e);
 }(cc.Component);
-n.default = p;
+n.default = u;
 cc._RF.pop();
 }, {
 "./Zom.Const": "Zom.Const"
@@ -2186,8 +2191,8 @@ cc._RF.pop();
 "Zom.X2": [ function(t, e, n) {
 "use strict";
 cc._RF.push(e, "af9d94YqChIsbbzUOraMPmo", "Zom.X2");
-var o, i = this && this.__extends || (o = function(t, e) {
-return (o = Object.setPrototypeOf || {
+var i, o = this && this.__extends || (i = function(t, e) {
+return (i = Object.setPrototypeOf || {
 __proto__: []
 } instanceof Array && function(t, e) {
 t.__proto__ = e;
@@ -2195,21 +2200,21 @@ t.__proto__ = e;
 for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
 })(t, e);
 }, function(t, e) {
-o(t, e);
+i(t, e);
 function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), c = this && this.__decorate || function(t, e, n, o) {
-var i, c = arguments.length, s = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (s = (c < 3 ? i(s) : c > 3 ? i(e, n, s) : i(e, n)) || s);
+}), c = this && this.__decorate || function(t, e, n, i) {
+var o, c = arguments.length, s = c < 3 ? e : null === i ? i = Object.getOwnPropertyDescriptor(e, n) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, i); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (s = (c < 3 ? o(s) : c > 3 ? o(e, n, s) : o(e, n)) || s);
 return c > 3 && s && Object.defineProperty(e, n, s), s;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var s = t("./common/Utils"), a = t("./network/Zom.NetworkClient"), r = t("./Zom.Const"), u = cc._decorator, p = u.ccclass, l = u.property, h = function(t) {
-i(e, t);
+var s = t("./common/Utils"), a = t("./network/Zom.NetworkClient"), r = t("./Zom.Const"), l = cc._decorator, u = l.ccclass, p = l.property, h = function(t) {
+o(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e._pnlChest = [];
@@ -2265,8 +2270,8 @@ this.SprX2[t].node.active = !1;
 this.txtThongBao.string = "CHỌN 1 CHUM ĐỂ ĐẬP";
 var e = r.ZomConst._x2Data.StartBetValue;
 r.ZomConst._x2Data.PrizeValue > 0 && (e = 1.99 * r.ZomConst._x2Data.StartBetValue);
-fzgui.UINumericLabelHelper.scheduleForLabel(this.bmfDaThang, e, .3);
-fzgui.UINumericLabelHelper.scheduleForLabel(this.bmfX2, 1.99 * e, .3);
+lngui.UINumericLabelHelper.scheduleForLabel(this.bmfDaThang, e, .3);
+lngui.UINumericLabelHelper.scheduleForLabel(this.bmfX2, 1.99 * e, .3);
 };
 e.prototype.parseData = function(t) {
 t.PrizeValue > 0 ? this.txtThongBao.node.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(function() {
@@ -2281,8 +2286,8 @@ for (var e = 0; e < 4; e++) if (e != this.tagDecisionMade) {
 this.SkeChum[e].setAnimation(0, "Attack-1", !1);
 this.SkeHeo[e].node.active = !0;
 }
-fzgui.UINumericLabelHelper.scheduleForLabel(this.bmfDaThang, t.StartBetValue, .3);
-fzgui.UINumericLabelHelper.scheduleForLabel(this.bmfX2, 1.99 * t.StartBetValue, .3);
+lngui.UINumericLabelHelper.scheduleForLabel(this.bmfDaThang, t.StartBetValue, .3);
+lngui.UINumericLabelHelper.scheduleForLabel(this.bmfX2, 1.99 * t.StartBetValue, .3);
 }, this))) : this.txtThongBao.node.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(function() {
 this.txtThongBao.string = "Rất tiếc, bạn đã thua cuộc";
 this.SprChar.setAnimation(0, "Attack-" + s.default.randomRangeInt(1, 3), !1);
@@ -2297,7 +2302,7 @@ this.SkeChum[n].setAnimation(0, "Attack-1", !1);
 }
 if (3 == n) {
 this.SprX2[t[e]].node.active = !0;
-for (var o = 0; o < t.length; o++) o != e && (this.SkeHeo[t[o]].node.active = !0);
+for (var i = 0; i < t.length; i++) i != e && (this.SkeHeo[t[i]].node.active = !0);
 }
 }
 }, this)));
@@ -2313,19 +2318,19 @@ for (var n = 0; n < 4; n++) this._pnlChest[n].getComponent(cc.Button).interactab
 };
 var n;
 e._instance = null;
-c([ l(cc.Label) ], e.prototype, "txtThongBao", void 0);
-c([ l(cc.Label) ], e.prototype, "txtPrizeValue", void 0);
-c([ l(cc.Label) ], e.prototype, "bmfDaThang", void 0);
-c([ l(cc.Label) ], e.prototype, "bmfX2", void 0);
-c([ l([ sp.Skeleton ]) ], e.prototype, "SkeHeo", void 0);
-c([ l([ sp.Skeleton ]) ], e.prototype, "SkeChum", void 0);
-c([ l(sp.Skeleton) ], e.prototype, "SprChar", void 0);
-c([ l([ cc.Sprite ]) ], e.prototype, "SprX2", void 0);
-c([ l(cc.Node) ], e.prototype, "pnlChoose", void 0);
-c([ l(cc.Node) ], e.prototype, "btnX2Tiep", void 0);
-c([ l(cc.Node) ], e.prototype, "btnDung", void 0);
-return n = c([ p ], e);
-}(fzgui.UIPopup);
+c([ p(cc.Label) ], e.prototype, "txtThongBao", void 0);
+c([ p(cc.Label) ], e.prototype, "txtPrizeValue", void 0);
+c([ p(cc.Label) ], e.prototype, "bmfDaThang", void 0);
+c([ p(cc.Label) ], e.prototype, "bmfX2", void 0);
+c([ p([ sp.Skeleton ]) ], e.prototype, "SkeHeo", void 0);
+c([ p([ sp.Skeleton ]) ], e.prototype, "SkeChum", void 0);
+c([ p(sp.Skeleton) ], e.prototype, "SprChar", void 0);
+c([ p([ cc.Sprite ]) ], e.prototype, "SprX2", void 0);
+c([ p(cc.Node) ], e.prototype, "pnlChoose", void 0);
+c([ p(cc.Node) ], e.prototype, "btnX2Tiep", void 0);
+c([ p(cc.Node) ], e.prototype, "btnDung", void 0);
+return n = c([ u ], e);
+}(lngui.UIPopup);
 n.default = h;
 cc._RF.pop();
 }, {

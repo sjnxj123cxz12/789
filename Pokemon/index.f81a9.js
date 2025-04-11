@@ -1,27 +1,27 @@
 window.__require = function t(o, e, i) {
-function n(l, r) {
-if (!e[l]) {
-if (!o[l]) {
-var c = l.split("/");
+function n(s, r) {
+if (!e[s]) {
+if (!o[s]) {
+var c = s.split("/");
 c = c[c.length - 1];
 if (!o[c]) {
 var a = "function" == typeof __require && __require;
 if (!r && a) return a(c, !0);
-if (s) return s(c, !0);
-throw new Error("Cannot find module '" + l + "'");
+if (l) return l(c, !0);
+throw new Error("Cannot find module '" + s + "'");
 }
-l = c;
+s = c;
 }
-var p = e[l] = {
+var p = e[s] = {
 exports: {}
 };
-o[l][0].call(p.exports, function(t) {
-return n(o[l][1][t] || t);
+o[s][0].call(p.exports, function(t) {
+return n(o[s][1][t] || t);
 }, p, p.exports, t, o, e, i);
 }
-return e[l].exports;
+return e[s].exports;
 }
-for (var s = "function" == typeof __require && __require, l = 0; l < i.length; l++) n(i[l]);
+for (var l = "function" == typeof __require && __require, s = 0; s < i.length; s++) n(i[s]);
 return n;
 }({
 Slot3x3Config: [ function(t, o, e) {
@@ -41,15 +41,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotConfig"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
+var s = t("../../base_slot/SlotConfig"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -70,22 +70,22 @@ o.TIME_SINGLE_LINE_QUICK = .8;
 o.LINE = [ [ 0, 1, 2 ], [ 3, 4, 5 ], [ 6, 7, 8 ], [ 0, 7, 2 ], [ 6, 1, 8 ], [ 0, 4, 2 ], [ 0, 4, 8 ], [ 6, 4, 2 ], [ 3, 7, 5 ], [ 3, 1, 5 ], [ 6, 4, 8 ], [ 0, 1, 5 ], [ 3, 4, 8 ], [ 3, 4, 2 ], [ 6, 7, 5 ], [ 3, 1, 2 ], [ 6, 4, 5 ], [ 0, 4, 5 ], [ 3, 7, 8 ], [ 0, 7, 5 ] ];
 return o;
 }
-s([ a(cc.Integer) ], o.prototype, "DISTANCE", void 0);
-s([ a([ cc.SpriteFrame ]) ], o.prototype, "LIST_FRAME", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_MOVE_ITEM_START_QUICK", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_MOVE_ITEM_START", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_MOVE_ITEM_QUICK", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_MOVE_ITEM", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_MOVE_STOP_ITEM_QUICK", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_MOVE_STOP_ITEM", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_FIRST_REEL_STOP", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_FIRST_REEL_STOP_QUICK", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_REEL_STOP", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_REEL_STOP_QUICK", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_SINGLE_LINE", void 0);
-s([ a(cc.Integer) ], o.prototype, "TIME_SINGLE_LINE_QUICK", void 0);
-return s([ c ], o);
-}(l.default);
+l([ a(cc.Integer) ], o.prototype, "DISTANCE", void 0);
+l([ a([ cc.SpriteFrame ]) ], o.prototype, "LIST_FRAME", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_MOVE_ITEM_START_QUICK", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_MOVE_ITEM_START", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_MOVE_ITEM_QUICK", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_MOVE_ITEM", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_MOVE_STOP_ITEM_QUICK", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_MOVE_STOP_ITEM", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_FIRST_REEL_STOP", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_FIRST_REEL_STOP_QUICK", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_REEL_STOP", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_REEL_STOP_QUICK", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_SINGLE_LINE", void 0);
+l([ a(cc.Integer) ], o.prototype, "TIME_SINGLE_LINE_QUICK", void 0);
+return l([ c ], o);
+}(s.default);
 e.default = p;
 cc._RF.pop();
 }, {
@@ -108,15 +108,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotEffect"), r = t("../../base_slot/util/FormatUtil"), c = cc._decorator, a = c.ccclass, p = (c.property, 
+var s = t("../../base_slot/SlotEffect"), r = t("../../base_slot/util/FormatUtil"), c = cc._decorator, a = c.ccclass, p = (c.property, 
 function(t) {
 n(o, t);
 function o() {
@@ -175,8 +175,8 @@ i.nodeJackpot.active = !1;
 i.mCallback && i.mTarget && i.mCallback.call(i.mTarget);
 }, this)));
 };
-return s([ a ], o);
-}(l.default));
+return l([ a ], o);
+}(s.default));
 e.default = p;
 cc._RF.pop();
 }, {
@@ -219,15 +219,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotHandler"), r = t("./Slot3x3Entity"), c = t("./Slot3x3Rank"), a = t("./Slot3x3Var"), p = cc._decorator, h = p.ccclass, u = (p.property, 
+var s = t("../../base_slot/SlotHandler"), r = t("./Slot3x3Entity"), c = t("./Slot3x3Rank"), a = t("./Slot3x3Var"), p = cc._decorator, h = p.ccclass, u = (p.property, 
 function(t) {
 n(o, t);
 function o() {
@@ -239,14 +239,14 @@ return o;
 o.prototype.connect = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 cc.systemEvent.on(this.mListenerKey, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
+this.mSignalr = new lngui.GateSignalR();
 this.mSignalr.connect(this.mListenerKey, a.default.api.negotiate, a.default.api.hub, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 o.prototype.closeWS = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 o.prototype.onWebSocketCallback = function(t) {
@@ -264,41 +264,41 @@ if (!t.M || 0 == t.M.length) return;
 for (var e = t.M.length, i = 0; i < e; ++i) {
 var n = t.M[i];
 if (n && n.A && n.A[0]) {
-var s = n.A[0];
+var l = n.A[0];
 switch (n.M) {
 case "joinGame":
-this.onJoinGame(s);
+this.onJoinGame(l);
 break;
 
 case "resultSpin":
-s.SlotsData || console.error(t);
-this.onSpin(s);
+l.SlotsData || console.error(t);
+this.onSpin(l);
 break;
 
 case "message":
-this.onMessage(s);
+this.onMessage(l);
 break;
 
 case "UpdateJackpot":
-s = s.split("|");
-this.onUpdateJackpot(s);
+l = l.split("|");
+this.onUpdateJackpot(l);
 break;
 
 case "history":
-fzgui.UIPopupManager.instance.showPopupFromPrefab(this.mSlot.prePopupHistory, function(t) {
-t.setData(null, s);
+lngui.UIPopupManager.instance.showPopupFromPrefab(this.mSlot.prePopupHistory, function(t) {
+t.setData(null, l);
 });
 break;
 
 case "jackpotHistory":
-var l = fzgui.UIPopupManager.instance.find(c.default);
-l ? l.getComponent(c.default).initData(this.mSlot, s) : fzgui.UIPopupManager.instance.showPopupFromPrefab(this.mSlot.prePopupHorno, function(t) {
-t.initData(o.mSlot, s);
+var s = lngui.UIPopupManager.instance.find(c.default);
+s ? s.getComponent(c.default).initData(this.mSlot, l) : lngui.UIPopupManager.instance.showPopupFromPrefab(this.mSlot.prePopupHorno, function(t) {
+t.initData(o.mSlot, l);
 });
 break;
 
 case "XJackpotInfo":
-this.onGetPotInfo(s);
+this.onGetPotInfo(l);
 }
 }
 }
@@ -317,7 +317,7 @@ PrizeLines: []
 o.session = t.SpinData.SpinID;
 o.totalBet = t.SpinData.TotalBetValue;
 o.totalWin = t.SpinData.PayLinePrizeValue;
-o.userMoney = fzgui.UserManager.instance.mainUserInfo.Money + this.mSlot.mSlotRoom.getTotalBet();
+o.userMoney = lngui.UserManager.instance.mainUserInfo.Money + this.mSlot.mSlotRoom.getTotalBet();
 o.listItem = t.SpinData.Slots || [];
 o.listLineWin = [];
 this.mSlot.mSlotRoom.showError(o);
@@ -351,10 +351,10 @@ e.isJackpot = o.IsJackpot;
 e.moneyJackpot = o.Jackpot;
 e.totalWin = o.TotalPrizeValue;
 for (var i = o.SlotsData.split(","), n = 0; n < i.length; n++) e.listItem.push(parseInt(i[n]));
-var s = o.PrizesData.split(";");
-if ("" == s[0]) e.listLineWin = []; else for (n = 0; n < s.length; n++) {
-var l = s[n].split(",");
-e.listLineWin.push(parseInt(l[0]));
+var l = o.PrizesData.split(";");
+if ("" == l[0]) e.listLineWin = []; else for (n = 0; n < l.length; n++) {
+var s = l[n].split(",");
+e.listLineWin.push(parseInt(s[0]));
 }
 this.mSlot.mSlotRoom && this.mSlot.mSlotRoom.stopSpin(e);
 } else {
@@ -377,8 +377,8 @@ this.mSignalr.send("GetJackpotHistory");
 o.prototype.sendGetBigwin = function() {
 this.mSignalr.send("GetHornorHistory");
 };
-return s([ h ], o);
-}(l.default));
+return l([ h ], o);
+}(s.default));
 e.default = u;
 cc._RF.pop();
 }, {
@@ -404,15 +404,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/util/FormatUtil"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
+var s = t("../../base_slot/util/FormatUtil"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -432,28 +432,28 @@ o.prototype.setData = function(t, o) {
 console.log(t);
 this.mDataHistory = t;
 this.txtSession.string = "" + t.SpinID;
-this.txtTime.string = l.default.formatDateTime(t.CreatedDate, !0, !0);
-this.txtTotalBet.string = l.default.formatNumber(t.TotalBetValue);
-this.txtMoneyWin.string = l.default.formatNumber(t.PaylinePrizeValue);
-this.txtRoomBet.string = l.default.formatNumber(t.BetValue);
+this.txtTime.string = s.default.formatDateTime(t.CreatedDate, !0, !0);
+this.txtTotalBet.string = s.default.formatNumber(t.TotalBetValue);
+this.txtMoneyWin.string = s.default.formatNumber(t.PaylinePrizeValue);
+this.txtRoomBet.string = s.default.formatNumber(t.BetValue);
 this.txtLine.string = "" + t.LineData.split(",").length;
 this.bg.active = o % 2 == 0;
 };
 o.prototype.onBtnDetail = function() {
 var t = this;
-fzgui.UIPopupManager.instance.showPopupFromPrefab(this.prfDetail, function(o) {
+lngui.UIPopupManager.instance.showPopupFromPrefab(this.prfDetail, function(o) {
 o.setData(t.mDataHistory);
 });
 };
-s([ a(cc.Node) ], o.prototype, "bg", void 0);
-s([ a(cc.Label) ], o.prototype, "txtSession", void 0);
-s([ a(cc.Label) ], o.prototype, "txtTime", void 0);
-s([ a(cc.Label) ], o.prototype, "txtRoomBet", void 0);
-s([ a(cc.Label) ], o.prototype, "txtLine", void 0);
-s([ a(cc.Label) ], o.prototype, "txtTotalBet", void 0);
-s([ a(cc.Label) ], o.prototype, "txtMoneyWin", void 0);
-s([ a(cc.Prefab) ], o.prototype, "prfDetail", void 0);
-return s([ c ], o);
+l([ a(cc.Node) ], o.prototype, "bg", void 0);
+l([ a(cc.Label) ], o.prototype, "txtSession", void 0);
+l([ a(cc.Label) ], o.prototype, "txtTime", void 0);
+l([ a(cc.Label) ], o.prototype, "txtRoomBet", void 0);
+l([ a(cc.Label) ], o.prototype, "txtLine", void 0);
+l([ a(cc.Label) ], o.prototype, "txtTotalBet", void 0);
+l([ a(cc.Label) ], o.prototype, "txtMoneyWin", void 0);
+l([ a(cc.Prefab) ], o.prototype, "prfDetail", void 0);
+return l([ c ], o);
 }(cc.Component);
 e.default = p;
 cc._RF.pop();
@@ -477,15 +477,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/util/FormatUtil"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
+var s = t("../../base_slot/util/FormatUtil"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -500,23 +500,23 @@ return o;
 o.prototype.setData = function(t) {
 console.log(t);
 this.txtSession.string = "#" + t.SpinID;
-this.txtMoneyWin.string = l.default.formatNumber(t.PaylinePrizeValue);
+this.txtMoneyWin.string = s.default.formatNumber(t.PaylinePrizeValue);
 this.txtTime.string = t.CreatedDate.replace("T", " ");
-this.txtCuoc.string = l.default.formatNumber(t.TotalBetValue);
+this.txtCuoc.string = s.default.formatNumber(t.TotalBetValue);
 for (var o = t.SlotsData.split(","), e = 0; e < o.length; e++) {
 var i = parseInt(o[e]), n = -1;
 1 == i ? n = 0 : 2 == i ? n = 1 : 3 == i ? n = 2 : 4 == i ? n = 3 : 5 == i ? n = 4 : 6 == i && (n = 5);
 this.listItem[e].spriteFrame = this.frameItem[n];
 }
 };
-s([ a(cc.Label) ], o.prototype, "txtSession", void 0);
-s([ a(cc.Label) ], o.prototype, "txtMoneyWin", void 0);
-s([ a(cc.Label) ], o.prototype, "txtTime", void 0);
-s([ a(cc.Label) ], o.prototype, "txtCuoc", void 0);
-s([ a([ cc.Sprite ]) ], o.prototype, "listItem", void 0);
-s([ a([ cc.SpriteFrame ]) ], o.prototype, "frameItem", void 0);
-return s([ c ], o);
-}(fzgui.UIPopup);
+l([ a(cc.Label) ], o.prototype, "txtSession", void 0);
+l([ a(cc.Label) ], o.prototype, "txtMoneyWin", void 0);
+l([ a(cc.Label) ], o.prototype, "txtTime", void 0);
+l([ a(cc.Label) ], o.prototype, "txtCuoc", void 0);
+l([ a([ cc.Sprite ]) ], o.prototype, "listItem", void 0);
+l([ a([ cc.SpriteFrame ]) ], o.prototype, "frameItem", void 0);
+return l([ c ], o);
+}(lngui.UIPopup);
 e.default = p;
 cc._RF.pop();
 }, {
@@ -539,15 +539,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotHistory"), r = cc._decorator, c = r.ccclass, a = (r.property, 
+var s = t("../../base_slot/SlotHistory"), r = cc._decorator, c = r.ccclass, a = (r.property, 
 function(t) {
 n(o, t);
 function o() {
@@ -567,19 +567,19 @@ this.scrollview.content.destroyAllChildren();
 this.mListCell = [];
 var i = this.mListDataCell.length;
 this.scrollview.content.height = i * (this.heightItem + this.spacing) + this.spacing;
-for (var n = this.spawnCount <= i ? this.spawnCount : i, s = 0; s < n; s++) {
-var l = cc.instantiate(this.cellHistory), r = l.getComponent("Slot3x3HistoryCell");
-r.setData(this.mListDataCell[s], s);
-var c = -r.node.height * (.5 + s) - this.spacing * (s + 1);
+for (var n = this.spawnCount <= i ? this.spawnCount : i, l = 0; l < n; l++) {
+var s = cc.instantiate(this.cellHistory), r = s.getComponent("Slot3x3HistoryCell");
+r.setData(this.mListDataCell[l], l);
+var c = -r.node.height * (.5 + l) - this.spacing * (l + 1);
 r.node.setPosition(0, c);
-this.scrollview.content.addChild(l);
+this.scrollview.content.addChild(s);
 this.mListCell.push(r);
 }
 this.scrollview.node.active = !0;
 }
 };
-return s([ c ], o);
-}(l.default));
+return l([ c ], o);
+}(s.default));
 e.default = a;
 cc._RF.pop();
 }, {
@@ -602,15 +602,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotItem"), r = t("../../base_slot/util/Util"), c = cc._decorator, a = c.ccclass, p = (c.property, 
+var s = t("../../base_slot/SlotItem"), r = t("../../base_slot/util/Util"), c = cc._decorator, a = c.ccclass, p = (c.property, 
 function(t) {
 n(o, t);
 function o() {
@@ -700,8 +700,8 @@ this.mIndex = 3;
 this.node.y = this.mSlot.mSlotConfig.POS_ITEM[this.mIndex];
 }
 };
-return s([ a ], o);
-}(l.default));
+return l([ a ], o);
+}(s.default));
 e.default = p;
 cc._RF.pop();
 }, {
@@ -725,15 +725,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotLine"), r = cc._decorator, c = r.ccclass, a = (r.property, 
+var s = t("../../base_slot/SlotLine"), r = cc._decorator, c = r.ccclass, a = (r.property, 
 function(t) {
 n(o, t);
 function o() {
@@ -747,8 +747,8 @@ o.prototype.showWin = function() {
 t.prototype.showWin.call(this);
 for (var o = 0; o < this.mListSlotItem.length; o++) this.mListSlotItem[o].showWin();
 };
-return s([ c ], o);
-}(l.default));
+return l([ c ], o);
+}(s.default));
 e.default = a;
 cc._RF.pop();
 }, {
@@ -771,15 +771,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotMachine"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
+var s = t("../../base_slot/SlotMachine"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -886,14 +886,14 @@ this.updateAllItemAllLine();
 this.mSlotRoom.showResult();
 }
 };
-s([ a({
+l([ a({
 override: !0
 }) ], o.prototype, "listSlotReel", void 0);
-s([ a({
+l([ a({
 override: !0
 }) ], o.prototype, "listSlotLine", void 0);
-return s([ c ], o);
-}(l.default);
+return l([ c ], o);
+}(s.default);
 e.default = p;
 cc._RF.pop();
 }, {
@@ -916,15 +916,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotRankCell"), r = t("../../base_slot/util/FormatUtil"), c = cc._decorator, a = c.ccclass, p = c.property, h = function(t) {
+var s = t("../../base_slot/SlotRankCell"), r = t("../../base_slot/util/FormatUtil"), c = cc._decorator, a = c.ccclass, p = c.property, h = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -941,9 +941,9 @@ this.txtDecription.string = 1 == t.IsJackpot ? "Nổ hũ" : "Thắng lớn";
 this.txtBet.string = r.default.formatNumber(t.BetValue);
 this.sprBg && (this.sprBg.active = o % 2 == 0);
 };
-s([ p(cc.Label) ], o.prototype, "txtStt", void 0);
-return s([ a ], o);
-}(l.default);
+l([ p(cc.Label) ], o.prototype, "txtStt", void 0);
+return l([ a ], o);
+}(s.default);
 e.default = h;
 cc._RF.pop();
 }, {
@@ -967,15 +967,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotRank"), r = cc._decorator, c = r.ccclass, a = (r.property, 
+var s = t("../../base_slot/SlotRank"), r = cc._decorator, c = r.ccclass, a = (r.property, 
 function(t) {
 n(o, t);
 function o() {
@@ -1005,8 +1005,8 @@ this.mSlot.mSlotNetwork.sendGetBigwin();
 o.prototype.onBtnNohu = function() {
 this.mSlot.mSlotNetwork.sendGetJackpot();
 };
-return s([ c ], o);
-}(l.default));
+return l([ c ], o);
+}(s.default));
 e.default = a;
 cc._RF.pop();
 }, {
@@ -1029,15 +1029,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotReel"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
+var s = t("../../base_slot/SlotReel"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -1082,11 +1082,11 @@ this.mCountItemStopMove = 0;
 this.mSlotMachine.callbackCheckReelStop();
 }
 };
-s([ a({
+l([ a({
 override: !0
 }) ], o.prototype, "listItem", void 0);
-return s([ c ], o);
-}(l.default);
+return l([ c ], o);
+}(s.default);
 e.default = p;
 cc._RF.pop();
 }, {
@@ -1109,15 +1109,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotRoomUI"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
+var s = t("../../base_slot/SlotRoomUI"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -1126,15 +1126,15 @@ o.btnQuickspin = null;
 o.btnSelectLine = null;
 return o;
 }
-s([ a({
+l([ a({
 override: !0
 }) ], o.prototype, "btnAutoSpin", void 0);
-s([ a({
+l([ a({
 override: !0
 }) ], o.prototype, "btnQuickspin", void 0);
-s([ a(cc.Button) ], o.prototype, "btnSelectLine", void 0);
-return s([ c ], o);
-}(l.default);
+l([ a(cc.Button) ], o.prototype, "btnSelectLine", void 0);
+return l([ c ], o);
+}(s.default);
 e.default = p;
 cc._RF.pop();
 }, {
@@ -1157,15 +1157,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotConstant"), r = t("../../base_slot/SlotRoom"), c = cc._decorator, a = c.ccclass, p = c.property, h = function(t) {
+var s = t("../../base_slot/SlotConstant"), r = t("../../base_slot/SlotRoom"), c = cc._decorator, a = c.ccclass, p = c.property, h = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -1189,7 +1189,7 @@ this.mIsStateInit = !0;
 this.mSlotEffect.init(this);
 this.mSlotMachine.init(this);
 }
-this.mUserMoney = fzgui.UserManager.instance.mainUserInfo.Money;
+this.mUserMoney = lngui.UserManager.instance.mainUserInfo.Money;
 this.updateLineSelect(this.mSlotMachine.getNumLineSelect());
 };
 o.prototype.setDefault = function() {
@@ -1202,9 +1202,9 @@ this.mSlotRewardPool.clearAllAnim();
 o.prototype.spin = function() {
 this.setDefault();
 this.mSlotMachine.spin();
-this.mState = l.SLOT_STATE.SPINING;
+this.mState = s.SLOT_STATE.SPINING;
 this.mUserMoney -= this.getTotalBet();
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
 this.mSlotRoomUI.interactableBtnSpin(!1);
 this.mSlot.btn100.interactable = !1;
 this.mSlot.btn1k.interactable = !1;
@@ -1219,12 +1219,12 @@ if (o) {
 t.prototype.stopSpin.call(this, o);
 this.mSlotMachine.stopSpin();
 if (this.mDataSpin.listLineWin.length > 0) {
-this.mSlotRewardPool.push(l.SLOT_ANIM_PRIORITY.ANIM_ALL_LINE_WIN);
-this.mSlotRewardPool.push(l.SLOT_ANIM_PRIORITY.ANIM_SINGLE_LINE_WIN);
-this.mDataSpin.isJackpot && this.mSlotRewardPool.push(l.SLOT_ANIM_PRIORITY.ANIM_JACKPOT);
+this.mSlotRewardPool.push(s.SLOT_ANIM_PRIORITY.ANIM_ALL_LINE_WIN);
+this.mSlotRewardPool.push(s.SLOT_ANIM_PRIORITY.ANIM_SINGLE_LINE_WIN);
+this.mDataSpin.isJackpot && this.mSlotRewardPool.push(s.SLOT_ANIM_PRIORITY.ANIM_JACKPOT);
 var e = this.mSlot.getMoneyBet();
-if (this.mDataSpin.totalWin >= this.mSlot.mSlotConfig.RATE_SUPER_WIN * e) this.mSlotRewardPool.push(l.SLOT_ANIM_PRIORITY.ANIM_BIGWIN); else if (this.mDataSpin.totalWin >= this.mSlot.mSlotConfig.RATE_BIG_WIN * e) this.mSlotRewardPool.push(l.SLOT_ANIM_PRIORITY.ANIM_BIGWIN); else if (this.mDataSpin.totalWin > 0) {
-this.mSlotRewardPool.push(l.SLOT_ANIM_PRIORITY.ANIM_WIN);
+if (this.mDataSpin.totalWin >= this.mSlot.mSlotConfig.RATE_SUPER_WIN * e) this.mSlotRewardPool.push(s.SLOT_ANIM_PRIORITY.ANIM_BIGWIN); else if (this.mDataSpin.totalWin >= this.mSlot.mSlotConfig.RATE_BIG_WIN * e) this.mSlotRewardPool.push(s.SLOT_ANIM_PRIORITY.ANIM_BIGWIN); else if (this.mDataSpin.totalWin > 0) {
+this.mSlotRewardPool.push(s.SLOT_ANIM_PRIORITY.ANIM_WIN);
 this.mSlot.node.scale;
 }
 }
@@ -1233,12 +1233,12 @@ this.mSlot.node.scale;
 o.prototype.showResult = function() {
 var t = this.mSlotRewardPool.get();
 if (t) {
-if (t == l.SLOT_ANIM_PRIORITY.ANIM_ALL_LINE_WIN) {
+if (t == s.SLOT_ANIM_PRIORITY.ANIM_ALL_LINE_WIN) {
 this.mSlotMachine.showAllLineWin(this.mDataSpin.listLineWin);
 this.showResult();
-} else if (t == l.SLOT_ANIM_PRIORITY.ANIM_JACKPOT) this.mSlotEffect.showJackpot(this.showResult, this, this.mDataSpin.totalWin); else if (t == l.SLOT_ANIM_PRIORITY.ANIM_BIGWIN) this.mSlotEffect.showBigWin(this.showResult, this, this.mDataSpin.totalWin); else if (t == l.SLOT_ANIM_PRIORITY.ANIM_WIN) this.mSlotEffect.showWin(this.showResult, this, this.mDataSpin.totalWin); else if (t == l.SLOT_ANIM_PRIORITY.ANIM_SINGLE_LINE_WIN) {
+} else if (t == s.SLOT_ANIM_PRIORITY.ANIM_JACKPOT) this.mSlotEffect.showJackpot(this.showResult, this, this.mDataSpin.totalWin); else if (t == s.SLOT_ANIM_PRIORITY.ANIM_BIGWIN) this.mSlotEffect.showBigWin(this.showResult, this, this.mDataSpin.totalWin); else if (t == s.SLOT_ANIM_PRIORITY.ANIM_WIN) this.mSlotEffect.showWin(this.showResult, this, this.mDataSpin.totalWin); else if (t == s.SLOT_ANIM_PRIORITY.ANIM_SINGLE_LINE_WIN) {
 var o = this;
-this.mSlotRewardPool.push(l.SLOT_ANIM_PRIORITY.ANIM_SINGLE_LINE_WIN);
+this.mSlotRewardPool.push(s.SLOT_ANIM_PRIORITY.ANIM_SINGLE_LINE_WIN);
 var e = this.mDataSpin.listLineWin[this.mIdxLineWin];
 this.mSlotMachine.showLineWin(e);
 var i = this.mIsQuickSpin ? this.mSlot.mSlotConfig.TIME_SINGLE_LINE_QUICK : this.mSlot.mSlotConfig.TIME_SINGLE_LINE;
@@ -1255,8 +1255,8 @@ this.nextSpin();
 o.prototype.nextSpin = function() {
 this.onUpdatePot(this.mDataSpin.moneyJackpot);
 this.mUserMoney = this.mDataSpin.userMoney;
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
-this.mState = l.SLOT_STATE.READY;
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.mUserMoney);
+this.mState = s.SLOT_STATE.READY;
 clearTimeout(this.mTimeoutNextSpin);
 if (this.mIsAutoSpin || this.mIsQuickSpin) this.mTimeoutNextSpin = setTimeout(this.onBtnSpin.bind(this), this.mSlot.mSlotConfig.TIME_DELAY_NEXT_SPIN); else {
 this.mSlotRoomUI.interactableBtnSpin(!0);
@@ -1311,7 +1311,7 @@ this.mSlot.mTooltip.show("Đang ở chế độ siêu tốc");
 this.mSlotRoomUI.btnAutoSpin.isChecked = !1;
 } else {
 this.mIsAutoSpin = this.mSlotRoomUI.btnAutoSpin.isChecked;
-this.mIsAutoSpin && (this.mState == l.SLOT_STATE.READY ? this.spin() : this.mUserMoney < this.getTotalBet() && this.mSlot.mTooltip.show("Số dư không đủ để quay"));
+this.mIsAutoSpin && (this.mState == s.SLOT_STATE.READY ? this.spin() : this.mUserMoney < this.getTotalBet() && this.mSlot.mTooltip.show("Số dư không đủ để quay"));
 }
 };
 o.prototype.onBtnQuickSpin = function() {
@@ -1320,7 +1320,7 @@ this.mSlot.mTooltip.show("Đang ở chế độ tự quay");
 this.mSlotRoomUI.btnQuickspin.isChecked = !1;
 } else {
 this.mIsQuickSpin = this.mSlotRoomUI.btnQuickspin.isChecked;
-this.mIsQuickSpin && (this.mState == l.SLOT_STATE.READY ? this.spin() : this.mUserMoney < this.getTotalBet() && this.mSlot.mTooltip.show("Số dư không đủ để quay"));
+this.mIsQuickSpin && (this.mState == s.SLOT_STATE.READY ? this.spin() : this.mUserMoney < this.getTotalBet() && this.mSlot.mTooltip.show("Số dư không đủ để quay"));
 }
 };
 o.prototype.onBtnStopSpin = function() {
@@ -1333,7 +1333,7 @@ this.mSlot.mSlotNetwork.sendGetBigwin();
 };
 o.prototype.onBtnSelectLine = function() {
 var t = this, o = cc.instantiate(this.prfChooseLine);
-fzgui.UIPopupManager.instance.showPopupFromNode(o, function(o) {
+lngui.UIPopupManager.instance.showPopupFromNode(o, function(o) {
 o.init(t);
 });
 };
@@ -1350,17 +1350,17 @@ this.mSlot.mSlotNetwork.sendGetHistory();
 o.prototype.onBtnMinimize = function() {
 this.mSlot.node.scale = 0;
 };
-s([ p({
+l([ p({
 override: !0
 }) ], o.prototype, "mSlotRoomUI", void 0);
-s([ p({
+l([ p({
 override: !0
 }) ], o.prototype, "mSlotEffect", void 0);
-s([ p({
+l([ p({
 override: !0
 }) ], o.prototype, "mSlotMachine", void 0);
-s([ p(cc.Prefab) ], o.prototype, "prfChooseLine", void 0);
-return s([ a ], o);
+l([ p(cc.Prefab) ], o.prototype, "prfChooseLine", void 0);
+return l([ a ], o);
 }(r.default);
 e.default = h;
 cc._RF.pop();
@@ -1385,15 +1385,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotSelectLine"), r = cc._decorator, c = r.ccclass, a = (r.property, 
+var s = t("../../base_slot/SlotSelectLine"), r = cc._decorator, c = r.ccclass, a = (r.property, 
 function(t) {
 n(o, t);
 function o() {
@@ -1415,8 +1415,8 @@ for (var t = [], o = 0; o < this.listLineItem.length; o++) this.listLineItem[o].
 0 == t.length ? this.mSlot.mTooltip.show("Bạn phải chọn ít nhất 1 dòng") : this.mSlotRoom.updateLineSelect(t);
 this.hide();
 };
-return s([ c ], o);
-}(l.default));
+return l([ c ], o);
+}(s.default));
 e.default = a;
 cc._RF.pop();
 }, {
@@ -1431,7 +1431,7 @@ value: !0
 var i = function() {
 function t() {}
 t.api = {
-negotiate: "https://et.dragonf1.xyz/signalr/negotiate",
+negotiate: "https://et." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
 hub: "ethub",
 GetNotification: "https://w-chef.luxy.club/api/vuabai/GetNotification",
 GetHistory: "https://w-chef.luxy.club/api/vuabai/GetHistory",
@@ -1461,15 +1461,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotXPotCell"), r = cc._decorator, c = r.ccclass, a = (r.property, 
+var s = t("../../base_slot/SlotXPotCell"), r = cc._decorator, c = r.ccclass, a = (r.property, 
 function(t) {
 n(o, t);
 function o() {
@@ -1490,8 +1490,8 @@ this.txtPotCount.node.active = !0;
 t.NormalJackpot > 0 ? this.txtPotCount.string = "X2 SAU " + t.NormalJackpot + " HŨ" : this.txtPotCount.string = "X2 CÒN LẠI " + t.EventJackpotRemain + " HŨ";
 } else this.txtPotCount.node.active = !1;
 };
-return s([ c ], o);
-}(l.default));
+return l([ c ], o);
+}(s.default));
 e.default = a;
 cc._RF.pop();
 }, {
@@ -1514,15 +1514,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/SlotXPot"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
+var s = t("../../base_slot/SlotXPot"), r = cc._decorator, c = r.ccclass, a = r.property, p = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -1546,11 +1546,11 @@ e++;
 }
 }
 };
-s([ a({
+l([ a({
 override: !0
 }) ], o.prototype, "listPotCell", void 0);
-return s([ c ], o);
-}(l.default);
+return l([ c ], o);
+}(s.default);
 e.default = p;
 cc._RF.pop();
 }, {
@@ -1573,15 +1573,15 @@ function e() {
 this.constructor = t;
 }
 t.prototype = null === o ? Object.create(o) : (e.prototype = o.prototype, new e());
-}), s = this && this.__decorate || function(t, o, e, i) {
-var n, s = arguments.length, l = s < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) l = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (l = (s < 3 ? n(l) : s > 3 ? n(o, e, l) : n(o, e)) || l);
-return s > 3 && l && Object.defineProperty(o, e, l), l;
+}), l = this && this.__decorate || function(t, o, e, i) {
+var n, l = arguments.length, s = l < 3 ? o : null === i ? i = Object.getOwnPropertyDescriptor(o, e) : i;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, o, e, i); else for (var r = t.length - 1; r >= 0; r--) (n = t[r]) && (s = (l < 3 ? n(s) : l > 3 ? n(o, e, s) : n(o, e)) || s);
+return l > 3 && s && Object.defineProperty(o, e, s), s;
 };
 Object.defineProperty(e, "__esModule", {
 value: !0
 });
-var l = t("../../base_slot/Slot"), r = t("../../base_slot/SlotConstant"), c = t("./Slot3x3Room"), a = t("./Slot3x3Var"), p = t("./Slot3x3XPot"), h = cc._decorator, u = h.ccclass, f = h.property, m = function(t) {
+var s = t("../../base_slot/Slot"), r = t("../../base_slot/SlotConstant"), c = t("./Slot3x3Room"), a = t("./Slot3x3Var"), p = t("./Slot3x3XPot"), h = cc._decorator, u = h.ccclass, f = h.property, m = function(t) {
 n(o, t);
 function o() {
 var o = null !== t && t.apply(this, arguments) || this;
@@ -1613,9 +1613,9 @@ o.prototype.onDestroy = function() {
 t.prototype.onDestroy.call(this);
 };
 o.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.mSlotNetwork.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.mSlotNetwork.connect, this);
 this.mSlotNetwork.closeWS();
-fzgui.ZLog.log("=====================CLOSE WS NOTI===============================");
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
 };
 o.prototype.connectSuccess = function() {
 this.mRoomId = 1;
@@ -1673,23 +1673,23 @@ var t = 0;
 1 == this.mRoomId ? t = 100 : 2 == this.mRoomId ? t = 1e3 : 3 == this.mRoomId ? t = 5e3 : 4 == this.mRoomId && (t = 1e4);
 return t;
 };
-s([ f(p.default) ], o.prototype, "mSlotPot", void 0);
-s([ f({
+l([ f(p.default) ], o.prototype, "mSlotPot", void 0);
+l([ f({
 override: !0
 }) ], o.prototype, "mSlotNetwork", void 0);
-s([ f({
+l([ f({
 override: !0
 }) ], o.prototype, "mSlotConfig", void 0);
-s([ f(cc.Toggle) ], o.prototype, "btn100", void 0);
-s([ f(cc.Toggle) ], o.prototype, "btn1k", void 0);
-s([ f(cc.Toggle) ], o.prototype, "btn5k", void 0);
-s([ f(cc.Toggle) ], o.prototype, "btn10k", void 0);
-s([ f(cc.Button) ], o.prototype, "btnClose", void 0);
-s([ f(c.default) ], o.prototype, "mSlotRoom", void 0);
-s([ f(cc.Prefab) ], o.prototype, "prePopupHistory", void 0);
-s([ f(cc.Prefab) ], o.prototype, "prePopupHorno", void 0);
-return s([ u ], o);
-}(l.default);
+l([ f(cc.Toggle) ], o.prototype, "btn100", void 0);
+l([ f(cc.Toggle) ], o.prototype, "btn1k", void 0);
+l([ f(cc.Toggle) ], o.prototype, "btn5k", void 0);
+l([ f(cc.Toggle) ], o.prototype, "btn10k", void 0);
+l([ f(cc.Button) ], o.prototype, "btnClose", void 0);
+l([ f(c.default) ], o.prototype, "mSlotRoom", void 0);
+l([ f(cc.Prefab) ], o.prototype, "prePopupHistory", void 0);
+l([ f(cc.Prefab) ], o.prototype, "prePopupHorno", void 0);
+return l([ u ], o);
+}(s.default);
 e.default = m;
 cc._RF.pop();
 }, {

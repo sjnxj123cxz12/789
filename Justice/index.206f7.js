@@ -564,7 +564,7 @@ touchUnlock: function() {
 o.mainLayer.touchLockLayer && o.mainLayer.touchLockLayer.setVisible(!1);
 },
 requestGet: function(e, t, n) {
-e += "?token=" + encodeURIComponent(fzgui.UserManager.instance.mainUserInfo.GameToken);
+e += "?token=" + encodeURIComponent(lngui.UserManager.instance.mainUserInfo.GameToken);
 var i = cc.loader.getXMLHttpRequest();
 console.log(e);
 i.onreadystatechange = function() {
@@ -587,7 +587,7 @@ o.cookie && i.setRequestHeader("cookie", o.cookie);
 i.send();
 },
 requestPost: function(e, t, n, i) {
-e += "?token=" + encodeURIComponent(fzgui.UserManager.instance.mainUserInfo.GameToken);
+e += "?token=" + encodeURIComponent(lngui.UserManager.instance.mainUserInfo.GameToken);
 var s = cc.loader.getXMLHttpRequest();
 s.onreadystatechange = function() {
 a.log("responsePost " + (i || "") + ": " + s.responseText);
@@ -622,7 +622,7 @@ e.runAction(a.shakeChaosAction(e).repeatForever());
 break;
 
 case ccui.Widget.TOUCH_ENDED:
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 
 case ccui.Widget.TOUCH_CANCELED:
 e.stopAllActions();
@@ -641,7 +641,7 @@ e.runAction(cc.scaleTo(.08, .85));
 break;
 
 case ccui.Widget.TOUCH_ENDED:
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 
 case ccui.Widget.TOUCH_CANCELED:
 e.stopAllActions();
@@ -656,7 +656,7 @@ e.dis.setVisible(!1);
 break;
 
 case ccui.Widget.TOUCH_ENDED:
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 
 case ccui.Widget.TOUCH_CANCELED:
 e.act.setVisible(!1);
@@ -743,20 +743,20 @@ lblUsername: cc.Label,
 bmfBalance: o
 },
 onLoad: function() {
-console.log(fzgui.UserManager.instance.mainUserInfo);
-this.lblUsername.string = fzgui.UserManager.instance.mainUserInfo.NickName;
-this.bmfBalance.setRealNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+console.log(lngui.UserManager.instance.mainUserInfo);
+this.lblUsername.string = lngui.UserManager.instance.mainUserInfo.NickName;
+this.bmfBalance.setRealNumber(lngui.UserManager.instance.mainUserInfo.Money);
 a.jackpot = [ 0, 5e5, 5e6, 5e7 ];
 this.setJackpot();
 },
 setBalance: function() {
-this.bmfBalance.setRealNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+this.bmfBalance.setRealNumber(lngui.UserManager.instance.mainUserInfo.Money);
 },
 setJackpot: function() {
 for (var e = 0; e < 3; e++) this.bmfJackpots[e].setRealNumber(a.jackpot[e + 1]);
 },
 touchBtnRoom: function(e, t) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 this.setBalance();
 a.mainScene.showGamePlay(t);
 },
@@ -811,7 +811,7 @@ this._isPlayTry = !1;
 this._freeSpin = 0;
 this.spinSpeed = 1;
 this._chonDongNumberCounter = 25;
-this.bmfBalance.setRealNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+this.bmfBalance.setRealNumber(lngui.UserManager.instance.mainUserInfo.Money);
 this.initPnlMid();
 this.initPnlBottom();
 },
@@ -821,10 +821,10 @@ this._isPlayTry && s.sendSignalR("PlayTry", [ !1 ]);
 },
 showGamePlay: function(e) {
 this.node.active = !0;
-this.bmfBalance.setRealNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+this.bmfBalance.setRealNumber(lngui.UserManager.instance.mainUserInfo.Money);
 this.initRoomVar(e);
 this.setJackpot();
-fzgui.AudioManager.instance.playMusic(i.default.instance.BG_game);
+lngui.AudioManager.instance.playMusic(i.default.instance.BG_game);
 },
 initRoomVar: function(e) {
 this._isPlayTry = !1;
@@ -875,7 +875,7 @@ this.lblSeesionID.string = "";
 this.lblFreeSpin.tring = "";
 this.btnRoom.node.on(cc.Node.EventType.TOUCH_END, function() {
 if (this._isPlayTry) a.mainScene.showDialogNotifyNode("Bạn không thể chọn phòng trong phần chơi miễn phí"); else if (this.isBtnClickable()) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 switch (this.roomValue) {
 case 100:
 this.initRoomVar(100);
@@ -897,7 +897,7 @@ this.bmfMoneyWin.setRealNumber(0);
 this.lblNumberLine.string = this._chonDongNumberCounter;
 this.btnChonDong.node.on(cc.Node.EventType.TOUCH_END, function() {
 if (this._isPlayTry) a.mainScene.showDialogNotifyNode("Bạn không thể chọn dòng trong phần chơi miễn phí"); else if (this.isBtnClickable()) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 this._chonDongNumberCounter++;
 this._chonDongNumberCounter > 25 && (this._chonDongNumberCounter = 1);
 this.updateChonDong();
@@ -921,7 +921,7 @@ t.on(cc.Node.EventType.TOUCH_END, function() {
 t.act.active = !1;
 t.dis.active = !0;
 if (this.isBtnClickable()) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 this._chonDongNumberCounter++;
 this._chonDongNumberCounter > 25 && (this._chonDongNumberCounter = 1);
 this.updateChonDong();
@@ -944,18 +944,18 @@ n.on(cc.Node.EventType.TOUCH_END, function() {
 n.act.active = !1;
 n.dis.active = !0;
 if (this.isBtnClickable()) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 this._chonDongNumberCounter--;
 this._chonDongNumberCounter < 1 && (this._chonDongNumberCounter = 25);
 this.updateChonDong();
 }
 }, this);
 this.btnQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 this._autoSpin ? a.mainScene.showDialogNotifyNode("Hiện đang trong tiến trình quay") : this.callSpin();
 }, this);
 this.btnTuQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 if (this._isPlayTry) s.toast("Bạn không thể tự quay trong phần chơi miễn phí", this.node, cc.v2(0, 0)); else {
 this._autoSpin = !0;
 this.spinSpeed = 1;
@@ -963,14 +963,14 @@ this.touchBtnTuQuay();
 }
 }, this);
 this.btnDungTuQuay.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
-fzgui.AudioManager.instance.playMusic(i.default.instance.BG_game);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playMusic(i.default.instance.BG_game);
 this._autoSpin = !1;
 this.spinSpeed = 1;
 this.touchBtnTuQuay();
 }, this);
 this.btnSieuToc.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 if (this._isPlayTry) s.toast("Bạn không thể quay siêu tốc trong phần chơi miễn phí", this.node, cc.v2(0, 0)); else {
 this._autoSpin = !0;
 this.spinSpeed = 3;
@@ -978,8 +978,8 @@ this.touchBtnTuQuay();
 }
 }, this);
 this.btnDungSieuToc.node.on(cc.Node.EventType.TOUCH_END, function() {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
-fzgui.AudioManager.instance.playMusic(i.default.instance.BG_game);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playMusic(i.default.instance.BG_game);
 if (this._isPlayTry) s.toast("Bạn không thể chọn tự quay trong phần chơi miễn phí"); else {
 this._autoSpin = !1;
 this.spinSpeed = 1;
@@ -989,10 +989,10 @@ this.touchBtnTuQuay();
 },
 touchBtnTuQuay: function() {
 if (this._isPlayTry) a.mainScene.showDialogNotifyNode("Bạn không thể chọn tự quay trong phần chơi miễn phí"); else {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 if (this.spinSpeed > 1) {
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.AudioManager.instance.playMusic(i.default.instance.BG_spinspeed);
+lngui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.playMusic(i.default.instance.BG_spinspeed);
 }
 this.btnTuQuay.node.active = !(this._autoSpin && 1 === this.spinSpeed);
 this.btnDungTuQuay.node.active = this._autoSpin && 1 === this.spinSpeed;
@@ -1362,8 +1362,8 @@ n = 1;
 }
 if (this._resultSpin.SpinData.PayLinePrizeValue) switch (e) {
 case a.WINBIG.GIAUTO:
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.AudioManager.instance.playSfx(i.default.instance.Bigwin, 1);
+lngui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.playSfx(i.default.instance.Bigwin, 1);
 this._nodeCol[0].runAction(cc.sequence(cc.delayTime(.6), cc.callFunc(function() {
 a.mainScene.showWinBigNode(e, this._resultSpin.SpinData.PayLinePrizeValue);
 }, this)));
@@ -1371,8 +1371,8 @@ break;
 
 case a.WINBIG.HUXU:
 case a.WINBIG.THANGLON:
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.AudioManager.instance.playSfx(i.default.instance.Bigwin, 1);
+lngui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.playSfx(i.default.instance.Bigwin, 1);
 this._nodeCol[0].runAction(cc.sequence(cc.delayTime(.33), cc.callFunc(function() {
 a.mainScene.showWinBigNode(e, this._resultSpin.SpinData.PayLinePrizeValue);
 }, this)));
@@ -1387,8 +1387,8 @@ if (e === a.WINBIG.HUXU) {
 this.btnDungQuay.active = !1;
 this._autoSpin = !1;
 this.spinSpeed = 1;
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.AudioManager.instance.playSfx(i.default.instance.SuperBigwin, 1);
+lngui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.playSfx(i.default.instance.SuperBigwin, 1);
 } else this._nodeCol[0].runAction(cc.sequence(cc.delayTime(n), cc.callFunc(function() {
 this._resultSpin.BonusGame.BonusItemsData && a.mainScene.showMiniGameNode(this._resultSpin.BonusGame);
 a.mainScene.hideWinBigDecorLayer();
@@ -1408,7 +1408,7 @@ this.bmfJackpot.setRealNumber(this._resultSpin.SlotInfo.Jackpot);
 a.jackpot[0] = this._resultSpin.SlotInfo.Jackpot;
 } else {
 this.bmfBalance.setRealNumber(this._resultSpin.Account.TotalStar);
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this._resultSpin.Account.TotalStar);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this._resultSpin.Account.TotalStar);
 a.jackpot[this.roomType] = this._resultSpin.SlotInfo.Jackpot;
 this.setJackpot();
 }
@@ -1471,7 +1471,7 @@ this._isPlayTry || this.bmfJackpot.setRealNumber(a.jackpot[this.roomType]);
 },
 setBalance: function(e) {
 if (!this._isPlayTry) {
-e = e || fzgui.UserManager.instance.mainUserInfo.Money;
+e = e || lngui.UserManager.instance.mainUserInfo.Money;
 this.bmfBalance.setRealNumber(e);
 }
 }
@@ -1506,7 +1506,7 @@ onLoad: function() {
 this.pnlLobby.node.active = !0;
 this.pnlMainGame.node.active = !1;
 c.api = {
-url: "https://thantai.dragonf1.xyz/signalr",
+url: "https://thantai.${lngui.ConfigManager.instance.ConfigInfo.Api}/signalr",
 ip: "http://18.138.207.162:8002/signalr",
 hub: "taydukyhub",
 gate: "sieuno1.club"
@@ -1534,7 +1534,7 @@ this.pnlLobby.hide();
 this.pnlMainGame.showGamePlay(e);
 },
 initZomWS: function() {
-fzgui.UIWaitingLayout.showWaiting();
+lngui.UIWaitingLayout.showWaiting();
 var e = this;
 cc.systemEvent.off(c.listenerStr, null, this);
 cc.systemEvent.on(c.listenerStr, function(t) {
@@ -1551,7 +1551,7 @@ if (i.A) var o = i.A[0];
 switch (i.M) {
 case "open":
 case "connect":
-fzgui.UIWaitingLayout.hideWaiting();
+lngui.UIWaitingLayout.hideWaiting();
 u.sendSignalR("GetEventJackpot");
 this.schedule(function() {
 u.sendSignalR("GetJackpotString");
@@ -1567,7 +1567,7 @@ if (this.pnlMainGame) {
 this.pnlMainGame.bmfMoneyWin.setRealNumber(o.X2Game.PrizeValue);
 this.pnlMainGame.parseSlotInfo(o.SlotInfo);
 }
-o.IsPlayTry ? this.pnlMainGame.bmfBalance.setRealNumber(o.Account.TotalStar) : this.pnlMainGame.bmfBalance.setRealNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+o.IsPlayTry ? this.pnlMainGame.bmfBalance.setRealNumber(o.Account.TotalStar) : this.pnlMainGame.bmfBalance.setRealNumber(lngui.UserManager.instance.mainUserInfo.Money);
 break;
 
 case "resultBonusGame":
@@ -1721,7 +1721,7 @@ this._miniGameNode = null;
 }
 u.sendSignalR("PlayBonusGameAll");
 (this.pnlMainGame._freeSpin || this.pnlMainGame._autoSpin) && this.pnlMainGame.callSpin();
-this.pnlMainGame.spinSpeed > 1 ? fzgui.AudioManager.instance.playSfx(i.default.instance.BG_spinspeed, 1) : fzgui.AudioManager.instance.playSfx(i.default.instance.BG_game, 1);
+this.pnlMainGame.spinSpeed > 1 ? lngui.AudioManager.instance.playSfx(i.default.instance.BG_spinspeed, 1) : lngui.AudioManager.instance.playSfx(i.default.instance.BG_game, 1);
 },
 showX2Node: function() {
 this._x2Node || cc.loader.loadRes("ThatTruyen/ThatTruyenX2Node", function(e, t) {
@@ -1838,8 +1838,8 @@ this.m_pnlPhase2.active = !1;
 this.m_pnlPhase3.active = !0;
 this.txtTotalPrizeValue.getComponent(cc.Label).string = this.miniPrizeValue;
 o.sendSignalR("PlayBonusGameAll");
-fzgui.UserManager.instance.mainUserInfo.Money = fzgui.UserManager.instance.mainUserInfo.Money + this.miniPrizeValue;
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.UserManager.instance.mainUserInfo.Money = lngui.UserManager.instance.mainUserInfo.Money + this.miniPrizeValue;
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 }, t), cc.delayTime(5.5), cc.callFunc(function() {}, t)));
 }, 1e3), cc.delayTime(5.5), cc.callFunc(function() {
 i.mainScene.closeMiniGameNode();
@@ -1857,7 +1857,7 @@ this.m_pnlPhase3.active = !0;
 this.txtTotalPrizeJumpEffect.getComponent(cc.Label).string = this.miniPrizeValue;
 this.node.runAction(cc.sequence(cc.delayTime(5.5), cc.callFunc(function() {
 i.mainScene.closeMiniGameNode();
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 }, this)));
 }
 -3 === this._timer && i.mainScene.closeMiniGameNode();
@@ -1937,7 +1937,7 @@ var e = JSON.parse(i.responseText), n = t._url;
 n = (n = n.replace("https://", "wss://")).replace("http://", "ws://");
 t._isReconnect ? n += "/reconnect" : n += "/connect";
 cc.log(t._hub);
-n += "?transport=webSockets&connectionToken=" + encodeURIComponent(e.ConnectionToken) + "&connectionData=" + encodeURIComponent('[{"name":"' + t._hub + '"}]') + "&tid=" + MvUtils.random(1, 11) + "&token=" + encodeURIComponent(fzgui.UserManager.instance.mainUserInfo.GameToken);
+n += "?transport=webSockets&connectionToken=" + encodeURIComponent(e.ConnectionToken) + "&connectionData=" + encodeURIComponent('[{"name":"' + t._hub + '"}]') + "&tid=" + MvUtils.random(1, 11) + "&token=" + encodeURIComponent(lngui.UserManager.instance.mainUserInfo.GameToken);
 cc.log("---\x3e " + n);
 t.connectWS(n);
 t.loopConnect = 0;
@@ -2102,14 +2102,14 @@ for (var n = 0; n < this._nodeItemNumber; n++) this._iconsPos[t][n] = cc.v2(0, t
 }
 },
 touchBtnPage: function(e, t) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 this.currentPage = Number(t);
 for (var n = 0; n < this.btnPages.length; n++) this.btnPages[n] !== e && (this.btnPages[n].interactable = !0);
 e.interactable = !1;
 this.onChangePage();
 },
 touchBtnNextPre: function(e, t) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 if (1 == t) {
 this.currentPage--;
 this.currentPage < 0 && (this.currentPage = this.MAX_PAGE - 1);
@@ -2199,14 +2199,14 @@ onLoad: function() {
 this.itemPerPage = 7;
 },
 touchBtnPage: function(e, t) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 this.currentPage = Number(t);
 for (var n = 0; n < this.btnPages.length; n++) this.btnPages[n] !== e && (this.btnPages[n].interactable = !0);
 e.interactable = !1;
 this.onChangePage();
 },
 touchBtnNextPre: function(e, t) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.ClickSound, 1);
 if (1 == t) {
 this.currentPage--;
 this.currentPage < 0 && (this.currentPage = this.MAX_PAGE - 1);
@@ -2217,7 +2217,7 @@ this.currentPage > this.MAX_PAGE - 1 && (this.currentPage = 0);
 this.onChangePage();
 },
 touchBtnLsHu: function(e, t) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.button_click, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.button_click, 1);
 1 == t ? s._signalR.send("GetStatistic", [ !1 ]) : a.sendSignalR("GetStatistic", !0);
 },
 parseData: function(e) {
@@ -2318,10 +2318,10 @@ touchBtnBack: function() {
 if (o.pnlMainGame.btnQuay.interactable && o.pnlMainGame.isBtnClickable()) if (o.pnlMainGame.node.active) {
 o.pnlMainGame.node.active = !1;
 o.pnlLobby.node.active = !0;
-fzgui.AudioManager.instance.pauseMusic();
+lngui.AudioManager.instance.pauseMusic();
 } else {
-fzgui.AudioManager.instance.pauseMusic();
-fzgui.GameCoreManager.instance.onBackToLobby();
+lngui.AudioManager.instance.pauseMusic();
+lngui.GameCoreManager.instance.onBackToLobby();
 } else o.mainScene.showDialogNotifyNode("Dừng quay trước khi thoát game !!!", !0, 3);
 },
 touchBtnHonor: function() {
@@ -2352,21 +2352,21 @@ i.sendSignalR("GetHistory");
 }
 },
 touchBtnSound: function() {
-if (1 == fzgui.AudioManager.instance.sfxVolume) {
+if (1 == lngui.AudioManager.instance.sfxVolume) {
 this.btnSound.getComponent(cc.Sprite).spriteFrame = this.IsSoundOff;
-fzgui.AudioManager.instance.sfxVolume = 0;
+lngui.AudioManager.instance.sfxVolume = 0;
 } else {
 this.btnSound.getComponent(cc.Sprite).spriteFrame = this.IsSoundOn;
-fzgui.AudioManager.instance.sfxVolume = 1;
+lngui.AudioManager.instance.sfxVolume = 1;
 }
 },
 touchBtnMusic: function() {
-if (1 == fzgui.AudioManager.instance.musicVolume) {
+if (1 == lngui.AudioManager.instance.musicVolume) {
 this.btnMusic.getComponent(cc.Sprite).spriteFrame = this.IsMusicOff;
-fzgui.AudioManager.instance.musicVolume = 0;
+lngui.AudioManager.instance.musicVolume = 0;
 } else {
 this.btnMusic.getComponent(cc.Sprite).spriteFrame = this.IsMusicOn;
-fzgui.AudioManager.instance.musicVolume = 1;
+lngui.AudioManager.instance.musicVolume = 1;
 }
 },
 showSetting: function(e) {
@@ -2520,17 +2520,17 @@ break;
 
 case o.WINBIG.GIAUTO:
 this.showGiauTo(t);
-fzgui.AudioManager.instance.playSfx(i.default.instance.SuperBigwin, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.SuperBigwin, 1);
 break;
 
 case o.WINBIG.THANGLON:
 this.showThangLon(t);
-fzgui.AudioManager.instance.playSfx(i.default.instance.Bigwin, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.Bigwin, 1);
 break;
 
 case o.WINBIG.HUXU:
 this.showHuXu(t);
-fzgui.AudioManager.instance.playSfx(i.default.instance.Jackpot, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.Jackpot, 1);
 break;
 
 default:
@@ -2538,7 +2538,7 @@ this.bmfXuType1.setPosition(this.bmfXuType1.centerPos);
 this.layoutTouchable.active = !1;
 this._pnlDecor.active = !1;
 this.useBmfXu(t);
-t ? fzgui.AudioManager.instance.playSfx(i.default.instance.Andiem, 1) : fzgui.AudioManager.instance.playSfx(i.default.instance.Fail, 1);
+t ? lngui.AudioManager.instance.playSfx(i.default.instance.Andiem, 1) : lngui.AudioManager.instance.playSfx(i.default.instance.Fail, 1);
 }
 this.node.active = !0;
 this.layoutTouchable.stopAllActions();
@@ -2595,7 +2595,7 @@ this.node_ThangLon.bmfXuTypeJumpEffect || (this.node_ThangLon.bmfXuTypeJumpEffec
 this.node_ThangLon.bmfXuTypeJumpEffect.getComponent("TT.CustomBMFont").setRealNumber(e);
 },
 showHuXu: function(e) {
-fzgui.AudioManager.instance.playSfx(i.default.instance.jackpot, 1);
+lngui.AudioManager.instance.playSfx(i.default.instance.jackpot, 1);
 this.node_NoHu.active = !0;
 if (!this.node_NoHu.skeleton) {
 var t = new cc.Node();

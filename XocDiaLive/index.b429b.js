@@ -5,8 +5,8 @@ if (!e[c]) {
 var r = c.split("/");
 r = r[r.length - 1];
 if (!e[r]) {
-var h = "function" == typeof __require && __require;
-if (!a && h) return h(r, !0);
+var u = "function" == typeof __require && __require;
+if (!a && u) return u(r, !0);
 if (s) return s(r, !0);
 throw new Error("Cannot find module '" + c + "'");
 }
@@ -24,191 +24,11 @@ return i[c].exports;
 for (var s = "function" == typeof __require && __require, c = 0; c < n.length; c++) o(n[c]);
 return o;
 }({
-ChatRoomController: [ function(t, e) {
+DragonTigerHistoryListViewLive: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "9fa22u1m9hFvI8Tqz7Dsy1z", "ChatRoomController");
+cc._RF.push(e, "54486Wy4tlPmpiUJKDj68K7", "DragonTigerHistoryListViewLive");
 (function() {
-var t;
-t = function() {
-var t;
-function e() {}
-t = void 0;
-e.getInstance = function() {
-void 0 === t && (t = this);
-return t.prototype;
-};
-e.prototype.setChatView = function(t) {
-return this.chatView = t;
-};
-e.prototype.setHubView = function(t) {
-return this.hubView = t;
-};
-e.prototype.sendRequestOnHub = function(t, e, i) {
-if (this.hubView) return this.hubView.sendRequestOnHub(t, e, i);
-};
-e.prototype.showChat = function() {
-return this.chatView.showChat();
-};
-e.prototype.addChatContent = function(t) {
-return this.chatView.addChatContent(t);
-};
-e.prototype.getIndexEmotion = function(t) {
-return this.chatView.getIndexEmotion(t);
-};
-e.prototype.checkIsEmotion = function(t) {
-return this.chatView.checkIsEmotion(t);
-};
-return e;
-}();
-cc.ChatRoomController = t;
-}).call(void 0);
-cc._RF.pop();
-}, {} ],
-ChatRoomItem: [ function(t, e) {
-"use strict";
-cc._RF.push(e, "ecc4coyMxJC/JyRtGdKkYJu", "ChatRoomItem");
-(function() {
-cc.ChatRoomItem = cc.Class({
-extends: cc.Component,
-properties: {
-lbSID: cc.Label,
-lbName: cc.Label,
-lbMessage: cc.Label,
-spriteVIP: cc.Sprite
-},
-onLoad: function() {},
-updateItem: function(t, e) {
-this.lbSID.string = "";
-this.lbName.string = t[0] + "";
-this.lbMessage.string = ": " + t[1];
-if (6 === t.length) var i = t[5]; else i = t[3];
-if (null !== this.spriteVIP && i >= cc.Config.getInstance().getMinVipShowChat()) this.spriteVIP.node.active = !0; else if (null !== this.spriteVIP) {
-this.spriteVIP.spriteFrame = null;
-this.spriteVIP.node.active = !1;
-}
-this.item = t;
-this.itemID = e;
-}
-});
-}).call(void 0);
-cc._RF.pop();
-}, {} ],
-ChatRoomListView: [ function(t, e) {
-"use strict";
-cc._RF.push(e, "f1a89My30pBc6s/NqdlZI8u", "ChatRoomListView");
-(function() {
-cc.ChatRoomListView = cc.Class({
-extends: cc.ListView,
-properties: {},
-initialize: function(t) {
-this.messages = t;
-for (var e = this.messages.length, i = 0; i < e; ++i) {
-var n = cc.instantiate(this.itemTemplate);
-this.content.addChild(n);
-n.getComponent(cc.ChatRoomItem).updateItem(this.messages[i], i);
-this.items.push(n);
-}
-},
-updateList: function(t) {
-for (var e = this.items, i = 0; i < e.length; ++i) e[i].getComponent(cc.ChatRoomItem).updateItem(t[i], i);
-}
-});
-}).call(void 0);
-cc._RF.pop();
-}, {} ],
-ChatRoomView: [ function(t, e) {
-"use strict";
-cc._RF.push(e, "4ffb0Clea9C6rf5rVISctZ3", "ChatRoomView");
-(function() {
-cc.ChatRoomView = cc.Class({
-extends: cc.Component,
-properties: {
-chatListView: cc.ChatRoomListView,
-editBoxChat: cc.EditBox,
-btnSendChat: cc.Button,
-nodeEmotion: cc.Node,
-nodeNormalChat: cc.Node
-},
-onLoad: function() {
-cc.ChatRoomController.getInstance().setChatView(this);
-var t = -cc.view.getVisibleSize().width / 2;
-this.node.x = t;
-this.listChat = [];
-this.animation = this.node.getComponent(cc.Animation);
-this.emotionStr = [ "1-waaaht", "2-misdoubt", "3-boss", "4-beauty", "5-byebye", "6-after_boom", "7-matrix", "8-sweat", "9-choler", "10-beated", "11-angry", "12-ah", "13-beat", "14-adore", "15-beat_shot", "16-extreme", "20-burn_joss_stick", "21-baffle", "22-cool", "23-dribble", "24-tire", "25-BigSmile" ];
-this.chatShortcuts = [ "Nói nhiều quá đánh đi!", "Ngại gì vết bẩn?", "Chơi thì chơi ko chơi thì té", "Ahihi!", "Max nhọ !!!", "Ngon quá hehe!" ];
-},
-checkIsEmotion: function(t) {
-return this.emotionStr.includes(t[1]);
-},
-getIndexEmotion: function(t) {
-return this.emotionStr.indexOf(t[1]);
-},
-addChatContent: function(t) {
-if (this.emotionStr.includes(t[1])) this.chatListView.scrollView.scrollToBottom(); else {
-this.listChat.push(t);
-if (this.listChat.length > 15) {
-this.listChat.splice(0, 1);
-this.chatListView.updateList(this.listChat);
-} else {
-this.chatListView.resetList();
-this.chatListView.initialize(this.listChat);
-}
-this.chatListView.scrollView.scrollToBottom();
-}
-},
-editingReturn: function() {
-if ("" !== this.editBoxChat.string) {
-cc.ChatRoomController.getInstance().sendRequestOnHub(cc.MethodHubName.SEND_MESSAGE, this.editBoxChat.string);
-this.editBoxChat.string = "";
-}
-},
-showChat: function() {
-this.animation.play("showChatRoom");
-this.nodeEmotion.active = !1;
-this.nodeNormalChat.active = !0;
-},
-sendChatClicked: function() {
-if ("" !== this.editBoxChat.string) {
-cc.ChatRoomController.getInstance().sendRequestOnHub(cc.MethodHubName.SEND_MESSAGE, this.editBoxChat.string);
-this.editBoxChat.string = "";
-this.animation.play("hideChatRoom");
-}
-},
-chatShortcutClicked: function(t, e) {
-var i = parseInt(e.toString());
-cc.ChatRoomController.getInstance().sendRequestOnHub(cc.MethodHubName.SEND_MESSAGE, this.chatShortcuts[i]);
-this.animation.play("hideChatRoom");
-},
-chatEmotionClicked: function(t, e) {
-var i = parseInt(e.toString());
-cc.ChatRoomController.getInstance().sendRequestOnHub(cc.MethodHubName.SEND_MESSAGE, this.emotionStr[i]);
-this.animation.play("hideChatRoom");
-},
-showEmotionClicked: function() {
-if (this.nodeEmotion.active) {
-this.nodeEmotion.active = !1;
-this.nodeNormalChat.active = !0;
-} else {
-this.nodeEmotion.active = !0;
-this.nodeNormalChat.active = !1;
-}
-},
-showChatClicked: function() {
-this.showChat();
-},
-hideChatClicked: function() {
-this.animation.play("hideChatRoom");
-}
-});
-}).call(void 0);
-cc._RF.pop();
-}, {} ],
-DragonTigerHistoryListView: [ function(t, e) {
-"use strict";
-cc._RF.push(e, "ddd4f/SFzNJ9LlDD12BPn2L", "DragonTigerHistoryListView");
-(function() {
-cc.DragonTigerHistoryListView = cc.Class({
+cc.DragonTigerHistoryListViewLive = cc.Class({
 extends: cc.ListView,
 properties: {},
 initialize: function(t) {
@@ -249,82 +69,64 @@ this.lastContentPosY = this.scrollView.content.y;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-PlayerData: [ function(t, e) {
+DragonTigerSettingRoomViewLive: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "10a03SmC5xKFY1bS/O+sxnd", "PlayerData");
-var i = [ {
-accID: 0,
-balance: 0,
-avatarId: 1,
-indexBet: 0,
-position: cc.v2(-473, -361),
-chips: []
-}, {
-accID: 0,
-balance: 500,
-avatarId: 3,
-indexBet: 0,
-position: cc.v2(-578, -208),
-chips: []
-}, {
-accID: 0,
-balance: 1500,
-avatarId: 2,
-indexBet: 0,
-position: cc.v2(-578, -30),
-chips: []
-}, {
-accID: 0,
-balance: 2e3,
-avatarId: 1,
-indexBet: 0,
-position: cc.v2(-523, 141),
-chips: []
-}, {
-accID: 0,
-balance: 1e4,
-avatarId: 6,
-indexBet: 0,
-position: cc.v2(509, 141),
-chips: []
-}, {
-accID: 0,
-balance: 5e3,
-avatarId: 5,
-indexBet: 0,
-position: cc.v2(574, -30),
-chips: []
-}, {
-accID: 0,
-balance: 9e3,
-avatarId: 4,
-indexBet: 0,
-position: cc.v2(578, -208),
-chips: []
-} ];
-e.exports = {
-players: i
-};
-cc._RF.pop();
-}, {} ],
-PortalName: [ function(t, e) {
-"use strict";
-cc._RF.push(e, "02a5f+gN+NC67cMLBVC1qe1", "PortalName");
+cc._RF.push(e, "1e2ebA2O2RPpryXsrjACaOE", "DragonTigerSettingRoomViewLive");
 (function() {
-cc.PortalName = cc.Enum({
-BLOCK_BUSTER: "X6",
-BLOCK_BUSTER_2: "X6-1",
-BLOCK_BUSTER_3: "X6-2",
-BLOCK_BUSTER_4: "X6-3"
+cc.DragonTigerSettingRoomViewLive = cc.Class({
+extends: cc.Component,
+properties: {
+animation: cc.Animation,
+nodeOffset: cc.Node,
+spriteSound: cc.Sprite,
+spriteMusic: cc.Sprite,
+sfSounds: [ cc.SpriteFrame ],
+sfMusics: [ cc.SpriteFrame ]
+},
+onLoad: function() {
+this.openPopup = !1;
+},
+start: function() {
+this.sound = cc.Tool.getInstance().getItem("@Sound") && "true" === cc.Tool.getInstance().getItem("@Sound").toString();
+this.music = cc.Tool.getInstance().getItem("@Music") && "true" === cc.Tool.getInstance().getItem("@Music").toString();
+this.spriteSound.spriteFrame = this.sound ? this.sfSounds[0] : this.sfSounds[1];
+this.spriteMusic.spriteFrame = this.music ? this.sfMusics[0] : this.sfMusics[1];
+cc.AudioController.getInstance().enableSound(this.sound);
+cc.AudioController.getInstance().enableMusic(this.music);
+},
+openSettingClicked: function() {
+if (0 == this.openPopup) {
+this.openPopup = !0;
+this.animation.play("openSettingMenu");
+} else {
+this.openPopup = !1;
+this.animation.play("closeSettingMenu");
+}
+},
+closeSettingClicked: function() {
+this.animation.play("closeSettingMenu");
+},
+soundClicked: function() {
+this.sound = !this.sound;
+cc.Tool.getInstance().setItem("@Sound", this.sound);
+this.spriteSound.spriteFrame = this.sound ? this.sfSounds[0] : this.sfSounds[1];
+cc.AudioController.getInstance().enableSound(this.sound);
+},
+musicClicked: function() {
+this.music = !this.music;
+cc.Tool.getInstance().setItem("@Music", this.music);
+this.spriteMusic.spriteFrame = this.music ? this.sfMusics[0] : this.sfMusics[1];
+cc.AudioController.getInstance().enableMusic(this.music);
+}
 });
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-SlotsHistoryItem: [ function(t, e) {
+SlotsHistoryItemLive: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "98b467lg1tGSIOSS7iaiI4s", "SlotsHistoryItem");
+cc._RF.push(e, "0edb439qRpD86KlKnt41/0T", "SlotsHistoryItemLive");
 (function() {
-cc.SlotsHistoryItem = cc.Class({
+cc.SlotsHistoryItemLive = cc.Class({
 extends: cc.Component,
 properties: {
 lbSessionID: cc.Label,
@@ -350,11 +152,334 @@ cc.MainController.getInstance().createSessionDetailView();
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXAssets: [ function(t, e) {
+ViewLive: [ function(t, e, i) {
 "use strict";
-cc._RF.push(e, "a9e52Aa5P9MIq9DZ/P5xyek", "XXAssets");
+cc._RF.push(e, "c82a6av8uxJ4IQl1prI3s+W", "ViewLive");
+var n, o = this && this.__extends || (n = function(t, e) {
+return (n = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && (t[i] = e[i]);
+})(t, e);
+}, function(t, e) {
+n(t, e);
+function i() {
+this.constructor = t;
+}
+t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype, new i());
+}), s = this && this.__decorate || function(t, e, i, n) {
+var o, s = arguments.length, c = s < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, i) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, i, n); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (c = (s < 3 ? o(c) : s > 3 ? o(e, i, c) : o(e, i)) || c);
+return s > 3 && c && Object.defineProperty(e, i, c), c;
+};
+Object.defineProperty(i, "__esModule", {
+value: !0
+});
+var c = cc._decorator, a = c.ccclass, r = c.property, u = function(t) {
+o(e, t);
+function e() {
+var e = null !== t && t.apply(this, arguments) || this;
+e.webview = null;
+return e;
+}
+e.prototype.start = function() {
+this.webview.node.zIndex = -1;
+this.webview.url = "https://gc-api.tieusi.online/live?gate=789&game=xocdia&active=false&hideBtnChanLe=truee";
+};
+e.prototype.getUrl = function(t, e) {
+var i = t, n = cc.loader.getXMLHttpRequest();
+n.onreadystatechange = function() {
+4 === n.readyState && (200 == n.status ? e(n.responseText, n.status) : n.responseText.length > 0 ? e(n.responseText, n.status) : e("error_code : " + n.status, null));
+};
+n.ontimeout = function() {
+e("Hệ thống không phản hồi.", null);
+};
+n.timeout = 3e4;
+n.open("GET", i, !0);
+n.setRequestHeader("Content-Type", "application/json");
+n.withCredentials = !0;
+n.send();
+};
+e.prototype.Close = function() {
+this.webview.destroy;
+lngui.GameCoreManager.instance.onBackToLobby();
+};
+s([ r(cc.WebView) ], e.prototype, "webview", void 0);
+return s([ a ], e);
+}(cc.Component);
+i.default = u;
+cc._RF.pop();
+}, {} ],
+"XX.Chat.NetworkClient": [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "eae28nSwBNNAZ5psoaLUh+l", "XX.Chat.NetworkClient");
+var n, o = this && this.__extends || (n = function(t, e) {
+return (n = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && (t[i] = e[i]);
+})(t, e);
+}, function(t, e) {
+n(t, e);
+function i() {
+this.constructor = t;
+}
+t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype, new i());
+}), s = this && this.__decorate || function(t, e, i, n) {
+var o, s = arguments.length, c = s < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, i) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, i, n); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (c = (s < 3 ? o(c) : s > 3 ? o(e, i, c) : o(e, i)) || c);
+return s > 3 && c && Object.defineProperty(e, i, c), c;
+};
+Object.defineProperty(i, "__esModule", {
+value: !0
+});
+var c = t("./XXChat"), a = cc._decorator, r = a.ccclass, u = (a.property, function(t) {
+o(e, t);
+function e() {
+var e = null !== t && t.apply(this, arguments) || this;
+e.mSignalr = null;
+e.isConnect = !1;
+return e;
+}
+i = e;
+Object.defineProperty(e, "instance", {
+get: function() {
+i._instance || (i._instance = new i());
+return i._instance;
+},
+enumerable: !1,
+configurable: !0
+});
+e.prototype.onLoad = function() {
+i._instance = this;
+};
+e.prototype.connect = function() {
+var t = {
+url: "https://chat." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
+ip: "http://18.138.207.162:8092/signalr/negotiate",
+hub: "chatHub",
+gate: "sieuno1.club"
+};
+cc.systemEvent.off("OnChatXocDiaSocketEvent", this.onResponeData, this);
+cc.systemEvent.on("OnChatXocDiaSocketEvent", this.onResponeData, this);
+this.mSignalr = new lngui.GateSignalR();
+this.mSignalr.connect("OnChatXocDiaSocketEvent", t.url, t.hub, t.gate, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
+};
+e.prototype.onEnable = function() {
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+this.connect();
+};
+e.prototype.onDisable = function() {
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+this.closeWS();
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
+};
+e.prototype.onResponeData = function(t) {
+this.isEmpty(t) || t.s && "error" == t.s || this.onWebSocketCallback(t);
+};
+e.prototype.isEmpty = function(t) {
+for (var e in t) if (t.hasOwnProperty(e)) return !1;
+return JSON.stringify(t) === JSON.stringify({});
+};
+e.prototype.onWebSocketCallback = function(t) {
+if (("open" == t.s || "reconnect" == t.s || "1" == t.s) && !this.isConnect) {
+this.isConnect = !0;
+this.connectSuccess();
+this.registerChat();
+}
+t.R < 0 && lngui.UITextManager.showCenterNotification("Lỗi " + t.R);
+if (t.M && Array.isArray(t.M) && 0 != t.M.length) for (var e = t.M.length, i = 0; i < e; ++i) {
+var n = t.M[i];
+if (n.A && null != n.A[0] && null != n.A[0]) {
+var o = n.A[0];
+switch (n.M) {
+case "receiveMessage":
+c.default.instance.receiveMessage(o);
+break;
+
+case "listLastMessages":
+c.default.instance.listLastMessages(o);
+}
+}
+}
+};
+e.prototype.registerChat = function() {
+this.sendSignalR("RegisterChat", [ "xocdialive" ]);
+};
+e.prototype.pingPong = function() {
+this.sendSignalR("PingPong", []);
+};
+e.prototype.connectSuccess = function() {
+lngui.ZLog.log("Connect Sucesss");
+};
+e.prototype.closeWS = function() {
+cc.systemEvent.off("OnChatXocDiaSocketEvent", this.onResponeData, this);
+this.mSignalr.close();
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
+this.mSignalr = null;
+};
+e.prototype.sendSignalR = function(t, e) {
+lngui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
+e = e || [];
+this.mSignalr && this.mSignalr.send(t, e);
+};
+var i;
+e._instance = null;
+return i = s([ r ], e);
+}(cc.Component));
+i.default = u;
+cc._RF.pop();
+}, {
+"./XXChat": "XXChat"
+} ],
+XXChat: [ function(t, e, i) {
+"use strict";
+cc._RF.push(e, "7586eeN65ZBirigZn7z5Kb6", "XXChat");
+var n, o = this && this.__extends || (n = function(t, e) {
+return (n = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && (t[i] = e[i]);
+})(t, e);
+}, function(t, e) {
+n(t, e);
+function i() {
+this.constructor = t;
+}
+t.prototype = null === e ? Object.create(e) : (i.prototype = e.prototype, new i());
+}), s = this && this.__decorate || function(t, e, i, n) {
+var o, s = arguments.length, c = s < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, i) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, i, n); else for (var a = t.length - 1; a >= 0; a--) (o = t[a]) && (c = (s < 3 ? o(c) : s > 3 ? o(e, i, c) : o(e, i)) || c);
+return s > 3 && c && Object.defineProperty(e, i, c), c;
+};
+Object.defineProperty(i, "__esModule", {
+value: !0
+});
+var c = t("./XX.Chat.NetworkClient"), a = cc._decorator, r = a.ccclass, u = a.property, l = function(t) {
+o(e, t);
+function e() {
+var e = null !== t && t.apply(this, arguments) || this;
+e.templateMessage = null;
+e.listChat = null;
+e.scrollListChat = null;
+e.txtInputChat = null;
+return e;
+}
+i = e;
+e.prototype.touchSendChat = function() {
+if (this.txtInputChat.string.length) {
+c.default.instance.sendSignalR("SendMessage", [ this.txtInputChat.string, "xocdialive" ]);
+this.txtInputChat.string = "";
+}
+};
+e.prototype.listLastMessages = function(t) {
+if (0 != t.length) {
+this.listChat.removeAllChildren();
+if (t) for (var e = 0; e < t.length; e++) {
+var i = t[e], n = i.n, o = i.c;
+if (void 0 === n || void 0 === o) return;
+if (n.length > 0 && o.length > 0) {
+var s = o, c = cc.instantiate(this.templateMessage), a = i.n, r = n;
+c.active = !0;
+a = (a.localeCompare(lngui.UserManager.instance.mainUserInfo.NickName), r);
+c.getComponent(cc.Label).string = a + ": " + s;
+if (1 == t.IsVipTx) {
+c.getChildByName("lb_name").getComponent(cc.Label).node.active = !1;
+c.getChildByName("lb_nameVip").getComponent(cc.Label).string = a + ": ";
+c.off(cc.Node.EventType.SIZE_CHANGED);
+c.on(cc.Node.EventType.SIZE_CHANGED, function() {
+var t = (c.getContentSize().height - c.getChildByName("lb_nameVip").getContentSize().height) / 2;
+c.getChildByName("lb_nameVip").setPosition(cc.v2(0, t));
+});
+} else {
+c.getChildByName("lb_nameVip").getComponent(cc.Label).node.active = !1;
+c.getChildByName("lb_name").getComponent(cc.Label).string = a + ": ";
+c.off(cc.Node.EventType.SIZE_CHANGED);
+c.on(cc.Node.EventType.SIZE_CHANGED, function() {
+var t = (c.getContentSize().height - c.getChildByName("lb_name").getContentSize().height) / 2;
+c.getChildByName("lb_name").setPosition(cc.v2(0, t));
+});
+}
+this.listChat.addChild(c);
+}
+this.scrollListChat.scrollToBottom();
+}
+}
+};
+e.prototype.receiveMessage = function(t) {
+var e = t.n, i = t.c;
+if (void 0 !== e && void 0 !== i) {
+if (e.length > 0 && i.length > 0) {
+var n = i, o = cc.instantiate(this.templateMessage), s = t.n, c = e;
+o.active = !0;
+s = (s.localeCompare(lngui.UserManager.instance.mainUserInfo.NickName), c);
+o.getComponent(cc.Label).string = s + ": " + n;
+if (1 == t.IsVipTx) {
+o.getChildByName("lb_name").getComponent(cc.Label).node.active = !1;
+o.getChildByName("lb_nameVip").getComponent(cc.Label).string = s + ": ";
+o.off(cc.Node.EventType.SIZE_CHANGED);
+o.on(cc.Node.EventType.SIZE_CHANGED, function() {
+var t = (o.getContentSize().height - o.getChildByName("lb_nameVip").getContentSize().height) / 2;
+o.getChildByName("lb_nameVip").setPosition(cc.v2(0, t));
+});
+} else {
+o.getChildByName("lb_nameVip").getComponent(cc.Label).node.active = !1;
+o.getChildByName("lb_name").getComponent(cc.Label).string = s + ": ";
+o.off(cc.Node.EventType.SIZE_CHANGED);
+o.on(cc.Node.EventType.SIZE_CHANGED, function() {
+var t = (o.getContentSize().height - o.getChildByName("lb_name").getContentSize().height) / 2;
+o.getChildByName("lb_name").setPosition(cc.v2(0, t));
+});
+}
+this.listChat.addChild(o);
+}
+this.scrollListChat.scrollToBottom();
+}
+};
+Object.defineProperty(e, "instance", {
+get: function() {
+i._instance || (i._instance = new i());
+return i._instance;
+},
+enumerable: !1,
+configurable: !0
+});
+e.prototype.onEnable = function() {
+i._instance = this;
+this.txtInputChat.node.on("editing-return", this.touchSendChat, this);
+cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+};
+e.prototype.onKeyDown = function(t) {
+switch (t.keyCode) {
+case cc.macro.KEY.enter:
+this.txtInputChat.focus();
+}
+};
+var i;
+e._instance = null;
+s([ u(cc.Node) ], e.prototype, "templateMessage", void 0);
+s([ u(cc.Node) ], e.prototype, "listChat", void 0);
+s([ u(cc.ScrollView) ], e.prototype, "scrollListChat", void 0);
+s([ u(cc.EditBox) ], e.prototype, "txtInputChat", void 0);
+return i = s([ r ], e);
+}(cc.Component);
+i.default = l;
+cc._RF.pop();
+}, {
+"./XX.Chat.NetworkClient": "XX.Chat.NetworkClient"
+} ],
+XXLiveAssets: [ function(t, e) {
+"use strict";
+cc._RF.push(e, "716e009qC1Kq5Z99eEPqVO4", "XXLiveAssets");
 (function() {
-cc.XXAssets = cc.Class({
+cc.XXLiveAssets = cc.Class({
 extends: cc.Component,
 properties: {
 sfChips: [ cc.SpriteFrame ],
@@ -366,7 +491,7 @@ bmfWin: cc.BitmapFont,
 bmfLose: cc.BitmapFont
 },
 onLoad: function() {
-cc.XXController.getInstance().setXXAssets(this);
+cc.XXLiveController.getInstance().setXXAssets(this);
 },
 getWinFont: function() {
 return this.bmfWin;
@@ -387,11 +512,11 @@ return this.sfAvatarDef;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXChipItem: [ function(t, e) {
+XXLiveChipItem: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "175b2bygdhKMaxPsRzSaqtz", "XXChipItem");
+cc._RF.push(e, "768a0p3DkNJSJlR3yKgcVKd", "XXLiveChipItem");
 (function() {
-cc.XXChipItem = cc.Class({
+cc.XXLiveChipItem = cc.Class({
 extends: cc.Component,
 properties: {
 spriteChip: cc.Sprite
@@ -404,7 +529,7 @@ this.position = null;
 },
 setChip: function(t) {
 this.chipIndex = t;
-this.spriteChip.spriteFrame = cc.XXController.getInstance().getChips()[t];
+this.spriteChip.spriteFrame = cc.XXLiveController.getInstance().getChips()[t];
 },
 moveTo: function(t) {
 this.node.opacity = 100;
@@ -431,7 +556,7 @@ t.opacity = 255;
 moveToEndFinished: function(t) {
 try {
 setTimeout(function() {
-cc.XXController.getInstance().putToPool(t);
+cc.XXLiveController.getInstance().putToPool(t);
 }.bind(this), 500);
 } catch (t) {}
 }
@@ -439,18 +564,18 @@ cc.XXController.getInstance().putToPool(t);
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXChipPool: [ function(t, e) {
+XXLiveChipPool: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "24b98EDPEhGSIEI/3GsBrAd", "XXChipPool");
+cc._RF.push(e, "f308cnY9A1AP4wdDQuySHkW", "XXLiveChipPool");
 (function() {
-cc.XXChipPool = cc.Class({
+cc.XXLiveChipPool = cc.Class({
 extends: cc.Component,
 properties: {
 prefab: cc.Prefab
 },
 onLoad: function() {
 this.createNodePool();
-cc.XXController.getInstance().setXXChipPool(this);
+cc.XXLiveController.getInstance().setXXChipPool(this);
 },
 createNodePool: function() {
 this.nodePool = new cc.NodePool();
@@ -471,9 +596,9 @@ return this.nodePool.size() > 0 ? this.nodePool.get() : cc.instantiate(this.pref
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXConnectionStatus: [ function(t, e) {
+XXLiveConnectionStatus: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "a2ff1xmiwVGRJbdJnDtQXLV", "XXConnectionStatus");
+cc._RF.push(e, "4f1a5rcw9VIGq/qj68bN9bX", "XXLiveConnectionStatus");
 (function() {
 cc.XXConnectionStatus = cc.Enum({
 DISCONNECTED: 0,
@@ -483,9 +608,9 @@ REGISTER_LEAVE_GAME: 2
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXController: [ function(t, e) {
+XXLiveController: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "9bb79e+YC1KBLbTbaHbKk80", "XXController");
+cc._RF.push(e, "24616uoZLxHBaIIJOQ26KBp", "XXLiveController");
 (function() {
 var t;
 t = function() {
@@ -588,7 +713,7 @@ e.prototype.updateInfoCurrPlayer = function(t) {
 return this.xxInfoView.updateInfoCurrPlayer(t);
 };
 e.prototype.updateChip = function(t, e) {
-t === fzgui.UserManager.instance.mainUserInfo.AccountID && (fzgui.UserManager.instance.mainUserInfo.Money = e);
+t === lngui.UserManager.instance.mainUserInfo.AccountID && (lngui.UserManager.instance.mainUserInfo.Money = e);
 return this.xxInfoView.updateChip(t, e);
 };
 e.prototype.getPositions = function() {
@@ -716,13 +841,13 @@ return this.logBet;
 };
 return e;
 }();
-cc.XXController = t;
+cc.XXLiveController = t;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXFX: [ function(t, e) {
+XXLiveFX: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "d56450hcCNBTYUsRgavYvcM", "XXFX");
+cc._RF.push(e, "42ef3FSildIX7IItTyU+J4o", "XXLiveFX");
 (function() {
 cc.XX_FX = cc.Enum({
 LOSE: 0,
@@ -732,9 +857,9 @@ PAY: 3
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXGate: [ function(t, e) {
+XXLiveGate: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "7cfb3LomytMrYRVNKw0fYN8", "XXGate");
+cc._RF.push(e, "9cef5XOVFpKrb2JJJ3rr1M8", "XXLiveGate");
 (function() {
 cc.XXGate = cc.Enum({
 ODD: 1,
@@ -747,9 +872,9 @@ FOUR_DOWN: 6
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXGetBigWinnerCommand: [ function(t, e) {
+XXLiveGetBigWinnerCommand: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "98b96JdB1xLHbyYOU9BnMgg", "XXGetBigWinnerCommand");
+cc._RF.push(e, "ac7edK67PxC46KXbeS+Akjf", "XXLiveGetBigWinnerCommand");
 (function() {
 var t;
 t = function() {
@@ -762,58 +887,45 @@ return t.onXXGetBigWinnerResponse(i);
 };
 return t;
 }();
-cc.XXGetBigWinnerCommand = t;
+cc.XXLiveGetBigWinnerCommand = t;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXGroupItem: [ function(t, e) {
+XXLiveGroupItem: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "a0c4bGL/EVAPawCqpReXdn4", "XXGroupItem");
+cc._RF.push(e, "7d261Ziz09HrJyK1iXxU8Ls", "XXLiveGroupItem");
 (function() {
-cc.XXGroupItem = cc.Class({
-extends: cc.XocDiaGroupItem,
-properties: {}
+cc.XXLiveGroupItem = cc.Class({
+extends: cc.Component,
+properties: {
+avatar: cc.Avatar,
+lbSId: cc.Label,
+lbNickName: cc.Label,
+lbBalance: cc.Label,
+lbSTT: cc.Label
+},
+updateItem: function(t, e) {
+var i = t.Account, n = i.Avatar;
+n <= 0 && (n = 1);
+this.lbSTT.string = e + 1;
+this.lbSId.string = cc.Config.getInstance().getServiceNameNoFormat(i.ServiceID);
+this.avatar.setAvatar(cc.XXController.getInstance().getAvatars()[n]);
+this.lbNickName.string = i.NickName;
+this.lbBalance.string = cc.Tool.getInstance().formatNumber(i.Balance);
+this.item = t;
+this.itemID = e;
+}
 });
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXGroupUserListView: [ function(t, e) {
+XXLiveGroupUserListView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "1595coqhWxIJrOhw8dqeVU7", "XXGroupUserListView");
+cc._RF.push(e, "bdb87cYK49C4JXvmWqJ3UhC", "XXLiveGroupUserListView");
 (function() {
-cc.XXGroupUserListView = cc.Class({
-extends: cc.Component,
-properties: {
-itemTemplate: cc.Node,
-scrollView: cc.ScrollView,
-spawnCount: 0,
-spacing: 0,
-bufferZone: 0
-},
-onLoad: function() {
-this.spawnCount = 15;
-if (null !== this.scrollView) {
-this.content = this.scrollView.content;
-this.items = [];
-this.updateTimer = 0;
-this.updateInterval = .1;
-this.lastContentPosY = 0;
-this.rootContentY = this.content.y;
-}
-},
-resetList: function() {
-if (null !== this.scrollView) {
-this.items = [];
-this.scrollView.stopAutoScroll();
-this.content = this.scrollView.content;
-this.content.y = this.rootContentY;
-for (var t = this.content.children, e = t.length - 1; e >= 0; e--) this.content.removeChild(t[e]);
-}
-},
-getPositionInView: function(t) {
-var e = t.parent.convertToWorldSpaceAR(t.position);
-return this.scrollView.node.convertToNodeSpaceAR(e);
-},
+cc.XXLiveGroupUserListView = cc.Class({
+extends: cc.ListView,
+properties: {},
 initialize: function(t) {
 this.messages = t;
 var e = this.messages.length;
@@ -822,7 +934,7 @@ for (var i = Math.min(this.spawnCount, e), n = 0; n < i; ++n) {
 var o = cc.instantiate(this.itemTemplate);
 this.content.addChild(o);
 o.setPosition(0, -o.height * (.5 + n) - this.spacing * (n + 1));
-o.getComponent(cc.XXGroupItem).updateItem(this.messages[n], n);
+o.getComponent(cc.XXLiveGroupItem).updateItem(this.messages[n], n);
 this.items.push(o);
 }
 this.rootContentY = this.content.y;
@@ -836,12 +948,12 @@ var c = this.getPositionInView(e[s]);
 if (n) {
 if (c.y < -i && e[s].y + o < 0) {
 e[s].y = e[s].y + o;
-var a = e[s].getComponent(cc.XXGroupItem), r = a.itemID - e.length;
+var a = e[s].getComponent(cc.XXLiveGroupItem), r = a.itemID - e.length;
 a.updateItem(this.messages[r], r);
 }
 } else if (c.y > i && e[s].y - o > -this.content.height) {
 e[s].y = e[s].y - o;
-r = (a = e[s].getComponent(cc.XXGroupItem)).itemID + e.length;
+r = (a = e[s].getComponent(cc.XXLiveGroupItem)).itemID + e.length;
 a.updateItem(this.messages[r], r);
 }
 }
@@ -852,11 +964,11 @@ this.lastContentPosY = this.scrollView.content.y;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXGroupUserView: [ function(t, e) {
+XXLiveGroupUserView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "3b68fjyGyJLUYwtnqroB6EZ", "XXGroupUserView");
+cc._RF.push(e, "c924dBmvNNO3K04adCaooXl", "XXLiveGroupUserView");
 (function() {
-cc.XXGroupUserView = cc.Class({
+cc.XXLiveGroupUserView = cc.Class({
 extends: cc.Component,
 properties: {
 groupUserListView: cc.XXGroupUserListView
@@ -888,41 +1000,34 @@ this.animation.play("closePopup");
 var t = this;
 cc.director.getScheduler().schedule(function() {
 t.animation.stop();
-cc.XXPopupController.getInstance().destroyGroupUserView();
+cc.XXLivePopupController.getInstance().destroyGroupUserView();
 }, this, 1, 0, .12, !1);
 }
 });
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXHelpView: [ function(t, e) {
+XXLiveHelpView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "5ef69MihgFG7ZSQ76C/Hm2q", "XXHelpView");
+cc._RF.push(e, "d8eed1FOdRCF71iYYxMT8bQ", "XXLiveHelpView");
 (function() {
-cc.XXHelpView = cc.Class({
-extends: cc.Component,
+cc.XXLiveHelpView = cc.Class({
+extends: cc.PopupBase,
 properties: {},
 onLoad: function() {
 this.animation = this.node.getComponent(cc.Animation);
 this.node.zIndex = 9999;
 },
 closeFinished: function() {
-cc.XXPopupController.getInstance().destroyHelpView();
-},
-closeClicked: function() {
-var t = this;
-cc.director.getScheduler().schedule(function() {
-t.animation.stop();
-t.closeFinished();
-}, this, 1, 0, .12, !1);
+cc.XXLivePopupController.getInstance().destroyHelpView();
 }
 });
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXHistoryCommand: [ function(t, e) {
+XXLiveHistoryCommand: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "9b8a8itJyJP67JRjwG5dk7U", "XXHistoryCommand");
+cc._RF.push(e, "e3422XLrj1Fn43HRJvCXnCE", "XXLiveHistoryCommand");
 (function() {
 var t;
 t = function() {
@@ -937,15 +1042,15 @@ return t.onXXGetHistoryResponse(i);
 };
 return t;
 }();
-cc.XXGetHistoryCommand = t;
+cc.XXLiveGetHistoryCommand = t;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXHistoryItem: [ function(t, e) {
+XXLiveHistoryItem: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "fd16083QSxDaILdLOvlNKYC", "XXHistoryItem");
+cc._RF.push(e, "8fe45HtaRNK+KVALJeS3QLa", "XXLiveHistoryItem");
 (function() {
-cc.XXHistoryItem = cc.Class({
+cc.XXLiveHistoryItem = cc.Class({
 extends: cc.Component,
 properties: {
 lbSession: cc.Label,
@@ -1021,30 +1126,13 @@ this.itemID = e;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXHistoryListView: [ function(t, e) {
+XXLiveHistoryListView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "3424fflYk9HPq3+Lx5PqbAS", "XXHistoryListView");
+cc._RF.push(e, "d514e/peyJD0panO2RETaGF", "XXLiveHistoryListView");
 (function() {
-cc.XXHistoryListView = cc.Class({
-extends: cc.Component,
-properties: {
-itemTemplate: cc.Node,
-scrollView: cc.ScrollView,
-spawnCount: 0,
-spacing: 0,
-bufferZone: 0
-},
-onLoad: function() {
-this.spawnCount = 15;
-if (null !== this.scrollView) {
-this.content = this.scrollView.content;
-this.items = [];
-this.updateTimer = 0;
-this.updateInterval = .1;
-this.lastContentPosY = 0;
-this.rootContentY = this.content.y;
-}
-},
+cc.XXLiveHistoryListView = cc.Class({
+extends: cc.ListView,
+properties: {},
 initialize: function(t) {
 this.messages = t;
 var e = this.messages.length;
@@ -1053,23 +1141,10 @@ for (var i = Math.min(this.spawnCount, e), n = 0; n < i; ++n) {
 var o = cc.instantiate(this.itemTemplate);
 this.content.addChild(o);
 o.setPosition(0, -o.height * (.5 + n) - this.spacing * (n + 1));
-o.getComponent(cc.XXHistoryItem).updateItem(this.messages[n], n);
+o.getComponent(cc.XXLiveHistoryItem).updateItem(this.messages[n], n);
 this.items.push(o);
 }
 this.rootContentY = this.content.y;
-},
-resetList: function() {
-if (null !== this.scrollView) {
-this.items = [];
-this.scrollView.stopAutoScroll();
-this.content = this.scrollView.content;
-this.content.y = this.rootContentY;
-for (var t = this.content.children, e = t.length - 1; e >= 0; e--) this.content.removeChild(t[e]);
-}
-},
-getPositionInView: function(t) {
-var e = t.parent.convertToWorldSpaceAR(t.position);
-return this.scrollView.node.convertToNodeSpaceAR(e);
 },
 update: function(t) {
 this.updateTimer += t;
@@ -1080,12 +1155,12 @@ var c = this.getPositionInView(e[s]);
 if (n) {
 if (c.y < -i && e[s].y + o < 0) {
 e[s].y = e[s].y + o;
-var a = e[s].getComponent(cc.XXHistoryItem), r = a.itemID - e.length;
+var a = e[s].getComponent(cc.XXLiveHistoryItem), r = a.itemID - e.length;
 a.updateItem(this.messages[r], r);
 }
 } else if (c.y > i && e[s].y - o > -this.content.height) {
 e[s].y = e[s].y - o;
-r = (a = e[s].getComponent(cc.XXHistoryItem)).itemID + e.length;
+r = (a = e[s].getComponent(cc.XXLiveHistoryItem)).itemID + e.length;
 a.updateItem(this.messages[r], r);
 }
 }
@@ -1096,14 +1171,14 @@ this.lastContentPosY = this.scrollView.content.y;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXHistoryView: [ function(t, e) {
+XXLiveHistoryView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "bc433nzD+9Lpofw02nvS9AQ", "XXHistoryView");
+cc._RF.push(e, "9a620TxM8BHJoRq1SJYgtvL", "XXLiveHistoryView");
 (function() {
-cc.XXHistoryView = cc.Class({
-extends: cc.Component,
+cc.XXLiveHistoryView = cc.Class({
+extends: cc.PopupBase,
 properties: {
-XXHistoryListView: cc.XXHistoryListView
+XXHistoryListView: cc.XXLiveHistoryListView
 },
 onLoad: function() {
 this.animation = this.node.getComponent(cc.Animation);
@@ -1122,7 +1197,7 @@ new cc.XXGetHistoryCommand().execute(this);
 },
 onXXGetHistoryResponse: function(t) {
 var e = t;
-if (null !== e && e.length > 0 && this.XXHistoryListView) {
+if (null !== e && e.length > 0) {
 this.XXHistoryListView.resetList();
 this.XXHistoryListView.initialize(e);
 }
@@ -1133,18 +1208,56 @@ this.animation.play("closePopup");
 var t = this;
 cc.director.getScheduler().schedule(function() {
 t.animation.stop();
-cc.XXPopupController.getInstance().destroyHistoryView();
+cc.XXLivePopupController.getInstance().destroyHistoryView();
 }, this, 1, 0, .12, !1);
 }
 });
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXInfoView: [ function(t, e) {
+XXLiveHubName: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "6ce4al5+RxNhbewnDp3Aio6", "XXInfoView");
+cc._RF.push(e, "c7e6eCLwd5CNpiVTjR65fXO", "XXLiveHubName");
 (function() {
-cc.XXInfoView = cc.Class({
+cc.HubName = cc.Enum({
+PortalHub: "PortalHub",
+ChatHub: "chatHub",
+LuckyDiceHub: "luckydiceHub",
+MiniPokerHub: "xpokerHub",
+Seven77Hub: "kingstarHub",
+BlockBusterHub: "blockbusterHub",
+LuckyWildHub: "luckywildHub",
+EgyptHub: "egyptHub",
+ThreeKingdomHub: "taydukyHub",
+AquariumHub: "thuycungHub",
+DragonBallHub: "songokuHub",
+BumBumHub: "bumbumHub",
+CowboyHub: "cowboysHub",
+ThuongHaiHub: "demthuonghaiHub",
+MonkeyHub: "monkeyHub",
+DragonTigerHub: "dragontigerHub",
+XocXocHub: "sedieHub",
+ThreeCardsHub: "bacayHub",
+TexasPokerHub: "pokerHub",
+TLMNHub: "tlmnHub",
+MBHub: "maubinhHub",
+BaccaratHub: "baccaratHub",
+BauCuaHub: "baucuaHub",
+VietlotHub: "vietlottHub",
+LodeHub: "xosoHub",
+TreasureHub: "TreasureHub",
+ShootFishHub: "shootFishHub",
+GaiNhayHub: "gainhayHub",
+CookieName: ".cplay.club"
+});
+}).call(void 0);
+cc._RF.pop();
+}, {} ],
+XXLiveInfoView: [ function(t, e) {
+"use strict";
+cc._RF.push(e, "d7ccdvUhCFN14TMBuojOIrr", "XXLiveInfoView");
+(function() {
+cc.XXLiveInfoView = cc.Class({
 extends: cc.Component,
 properties: {
 lbSID: cc.Label,
@@ -1153,13 +1266,17 @@ lbInfo: cc.Label,
 progressTimer: cc.ProgressBar,
 lbTotalUser: cc.Label,
 lbTotalUserWin: cc.Label,
-xxPlayers: [ cc.XXPlayer ]
+xxPlayers: [ cc.XXLivePlayer ],
+nodetooltip: cc.Node,
+lblmsg: cc.Label,
+skewaiting: sp.Skeleton
 },
 onLoad: function() {
+this.nodetooltip.active = !1;
 this.interval = null;
 this.timeBet = 54;
 this.reset();
-cc.XXController.getInstance().setXXInfoView(this);
+cc.XXLiveController.getInstance().setXXInfoView(this);
 this.maxPlayer = this.xxPlayers.length;
 this.animInfo = this.lbInfo.node.parent.getComponent(cc.Animation);
 this.currPlayer = this.xxPlayers[0];
@@ -1172,9 +1289,9 @@ this.positions = t.Positions;
 this.countPlayer = 0;
 this.positionsUI = [ 0, 0, 0, 0, 0, 0, 0 ];
 this.onwerIndex = 0;
-this.positionsUI[this.countPlayer] = fzgui.UserManager.instance.mainUserInfo.AccountID;
+this.positionsUI[this.countPlayer] = lngui.UserManager.instance.mainUserInfo.AccountID;
 this.countPlayer++;
-for (var e = 0; e < this.maxPlayer; e++) if ((n = this.positions[e]) > 0 && n !== fzgui.UserManager.instance.mainUserInfo.AccountID) {
+for (var e = 0; e < this.maxPlayer; e++) if ((n = this.positions[e]) > 0 && n !== lngui.UserManager.instance.mainUserInfo.AccountID) {
 this.positionsUI[this.countPlayer] = n;
 this.countPlayer++;
 }
@@ -1183,7 +1300,7 @@ for (e = 0; e < this.maxPlayer; e++) {
 var n;
 (n = this.positions[e]) > 0 && this.registerPlayer(this.getIndexUIBetByAccID(n), i[n].Account);
 }
-cc.XXController.getInstance().updatePositionPlayerUI(this.positionsUI);
+cc.XXLiveController.getInstance().updatePositionPlayerUI(this.positionsUI);
 },
 playerJoin: function(t) {
 for (var e = 0; e < this.maxPlayer; e++) if (0 === this.positionsUI[e]) {
@@ -1207,7 +1324,7 @@ updateConnectionStatus: function(t) {
 if (this.positionsUI) {
 var e = t[0], i = t[1];
 this.xxPlayers[this.getIndexUIBetByAccID(e)].updateConnectionStatus(i);
-i === cc.XXConnectionStatus.REGISTER_LEAVE_GAME && e === fzgui.UserManager.instance.mainUserInfo.AccountID && fzgui.UIScreenManager.instance.popToRootScreen();
+i === cc.XXConnectionStatus.REGISTER_LEAVE_GAME && e === lngui.UserManager.instance.mainUserInfo.AccountID && lngui.UIScreenManager.instance.popToRootScreen();
 }
 },
 updatePlayerStatus: function(t) {
@@ -1219,10 +1336,10 @@ this.lbTotalUser.string = t;
 vipPlayer: function(t) {
 var e = this, i = 0;
 this.positionsUI = [ 0, 0, 0, 0, 0, 0, 0 ];
-this.positionsUI[0] = fzgui.UserManager.instance.mainUserInfo.AccountID;
+this.positionsUI[0] = lngui.UserManager.instance.mainUserInfo.AccountID;
 i++;
 t.map(function(t) {
-if (t.AccountID != fzgui.UserManager.instance.mainUserInfo.AccountID && i <= 6) {
+if (t.AccountID != lngui.UserManager.instance.mainUserInfo.AccountID && i <= 6) {
 e.positionsUI[i] = t.AccountID;
 i++;
 }
@@ -1240,11 +1357,11 @@ this.xxPlayers[i].resetPlayerResultUI();
 console.log(t);
 } else this.xxPlayers[i].unRegisterPlayer();
 }, this);
-cc.XXController.getInstance().updatePositionPlayerUI(this.positionsUI);
+cc.XXLiveController.getInstance().updatePositionPlayerUI(this.positionsUI);
 },
 totalUserWin: function(t) {
 this.lbTotalUserWin.string = "+" + cc.Tool.getInstance().formatNumber(t);
-this.lbTotalUserWin.font = cc.XXController.getInstance().getWinFont();
+this.lbTotalUserWin.font = cc.XXLiveController.getInstance().getWinFont();
 this.lbTotalUserWin.node.active = !0;
 this.lbTotalUserWin.node.scaleY = 0;
 this.lbTotalUserWin.node.getComponent(cc.Animation).play("xxWin");
@@ -1253,7 +1370,7 @@ winResultVip: function(t) {
 var e = this;
 this.positionsUI && t.length > 0 && t.map(function(t) {
 var i = e.positionsUI.indexOf(t.AccountID);
-if (t.AccountID != fzgui.UserManager.instance.mainUserInfo.AccountID && -1 != i) {
+if (t.AccountID != lngui.UserManager.instance.mainUserInfo.AccountID && -1 != i) {
 e.xxPlayers[i].playerResultUI(!0, t.Award);
 e.xxPlayers[i].updateChip(t.Balance);
 }
@@ -1263,6 +1380,7 @@ winResult: function(t) {
 if (this.currPlayer) {
 this.currPlayer.playerResultUI(!0, t.Award);
 this.currPlayer.updateChip(t.Balance);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, t.Balance);
 }
 },
 updateChip: function(t, e) {
@@ -1331,7 +1449,7 @@ var e = t;
 this.timeInt = e;
 if (e > 0) {
 this.lbTimer.string = e;
-e <= 3 && this.currentState === cc.XXState.BETTING && (this.lbTimer.node.color = cc.Color.RED);
+e <= 3 && (this.currentState, cc.XXLiveState.BETTING);
 }
 }
 },
@@ -1339,62 +1457,79 @@ getTime: function() {
 return this.timeInt;
 },
 updateSessionId: function(t) {
-this.lbSID.string = "Phiên: #" + t;
+this.lbSID.string = "#" + t;
 },
 updateInfo: function(t, e) {
+var i = this;
 switch (e) {
-case cc.XXState.BETTING:
+case cc.XXLiveState.BETTING:
 if (this.currentState !== e) {
 this.updateSessionId(t.SessionID);
-cc.XXController.getInstance().setSID(t.SessionID);
+cc.XXLiveController.getInstance().setSID(t.SessionID);
 this.progressTimer.node.parent.active = !0;
 this.resetPlayersResultUI();
+this.skewaiting.node.active = !1;
+this.lbTimer.node.active = !0;
 this.lbTimer.node.color = cc.Color.GREEN;
 this.lbInfo.string = "Đặt cửa";
 this.animInfo.play("xxInfo");
+this.nodetooltip.active = !0;
+this.lblmsg.string = "Đã bắt đầu, vui lòng đặt cược";
+setTimeout(function() {
+i.nodetooltip.active = !1;
+}, 1e3);
 }
 break;
 
-case cc.XXState.OPEN_PLATE:
+case cc.XXLiveState.OPEN_PLATE:
 if (this.currentState !== e) {
 this.updateSessionId(t.SessionID);
-cc.XXController.getInstance().setSID(t.SessionID);
+cc.XXLiveController.getInstance().setSID(t.SessionID);
 this.progressTimer.node.parent.active = !1;
 this.resetPlayersResultUI();
-this.lbTimer.node.color = cc.Color.WHITE;
+this.lbTimer.node.active = !1;
+this.skewaiting.node.active = !0;
 this.lbInfo.string = "Mở bát";
 this.animInfo.play("xxInfo");
+this.nodetooltip.active = !0;
+this.lblmsg.string = "Chờ mở thưởng";
+setTimeout(function() {
+i.nodetooltip.active = !1;
+}, 1e3);
 }
 break;
 
-case cc.XXState.SHOW_RESULT:
+case cc.XXLiveState.SHOW_RESULT:
 if (this.currentState !== e) {
 this.updateSessionId(t.SessionID);
-cc.XXController.getInstance().setSID(t.SessionID);
+cc.XXLiveController.getInstance().setSID(t.SessionID);
 this.progressTimer.node.parent.active = !0;
-this.lbTimer.node.color = cc.Color.WHITE;
+this.lbTimer.node.active = !1;
+this.skewaiting.node.active = !0;
 this.lbInfo.string = "Kết quả";
 this.animInfo.play("xxInfo");
 }
 break;
 
-case cc.XXState.WAITING:
+case cc.XXLiveState.WAITING:
 if (this.currentState !== e) {
 this.updateSessionId(t.SessionID);
-cc.XXController.getInstance().setSID(t.SessionID);
+cc.XXLiveController.getInstance().setSID(t.SessionID);
 this.progressTimer.node.parent.active = !1;
 this.resetPlayersResultUI();
-this.lbTimer.node.color = cc.Color.WHITE;
+this.lbTimer.node.active = !1;
+this.skewaiting.node.active = !0;
 }
 break;
 
-case cc.XXState.SHAKING:
+case cc.XXLiveState.SHAKING:
 if (this.currentState !== e) {
 this.updateSessionId(t.SessionID);
-cc.XXController.getInstance().clearAllChip();
+cc.XXLiveController.getInstance().clearAllChip();
 this.progressTimer.node.parent.active = !1;
 this.resetPlayersResultUI();
-this.lbTimer.node.color = cc.Color.WHITE;
+this.lbTimer.node.active = !1;
+this.skewaiting.node.active = !0;
 }
 }
 this.currentState = e;
@@ -1403,12 +1538,12 @@ this.currentState = e;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXInputView: [ function(t, e) {
+XXLiveInputView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "47fe6sINhNMZZqSErpdFUwf", "XXInputView");
-var i = t("PlayerData").players;
+cc._RF.push(e, "620fe/zM9FFW59jr1/Wxev/", "XXLiveInputView");
+var i = t("XXLivePlayerData").players;
 (function() {
-cc.XXInputView = cc.Class({
+cc.XXLiveInputView = cc.Class({
 extends: cc.Component,
 properties: {
 nodeParentChip: cc.Node,
@@ -1418,47 +1553,49 @@ btnX2: cc.Button,
 btnRepeat: cc.Button,
 spriteNan: cc.Sprite,
 lbTotalBets: [ cc.Label ],
-lbTotalUserBets: [ cc.Label ]
+lbTotalUserBets: [ cc.Label ],
+nodetooltip: cc.Node,
+lblmsg: cc.Label
 },
 onLoad: function() {
-cc.XXController.getInstance().setXXInputView(this);
+cc.XXLiveController.getInstance().setXXInputView(this);
 this.isNan = !1;
-cc.XXController.getInstance().setIsNan(this.isNan);
+cc.XXLiveController.getInstance().setIsNan(this.isNan);
 this.nodeChipPress = [];
 var t = this;
 this.btnChips.forEach(function(e) {
 t.nodeChipPress.push(e.node.getChildByName("chip_press"));
 });
-this.minXs = [ 110, 277, 304, -200, -373, -411 ];
-this.maxXs = [ 200, 373, 411, -110, -277, -304 ];
-this.minYs = [ -156, -5, -156, -156, -5, -156 ];
-this.maxYs = [ 4, 23, -109, 4, 23, -109 ];
+this.minXs = [ 55, -370, 35, -370, -165, 235 ];
+this.maxXs = [ 375, -245, 160, -50, -40, 360 ];
+this.minYs = [ -295, -385, -385, -295, -385, -385 ];
+this.maxYs = [ -195, -335, -335, -195, -335, -335 ];
 this.rootDealerPos = cc.v2(0, 136);
 this.chipIndex = 1;
 this.betVals = [ 1e3, 5e3, 1e4, 1e5, 5e5 ];
 this.processBetValUI();
-cc.XXController.getInstance().setLastBetData(null);
+cc.XXLiveController.getInstance().setLastBetData(null);
 this.resetTotalBetUI();
 this.timePerBet = 100;
 this.currentState = -1;
 this.timeouts = [];
 this.posGroupUser = cc.v2(-193, 219);
 this.initGateChip();
-cc.XXController.getInstance().initLogBet();
+cc.XXLiveController.getInstance().initLogBet();
 },
 initGateChip: function() {
 this.gateChips = [];
 for (var t = 1; t <= 6; t++) this.gateChips[t] = [];
 },
 playerBet: function(t) {
-if (cc.XXController.getInstance().getPositions()) {
+if (cc.XXLiveController.getInstance().getPositions()) {
 var e = t[0], i = t[1], n = t[2], o = t[3];
-cc.XXController.getInstance().updateChip(e, o);
-this.playFxUserBet(cc.XXController.getInstance().getIndexUIBetByAccID(e), n, this.getChipIndexFromValue(i), !0);
+cc.XXLiveController.getInstance().updateChip(e, o);
+this.playFxUserBet(cc.XXLiveController.getInstance().getIndexUIBetByAccID(e), n, this.getChipIndexFromValue(i), !0);
 this.totalBets[n - 1] += i;
 this.lbTotalBets[n - 1].string = cc.Tool.getInstance().formatNumber(this.totalBets[n - 1]);
-if (e === fzgui.UserManager.instance.mainUserInfo.AccountID) {
-cc.XXController.getInstance().setLogBet({
+if (e === lngui.UserManager.instance.mainUserInfo.AccountID) {
+cc.XXLiveController.getInstance().setLogBet({
 AccountID: e,
 Amount: i,
 Gate: n
@@ -1471,104 +1608,117 @@ console.log("bet ----\x3e amount ===> " + i);
 }
 },
 reBet: function(t, e) {
-var i = this, n = 0;
+var i = this, n = this, o = 0;
 t.forEach(function(t) {
-n += t.Amount;
+o += t.Amount;
 });
-e && (n *= 2);
-if (n > fzgui.UserManager.instance.mainUserInfo.Money) cc.PopupController.getInstance().showMessage("Số dư không đủ."); else {
-var o = 0, s = 0, c = 0, a = 0, r = 0, h = 0;
+e && (o *= 2);
+if (o > lngui.UserManager.instance.mainUserInfo.Money) {
+this.nodetooltip.active = !0;
+this.lblmsg.string = "Số dư không đủ.";
+setTimeout(function() {
+i.nodetooltip.active = !1;
+}, 1e3);
+} else {
+var s = 0, c = 0, a = 0, r = 0, u = 0, l = 0;
 t.forEach(function(t) {
 switch (t.Gate) {
 case cc.XXGate.ODD:
-o += t.Amount;
-break;
-
-case cc.XXGate.THREE_UP:
 s += t.Amount;
 break;
 
-case cc.XXGate.THREE_DOWN:
+case cc.XXGate.THREE_UP:
 c += t.Amount;
 break;
 
-case cc.XXGate.EVEN:
+case cc.XXGate.THREE_DOWN:
 a += t.Amount;
 break;
 
-case cc.XXGate.FOUR_UP:
+case cc.XXGate.EVEN:
 r += t.Amount;
 break;
 
+case cc.XXGate.FOUR_UP:
+u += t.Amount;
+break;
+
 case cc.XXGate.FOUR_DOWN:
-h += t.Amount;
+l += t.Amount;
 }
 });
-for (var l = 0, u = 0, p = 0, d = 0, f = 0, m = [ o, s, c, a, r, h ], X = [], I = 0; I < 6; I++) {
-l = 0;
-u = 0;
+for (var h = 0, p = 0, d = 0, f = 0, g = 0, v = [ s, c, a, r, u, l ], m = [], X = 0; X < 6; X++) {
+h = 0;
 p = 0;
 d = 0;
 f = 0;
-n = m[I];
-e && (n *= 2);
-l = Math.floor(n / 5e5);
-if ((n -= 5e5 * l) > 0) {
-u = Math.floor(n / 1e5);
-n -= 1e5 * u;
+g = 0;
+o = v[X];
+e && (o *= 2);
+h = Math.floor(o / 5e5);
+if ((o -= 5e5 * h) > 0) {
+p = Math.floor(o / 1e5);
+o -= 1e5 * p;
 }
-if (n > 0) {
-p = Math.floor(n / 1e4);
-n -= 1e4 * p;
+if (o > 0) {
+d = Math.floor(o / 1e4);
+o -= 1e4 * d;
 }
-if (n > 0) {
-d = Math.floor(n / 5e3);
-n -= 5e3 * d;
+if (o > 0) {
+f = Math.floor(o / 5e3);
+o -= 5e3 * f;
 }
-n > 0 && (f = Math.floor(n / 1e3));
-for (var g = 0; g < l; g++) X.push({
-Gate: I + 1,
+o > 0 && (g = Math.floor(o / 1e3));
+for (var I = 0; I < h; I++) m.push({
+Gate: X + 1,
 Amount: 5e5
 });
-for (g = 0; g < u; g++) X.push({
-Gate: I + 1,
+for (I = 0; I < p; I++) m.push({
+Gate: X + 1,
 Amount: 1e5
 });
-for (g = 0; g < p; g++) X.push({
-Gate: I + 1,
+for (I = 0; I < d; I++) m.push({
+Gate: X + 1,
 Amount: 1e4
 });
-for (g = 0; g < d; g++) X.push({
-Gate: I + 1,
+for (I = 0; I < f; I++) m.push({
+Gate: X + 1,
 Amount: 5e3
 });
-for (g = 0; g < f; g++) X.push({
-Gate: I + 1,
+for (I = 0; I < g; I++) m.push({
+Gate: X + 1,
 Amount: 1e3
 });
 }
 this.count = 0;
 this.timeouts = [];
-X.forEach(function(t) {
-i.timeouts.push(setTimeout(function() {
-i.currentState === cc.XXState.BETTING && i.sendRequestReBet(t);
-}, i.timePerBet * i.count));
-i.count++;
+m.forEach(function(t) {
+n.timeouts.push(setTimeout(function() {
+n.currentState === cc.XXLiveState.BETTING && n.sendRequestReBet(t);
+}, n.timePerBet * n.count));
+n.count++;
 });
 }
 },
 sendRequestReBet: function(t) {
-fzgui.UserManager.instance.mainUserInfo.Money < t.Amount ? cc.PopupController.getInstance().showMessage("Số dư không đủ") : cc.XXController.getInstance().sendRequestOnHub(cc.MethodHubName.BET, t.Amount, t.Gate);
+var e = this;
+if (lngui.UserManager.instance.mainUserInfo.Money < t.Amount) {
+this.nodetooltip.active = !0;
+this.lblmsg.string = "Số dư không đủ.";
+setTimeout(function() {
+e.nodetooltip.active = !1;
+}, 1e3);
+} else cc.XXLiveController.getInstance().sendRequestOnHub(cc.MethodHubName.BET, t.Amount, t.Gate);
 },
 showLastInput: function(t) {
 var e = this;
 t.forEach(function(t) {
 t.forEach(function(t) {
-e.playFxUserBet(cc.XXController.getInstance().getIndexUIBetByAccID(t.AccountID), t.BetSide, e.getChipIndexFromValue(t.BetValue), !1);
+e.playFxUserBet(cc.XXLiveController.getInstance().getIndexUIBetByAccID(t.AccountID), t.BetSide, e.getChipIndexFromValue(t.BetValue), !1);
 e.totalBets[t.BetSide - 1] += t.BetValue;
 e.lbTotalBets[t.BetSide - 1].string = cc.Tool.getInstance().formatNumber(e.totalBets[t.BetSide - 1]);
-if (t.AccountID === fzgui.UserManager.instance.mainUserInfo.AccountID) {
-cc.XXController.getInstance().setLogBet({
+if (t.AccountID === lngui.UserManager.instance.mainUserInfo.AccountID) {
+cc.XXLiveController.getInstance().setLogBet({
 AccountID: t.AccountID,
 Amount: t.BetValue,
 Gate: t.BetSide
@@ -1628,12 +1778,12 @@ t.node.parent.active = !1;
 },
 betOfAccount: function() {},
 saveLastBetData: function() {
-var t = [].concat(cc.XXController.getInstance().getLogBet());
-cc.XXController.getInstance().setLastBetData(t);
+var t = [].concat(cc.XXLiveController.getInstance().getLogBet());
+cc.XXLiveController.getInstance().setLastBetData(t);
 },
 updateInput: function(t) {
 switch (t) {
-case cc.XXState.BETTING:
+case cc.XXLiveState.BETTING:
 if (this.currentState !== t) {
 this.clearAllTimeOut();
 this.resetInput();
@@ -1642,7 +1792,7 @@ this.activeAllButtonBet(!0);
 }
 break;
 
-case cc.XXState.OPEN_PLATE:
+case cc.XXLiveState.OPEN_PLATE:
 if (this.currentState !== t) {
 this.clearAllTimeOut();
 this.activeAllButtonBet(!1);
@@ -1650,19 +1800,19 @@ this.saveLastBetData();
 }
 break;
 
-case cc.XXState.SHOW_RESULT:
+case cc.XXLiveState.SHOW_RESULT:
 this.currentState !== t && this.activeAllButtonBet(!1);
 break;
 
-case cc.XXState.WAITING:
+case cc.XXLiveState.WAITING:
 if (this.currentState !== t) {
 this.resetInput();
 this.activeAllButtonBet(!1);
-cc.XXController.getInstance().initLogBet();
+cc.XXLiveController.getInstance().initLogBet();
 }
 break;
 
-case cc.XXState.SHAKING:
+case cc.XXLiveState.SHAKING:
 if (this.currentState !== t) {
 this.resetTotalBetUI();
 this.resetInput();
@@ -1676,32 +1826,32 @@ return this.gateChips;
 },
 playFxUserBet: function(t, e, n, o) {
 cc.AudioController.getInstance().playSound(cc.AudioTypes.CHIP_BET);
-var s = e - 1, c = this.minXs[s], a = this.maxXs[s], r = this.minYs[s], h = this.maxYs[s], l = c + Math.floor(Math.random() * Math.abs(a - c)), u = r + Math.floor(Math.random() * Math.abs(h - r)), p = cc.XXController.getInstance().createChip();
+var s = e - 1, c = this.minXs[s], a = this.maxXs[s], r = this.minYs[s], u = this.maxYs[s], l = c + Math.floor(Math.random() * Math.abs(a - c)), h = r + Math.floor(Math.random() * Math.abs(u - r)), p = cc.XXLiveController.getInstance().createChip();
 p.parent = this.nodeParentChip;
 var d;
 d = -1 != t ? i[t].position : this.posGroupUser;
 p.position = d;
-var f = p.getComponent(cc.XXChipItem);
+var f = p.getComponent(cc.XXLiveChipItem);
 f.betIndex = s;
 f.gate = e;
 f.playerId = t;
 f.position = d;
 f.setChip(n);
-o ? f.moveTo(cc.v2(l, u)) : f.setPosition(cc.v2(l, u));
+o ? f.moveTo(cc.v2(l, h)) : f.setPosition(cc.v2(l, h));
 this.gateChips[e].push(f);
 },
 playFxDealerPay: function(t) {
-var e = cc.XXController.getInstance().createChip();
+var e = cc.XXLiveController.getInstance().createChip();
 e.parent = this.nodeParentChip;
 e.position = this.rootDealerPos;
-var i = e.getComponent(cc.XXChipItem);
+var i = e.getComponent(cc.XXLiveChipItem);
 i.betIndex = t.betIndex;
 i.playerId = t.playerId;
 i.position = t.position;
 i.setChip(t.chipIndex);
 this.gateChips[t.gate].push(i);
-var n = t.betIndex, o = this.minXs[n], s = this.maxXs[n], c = this.minYs[n], a = this.maxYs[n], r = o + Math.floor(Math.random() * Math.abs(s - o)), h = c + Math.floor(Math.random() * Math.abs(a - c));
-i.moveTo(cc.v2(r, h));
+var n = t.betIndex, o = this.minXs[n], s = this.maxXs[n], c = this.minYs[n], a = this.maxYs[n], r = o + Math.floor(Math.random() * Math.abs(s - o)), u = c + Math.floor(Math.random() * Math.abs(a - c));
+i.moveTo(cc.v2(r, u));
 },
 playFxPay: function(t) {
 t.moveToEnd(t.position);
@@ -1714,14 +1864,25 @@ this.chipIndex = parseInt(e.toString());
 this.processBetValUI();
 },
 betClicked: function(t, e) {
-if (cc.XXController.getInstance().getTime() <= 3) {
-cc.PopupController.getInstance().showMessage("Đã hết thời gian đặt cửa.");
-cc.XXController.getInstance().activeAllButtonBet(!1);
+var i = this;
+if (cc.XXLiveController.getInstance().getTime() <= 3) {
+this.nodetooltip.active = !0;
+this.lblmsg.string = "Đã hết thời gian đặt cửa.";
+setTimeout(function() {
+i.nodetooltip.active = !1;
+}, 1e3);
+cc.XXLiveController.getInstance().activeAllButtonBet(!1);
 } else {
 this.indexBet = parseInt(e.toString());
-var i = this.betVals[this.chipIndex];
-if (fzgui.UserManager.instance.mainUserInfo.Money < i) cc.PopupController.getInstance().showMessage("Số dư không đủ"); else {
-cc.XXController.getInstance().sendRequestOnHub(cc.MethodHubName.BET, i, this.indexBet + 1);
+var n = this.betVals[this.chipIndex];
+if (lngui.UserManager.instance.mainUserInfo.Money < n) {
+this.nodetooltip.active = !0;
+this.lblmsg.string = "Số dư không đủ.";
+setTimeout(function() {
+i.nodetooltip.active = !1;
+}, 1e3);
+} else {
+cc.XXLiveController.getInstance().sendRequestOnHub(cc.MethodHubName.BET, n, this.indexBet + 1);
 this.btnX2.interactable = !1;
 this.btnRepeat.interactable = !1;
 }
@@ -1729,30 +1890,40 @@ this.btnRepeat.interactable = !1;
 },
 nanClicked: function() {
 this.isNan = !this.isNan;
-this.isNan ? this.spriteNan.spriteFrame = cc.XXController.getInstance().getNans()[0] : this.spriteNan.spriteFrame = cc.XXController.getInstance().getNans()[1];
-cc.XXController.getInstance().setIsNan(this.isNan);
+this.isNan ? this.spriteNan.spriteFrame = cc.XXLiveController.getInstance().getNans()[0] : this.spriteNan.spriteFrame = cc.XXLiveController.getInstance().getNans()[1];
+cc.XXLiveController.getInstance().setIsNan(this.isNan);
 },
 x2Clicked: function() {
-if (cc.XXController.getInstance().getTime() <= 3) {
-cc.PopupController.getInstance().showMessage("Đã hết thời gian đặt cửa.");
-cc.XXController.getInstance().activeAllButtonBet(!1);
+var t = this;
+if (cc.XXLiveController.getInstance().getTime() <= 3) {
+this.nodetooltip.active = !0;
+this.lblmsg.string = "Đã hết thời gian đặt cửa.";
+setTimeout(function() {
+t.nodetooltip.active = !1;
+}, 1e3);
+cc.XXLiveController.getInstance().activeAllButtonBet(!1);
 } else {
-var t = cc.XXController.getInstance().getLastBetData();
-if (t && t.length > 0) {
-this.reBet(t, !0);
+var e = cc.XXLiveController.getInstance().getLastBetData();
+if (e && e.length > 0) {
+this.reBet(e, !0);
 this.btnX2.interactable = !1;
 this.btnRepeat.interactable = !1;
 } else cc.PopupController.getInstance().showSlotsMessage("Không có dữ liệu đặt của phiên trước.");
 }
 },
 repeatClicked: function() {
-if (cc.XXController.getInstance().getTime() <= 3) {
-cc.PopupController.getInstance().showMessage("Đã hết thời gian đặt cửa.");
-cc.XXController.getInstance().activeAllButtonBet(!1);
+var t = this;
+if (cc.XXLiveController.getInstance().getTime() <= 3) {
+this.nodetooltip.active = !0;
+this.lblmsg.string = "Đã hết thời gian đặt cửa.";
+setTimeout(function() {
+t.nodetooltip.active = !1;
+}, 1e3);
+cc.XXLiveController.getInstance().activeAllButtonBet(!1);
 } else {
-var t = cc.XXController.getInstance().getLastBetData();
-if (t && t.length > 0) {
-this.reBet(t);
+var e = cc.XXLiveController.getInstance().getLastBetData();
+if (e && e.length > 0) {
+this.reBet(e);
 this.btnX2.interactable = !1;
 this.btnRepeat.interactable = !1;
 } else cc.PopupController.getInstance().showSlotsMessage("Không có dữ liệu đặt của phiên trước.");
@@ -1765,11 +1936,69 @@ this.nodeParentChip.removeAllChildren(!0);
 }).call(void 0);
 cc._RF.pop();
 }, {
-PlayerData: "PlayerData"
+XXLivePlayerData: "XXLivePlayerData"
 } ],
-XXPlayerStatus: [ function(t, e) {
+XXLivePlayerData: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "db1b4yDErhOr6fC17Pgp+s1", "XXPlayerStatus");
+cc._RF.push(e, "78dd9kC2FBKWKNaQCd3tfAg", "XXLivePlayerData");
+var i = [ {
+accID: 0,
+balance: 0,
+avatarId: 1,
+indexBet: 0,
+position: cc.v2(-473, -361),
+chips: []
+}, {
+accID: 0,
+balance: 500,
+avatarId: 3,
+indexBet: 0,
+position: cc.v2(-578, -208),
+chips: []
+}, {
+accID: 0,
+balance: 1500,
+avatarId: 2,
+indexBet: 0,
+position: cc.v2(-578, -30),
+chips: []
+}, {
+accID: 0,
+balance: 2e3,
+avatarId: 1,
+indexBet: 0,
+position: cc.v2(-523, 141),
+chips: []
+}, {
+accID: 0,
+balance: 1e4,
+avatarId: 6,
+indexBet: 0,
+position: cc.v2(509, 141),
+chips: []
+}, {
+accID: 0,
+balance: 5e3,
+avatarId: 5,
+indexBet: 0,
+position: cc.v2(574, -30),
+chips: []
+}, {
+accID: 0,
+balance: 9e3,
+avatarId: 4,
+indexBet: 0,
+position: cc.v2(578, -208),
+chips: []
+} ];
+e.exports = {
+players: i
+};
+cc._RF.pop();
+}, {} ],
+XXLivePlayerStatus: [ function(t, e) {
+"use strict";
+cc._RF.push(e, "88de4U52GROLqZk0liIeul0", "XXLivePlayerStatus");
 (function() {
 cc.XXPlayerStatus = cc.Enum({
 NOT_INGAME: "-1",
@@ -1780,11 +2009,11 @@ WAITING: "2"
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXPlayer: [ function(t, e) {
+XXLivePlayer: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "8eea9Z1+FZF679kKAC0dEw+", "XXPlayer");
+cc._RF.push(e, "19253k+TZZGlK5aClBXrLgq", "XXLivePlayer");
 (function() {
-cc.XXPlayer = cc.Class({
+cc.XXLivePlayer = cc.Class({
 extends: cc.Component,
 properties: {
 lbSID: cc.Label,
@@ -1819,11 +2048,11 @@ this.nodeLose.active = !1;
 if (t) {
 this.nodeWin.active = !0;
 this.lbWin.string = "+" + cc.Tool.getInstance().formatNumber(e);
-this.lbWin.font = cc.XXController.getInstance().getWinFont();
+this.lbWin.font = cc.XXLiveController.getInstance().getWinFont();
 } else {
 this.nodeLose.active = !0;
 this.lbWin.string = cc.Tool.getInstance().formatNumber(e);
-this.lbWin.font = cc.XXController.getInstance().getLoseFont();
+this.lbWin.font = cc.XXLiveController.getInstance().getLoseFont();
 }
 this.lbWin.node.active = !0;
 this.lbWin.node.scaleY = 0;
@@ -1836,8 +2065,7 @@ registerPlayer: function(t) {
 var e = t.Avatar;
 e <= 0 && (e = 1);
 this.nickName = t.NickName;
-console.log("setAvatar========" + e);
-this.avatar.setAvatar(cc.XXController.getInstance().getAvatars()[e]);
+this.avatar.setAvatar(cc.XXLiveController.getInstance().getAvatars()[e]);
 if (t.ServiceID) {
 this.lbSID.string = "";
 this.lbName.string = cc.Config.getInstance().formatName(t.NickName, 7);
@@ -1849,7 +2077,7 @@ this.lbChip.tweenValueto(t.Balance);
 this.nodeInfo.active = !0;
 },
 unRegisterPlayer: function() {
-this.avatar.setAvatar(cc.XXController.getInstance().getAvatarDef());
+this.avatar.setAvatar(cc.XXLiveController.getInstance().getAvatarDef());
 this.nodeInfo.active = !1;
 },
 updateConnectionStatus: function(t) {
@@ -1880,9 +2108,9 @@ this.animation.play("showBubbleChat");
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXPopupController: [ function(t, e) {
+XXLivePopupController: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "fbff0Zl8kJBj4p7x9lZQCaO", "XXPopupController");
+cc._RF.push(e, "c045eXFt3BLjYpr/jMzWlCP", "XXLivePopupController");
 (function() {
 var t;
 t = function() {
@@ -1940,15 +2168,15 @@ return this.gameHistory;
 };
 return e;
 }();
-cc.XXPopupController = t;
+cc.XXLivePopupController = t;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXPopupView: [ function(t, e) {
+XXLivePopupView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "180660VlHxDu5IXInXbxCct", "XXPopupView");
+cc._RF.push(e, "94b6dmMxCtACLG5lUV6Rf9I", "XXLivePopupView");
 (function() {
-cc.XXPopupView = cc.Class({
+cc.XXLivePopupView = cc.Class({
 extends: cc.Component,
 properties: {
 prefabGroupUser: cc.Prefab,
@@ -1959,7 +2187,7 @@ prefabTop: cc.Prefab,
 prefabSessionDetail: cc.Prefab
 },
 onLoad: function() {
-cc.XXPopupController.getInstance().setXXPopupView(this);
+cc.XXLivePopupController.getInstance().setXXPopupView(this);
 },
 createGroupUserView: function() {
 this.nodeGroupUser = this.createView(this.prefabGroupUser);
@@ -2007,11 +2235,24 @@ return e;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXResultView: [ function(t, e) {
+XXLivePortalName: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "bffa5sppmhGT6sKdEShtvSs", "XXResultView");
+cc._RF.push(e, "726a07BV/pG74XgyMwMFRWx", "XXLivePortalName");
 (function() {
-cc.XXResultView = cc.Class({
+cc.PortalName = cc.Enum({
+BLOCK_BUSTER: "X6",
+BLOCK_BUSTER_2: "X6-1",
+BLOCK_BUSTER_3: "X6-2",
+BLOCK_BUSTER_4: "X6-3"
+});
+}).call(void 0);
+cc._RF.pop();
+}, {} ],
+XXLiveResultView: [ function(t, e) {
+"use strict";
+cc._RF.push(e, "f6ccc0IQrdL54b/stMDdlYJ", "XXLiveResultView");
+(function() {
+cc.XXLiveResultView = cc.Class({
 extends: cc.Component,
 properties: {
 nodeBatNan: cc.Node,
@@ -2030,7 +2271,7 @@ nodeLe2: cc.Node,
 nodeLe3: cc.Node
 },
 onLoad: function() {
-cc.XXController.getInstance().setXXResultView(this);
+cc.XXLiveController.getInstance().setXXResultView(this);
 this.currentState = -1;
 this.nodeResult = this.animResult.node;
 this.nodeFxResult = this.nodeChan1.parent;
@@ -2041,12 +2282,12 @@ reset: function() {},
 updateResult: function(t, e, i, n, o) {
 if (this.nodeBatNan) {
 switch (n) {
-case cc.XXState.BETTING:
+case cc.XXLiveState.BETTING:
 if (this.currentState !== n) {
 this.nodeBatNan.active = !1;
 this.nodeDia.active = !1;
 this.nodeBatNan.position = this.batNanPos;
-this.animationBat.node.active = !0;
+this.animationBat.node.active = !1;
 this.animationBat.clearTracks();
 this.animationBat.setToSetupPose();
 this.animationBat.setAnimation(1, "Idle_2", !0);
@@ -2056,12 +2297,12 @@ this.nodeFxResult.active = !1;
 }
 break;
 
-case cc.XXState.OPEN_PLATE:
+case cc.XXLiveState.OPEN_PLATE:
 if (this.currentState !== n) {
 this.nodeBatNan.active = !1;
 this.nodeDia.active = !1;
 this.nodeBatNan.position = this.batNanPos;
-this.animationBat.node.active = !0;
+this.animationBat.node.active = !1;
 this.animationBat.clearTracks();
 this.animationBat.setToSetupPose();
 this.animationBat.setAnimation(1, "Idle_2", !0);
@@ -2072,24 +2313,24 @@ this.playFxResult(e, i, o);
 }
 break;
 
-case cc.XXState.SHOW_RESULT:
+case cc.XXLiveState.SHOW_RESULT:
 if (this.currentState !== n) {
 this.nodeBatNan.active = !1;
-this.nodeDia.active = !0;
+this.nodeDia.active = !1;
 this.nodeViParent.active = !0;
 this.animationBat.node.active = !1;
-this.playPayFx(t, e);
+this.playPayFx(t, i, e);
 }
 break;
 
-case cc.XXState.WAITING:
+case cc.XXLiveState.WAITING:
 if (this.currentState !== n) {
-cc.XXController.getInstance().initGateChip();
+cc.XXLiveController.getInstance().initGateChip();
 this.nodeFxResult.active = !1;
 }
 break;
 
-case cc.XXState.SHAKING:
+case cc.XXLiveState.SHAKING:
 if (this.currentState !== n) {
 this.nodeResult.active = !1;
 this.nodeViParent.active = !1;
@@ -2097,7 +2338,7 @@ this.nodeFxResult.active = !1;
 this.nodeBatNan.active = !1;
 this.nodeDia.active = !1;
 this.nodeBatNan.position = this.batNanPos;
-this.animationBat.node.active = !0;
+this.animationBat.node.active = !1;
 this.animationBat.clearTracks();
 this.animationBat.setToSetupPose();
 this.animationBat.setAnimation(2, "lac", !1);
@@ -2110,7 +2351,7 @@ playFxResult: function(t, e, i) {
 var n = this;
 this.nodeFxResult.active = !0;
 this.nodeResult.active = !0;
-this.nodeViParent.active = !0;
+this.nodeViParent.active = !1;
 this.animResult.stop();
 this.nodeChan1.active = !1;
 this.nodeChan2.active = !1;
@@ -2118,14 +2359,9 @@ this.nodeChan3.active = !1;
 this.nodeLe1.active = !1;
 this.nodeLe2.active = !1;
 this.nodeLe3.active = !1;
-var o = e.split(","), s = 0;
-o.forEach(function(t) {
-n.spriteVis[s].spriteFrame = n.sfVis[parseInt(t)];
-s++;
-});
-if (cc.XXController.getInstance().getIsNan() && !i) {
-this.nodeDia.active = !0;
-this.nodeBatNan.active = !0;
+if (cc.XXLiveController.getInstance().getIsNan() && !i) {
+this.nodeDia.active = !1;
+this.nodeBatNan.active = !1;
 this.nodeBatNan.position = this.batNanPos;
 this.animationBat.node.active = !1;
 setTimeout(function() {
@@ -2133,75 +2369,80 @@ n.nodeBatNan.active = !1;
 }, 5e3);
 } else {
 this.nodeBatNan.active = !1;
-this.nodeDia.active = !0;
-this.animationBat.node.active = !0;
+this.nodeDia.active = !1;
+this.animationBat.node.active = !1;
 this.animationBat.clearTracks();
 this.animationBat.setToSetupPose();
 this.animationBat.setAnimation(3, "mo", !1);
 }
 },
-playPayFx: function(t, e) {
-var i = cc.XXController.getInstance().getGateChips(), n = parseInt(e.BigGate), o = parseInt(e.SmallGate);
-switch (n) {
+playPayFx: function(t, e, i) {
+var n = cc.XXLiveController.getInstance().getGateChips(), o = this, s = parseInt(i.BigGate), c = parseInt(i.SmallGate);
+switch (s) {
 case cc.XXGate.EVEN:
-this.animResult.play("chan_blink");
+o.animResult.play("chan_blink");
 break;
 
 case cc.XXGate.ODD:
-this.animResult.play("le_blink");
+o.animResult.play("le_blink");
 }
-switch (o) {
+switch (c) {
 case cc.XXGate.THREE_UP:
-this.nodeLe1.active = !0;
-this.nodeLe2.active = !0;
+o.nodeLe1.active = !0;
+o.nodeChan3.active = !0;
 break;
 
 case cc.XXGate.THREE_DOWN:
-this.nodeLe1.active = !0;
-this.nodeLe3.active = !0;
+o.nodeLe1.active = !0;
+o.nodeLe3.active = !0;
 break;
 
 case cc.XXGate.FOUR_DOWN:
-this.nodeChan1.active = !0;
-this.nodeChan3.active = !0;
+o.nodeChan1.active = !0;
+o.nodeLe2.active = !0;
 break;
 
 case cc.XXGate.FOUR_UP:
-this.nodeChan1.active = !0;
-this.nodeChan2.active = !0;
+o.nodeChan1.active = !0;
+o.nodeChan2.active = !0;
 break;
 
 default:
-this.nodeChan1.active = !0;
+o.nodeChan1.active = !0;
 }
-var s = [ n, o ], c = [];
-i.map(function(t, e) {
-s.includes(e) || c.push(e);
+var a = e.split(","), r = 0;
+a.forEach(function(t) {
+o.spriteVis[r].spriteFrame = o.sfVis[parseInt(t)];
+r++;
+});
+var u = [ s, c ], l = [];
+n.map(function(t, e) {
+u.includes(e) || l.push(e);
 }, this);
-this.fxMoveChip(c, cc.XX_FX.LOSE);
+this.fxMoveChip(l, cc.XX_FX.LOSE);
 setTimeout(function() {
-this.fxMoveChip(s, cc.XX_FX.DEALER_PAY);
+this.fxMoveChip(u, cc.XX_FX.DEALER_PAY);
 }.bind(this), 1e3);
 setTimeout(function() {
-this.fxMoveChip(s, cc.XX_FX.PAY);
+this.fxMoveChip(u, cc.XX_FX.PAY);
 }.bind(this), 2e3);
 },
 fxMoveChip: function(t, e) {
 try {
-var i = cc.XXController.getInstance().getGateChips();
+var i = cc.XXLiveController.getInstance().getGateChips();
 t.map(function(t) {
 i[t] && i[t].length && i[t].forEach(function(t) {
 switch (e) {
 case cc.XX_FX.LOSE:
-cc.XXController.getInstance().playFxLost(t);
+cc.XXLiveController.getInstance().playFxLost(t);
 break;
 
 case cc.XX_FX.DEALER_PAY:
-cc.XXController.getInstance().playFxDealerPay(t);
+cc.XXLiveController.getInstance().playFxDealerPay(t);
 break;
 
 case cc.XX_FX.PAY:
-cc.XXController.getInstance().playFxPay(t);
+cc.XXLiveController.getInstance().playFxPay(t);
 }
 });
 });
@@ -2211,9 +2452,9 @@ cc.XXController.getInstance().playFxPay(t);
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXResult: [ function(t, e) {
+XXLiveResult: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "aaaabxDQT1ClYkP0gyZILsd", "XXResult");
+cc._RF.push(e, "fe799fAiHdJRJaa28bX6Bq2", "XXLiveResult");
 (function() {
 cc.XXResult = cc.Enum({
 EVEN_FOUR_DOWN: 0,
@@ -2225,64 +2466,38 @@ EVEN_FOUR_UP: 4
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXSettingRoomView: [ function(t, e) {
+XXLiveServiceId: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "ac19fybbh1AWI0C4/CDWW+G", "XXSettingRoomView");
+cc._RF.push(e, "c2072o8ildLQp6j0OiCDgey", "XXLiveServiceId");
 (function() {
-cc.XXSettingRoomView = cc.Class({
-extends: cc.Component,
-properties: {
-animation: cc.Animation,
-nodeOffset: cc.Node,
-spriteSound: cc.Sprite,
-spriteMusic: cc.Sprite,
-sfSounds: [ cc.SpriteFrame ],
-sfMusics: [ cc.SpriteFrame ]
-},
-onLoad: function() {
-this.openPopup = !1;
-},
-start: function() {
-this.sound = cc.Tool.getInstance().getItem("@Sound") && "true" === cc.Tool.getInstance().getItem("@Sound").toString();
-this.music = cc.Tool.getInstance().getItem("@Music") && "true" === cc.Tool.getInstance().getItem("@Music").toString();
-this.spriteSound.spriteFrame = this.sound ? this.sfSounds[0] : this.sfSounds[1];
-this.spriteMusic.spriteFrame = this.music ? this.sfMusics[0] : this.sfMusics[1];
-cc.AudioController.getInstance().enableSound(this.sound);
-cc.AudioController.getInstance().enableMusic(this.music);
-},
-openSettingClicked: function() {
-if (0 == this.openPopup) {
-this.openPopup = !0;
-this.animation.play("openSettingMenu");
-} else {
-this.openPopup = !1;
-this.animation.play("closeSettingMenu");
-}
-},
-closeSettingClicked: function() {
-this.animation.play("closeSettingMenu");
-},
-soundClicked: function() {
-this.sound = !this.sound;
-cc.Tool.getInstance().setItem("@Sound", this.sound);
-this.spriteSound.spriteFrame = this.sound ? this.sfSounds[0] : this.sfSounds[1];
-cc.AudioController.getInstance().enableSound(this.sound);
-},
-musicClicked: function() {
-this.music = !this.music;
-cc.Tool.getInstance().setItem("@Music", this.music);
-this.spriteMusic.spriteFrame = this.music ? this.sfMusics[0] : this.sfMusics[1];
-cc.AudioController.getInstance().enableMusic(this.music);
-}
+cc.ServiceId = cc.Enum({
+OLD: 0,
+BLOCK_BUSTER: 1,
+BLOCK_BUSTER_2: 2,
+BLOCK_BUSTER_3: 3,
+BLOCK_BUSTER_4: 101
 });
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXSoiCauView: [ function(t, e) {
+XXLiveServiceName: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "98e8czi68lDZ4efW5MOpHZI", "XXSoiCauView");
+cc._RF.push(e, "bb088L7i35DUpR6/q0W8xr8", "XXLiveServiceName");
 (function() {
-cc.XXSoiCauView = cc.Class({
+cc.ServiceName = cc.Enum({
+BLOCK_BUSTER: "B1",
+BLOCK_BUSTER_2: "B2",
+BLOCK_BUSTER_3: "B3",
+BLOCK_BUSTER_4: "B4"
+});
+}).call(void 0);
+cc._RF.pop();
+}, {} ],
+XXLiveSoiCauView: [ function(t, e) {
+"use strict";
+cc._RF.push(e, "d6d4877VrZC6a7wIB2j55Vx", "XXLiveSoiCauView");
+(function() {
+cc.XXLiveSoiCauView = cc.Class({
 extends: cc.Component,
 properties: {
 animation: cc.Animation,
@@ -2298,7 +2513,7 @@ lbThreeDown: cc.Label,
 sfDots: [ cc.SpriteFrame ]
 },
 onLoad: function() {
-cc.XXController.getInstance().setXXSoiCauView(this);
+cc.XXLiveController.getInstance().setXXSoiCauView(this);
 this.rootPosX = -181.5;
 this.rootPosY = -47;
 this.spaceX = 19;
@@ -2401,11 +2616,11 @@ this.animation.play("xxShowSoiCau");
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXState: [ function(t, e) {
+XXLiveState: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "eb415X1gXxJwbG4deXEkzkr", "XXState");
+cc._RF.push(e, "791fbeYDUBJ/5bSTcv+DZbr", "XXLiveState");
 (function() {
-cc.XXState = cc.Enum({
+cc.XXLiveState = cc.Enum({
 WAITING: 0,
 SHAKING: 1,
 BETTING: 2,
@@ -2415,11 +2630,52 @@ SHOW_RESULT: 4
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXTopItem: [ function(t, e) {
+XXLiveSubdomainName: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "bc6f8mGBbhHG6ujLgMkyRmy", "XXTopItem");
+cc._RF.push(e, "a8bedoTwxRJlqBLDYLG2P8R", "XXLiveSubdomainName");
 (function() {
-cc.XXTopItem = cc.Class({
+cc.SubdomainName = cc.Enum({
+PORTAL: "portal.",
+EVENT: "event.",
+VQMM: "vqmm.",
+CHAT: "chat.",
+TREASURE: "treasure.",
+SAFE_OTP: "safeotp.",
+EGYPT: "egypt.",
+THREE_KINGDOM: "tamquoc.",
+AQUARIUM: "thuycung.",
+DRAGON_BALL: "songoku.",
+BUM_BUM: "bumbum.",
+COWBOY: "cowboys.",
+THUONGHAI: "demthuonghai.",
+MONKEY: "monkey.",
+XOC_XOC: "xocdia.",
+DRAGON_TIGER: "dragon.",
+BACCARAT: "baccarat.",
+BAUCUA: "baucua.",
+THREE_CARDS: "bacay.",
+TEXAS_POKER: "poker.",
+TLMN: "tlmn.",
+TLMN_SOLO: "tlmnsolo.",
+MAU_BINH: "maubinh.",
+LODE: "xoso.",
+VIETLOT: "vietlott.",
+SEVEN77: "minibar.",
+MINI_POKER: "minipoker.",
+BLOCK_BUSTER: "blockbuster.",
+TAI_XIU: "taixiu.",
+LUCKY_WILD: "luckywild.",
+SHOOT_FISH: "shootfish.",
+GAINHAY: "gainhay."
+});
+}).call(void 0);
+cc._RF.pop();
+}, {} ],
+XXLiveTopItem: [ function(t, e) {
+"use strict";
+cc._RF.push(e, "4d7dbTGIjBKWogSxGRoPH/B", "XXLiveTopItem");
+(function() {
+cc.XXLiveTopItem = cc.Class({
 extends: cc.Component,
 properties: {
 lbRank: cc.Label,
@@ -2449,43 +2705,13 @@ this.itemID = e;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXTopListView: [ function(t, e) {
+XXLiveTopListView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "5a936fdHpVE/LmY3gA/ODsQ", "XXTopListView");
+cc._RF.push(e, "69a095NV6xABZsLF5p869TZ", "XXLiveTopListView");
 (function() {
-cc.XXTopListView = cc.Class({
-extends: cc.Component,
-properties: {
-itemTemplate: cc.Node,
-scrollView: cc.ScrollView,
-spawnCount: 0,
-spacing: 0,
-bufferZone: 0
-},
-onLoad: function() {
-this.spawnCount = 15;
-if (null !== this.scrollView) {
-this.content = this.scrollView.content;
-this.items = [];
-this.updateTimer = 0;
-this.updateInterval = .1;
-this.lastContentPosY = 0;
-this.rootContentY = this.content.y;
-}
-},
-resetList: function() {
-if (null !== this.scrollView) {
-this.items = [];
-this.scrollView.stopAutoScroll();
-this.content = this.scrollView.content;
-this.content.y = this.rootContentY;
-for (var t = this.content.children, e = t.length - 1; e >= 0; e--) this.content.removeChild(t[e]);
-}
-},
-getPositionInView: function(t) {
-var e = t.parent.convertToWorldSpaceAR(t.position);
-return this.scrollView.node.convertToNodeSpaceAR(e);
-},
+cc.XXLiveTopListView = cc.Class({
+extends: cc.ListView,
+properties: {},
 initialize: function(t) {
 this.messages = t;
 var e = this.messages.length;
@@ -2494,7 +2720,7 @@ for (var i = Math.min(this.spawnCount, e), n = 0; n < i; ++n) {
 var o = cc.instantiate(this.itemTemplate);
 this.content.addChild(o);
 o.setPosition(0, -o.height * (.5 + n) - this.spacing * (n + 1));
-o.getComponent(cc.XXTopItem).updateItem(this.messages[n], n);
+o.getComponent(cc.XXLiveTopItem).updateItem(this.messages[n], n);
 this.items.push(o);
 }
 this.rootContentY = this.content.y;
@@ -2508,12 +2734,12 @@ var c = this.getPositionInView(e[s]);
 if (n) {
 if (c.y < -i && e[s].y + o < 0) {
 e[s].y = e[s].y + o;
-var a = e[s].getComponent(cc.XXTopItem), r = a.itemID - e.length;
+var a = e[s].getComponent(cc.XXLiveTopItem), r = a.itemID - e.length;
 a.updateItem(this.messages[r], r);
 }
 } else if (c.y > i && e[s].y - o > -this.content.height) {
 e[s].y = e[s].y - o;
-r = (a = e[s].getComponent(cc.XXTopItem)).itemID + e.length;
+r = (a = e[s].getComponent(cc.XXLiveTopItem)).itemID + e.length;
 a.updateItem(this.messages[r], r);
 }
 }
@@ -2524,14 +2750,14 @@ this.lastContentPosY = this.scrollView.content.y;
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXTopView: [ function(t, e) {
+XXLiveTopView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "f9cd9tZBbtJO5wIoiIMJMnZ", "XXTopView");
+cc._RF.push(e, "96716O9lr5HRL++JE0GSv8x", "XXLiveTopView");
 (function() {
-cc.XXTopView = cc.Class({
-extends: cc.Component,
+cc.XXLiveTopView = cc.Class({
+extends: cc.PopupBase,
 properties: {
-XXTopListView: cc.XXTopListView
+XXTopListView: cc.XXLiveTopListView
 },
 onLoad: function() {
 this.animation = this.node.getComponent(cc.Animation);
@@ -2559,33 +2785,35 @@ this.animation.play("closePopup");
 var t = this;
 cc.director.getScheduler().schedule(function() {
 t.animation.stop();
-cc.XXPopupController.getInstance().destroyTopView();
+cc.XXLivePopupController.getInstance().destroyTopView();
 }, this, 1, 0, .12, !1);
 }
 });
 }).call(void 0);
 cc._RF.pop();
 }, {} ],
-XXView: [ function(t, e) {
+XXLiveView: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "7fd86ILtVNML7Ljmj3x5HMC", "XXView");
+cc._RF.push(e, "476bc87meNLHaNwE99KPzLQ", "XXLiveView");
 var i = t("NetConfig");
 (function() {
-cc.XXView = cc.Class({
+cc.XXLiveView = cc.Class({
 extends: cc.Component,
 properties: {
 spriteSound: cc.Sprite,
 sfSounds: [ cc.SpriteFrame ],
 spriteBack: cc.Sprite,
 nodeRegisterLeave: cc.Node,
+nodeParentChat: cc.Node,
 avatarDef: cc.SpriteFrame,
-listAvtars: [ cc.SpriteFrame ]
+listAvtars: [ cc.SpriteFrame ],
+nodetooltip: cc.Node,
+lblmsg: cc.Label
 },
 onLoad: function() {
-cc.XXController.getInstance().setXXView(this);
-cc.XXController.getInstance().setAvatars(this.listAvtars);
-cc.XXController.getInstance().setAvatarDef(this.avatarDef);
-cc.ChatRoomController.getInstance().setHubView(this);
+cc.XXLiveController.getInstance().setXXView(this);
+cc.XXLiveController.getInstance().setAvatars(this.listAvtars);
+cc.XXLiveController.getInstance().setAvatarDef(this.avatarDef);
 this.interval = null;
 this.isActiveChat = !1;
 this.lastTimeReconnect = new Date().getTime();
@@ -2600,13 +2828,13 @@ this.spriteSound.spriteFrame = this.sound ? this.sfSounds[0] : this.sfSounds[1];
 cc.AudioController.getInstance().enableSound(this.sound);
 },
 onDestroy: function() {
-var t = fzgui.UserManager.instance.mainUserInfo.Money;
-fzgui.GameCoreManager.instance.updateTotalGold(t);
+var t = lngui.UserManager.instance.mainUserInfo.Money;
+lngui.GameCoreManager.instance.updateTotalGold(t);
 this.sendRequestOnHub(cc.MethodHubName.EXIT_LOBBY);
 null !== this.interval && clearInterval(this.interval);
 this.xxHub && this.xxHub.close();
 this.unscheduleAllCallbacks();
-cc.XXController.getInstance().setXXView(null);
+cc.XXLiveController.getInstance().setXXView(null);
 },
 reset: function() {
 this.isTimer = !1;
@@ -2620,27 +2848,27 @@ null !== this.interval && clearInterval(this.interval);
 },
 updateInfo: function(t) {
 switch (t.CurrentState) {
-case cc.XXState.BETTING:
-case cc.XXState.OPEN_PLATE:
-case cc.XXState.SHOW_RESULT:
-case cc.XXState.WAITING:
-case cc.XXState.SHAKING:
+case cc.XXLiveState.BETTING:
+case cc.XXLiveState.OPEN_PLATE:
+case cc.XXLiveState.SHOW_RESULT:
+case cc.XXLiveState.WAITING:
+case cc.XXLiveState.SHAKING:
 }
 this.currentState = t.CurrentState;
 this.startTimer(t.Ellapsed);
 },
 updateTimer: function(t) {
 if (!(t < 1)) switch (this.currentState) {
-case cc.XXState.BETTING:
-case cc.XXState.OPEN_PLATE:
+case cc.XXLiveState.BETTING:
+case cc.XXLiveState.OPEN_PLATE:
 this.lbTimer.string = t;
 this.lbTimer.font = t > 3 ? this.bmfNormal : this.bmfRed;
 this.lbTimer.node.parent.active = !0;
 break;
 
-case cc.XXState.SHOW_RESULT:
-case cc.XXState.WAITING:
-case cc.XXState.SHAKING:
+case cc.XXLiveState.SHOW_RESULT:
+case cc.XXLiveState.WAITING:
+case cc.XXLiveState.SHAKING:
 this.lbTimer.node.parent.active = !1;
 }
 },
@@ -2649,11 +2877,18 @@ this.xxHub && this.xxHub.close();
 this.lastTimeReconnect = new Date().getTime();
 },
 connectHub: function() {
-cc.systemEvent.off("OnXocDiaWebSocKet", this.onResponeData, this);
-cc.systemEvent.on("OnXocDiaWebSocKet", this.onResponeData, this);
-this.xxHub = new fzgui.GateSignalR();
-this.xxHub.connect("OnXocDiaWebSocKet", "https://xocdia.dragonf1.xyz/signalr/negotiate", "sedieHub", fzgui.UserManager.instance.mainUserInfo.cookie, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+console.log("connectHub=================>" + cc.SubdomainName.XOC_XOC);
+var t = {
+url: "https://xocdialive-789." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
+hub: "sedielivehub",
+ip: "http://18.138.207.162:9001/signalr/negotiate",
+gate: "789.club"
+};
+cc.systemEvent.off("OnXocDiaLiveWebSocKet", this.onResponeData, this);
+cc.systemEvent.on("OnXocDiaLiveWebSocKet", this.onResponeData, this);
+this.xxHub = new lngui.GateSignalR();
+this.xxHub.connect("OnXocDiaLiveWebSocKet", t.url, t.hub, t.gate, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 },
 sendRequestOnHub: function(t, e, i) {
 switch (t) {
@@ -2687,7 +2922,7 @@ this.xxHub.sendRoomMessage(e);
 }
 },
 sendSignalR: function(t, e) {
-fzgui.ZLog.log("SendSocket==========================>" + t + "==data==" + JSON.stringify(e));
+lngui.ZLog.log("SendSocket==========================>" + t + "==data==" + JSON.stringify(e));
 e = e || [];
 this.xxHub && this.xxHub.send(t, e);
 },
@@ -2699,59 +2934,60 @@ console.log("connectSuccess =========>");
 this.sendRequestOnHub(cc.MethodHubName.ENTER_LOBBY);
 },
 onHubMessage: function(t) {
+var e = this;
 if (("open" == t.s || "reconnect" == t.s || "1" == t.s) && !this.isConnect) {
 this.isConnect = !0;
 this.connectSuccess();
 }
 if (void 0 !== t.M && t.M.length > 0) {
-var e = t.M;
-e.map(function(t) {
+var i = t.M;
+i.map(function(t) {
 switch (t.M) {
 case cc.MethodHubOnName.SESSION_INFO:
-cc.XXController.getInstance().updateInfo(t.A[0], t.A[0].Phrase, null);
-cc.XXController.getInstance().updateInput(t.A[0].Phrase);
+cc.XXLiveController.getInstance().updateInfo(t.A[0], t.A[0].Phrase, null);
+cc.XXLiveController.getInstance().updateInput(t.A[0].Phrase);
 break;
 
 case cc.MethodHubOnName.GAME_HISTORY:
-cc.XXController.getInstance().resetDraw();
-cc.XXController.getInstance().draw(t.A[0]);
+cc.XXLiveController.getInstance().resetDraw();
+cc.XXLiveController.getInstance().draw(t.A[0]);
 break;
 
 case cc.MethodHubOnName.START_ACTION_TIMER:
-var i = t.A;
-cc.XXController.getInstance().updateInfo(i[0], i[2], i[1]);
-cc.XXController.getInstance().updateResult(null, i[0].Result, i[0].Result.ChipsData, i[2]);
-cc.XXController.getInstance().updateInput(i[2]);
+var n = t.A;
+cc.XXLiveController.getInstance().updateInfo(n[0], n[2], n[1]);
+cc.XXLiveController.getInstance().updateResult(null, n[0].Result, n[0].Result.ChipsData, n[2]);
+cc.XXLiveController.getInstance().updateInput(n[2]);
 break;
 
 case cc.MethodHubOnName.PLAYER_LEAVE:
-0 === e.length && cc.XXController.getInstance().playerLeave(t.A);
+0 === i.length && cc.XXLiveController.getInstance().playerLeave(t.A);
 break;
 
 case cc.MethodHubOnName.UPDATE_CONNECTION_STATUS:
-cc.XXController.getInstance().updateConnectionStatus(t.A);
+cc.XXLiveController.getInstance().updateConnectionStatus(t.A);
 break;
 
 case cc.MethodHubOnName.UPDATE_PLAYER_STATUS:
-cc.XXController.getInstance().updatePlayerStatus(t.A[0]);
+cc.XXLiveController.getInstance().updatePlayerStatus(t.A[0]);
 break;
 
 case cc.MethodHubOnName.JOIN_GAME:
-i = t.A[0], t.A[1];
-cc.XXController.getInstance().updateInfoCurrPlayer(i.Account);
+n = t.A[0], t.A[1];
+cc.XXLiveController.getInstance().updateInfoCurrPlayer(n.Account);
 cc.PopupController.getInstance().hideBusy();
 break;
 
 case cc.MethodHubOnName.BET_SESSION:
-cc.XXController.getInstance().showLastInput(t.A[0]);
+cc.XXLiveController.getInstance().showLastInput(t.A[0]);
 break;
 
 case cc.MethodHubOnName.BET_OF_ACCOUNT:
 break;
 
 case cc.MethodHubOnName.PLAYER_BET:
-i = t.A;
-cc.XXController.getInstance().playerBet(i);
+n = t.A;
+cc.XXLiveController.getInstance().playerBet(n);
 break;
 
 case cc.MethodHubOnName.BET_SUCCESS:
@@ -2760,7 +2996,7 @@ break;
 case cc.MethodHubOnName.WIN_RESULT_VIP:
 if (t.A.length > 0) try {
 setTimeout(function() {
-cc.XXController.getInstance().winResultVip(t.A[0]);
+cc.XXLiveController.getInstance().winResultVip(t.A[0]);
 }, 2500);
 } catch (t) {}
 break;
@@ -2768,52 +3004,54 @@ break;
 case cc.MethodHubOnName.WIN_RESULT:
 if (t.A.length > 0) try {
 setTimeout(function() {
-cc.XXController.getInstance().winResult(t.A[0]);
+cc.XXLiveController.getInstance().winResult(t.A[0]);
 }, 2500);
 } catch (t) {}
 break;
 
 case cc.MethodHubOnName.TOTAL_WIN_MONEY:
 t.A[0] > 0 && setTimeout(function() {
-cc.XXController.getInstance().totalUserWin(t.A[0]);
+cc.XXLiveController.getInstance().totalUserWin(t.A[0]);
 }, 2500);
 break;
 
 case cc.MethodHubOnName.PLAYER_MESSAGE:
 case cc.MethodHubOnName.MESSAGE:
-cc.PopupController.getInstance().showMessage(t.A[0]);
+e.nodetooltip.active = !0;
+e.lblmsg.string = t.A[0];
+setTimeout(function() {
+e.nodetooltip.active = !1;
+}, 1e3);
 break;
 
 case cc.MethodHubOnName.OPEN_PLATE_NOW:
-cc.XXController.getInstance().updateResult(null, t.A[0], t.A[1], cc.XXState.OPEN_PLATE, !0);
-cc.XXController.getInstance().updateInput(cc.XXState.OPEN_PLATE);
+cc.XXLiveController.getInstance().updateResult(null, t.A[0], t.A[1], cc.XXLiveState.OPEN_PLATE, !0);
+cc.XXLiveController.getInstance().updateInput(cc.XXLiveState.OPEN_PLATE);
 break;
 
 case cc.MethodHubOnName.RECEIVE_MESSAGE:
-cc.ChatRoomController.getInstance().addChatContent(t.A);
-cc.XXController.getInstance().playerShowBubbleChat(t.A);
+cc.XXLiveController.getInstance().playerShowBubbleChat(t.A);
 break;
 
 case cc.MethodHubOnName.SUMMARY_PLAYER:
-cc.XXController.getInstance().summaryPlayer(t.A[0]);
+cc.XXLiveController.getInstance().summaryPlayer(t.A[0]);
 break;
 
 case cc.MethodHubOnName.VIP_PLAYERS:
-var n = t.A[0];
-n.length > 0 && cc.XXController.getInstance().vipPlayer(n);
+var o = t.A[0];
+o.length > 0 && cc.XXLiveController.getInstance().vipPlayer(o);
 break;
 
 case "recieveMessage":
-cc.ChatRoomController.getInstance().addChatContent(t.A);
-cc.XXController.getInstance().playerShowBubbleChat(t.A);
+cc.XXLiveController.getInstance().playerShowBubbleChat(t.A);
 break;
 
 case cc.MethodHubOnName.UPDATE_ROOM_TIME:
-cc.XXController.getInstance().updateTimer(t.A[0]);
+cc.XXLiveController.getInstance().updateTimer(t.A[0]);
 }
 });
-e && e.length > 0 && e.forEach(function(t) {
-t.M === cc.MethodHubOnName.PLAYER_LEAVE && cc.XXController.getInstance().playerLeave(t.A);
+i && i.length > 0 && i.forEach(function(t) {
+t.M === cc.MethodHubOnName.PLAYER_LEAVE && cc.XXLiveController.getInstance().playerLeave(t.A);
 });
 } else if (t.R && t.R.AccountID) {
 cc.PopupController.getInstance().showBusy();
@@ -2831,23 +3069,28 @@ onHubError: function() {
 cc.PopupController.getInstance().hideBusy();
 },
 playerLeave: function(t) {
-if (t[0] === fzgui.UserManager.instance.mainUserInfo.AccountID) {
-var e = t[1];
-fzgui.UIScreenManager.instance.popToRootScreen();
-cc.PopupController.getInstance().showMessage(e);
+var e = this;
+if (t[0] === lngui.UserManager.instance.mainUserInfo.AccountID) {
+var i = t[1];
+lngui.UIScreenManager.instance.popToRootScreen();
+this.nodetooltip.active = !0;
+this.lblmsg.string = i;
+setTimeout(function() {
+e.nodetooltip.active = !1;
+}, 1e3);
 }
 },
 helpClicked: function() {
-cc.XXPopupController.getInstance().createHelpView();
+cc.XXLivePopupController.getInstance().createHelpView();
 },
 historyClicked: function() {
-cc.XXPopupController.getInstance().createHistoryView();
+cc.XXLivePopupController.getInstance().createHistoryView();
 },
 topClicked: function() {
-cc.XXPopupController.getInstance().createTopView();
+cc.XXLivePopupController.getInstance().createTopView();
 },
 graphClicked: function() {
-cc.XXPopupController.getInstance().createGraphView();
+cc.XXLivePopupController.getInstance().createGraphView();
 },
 soundClicked: function() {
 this.sound = !this.sound;
@@ -2856,20 +3099,18 @@ this.spriteSound.spriteFrame = this.sound ? this.sfSounds[0] : this.sfSounds[1];
 cc.AudioController.getInstance().enableSound(this.sound);
 },
 backClicked: function() {
-fzgui.UIScreenManager.instance.popToRootScreen();
+lngui.UIScreenManager.instance.popToRootScreen();
 },
-chatClicked: function() {
-cc.ChatRoomController.getInstance().showChat();
-}
+chatClicked: function() {}
 });
 }).call(void 0);
 cc._RF.pop();
 }, {
 NetConfig: void 0
 } ],
-XX_GroupUserCommand: [ function(t, e) {
+XXLive_GroupUserCommand: [ function(t, e) {
 "use strict";
-cc._RF.push(e, "6009595DfRI+LJaq2yxDTC9", "XX_GroupUserCommand");
+cc._RF.push(e, "5efd9epcq9MyaSdPZh8D+BL", "XXLive_GroupUserCommand");
 (function() {
 var t;
 t = function() {
@@ -2883,36 +3124,8 @@ return t.onGetGroupUserResponse(i);
 };
 return t;
 }();
-cc.XXGroupUserCommand = t;
-}).call(void 0);
-cc._RF.pop();
-}, {} ],
-XocDiaGroupItem: [ function(t, e) {
-"use strict";
-cc._RF.push(e, "51d1bkc8rxPwK1MIkuPHvql", "XocDiaGroupItem");
-(function() {
-cc.XocDiaGroupItem = cc.Class({
-extends: cc.Component,
-properties: {
-avatar: cc.Avatar,
-lbSId: cc.Label,
-lbNickName: cc.Label,
-lbBalance: cc.Label,
-lbSTT: cc.Label
-},
-updateItem: function(t, e) {
-var i = t.Account, n = i.Avatar;
-n <= 0 && (n = 1);
-this.lbSTT.string = e + 1;
-this.lbSId.string = cc.Config.getInstance().getServiceNameNoFormat(i.ServiceID);
-this.avatar.setAvatar(cc.XXController.getInstance().getAvatars()[n]);
-this.lbNickName.string = i.NickName;
-this.lbBalance.string = cc.Tool.getInstance().formatNumber(i.Balance);
-this.item = t;
-this.itemID = e;
-}
-});
+cc.XXLiveGroupUserCommand = t;
 }).call(void 0);
 cc._RF.pop();
 }, {} ]
-}, {}, [ "XocDiaGroupItem", "ChatRoomController", "ChatRoomItem", "ChatRoomListView", "ChatRoomView", "XXGetBigWinnerCommand", "XXHistoryCommand", "XX_GroupUserCommand", "PortalName", "XXSettingRoomView", "DragonTigerHistoryListView", "XXAssets", "XXChipItem", "XXChipPool", "XXController", "XXInfoView", "XXInputView", "XXResultView", "XXView", "XXConnectionStatus", "XXFX", "XXGate", "XXPlayerStatus", "XXResult", "XXState", "XXSoiCauView", "PlayerData", "XXPlayer", "XXPopupController", "XXPopupView", "XXGroupItem", "XXGroupUserListView", "XXGroupUserView", "XXHelpView", "XXHistoryItem", "XXHistoryListView", "XXHistoryView", "XXTopItem", "XXTopListView", "XXTopView", "SlotsHistoryItem" ]);
+}, {}, [ "XX.Chat.NetworkClient", "XXChat", "XXLiveGetBigWinnerCommand", "XXLiveHistoryCommand", "XXLive_GroupUserCommand", "XXLiveHubName", "XXLiveSubdomainName", "XXLivePortalName", "XXLiveServiceId", "XXLiveServiceName", "DragonTigerSettingRoomViewLive", "DragonTigerHistoryListViewLive", "XXLiveAssets", "XXLiveChipItem", "XXLiveChipPool", "XXLiveController", "XXLiveInfoView", "XXLiveInputView", "XXLiveResultView", "XXLiveView", "XXLiveConnectionStatus", "XXLiveFX", "XXLiveGate", "XXLivePlayerStatus", "XXLiveResult", "XXLiveState", "XXLiveSoiCauView", "XXLivePlayerData", "XXLivePlayer", "XXLivePopupController", "XXLivePopupView", "XXLiveGroupItem", "XXLiveGroupUserListView", "XXLiveGroupUserView", "XXLiveHelpView", "XXLiveHistoryItem", "XXLiveHistoryListView", "XXLiveHistoryView", "XXLiveTopItem", "XXLiveTopListView", "XXLiveTopView", "SlotsHistoryItemLive", "ViewLive" ]);

@@ -70,20 +70,25 @@ e.prototype.onLoad = function() {
 o._instance = this;
 };
 e.prototype.connect = function() {
+var t = {
+url: "https://chat." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
+ip: "http://18.138.207.162:8092/signalr/negotiate",
+hub: "chatHub"
+};
 cc.systemEvent.off("OnChatLodeSocketEvent", this.onResponeData, this);
 cc.systemEvent.on("OnChatLoDeSocketEvent", this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
-this.mSignalr.connect("OnChatLoDeSocketEvent", "https://chat.dragonf1.xyz/signalr/negotiate", "chatHub", fzgui.UserManager.instance.mainUserInfo.cookie, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+this.mSignalr = new lngui.GateSignalR();
+this.mSignalr.connect("OnChatLoDeSocketEvent", t.url, t.hub, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 e.prototype.onEnable = function() {
-fzgui.EventDispatch.instance.add(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.connect();
 };
 e.prototype.onDisable = function() {
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 this.closeWS();
-fzgui.ZLog.log("=====================CLOSE WS NOTI===============================");
+lngui.ZLog.log("=====================CLOSE WS NOTI===============================");
 };
 e.prototype.onResponeData = function(t) {
 this.isEmpty(t) || t.s && "error" == t.s || this.onWebSocketCallback(t);
@@ -98,7 +103,7 @@ this.isConnect = !0;
 this.connectSuccess();
 this.registerChat();
 }
-t.R < 0 && fzgui.UITextManager.showCenterNotification("Lỗi " + t.R);
+t.R < 0 && lngui.UITextManager.showCenterNotification("Lỗi " + t.R);
 if (t.M && Array.isArray(t.M) && 0 != t.M.length) for (var e = t.M.length, o = 0; o < e; ++o) {
 var n = t.M[o];
 if (n.A && null != n.A[0] && null != n.A[0]) {
@@ -121,16 +126,16 @@ e.prototype.pingPong = function() {
 this.sendSignalR("PingPong", []);
 };
 e.prototype.connectSuccess = function() {
-fzgui.ZLog.log("Connect Sucesss");
+lngui.ZLog.log("Connect Sucesss");
 };
 e.prototype.closeWS = function() {
 cc.systemEvent.off("OnChatLoDeSocketEvent", this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 e.prototype.sendSignalR = function(t, e) {
-fzgui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
+lngui.ZLog.log("SendSocket=======>" + t + "==data==" + JSON.stringify(e));
 e = e || [];
 this.mSignalr && this.mSignalr.send(t, e);
 };
@@ -194,7 +199,7 @@ if (void 0 === n || void 0 === i) return;
 if (n.length > 0 && i.length > 0) {
 var r = i, s = cc.instantiate(this.templateMessage), c = o.n, a = n;
 s.active = !0;
-c = (c.localeCompare(fzgui.UserManager.instance.mainUserInfo.NickName), a);
+c = (c.localeCompare(lngui.UserManager.instance.mainUserInfo.NickName), a);
 s.getComponent(cc.Label).string = c + ": " + r;
 if (1 == t.IsVipTx) {
 s.getChildByName("lb_name").getComponent(cc.Label).node.active = !1;
@@ -225,7 +230,7 @@ if (void 0 !== e && void 0 !== o) {
 if (e.length > 0 && o.length > 0) {
 var n = o, i = cc.instantiate(this.templateMessage), r = t.n, s = e;
 i.active = !0;
-r = (r.localeCompare(fzgui.UserManager.instance.mainUserInfo.NickName), s);
+r = (r.localeCompare(lngui.UserManager.instance.mainUserInfo.NickName), s);
 i.getComponent(cc.Label).string = r + ": " + n;
 if (1 == t.IsVipTx) {
 i.getChildByName("lb_name").getComponent(cc.Label).node.active = !1;
@@ -608,7 +613,7 @@ s.default.instance.setData(-1, e);
 });
 };
 return r([ l ], e);
-}(fzgui.UIPopup));
+}(lngui.UIPopup));
 o.default = u;
 cc._RF.pop();
 }, {
@@ -760,7 +765,7 @@ return r > 3 && s && Object.defineProperty(e, o, s), s;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var s = t("../../base_slot/util/Util"), c = t("./LoDe"), a = t("./LoDeCurBets"), l = t("./LoDeMyBets"), u = t("./LoDeUI"), p = t("./LoDeVar"), h = cc._decorator, f = h.ccclass, d = h.property, y = function(t) {
+var s = t("../../base_slot/util/Util"), c = t("./LoDe"), a = t("./LoDeCurBets"), l = t("./LoDeMyBets"), u = t("./LoDeUI"), p = t("./LoDeVar"), h = cc._decorator, f = h.ccclass, d = h.property, g = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -787,20 +792,20 @@ e.prototype.onLoad = function() {
 o._instance = this;
 };
 e.prototype.onDisable = function() {
-console.log("fzgui.UserManager.instance.mainUserInfo.Money===>" + fzgui.UserManager.instance.mainUserInfo.Money);
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
-fzgui.EventDispatch.instance.remove(fzgui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
+console.log("lngui.UserManager.instance.mainUserInfo.Money===>" + lngui.UserManager.instance.mainUserInfo.Money);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
+lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.connect, this);
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 this.mSignalr.close();
-fzgui.GateWebSocketManager.removeSignalR(this.mSignalr);
+lngui.GateWebSocketManager.removeSignalR(this.mSignalr);
 this.mSignalr = null;
 };
 e.prototype.connect = function() {
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 cc.systemEvent.on(this.mListenerKey, this.onResponeData, this);
-this.mSignalr = new fzgui.GateSignalR();
-this.mSignalr.connect(this.mListenerKey, p.default.api.negotiate, p.default.api.hub, p.default.api.gate, fzgui.UserManager.instance.mainUserInfo.cookie, !1);
-fzgui.GateWebSocketManager.pushSignalR(this.mSignalr);
+this.mSignalr = new lngui.GateSignalR();
+this.mSignalr.connect(this.mListenerKey, p.default.api.negotiate, p.default.api.hub, p.default.api.gate, lngui.UserManager.instance.mainUserInfo.cookie, !1);
+lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
 };
 e.prototype.isEmpty = function(t) {
 for (var e in t) if (t.hasOwnProperty(e)) return !1;
@@ -934,8 +939,8 @@ this.arrayDataMyBet.length > 0 && this.LoDeCurBets.setData(0, this.arrayDataMyBe
 };
 e.prototype.parseSetBetData = function(t) {
 this.UI.nodepopupbet.active = !1;
-fzgui.UserManager.instance.mainUserInfo.Money = t;
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.UserManager.instance.mainUserInfo.Money = t;
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 this.mainGame.showTooltip("Đặt cược thành công");
 c.default.instance.updateMoney();
 this.getGameSessionBetAccount();
@@ -951,7 +956,7 @@ r([ d(a.default) ], e.prototype, "LoDeCurBets", void 0);
 r([ d(l.default) ], e.prototype, "LoDeMyBets", void 0);
 return o = r([ f ], e);
 }(cc.Component);
-o.default = y;
+o.default = g;
 cc._RF.pop();
 }, {
 "../../base_slot/util/Util": void 0,
@@ -1084,7 +1089,7 @@ this.listCells[e].setData(t[e]);
 r([ f(c.default) ], e.prototype, "listCells", void 0);
 r([ f(l.default) ], e.prototype, "sbuDate", void 0);
 return r([ h ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 o.default = d;
 cc._RF.pop();
 }, {
@@ -1368,7 +1373,7 @@ var n = this.numberSelect.indexOf(e);
 e.prototype.onBtnBet = function() {
 if (this.ipMoney.string && parseInt(c.default.removeDot(this.ipMoney.string)) > 0) if (this.numberSelect.length < this.pickLimit) this.mainGame.showTooltip("Bạn chưa chọn đủ số cần chọn"); else {
 for (var t = "", e = 0; e < this.numberSelect.length; e++) 2 === this.locationID || 3 === this.locationID ? t += this.numberSelect[e].numBet : t += (this.numberSelect[e].numBet < 10 ? "0" : "") + this.numberSelect[e].numBet + (e == this.numberSelect.length - 1 ? "" : ",");
-fzgui.UIPopupManager.instance.showPopupFromPrefab(this.mainGame.UI.mDialogConfirm);
+lngui.UIPopupManager.instance.showPopupFromPrefab(this.mainGame.UI.mDialogConfirm);
 l.default.instance.nodePopup.getChildByName("Number").getComponent(cc.Label).string = t;
 l.default.instance.nodePopup.getChildByName("Money").getComponent(cc.Label).string = this.ipMoney.string + " Gold";
 l.default.instance.showDialog("Bạn có chắc chắn muốn đặt số", "ĐỒNG Ý", function() {
@@ -1425,7 +1430,7 @@ function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
 return r([ c ], e);
-}(fzgui.UIPopup));
+}(lngui.UIPopup));
 o.default = a;
 cc._RF.pop();
 }, {} ],
@@ -1494,7 +1499,7 @@ this.lblTitleBtnOk.string = e;
 };
 e.prototype.onTouchOk = function() {
 if (this.mCallbackOk) {
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
 this.mCallbackOk.call(this.mTargetOk);
 }
 t.prototype.hide.call(this);
@@ -1509,7 +1514,7 @@ r([ a(cc.Label) ], e.prototype, "lblContent", void 0);
 r([ a(cc.Label) ], e.prototype, "lblTitleBtnOk", void 0);
 r([ a(cc.Node) ], e.prototype, "nodePopup", void 0);
 return o = r([ c ], e);
-}(fzgui.UIPopup);
+}(lngui.UIPopup);
 o.default = l;
 cc._RF.pop();
 }, {} ],
@@ -1619,7 +1624,7 @@ t.getRaw = function(t, e, o, n, i) {
 void 0 === n && (n = !1);
 void 0 === i && (i = !1);
 n && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
-i && fzgui.UIWaitingLayout.showWaiting();
+i && lngui.UIWaitingLayout.showWaiting();
 var r = cc.loader.getXMLHttpRequest();
 r.timeout = 3e4;
 r.open("GET", t + this.getStringBodyByObject(e, void 0), !0);
@@ -1627,10 +1632,10 @@ r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 r.onreadystatechange = function() {
 if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
 n && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
-i && fzgui.UIWaitingLayout.hideWaiting();
+i && lngui.UIWaitingLayout.hideWaiting();
 o && o(r.status, JSON.parse(r.responseText));
 } else {
-i && fzgui.UIWaitingLayout.hideWaiting();
+i && lngui.UIWaitingLayout.hideWaiting();
 o && o(r.status, r.responseText);
 }
 };
@@ -1640,7 +1645,7 @@ t.postRaw = function(t, e, o, n, i) {
 void 0 === n && (n = !1);
 void 0 === i && (i = !1);
 n && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
-i && fzgui.UIWaitingLayout.showWaiting();
+i && lngui.UIWaitingLayout.showWaiting();
 var r = cc.loader.getXMLHttpRequest();
 r.timeout = 3e4;
 r.open("POST", t);
@@ -1648,10 +1653,10 @@ r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 r.onreadystatechange = function() {
 if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
 n && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
-i && fzgui.UIWaitingLayout.hideWaiting();
+i && lngui.UIWaitingLayout.hideWaiting();
 o && o(r.status, JSON.parse(r.responseText));
 } else {
-i && fzgui.UIWaitingLayout.hideWaiting();
+i && lngui.UIWaitingLayout.hideWaiting();
 o && o(r.status, r.responseText);
 }
 };
@@ -1661,7 +1666,7 @@ t.post = function(t, e, o, n, i) {
 void 0 === n && (n = !1);
 void 0 === i && (i = !1);
 n && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
-i && fzgui.UIWaitingLayout.showWaiting();
+i && lngui.UIWaitingLayout.showWaiting();
 var r = cc.loader.getXMLHttpRequest();
 r.timeout = 3e4;
 r.open("POST", t + this.getToken());
@@ -1669,10 +1674,10 @@ r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 r.onreadystatechange = function() {
 if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
 n && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
-i && fzgui.UIWaitingLayout.hideWaiting();
+i && lngui.UIWaitingLayout.hideWaiting();
 o && o(r.status, JSON.parse(r.responseText));
 } else {
-i && fzgui.UIWaitingLayout.hideWaiting();
+i && lngui.UIWaitingLayout.hideWaiting();
 o && o(r.status, r.responseText);
 }
 };
@@ -1681,9 +1686,9 @@ r.send(JSON.stringify(e));
 t.get = function(t, e, o, n, i) {
 void 0 === n && (n = !1);
 void 0 === i && (i = !1);
-e.token = fzgui.UserManager.instance.mainUserInfo.GameToken;
+e.token = lngui.UserManager.instance.mainUserInfo.GameToken;
 n && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
-i && fzgui.UIWaitingLayout.showWaiting();
+i && lngui.UIWaitingLayout.showWaiting();
 var r = cc.loader.getXMLHttpRequest();
 r.timeout = 3e4;
 r.open("GET", t + this.getStringBodyByObject(e, void 0), !0);
@@ -1691,10 +1696,10 @@ r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 r.onreadystatechange = function() {
 if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
 n && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
-i && fzgui.UIWaitingLayout.hideWaiting();
+i && lngui.UIWaitingLayout.hideWaiting();
 o && o(r.status, JSON.parse(r.responseText));
 } else {
-i && fzgui.UIWaitingLayout.hideWaiting();
+i && lngui.UIWaitingLayout.hideWaiting();
 o && o(r.status, r.responseText);
 }
 };
@@ -1702,7 +1707,7 @@ r.send();
 };
 t.getToken = function() {
 return this.getStringBodyByObject({
-token: fzgui.UserManager.instance.mainUserInfo.GameToken
+token: lngui.UserManager.instance.mainUserInfo.GameToken
 }, void 0);
 };
 t.getStringBodyByObject = function(t, e) {
@@ -1713,17 +1718,17 @@ for (var n in t) o.push(n + "=" + encodeURIComponent(t[n]));
 return "?" + o.join("&");
 };
 t.api = {
-GetLotteryResults: "https://xoso.dragonf1.xyz/api/Xoso/GetBettingOnDay",
-GetGameSessionBetAccount: "https://xoso.dragonf1.xyz/api/Xoso/GetBettingOnDay",
-GetBetAccountHistory: "https://xoso.dragonf1.xyz/api/Xoso/GetHistory",
-GetHistoryKetQua: "https://xoso.dragonf1.xyz/api/Xoso/GetSessionResult",
+GetLotteryResults: "https://xoso." + lngui.ConfigManager.instance.ConfigInfo.Api + "/api/Xoso/GetBettingOnDay",
+GetGameSessionBetAccount: "https://xoso." + lngui.ConfigManager.instance.ConfigInfo.Api + "/api/Xoso/GetBettingOnDay",
+GetBetAccountHistory: "https://xoso." + lngui.ConfigManager.instance.ConfigInfo.Api + "/api/Xoso/GetHistory",
+GetHistoryKetQua: "https://xoso." + lngui.ConfigManager.instance.ConfigInfo.Api + "/api/Xoso/GetSessionResult",
 GetBetAccountGameSession: "",
 GetCurrentData: "",
 GetLocations: "",
 SetBet: "",
 SetBet_FreeSpin: "",
-GetTopWins: "https://xoso.dragonf1.xyz/api/Xoso/GetBigWinner",
-negotiate: "https://xoso.dragonf1.xyz/signalr/negotiate",
+GetTopWins: "https://xoso." + lngui.ConfigManager.instance.ConfigInfo.Api + "/api/Xoso/GetBigWinner",
+negotiate: "https://xoso." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/negotiate",
 hub: "xosoHub",
 gate: "Web-hitclub.com"
 };
@@ -1763,7 +1768,7 @@ return r > 3 && s && Object.defineProperty(e, o, s), s;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var s = t("../../base_slot/util/ToolTip"), c = t("./LoDeNetwork"), a = t("./LoDeUI"), l = t("./Utils/Lode.Const"), u = cc._decorator, p = u.ccclass, h = u.property, f = new Date(), d = f.getDate(), y = f.getMonth() + 1, g = f.getFullYear(), b = d + "-" + y, m = d + "-" + y + "-" + g, _ = function(t) {
+var s = t("../../base_slot/util/ToolTip"), c = t("./LoDeNetwork"), a = t("./LoDeUI"), l = t("./Utils/Lode.Const"), u = cc._decorator, p = u.ccclass, h = u.property, f = new Date(), d = f.getDate(), g = f.getMonth() + 1, y = f.getFullYear(), b = d + "-" + g, m = d + "-" + g + "-" + y, _ = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1792,7 +1797,7 @@ enumerable: !1,
 configurable: !0
 });
 e.prototype.onLoad = function() {
-this.UI.lblmmoney.string = l.LodeConst.formatNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+this.UI.lblmmoney.string = l.LodeConst.formatNumber(lngui.UserManager.instance.mainUserInfo.Money);
 o._instance = this;
 this.Network.init(this);
 this.currrentIndexDateList = 1;
@@ -1821,8 +1826,8 @@ this.UI.tabDangDat.node.active = !1;
 break;
 
 case "backLobby":
-fzgui.EventDispatch.instance.emit(fzgui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, fzgui.UserManager.instance.mainUserInfo.Money);
-fzgui.GameCoreManager.instance.onBackToLobby();
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.UserManager.instance.mainUserInfo.Money);
+lngui.GameCoreManager.instance.onBackToLobby();
 break;
 
 case "preResult":
@@ -2001,7 +2006,7 @@ this.UI.nodemenu.getChildByName("iconmenu").scaleX = 1;
 }
 };
 e.prototype.updateMoney = function() {
-this.UI.lblmmoney.string = l.LodeConst.formatNumber(fzgui.UserManager.instance.mainUserInfo.Money);
+this.UI.lblmmoney.string = l.LodeConst.formatNumber(lngui.UserManager.instance.mainUserInfo.Money);
 };
 var o;
 e._instance = null;
