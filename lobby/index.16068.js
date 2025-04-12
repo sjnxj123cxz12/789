@@ -605,7 +605,7 @@ lngui.UIWaitingLayout.showWaiting();
 var t = {
 AccountName: this.ebAccount.string,
 Mobile: this.ebPhoneNumber.string
-}, e = c.LobbyConst.API.OTP_RESET_PASSWORD, n = this, o = cc.loader.getXMLHttpRequest();
+}, e = c.LobbyConst.API.URL + c.LobbyConst.API.OTP_RESET_PASSWORD, n = this, o = cc.loader.getXMLHttpRequest();
 o.onreadystatechange = function() {
 lngui.UIWaitingLayout.hideWaiting();
 if (4 == o.readyState) if (200 == o.status) {
@@ -650,7 +650,7 @@ NewPassword: e,
 Otp: t
 };
 cc.log(JSON.stringify(i));
-var r = c.LobbyConst.API.RESET_PASSWORD, s = this, p = cc.loader.getXMLHttpRequest();
+var r = c.LobbyConst.API.URL + c.LobbyConst.API.RESET_PASSWORD, s = this, p = cc.loader.getXMLHttpRequest();
 p.onreadystatechange = function() {
 lngui.UIWaitingLayout.hideWaiting();
 if (4 == p.readyState) {
@@ -752,7 +752,7 @@ oldPass: window.md5(e),
 captchaText: i,
 captchaToken: this.UICaptcha.getCapChaId()
 };
-s.MVUtils.post(c.LobbyConst.API.CHANGE_PASS, r, function(e, n) {
+s.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHANGE_PASS, r, function(e, n) {
 if (e >= 200 && e < 400) {
 var o = n;
 if (null != o) if (null != o.IsOtp && 1 == o.IsOtp) lngui.UIPopupManager.instance.showPopupFromPrefab(lngui.CommonAssetDefined.instance.getPrefabByName("GUI_OTP"), function(t) {
@@ -925,7 +925,7 @@ this.requestMail();
 };
 e.prototype.onDisable = function() {};
 e.prototype.requestMail = function() {
-var t = this, e = c.LobbyConst.API.GET_LIST_MAIL;
+var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_LIST_MAIL;
 a.MVUtils.post(e, {
 MailType: 2,
 CurrentPage: 1,
@@ -1028,7 +1028,7 @@ cc.sys.isBrowser && this.edbMoneyFreeze.focus();
 e.prototype.getFrozenValue = function() {
 var t = this;
 lngui.UIWaitingLayout.showWaiting();
-var e = c.LobbyConst.API.GET_FROZEB, n = {
+var e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_FROZEB, n = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 token: lngui.UserManager.instance.mainUserInfo.GameToken
 }, o = lngui.Https.packDataForRequest(n);
@@ -1088,7 +1088,7 @@ t.btnAccept.interactable = !0;
 lngui.UIPopupManager.instance.showPopup("Giá trị Coin phải nhỏ hơn hoặc bằng số dư đóng băng của bạn", o);
 } else {
 lngui.UIWaitingLayout.showWaiting();
-var i = c.LobbyConst.API.FROZEB, r = {
+var i = c.LobbyConst.API.URL + c.LobbyConst.API.FROZEB, r = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 amount: e,
 isFrozen: n,
@@ -1123,7 +1123,7 @@ this.btnGetOtpFreezeSafe.interactable = !1;
 this.scheduleOnce(function() {
 t.btnGetOtpFreezeSafe.interactable = !0;
 }, 3);
-var e = c.LobbyConst.API.GET_OTP_SMS;
+var e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_OTP_SMS;
 lngui.Https.get(e, function(t) {
 if (cc.js.isNumber(t)) {
 lngui.UIPopupManager.instance.showPopup("Hệ thống đã gửi mã OTP đến số điện thoại của bạn");
@@ -1232,7 +1232,7 @@ Type: 1,
 SecureCode: e,
 Mobile: 123123
 };
-a.MVUtils.post2(c.LobbyConst.API.REG_MOBILE, n, function(e, n) {
+a.MVUtils.post2(c.LobbyConst.API.URL + c.LobbyConst.API.REG_MOBILE, n, function(e, n) {
 if (e >= 200 && e < 400) {
 lngui.UserManager.instance.mainUserInfo.IsMobileActived = !0;
 lngui.UIPopupManager.instance.showPopup(n);
@@ -1252,7 +1252,7 @@ Type: 2,
 SecureCode: 987654,
 Mobile: 123123
 };
-a.MVUtils.post2(c.LobbyConst.API.REG_MOBILE, e, function(e, n) {
+a.MVUtils.post2(c.LobbyConst.API.URL + c.LobbyConst.API.REG_MOBILE, e, function(e, n) {
 if (e >= 200 && e < 400) {
 lngui.UserManager.instance.mainUserInfo.IsMobileActived = !1;
 lngui.UIPopupManager.instance.showPopup(n);
@@ -1400,7 +1400,7 @@ var n = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 mobile: e
 };
-a.MVUtils.post(c.LobbyConst.API.UPDATE_MOBILE, n, function(e, n) {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.UPDATE_MOBILE, n, function(e, n) {
 if (e >= 200 && e < 400) {
 lngui.UIPopupManager.instance.showPopup("Cập nhật thông tin thành công!");
 lngui.UserManager.instance.mainUserInfo.Mobile = n.Mobile;
@@ -1423,7 +1423,7 @@ Type: parseInt(i),
 SecureCode: o,
 Mobile: this._phoneNumber
 };
-a.MVUtils.post(c.LobbyConst.API.REG_MOBILE, r, function(t, e) {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.REG_MOBILE, r, function(t, e) {
 if (t >= 200 && t < 400) {
 var o = e;
 lngui.UserManager.instance.mainUserInfo.Mobile = o.Mobile;
@@ -1433,7 +1433,7 @@ n.setInfo();
 if (i == c.LobbyConst.SETTING_ID.SMSPLUS_REGISTER_TYPE) {
 lngui.UIPopupManager.instance.showPopup("Đăng ký bảo mật thành công!");
 n.showPanelSMSPlus(c.LobbyConst.SETTING_ID.SMSPLUS_INFO);
-} else i == c.LobbyConst.SETTING_ID.SMSPLUS_DEL_OTP_TYPE && a.MVUtils.post(c.LobbyConst.API.DELETE_MOBILE, {
+} else i == c.LobbyConst.SETTING_ID.SMSPLUS_DEL_OTP_TYPE && a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.DELETE_MOBILE, {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 mobile: lngui.UserManager.instance.mainUserInfo.Mobile
 }, function(t, e) {
@@ -1804,7 +1804,7 @@ sourceId: c.LobbyConst.platform
 }, r = c.getStringBodyByObject({
 token: lngui.UserManager.instance.mainUserInfo.GameToken
 });
-t = c.LobbyConst.API.GIFT_CODE + r + c.LobbyConst.GATE.URL;
+t = c.LobbyConst.API.URL + c.LobbyConst.API.GIFT_CODE + r + c.LobbyConst.GATE.URL;
 var a = cc.loader.getXMLHttpRequest();
 a.onreadystatechange = function() {
 if (4 == a.readyState) {
@@ -1906,8 +1906,8 @@ this.otpType = 1;
 e.prototype.getOTP = function() {
 var t = this;
 this.btnGetOtpSms.interactable = !1;
-var e = c.LobbyConst.API.GET_OTP_SMS;
-3 == this.otpType && (e = c.LobbyConst.API.GET_OTP_TRANFER);
+var e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_OTP_SMS;
+3 == this.otpType && (e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_OTP_TRANFER);
 this.scheduleOnce(function() {
 t.btnGetOtpSms.interactable = !0;
 }, 3);
@@ -1928,7 +1928,7 @@ OtpToken: this.otpToken,
 ServiceId: this.serviceId
 }, o = c.getStringBodyByObject({
 token: lngui.UserManager.instance.mainUserInfo.GameToken
-}), i = c.LobbyConst.API.CHECK_OTP + o;
+}), i = c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP + o;
 lngui.UIWaitingLayout.showWaiting();
 var r = cc.loader.getXMLHttpRequest();
 r.onreadystatechange = function() {
@@ -2202,7 +2202,7 @@ return e;
 e.prototype.onLoad = function() {
 var t = this;
 this.nodeInfoTransfer.active = !1;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANKMANUAL + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANKMANUAL + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 console.log(e);
 e ? t.listBank = e.Data : lngui.UIPopupManager.instance.showPopup("Có lỗi xảy ra");
 });
@@ -2241,7 +2241,7 @@ t.edbAmount.string = a.MVUtils.formatNumber(e);
 };
 e.prototype.onClickConfirm = function() {
 if ("" != this.edbAmount.string) if (a.MVUtils.toInt(this.edbAmount.string) < 1e4) lngui.UIPopupManager.instance.showPopup("Số tiền tối thiểu là 10.000"); else if (a.MVUtils.toInt(this.edbAmount.string) > 3e8) lngui.UIPopupManager.instance.showPopup("Số tiền tối đa là 300,000,000 Coin"); else if (null != this.bank) {
-var t = c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_MANUALBANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, e = {
+var t = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_MANUALBANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, e = {
 os: c.LobbyConst.platform,
 ManualBankId: this.bank,
 Amount: this.edbAmount.string,
@@ -2371,7 +2371,7 @@ return e;
 e.prototype.onLoad = function() {
 var t = this;
 this.nodeInfoTransfer.active = !1;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, function(e) {
+lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, function(e) {
 e ? t.listBank = e : lngui.UIPopupManager.instance.showPopup("Có lỗi xảy ra");
 });
 };
@@ -2411,7 +2411,7 @@ t.edbAmount.string = a.MVUtils.formatNumber(e);
 e.prototype.onClickConfirm = function() {
 var t = this;
 if (null != this.bank) {
-var e = c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_BANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, n = {
+var e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_BANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, n = {
 os: c.LobbyConst.platform,
 amount: 6e4,
 provider: this.bank
@@ -2639,7 +2639,7 @@ this.onClickRefreshCaptcha();
 lngui.UIPopupManager.instance.showPopup("Số tiền tối đa là 10.000.000");
 this.onClickRefreshCaptcha();
 } else {
-var e = c.LobbyConst.API.URL + c.LobbyConst.API.MOMO_REQUEST + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, n = {
+var e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.MOMO_REQUEST + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, n = {
 os: c.LobbyConst.platform,
 amount: this.amount,
 type: "momo"
@@ -2791,10 +2791,10 @@ return e;
 }
 e.prototype.onLoad = function() {
 var t = this;
-0 == this.listProvider.length && lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.CARD_TYPE + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+0 == this.listProvider.length && lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.CARD_TYPE + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 t.listProvider = e.Data;
 });
-0 == this.listCardRate.length && lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.RATE_CARD + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+0 == this.listCardRate.length && lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.RATE_CARD + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 console.log(e.Data[0]);
 console.log(e.Data[0].LstCashInDisplay);
 if (e) {
@@ -2858,7 +2858,7 @@ merchantId: 1,
 sourceId: 1,
 quantity: 1
 };
-a.MVUtils.post(c.LobbyConst.API.MUA_THE, n, function(e, n) {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.MUA_THE, n, function(e, n) {
 if (e >= 200 && e < 400) {
 t.data = n;
 t.pnlOTPVerify.getChildByName("pnlContent").getChildByName("lblCardType").getComponent(cc.Label).string = t.provider;
@@ -2872,7 +2872,7 @@ t.tabCashCard.step1.active = !1;
 };
 e.prototype.onClickVerifyOTP = function() {
 var t = this;
-a.MVUtils.post(c.LobbyConst.API.CHECK_OTP, {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP, {
 Otp: this.edbOTPVerify.string,
 OtpType: 1,
 OtpToken: this.data.OtpToken,
@@ -2958,7 +2958,7 @@ var t = this, e = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID
 };
 lngui.UIWaitingLayout.showWaiting();
-a.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY_ALLGAME, e, function(e, n) {
+a.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY_ALLGAME, e, function(e, n) {
 lngui.UIWaitingLayout.hideWaiting();
 e >= 200 && e < 400 ? t.loadListHistory(n) : console.log("err===>", n);
 });
@@ -3029,7 +3029,7 @@ e.prototype.onLoad = function() {
 this.requestHistory();
 };
 e.prototype.requestHistory = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY_BANKMANUAL + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
+var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY_BANKMANUAL + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
 lngui.Https.get(e, function(e) {
 t.loadListHistory(e.Data);
 });
@@ -3102,7 +3102,7 @@ e.prototype.onLoad = function() {
 this.requestHistory();
 };
 e.prototype.requestHistory = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + "&inOut=1";
+var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + "&inOut=1";
 lngui.Https.get(e, function(e) {
 t.loadListHistory(e);
 });
@@ -3180,7 +3180,7 @@ e.prototype.onLoad = function() {
 this.requestHistory();
 };
 e.prototype.requestHistory = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + "&inOut=2";
+var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + "&inOut=2";
 lngui.Https.get(e, function(e) {
 t.loadListHistory(e);
 });
@@ -3299,7 +3299,7 @@ return e;
 }
 e.prototype.onLoad = function() {
 var t = this;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_OUT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, function(e) {
+lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_OUT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, function(e) {
 e ? t.listBank = e : lngui.UIPopupManager.instance.showPopup("Có lỗi xảy ra");
 });
 };
@@ -3332,7 +3332,7 @@ bankCode: this.bank,
 transferType: 0
 };
 var e = this;
-a.MVUtils.post(c.LobbyConst.API.CAST_OUT, this.data, function(n, o) {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CAST_OUT, this.data, function(n, o) {
 if (200 == n) {
 e.layoutOTP.getChildByName("lblUsername").getComponent(cc.Label).string = t.data.bankAccountName;
 e.layoutOTP.getChildByName("lblReceiveQuay").getComponent(cc.Label).string = a.MVUtils.formatNumber(t.data.transferValue);
@@ -3350,7 +3350,7 @@ t.onClickRefreshCaptcha();
 };
 e.prototype.onClickVerifyOTP = function() {
 var t = this;
-a.MVUtils.post(c.LobbyConst.API.CHECK_OTP, {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP, {
 Otp: this.edbOTPVerify.string,
 OtpType: 1,
 OtpToken: this.data.OtpToken,
@@ -3498,10 +3498,10 @@ return e;
 }
 e.prototype.onLoad = function() {
 var t = this;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.RATE_CARD + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.RATE_CARD + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 t.rateCard = e.Data[0];
 });
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.CARD_TYPE + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.CARD_TYPE + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 if (1 == e.ResponseCode) {
 console.log(e.Data);
 t.listProvider = e.Data;
@@ -3552,7 +3552,7 @@ verify: this._verifyCaptcha,
 os: c.LobbyConst.platform
 };
 cc.log("Body==", JSON.stringify(i));
-var r = c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_CASH_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
+var r = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_CASH_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
 lngui.Https.post(r, i, function(e, n) {
 200 != e && 0 != n.ResponseCode || t.clearInput();
 t.onClickResetCaptcha();
@@ -3642,7 +3642,7 @@ e._verifyCaptcha = "";
 return e;
 }
 e.prototype.onLoad = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.LIST_AGENCY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
+var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_AGENCY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
 a.MVUtils.get(e, {}, function(e, n) {
 e >= 200 && e < 400 && (t.listAgency = n);
 });
@@ -3677,7 +3677,7 @@ captchaToken: this._verifyCaptcha,
 transferType: 0,
 reason: e
 };
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_TRANSFER, this.data, function(e, n) {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_TRANSFER, this.data, function(e, n) {
 if (e >= 200 && e < 400) {
 t.otpLayer.getChildByName("lblUsername").getComponent(cc.Label).string = t.data.nickNameRecv;
 t.otpLayer.getChildByName("lblReceiveQuay").getComponent(cc.Label).string = a.MVUtils.formatNumber(t.data.transferValue);
@@ -3695,7 +3695,7 @@ t.onClickRefreshCaptcha();
 };
 e.prototype.onClickVerifyOTP = function() {
 var t = this;
-a.MVUtils.post(c.LobbyConst.API.CHECK_OTP, {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP, {
 Otp: this.edbOTPVerify.string,
 OtpType: 1,
 OtpToken: this.data.OtpToken,
@@ -3806,7 +3806,7 @@ captcha: this.edbCaptcha.string,
 captchaToken: this.UICaptcha.getComponent(s.default).getCapChaId(),
 gate: c.LobbyConst.GATE.DATA
 };
-a.MVUtils.get(c.LobbyConst.API.UPDATE_DISPLAYNAME, n, function(e, n) {
+a.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.UPDATE_DISPLAYNAME, n, function(e, n) {
 if (e >= 200 && e < 400) {
 lngui.UserManager.instance.mainUserInfo = n;
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_DISPLAYNAME);
@@ -4023,7 +4023,7 @@ bankCode: this.bank,
 transferType: 0
 };
 var e = this;
-a.MVUtils.post(c.LobbyConst.API.CAST_OUT, this.data, function(n, o) {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CAST_OUT, this.data, function(n, o) {
 if (200 == n) {
 e.layoutOTP.getChildByName("lblUsername").getComponent(cc.Label).string = t.data.bankAccountName;
 e.layoutOTP.getChildByName("lblReceiveQuay").getComponent(cc.Label).string = a.MVUtils.formatNumber(t.data.transferValue);
@@ -4037,7 +4037,7 @@ e.data.OtpToken = o.OtpToken;
 };
 e.prototype.onClickVerifyOTP = function() {
 var t = this;
-a.MVUtils.post(c.LobbyConst.API.CHECK_OTP, {
+a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP, {
 Otp: this.edbOTPVerify.string,
 OtpType: 1,
 OtpToken: this.data.OtpToken,
@@ -4150,7 +4150,7 @@ lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this
 lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.UPDATE_VIPPOINT, this.onUpDateVipPoint, this);
 };
 e.prototype.requestMail = function() {
-var t = this, e = c.LobbyConst.API.GET_UNREAD_MAIL;
+var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_UNREAD_MAIL;
 lngui.Https.get(e, function(e) {
 lngui.ZLog.log("requestUnreadMail ===" + JSON.stringify(e));
 if (e) if (e.Count) {
@@ -4686,12 +4686,12 @@ var e = this, n = {
 Type: 2,
 MailID: t
 };
-s.MVUtils.post(c.LobbyConst.API.READ_MAIL, n, function(t, n) {
+s.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.READ_MAIL, n, function(t, n) {
 t >= 200 && t < 400 ? 1 == n.ResponseCode ? e.lbNew.node.active = !1 : lngui.UIPopupManager.instance.showPopup(n.Message) : lngui.UIPopupManager.instance.showPopup(n);
 });
 };
 e.prototype.onBtnXoaMail = function(t, e) {
-s.MVUtils.post(c.LobbyConst.API.DEL_MAIL, {
+s.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.DEL_MAIL, {
 Type: -1,
 MailID: e
 }, function(t, e) {
@@ -5938,7 +5938,7 @@ t.requestAccount(i);
 };
 e.prototype.requestAccount = function() {
 var t = this;
-a.MVUtils.get(c.LobbyConst.API.GET_INFO_ACCOUNT, {}, function(e, n) {
+a.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.GET_INFO_ACCOUNT, {}, function(e, n) {
 lngui.UserManager.instance.mainUserInfo.TotalVipPoint = n.TotalVipPoint;
 lngui.UserManager.instance.mainUserInfo.VipPoint = n.VipPoint;
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_DISPLAYNAME);
@@ -5946,7 +5946,7 @@ t.requestUnreadMail();
 });
 };
 e.prototype.requestUnreadMail = function() {
-var t = c.LobbyConst.API.GET_UNREAD_MAIL;
+var t = c.LobbyConst.API.URL + c.LobbyConst.API.GET_UNREAD_MAIL;
 lngui.Https.get(t, function(t) {
 lngui.ZLog.log("requestUnreadMail ===" + JSON.stringify(t));
 t && t.ResponseCode;
@@ -6036,9 +6036,9 @@ gate: lngui.ConfigManager.instance.ConfigInfo.Gate,
 otp: "",
 Sid: o
 };
-s.MVUtils.postRaw(c.LobbyConst.API.LOGIN, i, function(e, n) {
+s.MVUtils.postRaw(c.LobbyConst.API.URL + c.LobbyConst.API.LOGIN, i, function(e, n) {
 e >= 200 && e < 400 ? n && t.onLoginSuccess(n, function() {
-s.MVUtils.get(c.LobbyConst.API.GET_INFO_ACCOUNT, {}, function(e, n) {
+s.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.GET_INFO_ACCOUNT, {}, function(e, n) {
 lngui.UserManager.instance.mainUserInfo.PassWord = i.Password;
 lngui.UserManager.instance.mainUserInfo.UserName = i.UserName;
 lngui.UserManager.instance.mainUserInfo.TotalVipPoint = n.TotalVipPoint;
@@ -6078,7 +6078,7 @@ var e = t.isChecked;
 lngui.ClientData.setBoolean("SAVE_PASS", e);
 };
 e.prototype.requestUnreadMail = function() {
-var t = c.LobbyConst.API.GET_UNREAD_MAIL;
+var t = c.LobbyConst.API.URL + c.LobbyConst.API.GET_UNREAD_MAIL;
 lngui.Https.get(t, function(t) {
 lngui.ZLog.log("requestUnreadMail ===" + JSON.stringify(t));
 t && t.ResponseCode;
@@ -6920,9 +6920,9 @@ ServiceID: "1",
 gate: lngui.ConfigManager.instance.ConfigInfo.Gate,
 Sid: i
 };
-a.MVUtils.postRaw(c.LobbyConst.API.REGISTRY, r, function(e, n) {
+a.MVUtils.postRaw(c.LobbyConst.API.URL + c.LobbyConst.API.REGISTRY, r, function(e, n) {
 if (e >= 200 && e < 400) t.onLoginSuccess(n, function() {
-lngui.Https.get(c.LobbyConst.API.GET_INFO_ACCOUNT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(t) {
+lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.GET_INFO_ACCOUNT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(t) {
 lngui.UserManager.instance.mainUserInfo.VipPoint = t.VipPoint;
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_DISPLAYNAME);
 lngui.UserManager.instance.mainUserInfo.PassWord = r.password;
