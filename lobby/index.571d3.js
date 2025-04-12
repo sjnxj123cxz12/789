@@ -1804,7 +1804,7 @@ sourceId: c.LobbyConst.platform
 }, r = c.getStringBodyByObject({
 token: lngui.UserManager.instance.mainUserInfo.GameToken
 });
-t = c.LobbyConst.API.URL + c.LobbyConst.API.GIFT_CODE + r + c.LobbyConst.GATE.URL;
+t = c.LobbyConst.API.URL + c.LobbyConst.API.GIFT_CODE + r + c.LobbyConst.URL.Gate;
 var a = cc.loader.getXMLHttpRequest();
 a.onreadystatechange = function() {
 if (4 == a.readyState) {
@@ -2371,7 +2371,7 @@ return e;
 e.prototype.onLoad = function() {
 var t = this;
 this.nodeInfoTransfer.active = !1;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, function(e) {
+lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.URL.Gate, function(e) {
 e ? t.listBank = e : lngui.UIPopupManager.instance.showPopup("Có lỗi xảy ra");
 });
 };
@@ -2411,7 +2411,7 @@ t.edbAmount.string = a.MVUtils.formatNumber(e);
 e.prototype.onClickConfirm = function() {
 var t = this;
 if (null != this.bank) {
-var e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_BANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, n = {
+var e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_BANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.URL.Gate, n = {
 os: c.LobbyConst.platform,
 amount: 6e4,
 provider: this.bank
@@ -3299,7 +3299,7 @@ return e;
 }
 e.prototype.onLoad = function() {
 var t = this;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_OUT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.GATE.URL, function(e) {
+lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_OUT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.URL.Gate, function(e) {
 e ? t.listBank = e : lngui.UIPopupManager.instance.showPopup("Có lỗi xảy ra");
 });
 };
