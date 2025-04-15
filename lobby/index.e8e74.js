@@ -1,27 +1,27 @@
 window.__require = function t(e, n, o) {
-function i(c, a) {
-if (!n[c]) {
-if (!e[c]) {
-var s = c.split("/");
+function i(r, a) {
+if (!n[r]) {
+if (!e[r]) {
+var s = r.split("/");
 s = s[s.length - 1];
 if (!e[s]) {
 var p = "function" == typeof __require && __require;
 if (!a && p) return p(s, !0);
-if (r) return r(s, !0);
-throw new Error("Cannot find module '" + c + "'");
+if (c) return c(s, !0);
+throw new Error("Cannot find module '" + r + "'");
 }
-c = s;
+r = s;
 }
-var l = n[c] = {
+var l = n[r] = {
 exports: {}
 };
-e[c][0].call(l.exports, function(t) {
-return i(e[c][1][t] || t);
+e[r][0].call(l.exports, function(t) {
+return i(e[r][1][t] || t);
 }, l, l.exports, t, e, n, o);
 }
-return n[c].exports;
+return n[r].exports;
 }
-for (var r = "function" == typeof __require && __require, c = 0; c < o.length; c++) i(o[c]);
+for (var c = "function" == typeof __require && __require, r = 0; r < o.length; r++) i(o[r]);
 return i;
 }({
 AutoScroll: [ function(t, e, n) {
@@ -41,15 +41,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -66,10 +66,10 @@ this.pageView.autoScrollSpeed = this.autoScrollSpeed;
 this.pageView.scrollToPage(0, this.autoScrollDuration);
 }
 };
-r([ s(cc.PageView) ], e.prototype, "pageView", void 0);
-r([ s ], e.prototype, "autoScrollDuration", void 0);
-r([ s ], e.prototype, "autoScrollSpeed", void 0);
-return r([ a ], e);
+c([ s(cc.PageView) ], e.prototype, "pageView", void 0);
+c([ s ], e.prototype, "autoScrollDuration", void 0);
+c([ s ], e.prototype, "autoScrollSpeed", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -91,20 +91,20 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = (c.property, function(t) {
+var r = cc._decorator, a = r.ccclass, s = (r.property, function(t) {
 i(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
-return r([ a ], e);
+return c([ a ], e);
 }(lngui.UIPopup));
 n.default = s;
 cc._RF.pop();
@@ -126,33 +126,33 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./utils/Lobby_UINumericLabelHelper"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./utils/Lobby_UINumericLabelHelper"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
-e.gameID = c.GAME_IDS.NONE;
+e.gameID = r.GAME_IDS.NONE;
 e.lbJackpot1 = null;
 e.lbJackpot2 = null;
 e.lbJackpot3 = null;
 return e;
 }
 e.prototype.onEnable = function() {
-lngui.EventDispatch.instance.add(c.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.updateJackpot, this);
+lngui.EventDispatch.instance.add(r.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.updateJackpot, this);
 };
 e.prototype.onDisable = function() {
-lngui.EventDispatch.instance.remove(c.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.updateJackpot, this);
+lngui.EventDispatch.instance.remove(r.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.updateJackpot, this);
 };
 e.prototype.updateJackpot = function() {
 var t, e = this;
-c.LobbyConst.slotByKeys.forEach(function(n, o) {
+r.LobbyConst.slotByKeys.forEach(function(n, o) {
 o != e.gameID || (t = n);
 });
 if (t && 1236 != this.gameID) {
@@ -166,13 +166,13 @@ this.lbJackpot1 && this.lbJackpot1.scheduleProgress(t.TotalBetTai, 2);
 this.lbJackpot3 && this.lbJackpot3.scheduleProgress(t.JackpotFund, 2);
 }
 };
-r([ l({
-type: cc.Enum(c.GAME_IDS)
+c([ l({
+type: cc.Enum(r.GAME_IDS)
 }) ], e.prototype, "gameID", void 0);
-r([ l(a.default) ], e.prototype, "lbJackpot1", void 0);
-r([ l(a.default) ], e.prototype, "lbJackpot2", void 0);
-r([ l(a.default) ], e.prototype, "lbJackpot3", void 0);
-return r([ p ], e);
+c([ l(a.default) ], e.prototype, "lbJackpot1", void 0);
+c([ l(a.default) ], e.prototype, "lbJackpot2", void 0);
+c([ l(a.default) ], e.prototype, "lbJackpot3", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = u;
 cc._RF.pop();
@@ -197,15 +197,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../../LobbyConst"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("../../LobbyConst"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -215,7 +215,7 @@ e.prefabMainNameURL = "";
 e.prgLoadGame = null;
 e.lbMsg = null;
 e.isClicked = !0;
-e.gameID = c.GAME_IDS.NONE;
+e.gameID = r.GAME_IDS.NONE;
 e.isTest = !1;
 e.numOfClick = 10;
 return e;
@@ -229,25 +229,25 @@ if (!cc.Canvas.instance.node.getChildByName(this.prefabMainNameURL)) {
 lngui.UIWindowManager.instance.showWindowFromPrefab(t, function(t) {
 t.node.name = e.prefabMainNameURL;
 });
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.BUNDLEMINI_DOWNLOAD_SUCCESS);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.BUNDLEMINI_DOWNLOAD_SUCCESS);
 }
 };
-r([ p(cc.String) ], e.prototype, "linkUrl", void 0);
-r([ p(cc.String) ], e.prototype, "bundleName", void 0);
-r([ p(cc.String) ], e.prototype, "prefabMainNameURL", void 0);
-r([ p(cc.ProgressBar) ], e.prototype, "prgLoadGame", void 0);
-r([ p(cc.Label) ], e.prototype, "lbMsg", void 0);
-r([ p(cc.Boolean) ], e.prototype, "isClicked", void 0);
-r([ p({
-type: cc.Enum(c.GAME_IDS)
+c([ p(cc.String) ], e.prototype, "linkUrl", void 0);
+c([ p(cc.String) ], e.prototype, "bundleName", void 0);
+c([ p(cc.String) ], e.prototype, "prefabMainNameURL", void 0);
+c([ p(cc.ProgressBar) ], e.prototype, "prgLoadGame", void 0);
+c([ p(cc.Label) ], e.prototype, "lbMsg", void 0);
+c([ p(cc.Boolean) ], e.prototype, "isClicked", void 0);
+c([ p({
+type: cc.Enum(r.GAME_IDS)
 }) ], e.prototype, "gameID", void 0);
-r([ p(cc.Boolean) ], e.prototype, "isTest", void 0);
-r([ p({
+c([ p(cc.Boolean) ], e.prototype, "isTest", void 0);
+c([ p({
 visible: function() {
 return this.isTest;
 }
 }) ], e.prototype, "numOfClick", void 0);
-return r([ s ], e);
+return c([ s ], e);
 }(lngui.BundleDownLoad);
 n.default = l;
 cc._RF.pop();
@@ -271,15 +271,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../../LobbyConst"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("../../LobbyConst"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -289,7 +289,7 @@ e.prefabMainNameURL = "";
 e.prgLoadGame = null;
 e.lbMsg = null;
 e.isClicked = !0;
-e.gameID = c.GAME_IDS.NONE;
+e.gameID = r.GAME_IDS.NONE;
 e.isTest = !1;
 e.numOfClick = 10;
 return e;
@@ -300,22 +300,22 @@ t.prototype.onEnable.call(this);
 e.prototype.onFuturePrefabLoadDone = function(t) {
 lngui.UIScreenManager.instance.pushScreen(t);
 };
-r([ p(cc.String) ], e.prototype, "linkUrl", void 0);
-r([ p(cc.String) ], e.prototype, "bundleName", void 0);
-r([ p(cc.String) ], e.prototype, "prefabMainNameURL", void 0);
-r([ p(cc.ProgressBar) ], e.prototype, "prgLoadGame", void 0);
-r([ p(cc.Label) ], e.prototype, "lbMsg", void 0);
-r([ p(cc.Boolean) ], e.prototype, "isClicked", void 0);
-r([ p({
-type: cc.Enum(c.GAME_IDS)
+c([ p(cc.String) ], e.prototype, "linkUrl", void 0);
+c([ p(cc.String) ], e.prototype, "bundleName", void 0);
+c([ p(cc.String) ], e.prototype, "prefabMainNameURL", void 0);
+c([ p(cc.ProgressBar) ], e.prototype, "prgLoadGame", void 0);
+c([ p(cc.Label) ], e.prototype, "lbMsg", void 0);
+c([ p(cc.Boolean) ], e.prototype, "isClicked", void 0);
+c([ p({
+type: cc.Enum(r.GAME_IDS)
 }) ], e.prototype, "gameID", void 0);
-r([ p(cc.Boolean) ], e.prototype, "isTest", void 0);
-r([ p({
+c([ p(cc.Boolean) ], e.prototype, "isTest", void 0);
+c([ p({
 visible: function() {
 return this.isTest;
 }
 }) ], e.prototype, "numOfClick", void 0);
-return r([ s ], e);
+return c([ s ], e);
 }(lngui.BundleDownLoad);
 n.default = l;
 cc._RF.pop();
@@ -339,15 +339,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -380,8 +380,8 @@ o.capcha.spriteFrame = e;
 };
 n.src = e;
 };
-r([ s(cc.Sprite) ], e.prototype, "capcha", void 0);
-return r([ a ], e);
+c([ s(cc.Sprite) ], e.prototype, "capcha", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -403,15 +403,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = {
+var r = {
 Login: "https://api." + lngui.ConfigManager.instance.ConfigInfo.Api + "/Captcha/Get?length=3&width=90&height=36",
 Telco: ""
 }, a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
@@ -428,8 +428,8 @@ e.prototype.start = function() {
 this.refreshCapcha();
 };
 e.prototype.refreshCapcha = function() {
-var t = c.Login;
-this.isTelco && (t = c.Telco);
+var t = r.Login;
+this.isTelco && (t = r.Telco);
 this.sendGetCaptcha(t);
 };
 e.prototype.getCapChaId = function() {
@@ -464,9 +464,9 @@ o.capcha.spriteFrame = e;
 };
 n.src = e;
 };
-r([ p(cc.Sprite) ], e.prototype, "capcha", void 0);
-r([ p(cc.Boolean) ], e.prototype, "isTelco", void 0);
-return r([ s ], e);
+c([ p(cc.Sprite) ], e.prototype, "capcha", void 0);
+c([ p(cc.Boolean) ], e.prototype, "isTelco", void 0);
+return c([ s ], e);
 }(cc.Component);
 n.default = l;
 cc._RF.pop();
@@ -488,15 +488,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -505,14 +505,7 @@ e.editBox = null;
 e.Type = "";
 return e;
 }
-e.prototype.onLoad = function() {
-this.checkOrientation();
-window.addEventListener("orientationchange", this.checkOrientation.bind(this));
-window.addEventListener("resize", this.checkOrientation.bind(this));
-this.editBox.node.on("editing-did-began", this.onEdbStart, this);
-this.editBox.node.on("text-changed", this.onTextChanged, this);
-this.editBox.node.on("editing-did-ended", this.onEdbDone, this);
-};
+e.prototype.onLoad = function() {};
 e.prototype.checkOrientation = function() {
 var t = 90 === window.orientation || -90 === window.orientation || window.innerWidth > window.innerHeight;
 cc.sys.isBrowser && cc.sys.OS_IOS && cc.sys.isMobile ? this.displayLabel.node.active = !t : this.displayLabel.node.active = !1;
@@ -531,10 +524,10 @@ e.prototype.onDestroy = function() {
 window.removeEventListener("orientationchange", this.checkOrientation.bind(this));
 window.removeEventListener("resize", this.checkOrientation.bind(this));
 };
-r([ s(cc.Label) ], e.prototype, "displayLabel", void 0);
-r([ s(cc.EditBox) ], e.prototype, "editBox", void 0);
-r([ s ], e.prototype, "Type", void 0);
-return r([ a ], e);
+c([ s(cc.Label) ], e.prototype, "displayLabel", void 0);
+c([ s(cc.EditBox) ], e.prototype, "editBox", void 0);
+c([ s ], e.prototype, "Type", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -556,15 +549,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./utils/CapchaZ"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./utils/CapchaZ"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -594,10 +587,10 @@ e.prototype.onGetOTPClicked = function() {
 if (this.ebAccount.string.length < 6) lngui.UIPopupManager.instance.showPopup("Tên đăng nhập không đúng!"); else if (this.ebPhoneNumber.string.length < 10) lngui.UIPopupManager.instance.showPopup("Số điện thoại không đúng!"); else {
 this.btnGetOtp.interactable = !1;
 this.btnGetOtp.node.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(function() {
-c.LobbyConst.timerSMS--;
-if (c.LobbyConst.timerSMS <= 0) {
+r.LobbyConst.timerSMS--;
+if (r.LobbyConst.timerSMS <= 0) {
 this.btnGetOtp.interactable = !0;
-c.LobbyConst.timerSMS = 30;
+r.LobbyConst.timerSMS = 30;
 this.btnGetOtp.node.stopAllActions();
 }
 }, this)).repeatForever());
@@ -605,14 +598,14 @@ lngui.UIWaitingLayout.showWaiting();
 var t = {
 AccountName: this.ebAccount.string,
 Mobile: this.ebPhoneNumber.string
-}, e = c.LobbyConst.API.URL + c.LobbyConst.API.OTP_RESET_PASSWORD, n = this, o = cc.loader.getXMLHttpRequest();
+}, e = r.LobbyConst.API.URL + r.LobbyConst.API.OTP_RESET_PASSWORD, n = this, o = cc.loader.getXMLHttpRequest();
 o.onreadystatechange = function() {
 lngui.UIWaitingLayout.hideWaiting();
 if (4 == o.readyState) if (200 == o.status) {
 var t = JSON.parse(o.responseText);
 cc.log("otppp ====> pass: ", t);
 n.btnGetOtp.interactable = !0;
-c.LobbyConst.timerSMS = 30;
+r.LobbyConst.timerSMS = 30;
 n.btnGetOtp.node.stopAllActions();
 lngui.UIPopupManager.instance.showPopup("OTP đã gửi về số điện thoại của bạn");
 n.onContinueClicked();
@@ -650,7 +643,7 @@ NewPassword: e,
 Otp: t
 };
 cc.log(JSON.stringify(i));
-var r = c.LobbyConst.API.URL + c.LobbyConst.API.RESET_PASSWORD, s = this, p = cc.loader.getXMLHttpRequest();
+var c = r.LobbyConst.API.URL + r.LobbyConst.API.RESET_PASSWORD, s = this, p = cc.loader.getXMLHttpRequest();
 p.onreadystatechange = function() {
 lngui.UIWaitingLayout.hideWaiting();
 if (4 == p.readyState) {
@@ -672,7 +665,7 @@ lngui.UIWaitingLayout.hideWaiting();
 lngui.UIPopupManager.instance.showPopup("Đổi mật khẩu không thành công");
 };
 p.timeout = 3e4;
-p.open("POST", r, !0);
+p.open("POST", c, !0);
 p.setRequestHeader("Content-Type", "application/json");
 p.withCredentials = !0;
 p.send(JSON.stringify(i));
@@ -681,17 +674,17 @@ p.send(JSON.stringify(i));
 e.prototype.onRefreshCaptchaClicked = function() {
 this.UICaptcha.refreshCapcha();
 };
-r([ l(cc.Node) ], e.prototype, "nStep1", void 0);
-r([ l(cc.Node) ], e.prototype, "nStep2", void 0);
-r([ l(cc.EditBox) ], e.prototype, "ebAccount", void 0);
-r([ l(cc.EditBox) ], e.prototype, "ebPhoneNumber", void 0);
-r([ l(cc.Button) ], e.prototype, "btnGetOtp", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbOTP", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ l(a.default) ], e.prototype, "UICaptcha", void 0);
-r([ l(cc.EditBox) ], e.prototype, "txtNewPass", void 0);
-r([ l(cc.EditBox) ], e.prototype, "txtReNewPass", void 0);
-return r([ p ], e);
+c([ l(cc.Node) ], e.prototype, "nStep1", void 0);
+c([ l(cc.Node) ], e.prototype, "nStep2", void 0);
+c([ l(cc.EditBox) ], e.prototype, "ebAccount", void 0);
+c([ l(cc.EditBox) ], e.prototype, "ebPhoneNumber", void 0);
+c([ l(cc.Button) ], e.prototype, "btnGetOtp", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbOTP", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(a.default) ], e.prototype, "UICaptcha", void 0);
+c([ l(cc.EditBox) ], e.prototype, "txtNewPass", void 0);
+c([ l(cc.EditBox) ], e.prototype, "txtReNewPass", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -716,15 +709,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./utils/CapchaZ"), s = t("./MVUtils"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
+var r = t("../LobbyConst"), a = t("./utils/CapchaZ"), s = t("./MVUtils"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -745,21 +738,21 @@ this.UICaptcha.refreshCapcha();
 e.prototype.onChangePass = function() {
 var t = this, e = this.txtOldPass.string, n = this.txtNewPass.string, o = this.txtReNewPass.string, i = this.txtCaptchaChangePass.string;
 if (0 != e.length) if (0 != n.length) if (n === o) if (0 != i.length) {
-var r = {
-sourceId: c.LobbyConst.platform,
+var c = {
+sourceId: r.LobbyConst.platform,
 newPass: window.md5(n),
 oldPass: window.md5(e),
 captchaText: i,
 captchaToken: this.UICaptcha.getCapChaId()
 };
-s.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHANGE_PASS, r, function(e, n) {
+s.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.CHANGE_PASS, c, function(e, n) {
 if (e >= 200 && e < 400) {
 var o = n;
 if (null != o) if (null != o.IsOtp && 1 == o.IsOtp) lngui.UIPopupManager.instance.showPopupFromPrefab(lngui.CommonAssetDefined.instance.getPrefabByName("GUI_OTP"), function(t) {
 t.initData(o.OtpToken, Global.SERVICEID.OTP_SERVICE_CHANGE_PASSWORD);
 }); else {
 var i = [ lngui.PopupAction.make("OK", function() {
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.CHANGE_TAB_UI, 3);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.CHANGE_TAB_UI, 3);
 }), lngui.PopupAction.make("CLOSE", function() {}) ];
 lngui.UIPopupManager.instance.showPopup("Bạn cần đăng ký OTP để thực hiện chức năng này.\nBạn muốn đăng ký OTP không?", i);
 t.clearInput();
@@ -779,14 +772,14 @@ this.txtNewPass.string = "";
 this.txtReNewPass.string = "";
 this.txtCaptchaChangePass.string = "";
 };
-r([ u(a.default) ], e.prototype, "UICaptcha", void 0);
-r([ u(cc.EditBox) ], e.prototype, "txtOldPass", void 0);
-r([ u(cc.EditBox) ], e.prototype, "txtNewPass", void 0);
-r([ u(cc.EditBox) ], e.prototype, "txtReNewPass", void 0);
-r([ u(cc.EditBox) ], e.prototype, "txtCaptchaChangePass", void 0);
-r([ u(cc.Node) ], e.prototype, "nodeStep1", void 0);
-r([ u(cc.Node) ], e.prototype, "nodeStep2", void 0);
-return r([ l ], e);
+c([ u(a.default) ], e.prototype, "UICaptcha", void 0);
+c([ u(cc.EditBox) ], e.prototype, "txtOldPass", void 0);
+c([ u(cc.EditBox) ], e.prototype, "txtNewPass", void 0);
+c([ u(cc.EditBox) ], e.prototype, "txtReNewPass", void 0);
+c([ u(cc.EditBox) ], e.prototype, "txtCaptchaChangePass", void 0);
+c([ u(cc.Node) ], e.prototype, "nodeStep1", void 0);
+c([ u(cc.Node) ], e.prototype, "nodeStep2", void 0);
+return c([ l ], e);
 }(lngui.UIPopup);
 n.default = h;
 cc._RF.pop();
@@ -812,15 +805,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -847,7 +840,7 @@ this.lblLevel.string = lngui.UserManager.instance.mainUserInfo.Level + "";
 this.btnSms.active = !(this.lblPhone.string.length > 0);
 };
 e.prototype.openGuideOTP = function() {
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.CHANGE_TAB_UI, 3);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.CHANGE_TAB_UI, 3);
 };
 e.prototype.onLogoutClicked = function() {
 var t = [ lngui.PopupAction.make("OK", function() {
@@ -858,16 +851,16 @@ lngui.UIPopupManager.instance.showPopup("Bạn có chắc chắn muốn thoát k
 e.prototype.onbtnket = function() {
 lngui.UserManager.instance.mainUserInfo.Mobile ? lngui.UIPopupManager.instance.showPopupFromPrefab(this.PrefabKet) : lngui.UIPopupManager.instance.showPopup("Bạn cần đăng ký bảo mật để tiếp tục");
 };
-r([ l(cc.Label) ], e.prototype, "lblNickname", void 0);
-r([ l(cc.Label) ], e.prototype, "lbCoin", void 0);
-r([ l(cc.Label) ], e.prototype, "lblPhone", void 0);
-r([ l(cc.Label) ], e.prototype, "lblDiemVip", void 0);
-r([ l(cc.Label) ], e.prototype, "lblLevel", void 0);
-r([ l(cc.Sprite) ], e.prototype, "avatar", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "listAvt", void 0);
-r([ l(cc.Node) ], e.prototype, "btnSms", void 0);
-r([ l(cc.Prefab) ], e.prototype, "PrefabKet", void 0);
-return r([ p ], e);
+c([ l(cc.Label) ], e.prototype, "lblNickname", void 0);
+c([ l(cc.Label) ], e.prototype, "lbCoin", void 0);
+c([ l(cc.Label) ], e.prototype, "lblPhone", void 0);
+c([ l(cc.Label) ], e.prototype, "lblDiemVip", void 0);
+c([ l(cc.Label) ], e.prototype, "lblLevel", void 0);
+c([ l(cc.Sprite) ], e.prototype, "avatar", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "listAvt", void 0);
+c([ l(cc.Node) ], e.prototype, "btnSms", void 0);
+c([ l(cc.Prefab) ], e.prototype, "PrefabKet", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -892,15 +885,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -925,7 +918,7 @@ this.requestMail();
 };
 e.prototype.onDisable = function() {};
 e.prototype.requestMail = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_LIST_MAIL;
+var t = this, e = r.LobbyConst.API.URL + r.LobbyConst.API.GET_LIST_MAIL;
 a.MVUtils.post(e, {
 MailType: 2,
 CurrentPage: 1,
@@ -959,10 +952,10 @@ this.mailDetail.active = !1;
 };
 var n;
 e._instance = null;
-r([ l(cc.Prefab) ], e.prototype, "mailTemplate", void 0);
-r([ l(cc.Node) ], e.prototype, "mailList", void 0);
-r([ l(cc.Node) ], e.prototype, "mailDetail", void 0);
-return n = r([ p ], e);
+c([ l(cc.Prefab) ], e.prototype, "mailTemplate", void 0);
+c([ l(cc.Node) ], e.prototype, "mailList", void 0);
+c([ l(cc.Node) ], e.prototype, "mailDetail", void 0);
+return n = c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -987,15 +980,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1028,7 +1021,7 @@ cc.sys.isBrowser && this.edbMoneyFreeze.focus();
 e.prototype.getFrozenValue = function() {
 var t = this;
 lngui.UIWaitingLayout.showWaiting();
-var e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_FROZEB, n = {
+var e = r.LobbyConst.API.URL + r.LobbyConst.API.GET_FROZEB, n = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 token: lngui.UserManager.instance.mainUserInfo.GameToken
 }, o = lngui.Https.packDataForRequest(n);
@@ -1038,10 +1031,10 @@ if (e >= 200 && e < 400) {
 lngui.UIWaitingLayout.hideWaiting();
 var o = JSON.parse(n), i = o.FrozenValue;
 t.frozenVal = i;
-var r = o.Balance;
+var c = o.Balance;
 t.lblFreezeBalance.string = fgui.StringUtils.formatNumber(i);
-t.lblBalance.string = fgui.StringUtils.formatNumber(r);
-lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, r);
+t.lblBalance.string = fgui.StringUtils.formatNumber(c);
+lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, c);
 } else {
 lngui.UIWaitingLayout.hideWaiting();
 lngui.UIPopupManager.instance.showPopup(n);
@@ -1070,43 +1063,43 @@ e.prototype.acceptFreeze = function() {
 var t = this;
 this.btnAccept.interactable = !1;
 if (0 != this.edbMoneyFreeze.string.length) {
-var e = this.toNumber(this.edbMoneyFreeze.string), n = this.cbxFreeze.isChecked ? c.LobbyConst.SETTING_ID.FROZEN : c.LobbyConst.SETTING_ID.UNFROZEN;
+var e = this.toNumber(this.edbMoneyFreeze.string), n = this.cbxFreeze.isChecked ? r.LobbyConst.SETTING_ID.FROZEN : r.LobbyConst.SETTING_ID.UNFROZEN;
 if (e <= 0) {
 var o = [ lngui.PopupAction.make("OK", function() {
 t.btnAccept.interactable = !0;
 }) ];
 lngui.UIPopupManager.instance.showPopup("Giá trị Coin phải lớn hơn 0", o);
-} else if (e > lngui.UserManager.instance.mainUserInfo.Money && n == c.LobbyConst.SETTING_ID.FROZEN) {
+} else if (e > lngui.UserManager.instance.mainUserInfo.Money && n == r.LobbyConst.SETTING_ID.FROZEN) {
 o = [ lngui.PopupAction.make("OK", function() {
 t.btnAccept.interactable = !0;
 }) ];
 lngui.UIPopupManager.instance.showPopup("Giá trị Coin phải nhỏ hơn hoặc bằng số dư của bạn", o);
-} else if (e > this.frozenVal && n == c.LobbyConst.SETTING_ID.UNFROZEN) {
+} else if (e > this.frozenVal && n == r.LobbyConst.SETTING_ID.UNFROZEN) {
 o = [ lngui.PopupAction.make("OK", function() {
 t.btnAccept.interactable = !0;
 }) ];
 lngui.UIPopupManager.instance.showPopup("Giá trị Coin phải nhỏ hơn hoặc bằng số dư đóng băng của bạn", o);
 } else {
 lngui.UIWaitingLayout.showWaiting();
-var i = c.LobbyConst.API.URL + c.LobbyConst.API.FROZEB, r = {
+var i = r.LobbyConst.API.URL + r.LobbyConst.API.FROZEB, c = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 amount: e,
 isFrozen: n,
-sourceId: c.LobbyConst.platform,
+sourceId: r.LobbyConst.platform,
 otp: this.edbOTPSafeStep2.string,
 otpType: 1
 };
-this.executeGETMethod(i, r, function(o, i) {
+this.executeGETMethod(i, c, function(o, i) {
 lngui.UIWaitingLayout.hideWaiting();
 if (i >= 200 && i < 400) {
-var r = JSON.parse(o), a = r.FrozenValue, s = r.Balance;
+var c = JSON.parse(o), a = c.FrozenValue, s = c.Balance;
 t.frozenVal = a;
 lngui.UserManager.instance.mainUserInfo.Money = s;
 t.lblFreezeBalance.string = fgui.StringUtils.formatNumber(a);
 t.lblBalance.string = fgui.StringUtils.formatNumber(s);
 t.edbOTPSafeStep2.string = "";
 t.edbMoneyFreeze.string = "";
-n == c.LobbyConst.SETTING_ID.FROZEN ? lngui.UIPopupManager.instance.showPopup("Bạn đã đóng băng thành công " + e + " Coin") : lngui.UIPopupManager.instance.showPopup("Bạn đã mở băng thành công " + e + " Coin");
+n == r.LobbyConst.SETTING_ID.FROZEN ? lngui.UIPopupManager.instance.showPopup("Bạn đã đóng băng thành công " + e + " Coin") : lngui.UIPopupManager.instance.showPopup("Bạn đã mở băng thành công " + e + " Coin");
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, s);
 } else {
 lngui.UIWaitingLayout.hideWaiting();
@@ -1123,7 +1116,7 @@ this.btnGetOtpFreezeSafe.interactable = !1;
 this.scheduleOnce(function() {
 t.btnGetOtpFreezeSafe.interactable = !0;
 }, 3);
-var e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_OTP_SMS;
+var e = r.LobbyConst.API.URL + r.LobbyConst.API.GET_OTP_SMS;
 lngui.Https.get(e, function(t) {
 if (cc.js.isNumber(t)) {
 lngui.UIPopupManager.instance.showPopup("Hệ thống đã gửi mã OTP đến số điện thoại của bạn");
@@ -1146,7 +1139,7 @@ e = Object.assign(e, {
 token: lngui.UserManager.instance.mainUserInfo.GameToken
 });
 }
-var o = t + c.getStringBodyByObject(e), i = cc.loader.getXMLHttpRequest();
+var o = t + r.getStringBodyByObject(e), i = cc.loader.getXMLHttpRequest();
 i.onreadystatechange = function() {
 4 === i.readyState && (200 == i.status ? n(i.responseText, i.status) : i.responseText.length > 0 ? n(i.responseText, i.status) : n("error_code : " + i.status, null));
 };
@@ -1159,16 +1152,16 @@ i.setRequestHeader("Content-Type", "application/json");
 i.withCredentials = !0;
 i.send();
 };
-r([ l(cc.Node) ], e.prototype, "panelOTPSafe", void 0);
-r([ l(cc.Toggle) ], e.prototype, "cbxFreeze", void 0);
-r([ l(cc.Toggle) ], e.prototype, "cbxOpenFreeze", void 0);
-r([ l(cc.Label) ], e.prototype, "lblBalance", void 0);
-r([ l(cc.Label) ], e.prototype, "lblFreezeBalance", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbMoneyFreeze", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbOTPSafeStep2", void 0);
-r([ l(cc.Button) ], e.prototype, "btnAccept", void 0);
-r([ l(cc.Button) ], e.prototype, "btnGetOtpFreezeSafe", void 0);
-return r([ p ], e);
+c([ l(cc.Node) ], e.prototype, "panelOTPSafe", void 0);
+c([ l(cc.Toggle) ], e.prototype, "cbxFreeze", void 0);
+c([ l(cc.Toggle) ], e.prototype, "cbxOpenFreeze", void 0);
+c([ l(cc.Label) ], e.prototype, "lblBalance", void 0);
+c([ l(cc.Label) ], e.prototype, "lblFreezeBalance", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbMoneyFreeze", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbOTPSafeStep2", void 0);
+c([ l(cc.Button) ], e.prototype, "btnAccept", void 0);
+c([ l(cc.Button) ], e.prototype, "btnGetOtpFreezeSafe", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -1193,15 +1186,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1232,7 +1225,7 @@ Type: 1,
 SecureCode: e,
 Mobile: 123123
 };
-a.MVUtils.post2(c.LobbyConst.API.URL + c.LobbyConst.API.REG_MOBILE, n, function(e, n) {
+a.MVUtils.post2(r.LobbyConst.API.URL + r.LobbyConst.API.REG_MOBILE, n, function(e, n) {
 if (e >= 200 && e < 400) {
 lngui.UserManager.instance.mainUserInfo.IsMobileActived = !0;
 lngui.UIPopupManager.instance.showPopup(n);
@@ -1252,7 +1245,7 @@ Type: 2,
 SecureCode: 987654,
 Mobile: 123123
 };
-a.MVUtils.post2(c.LobbyConst.API.URL + c.LobbyConst.API.REG_MOBILE, e, function(e, n) {
+a.MVUtils.post2(r.LobbyConst.API.URL + r.LobbyConst.API.REG_MOBILE, e, function(e, n) {
 if (e >= 200 && e < 400) {
 lngui.UserManager.instance.mainUserInfo.IsMobileActived = !1;
 lngui.UIPopupManager.instance.showPopup(n);
@@ -1269,11 +1262,11 @@ this.NodeFAQ.active = !0;
 e.prototype.btnhidefaq = function() {
 this.NodeFAQ.active = !0;
 };
-r([ l(cc.Node) ], e.prototype, "NodeFAQ", void 0);
-r([ l(cc.Node) ], e.prototype, "NodeRegOtp", void 0);
-r([ l(cc.Node) ], e.prototype, "NodeOtpActive", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbOtp", void 0);
-return r([ p ], e);
+c([ l(cc.Node) ], e.prototype, "NodeFAQ", void 0);
+c([ l(cc.Node) ], e.prototype, "NodeRegOtp", void 0);
+c([ l(cc.Node) ], e.prototype, "NodeOtpActive", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbOtp", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -1298,15 +1291,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1335,12 +1328,12 @@ e.prototype.setInfo = function() {
 this.g_isOTP = lngui.UserManager.instance.mainUserInfo.IsMobileActived;
 this._phoneNumber = lngui.UserManager.instance.mainUserInfo.Mobile || 0;
 this.lblPhoneSMSPlus.string = this._phoneNumber;
-this.g_isOTP ? this.showPanelSMSPlus(c.LobbyConst.SETTING_ID.SMSPLUS_INFO) : this._phoneNumber && this._phoneNumber.length > 0 ? this.showPanelSMSPlus(c.LobbyConst.SETTING_ID.SMSPLUS_REGISTER) : this.showPanelSMSPlus(c.LobbyConst.SETTING_ID.SMSPLUS_INFO);
+this.g_isOTP ? this.showPanelSMSPlus(r.LobbyConst.SETTING_ID.SMSPLUS_INFO) : this._phoneNumber && this._phoneNumber.length > 0 ? this.showPanelSMSPlus(r.LobbyConst.SETTING_ID.SMSPLUS_REGISTER) : this.showPanelSMSPlus(r.LobbyConst.SETTING_ID.SMSPLUS_INFO);
 };
 e.prototype.showPanelSMSPlus = function(t) {
 this.panelRegisterSMSPlus.active = !1;
 this.edbOTPRegisterAndDel.string = "";
-if (t == c.LobbyConst.SETTING_ID.SMSPLUS_DEL_PHONE) {
+if (t == r.LobbyConst.SETTING_ID.SMSPLUS_DEL_PHONE) {
 this.panelRegisterSMSPlus.active = !0;
 this.lblTitleSMSPlus.string = "HỦY SỐ ĐIỆN THOẠI";
 this.btnGetOtpDeletePhone.node.active = !0;
@@ -1352,7 +1345,7 @@ this.btnBack.node.active = !0;
 this.btnDeleteMobile.node.active = !0;
 this.btnRegisterSMSPlus.node.active = !1;
 this.btnRegisterSMSPlus.getComponent(cc.Button).clickEvents[0].customEventData = "3";
-} else if (t == c.LobbyConst.SETTING_ID.SMSPLUS_REGISTER) {
+} else if (t == r.LobbyConst.SETTING_ID.SMSPLUS_REGISTER) {
 this.panelRegisterSMSPlus.active = !0;
 this.lblTitleSMSPlus.string = "ĐĂNG KÝ BẢO MẬT OTP";
 this.btnRemovePhoneSMSPlus.node.active = !1;
@@ -1363,7 +1356,7 @@ this.edbPhoneSMSPlus.node.active = !1;
 this.btnBack.node.active = !1;
 this.btnDeleteMobile.node.active = !1;
 this.btnRegisterSMSPlus.node.active = !0;
-} else if (t == c.LobbyConst.SETTING_ID.SMSPLUS_INFO) {
+} else if (t == r.LobbyConst.SETTING_ID.SMSPLUS_INFO) {
 this.btnBack.node.active = !1;
 this.btnDeleteMobile.node.active = !1;
 if (this.g_isOTP) {
@@ -1400,7 +1393,7 @@ var n = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 mobile: e
 };
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.UPDATE_MOBILE, n, function(e, n) {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.UPDATE_MOBILE, n, function(e, n) {
 if (e >= 200 && e < 400) {
 lngui.UIPopupManager.instance.showPopup("Cập nhật thông tin thành công!");
 lngui.UserManager.instance.mainUserInfo.Mobile = n.Mobile;
@@ -1416,24 +1409,24 @@ var n = this;
 console.log(e);
 var o = this.edbOTPRegisterAndDel.string, i = e;
 if (0 != o.length) {
-var r = {
+var c = {
 AccountName: lngui.UserManager.instance.mainUserInfo.UserName,
 AccountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 Type: parseInt(i),
 SecureCode: o,
 Mobile: this._phoneNumber
 };
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.REG_MOBILE, r, function(t, e) {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.REG_MOBILE, c, function(t, e) {
 if (t >= 200 && t < 400) {
 var o = e;
 lngui.UserManager.instance.mainUserInfo.Mobile = o.Mobile;
 lngui.UserManager.instance.mainUserInfo.IsMobileActived = o.IsMobileActived;
 lngui.UserManager.instance.mainUserInfo.IsOtp = o.IsOTP;
 n.setInfo();
-if (i == c.LobbyConst.SETTING_ID.SMSPLUS_REGISTER_TYPE) {
+if (i == r.LobbyConst.SETTING_ID.SMSPLUS_REGISTER_TYPE) {
 lngui.UIPopupManager.instance.showPopup("Đăng ký bảo mật thành công!");
-n.showPanelSMSPlus(c.LobbyConst.SETTING_ID.SMSPLUS_INFO);
-} else i == c.LobbyConst.SETTING_ID.SMSPLUS_DEL_OTP_TYPE && a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.DELETE_MOBILE, {
+n.showPanelSMSPlus(r.LobbyConst.SETTING_ID.SMSPLUS_INFO);
+} else i == r.LobbyConst.SETTING_ID.SMSPLUS_DEL_OTP_TYPE && a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.DELETE_MOBILE, {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
 mobile: lngui.UserManager.instance.mainUserInfo.Mobile
 }, function(t, e) {
@@ -1450,22 +1443,22 @@ lngui.UIPopupManager.instance.showPopup("Hủy số điện thoại thành công
 };
 e.prototype.touchGetOtpRegisterPhone = function() {};
 e.prototype.onShowPanelRemovePhone = function() {
-this.showPanelSMSPlus(c.LobbyConst.SETTING_ID.SMSPLUS_DEL_PHONE);
+this.showPanelSMSPlus(r.LobbyConst.SETTING_ID.SMSPLUS_DEL_PHONE);
 };
-r([ l(cc.Label) ], e.prototype, "lblPhoneSMSPlus", void 0);
-r([ l(cc.Label) ], e.prototype, "lblAccount", void 0);
-r([ l(cc.Label) ], e.prototype, "lblTitleSMSPlus", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbPhoneSMSPlus", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbOTPRegisterAndDel", void 0);
-r([ l(cc.Node) ], e.prototype, "panelRegisterSMSPlus", void 0);
-r([ l(cc.Button) ], e.prototype, "btnGetOtpDeletePhone", void 0);
-r([ l(cc.Button) ], e.prototype, "btnGetOtpRegisterPhone", void 0);
-r([ l(cc.Button) ], e.prototype, "btnRegisterSMSPlus", void 0);
-r([ l(cc.Button) ], e.prototype, "btnRemovePhoneSMSPlus", void 0);
-r([ l(cc.Button) ], e.prototype, "btnUpdatePhoneSMSPlus", void 0);
-r([ l(cc.Button) ], e.prototype, "btnBack", void 0);
-r([ l(cc.Button) ], e.prototype, "btnDeleteMobile", void 0);
-return r([ p ], e);
+c([ l(cc.Label) ], e.prototype, "lblPhoneSMSPlus", void 0);
+c([ l(cc.Label) ], e.prototype, "lblAccount", void 0);
+c([ l(cc.Label) ], e.prototype, "lblTitleSMSPlus", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbPhoneSMSPlus", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbOTPRegisterAndDel", void 0);
+c([ l(cc.Node) ], e.prototype, "panelRegisterSMSPlus", void 0);
+c([ l(cc.Button) ], e.prototype, "btnGetOtpDeletePhone", void 0);
+c([ l(cc.Button) ], e.prototype, "btnGetOtpRegisterPhone", void 0);
+c([ l(cc.Button) ], e.prototype, "btnRegisterSMSPlus", void 0);
+c([ l(cc.Button) ], e.prototype, "btnRemovePhoneSMSPlus", void 0);
+c([ l(cc.Button) ], e.prototype, "btnUpdatePhoneSMSPlus", void 0);
+c([ l(cc.Button) ], e.prototype, "btnBack", void 0);
+c([ l(cc.Button) ], e.prototype, "btnDeleteMobile", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -1490,19 +1483,19 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c, a, s = t("./ItemGiftBigBang"), p = t("./ItemRankBigBang"), l = t("./MVUtils"), u = cc._decorator, h = u.ccclass, f = u.property;
+var r, a, s = t("./ItemGiftBigBang"), p = t("./ItemRankBigBang"), l = t("./MVUtils"), u = cc._decorator, h = u.ccclass, f = u.property;
 (function(t) {
 t[t.DAY = 0] = "DAY";
 t[t.FINAL = 1] = "FINAL";
-})(c || (c = {}));
+})(r || (r = {}));
 (function(t) {
 t[t.RANK = 0] = "RANK";
 t[t.GIFT = 1] = "GIFT";
@@ -1558,16 +1551,16 @@ this.dropDay.node.height = 40 * t.getDate();
 this.dropDay.node.y = 0 - this.dropDay.node.height / 2 - 25;
 }
 for (var e = t.getDate(); e >= 1; e--) {
-var n = e < 10 ? "0" + e : e, o = t.getMonth() + 1 < 10 ? "0" + (t.getMonth() + 1) : t.getMonth() + 1, i = t.getFullYear(), r = "" + i + o + n, c = cc.instantiate(this.itemTempleDate);
-c.active = !0;
-c.dataDate = r;
-c.parent = this.dropDay.content;
-c.getComponentInChildren(cc.Label).string = n + "/" + o + "/" + i;
+var n = e < 10 ? "0" + e : e, o = t.getMonth() + 1 < 10 ? "0" + (t.getMonth() + 1) : t.getMonth() + 1, i = t.getFullYear(), c = "" + i + o + n, r = cc.instantiate(this.itemTempleDate);
+r.active = !0;
+r.dataDate = c;
+r.parent = this.dropDay.content;
+r.getComponentInChildren(cc.Label).string = n + "/" + o + "/" + i;
 var a = new cc.Component.EventHandler();
 a.target = this.node;
 a.component = "GUIEventBigBang";
 a.handler = "onClickSelectDate";
-c.getComponent(cc.Button).clickEvents = [ a ];
+r.getComponent(cc.Button).clickEvents = [ a ];
 }
 };
 e.prototype.onClickSelectDate = function(t) {
@@ -1577,8 +1570,8 @@ token: lngui.UserManager.instance.mainUserInfo.GameToken,
 recallCode: e
 };
 this.reloadListRank(n, o);
-var i = e.slice(0, 4), r = e.slice(4, 6), c = e.slice(6, 8);
-new Date().getDate() == parseInt(c) ? this.lb_date.string = "Hôm nay" : this.lb_date.string = c + "/" + r + "/" + i;
+var i = e.slice(0, 4), c = e.slice(4, 6), r = e.slice(6, 8);
+new Date().getDate() == parseInt(r) ? this.lb_date.string = "Hôm nay" : this.lb_date.string = r + "/" + c + "/" + i;
 this.dropDay.node.active = !1;
 };
 e.prototype.onClickDropDate = function() {
@@ -1630,16 +1623,16 @@ n.List && t.loadListGift(n.List);
 });
 } else this.listView[2].node.active = !0;
 };
-r([ f(cc.Node) ], e.prototype, "itemTempleRank", void 0);
-r([ f(cc.Node) ], e.prototype, "itemTempleGift", void 0);
-r([ f(cc.Node) ], e.prototype, "itemTempleDate", void 0);
-r([ f([ cc.ScrollView ]) ], e.prototype, "listView", void 0);
-r([ f([ cc.Toggle ]) ], e.prototype, "ls_btn_tab_top", void 0);
-r([ f([ cc.Toggle ]) ], e.prototype, "ls_btn_tab_left", void 0);
-r([ f(cc.RichText) ], e.prototype, "lb_me", void 0);
-r([ f(cc.ScrollView) ], e.prototype, "dropDay", void 0);
-r([ f(cc.Label) ], e.prototype, "lb_date", void 0);
-return r([ h ], e);
+c([ f(cc.Node) ], e.prototype, "itemTempleRank", void 0);
+c([ f(cc.Node) ], e.prototype, "itemTempleGift", void 0);
+c([ f(cc.Node) ], e.prototype, "itemTempleDate", void 0);
+c([ f([ cc.ScrollView ]) ], e.prototype, "listView", void 0);
+c([ f([ cc.Toggle ]) ], e.prototype, "ls_btn_tab_top", void 0);
+c([ f([ cc.Toggle ]) ], e.prototype, "ls_btn_tab_left", void 0);
+c([ f(cc.RichText) ], e.prototype, "lb_me", void 0);
+c([ f(cc.ScrollView) ], e.prototype, "dropDay", void 0);
+c([ f(cc.Label) ], e.prototype, "lb_date", void 0);
+return c([ h ], e);
 }(lngui.UIPopup);
 n.default = d;
 cc._RF.pop();
@@ -1665,15 +1658,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./ItemNapX3"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("./ItemNapX3"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1696,7 +1689,7 @@ e.prototype.parseData = function(t) {
 console.log("-=-=parseData ", t);
 if (1 == t.ResponseCode) {
 for (var e = 0; e < t.List.length; e++) {
-var n = cc.instantiate(this.template).getComponent(c.default);
+var n = cc.instantiate(this.template).getComponent(r.default);
 n.node.active = !0;
 n.updateInfo(t.List[e]);
 n.node.parent = this.listView.content;
@@ -1719,12 +1712,12 @@ this.node_rule.active = !0;
 } else n.active = !1;
 }
 };
-r([ l(cc.Node) ], e.prototype, "template", void 0);
-r([ l(cc.ScrollView) ], e.prototype, "listView", void 0);
-r([ l(cc.Node) ], e.prototype, "node_progress", void 0);
-r([ l(cc.Node) ], e.prototype, "node_rule", void 0);
-r([ l([ cc.Node ]) ], e.prototype, "ls_btn_tab", void 0);
-return r([ p ], e);
+c([ l(cc.Node) ], e.prototype, "template", void 0);
+c([ l(cc.ScrollView) ], e.prototype, "listView", void 0);
+c([ l(cc.Node) ], e.prototype, "node_progress", void 0);
+c([ l(cc.Node) ], e.prototype, "node_rule", void 0);
+c([ l([ cc.Node ]) ], e.prototype, "ls_btn_tab", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -1749,15 +1742,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./utils/CapchaZ"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./utils/CapchaZ"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1770,14 +1763,14 @@ return e;
 }
 e.prototype.initData = function(t, e) {
 void 0 === e && (e = null);
-this._codeType = c.LobbyConst.SETTING_ID.GIFT_CODE;
+this._codeType = r.LobbyConst.SETTING_ID.GIFT_CODE;
 null != t && (this._codeType = t);
 null != e && (this._uiid = e);
 this.init();
 };
 e.prototype.init = function() {
 var t = "";
-this._codeType == c.LobbyConst.SETTING_ID.GIFT_CODE && (t = c.LobbyConst.StringDefine.INPUT_GIFT_CODE);
+this._codeType == r.LobbyConst.SETTING_ID.GIFT_CODE && (t = r.LobbyConst.StringDefine.INPUT_GIFT_CODE);
 this.txtGiftCode.placeholder = t;
 this.onRefreshCaptchaClicked();
 };
@@ -1788,7 +1781,7 @@ e.prototype.touchBtnGiftcode = function() {
 var t, e = this, n = this.txtGiftCode.string;
 n = n.replace(" ", "");
 var o = this.txtCaptcha.string;
-if (n.length <= 0) this._codeType == c.LobbyConst.SETTING_ID.GIFT_CODE ? lngui.UIPopupManager.instance.showPopup(c.LobbyConst.StringDefine.INPUT_GIFT_CODE) : this._codeType == c.LobbyConst.SETTING_ID.VIP_CODE ? lngui.UIPopupManager.instance.showPopup(c.LobbyConst.StringDefine.INPUT_VIP_CODE) : this._codeType == c.LobbyConst.SETTING_ID.OTP && lngui.UIPopupManager.instance.showPopup(c.LobbyConst.StringDefine.INPUT_OTP); else if (o.length <= 0) lngui.UIPopupManager.instance.showPopup("Bạn chưa nhập mã xác nhận!"); else {
+if (n.length <= 0) this._codeType == r.LobbyConst.SETTING_ID.GIFT_CODE ? lngui.UIPopupManager.instance.showPopup(r.LobbyConst.StringDefine.INPUT_GIFT_CODE) : this._codeType == r.LobbyConst.SETTING_ID.VIP_CODE ? lngui.UIPopupManager.instance.showPopup(r.LobbyConst.StringDefine.INPUT_VIP_CODE) : this._codeType == r.LobbyConst.SETTING_ID.OTP && lngui.UIPopupManager.instance.showPopup(r.LobbyConst.StringDefine.INPUT_OTP); else if (o.length <= 0) lngui.UIPopupManager.instance.showPopup("Bạn chưa nhập mã xác nhận!"); else {
 lngui.UIWaitingLayout.showWaiting();
 var i = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID,
@@ -1798,21 +1791,21 @@ giftcode: n,
 captcha: o,
 verifyCaptcha: this.UICaptcha.getCapChaId(),
 uiid: this._uiid,
-merchantKey: c.LobbyConst.MERCHANT_GIFTCODE.KEY,
-merchantId: c.LobbyConst.MERCHANT_GIFTCODE.ID,
-sourceId: c.LobbyConst.platform
-}, r = c.getStringBodyByObject({
+merchantKey: r.LobbyConst.MERCHANT_GIFTCODE.KEY,
+merchantId: r.LobbyConst.MERCHANT_GIFTCODE.ID,
+sourceId: r.LobbyConst.platform
+}, c = r.getStringBodyByObject({
 token: lngui.UserManager.instance.mainUserInfo.GameToken
 });
-t = c.LobbyConst.API.URL + c.LobbyConst.API.GIFT_CODE + r + c.LobbyConst.URL.Gate;
+t = r.LobbyConst.API.URL + r.LobbyConst.API.GIFT_CODE + c + r.LobbyConst.URL.Gate;
 var a = cc.loader.getXMLHttpRequest();
 a.onreadystatechange = function() {
 if (4 == a.readyState) {
 lngui.UIWaitingLayout.hideWaiting();
-if (200 == a.status) e._codeType == c.LobbyConst.SETTING_ID.GIFT_CODE && e.onCheckGiftCode(a.responseText); else if (400 == a.status) {
+if (200 == a.status) e._codeType == r.LobbyConst.SETTING_ID.GIFT_CODE && e.onCheckGiftCode(a.responseText); else if (400 == a.status) {
 lngui.UIPopupManager.instance.showPopup(a.responseText);
 e.onRefreshCaptchaClicked();
-} else if (e._codeType == c.LobbyConst.SETTING_ID.GIFT_CODE) {
+} else if (e._codeType == r.LobbyConst.SETTING_ID.GIFT_CODE) {
 lngui.UIPopupManager.instance.showPopup("Nhập GiftCode không thành công.\nVui lòng thử lại.");
 e.onRefreshCaptchaClicked();
 }
@@ -1820,11 +1813,11 @@ e.onRefreshCaptchaClicked();
 };
 a.ontimeout = function() {
 lngui.UIWaitingLayout.hideWaiting();
-lngui.UIPopupManager.instance.showPopup(c.LobbyConst.StringDefine.STR_NETWORK_ERROR);
+lngui.UIPopupManager.instance.showPopup(r.LobbyConst.StringDefine.STR_NETWORK_ERROR);
 };
 a.onerror = function() {
 lngui.UIWaitingLayout.hideWaiting();
-lngui.UIPopupManager.instance.showPopup(c.LobbyConst.StringDefine.STR_NETWORK_ERROR);
+lngui.UIPopupManager.instance.showPopup(r.LobbyConst.StringDefine.STR_NETWORK_ERROR);
 };
 a.timeout = 3e4;
 a.open("POST", t, !0);
@@ -1847,11 +1840,11 @@ lngui.UIPopupManager.instance.showPopup(n, o);
 e.prototype.onRefreshCaptchaClicked = function() {
 this.UICaptcha.refreshCapcha();
 };
-r([ l(a.default) ], e.prototype, "UICaptcha", void 0);
-r([ l(cc.EditBox) ], e.prototype, "txtGiftCode", void 0);
-r([ l(cc.EditBox) ], e.prototype, "txtCaptcha", void 0);
-r([ l(cc.Sprite) ], e.prototype, "imgCaptcha", void 0);
-return r([ p ], e);
+c([ l(a.default) ], e.prototype, "UICaptcha", void 0);
+c([ l(cc.EditBox) ], e.prototype, "txtGiftCode", void 0);
+c([ l(cc.EditBox) ], e.prototype, "txtCaptcha", void 0);
+c([ l(cc.Sprite) ], e.prototype, "imgCaptcha", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = u;
 cc._RF.pop();
@@ -1876,15 +1869,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("../LobbyConst"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1906,8 +1899,8 @@ this.otpType = 1;
 e.prototype.getOTP = function() {
 var t = this;
 this.btnGetOtpSms.interactable = !1;
-var e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_OTP_SMS;
-3 == this.otpType && (e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_OTP_TRANFER);
+var e = r.LobbyConst.API.URL + r.LobbyConst.API.GET_OTP_SMS;
+3 == this.otpType && (e = r.LobbyConst.API.URL + r.LobbyConst.API.GET_OTP_TRANFER);
 this.scheduleOnce(function() {
 t.btnGetOtpSms.interactable = !0;
 }, 3);
@@ -1926,38 +1919,38 @@ Otp: e,
 OtpType: this.otpType,
 OtpToken: this.otpToken,
 ServiceId: this.serviceId
-}, o = c.getStringBodyByObject({
+}, o = r.getStringBodyByObject({
 token: lngui.UserManager.instance.mainUserInfo.GameToken
-}), i = c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP + o;
+}), i = r.LobbyConst.API.URL + r.LobbyConst.API.CHECK_OTP + o;
 lngui.UIWaitingLayout.showWaiting();
-var r = cc.loader.getXMLHttpRequest();
-r.onreadystatechange = function() {
-if (4 == r.readyState) {
+var c = cc.loader.getXMLHttpRequest();
+c.onreadystatechange = function() {
+if (4 == c.readyState) {
 lngui.UIWaitingLayout.hideWaiting();
-if (200 == r.status) {
-lngui.UIPopupManager.instance.showPopup(r.responseText);
+if (200 == c.status) {
+lngui.UIPopupManager.instance.showPopup(c.responseText);
 t.hide();
-} else r.responseText.length > 0 ? lngui.UIPopupManager.instance.showPopup(r.responseText) : lngui.UIPopupManager.instance.showPopup("Kiểm tra OTP không thành công, Vui lòng thử lại!");
+} else c.responseText.length > 0 ? lngui.UIPopupManager.instance.showPopup(c.responseText) : lngui.UIPopupManager.instance.showPopup("Kiểm tra OTP không thành công, Vui lòng thử lại!");
 }
 };
-r.ontimeout = function() {
+c.ontimeout = function() {
 lngui.UIPopupManager.instance.showPopup("Kiểm tra OTP không thành công, kiểm tra kết nối internet của bạn!");
 lngui.UIWaitingLayout.hideWaiting();
 };
-r.onerror = function() {
+c.onerror = function() {
 lngui.UIPopupManager.instance.showPopup("Kiểm tra OTP không thành công. Vui lòng thử lại!");
 lngui.UIWaitingLayout.hideWaiting();
 };
-r.timeout = 3e4;
-r.open("POST", i, !0);
-r.setRequestHeader("Content-Type", "application/json");
-r.withCredentials = !0;
-r.send(JSON.stringify(n));
+c.timeout = 3e4;
+c.open("POST", i, !0);
+c.setRequestHeader("Content-Type", "application/json");
+c.withCredentials = !0;
+c.send(JSON.stringify(n));
 } else lngui.UIPopupManager.instance.showPopup("Bạn chưa nhập mã OTP");
 };
-r([ p(cc.EditBox) ], e.prototype, "txtOTP", void 0);
-r([ p(cc.Button) ], e.prototype, "btnGetOtpSms", void 0);
-return r([ s ], e);
+c([ p(cc.EditBox) ], e.prototype, "txtOTP", void 0);
+c([ p(cc.Button) ], e.prototype, "btnGetOtpSms", void 0);
+return c([ s ], e);
 }(lngui.UIPopup);
 n.default = l;
 cc._RF.pop();
@@ -1981,15 +1974,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -2008,9 +2001,9 @@ var t = lngui.ClientData.getNumber("music", 1), e = lngui.ClientData.getNumber("
 0 == t ? this.cbMusic.uncheck() : this.cbMusic.check();
 0 == e ? this.cbSound.uncheck() : this.cbSound.check();
 };
-r([ s(cc.Toggle) ], e.prototype, "cbSound", void 0);
-r([ s(cc.Toggle) ], e.prototype, "cbMusic", void 0);
-return r([ a ], e);
+c([ s(cc.Toggle) ], e.prototype, "cbSound", void 0);
+c([ s(cc.Toggle) ], e.prototype, "cbMusic", void 0);
+return c([ a ], e);
 }(lngui.UIPopup);
 n.default = p;
 cc._RF.pop();
@@ -2032,15 +2025,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./game_icon/BundleMiniGame"), s = t("./game_icon/BundleSceneGame"), p = t("./ItemTopJackpotCtrl"), l = t("./utils/Lobby_UITableView"), u = cc._decorator, h = u.ccclass, f = u.property, d = function(t) {
+var r = t("../LobbyConst"), a = t("./game_icon/BundleMiniGame"), s = t("./game_icon/BundleSceneGame"), p = t("./ItemTopJackpotCtrl"), l = t("./utils/Lobby_UITableView"), u = cc._decorator, h = u.ccclass, f = u.property, d = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -2054,10 +2047,10 @@ e.prototype.numberOfCellsInTableView = function() {
 return this._data.length || 0;
 };
 e.prototype.tableCellAtIndex = function(t, e) {
-var n = t.dequeueCell(), o = n.getComponent(p.default), i = this._data[e], r = this._dataOld.get(e);
-r = r || 0;
-o.lbJackpot.data = r;
-o.lbJackpot.setString(lngui.StringUtils.formatNumber(r));
+var n = t.dequeueCell(), o = n.getComponent(p.default), i = this._data[e], c = this._dataOld.get(e);
+c = c || 0;
+o.lbJackpot.data = c;
+o.lbJackpot.setString(lngui.StringUtils.formatNumber(c));
 this._dataOld.set(e, this._data[e].jackpot);
 o.setData(i.gameID, this._data[e].jackpot);
 return n;
@@ -2071,14 +2064,14 @@ this.tbvJackpot.scrollToTop(!1);
 };
 e.prototype.onEnable = function() {
 this.tbvJackpot.dataSource = this;
-lngui.EventDispatch.instance.add(c.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.onUpdateListJackpot, this);
-lngui.EventDispatch.instance.add(c.LobbyConst.EVENT_NAME.BUNDLE_DOWNLOAD_FROM_ITEM_JACKPOT, this.onDownloadGameFromItem, this);
+lngui.EventDispatch.instance.add(r.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.onUpdateListJackpot, this);
+lngui.EventDispatch.instance.add(r.LobbyConst.EVENT_NAME.BUNDLE_DOWNLOAD_FROM_ITEM_JACKPOT, this.onDownloadGameFromItem, this);
 this.node.on(lngui.ControlEvent.TabbarItemSelected, this.onTabbarSelected, this);
 this.onUpdateListJackpot();
 };
 e.prototype.onDisable = function() {
-lngui.EventDispatch.instance.remove(c.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.onUpdateListJackpot, this);
-lngui.EventDispatch.instance.remove(c.LobbyConst.EVENT_NAME.BUNDLE_DOWNLOAD_FROM_ITEM_JACKPOT, this.onDownloadGameFromItem, this);
+lngui.EventDispatch.instance.remove(r.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.onUpdateListJackpot, this);
+lngui.EventDispatch.instance.remove(r.LobbyConst.EVENT_NAME.BUNDLE_DOWNLOAD_FROM_ITEM_JACKPOT, this.onDownloadGameFromItem, this);
 this.node.off(lngui.ControlEvent.TabbarItemSelected, this.onTabbarSelected, this);
 };
 e.prototype.onDownloadGameFromItem = function(t) {
@@ -2093,7 +2086,7 @@ e.getComponent(s.default) && e.getComponent(s.default)._onClicked();
 });
 };
 e.prototype.refreshData = function() {
-var t = c.LobbyConst.slotByKeys;
+var t = r.LobbyConst.slotByKeys;
 this._data = [];
 var e = [], n = Math.max(this.node.getComponent("UITabbarController").curSelectedIndex, 0);
 t.forEach(function(t, o) {
@@ -2110,9 +2103,9 @@ e.prototype.onUpdateListJackpot = function() {
 this.refreshData();
 this.tbvJackpot.reloadData();
 };
-r([ f(l.default) ], e.prototype, "tbvJackpot", void 0);
-r([ f(cc.Node) ], e.prototype, "listIconDownLoad", void 0);
-return r([ h ], e);
+c([ f(l.default) ], e.prototype, "tbvJackpot", void 0);
+c([ f(cc.Node) ], e.prototype, "listIconDownLoad", void 0);
+return c([ h ], e);
 }(cc.Component);
 n.default = d;
 cc._RF.pop();
@@ -2140,16 +2133,16 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
 n.Spinner = void 0;
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
 function t() {
 this.container = null;
 this.itemTemplate = null;
@@ -2162,21 +2155,21 @@ this.container.children.forEach(function(t) {
 t.active = !1;
 });
 for (var i = function(i) {
-var c = r.container.children[i];
-c || ((c = cc.instantiate(r.itemTemplate)).parent = r.container);
-c.active = !0;
-e(c, t[i]);
-c.off(cc.Node.EventType.TOUCH_END);
-c.on(cc.Node.EventType.TOUCH_END, function() {
+var r = c.container.children[i];
+r || ((r = cc.instantiate(c.itemTemplate)).parent = c.container);
+r.active = !0;
+e(r, t[i]);
+r.off(cc.Node.EventType.TOUCH_END);
+r.on(cc.Node.EventType.TOUCH_END, function() {
 n(t[i]);
 o.node.active = !1;
 });
-}, r = this, c = 0; c < t.length; c++) i(c);
+}, c = this, r = 0; r < t.length; r++) i(r);
 };
-r([ l(cc.Node) ], t.prototype, "container", void 0);
-r([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
-r([ l(cc.Node) ], t.prototype, "node", void 0);
-return r([ p("GuiTopupBank2.Spinner") ], t);
+c([ l(cc.Node) ], t.prototype, "container", void 0);
+c([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
+c([ l(cc.Node) ], t.prototype, "node", void 0);
+return c([ p("GuiTopupBank2.Spinner") ], t);
 }();
 n.Spinner = u;
 var h = function(t) {
@@ -2202,7 +2195,7 @@ return e;
 e.prototype.onLoad = function() {
 var t = this;
 this.nodeInfoTransfer.active = !1;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANKMANUAL + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+lngui.Https.get(r.LobbyConst.API.URL + r.LobbyConst.API.LIST_BANKMANUAL + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 console.log(e);
 e ? t.listBank = e.Data : lngui.UIPopupManager.instance.showPopup("Có lỗi xảy ra");
 });
@@ -2241,8 +2234,8 @@ t.edbAmount.string = a.MVUtils.formatNumber(e);
 };
 e.prototype.onClickConfirm = function() {
 if ("" != this.edbAmount.string) if (a.MVUtils.toInt(this.edbAmount.string) < 1e4) lngui.UIPopupManager.instance.showPopup("Số tiền tối thiểu là 10.000"); else if (a.MVUtils.toInt(this.edbAmount.string) > 3e8) lngui.UIPopupManager.instance.showPopup("Số tiền tối đa là 300,000,000 Coin"); else if (null != this.bank) {
-var t = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_MANUALBANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, e = {
-os: c.LobbyConst.platform,
+var t = r.LobbyConst.API.URL + r.LobbyConst.API.REQUEST_MANUALBANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, e = {
+os: r.LobbyConst.platform,
 ManualBankId: this.bank,
 Amount: this.edbAmount.string,
 Code: this.edbnote.string,
@@ -2266,16 +2259,16 @@ this.nodeguide.active = !0;
 e.prototype.clickhideguide = function() {
 this.nodeguide.active = !1;
 };
-r([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbsender", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbnote", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTypeBank", void 0);
-r([ l(cc.Label) ], e.prototype, "lbAccountId", void 0);
-r([ l(cc.Label) ], e.prototype, "lbAccountName", void 0);
-r([ l(u) ], e.prototype, "nodeSpiner", void 0);
-r([ l(cc.Node) ], e.prototype, "nodeInfoTransfer", void 0);
-r([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
-return r([ p ], e);
+c([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbsender", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbnote", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTypeBank", void 0);
+c([ l(cc.Label) ], e.prototype, "lbAccountId", void 0);
+c([ l(cc.Label) ], e.prototype, "lbAccountName", void 0);
+c([ l(u) ], e.prototype, "nodeSpiner", void 0);
+c([ l(cc.Node) ], e.prototype, "nodeInfoTransfer", void 0);
+c([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = h;
 cc._RF.pop();
@@ -2300,16 +2293,16 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
 n.Spinner = void 0;
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
 function t() {
 this.container = null;
 this.itemTemplate = null;
@@ -2322,21 +2315,21 @@ this.container.children.forEach(function(t) {
 t.active = !1;
 });
 for (var i = function(i) {
-var c = r.container.children[i];
-c || ((c = cc.instantiate(r.itemTemplate)).parent = r.container);
-c.active = !0;
-e(c, t[i]);
-c.off(cc.Node.EventType.TOUCH_END);
-c.on(cc.Node.EventType.TOUCH_END, function() {
+var r = c.container.children[i];
+r || ((r = cc.instantiate(c.itemTemplate)).parent = c.container);
+r.active = !0;
+e(r, t[i]);
+r.off(cc.Node.EventType.TOUCH_END);
+r.on(cc.Node.EventType.TOUCH_END, function() {
 n(t[i]);
 o.node.active = !1;
 });
-}, r = this, c = 0; c < t.length; c++) i(c);
+}, c = this, r = 0; r < t.length; r++) i(r);
 };
-r([ l(cc.Node) ], t.prototype, "container", void 0);
-r([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
-r([ l(cc.Node) ], t.prototype, "node", void 0);
-return r([ p("GuiTopupBank.Spinner") ], t);
+c([ l(cc.Node) ], t.prototype, "container", void 0);
+c([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
+c([ l(cc.Node) ], t.prototype, "node", void 0);
+return c([ p("GuiTopupBank.Spinner") ], t);
 }();
 n.Spinner = u;
 var h = function(t) {
@@ -2371,7 +2364,7 @@ return e;
 e.prototype.onLoad = function() {
 var t = this;
 this.nodeInfoTransfer.active = !1;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.URL.Gate, function(e) {
+lngui.Https.get(r.LobbyConst.API.URL + r.LobbyConst.API.LIST_BANK_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + r.LobbyConst.URL.Gate, function(e) {
 e ? t.listBank = e : lngui.UIPopupManager.instance.showPopup("Có lỗi xảy ra");
 });
 };
@@ -2411,8 +2404,8 @@ t.edbAmount.string = a.MVUtils.formatNumber(e);
 e.prototype.onClickConfirm = function() {
 var t = this;
 if (null != this.bank) {
-var e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_BANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.URL.Gate, n = {
-os: c.LobbyConst.platform,
+var e = r.LobbyConst.API.URL + r.LobbyConst.API.REQUEST_BANK + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + r.LobbyConst.URL.Gate, n = {
+os: r.LobbyConst.platform,
 amount: 6e4,
 provider: this.bank
 };
@@ -2468,25 +2461,25 @@ o.QR.spriteFrame = e;
 };
 n.src = e;
 };
-r([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
-r([ l(cc.Sprite) ], e.prototype, "QR", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTypeBank", void 0);
-r([ l(cc.Label) ], e.prototype, "lbBigAmount", void 0);
-r([ l(cc.Label) ], e.prototype, "lbAccountId", void 0);
-r([ l(cc.Label) ], e.prototype, "lbAccountName", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTransferContent", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTimeRemain", void 0);
-r([ l(u) ], e.prototype, "nodeSpiner", void 0);
-r([ l(cc.Node) ], e.prototype, "nodeInfoTransfer", void 0);
-r([ l(cc.Node) ], e.prototype, "nodehint", void 0);
-r([ l(cc.Label) ], e.prototype, "lbStk", void 0);
-r([ l(cc.Label) ], e.prototype, "lbBankName", void 0);
-r([ l(cc.Label) ], e.prototype, "lbAccName", void 0);
-r([ l(cc.Label) ], e.prototype, "lbContent", void 0);
-r([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
-return r([ p ], e);
+c([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
+c([ l(cc.Sprite) ], e.prototype, "QR", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTypeBank", void 0);
+c([ l(cc.Label) ], e.prototype, "lbBigAmount", void 0);
+c([ l(cc.Label) ], e.prototype, "lbAccountId", void 0);
+c([ l(cc.Label) ], e.prototype, "lbAccountName", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTransferContent", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTimeRemain", void 0);
+c([ l(u) ], e.prototype, "nodeSpiner", void 0);
+c([ l(cc.Node) ], e.prototype, "nodeInfoTransfer", void 0);
+c([ l(cc.Node) ], e.prototype, "nodehint", void 0);
+c([ l(cc.Label) ], e.prototype, "lbStk", void 0);
+c([ l(cc.Label) ], e.prototype, "lbBankName", void 0);
+c([ l(cc.Label) ], e.prototype, "lbAccName", void 0);
+c([ l(cc.Label) ], e.prototype, "lbContent", void 0);
+c([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = h;
 cc._RF.pop();
@@ -2511,20 +2504,20 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = (c.property, function(t) {
+var r = cc._decorator, a = r.ccclass, s = (r.property, function(t) {
 i(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
-return r([ a ], e);
+return c([ a ], e);
 }(lngui.UIPopup));
 n.default = s;
 cc._RF.pop();
@@ -2546,16 +2539,16 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
 n.Spinner = void 0;
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
 function t() {
 this.container = null;
 this.itemTemplate = null;
@@ -2568,21 +2561,21 @@ this.container.children.forEach(function(t) {
 t.active = !1;
 });
 for (var i = function(i) {
-var c = r.container.children[i];
-c || ((c = cc.instantiate(r.itemTemplate)).parent = r.container);
-c.active = !0;
-e(c, t[i]);
-c.off(cc.Node.EventType.TOUCH_END);
-c.on(cc.Node.EventType.TOUCH_END, function() {
+var r = c.container.children[i];
+r || ((r = cc.instantiate(c.itemTemplate)).parent = c.container);
+r.active = !0;
+e(r, t[i]);
+r.off(cc.Node.EventType.TOUCH_END);
+r.on(cc.Node.EventType.TOUCH_END, function() {
 n(t[i]);
 o.node.active = !1;
 });
-}, r = this, c = 0; c < t.length; c++) i(c);
+}, c = this, r = 0; r < t.length; r++) i(r);
 };
-r([ l(cc.Node) ], t.prototype, "container", void 0);
-r([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
-r([ l(cc.Node) ], t.prototype, "node", void 0);
-return r([ p("GUITopupEWallet.Spinner") ], t);
+c([ l(cc.Node) ], t.prototype, "container", void 0);
+c([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
+c([ l(cc.Node) ], t.prototype, "node", void 0);
+return c([ p("GUITopupEWallet.Spinner") ], t);
 }();
 n.Spinner = u;
 var h = function(t) {
@@ -2639,8 +2632,8 @@ this.onClickRefreshCaptcha();
 lngui.UIPopupManager.instance.showPopup("Số tiền tối đa là 10.000.000");
 this.onClickRefreshCaptcha();
 } else {
-var e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.MOMO_REQUEST + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, n = {
-os: c.LobbyConst.platform,
+var e = r.LobbyConst.API.URL + r.LobbyConst.API.MOMO_REQUEST + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, n = {
+os: r.LobbyConst.platform,
 amount: this.amount,
 type: "momo"
 };
@@ -2680,18 +2673,18 @@ this.bank = null;
 this.edbAmount.string = "";
 this.edbCaptcha.string = "";
 };
-r([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
-r([ l(u) ], e.prototype, "nodeSpiner", void 0);
-r([ l(cc.Node) ], e.prototype, "nodeInfoTransfer", void 0);
-r([ l(cc.Label) ], e.prototype, "lbBocAmount", void 0);
-r([ l(cc.Label) ], e.prototype, "lbSdt", void 0);
-r([ l(cc.Label) ], e.prototype, "lbAccName", void 0);
-r([ l(cc.Label) ], e.prototype, "lbContent", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTypeBank", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTypeVi", void 0);
-return r([ p ], e);
+c([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
+c([ l(u) ], e.prototype, "nodeSpiner", void 0);
+c([ l(cc.Node) ], e.prototype, "nodeInfoTransfer", void 0);
+c([ l(cc.Label) ], e.prototype, "lbBocAmount", void 0);
+c([ l(cc.Label) ], e.prototype, "lbSdt", void 0);
+c([ l(cc.Label) ], e.prototype, "lbAccName", void 0);
+c([ l(cc.Label) ], e.prototype, "lbContent", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTypeBank", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTypeVi", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = h;
 cc._RF.pop();
@@ -2716,16 +2709,16 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
 n.TabCashCard = n.Spinner = void 0;
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
 function t() {
 this.container = null;
 this.itemTemplate = null;
@@ -2738,21 +2731,21 @@ this.container.children.forEach(function(t) {
 t.active = !1;
 });
 for (var i = function(i) {
-var c = r.container.children[i];
-c || ((c = cc.instantiate(r.itemTemplate)).parent = r.container);
-c.active = !0;
-e(c, t[i]);
-c.off(cc.Node.EventType.TOUCH_END);
-c.on(cc.Node.EventType.TOUCH_END, function() {
+var r = c.container.children[i];
+r || ((r = cc.instantiate(c.itemTemplate)).parent = c.container);
+r.active = !0;
+e(r, t[i]);
+r.off(cc.Node.EventType.TOUCH_END);
+r.on(cc.Node.EventType.TOUCH_END, function() {
 n(t[i]);
 o.thisNode.active = !1;
 });
-}, r = this, c = 0; c < t.length; c++) i(c);
+}, c = this, r = 0; r < t.length; r++) i(r);
 };
-r([ l(cc.Node) ], t.prototype, "container", void 0);
-r([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
-r([ l(cc.Node) ], t.prototype, "thisNode", void 0);
-return r([ p("GuiTopupExchange.Spinner") ], t);
+c([ l(cc.Node) ], t.prototype, "container", void 0);
+c([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
+c([ l(cc.Node) ], t.prototype, "thisNode", void 0);
+return c([ p("GuiTopupExchange.Spinner") ], t);
 }();
 n.Spinner = u;
 var h = function() {
@@ -2762,9 +2755,9 @@ this.sprCaptcha = null;
 this._verifyCaptcha = null;
 }
 t.prototype.setInfo = function() {};
-r([ l(cc.Node) ], t.prototype, "step1", void 0);
-r([ l(cc.Sprite) ], t.prototype, "sprCaptcha", void 0);
-return r([ p("GuiTopupExchange.TabCashCard") ], t);
+c([ l(cc.Node) ], t.prototype, "step1", void 0);
+c([ l(cc.Sprite) ], t.prototype, "sprCaptcha", void 0);
+return c([ p("GuiTopupExchange.TabCashCard") ], t);
 }();
 n.TabCashCard = h;
 var f = function(t) {
@@ -2791,10 +2784,10 @@ return e;
 }
 e.prototype.onLoad = function() {
 var t = this;
-0 == this.listProvider.length && lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.CARD_TYPE + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+0 == this.listProvider.length && lngui.Https.get(r.LobbyConst.API.URL + r.LobbyConst.API.CARD_TYPE + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 t.listProvider = e.Data;
 });
-0 == this.listCardRate.length && lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.RATE_CARD + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+0 == this.listCardRate.length && lngui.Https.get(r.LobbyConst.API.URL + r.LobbyConst.API.RATE_CARD + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 console.log(e.Data[0]);
 console.log(e.Data[0].LstCashInDisplay);
 if (e) {
@@ -2858,7 +2851,7 @@ merchantId: 1,
 sourceId: 1,
 quantity: 1
 };
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.MUA_THE, n, function(e, n) {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.MUA_THE, n, function(e, n) {
 if (e >= 200 && e < 400) {
 t.data = n;
 t.pnlOTPVerify.getChildByName("pnlContent").getChildByName("lblCardType").getComponent(cc.Label).string = t.provider;
@@ -2872,7 +2865,7 @@ t.tabCashCard.step1.active = !1;
 };
 e.prototype.onClickVerifyOTP = function() {
 var t = this;
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP, {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.CHECK_OTP, {
 Otp: this.edbOTPVerify.string,
 OtpType: 1,
 OtpToken: this.data.OtpToken,
@@ -2899,19 +2892,19 @@ this.nodeguide.active = !0;
 e.prototype.clickhideguide = function() {
 this.nodeguide.active = !1;
 };
-r([ l(u) ], e.prototype, "nodeSpiner", void 0);
-r([ l(h) ], e.prototype, "tabCashCard", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTypeCard", void 0);
-r([ l(cc.Label) ], e.prototype, "lbRequiredChip", void 0);
-r([ l(cc.Label) ], e.prototype, "lbValue", void 0);
-r([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ l(cc.Node) ], e.prototype, "pnlOTPVerify", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbOTPVerify", void 0);
-r([ l(cc.Node) ], e.prototype, "tiGiaContainer", void 0);
-r([ l(cc.Node) ], e.prototype, "itemTiGiaTemplate", void 0);
-r([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
-return r([ p ], e);
+c([ l(u) ], e.prototype, "nodeSpiner", void 0);
+c([ l(h) ], e.prototype, "tabCashCard", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTypeCard", void 0);
+c([ l(cc.Label) ], e.prototype, "lbRequiredChip", void 0);
+c([ l(cc.Label) ], e.prototype, "lbValue", void 0);
+c([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(cc.Node) ], e.prototype, "pnlOTPVerify", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbOTPVerify", void 0);
+c([ l(cc.Node) ], e.prototype, "tiGiaContainer", void 0);
+c([ l(cc.Node) ], e.prototype, "itemTiGiaTemplate", void 0);
+c([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = f;
 cc._RF.pop();
@@ -2936,15 +2929,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -2958,7 +2951,7 @@ var t = this, e = {
 accountId: lngui.UserManager.instance.mainUserInfo.AccountID
 };
 lngui.UIWaitingLayout.showWaiting();
-a.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY_ALLGAME, e, function(e, n) {
+a.MVUtils.get(r.LobbyConst.API.URL + r.LobbyConst.API.LIST_HISTORY_ALLGAME, e, function(e, n) {
 lngui.UIWaitingLayout.hideWaiting();
 e >= 200 && e < 400 ? t.loadListHistory(n) : console.log("err===>", n);
 });
@@ -2982,9 +2975,9 @@ o.getChildByName("lblMoTa").getComponent(cc.Label).string = n.Description;
 }
 };
 e.prototype.start = function() {};
-r([ l(cc.ScrollView) ], e.prototype, "scrHistory", void 0);
-r([ l(cc.Node) ], e.prototype, "itemTemplate", void 0);
-return r([ p ], e);
+c([ l(cc.ScrollView) ], e.prototype, "scrHistory", void 0);
+c([ l(cc.Node) ], e.prototype, "itemTemplate", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -3009,15 +3002,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -3029,7 +3022,7 @@ e.prototype.onLoad = function() {
 this.requestHistory();
 };
 e.prototype.requestHistory = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY_BANKMANUAL + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
+var t = this, e = r.LobbyConst.API.URL + r.LobbyConst.API.LIST_HISTORY_BANKMANUAL + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
 lngui.Https.get(e, function(e) {
 t.loadListHistory(e.Data);
 });
@@ -3055,9 +3048,9 @@ o.getChildByName("lblCardValue").getComponent(cc.Label).string = a.MVUtils.forma
 e.prototype.onCBXClick = function() {
 this.requestHistory();
 };
-r([ l(cc.ScrollView) ], e.prototype, "scrHistory", void 0);
-r([ l(cc.Node) ], e.prototype, "itemTemplate", void 0);
-return r([ p ], e);
+c([ l(cc.ScrollView) ], e.prototype, "scrHistory", void 0);
+c([ l(cc.Node) ], e.prototype, "itemTemplate", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -3082,15 +3075,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -3102,7 +3095,7 @@ e.prototype.onLoad = function() {
 this.requestHistory();
 };
 e.prototype.requestHistory = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + "&inOut=1";
+var t = this, e = r.LobbyConst.API.URL + r.LobbyConst.API.LIST_HISTORY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + "&inOut=1";
 lngui.Https.get(e, function(e) {
 t.loadListHistory(e);
 });
@@ -3133,9 +3126,9 @@ o.getChildByName("lblCardValue").getComponent(cc.Label).string = a.MVUtils.forma
 e.prototype.onCBXClick = function() {
 this.requestHistory();
 };
-r([ l(cc.ScrollView) ], e.prototype, "scrHistory", void 0);
-r([ l(cc.Node) ], e.prototype, "itemTemplate", void 0);
-return r([ p ], e);
+c([ l(cc.ScrollView) ], e.prototype, "scrHistory", void 0);
+c([ l(cc.Node) ], e.prototype, "itemTemplate", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -3160,15 +3153,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -3180,7 +3173,7 @@ e.prototype.onLoad = function() {
 this.requestHistory();
 };
 e.prototype.requestHistory = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_HISTORY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + "&inOut=2";
+var t = this, e = r.LobbyConst.API.URL + r.LobbyConst.API.LIST_HISTORY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + "&inOut=2";
 lngui.Https.get(e, function(e) {
 t.loadListHistory(e);
 });
@@ -3211,9 +3204,9 @@ o.getChildByName("lblCardValue").getComponent(cc.Label).string = a.MVUtils.forma
 e.prototype.onCBXClick = function() {
 this.requestHistory();
 };
-r([ l(cc.ScrollView) ], e.prototype, "scrHistory", void 0);
-r([ l(cc.Node) ], e.prototype, "itemTemplate", void 0);
-return r([ p ], e);
+c([ l(cc.ScrollView) ], e.prototype, "scrHistory", void 0);
+c([ l(cc.Node) ], e.prototype, "itemTemplate", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
 n.default = u;
 cc._RF.pop();
@@ -3238,16 +3231,16 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
 n.Spinner = void 0;
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
 function t() {
 this.container = null;
 this.itemTemplate = null;
@@ -3260,21 +3253,21 @@ this.container.children.forEach(function(t) {
 t.active = !1;
 });
 for (var i = function(i) {
-var c = r.container.children[i];
-c || ((c = cc.instantiate(r.itemTemplate)).parent = r.container);
-c.active = !0;
-e(c, t[i]);
-c.off(cc.Node.EventType.TOUCH_END);
-c.on(cc.Node.EventType.TOUCH_END, function() {
+var r = c.container.children[i];
+r || ((r = cc.instantiate(c.itemTemplate)).parent = c.container);
+r.active = !0;
+e(r, t[i]);
+r.off(cc.Node.EventType.TOUCH_END);
+r.on(cc.Node.EventType.TOUCH_END, function() {
 n(t[i]);
 o.node.active = !1;
 });
-}, r = this, c = 0; c < t.length; c++) i(c);
+}, c = this, r = 0; r < t.length; r++) i(r);
 };
-r([ l(cc.Node) ], t.prototype, "container", void 0);
-r([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
-r([ l(cc.Node) ], t.prototype, "node", void 0);
-return r([ p("GUITopupRutBank.Spinner") ], t);
+c([ l(cc.Node) ], t.prototype, "container", void 0);
+c([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
+c([ l(cc.Node) ], t.prototype, "node", void 0);
+return c([ p("GUITopupRutBank.Spinner") ], t);
 }();
 n.Spinner = u;
 var h = function(t) {
@@ -3299,7 +3292,7 @@ return e;
 }
 e.prototype.onLoad = function() {
 var t = this;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_BANK_OUT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + c.LobbyConst.URL.Gate, function(e) {
+lngui.Https.get(r.LobbyConst.API.URL + r.LobbyConst.API.LIST_BANK_OUT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken + r.LobbyConst.URL.Gate, function(e) {
 e ? t.listBank = e : lngui.UIPopupManager.instance.showPopup("Có lỗi xảy ra");
 });
 };
@@ -3332,7 +3325,7 @@ bankCode: this.bank,
 transferType: 0
 };
 var e = this;
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CAST_OUT, this.data, function(n, o) {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.CAST_OUT, this.data, function(n, o) {
 if (200 == n) {
 e.layoutOTP.getChildByName("lblUsername").getComponent(cc.Label).string = t.data.bankAccountName;
 e.layoutOTP.getChildByName("lblReceiveQuay").getComponent(cc.Label).string = a.MVUtils.formatNumber(t.data.transferValue);
@@ -3350,7 +3343,7 @@ t.onClickRefreshCaptcha();
 };
 e.prototype.onClickVerifyOTP = function() {
 var t = this;
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP, {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.CHECK_OTP, {
 Otp: this.edbOTPVerify.string,
 OtpType: 1,
 OtpToken: this.data.OtpToken,
@@ -3399,18 +3392,18 @@ this.nodeguide.active = !0;
 e.prototype.clickhideguide = function() {
 this.nodeguide.active = !1;
 };
-r([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbSoTk", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbChuTaiKhoan", void 0);
-r([ l(u) ], e.prototype, "nodeSpiner", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTypeBank", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbOTPVerify", void 0);
-r([ l(cc.Node) ], e.prototype, "layoutCastOut", void 0);
-r([ l(cc.Node) ], e.prototype, "layoutOTP", void 0);
-r([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
-return r([ p ], e);
+c([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbSoTk", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbChuTaiKhoan", void 0);
+c([ l(u) ], e.prototype, "nodeSpiner", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTypeBank", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbOTPVerify", void 0);
+c([ l(cc.Node) ], e.prototype, "layoutCastOut", void 0);
+c([ l(cc.Node) ], e.prototype, "layoutOTP", void 0);
+c([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = h;
 cc._RF.pop();
@@ -3435,16 +3428,16 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
 n.Spinner = void 0;
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function() {
 function t() {
 this.container = null;
 this.itemTemplate = null;
@@ -3457,21 +3450,21 @@ this.container.children.forEach(function(t) {
 t.active = !1;
 });
 for (var i = function(i) {
-var c = r.container.children[i];
-c || ((c = cc.instantiate(r.itemTemplate)).parent = r.container);
-c.active = !0;
-e(c, t[i]);
-c.off(cc.Node.EventType.TOUCH_END);
-c.on(cc.Node.EventType.TOUCH_END, function() {
+var r = c.container.children[i];
+r || ((r = cc.instantiate(c.itemTemplate)).parent = c.container);
+r.active = !0;
+e(r, t[i]);
+r.off(cc.Node.EventType.TOUCH_END);
+r.on(cc.Node.EventType.TOUCH_END, function() {
 n(t[i]);
 o.thisNode.active = !1;
 });
-}, r = this, c = 0; c < t.length; c++) i(c);
+}, c = this, r = 0; r < t.length; r++) i(r);
 };
-r([ l(cc.Node) ], t.prototype, "container", void 0);
-r([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
-r([ l(cc.Node) ], t.prototype, "thisNode", void 0);
-return r([ p("GuiTopupTelco.Spinner") ], t);
+c([ l(cc.Node) ], t.prototype, "container", void 0);
+c([ l(cc.Node) ], t.prototype, "itemTemplate", void 0);
+c([ l(cc.Node) ], t.prototype, "thisNode", void 0);
+return c([ p("GuiTopupTelco.Spinner") ], t);
 }();
 n.Spinner = u;
 var h = function(t) {
@@ -3498,10 +3491,10 @@ return e;
 }
 e.prototype.onLoad = function() {
 var t = this;
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.RATE_CARD + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+lngui.Https.get(r.LobbyConst.API.URL + r.LobbyConst.API.RATE_CARD + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 t.rateCard = e.Data[0];
 });
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.CARD_TYPE + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
+lngui.Https.get(r.LobbyConst.API.URL + r.LobbyConst.API.CARD_TYPE + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(e) {
 if (1 == e.ResponseCode) {
 console.log(e.Data);
 t.listProvider = e.Data;
@@ -3549,11 +3542,11 @@ cardPin: n,
 captcha: o,
 CardUserAmount: this.currentMenhGia,
 verify: this._verifyCaptcha,
-os: c.LobbyConst.platform
+os: r.LobbyConst.platform
 };
 cc.log("Body==", JSON.stringify(i));
-var r = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_CASH_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
-lngui.Https.post(r, i, function(e, n) {
+var c = r.LobbyConst.API.URL + r.LobbyConst.API.REQUEST_CASH_IN + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
+lngui.Https.post(c, i, function(e, n) {
 200 != e && 0 != n.ResponseCode || t.clearInput();
 t.onClickResetCaptcha();
 lngui.UIPopupManager.instance.showPopup(n.Description);
@@ -3577,17 +3570,17 @@ this.nodeguide.active = !0;
 e.prototype.clickhideguide = function() {
 this.nodeguide.active = !1;
 };
-r([ l(u) ], e.prototype, "nodeSpinner", void 0);
-r([ l(cc.Label) ], e.prototype, "lbTypeCard", void 0);
-r([ l(cc.Label) ], e.prototype, "lbValue", void 0);
-r([ l(cc.Node) ], e.prototype, "tiGiaContainer", void 0);
-r([ l(cc.Node) ], e.prototype, "itemTiGiaTemplate", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCardCode", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCardSeri", void 0);
-r([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
-r([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
-return r([ p ], e);
+c([ l(u) ], e.prototype, "nodeSpinner", void 0);
+c([ l(cc.Label) ], e.prototype, "lbTypeCard", void 0);
+c([ l(cc.Label) ], e.prototype, "lbValue", void 0);
+c([ l(cc.Node) ], e.prototype, "tiGiaContainer", void 0);
+c([ l(cc.Node) ], e.prototype, "itemTiGiaTemplate", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCardCode", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCardSeri", void 0);
+c([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
+c([ l(cc.Node) ], e.prototype, "nodeguide", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = h;
 cc._RF.pop();
@@ -3612,15 +3605,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -3642,7 +3635,7 @@ e._verifyCaptcha = "";
 return e;
 }
 e.prototype.onLoad = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.LIST_AGENCY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
+var t = this, e = r.LobbyConst.API.URL + r.LobbyConst.API.LIST_AGENCY + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken;
 a.MVUtils.get(e, {}, function(e, n) {
 e >= 200 && e < 400 && (t.listAgency = n);
 });
@@ -3671,13 +3664,13 @@ accountIdTrans: lngui.UserManager.instance.mainUserInfo.AccountID,
 nickNameTrans: lngui.UserManager.instance.mainUserInfo.NickName,
 transferValue: this.amount,
 nickNameRecv: this.edbReTVN.string,
-sourceId: c.LobbyConst.platform,
+sourceId: r.LobbyConst.platform,
 captchaText: this.edbCaptcha.string,
 captchaToken: this._verifyCaptcha,
 transferType: 0,
 reason: e
 };
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.URL + c.LobbyConst.API.REQUEST_TRANSFER, this.data, function(e, n) {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.REQUEST_TRANSFER, this.data, function(e, n) {
 if (e >= 200 && e < 400) {
 t.otpLayer.getChildByName("lblUsername").getComponent(cc.Label).string = t.data.nickNameRecv;
 t.otpLayer.getChildByName("lblReceiveQuay").getComponent(cc.Label).string = a.MVUtils.formatNumber(t.data.transferValue);
@@ -3695,7 +3688,7 @@ t.onClickRefreshCaptcha();
 };
 e.prototype.onClickVerifyOTP = function() {
 var t = this;
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP, {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.CHECK_OTP, {
 Otp: this.edbOTPVerify.string,
 OtpType: 1,
 OtpToken: this.data.OtpToken,
@@ -3742,19 +3735,19 @@ this.edbAccountInfo.string = "";
 this.lbBigReceive.string = "0";
 this.lbBigReceive.string = "0";
 };
-r([ l(cc.EditBox) ], e.prototype, "edbTVN", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbReTVN", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbAccountInfo", void 0);
-r([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
-r([ l(cc.Label) ], e.prototype, "lbFee", void 0);
-r([ l(cc.Label) ], e.prototype, "lbBigReceive", void 0);
-r([ l(cc.ScrollView) ], e.prototype, "scrView", void 0);
-r([ l(cc.Node) ], e.prototype, "transferLayer", void 0);
-r([ l(cc.Node) ], e.prototype, "otpLayer", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbOTPVerify", void 0);
-return r([ p ], e);
+c([ l(cc.EditBox) ], e.prototype, "edbTVN", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbReTVN", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbAccountInfo", void 0);
+c([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
+c([ l(cc.Label) ], e.prototype, "lbFee", void 0);
+c([ l(cc.Label) ], e.prototype, "lbBigReceive", void 0);
+c([ l(cc.ScrollView) ], e.prototype, "scrView", void 0);
+c([ l(cc.Node) ], e.prototype, "transferLayer", void 0);
+c([ l(cc.Node) ], e.prototype, "otpLayer", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbOTPVerify", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = u;
 cc._RF.pop();
@@ -3779,15 +3772,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = t("./utils/CapchaZ"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = t("./utils/CapchaZ"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -3804,13 +3797,13 @@ var n = {
 fullName: this.edbNickName.string,
 captcha: this.edbCaptcha.string,
 captchaToken: this.UICaptcha.getComponent(s.default).getCapChaId(),
-gate: c.LobbyConst.GATE.DATA
+gate: r.LobbyConst.GATE.DATA
 };
-a.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.UPDATE_DISPLAYNAME, n, function(e, n) {
+a.MVUtils.get(r.LobbyConst.API.URL + r.LobbyConst.API.UPDATE_DISPLAYNAME, n, function(e, n) {
 if (e >= 200 && e < 400) {
 lngui.UserManager.instance.mainUserInfo = n;
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_DISPLAYNAME);
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.SHOW_BANNER_PROMOTION);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.SHOW_BANNER_PROMOTION);
 t.hide();
 } else {
 t.onRefreshCaptchaClicked();
@@ -3822,10 +3815,10 @@ lngui.UIPopupManager.instance.showPopup(n);
 e.prototype.onRefreshCaptchaClicked = function() {
 this.UICaptcha.getComponent(s.default).refreshCapcha();
 };
-r([ u(cc.EditBox) ], e.prototype, "edbNickName", void 0);
-r([ u(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ u(cc.Node) ], e.prototype, "UICaptcha", void 0);
-return r([ l ], e);
+c([ u(cc.EditBox) ], e.prototype, "edbNickName", void 0);
+c([ u(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ u(cc.Node) ], e.prototype, "UICaptcha", void 0);
+return c([ l ], e);
 }(lngui.UIPopup);
 n.default = h;
 cc._RF.pop();
@@ -3851,15 +3844,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -3901,11 +3894,11 @@ n.lbTime.string = e.toString();
 };
 e.prototype.hideJackpot = function() {};
 e.prototype.onClickXinLoc = function() {};
-r([ s(cc.Label) ], e.prototype, "lbNameNick", void 0);
-r([ s(cc.Label) ], e.prototype, "lbGameName", void 0);
-r([ s(cc.Label) ], e.prototype, "lbMoneyWin", void 0);
-r([ s(cc.Label) ], e.prototype, "lbTime", void 0);
-return r([ a ], e);
+c([ s(cc.Label) ], e.prototype, "lbNameNick", void 0);
+c([ s(cc.Label) ], e.prototype, "lbGameName", void 0);
+c([ s(cc.Label) ], e.prototype, "lbMoneyWin", void 0);
+c([ s(cc.Label) ], e.prototype, "lbTime", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -3927,15 +3920,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -3951,9 +3944,9 @@ e.prototype.hidenodesp = function() {
 this.nodesp.active = !1;
 this.nodebtn.active = !1;
 };
-r([ s(cc.Node) ], e.prototype, "nodesp", void 0);
-r([ s(cc.Node) ], e.prototype, "nodebtn", void 0);
-return r([ a ], e);
+c([ s(cc.Node) ], e.prototype, "nodesp", void 0);
+c([ s(cc.Node) ], e.prototype, "nodebtn", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -3975,15 +3968,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4023,7 +4016,7 @@ bankCode: this.bank,
 transferType: 0
 };
 var e = this;
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CAST_OUT, this.data, function(n, o) {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.CAST_OUT, this.data, function(n, o) {
 if (200 == n) {
 e.layoutOTP.getChildByName("lblUsername").getComponent(cc.Label).string = t.data.bankAccountName;
 e.layoutOTP.getChildByName("lblReceiveQuay").getComponent(cc.Label).string = a.MVUtils.formatNumber(t.data.transferValue);
@@ -4037,7 +4030,7 @@ e.data.OtpToken = o.OtpToken;
 };
 e.prototype.onClickVerifyOTP = function() {
 var t = this;
-a.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.CHECK_OTP, {
+a.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.CHECK_OTP, {
 Otp: this.edbOTPVerify.string,
 OtpType: 1,
 OtpToken: this.data.OtpToken,
@@ -4067,15 +4060,15 @@ this.layoutOTP.active = !1;
 this.sprCaptcha.node.getComponent("CapchaZ").refreshCapcha();
 };
 e.prototype.onClickSendOTPSMS = function() {};
-r([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbSDT", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbChuTaiKhoan", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
-r([ l(cc.EditBox) ], e.prototype, "edbOTPVerify", void 0);
-r([ l(cc.Node) ], e.prototype, "layoutCastOut", void 0);
-r([ l(cc.Node) ], e.prototype, "layoutOTP", void 0);
-return r([ p ], e);
+c([ l(cc.EditBox) ], e.prototype, "edbAmount", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbSDT", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbChuTaiKhoan", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(cc.Sprite) ], e.prototype, "sprCaptcha", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbOTPVerify", void 0);
+c([ l(cc.Node) ], e.prototype, "layoutCastOut", void 0);
+c([ l(cc.Node) ], e.prototype, "layoutOTP", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = u;
 cc._RF.pop();
@@ -4100,15 +4093,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./utils/Lobby_UINumericLabelHelper"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./utils/Lobby_UINumericLabelHelper"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4137,7 +4130,7 @@ lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.UPDATE_DISPLAYNAME, this.o
 lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.UPDATE_GOLD, this.onUpdateGold, this);
 lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this.onUpdateTotalGold, this);
 lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.UPDATE_VIPPOINT, this.onUpDateVipPoint, this);
-lngui.EventDispatch.instance.add(c.LobbyConst.EVENT_NAME.USER_MAIL, this.requestMail, this);
+lngui.EventDispatch.instance.add(r.LobbyConst.EVENT_NAME.USER_MAIL, this.requestMail, this);
 this.onTextRandom();
 this.scheduleOnce(function() {
 t.requestMail();
@@ -4150,7 +4143,7 @@ lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, this
 lngui.EventDispatch.instance.remove(lngui.EVENT_GAMECORE.UPDATE_VIPPOINT, this.onUpDateVipPoint, this);
 };
 e.prototype.requestMail = function() {
-var t = this, e = c.LobbyConst.API.URL + c.LobbyConst.API.GET_UNREAD_MAIL;
+var t = this, e = r.LobbyConst.API.URL + r.LobbyConst.API.GET_UNREAD_MAIL;
 lngui.Https.get(e, function(e) {
 lngui.ZLog.log("requestUnreadMail ===" + JSON.stringify(e));
 if (e) if (e.Count) {
@@ -4193,13 +4186,13 @@ t.lbtextrandom.string = t.listText[Math.floor(Math.random() * t.listText.length)
 };
 var n;
 e._instance = null;
-r([ l(cc.Label) ], e.prototype, "lbNickName", void 0);
-r([ l(cc.Node) ], e.prototype, "nMail", void 0);
-r([ l(cc.Label) ], e.prototype, "lbMail", void 0);
-r([ l(cc.Label) ], e.prototype, "lbtextrandom", void 0);
-r([ l(a.default) ], e.prototype, "lbGold", void 0);
-r([ l(a.default) ], e.prototype, "lbVippoint", void 0);
-return n = r([ p ], e);
+c([ l(cc.Label) ], e.prototype, "lbNickName", void 0);
+c([ l(cc.Node) ], e.prototype, "nMail", void 0);
+c([ l(cc.Label) ], e.prototype, "lbMail", void 0);
+c([ l(cc.Label) ], e.prototype, "lbtextrandom", void 0);
+c([ l(a.default) ], e.prototype, "lbGold", void 0);
+c([ l(a.default) ], e.prototype, "lbVippoint", void 0);
+return n = c([ p ], e);
 }(cc.Component);
 n.default = u;
 cc._RF.pop();
@@ -4224,15 +4217,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./MVUtils"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("./MVUtils"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4260,7 +4253,7 @@ this.nAccount.active = !1;
 this.nLogin.active = !0;
 };
 e.prototype.onClickFacebook = function() {
-c.MVUtils.onFacebook();
+r.MVUtils.onFacebook();
 };
 e.prototype.onLogoutClicked = function() {
 var t = [ lngui.PopupAction.make("OK", function() {
@@ -4268,9 +4261,9 @@ lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.LOGOUT);
 }), lngui.PopupAction.make("CLOSE", function() {}) ];
 lngui.UIPopupManager.instance.showPopup("Bạn có chắc chắn muốn thoát khỏi trò chơi?", t);
 };
-r([ p(cc.Node) ], e.prototype, "nAccount", void 0);
-r([ p(cc.Node) ], e.prototype, "nLogin", void 0);
-return r([ s ], e);
+c([ p(cc.Node) ], e.prototype, "nAccount", void 0);
+c([ p(cc.Node) ], e.prototype, "nLogin", void 0);
+return c([ s ], e);
 }(cc.Component);
 n.default = l;
 cc._RF.pop();
@@ -4294,15 +4287,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./BundleSceneGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
+var r = t("./BundleSceneGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
 function(t) {
 i(e, t);
 function e() {
@@ -4314,8 +4307,8 @@ e.prototype._onClicked = function() {
 this.isTest && this._countOpenGame >= this.numOfClick ? t.prototype._onClicked.call(this) : lngui.UIPopupManager.instance.showPopup("Đang bảo trì!");
 this._countOpenGame++;
 };
-return r([ s ], e);
-}(c.default));
+return c([ s ], e);
+}(r.default));
 n.default = p;
 cc._RF.pop();
 }, {
@@ -4338,15 +4331,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./BundleMiniGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
+var r = t("./BundleMiniGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
 function(t) {
 i(e, t);
 function e() {
@@ -4358,8 +4351,8 @@ e.prototype._onClicked = function() {
 this.isTest && this._countOpenGame >= this.numOfClick ? t.prototype._onClicked.call(this) : lngui.UIPopupManager.instance.showPopup("Đang bảo trì!");
 this._countOpenGame++;
 };
-return r([ s ], e);
-}(c.default));
+return c([ s ], e);
+}(r.default));
 n.default = p;
 cc._RF.pop();
 }, {
@@ -4382,22 +4375,22 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./BundleSceneGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
+var r = t("./BundleSceneGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
 function(t) {
 i(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
-return r([ s ], e);
-}(c.default));
+return c([ s ], e);
+}(r.default));
 n.default = p;
 cc._RF.pop();
 }, {
@@ -4420,22 +4413,22 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./BundleMiniGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
+var r = t("./BundleMiniGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
 function(t) {
 i(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
-return r([ s ], e);
-}(c.default));
+return c([ s ], e);
+}(r.default));
 n.default = p;
 cc._RF.pop();
 }, {
@@ -4458,22 +4451,22 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./BundleMiniGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
+var r = t("./BundleMiniGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
 function(t) {
 i(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
-return r([ s ], e);
-}(c.default));
+return c([ s ], e);
+}(r.default));
 n.default = p;
 cc._RF.pop();
 }, {
@@ -4496,22 +4489,22 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./BundleMiniGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
+var r = t("./BundleMiniGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
 function(t) {
 i(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
-return r([ s ], e);
-}(c.default));
+return c([ s ], e);
+}(r.default));
 n.default = p;
 cc._RF.pop();
 }, {
@@ -4534,15 +4527,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./BundleSceneGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
+var r = t("./BundleSceneGame"), a = cc._decorator, s = a.ccclass, p = (a.property, 
 function(t) {
 i(e, t);
 function e() {
@@ -4557,8 +4550,8 @@ lngui.GameCoreManager.instance.setGameID(this.gameID);
 } else lngui.UIPopupManager.instance.showPopup("Game Sắp Ra Mắt!");
 this._countOpenGame++;
 };
-return r([ s ], e);
-}(c.default));
+return c([ s ], e);
+}(r.default));
 n.default = p;
 cc._RF.pop();
 }, {
@@ -4581,15 +4574,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./MVUtils"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("./MVUtils"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4615,7 +4608,7 @@ var t = this, e = {
 token: lngui.UserManager.instance.mainUserInfo.GameToken,
 EventPrizeId: this.dataItem.EventPrizeID
 };
-c.MVUtils.post("https://api.${lngui.ConfigManager.instance.ConfigInfo.Api}/api/Event/RaceDailyVPReward", e, function(e, n) {
+r.MVUtils.post("https://api.${lngui.ConfigManager.instance.ConfigInfo.Api}/api/Event/RaceDailyVPReward", e, function(e, n) {
 console.log("-=ress     ", n);
 if (e >= 200 && e < 400 && 1 == n.ResponseCode) {
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, n.Balance);
@@ -4624,12 +4617,12 @@ t.btn_recive.interactable = !1;
 lngui.UIPopupManager.instance.showPopup(n.Message);
 });
 };
-r([ p(cc.Label) ], e.prototype, "label_title", void 0);
-r([ p(cc.Label) ], e.prototype, "label_money", void 0);
-r([ p(cc.Sprite) ], e.prototype, "icon_gift", void 0);
-r([ p([ cc.SpriteFrame ]) ], e.prototype, "ls_icon_gift", void 0);
-r([ p(cc.Button) ], e.prototype, "btn_recive", void 0);
-return r([ s ], e);
+c([ p(cc.Label) ], e.prototype, "label_title", void 0);
+c([ p(cc.Label) ], e.prototype, "label_money", void 0);
+c([ p(cc.Sprite) ], e.prototype, "icon_gift", void 0);
+c([ p([ cc.SpriteFrame ]) ], e.prototype, "ls_icon_gift", void 0);
+c([ p(cc.Button) ], e.prototype, "btn_recive", void 0);
+return c([ s ], e);
 }(cc.Component);
 n.default = l;
 cc._RF.pop();
@@ -4653,15 +4646,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./GUIAccountMail"), s = t("./MVUtils"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
+var r = t("../LobbyConst"), a = t("./GUIAccountMail"), s = t("./MVUtils"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4686,12 +4679,12 @@ var e = this, n = {
 Type: 2,
 MailID: t
 };
-s.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.READ_MAIL, n, function(t, n) {
+s.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.READ_MAIL, n, function(t, n) {
 t >= 200 && t < 400 ? 1 == n.ResponseCode ? e.lbNew.node.active = !1 : lngui.UIPopupManager.instance.showPopup(n.Message) : lngui.UIPopupManager.instance.showPopup(n);
 });
 };
 e.prototype.onBtnXoaMail = function(t, e) {
-s.MVUtils.post(c.LobbyConst.API.URL + c.LobbyConst.API.DEL_MAIL, {
+s.MVUtils.post(r.LobbyConst.API.URL + r.LobbyConst.API.DEL_MAIL, {
 Type: -1,
 MailID: e
 }, function(t, e) {
@@ -4713,11 +4706,11 @@ a.default.instance.mailList.active = !1;
 a.default.instance.mailDetail.active = !0;
 a.default.instance.initMailContent(e);
 };
-r([ u(cc.Label) ], e.prototype, "lbTitle", void 0);
-r([ u(cc.Button) ], e.prototype, "btnXoaMail", void 0);
-r([ u(cc.Label) ], e.prototype, "lbTime", void 0);
-r([ u(cc.Sprite) ], e.prototype, "lbNew", void 0);
-return r([ l ], e);
+c([ u(cc.Label) ], e.prototype, "lbTitle", void 0);
+c([ u(cc.Button) ], e.prototype, "btnXoaMail", void 0);
+c([ u(cc.Label) ], e.prototype, "lbTime", void 0);
+c([ u(cc.Sprite) ], e.prototype, "lbNew", void 0);
+return c([ l ], e);
 }(cc.Component);
 n.default = h;
 cc._RF.pop();
@@ -4743,15 +4736,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./MVUtils"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("./MVUtils"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4780,8 +4773,8 @@ this.dataItem = t;
 this.icon.spriteFrame = this.ls_sf_icon[this.dataItem.RechargeType - 1];
 this.lb_progress.string = this.dataItem.Progress + "%";
 this.sp_progress.fillRange = this.dataItem.Progress / 100;
-this.label_gold.string = c.MVUtils.formatNumber(this.dataItem.Amount);
-this.label_reward.string = c.MVUtils.formatNumber(this.dataItem.PrizeValue);
+this.label_gold.string = r.MVUtils.formatNumber(this.dataItem.Amount);
+this.label_reward.string = r.MVUtils.formatNumber(this.dataItem.PrizeValue);
 this.lb_status.string = [ "Hết hạn", "Chưa hoàn thành", "Đang trong tiến trình", "Hoàn thành", "Đã nhận thưởng" ][this.dataItem.Status + 1];
 cc.Tween.stopAllByTarget(this.node_gift);
 if (100 == this.dataItem.Progress && 2 == this.dataItem.Status) {
@@ -4803,7 +4796,7 @@ this.btn_confirm.node.color = cc.Color.GRAY;
 e.prototype.onClickConfirm = function() {
 var t = this, e = this.dataItem.RechargeType, n = this.dataItem.Status;
 if (-1 != n) if (0 != n) if (1 != n) {
-if (2 == n) c.MVUtils.post("https://api.${lngui.ConfigManager.instance.ConfigInfo.Api}/api/Event/GetX3Reward", {
+if (2 == n) r.MVUtils.post("https://api.${lngui.ConfigManager.instance.ConfigInfo.Api}/api/Event/GetX3Reward", {
 RechargeType: e
 }, function(e, n) {
 if (1 == n.ResponseCode) {
@@ -4819,16 +4812,16 @@ return;
 }
 } else lngui.UITextManager.showCenterNotification("Hãy hoàn thành tiến trình nạp"); else lngui.UITextManager.showCenterNotification("Hãy bắt đầu tiến trình nạp"); else lngui.UITextManager.showCenterNotification("Phần thưởng đã hết hạn");
 };
-r([ p(cc.Sprite) ], e.prototype, "icon", void 0);
-r([ p(cc.Label) ], e.prototype, "label_gold", void 0);
-r([ p(cc.Label) ], e.prototype, "label_reward", void 0);
-r([ p(cc.Sprite) ], e.prototype, "sp_progress", void 0);
-r([ p(cc.Label) ], e.prototype, "lb_progress", void 0);
-r([ p(cc.Button) ], e.prototype, "btn_confirm", void 0);
-r([ p(cc.Label) ], e.prototype, "lb_status", void 0);
-r([ p(cc.Node) ], e.prototype, "node_gift", void 0);
-r([ p([ cc.SpriteFrame ]) ], e.prototype, "ls_sf_icon", void 0);
-return r([ s ], e);
+c([ p(cc.Sprite) ], e.prototype, "icon", void 0);
+c([ p(cc.Label) ], e.prototype, "label_gold", void 0);
+c([ p(cc.Label) ], e.prototype, "label_reward", void 0);
+c([ p(cc.Sprite) ], e.prototype, "sp_progress", void 0);
+c([ p(cc.Label) ], e.prototype, "lb_progress", void 0);
+c([ p(cc.Button) ], e.prototype, "btn_confirm", void 0);
+c([ p(cc.Label) ], e.prototype, "lb_status", void 0);
+c([ p(cc.Node) ], e.prototype, "node_gift", void 0);
+c([ p([ cc.SpriteFrame ]) ], e.prototype, "ls_sf_icon", void 0);
+return c([ s ], e);
 }(cc.Component);
 n.default = l;
 cc._RF.pop();
@@ -4852,15 +4845,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4890,15 +4883,15 @@ this.icon_gift.node.active = !0;
 this.icon_gift.spriteFrame = this.ls_sf_icon_gift[t.Type - 1];
 }
 };
-r([ s(cc.Label) ], e.prototype, "label_rank", void 0);
-r([ s(cc.Sprite) ], e.prototype, "icon_rank", void 0);
-r([ s(cc.Label) ], e.prototype, "label_name", void 0);
-r([ s(cc.Label) ], e.prototype, "label_point", void 0);
-r([ s(cc.Label) ], e.prototype, "label_gift", void 0);
-r([ s(cc.Sprite) ], e.prototype, "icon_gift", void 0);
-r([ s([ cc.SpriteFrame ]) ], e.prototype, "ls_sf_icon_rank", void 0);
-r([ s([ cc.SpriteFrame ]) ], e.prototype, "ls_sf_icon_gift", void 0);
-return r([ a ], e);
+c([ s(cc.Label) ], e.prototype, "label_rank", void 0);
+c([ s(cc.Sprite) ], e.prototype, "icon_rank", void 0);
+c([ s(cc.Label) ], e.prototype, "label_name", void 0);
+c([ s(cc.Label) ], e.prototype, "label_point", void 0);
+c([ s(cc.Label) ], e.prototype, "label_gift", void 0);
+c([ s(cc.Sprite) ], e.prototype, "icon_gift", void 0);
+c([ s([ cc.SpriteFrame ]) ], e.prototype, "ls_sf_icon_rank", void 0);
+c([ s([ cc.SpriteFrame ]) ], e.prototype, "ls_sf_icon_gift", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -4920,15 +4913,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./utils/Lobby_UINumericLabelHelper"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./utils/Lobby_UINumericLabelHelper"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4957,98 +4950,98 @@ this.lbJackpot.scheduleProgress(t, .5);
 e.prototype.setData = function(t, e) {
 this.m_IdGame = t;
 switch (t) {
-case c.GAME_IDS.ANKHE:
+case r.GAME_IDS.ANKHE:
 this.lbGameName.string = "Ăn Khế Trả Vàng";
 this.spIcon.spriteFrame = this.iconankhe;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.TDK:
+case r.GAME_IDS.TDK:
 this.lbGameName.string = "Tây Du Ký";
 this.spIcon.spriteFrame = this.icontayduky;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.TW:
+case r.GAME_IDS.TW:
 this.lbGameName.string = "The Witcher";
 this.spIcon.spriteFrame = this.icontw;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.THANTAI:
+case r.GAME_IDS.THANTAI:
 this.lbGameName.string = "Thần Tài";
 this.spIcon.spriteFrame = this.iconthantai;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.STTT:
+case r.GAME_IDS.STTT:
 this.lbGameName.string = "Sơn Tinh Thủy Tinh";
 this.spIcon.spriteFrame = this.iconsttt;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.KBTL:
+case r.GAME_IDS.KBTL:
 this.lbGameName.string = "Kho Báu Tứ Linh";
 this.spIcon.spriteFrame = this.iconkbtl;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.NGULONG:
+case r.GAME_IDS.NGULONG:
 this.lbGameName.string = "Ngũ Long";
 this.spIcon.spriteFrame = this.iconngulong;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.MINIPOKER:
+case r.GAME_IDS.MINIPOKER:
 this.lbGameName.string = "MiniPoker";
 this.spIcon.spriteFrame = this.iconMiniPoker;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.BAUCUATO:
+case r.GAME_IDS.BAUCUATO:
 this.lbGameName.string = "Bầu Cua";
 this.spIcon.spriteFrame = this.iconbaucuato;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.BANCA:
+case r.GAME_IDS.BANCA:
 this.lbGameName.string = "Bắn Cá";
 this.spIcon.spriteFrame = this.iconbanca;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.ET:
+case r.GAME_IDS.ET:
 this.lbGameName.string = "Kim Cương";
 this.spIcon.spriteFrame = this.iconXeng777;
 this.updateGoldJackpot(e);
 break;
 
-case c.GAME_IDS.XEDIEN:
+case r.GAME_IDS.XEDIEN:
 this.lbGameName.string = "Trên Dưới";
 this.spIcon.spriteFrame = this.icontrenduoi;
 this.updateGoldJackpot(e);
 }
 };
 e.prototype.onShowGameClicked = function() {
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.BUNDLE_DOWNLOAD_FROM_ITEM_JACKPOT, this.m_IdGame);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.BUNDLE_DOWNLOAD_FROM_ITEM_JACKPOT, this.m_IdGame);
 };
-r([ l(a.default) ], e.prototype, "lbJackpot", void 0);
-r([ l(cc.Label) ], e.prototype, "lbGameName", void 0);
-r([ l(cc.Sprite) ], e.prototype, "spIcon", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "icontayduky", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconankhe", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconcunghi", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconkbtl", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconngulong", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconsttt", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "icontw", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconthantai", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconbaucuato", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "icontrenduoi", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconbanca", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconMiniPoker", void 0);
-r([ l(cc.SpriteFrame) ], e.prototype, "iconXeng777", void 0);
-return r([ p ], e);
+c([ l(a.default) ], e.prototype, "lbJackpot", void 0);
+c([ l(cc.Label) ], e.prototype, "lbGameName", void 0);
+c([ l(cc.Sprite) ], e.prototype, "spIcon", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "icontayduky", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconankhe", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconcunghi", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconkbtl", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconngulong", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconsttt", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "icontw", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconthantai", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconbaucuato", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "icontrenduoi", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconbanca", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconMiniPoker", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "iconXeng777", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = u;
 cc._RF.pop();
@@ -5073,33 +5066,33 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./utils/Lobby_UINumericLabelHelper"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
+var r = t("../LobbyConst"), a = t("./utils/Lobby_UINumericLabelHelper"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
-e.gameID = c.GAME_IDS.NONE;
+e.gameID = r.GAME_IDS.NONE;
 e.lbJackpot1 = null;
 e.lbJackpot2 = null;
 e.lbJackpot3 = null;
 return e;
 }
 e.prototype.onEnable = function() {
-lngui.EventDispatch.instance.add(c.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.updateJackpot, this);
+lngui.EventDispatch.instance.add(r.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.updateJackpot, this);
 };
 e.prototype.onDisable = function() {
-lngui.EventDispatch.instance.remove(c.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.updateJackpot, this);
+lngui.EventDispatch.instance.remove(r.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT, this.updateJackpot, this);
 };
 e.prototype.updateJackpot = function() {
 var t, e = this;
-c.LobbyConst.slotByKeys.forEach(function(n, o) {
+r.LobbyConst.slotByKeys.forEach(function(n, o) {
 o != e.gameID || (t = n);
 });
 if (t) for (var n = 0; n < t.length; n++) {
@@ -5107,13 +5100,13 @@ if (t) for (var n = 0; n < t.length; n++) {
 1 == n ? this.lbJackpot2 && this.lbJackpot2.scheduleProgress(t[n], 8) : 0 == n && this.lbJackpot1 && this.lbJackpot1.scheduleProgress(t[n], 8);
 }
 };
-r([ l({
-type: cc.Enum(c.GAME_IDS)
+c([ l({
+type: cc.Enum(r.GAME_IDS)
 }) ], e.prototype, "gameID", void 0);
-r([ l(a.default) ], e.prototype, "lbJackpot1", void 0);
-r([ l(a.default) ], e.prototype, "lbJackpot2", void 0);
-r([ l(a.default) ], e.prototype, "lbJackpot3", void 0);
-return r([ p ], e);
+c([ l(a.default) ], e.prototype, "lbJackpot1", void 0);
+c([ l(a.default) ], e.prototype, "lbJackpot2", void 0);
+c([ l(a.default) ], e.prototype, "lbJackpot3", void 0);
+return c([ p ], e);
 }(cc.Component);
 n.default = u;
 cc._RF.pop();
@@ -5138,15 +5131,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5167,8 +5160,8 @@ n._instance = this;
 };
 var n;
 e._instance = null;
-r([ s(cc.AudioClip) ], e.prototype, "music_bgm", void 0);
-return n = r([ a ], e);
+c([ s(cc.AudioClip) ], e.prototype, "music_bgm", void 0);
+return n = c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -5224,6 +5217,7 @@ t.API = {
 URL: "https://api." + lngui.ConfigManager.instance.ConfigInfo.Api + "/",
 LOGIN: "user/login",
 REGISTRY: "user/createAccount",
+CHECKUSERNAME: "/user/checkUsernameExist",
 GET_INFO_ACCOUNT: "Account/Vp",
 UPDATE_DISPLAYNAME: "Account/UpdateUserFullName",
 UPDATE_AVATAR: "Account/updateAvatar",
@@ -5364,15 +5358,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./BannerPromotion"), s = t("./network/NetworkPortal"), p = t("./network/NotificationNetworkHandle"), l = cc._decorator, u = l.ccclass, h = l.property, f = function(t) {
+var r = t("../LobbyConst"), a = t("./BannerPromotion"), s = t("./network/NetworkPortal"), p = t("./network/NotificationNetworkHandle"), l = cc._decorator, u = l.ccclass, h = l.property, f = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5409,43 +5403,43 @@ e[6] = "Saturday";
 var n = [];
 switch (e[t.getDay()]) {
 case "Monday":
-c.LobbyConst.listEventByDay = n.concat(c.GAME_IDS.LONGVUONG);
+r.LobbyConst.listEventByDay = n.concat(r.GAME_IDS.LONGVUONG);
 break;
 
 case "Tuesday":
-c.LobbyConst.listEventByDay = n.concat(c.GAME_IDS.ANGRYBIRD);
+r.LobbyConst.listEventByDay = n.concat(r.GAME_IDS.ANGRYBIRD);
 break;
 
 case "Wednesday":
-c.LobbyConst.listEventByDay = n.concat(c.GAME_IDS.LIENMINH);
+r.LobbyConst.listEventByDay = n.concat(r.GAME_IDS.LIENMINH);
 break;
 
 case "Thursday":
-c.LobbyConst.listEventByDay = n.concat(c.GAME_IDS.LONGVUONG);
+r.LobbyConst.listEventByDay = n.concat(r.GAME_IDS.LONGVUONG);
 break;
 
 case "Friday":
-c.LobbyConst.listEventByDay = n.concat(c.GAME_IDS.MINIPOKER);
+r.LobbyConst.listEventByDay = n.concat(r.GAME_IDS.MINIPOKER);
 break;
 
 case "Saturday":
-c.LobbyConst.listEventByDay = n.concat(c.GAME_IDS.RUNGRAM);
+r.LobbyConst.listEventByDay = n.concat(r.GAME_IDS.RUNGRAM);
 break;
 
 case "Sunday":
-c.LobbyConst.listEventByDay = n.concat(c.GAME_IDS.TAYDUKY);
+r.LobbyConst.listEventByDay = n.concat(r.GAME_IDS.TAYDUKY);
 }
-} else c.LobbyConst.listEventByDay = [ c.GAME_IDS.LONGVUONG, c.GAME_IDS.TAYDUKY, c.GAME_IDS.FROZEN, c.GAME_IDS.SINBAD, c.GAME_IDS.RUNGRAM, c.GAME_IDS.MINIPOKER ];
+} else r.LobbyConst.listEventByDay = [ r.GAME_IDS.LONGVUONG, r.GAME_IDS.TAYDUKY, r.GAME_IDS.FROZEN, r.GAME_IDS.SINBAD, r.GAME_IDS.RUNGRAM, r.GAME_IDS.MINIPOKER ];
 };
 e.prototype.onEnable = function() {
 lngui.EventDispatch.instance.add(lngui.EVENT_GAMECORE.LOGIN_SUCCESS, this.onLoginSuccess, this);
-lngui.EventDispatch.instance.add(c.LobbyConst.EVENT_NAME.SHOW_BANNER_PROMOTION, this.loadBannerPromotion, this);
+lngui.EventDispatch.instance.add(r.LobbyConst.EVENT_NAME.SHOW_BANNER_PROMOTION, this.loadBannerPromotion, this);
 this._addGUIOTP();
 this._addWidgetIcon();
 this.getGameEventByDay();
 this.ImgRandom.spriteFrame = this.Img[0];
 this.onImgRandom();
-lngui.UserManager.instance.gateInfo = c.LobbyConst.Gate;
+lngui.UserManager.instance.gateInfo = r.LobbyConst.Gate;
 var t = cc.Canvas.instance.getComponent(p.default);
 t ? t.mSignalr || t.connect() : cc.Canvas.instance.addComponent(p.default).connect();
 var e = cc.Canvas.instance.node.getChildByName("Prefab_BigBang_Icon");
@@ -5493,16 +5487,16 @@ this.schedule(function() {
 t.ImgRandom.spriteFrame = t.Img[Math.floor(Math.random() * t.Img.length)];
 }, 10);
 };
-r([ h(cc.Prefab) ], e.prototype, "prfUpdateDisplayName", void 0);
-r([ h(cc.Prefab) ], e.prototype, "prefabOTP", void 0);
-r([ h(cc.Prefab) ], e.prototype, "nWidgetIcon", void 0);
-r([ h(cc.Node) ], e.prototype, "NodeActivePhone", void 0);
-r([ h(cc.Prefab) ], e.prototype, "PreBigBangIcon", void 0);
-r([ h(cc.ScrollView) ], e.prototype, "scrollview", void 0);
-r([ h(cc.Prefab) ], e.prototype, "prefabx3", void 0);
-r([ h(cc.SpriteFrame) ], e.prototype, "Img", void 0);
-r([ h(cc.Sprite) ], e.prototype, "ImgRandom", void 0);
-return r([ u ], e);
+c([ h(cc.Prefab) ], e.prototype, "prfUpdateDisplayName", void 0);
+c([ h(cc.Prefab) ], e.prototype, "prefabOTP", void 0);
+c([ h(cc.Prefab) ], e.prototype, "nWidgetIcon", void 0);
+c([ h(cc.Node) ], e.prototype, "NodeActivePhone", void 0);
+c([ h(cc.Prefab) ], e.prototype, "PreBigBangIcon", void 0);
+c([ h(cc.ScrollView) ], e.prototype, "scrollview", void 0);
+c([ h(cc.Prefab) ], e.prototype, "prefabx3", void 0);
+c([ h(cc.SpriteFrame) ], e.prototype, "Img", void 0);
+c([ h(cc.Sprite) ], e.prototype, "ImgRandom", void 0);
+return c([ u ], e);
 }(cc.Component);
 n.default = f;
 cc._RF.pop();
@@ -5529,15 +5523,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../../LobbyConst"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("../../LobbyConst"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5552,14 +5546,14 @@ this.nBg.runAction(t);
 };
 e.prototype.onEnable = function() {
 t.prototype.onEnable.call(this);
-lngui.EventDispatch.instance.add(c.LobbyConst.EVENT_NAME.BUNDLEMINI_DOWNLOAD_SUCCESS, this.hide, this);
+lngui.EventDispatch.instance.add(r.LobbyConst.EVENT_NAME.BUNDLEMINI_DOWNLOAD_SUCCESS, this.hide, this);
 };
 e.prototype.onDisable = function() {
 t.prototype.onDisable.call(this);
-lngui.EventDispatch.instance.remove(c.LobbyConst.EVENT_NAME.BUNDLEMINI_DOWNLOAD_SUCCESS, this.hide, this);
+lngui.EventDispatch.instance.remove(r.LobbyConst.EVENT_NAME.BUNDLEMINI_DOWNLOAD_SUCCESS, this.hide, this);
 };
-r([ p(cc.Node) ], e.prototype, "nBg", void 0);
-return r([ s ], e);
+c([ p(cc.Node) ], e.prototype, "nBg", void 0);
+return c([ s ], e);
 }(lngui.UIPopup);
 n.default = l;
 cc._RF.pop();
@@ -5583,15 +5577,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5600,10 +5594,10 @@ e.backToStartPosition = !1;
 e.autoFitEdge = !1;
 return e;
 }
-r([ s ], e.prototype, "draggable", void 0);
-r([ s ], e.prototype, "backToStartPosition", void 0);
-r([ s ], e.prototype, "autoFitEdge", void 0);
-return r([ a ], e);
+c([ s ], e.prototype, "draggable", void 0);
+c([ s ], e.prototype, "backToStartPosition", void 0);
+c([ s ], e.prototype, "autoFitEdge", void 0);
+return c([ a ], e);
 }(lngui.UIDraggable);
 n.default = p;
 cc._RF.pop();
@@ -5625,20 +5619,20 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = (c.property, function(t) {
+var r = cc._decorator, a = r.ccclass, s = (r.property, function(t) {
 i(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
 }
-return r([ a ], e);
+return c([ a ], e);
 }(lngui.UINumericLabelHelper));
 n.default = s;
 cc._RF.pop();
@@ -5660,15 +5654,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5678,13 +5672,13 @@ e.enableAutoHide = !0;
 e.autoHideTime = 1;
 return e;
 }
-r([ s(cc.Sprite) ], e.prototype, "handle", void 0);
-r([ s({
+c([ s(cc.Sprite) ], e.prototype, "handle", void 0);
+c([ s({
 type: cc.Enum(lngui.UIScrollBarDirection)
 }) ], e.prototype, "direction", void 0);
-r([ s(cc.Boolean) ], e.prototype, "enableAutoHide", void 0);
-r([ s(cc.Float) ], e.prototype, "autoHideTime", void 0);
-return r([ a ], e);
+c([ s(cc.Boolean) ], e.prototype, "enableAutoHide", void 0);
+c([ s(cc.Float) ], e.prototype, "autoHideTime", void 0);
+return c([ a ], e);
 }(lngui.UIScrollBar);
 n.default = p;
 cc._RF.pop();
@@ -5706,15 +5700,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5737,8 +5731,8 @@ this.node.off(lngui.ControlEvent.Click, this._onClicked, this);
 e.prototype._onClicked = function() {
 lngui.UIPopupManager.instance.showPopup(this.text);
 };
-r([ s ], e.prototype, "text", void 0);
-return r([ a ], e);
+c([ s ], e.prototype, "text", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -5760,15 +5754,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5791,8 +5785,8 @@ this.node.off(lngui.ControlEvent.Click, this._onClicked, this);
 e.prototype._onClicked = function() {
 lngui.UIPopupManager.instance.showPopup(this.text);
 };
-r([ s ], e.prototype, "text", void 0);
-return r([ a ], e);
+c([ s ], e.prototype, "text", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -5814,15 +5808,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./Lobby_UIScrollBar"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("./Lobby_UIScrollBar"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5848,33 +5842,33 @@ e.tableCell = null;
 e.nEmpty = null;
 return e;
 }
-r([ p({
+c([ p({
 type: cc.Enum(lngui.UIScrollDirection)
 }) ], e.prototype, "direction", void 0);
-r([ p ], e.prototype, "zoomScaleEnabled", void 0);
-r([ p ], e.prototype, "maxScale", void 0);
-r([ p ], e.prototype, "minScale", void 0);
-r([ p(cc.Node) ], e.prototype, "content", void 0);
-r([ p ], e.prototype, "scrollEnabled", void 0);
-r([ p ], e.prototype, "touchEnabled", void 0);
-r([ p ], e.prototype, "dragChildrenEnabled", void 0);
-r([ p ], e.prototype, "easingAutoScroll", void 0);
-r([ p ], e.prototype, "movementFactor", void 0);
-r([ p(c.default) ], e.prototype, "horizontalScrollBar", void 0);
-r([ p(c.default) ], e.prototype, "verticalScrollBar", void 0);
-r([ p ], e.prototype, "autoClearAutoScroll", void 0);
-r([ p ], e.prototype, "autoClearAutoZoomScale", void 0);
-r([ p({
+c([ p ], e.prototype, "zoomScaleEnabled", void 0);
+c([ p ], e.prototype, "maxScale", void 0);
+c([ p ], e.prototype, "minScale", void 0);
+c([ p(cc.Node) ], e.prototype, "content", void 0);
+c([ p ], e.prototype, "scrollEnabled", void 0);
+c([ p ], e.prototype, "touchEnabled", void 0);
+c([ p ], e.prototype, "dragChildrenEnabled", void 0);
+c([ p ], e.prototype, "easingAutoScroll", void 0);
+c([ p ], e.prototype, "movementFactor", void 0);
+c([ p(r.default) ], e.prototype, "horizontalScrollBar", void 0);
+c([ p(r.default) ], e.prototype, "verticalScrollBar", void 0);
+c([ p ], e.prototype, "autoClearAutoScroll", void 0);
+c([ p ], e.prototype, "autoClearAutoZoomScale", void 0);
+c([ p({
 type: cc.Enum(lngui.UITableViewFillOrder)
 }) ], e.prototype, "fillOrder", void 0);
-r([ p({
+c([ p({
 type: cc.Enum(lngui.UITableViewInteractionMode)
 }) ], e.prototype, "interactionMode", void 0);
-r([ p(cc.Boolean) ], e.prototype, "cellPagingEnabled", void 0);
-r([ p(cc.Integer) ], e.prototype, "numberOfPagingCell", void 0);
-r([ p(cc.Prefab) ], e.prototype, "tableCell", void 0);
-r([ p(cc.Node) ], e.prototype, "nEmpty", void 0);
-return r([ s ], e);
+c([ p(cc.Boolean) ], e.prototype, "cellPagingEnabled", void 0);
+c([ p(cc.Integer) ], e.prototype, "numberOfPagingCell", void 0);
+c([ p(cc.Prefab) ], e.prototype, "tableCell", void 0);
+c([ p(cc.Node) ], e.prototype, "nEmpty", void 0);
+return c([ s ], e);
 }(lngui.UITableView);
 n.default = l;
 cc._RF.pop();
@@ -5898,15 +5892,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = (s.property, 
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = (s.property, 
 function(t) {
 i(e, t);
 function e() {
@@ -5929,7 +5923,7 @@ lngui.UserManager.instance.mainUserInfo = i;
 lngui.UserManager.instance.mainUserInfo.UserName = i.UserName;
 lngui.UserManager.instance.mainUserInfo.NickName = i.UserName;
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.LOGIN_SUCCESS);
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.SHOW_BANNER_PROMOTION);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.SHOW_BANNER_PROMOTION);
 t.requestAccount(i);
 }
 });
@@ -5938,7 +5932,7 @@ t.requestAccount(i);
 };
 e.prototype.requestAccount = function() {
 var t = this;
-a.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.GET_INFO_ACCOUNT, {}, function(e, n) {
+a.MVUtils.get(r.LobbyConst.API.URL + r.LobbyConst.API.GET_INFO_ACCOUNT, {}, function(e, n) {
 lngui.UserManager.instance.mainUserInfo.TotalVipPoint = n.TotalVipPoint;
 lngui.UserManager.instance.mainUserInfo.VipPoint = n.VipPoint;
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_DISPLAYNAME);
@@ -5946,13 +5940,13 @@ t.requestUnreadMail();
 });
 };
 e.prototype.requestUnreadMail = function() {
-var t = c.LobbyConst.API.URL + c.LobbyConst.API.GET_UNREAD_MAIL;
+var t = r.LobbyConst.API.URL + r.LobbyConst.API.GET_UNREAD_MAIL;
 lngui.Https.get(t, function(t) {
 lngui.ZLog.log("requestUnreadMail ===" + JSON.stringify(t));
 t && t.ResponseCode;
 });
 };
-return r([ p ], e);
+return c([ p ], e);
 }(cc.Component));
 n.default = l;
 cc._RF.pop();
@@ -5977,15 +5971,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./utils/CapchaZ"), s = t("./MVUtils"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
+var r = t("../LobbyConst"), a = t("./utils/CapchaZ"), s = t("./MVUtils"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5993,18 +5987,64 @@ e.edbAccount = null;
 e.edbPass = null;
 e.edbCaptcha = null;
 e.UICaptcha = null;
+e.Captcha = null;
 e.nCapcha = null;
 e.nButton = null;
 e.toggleSaveAccount = null;
+e.isRequesting = !1;
+e.token = null;
+e.captchafake = [];
 return e;
 }
 e.prototype.onEnable = function() {
-this.nButton.y = 0;
-this.nCapcha.active = !1;
 var t = lngui.ClientData.getBoolean("SAVE_PASS", !0);
 this.toggleSaveAccount.isChecked = t;
 this.edbAccount.string = lngui.ClientData.getString("USER_NAME", "");
 this.edbPass.string = lngui.ClientData.getString("PASSWORD", "");
+this.captchafake = [ {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAADAklEQVR42u2cW3KDMAxFs93+dRPdYlfQffQxaTuALflePYxD5OGnhBjjw5VlSentVu3y7VNqH++nHG+vL+1Y2pPfZ7pXVvtvAOAzeP9ga2A/F+CgmbQCTua9xZYLWDYY5wM+U8HIIBxDnAq41/NZaxO1ZiEDVgEPb3YJwP1OggQUpWAIMK3grVi7Bu0CgJMtZAF+HMBJprUALwTY9yAFuAAX4AJcgAtwAS7A+z1iexTgSwB+hkjW4oB7wXllS9YeBXh5wFg/0gUFuACvBxhNZhfgbMCSj+Y5DnTjFZyf2HbeEayGyAfsaIqC0+W7l06ggjXAjILPBpycGXUBTs3IPgXgNjaylIKRsQkKLsAWUyZxOguw0vNagENqsjrFl3GAdU6nAJZ6Zu/Vr1v9c7ikTzlnbc+PBoyW2QKApdnJADyuCCYBm18mEbAkG0bBVAU0Ok0GwNCN4wBDxd4M4LZ5tnP3r/cHyQBmC93H06QZK9WLHloh1kwpX0FL+X2A2QU4QCd7wIZfMuz+HlsPcg02i1hSMKIJwmcc2tX9R6sB7s5Y3x6LM742YFpkMuBhVzYvGhqqMI2IzUdXChbwb5S/F4zcntQHZB+u2YROB+x3/aSXm7s7BxjZwCUoWBcEBAAGHBXogN6eJwG8vcAAOFbBgYCvrGB223o9wPY1eAJg0YtWE4KHk8pCq3sNXf9w6EUvBdjlRY8Ag4zJcAGSS0hTcHsxHbzUK9PU4EMqYFvwxAI4YL+vAgZ7pgATjCcCRiNZTOHAcN8PhSq9S10zNXo/3ZNOwIZIVixgLhYNZ6WQeBaRLkwFbM6ydQGjIp6SD9aySabZOAC+jy0A8NiLNpnBkDTq7oFxP3N6wn87b54eWsDt3MYl/H1J9TzA/oT/0oCx8vfDvSyAdU8vo5jSDhgr/zcPYxEFKwoZA2bhRQEmHlgHzAslyg49AmCziUtuBbgAF+ACXID1JXmak4Us1QU4AvCUh2H3UQV4OmDnrrEALw54wj+BTQWct9BEAfZU71a7WvsCM60c/Ug+bJgAAAAASUVORK5CYII=",
+sessionId: "3fbfe18b6008461993d26f7c55392152"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAAC8UlEQVR42u2cYXrDIAiGe9392yV2xZ1g9+i6p1uWWoXvAzTG4pMf6xqJ4Q0CYnq5ZFu+Xavt6/PKtluXmY6P9zf825+P3VpX4ULrALj6H17UppGmajaZj8L35//+3bh6Ifl8gIFHPAFrDIbMJagEHlACBgDPYcE+wLFuLwFPBzjOghNwAu4D2B1Fx89eCTgYcNWC79rvZsGVCSMBJ+AEnIAXAIwljqyn3J8v9L19lYD7Az7OghNwAk7ACTgBJ+AEnICXAHxXqO0QruU8Cl28ImB0d4AMeH8xTBShEasF13VBbouIBIzXd4uBmevBxPYPETC9mWRKwKo2W2m3NA+RPot9BCUts0hagG17huYFzFtwAOC/B4UdoUbeDdi8KSwBVwOOh2EAPrQvYKEvpbgBgJuD2cXqBwB+nucx36z44OJWowDLz5AN8LMQP2ApGTMFWS7AWBStGJJ8qyGAkSBuEsD1UY0HjFVWqo55ywOlmXO7ng2w3qsD4Eqmu1OEcEDBMwzYuDu9ClhTCOGDy5NOCLiHBRvy4GGA1UHWARczRghg0G7Ypahq906A1Wh/MGAuDxa8TgjgSsdalG9f22tRhNMkg32M8MHwE6ksVVbO9gHWO04PmE3nDgSMj9/3ytpygOVA4SjAuMnFv5A4J2BPxckQJQyOog8DrDCOiKIhwGL0yypotjTJWC7sBLhYBeyRJhkAK0kkFWS1i3qBgOkpGq8H0wX/iEX8kYC9aZLo75WbOg3gx7W0ZQBDCx2vApgpU3vKhX7A6DIWuFT5moAFPbYkjQQMjXBVwGwoKwCm5A+LooX6q6VcOAQwnSaFA9b3RA4ETGyybJ8csjG0B2BjmuQC7EASD5iS/6xQRgnChHEqwBFvvCfgKQDTE1HEZnR9bu8JuBzADIAdtkT8ys6/CG3zn/F+nC0EsG+QyCNuBKwNGACMjD4BgyoKuYVYwIGhZgKeEXCUBdtdTgIGfLBQck7AK1hwAl4NsDM3yZ/KXr99A9RfaUETpuIhAAAAAElFTkSuQmCC",
+sessionId: "41768e329f0b44ff9c4f5ed0c02e7e71"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAADHklEQVR42u2cW1IEIQxFZ7v+uQm36Arch45V1jhCHjchNHR7qfnCpgk5BEJIe7uxXL58bl4+3sXqt9eXRKuRh50e3YZmL9/PgDLDQyNgAiZgAiZgAiZgAiZgEfC9Jv57yEnAZwAcl/Z8gO8Siz8C3gNwap0JrUVnAazN1J/5emLAB1OvnStVgBOKWgl4BpWgasS/IuuhuAsQcHYNBKQk4KWABxc3Aj4BYL2SgAsaznFHCHgnwLgFw90R8GLA7aXtYYDbC2MCLgWs3soT8AUAq2kXFSd1Al4MWM2lAfZgAiZg3MmaFkesjTmXAMbT0/ruog13AlzkRYMOhW3BkwBHUxB9TsGGISdr7hLtXIPA6tOWfQ2w8wbsskFsBb5ZHG/zvK2cZxWFdGIAtudWHHA8Fh1N1+0B53J+G2VpTfB3PtekLRhViATYmFh9kedTOWBRbluVDeBEUnffKa4OpCPDEMEAJLgO5VZEY3YWAxYa6uRAwPY5EtlTcdPPTCbs+GC988nJ2hqwJb2p6GfA/QN2JAhh7w4KWcYHAfsqMn0dZONv6hcA1p4ZAQyaaRQw3lEsACA2B7zlxNdGxwFGZuLjMRcwyCM0qNCkWQ445tmdzoJLAPduvOj+DH29FwHsHrQSMlwccMiIZcBS/STArb9p3+GHDo3zAIsBGteLjgIe3GhdwKFz88hJ0o75gE71ocekXnrkmCSeQUHxJgH2o4yHAw5oYzZgPJJl7Dd2vdawEDBoNJMAG70cDTgXlvu9IcA2G9GyBy24CUzuBniXSBa6oGmAdZMSr0Ciklt7hDRANNtm2AZKABc7WcgtihZ26Ztrx0FVEiVsi4wZunlUAoeBkyhmA7IXnbigw49JuVyvkYwO+3ZMPvunAAeyNXJfNebUOOBk+bGRAwAjFqxVGt/iaYBHsmqq0nT+E+DBwesWXCjOdoCDKU3WYkbAmwKOCO8BBr7kJODwAPEEwhDg7j0Y4IE9gIANDLg/8edTfxtw54QS8ArA6bF4gBuiBHwtwLk92PlvIAR8bsD0ojcDjMcDjPALAe8KOD46JKjHcsHyBaoXdrc4KJyzAAAAAElFTkSuQmCC",
+sessionId: "72f95f561e9647e4aab51950a252ddec"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAAC7ElEQVR42u2aWXLDIAyGfd2+9RK9Yk/Qe6SZZsYlWDuS8fIznjzEtgB9FlpgWdAu3x47t5/vdJFfnx+PIzRuaqlTtk8WgO8J+DmasUsZAQDbpXHqtYHgAZeqG4DHpGVYMADPAtw+CcAlgL0eBxZ8PsBh4XcHnBusAfARAXvkAzAAAzAAAzAAd4N8SusuAL4QYBQ6ABiAxwDHqt/Dudb1AWftISYAzrNgAF76zYel/z9tcwmAJ1rw6CmApK8hfYMSgPMAMyOABd8O8DbRHL8A+DCAzaJKLTgcS0ov1ny74cLLbMDcERN/iKekSUwXsZlGXk+1YPdQhUE7phEDTKls7THLgoVsMBcweysV8HbMCj7yCfcBWxvgt3WGsqe1udYieR2Wp7YP4MjK0aiUyGAdgEVFk3onvEIHL6r92PdOdlF0Mlx43Q7Ya8Hy624LFgatVKmi2h/0Pdsu7HaWZcR2Hc4HHAkrPIAVgcWAV688C3DABw8BVr+v/QCPVLIMAflrJBWAZTUeC7Dd5aQAjuxGaF1wA+YAe7MyAfA2+4h7hCmAU3ywkk6ULdErYD0IcAFu/ukeELZw9BwBgAsBOwNpq/OL7tHJQjIBB7Z0TgHYVZcIAxaqBW4L5u8Kcd+QBYcB9xnw36/LYxm7EHywt/DEFQlyAbelBaEgwZUrTCl/BeD0KoSxi9Z2peJDCHA7DHYiLsDqUir3Rd5She4MuK6SlQ64LeHtANhSf50JmKvQxnJTezW01bXkKbQgw5tbjgOWpyMBdi0LuYC3io5VOQRlsZ7y3dNbiuFkL8ZvS92SCQPWi2t2oUWAB6No+4mONoquBkxv8I0BFnK5VRqxzLiEXhvwdiFNAfwvMBWwet4DgPUU87iA7WFmAmAxKgkALjrBpAIuWqJPBljY7Sd7dQP2z82oLBKwvex6A8DcsF4mKyv03oDJcy/VFwDH45egIcKCj2zBvhASgAF4J8AJx+oB+DIWzI4bgA8LGO3C7RfJoqRyWWvzVQAAAABJRU5ErkJggg==",
+sessionId: "8dd4ca74f37c4aadb6131860e23c489b"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAAC7UlEQVR42u2abU7DMAyGd13+cQmuyAm4xxhIoLaJv147ada9UTWh0saxnzh2ndxubJdv97Z9fR5/Pc3/5KZ9vL8d/t7emdGgYY8TfVT/95nWJh4r5QA/7u8vDAwBLww4KrKZE/mrYDYQcCXgag8mYAImYAImYAJ+RcAPGYeLgEcAbu3ssnYWMGApAgYAJ9Qk4PMAy199BHwVwEIeQ8AETMAETMAdZWeWUf+EShkykDMTcMyZ8k00rywOZvlygO0t0TqvPYzBK3oy4M6wpgB+3OxsUaeNjnWI2ff/lfCOex3grqyd8ocx/YgZDzh2DCEiNOBGm98M4JgWavTNAO44bfeJCYDD50yeCjCcH1wWMBaD1wScQTUAsLJEh05NEHCjTmw1QgFL65/Xg/2AjS+5/QOtxCrA3gV/fAz2Aj7k5I7k0ZNRegHjARKNwbWAxVRzFmBbo40Wzg8/ZfWNAS6ju1EDOcmbAyxapwJwgS4WYL1/Y0IrgCvpngfYEFThwd3OA12pgE0VygAXlvUVrkNjMALYUR6ZCXj7iu4eBuBiuo5CxyDAxn89gNFKVh6w2Ke8HB7f7ea03RQ3ebVp9gjAppVxwECJtBqwGe+8pUpPITccrqZ4sGniFGDVg/FlbyxgK5KXuK/Hg5Fi7NqA81n0DMDSQAEPdgIOTZqlAINOPB+wJ5jldy4L8rit0X1R8EqAdUb2frD+/oKAzbVHL3eMAOwtVRZ9JsUAd4dbFZLxiOUGfN+fmwELHUHAyMRVa9GBus0+/7UAWx8eJYdLKgG7i5SLAoZKlYrveQFLrrYg4O6+rDbfpwB2bTaogKU+JSkxD5YGvSbggJT42dVo9AG/J9PW6wAGtqCrANeWP/EMvM6Dw/bZeDCsiwgYnlM1BzzTihFwO7aYB0c9+4kAK1U2TyVOdwYCPhtw00/tuXMCXgvwiFTrcoCBUaYVO41KYasALNaRntuDq9uzAu5pQcAETMAETMAETMCnAma7cPsG5PAooSxW0mcAAAAASUVORK5CYII=",
+sessionId: "3a36c54381a54b2ab5fc04c6f998fca2"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAADTklEQVR42u2cXXYDIQiFs92+dRPdYlfQffQv5yQaBe8F0ckETx6a6DijnyAg08sly+nLt1S+Prnf4fLx/nbv5P+Pv1+UxnzV6uKck9/LAz4J+EiAJ81tOTMJOAEn4AR8IMAxO9nto62nBLwIcGRJwAk4ASfgBLwIcPCGvdQCmAN4wQB6wwgE7JHgdnKmKAC5nyWAJ6mjrgRfn2kPYL9gJeCjA7ZKcAJOwK8K+AoV+STgJwRcd6tIMDFlTweYN0JBozoB7wNs9Yv0r5sBVzdqAOO6eqC9mwfTTr5hwLcLpwFWprSojQWspQZggJXLFVquA6LucXd3IIZjc6GHUnMik+4BjCduiICh9A8nYNVUngCYGgsmwUopse0FXA6qA5hI8QEAI7ffDhjUSfiiPw/g4daorHd9N50ImNh3rDrpoZ8FgNta5Uk0wLebEUl6Dgm2eXssYHFGeCt6C2DwYTTAXTuTBVy2jAVsjR77AXeNry2ACQmW3CQPYGV9zQHMS/C5AdN+sJluApaagbbSEDBnZA33KtYSUfp5iLopATnFMRUbLNmDW3JSMDIIsNEPBs1FF2CrBI+tXxWw37PXjSzWoRi615Sf0vVKjICRwYAjRAATYATATj8Y9ETF4wRyD0YCtBwOPD6nsamvAnuzhQlF1RoT6MC1mh9w2QPlF2nPDEbYh4CH5pVBgjkw2NLsLA5esYMh2C7gjjoVBDcQMGiOO60JVkUPrWjivjVg896pyJzHyPKcsDUqegdg3MjS7DISMH7AN2t1eqxovXPEnyTOzpDtMwiw9nsNiTpKMwNWtPoywHNUNIdHD1z3vMaVgDu2rnXfZQGDtVQQ1w7YLnwF4G7tAsB2I4vXz7iK1mvRxJU6BBQIGI0a7gOMCqLbNRKVPw4Yj/PU6SIhgIcI7bXzAOOxJCoX7DyA21jjvd/DA67y6YdhVFNu6EEAg31ybtIcwKMU0VDAuBWNHGS1U5eAxWbPCHiCkZWAh4Dt2dSrALsyvV8dcNsGxzZsyb8vCmV0WNdTAg4ATGr4aMDUm3kWwENPHHTYDTrq1QGbLicBe+YLlmDPYyTgBJyA4wEb9pIgwJ7dxPlS5IRXKQ8KOHL9coCtI3qO/50pxN2ynK38AN/vvVXdkLeMAAAAAElFTkSuQmCC",
+sessionId: "b7c6c3cd23324e30a174240c01421c01"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAACyUlEQVR42u2cUXKEMAiG97p96yV6xZ6g99h2pjuOGwP5+QMxUTI+uUYJnyQQcB+PbJdvz7j286399H58fX4cT77Oq7etXDC28QIo+oG7bE8/inE2YExNCTgBJ+AEfCHAf48rjgR8IcA1J+ZfgASM6uuswzaQnRIScKwxeVnwDQDX3ugEPAFgrwmqdqYaH+8Hc1vAhZ8VDDhgilYsOAEjYiTgBDwVYEcXNAFPCli24AS8AODqHk0CXhbwDNsFCfjEKVrsolowuGaDoVpnr8agEnAvYKOoW19T1lyRfEbATGmArLXqyrrtYJiOY5eqhD2AucqIHsDFAE1HKZ50AUhXG6drXrPZBZXQCJgufeEB29VokrA8y5f4jAJsq0OyAO6pbRoDmKBDAq4MFQOsa7+pC3OhGQy4s1TtLMBNX6EBWLn7JID1xZgG7BgmRQBGwK8NuBp+0ICrQzMhHwYYefXXtuBqmCSOkwU8s5Nlmn4gkI5OVidgPfqSZm8i1lKaeFvWV2i/kSxdJg4W3+LBgJWgHrDgHsDSAnERwJ1zSxzgHn3pIxUBw/sPNsChGx18LNha2MDZjwNs2+jAwg/dSnBR9SvLX40W3ETzRr7rW6Y7ATaJOgVgxEkBfQ16YXtpDc7DKFmBxl40oanD27+aBQOz0IAwqTiJqIZJNtCuCjxFD3OymgG6FgvND1hSU2Hc7oCPcdGJXjQPWP9pTsDWPC5HxfFWLoDRMIn5ZnyXgfcCLO0exPGw5WqMDELXYHMcHJ0u9JqOQv6/AMwHLw34iefSFwFM7AM37rMiYCTUcdklHwCY86INF69uwWTzqOjw8ixuBRj1opcDDGXoJgdsrNIlai5XA2ysUg7JxboDhm9+D8AWC07ACTgBLwh4uywBpwUn4Eha1k9XDB+5JODzAfc9BRltAvYEHGeOUkFkAh4IeExz3UW6EeBsF26/MtxNbsYSDDwAAAAASUVORK5CYII=",
+sessionId: "9b7cdef5bbde47249fe512dcd308c6c6"
+}
+} ];
+this.requestCaptcha();
 };
 e.prototype.onClickLoginFB = function() {};
 e.prototype.onClickLogin = function() {
@@ -6018,7 +6058,7 @@ Password: window.md5(n),
 passraw: n,
 IpAddress: "",
 DeviceName: "Chrome",
-PlatformId: c.LobbyConst.platform,
+PlatformId: r.LobbyConst.platform,
 deviceID: lngui.PlatformInterface.deviceID,
 platform: lngui.PlatformInterface.platform,
 OSName: lngui.PlatformInterface.OSName,
@@ -6031,14 +6071,16 @@ bundleID: lngui.PlatformInterface.bundleID,
 UIID: "",
 MerchantId: 1002,
 CaptchaText: this.edbCaptcha.string,
-CaptchaToken: 1 == this.nCapcha.active ? this.UICaptcha.getComponent(a.default).getCapChaId() : "",
+CaptchaToken: "",
 gate: lngui.ConfigManager.instance.ConfigInfo.Gate,
 otp: "",
-Sid: o
+Sid: o,
+token: this.token,
+captcha: this.edbCaptcha.string
 };
-s.MVUtils.postRaw(c.LobbyConst.API.URL + c.LobbyConst.API.LOGIN, i, function(e, n) {
+s.MVUtils.postRaw(r.LobbyConst.API.URL + r.LobbyConst.API.LOGIN, i, function(e, n) {
 e >= 200 && e < 400 ? n && t.onLoginSuccess(n, function() {
-s.MVUtils.get(c.LobbyConst.API.URL + c.LobbyConst.API.GET_INFO_ACCOUNT, {}, function(e, n) {
+s.MVUtils.get(r.LobbyConst.API.URL + r.LobbyConst.API.GET_INFO_ACCOUNT, {}, function(e, n) {
 lngui.UserManager.instance.mainUserInfo.PassWord = i.Password;
 lngui.UserManager.instance.mainUserInfo.UserName = i.UserName;
 lngui.UserManager.instance.mainUserInfo.TotalVipPoint = n.TotalVipPoint;
@@ -6057,7 +6099,7 @@ lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_GOLD, lngui.
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_TOTAL_VIPPOINT, lngui.UserManager.instance.mainUserInfo.TotalVipPoint);
 this.hide();
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.LOGIN_SUCCESS);
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.SHOW_BANNER_PROMOTION);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.SHOW_BANNER_PROMOTION);
 if (this.toggleSaveAccount.isChecked) {
 lngui.ClientData.setString("USER_NAME", this.edbAccount.string);
 lngui.ClientData.setString("PASSWORD", this.edbPass.string);
@@ -6069,6 +6111,43 @@ lngui.ClientData.setString("PASSWORD", this.edbPass.string);
 }
 e && e();
 };
+e.prototype.requestCaptcha = function() {
+var t = this;
+if (this.isRequesting) lngui.UITextManager.showCenterNotification("Vui lòng không tạo Mã Xác Thực quá nhanh."); else {
+this.isRequesting = !0;
+setTimeout(function() {
+t.isRequesting = !1;
+}, 3e3);
+var e = "https://api." + lngui.ConfigManager.instance.ConfigInfo.Api + "/user/RequestCaptcha", n = {
+gate: lngui.ConfigManager.instance.ConfigInfo.Gate
+};
+lngui.Https.post(e, n, function(e, n) {
+if (n) {
+t.loadImgBinary(n.data.image);
+t.token = n.data.sessionId;
+} else t.getCaptchaFake();
+});
+}
+};
+e.prototype.getCaptchaFake = function() {
+var t = this.captchafake[Math.floor(Math.random() * this.captchafake.length)];
+this.loadImgBinary(t.data.image);
+this.token = t.data.sessionId;
+};
+e.prototype.loadImgBinary = function(t) {
+var e = "data:image/png;base64," + t, n = new Image();
+n.width = 160;
+n.height = 50;
+var o = this;
+n.onload = function() {
+var t = new cc.Texture2D();
+t.initWithElement(n);
+t.handleLoadedTexture();
+var e = new cc.SpriteFrame(t);
+o.Captcha.spriteFrame = e;
+};
+n.src = e;
+};
 e.prototype.setCookie = function() {};
 e.prototype.onRefreshCaptchaClicked = function() {
 this.UICaptcha.getCapChaId();
@@ -6078,20 +6157,21 @@ var e = t.isChecked;
 lngui.ClientData.setBoolean("SAVE_PASS", e);
 };
 e.prototype.requestUnreadMail = function() {
-var t = c.LobbyConst.API.URL + c.LobbyConst.API.GET_UNREAD_MAIL;
+var t = r.LobbyConst.API.URL + r.LobbyConst.API.GET_UNREAD_MAIL;
 lngui.Https.get(t, function(t) {
 lngui.ZLog.log("requestUnreadMail ===" + JSON.stringify(t));
 t && t.ResponseCode;
 });
 };
-r([ u(cc.EditBox) ], e.prototype, "edbAccount", void 0);
-r([ u(cc.EditBox) ], e.prototype, "edbPass", void 0);
-r([ u(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-r([ u(a.default) ], e.prototype, "UICaptcha", void 0);
-r([ u(cc.Node) ], e.prototype, "nCapcha", void 0);
-r([ u(cc.Node) ], e.prototype, "nButton", void 0);
-r([ u(cc.Toggle) ], e.prototype, "toggleSaveAccount", void 0);
-return r([ l ], e);
+c([ u(cc.EditBox) ], e.prototype, "edbAccount", void 0);
+c([ u(cc.EditBox) ], e.prototype, "edbPass", void 0);
+c([ u(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ u(a.default) ], e.prototype, "UICaptcha", void 0);
+c([ u(cc.Sprite) ], e.prototype, "Captcha", void 0);
+c([ u(cc.Node) ], e.prototype, "nCapcha", void 0);
+c([ u(cc.Node) ], e.prototype, "nButton", void 0);
+c([ u(cc.Toggle) ], e.prototype, "toggleSaveAccount", void 0);
+return c([ l ], e);
 }(lngui.UIPopup);
 n.default = h;
 cc._RF.pop();
@@ -6142,116 +6222,116 @@ var n = [];
 for (var o in t) n.push(o + "=" + encodeURIComponent(t[o]));
 return "?" + n.join("&");
 };
-t.getRaw = function(t, e, n, o, i, r) {
+t.getRaw = function(t, e, n, o, i, c) {
 void 0 === o && (o = !1);
 void 0 === i && (i = !1);
-void 0 === r && (r = 3e4);
+void 0 === c && (c = 3e4);
 o && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
 i && lngui.UIWaitingLayout.showWaiting();
-var c = cc.loader.getXMLHttpRequest();
-c.timeout = r;
-c.open("GET", t + this.getStringBodyByObject(e, void 0), !0);
-c.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-c.onreadystatechange = function() {
-if (4 == c.readyState) if (c.status >= 200 && c.status < 400) {
-o && console.log("ResponseText <=========\nstt=" + c.status + "\ndata=" + c.responseText);
+var r = cc.loader.getXMLHttpRequest();
+r.timeout = c;
+r.open("GET", t + this.getStringBodyByObject(e, void 0), !0);
+r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+r.onreadystatechange = function() {
+if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
+o && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, JSON.parse(c.responseText));
+n && n(r.status, JSON.parse(r.responseText));
 } else {
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, c.responseText);
+n && n(r.status, r.responseText);
 }
 };
-c.send();
+r.send();
 };
-t.postRaw = function(t, e, n, o, i, r) {
+t.postRaw = function(t, e, n, o, i, c) {
 void 0 === o && (o = !1);
 void 0 === i && (i = !1);
-void 0 === r && (r = 3e4);
+void 0 === c && (c = 3e4);
 o && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
 i && lngui.UIWaitingLayout.showWaiting();
-var c = cc.loader.getXMLHttpRequest();
-c.timeout = r;
-c.open("POST", t);
-c.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-c.onreadystatechange = function() {
-if (4 == c.readyState) if (c.status >= 200 && c.status < 400) {
-o && console.log("ResponseText <=========\nstt=" + c.status + "\ndata=" + c.responseText);
+var r = cc.loader.getXMLHttpRequest();
+r.timeout = c;
+r.open("POST", t);
+r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+r.onreadystatechange = function() {
+if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
+o && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, JSON.parse(c.responseText));
+n && n(r.status, JSON.parse(r.responseText));
 } else {
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, c.responseText);
+n && n(r.status, r.responseText);
 }
 };
-c.send(JSON.stringify(e));
+r.send(JSON.stringify(e));
 };
-t.post = function(t, e, n, o, i, r) {
+t.post = function(t, e, n, o, i, c) {
 void 0 === o && (o = !1);
 void 0 === i && (i = !1);
-void 0 === r && (r = 3e4);
+void 0 === c && (c = 3e4);
 o && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
 i && lngui.UIWaitingLayout.showWaiting();
-var c = cc.loader.getXMLHttpRequest();
-c.timeout = r;
-c.open("POST", t + this.getToken());
-c.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-c.onreadystatechange = function() {
-if (4 == c.readyState) if (c.status >= 200 && c.status < 400) {
-o && console.log("ResponseText <=========\nstt=" + c.status + "\ndata=" + c.responseText);
+var r = cc.loader.getXMLHttpRequest();
+r.timeout = c;
+r.open("POST", t + this.getToken());
+r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+r.onreadystatechange = function() {
+if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
+o && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, JSON.parse(c.responseText));
+n && n(r.status, JSON.parse(r.responseText));
 } else {
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, c.responseText);
+n && n(r.status, r.responseText);
 }
 };
-c.send(JSON.stringify(e));
+r.send(JSON.stringify(e));
 };
-t.post2 = function(t, e, n, o, i, r) {
+t.post2 = function(t, e, n, o, i, c) {
 void 0 === o && (o = !1);
 void 0 === i && (i = !1);
-void 0 === r && (r = 3e4);
+void 0 === c && (c = 3e4);
 o && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
 i && lngui.UIWaitingLayout.showWaiting();
-var c = cc.loader.getXMLHttpRequest();
-c.timeout = r;
-c.open("POST", t + this.getToken());
-c.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-c.onreadystatechange = function() {
-if (4 == c.readyState) if (c.status >= 200 && c.status < 400) {
-o && console.log("ResponseText <=========\nstt=" + c.status + "\ndata=" + c.responseText);
+var r = cc.loader.getXMLHttpRequest();
+r.timeout = c;
+r.open("POST", t + this.getToken());
+r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+r.onreadystatechange = function() {
+if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
+o && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, c.responseText);
+n && n(r.status, r.responseText);
 } else {
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, c.responseText);
+n && n(r.status, r.responseText);
 }
 };
-c.send(JSON.stringify(e));
+r.send(JSON.stringify(e));
 };
-t.get = function(t, e, n, o, i, r) {
+t.get = function(t, e, n, o, i, c) {
 void 0 === o && (o = !1);
 void 0 === i && (i = !1);
-void 0 === r && (r = 3e4);
+void 0 === c && (c = 3e4);
 e.token = lngui.UserManager.instance.mainUserInfo.GameToken;
 o && console.log("SendRequest =========>\nurl=" + t + "\ndata=" + JSON.stringify(e));
 i && lngui.UIWaitingLayout.showWaiting();
-var c = cc.loader.getXMLHttpRequest();
-c.timeout = r;
-c.open("GET", t + this.getStringBodyByObject(e, void 0), !0);
-c.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-c.onreadystatechange = function() {
-if (4 == c.readyState) if (c.status >= 200 && c.status < 400) {
-o && console.log("ResponseText <=========\nstt=" + c.status + "\ndata=" + c.responseText);
+var r = cc.loader.getXMLHttpRequest();
+r.timeout = c;
+r.open("GET", t + this.getStringBodyByObject(e, void 0), !0);
+r.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+r.onreadystatechange = function() {
+if (4 == r.readyState) if (r.status >= 200 && r.status < 400) {
+o && console.log("ResponseText <=========\nstt=" + r.status + "\ndata=" + r.responseText);
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, JSON.parse(c.responseText));
+n && n(r.status, JSON.parse(r.responseText));
 } else {
 i && lngui.UIWaitingLayout.hideWaiting();
-n && n(c.status, c.responseText);
+n && n(r.status, r.responseText);
 }
 };
-c.send();
+r.send();
 };
 t.getOtpSMS = function() {
 this.get("https://api." + lngui.ConfigManager.instance.ConfigInfo.Api + "/Account/getOTPSMS", {}, function(t, e) {
@@ -6319,15 +6399,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = (c.property, function(t) {
+var r = cc._decorator, a = r.ccclass, s = (r.property, function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -6413,7 +6493,7 @@ this.mSignalr && this.mSignalr.send(t, e);
 };
 var n;
 e._instance = null;
-return n = r([ a ], e);
+return n = c([ a ], e);
 }(cc.Component));
 n.default = s;
 cc._RF.pop();
@@ -6435,15 +6515,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -6490,8 +6570,8 @@ t.setDefault();
 t.mNotifySystem.checkEmptyContent();
 }, this)));
 };
-r([ s(cc.RichText) ], e.prototype, "content", void 0);
-return r([ a ], e);
+c([ s(cc.RichText) ], e.prototype, "content", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -6513,16 +6593,16 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
 n.NOTIFY_TYPE = n.DataNotify = void 0;
-var c, a = t("../network/NotificationNetworkHandle"), s = t("../../LobbyConst"), p = t("./NotiRunItem"), l = cc._decorator, u = l.ccclass, h = l.property, f = function() {
+var r, a = t("../network/NotificationNetworkHandle"), s = t("../../LobbyConst"), p = t("./NotiRunItem"), l = cc._decorator, u = l.ccclass, h = l.property, f = function() {
 this.content = "";
 this.type = 0;
 };
@@ -6530,7 +6610,7 @@ n.DataNotify = f;
 (function(t) {
 t[t.ADMIN = 1] = "ADMIN";
 t[t.MONEY_WIN = 2] = "MONEY_WIN";
-})(c = n.NOTIFY_TYPE || (n.NOTIFY_TYPE = {}));
+})(r = n.NOTIFY_TYPE || (n.NOTIFY_TYPE = {}));
 var d = function(t) {
 i(e, t);
 function e() {
@@ -6583,13 +6663,13 @@ t[o].UserName) + "</color> " + n[t[o].NType - 1] + " <color=#FF0000>" + lngui.St
 t[o].UserName) + "</color> " + n[0] + " <color=#FF0000>" + lngui.StringUtils.formatNumber(t[o].Amount) + "</color> Game <color=#FF0000>" + this.getGameNameById(t[o].GameID) + "</color>" + (o == t.length - 1 ? "" : ",") + "</size></size>";
 var i = new f();
 i.content = e;
-i.type = c.MONEY_WIN;
+i.type = r.MONEY_WIN;
 this.addNotify(i);
 }
 }
 };
 e.prototype.addNotify = function(t) {
-t.type == c.MONEY_WIN ? this.listNotifyMoneyWin.push(t) : t.type == c.ADMIN && this.listNotifyAdmin.push(t);
+t.type == r.MONEY_WIN ? this.listNotifyMoneyWin.push(t) : t.type == r.ADMIN && this.listNotifyAdmin.push(t);
 if (!this.mIsReady) {
 this.node.active = !0;
 this.runNotify();
@@ -6623,9 +6703,9 @@ this.mIsReady = t;
 this.node.active = t;
 };
 e.instance = null;
-r([ h(p.default) ], e.prototype, "listNotifyItem", void 0);
-r([ h(cc.Node) ], e.prototype, "nodeContent", void 0);
-return r([ u ], e);
+c([ h(p.default) ], e.prototype, "listNotifyItem", void 0);
+c([ h(cc.Node) ], e.prototype, "nodeContent", void 0);
+return c([ u ], e);
 }(cc.Component);
 n.default = d;
 cc._RF.pop();
@@ -6651,15 +6731,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../../LobbyConst"), a = t("../GateJackpotNoti"), s = cc._decorator, p = s.ccclass, l = (s.property, 
+var r = t("../../LobbyConst"), a = t("../GateJackpotNoti"), s = cc._decorator, p = s.ccclass, l = (s.property, 
 function(t) {
 i(e, t);
 function e() {
@@ -6688,10 +6768,10 @@ url: "https://noti." + lngui.ConfigManager.instance.ConfigInfo.Api + "/signalr/n
 };
 cc.systemEvent.off(this.mListenerKey, this.onResponeData, this);
 cc.systemEvent.on(this.mListenerKey, this.onResponeData, this);
-cc.systemEvent.off(c.LobbyConst.EVENT_NAME.GET_LIST_MAIL, this.getUnReadMail, this);
-cc.systemEvent.on(c.LobbyConst.EVENT_NAME.GET_LIST_MAIL, this.getUnReadMail, this);
-cc.systemEvent.off(c.LobbyConst.EVENT_NAME.GET_DETAIL_MAIL, this.getDetailMail, this);
-cc.systemEvent.on(c.LobbyConst.EVENT_NAME.GET_DETAIL_MAIL, this.getDetailMail, this);
+cc.systemEvent.off(r.LobbyConst.EVENT_NAME.GET_LIST_MAIL, this.getUnReadMail, this);
+cc.systemEvent.on(r.LobbyConst.EVENT_NAME.GET_LIST_MAIL, this.getUnReadMail, this);
+cc.systemEvent.off(r.LobbyConst.EVENT_NAME.GET_DETAIL_MAIL, this.getDetailMail, this);
+cc.systemEvent.on(r.LobbyConst.EVENT_NAME.GET_DETAIL_MAIL, this.getDetailMail, this);
 this.mSignalr = new lngui.GateSignalR();
 this.mSignalr.connect(this.mListenerKey, t.url, t.hub, "", !1);
 lngui.GateWebSocketManager.pushSignalR(this.mSignalr);
@@ -6727,21 +6807,21 @@ this.onGetListJackPot(i);
 break;
 
 case "UserMail":
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.USER_MAIL, i);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.USER_MAIL, i);
 break;
 
 case "notifyNewMail":
 break;
 
 case "mailContent":
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.EVENT_DETAIL_MAIL, i);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.EVENT_DETAIL_MAIL, i);
 break;
 
 case "NotifyJackpot":
 break;
 
 case "NotifySystem":
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.NOTIFY_SYSTEM, i);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.NOTIFY_SYSTEM, i);
 }
 }
 }
@@ -6785,20 +6865,20 @@ this.sendSignalR("GetUserMail", []);
 e.prototype.onGetListJackPot = function(t) {
 if (t && Array.isArray(t)) {
 for (var e = t.length, n = 0; n < e; n++) if (89 == t[n].GameID || 90 == t[n].GameID || 1236 == t[n].GameID) {
-var o = (r = {
+var o = (c = {
 slotID: t[n].GameID,
 listJackPot: JSON.parse(t[n].JackpotFund)
-}).listJackPot.length, i = r.listJackPot;
-c.LobbyConst.slotByKeys.set(r.slotID, i);
+}).listJackPot.length, i = c.listJackPot;
+r.LobbyConst.slotByKeys.set(c.slotID, i);
 } else {
-o = (r = {
+o = (c = {
 slotID: t[n].GameID,
 listJackPot: t[n].JackpotFund.split("|")
 }).listJackPot.length;
-for (var r, a = [], s = 0; s < o; s++) a.push(parseInt(r.listJackPot[s]));
-c.LobbyConst.slotByKeys.set(r.slotID, a);
+for (var c, a = [], s = 0; s < o; s++) a.push(parseInt(c.listJackPot[s]));
+r.LobbyConst.slotByKeys.set(c.slotID, a);
 }
-lngui.EventDispatch.instance.emit(c.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT);
+lngui.EventDispatch.instance.emit(r.LobbyConst.EVENT_NAME.EVENT_UPDATE_JACKPOT);
 }
 };
 e.prototype.showJackpotNotify = function(t) {
@@ -6812,7 +6892,7 @@ o && o.showJackpot(t);
 };
 var n;
 e._instance = null;
-return n = r([ p ], e);
+return n = c([ p ], e);
 }(cc.Component));
 n.default = l;
 cc._RF.pop();
@@ -6837,15 +6917,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = (c.property, function(t) {
+var r = cc._decorator, a = r.ccclass, s = (r.property, function(t) {
 i(e, t);
 function e() {
 return null !== t && t.apply(this, arguments) || this;
@@ -6853,7 +6933,7 @@ return null !== t && t.apply(this, arguments) || this;
 e.prototype.onBtnClick = function(t, e) {
 cc.sys.openURL(e);
 };
-return r([ a ], e);
+return c([ a ], e);
 }(cc.Component));
 n.default = s;
 cc._RF.pop();
@@ -6875,37 +6955,91 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("../LobbyConst"), a = t("./MVUtils"), s = t("./utils/CapchaZ"), p = cc._decorator, l = p.ccclass, u = p.property, h = function(t) {
+var r = t("../LobbyConst"), a = t("./MVUtils"), s = cc._decorator, p = s.ccclass, l = s.property, u = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
 e.edbAccount = null;
 e.edbPass = null;
 e.edbRePass = null;
+e.edbUserFullName = null;
 e.edbCaptcha = null;
+e.Captcha = null;
+e.sprftick = [];
+e.tick = [];
+e.token = null;
+e.captchafake = [];
 return e;
 }
+e.prototype.onEnable = function() {
+this.captchafake = [ {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAADAklEQVR42u2cW3KDMAxFs93+dRPdYlfQffQxaTuALflePYxD5OGnhBjjw5VlSentVu3y7VNqH++nHG+vL+1Y2pPfZ7pXVvtvAOAzeP9ga2A/F+CgmbQCTua9xZYLWDYY5wM+U8HIIBxDnAq41/NZaxO1ZiEDVgEPb3YJwP1OggQUpWAIMK3grVi7Bu0CgJMtZAF+HMBJprUALwTY9yAFuAAX4AJcgAtwAS7A+z1iexTgSwB+hkjW4oB7wXllS9YeBXh5wFg/0gUFuACvBxhNZhfgbMCSj+Y5DnTjFZyf2HbeEayGyAfsaIqC0+W7l06ggjXAjILPBpycGXUBTs3IPgXgNjaylIKRsQkKLsAWUyZxOguw0vNagENqsjrFl3GAdU6nAJZ6Zu/Vr1v9c7ikTzlnbc+PBoyW2QKApdnJADyuCCYBm18mEbAkG0bBVAU0Ok0GwNCN4wBDxd4M4LZ5tnP3r/cHyQBmC93H06QZK9WLHloh1kwpX0FL+X2A2QU4QCd7wIZfMuz+HlsPcg02i1hSMKIJwmcc2tX9R6sB7s5Y3x6LM742YFpkMuBhVzYvGhqqMI2IzUdXChbwb5S/F4zcntQHZB+u2YROB+x3/aSXm7s7BxjZwCUoWBcEBAAGHBXogN6eJwG8vcAAOFbBgYCvrGB223o9wPY1eAJg0YtWE4KHk8pCq3sNXf9w6EUvBdjlRY8Ag4zJcAGSS0hTcHsxHbzUK9PU4EMqYFvwxAI4YL+vAgZ7pgATjCcCRiNZTOHAcN8PhSq9S10zNXo/3ZNOwIZIVixgLhYNZ6WQeBaRLkwFbM6ydQGjIp6SD9aySabZOAC+jy0A8NiLNpnBkDTq7oFxP3N6wn87b54eWsDt3MYl/H1J9TzA/oT/0oCx8vfDvSyAdU8vo5jSDhgr/zcPYxEFKwoZA2bhRQEmHlgHzAslyg49AmCziUtuBbgAF+ACXID1JXmak4Us1QU4AvCUh2H3UQV4OmDnrrEALw54wj+BTQWct9BEAfZU71a7WvsCM60c/Ug+bJgAAAAASUVORK5CYII=",
+sessionId: "3fbfe18b6008461993d26f7c55392152"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAAC8UlEQVR42u2cYXrDIAiGe9392yV2xZ1g9+i6p1uWWoXvAzTG4pMf6xqJ4Q0CYnq5ZFu+Xavt6/PKtluXmY6P9zf825+P3VpX4ULrALj6H17UppGmajaZj8L35//+3bh6Ifl8gIFHPAFrDIbMJagEHlACBgDPYcE+wLFuLwFPBzjOghNwAu4D2B1Fx89eCTgYcNWC79rvZsGVCSMBJ+AEnIAXAIwljqyn3J8v9L19lYD7Az7OghNwAk7ACTgBJ+AEnICXAHxXqO0QruU8Cl28ImB0d4AMeH8xTBShEasF13VBbouIBIzXd4uBmevBxPYPETC9mWRKwKo2W2m3NA+RPot9BCUts0hagG17huYFzFtwAOC/B4UdoUbeDdi8KSwBVwOOh2EAPrQvYKEvpbgBgJuD2cXqBwB+nucx36z44OJWowDLz5AN8LMQP2ApGTMFWS7AWBStGJJ8qyGAkSBuEsD1UY0HjFVWqo55ywOlmXO7ng2w3qsD4Eqmu1OEcEDBMwzYuDu9ClhTCOGDy5NOCLiHBRvy4GGA1UHWARczRghg0G7Ypahq906A1Wh/MGAuDxa8TgjgSsdalG9f22tRhNMkg32M8MHwE6ksVVbO9gHWO04PmE3nDgSMj9/3ytpygOVA4SjAuMnFv5A4J2BPxckQJQyOog8DrDCOiKIhwGL0yypotjTJWC7sBLhYBeyRJhkAK0kkFWS1i3qBgOkpGq8H0wX/iEX8kYC9aZLo75WbOg3gx7W0ZQBDCx2vApgpU3vKhX7A6DIWuFT5moAFPbYkjQQMjXBVwGwoKwCm5A+LooX6q6VcOAQwnSaFA9b3RA4ETGyybJ8csjG0B2BjmuQC7EASD5iS/6xQRgnChHEqwBFvvCfgKQDTE1HEZnR9bu8JuBzADIAdtkT8ys6/CG3zn/F+nC0EsG+QyCNuBKwNGACMjD4BgyoKuYVYwIGhZgKeEXCUBdtdTgIGfLBQck7AK1hwAl4NsDM3yZ/KXr99A9RfaUETpuIhAAAAAElFTkSuQmCC",
+sessionId: "41768e329f0b44ff9c4f5ed0c02e7e71"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAADHklEQVR42u2cW1IEIQxFZ7v+uQm36Arch45V1jhCHjchNHR7qfnCpgk5BEJIe7uxXL58bl4+3sXqt9eXRKuRh50e3YZmL9/PgDLDQyNgAiZgAiZgAiZgAiZgEfC9Jv57yEnAZwAcl/Z8gO8Siz8C3gNwap0JrUVnAazN1J/5emLAB1OvnStVgBOKWgl4BpWgasS/IuuhuAsQcHYNBKQk4KWABxc3Aj4BYL2SgAsaznFHCHgnwLgFw90R8GLA7aXtYYDbC2MCLgWs3soT8AUAq2kXFSd1Al4MWM2lAfZgAiZg3MmaFkesjTmXAMbT0/ruog13AlzkRYMOhW3BkwBHUxB9TsGGISdr7hLtXIPA6tOWfQ2w8wbsskFsBb5ZHG/zvK2cZxWFdGIAtudWHHA8Fh1N1+0B53J+G2VpTfB3PtekLRhViATYmFh9kedTOWBRbluVDeBEUnffKa4OpCPDEMEAJLgO5VZEY3YWAxYa6uRAwPY5EtlTcdPPTCbs+GC988nJ2hqwJb2p6GfA/QN2JAhh7w4KWcYHAfsqMn0dZONv6hcA1p4ZAQyaaRQw3lEsACA2B7zlxNdGxwFGZuLjMRcwyCM0qNCkWQ445tmdzoJLAPduvOj+DH29FwHsHrQSMlwccMiIZcBS/STArb9p3+GHDo3zAIsBGteLjgIe3GhdwKFz88hJ0o75gE71ocekXnrkmCSeQUHxJgH2o4yHAw5oYzZgPJJl7Dd2vdawEDBoNJMAG70cDTgXlvu9IcA2G9GyBy24CUzuBniXSBa6oGmAdZMSr0Ciklt7hDRANNtm2AZKABc7WcgtihZ26Ztrx0FVEiVsi4wZunlUAoeBkyhmA7IXnbigw49JuVyvkYwO+3ZMPvunAAeyNXJfNebUOOBk+bGRAwAjFqxVGt/iaYBHsmqq0nT+E+DBwesWXCjOdoCDKU3WYkbAmwKOCO8BBr7kJODwAPEEwhDg7j0Y4IE9gIANDLg/8edTfxtw54QS8ArA6bF4gBuiBHwtwLk92PlvIAR8bsD0ojcDjMcDjPALAe8KOD46JKjHcsHyBaoXdrc4KJyzAAAAAElFTkSuQmCC",
+sessionId: "72f95f561e9647e4aab51950a252ddec"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAAC7ElEQVR42u2aWXLDIAyGfd2+9RK9Yk/Qe6SZZsYlWDuS8fIznjzEtgB9FlpgWdAu3x47t5/vdJFfnx+PIzRuaqlTtk8WgO8J+DmasUsZAQDbpXHqtYHgAZeqG4DHpGVYMADPAtw+CcAlgL0eBxZ8PsBh4XcHnBusAfARAXvkAzAAAzAAAzAAd4N8SusuAL4QYBQ6ABiAxwDHqt/Dudb1AWftISYAzrNgAF76zYel/z9tcwmAJ1rw6CmApK8hfYMSgPMAMyOABd8O8DbRHL8A+DCAzaJKLTgcS0ov1ny74cLLbMDcERN/iKekSUwXsZlGXk+1YPdQhUE7phEDTKls7THLgoVsMBcweysV8HbMCj7yCfcBWxvgt3WGsqe1udYieR2Wp7YP4MjK0aiUyGAdgEVFk3onvEIHL6r92PdOdlF0Mlx43Q7Ya8Hy624LFgatVKmi2h/0Pdsu7HaWZcR2Hc4HHAkrPIAVgcWAV688C3DABw8BVr+v/QCPVLIMAflrJBWAZTUeC7Dd5aQAjuxGaF1wA+YAe7MyAfA2+4h7hCmAU3ywkk6ULdErYD0IcAFu/ukeELZw9BwBgAsBOwNpq/OL7tHJQjIBB7Z0TgHYVZcIAxaqBW4L5u8Kcd+QBYcB9xnw36/LYxm7EHywt/DEFQlyAbelBaEgwZUrTCl/BeD0KoSxi9Z2peJDCHA7DHYiLsDqUir3Rd5She4MuK6SlQ64LeHtANhSf50JmKvQxnJTezW01bXkKbQgw5tbjgOWpyMBdi0LuYC3io5VOQRlsZ7y3dNbiuFkL8ZvS92SCQPWi2t2oUWAB6No+4mONoquBkxv8I0BFnK5VRqxzLiEXhvwdiFNAfwvMBWwet4DgPUU87iA7WFmAmAxKgkALjrBpAIuWqJPBljY7Sd7dQP2z82oLBKwvex6A8DcsF4mKyv03oDJcy/VFwDH45egIcKCj2zBvhASgAF4J8AJx+oB+DIWzI4bgA8LGO3C7RfJoqRyWWvzVQAAAABJRU5ErkJggg==",
+sessionId: "8dd4ca74f37c4aadb6131860e23c489b"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAAC7UlEQVR42u2abU7DMAyGd13+cQmuyAm4xxhIoLaJv147ada9UTWh0saxnzh2ndxubJdv97Z9fR5/Pc3/5KZ9vL8d/t7emdGgYY8TfVT/95nWJh4r5QA/7u8vDAwBLww4KrKZE/mrYDYQcCXgag8mYAImYAImYAJ+RcAPGYeLgEcAbu3ssnYWMGApAgYAJ9Qk4PMAy199BHwVwEIeQ8AETMAETMAdZWeWUf+EShkykDMTcMyZ8k00rywOZvlygO0t0TqvPYzBK3oy4M6wpgB+3OxsUaeNjnWI2ff/lfCOex3grqyd8ocx/YgZDzh2DCEiNOBGm98M4JgWavTNAO44bfeJCYDD50yeCjCcH1wWMBaD1wScQTUAsLJEh05NEHCjTmw1QgFL65/Xg/2AjS+5/QOtxCrA3gV/fAz2Aj7k5I7k0ZNRegHjARKNwbWAxVRzFmBbo40Wzg8/ZfWNAS6ju1EDOcmbAyxapwJwgS4WYL1/Y0IrgCvpngfYEFThwd3OA12pgE0VygAXlvUVrkNjMALYUR6ZCXj7iu4eBuBiuo5CxyDAxn89gNFKVh6w2Ke8HB7f7ea03RQ3ebVp9gjAppVxwECJtBqwGe+8pUpPITccrqZ4sGniFGDVg/FlbyxgK5KXuK/Hg5Fi7NqA81n0DMDSQAEPdgIOTZqlAINOPB+wJ5jldy4L8rit0X1R8EqAdUb2frD+/oKAzbVHL3eMAOwtVRZ9JsUAd4dbFZLxiOUGfN+fmwELHUHAyMRVa9GBus0+/7UAWx8eJYdLKgG7i5SLAoZKlYrveQFLrrYg4O6+rDbfpwB2bTaogKU+JSkxD5YGvSbggJT42dVo9AG/J9PW6wAGtqCrANeWP/EMvM6Dw/bZeDCsiwgYnlM1BzzTihFwO7aYB0c9+4kAK1U2TyVOdwYCPhtw00/tuXMCXgvwiFTrcoCBUaYVO41KYasALNaRntuDq9uzAu5pQcAETMAETMAETMCnAma7cPsG5PAooSxW0mcAAAAASUVORK5CYII=",
+sessionId: "3a36c54381a54b2ab5fc04c6f998fca2"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAADTklEQVR42u2cXXYDIQiFs92+dRPdYlfQffQv5yQaBe8F0ckETx6a6DijnyAg08sly+nLt1S+Prnf4fLx/nbv5P+Pv1+UxnzV6uKck9/LAz4J+EiAJ81tOTMJOAEn4AR8IMAxO9nto62nBLwIcGRJwAk4ASfgBLwIcPCGvdQCmAN4wQB6wwgE7JHgdnKmKAC5nyWAJ6mjrgRfn2kPYL9gJeCjA7ZKcAJOwK8K+AoV+STgJwRcd6tIMDFlTweYN0JBozoB7wNs9Yv0r5sBVzdqAOO6eqC9mwfTTr5hwLcLpwFWprSojQWspQZggJXLFVquA6LucXd3IIZjc6GHUnMik+4BjCduiICh9A8nYNVUngCYGgsmwUopse0FXA6qA5hI8QEAI7ffDhjUSfiiPw/g4daorHd9N50ImNh3rDrpoZ8FgNta5Uk0wLebEUl6Dgm2eXssYHFGeCt6C2DwYTTAXTuTBVy2jAVsjR77AXeNry2ACQmW3CQPYGV9zQHMS/C5AdN+sJluApaagbbSEDBnZA33KtYSUfp5iLopATnFMRUbLNmDW3JSMDIIsNEPBs1FF2CrBI+tXxWw37PXjSzWoRi615Sf0vVKjICRwYAjRAATYATATj8Y9ETF4wRyD0YCtBwOPD6nsamvAnuzhQlF1RoT6MC1mh9w2QPlF2nPDEbYh4CH5pVBgjkw2NLsLA5esYMh2C7gjjoVBDcQMGiOO60JVkUPrWjivjVg896pyJzHyPKcsDUqegdg3MjS7DISMH7AN2t1eqxovXPEnyTOzpDtMwiw9nsNiTpKMwNWtPoywHNUNIdHD1z3vMaVgDu2rnXfZQGDtVQQ1w7YLnwF4G7tAsB2I4vXz7iK1mvRxJU6BBQIGI0a7gOMCqLbNRKVPw4Yj/PU6SIhgIcI7bXzAOOxJCoX7DyA21jjvd/DA67y6YdhVFNu6EEAg31ybtIcwKMU0VDAuBWNHGS1U5eAxWbPCHiCkZWAh4Dt2dSrALsyvV8dcNsGxzZsyb8vCmV0WNdTAg4ATGr4aMDUm3kWwENPHHTYDTrq1QGbLicBe+YLlmDPYyTgBJyA4wEb9pIgwJ7dxPlS5IRXKQ8KOHL9coCtI3qO/50pxN2ynK38AN/vvVXdkLeMAAAAAElFTkSuQmCC",
+sessionId: "b7c6c3cd23324e30a174240c01421c01"
+}
+}, {
+code: 200,
+data: {
+image: "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAACyUlEQVR42u2cUXKEMAiG97p96yV6xZ6g99h2pjuOGwP5+QMxUTI+uUYJnyQQcB+PbJdvz7j286399H58fX4cT77Oq7etXDC28QIo+oG7bE8/inE2YExNCTgBJ+AEfCHAf48rjgR8IcA1J+ZfgASM6uuswzaQnRIScKwxeVnwDQDX3ugEPAFgrwmqdqYaH+8Hc1vAhZ8VDDhgilYsOAEjYiTgBDwVYEcXNAFPCli24AS8AODqHk0CXhbwDNsFCfjEKVrsolowuGaDoVpnr8agEnAvYKOoW19T1lyRfEbATGmArLXqyrrtYJiOY5eqhD2AucqIHsDFAE1HKZ50AUhXG6drXrPZBZXQCJgufeEB29VokrA8y5f4jAJsq0OyAO6pbRoDmKBDAq4MFQOsa7+pC3OhGQy4s1TtLMBNX6EBWLn7JID1xZgG7BgmRQBGwK8NuBp+0ICrQzMhHwYYefXXtuBqmCSOkwU8s5Nlmn4gkI5OVidgPfqSZm8i1lKaeFvWV2i/kSxdJg4W3+LBgJWgHrDgHsDSAnERwJ1zSxzgHn3pIxUBw/sPNsChGx18LNha2MDZjwNs2+jAwg/dSnBR9SvLX40W3ETzRr7rW6Y7ATaJOgVgxEkBfQ16YXtpDc7DKFmBxl40oanD27+aBQOz0IAwqTiJqIZJNtCuCjxFD3OymgG6FgvND1hSU2Hc7oCPcdGJXjQPWP9pTsDWPC5HxfFWLoDRMIn5ZnyXgfcCLO0exPGw5WqMDELXYHMcHJ0u9JqOQv6/AMwHLw34iefSFwFM7AM37rMiYCTUcdklHwCY86INF69uwWTzqOjw8ixuBRj1opcDDGXoJgdsrNIlai5XA2ysUg7JxboDhm9+D8AWC07ACTgBLwh4uywBpwUn4Eha1k9XDB+5JODzAfc9BRltAvYEHGeOUkFkAh4IeExz3UW6EeBsF26/MtxNbsYSDDwAAAAASUVORK5CYII=",
+sessionId: "9b7cdef5bbde47249fe512dcd308c6c6"
+}
+} ];
+this.getCaptchaFake();
+};
 e.prototype.onClickReg = function() {
-var t = this, e = this.edbAccount.string.trim(), n = this.edbPass.string.trim(), o = this.edbRePass.string.trim(), i = (this.edbCaptcha.string, 
+var t = this, e = this.edbAccount.string.trim(), n = this.edbPass.string.trim(), o = this.edbRePass.string.trim(), i = this.edbUserFullName.string.trim(), c = (this.edbCaptcha.string, 
 window.md5(e.toLowerCase() + "zxc" + n.toLowerCase()));
 if (e.length > 18 || e.length < 6 || e.indexOf(" ") > 0 || e.indexOf("@") > 0) lngui.UIPopupManager.instance.showPopup("Tên tài khoản phải từ 6 - 18 ký tự, viết liền không dấu, không có ký tự đặc biệt!"); else if (n.length < 6 || n.length > 18) lngui.UIPopupManager.instance.showPopup("Mật khẩu phải có độ dài từ 6 - 18 ký tự!"); else if (n === o) {
-lngui.ZLog.log('======"PlatformID": LobbyConst.platform==============' + c.LobbyConst.platform);
-var r = {
+lngui.ZLog.log('======"PlatformID": LobbyConst.platform==============' + r.LobbyConst.platform);
+var s = {
 username: e,
 password: window.md5(n),
-verify: this.UICaptcha.getComponent(s.default).getCapChaId(),
+userfullName: i,
+passraw: n,
+verify: "",
 captcha: this.edbCaptcha.string,
 Email: "fff",
 landingHost: lngui.PlatformInterface.bundleID,
-PlatformID: c.LobbyConst.platform,
+PlatformID: r.LobbyConst.platform,
 deviceID: lngui.PlatformInterface.deviceID,
 platform: lngui.PlatformInterface.platform,
 OSName: lngui.PlatformInterface.OSName,
@@ -6918,14 +7052,14 @@ bundleID: lngui.PlatformInterface.bundleID,
 MerchantID: "1",
 ServiceID: "1",
 gate: lngui.ConfigManager.instance.ConfigInfo.Gate,
-Sid: i
+Sid: c
 };
-a.MVUtils.postRaw(c.LobbyConst.API.URL + c.LobbyConst.API.REGISTRY, r, function(e, n) {
+a.MVUtils.postRaw(r.LobbyConst.API.URL + r.LobbyConst.API.REGISTRY, s, function(e, n) {
 if (e >= 200 && e < 400) t.onLoginSuccess(n, function() {
-lngui.Https.get(c.LobbyConst.API.URL + c.LobbyConst.API.GET_INFO_ACCOUNT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(t) {
+lngui.Https.get(r.LobbyConst.API.URL + r.LobbyConst.API.GET_INFO_ACCOUNT + "?token=" + lngui.UserManager.instance.mainUserInfo.GameToken, function(t) {
 lngui.UserManager.instance.mainUserInfo.VipPoint = t.VipPoint;
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.UPDATE_DISPLAYNAME);
-lngui.UserManager.instance.mainUserInfo.PassWord = r.password;
+lngui.UserManager.instance.mainUserInfo.PassWord = s.password;
 });
 }); else {
 t.onRefreshCaptchaClicked();
@@ -6940,19 +7074,54 @@ this.hide();
 lngui.EventDispatch.instance.emit(lngui.EVENT_GAMECORE.LOGIN_SUCCESS);
 e && e();
 };
+e.prototype.checkuserName = function() {
+var t = this;
+if (this.edbAccount.string.trim()) {
+var e = r.LobbyConst.API.URL + r.LobbyConst.API.CHECKUSERNAME + "?username=" + this.edbAccount.string.trim();
+lngui.Https.get(e, function(e) {
+e && (0 == e.data.exist ? t.tick[0].spriteFrame = t.sprftick[0] : t.tick[0].spriteFrame = t.sprftick[1]);
+});
+}
+};
+e.prototype.checkRePws = function() {
+var t = this.edbPass.string.trim(), e = this.edbRePass.string.trim();
+t === e && t ? this.tick[1].spriteFrame = this.sprftick[0] : t == e && e || (this.tick[1].spriteFrame = this.sprftick[1]);
+};
+e.prototype.getCaptchaFake = function() {
+var t = this.captchafake[Math.floor(Math.random() * this.captchafake.length)];
+this.loadImgBinary(t.data.image);
+this.token = t.data.sessionId;
+};
+e.prototype.loadImgBinary = function(t) {
+var e = "data:image/png;base64," + t, n = new Image();
+n.width = 160;
+n.height = 50;
+var o = this;
+n.onload = function() {
+var t = new cc.Texture2D();
+t.initWithElement(n);
+t.handleLoadedTexture();
+var e = new cc.SpriteFrame(t);
+o.Captcha.spriteFrame = e;
+};
+n.src = e;
+};
 e.prototype.onRefreshCaptchaClicked = function() {};
-r([ u(cc.EditBox) ], e.prototype, "edbAccount", void 0);
-r([ u(cc.EditBox) ], e.prototype, "edbPass", void 0);
-r([ u(cc.EditBox) ], e.prototype, "edbRePass", void 0);
-r([ u(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
-return r([ l ], e);
+c([ l(cc.EditBox) ], e.prototype, "edbAccount", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbPass", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbRePass", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbUserFullName", void 0);
+c([ l(cc.EditBox) ], e.prototype, "edbCaptcha", void 0);
+c([ l(cc.Sprite) ], e.prototype, "Captcha", void 0);
+c([ l(cc.SpriteFrame) ], e.prototype, "sprftick", void 0);
+c([ l(cc.Sprite) ], e.prototype, "tick", void 0);
+return c([ p ], e);
 }(lngui.UIPopup);
-n.default = h;
+n.default = u;
 cc._RF.pop();
 }, {
 "../LobbyConst": "LobbyConst",
-"./MVUtils": "MVUtils",
-"./utils/CapchaZ": "CapchaZ"
+"./MVUtils": "MVUtils"
 } ],
 TabTypeGameCtrl: [ function(t, e, n) {
 "use strict";
@@ -6971,15 +7140,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = cc._decorator, a = c.ccclass, s = c.property, p = function(t) {
+var r = cc._decorator, a = r.ccclass, s = r.property, p = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -7110,19 +7279,19 @@ case "thethao":
 this.showTheThao();
 }
 };
-r([ s(cc.Node) ], e.prototype, "listAllGame", void 0);
-r([ s(cc.Node) ], e.prototype, "listGameSlots", void 0);
-r([ s(cc.Node) ], e.prototype, "listMiniGame", void 0);
-r([ s(cc.Node) ], e.prototype, "listCardGame", void 0);
-r([ s(cc.Node) ], e.prototype, "listLive", void 0);
-r([ s(cc.Node) ], e.prototype, "listTheThao", void 0);
-r([ s(cc.Node) ], e.prototype, "taball", void 0);
-r([ s(cc.Node) ], e.prototype, "tabcard", void 0);
-r([ s(cc.Node) ], e.prototype, "tabslot", void 0);
-r([ s(cc.Node) ], e.prototype, "tabmini", void 0);
-r([ s(cc.Node) ], e.prototype, "tablive", void 0);
-r([ s(cc.Node) ], e.prototype, "tabthethao", void 0);
-return r([ a ], e);
+c([ s(cc.Node) ], e.prototype, "listAllGame", void 0);
+c([ s(cc.Node) ], e.prototype, "listGameSlots", void 0);
+c([ s(cc.Node) ], e.prototype, "listMiniGame", void 0);
+c([ s(cc.Node) ], e.prototype, "listCardGame", void 0);
+c([ s(cc.Node) ], e.prototype, "listLive", void 0);
+c([ s(cc.Node) ], e.prototype, "listTheThao", void 0);
+c([ s(cc.Node) ], e.prototype, "taball", void 0);
+c([ s(cc.Node) ], e.prototype, "tabcard", void 0);
+c([ s(cc.Node) ], e.prototype, "tabslot", void 0);
+c([ s(cc.Node) ], e.prototype, "tabmini", void 0);
+c([ s(cc.Node) ], e.prototype, "tablive", void 0);
+c([ s(cc.Node) ], e.prototype, "tabthethao", void 0);
+return c([ a ], e);
 }(cc.Component);
 n.default = p;
 cc._RF.pop();
@@ -7144,15 +7313,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./GUIEventBigBang"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("./GUIEventBigBang"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -7160,10 +7329,10 @@ e.prfMiniGame = null;
 return e;
 }
 e.prototype.onClick = function() {
-lngui.UIPopupManager.instance.has(c.default) || lngui.UIPopupManager.instance.showPopupFromPrefab(this.prfMiniGame);
+lngui.UIPopupManager.instance.has(r.default) || lngui.UIPopupManager.instance.showPopupFromPrefab(this.prfMiniGame);
 };
-r([ p(cc.Prefab) ], e.prototype, "prfMiniGame", void 0);
-return r([ s ], e);
+c([ p(cc.Prefab) ], e.prototype, "prfMiniGame", void 0);
+return c([ s ], e);
 }(cc.Component);
 n.default = l;
 cc._RF.pop();
@@ -7187,15 +7356,15 @@ function n() {
 this.constructor = t;
 }
 t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n());
-}), r = this && this.__decorate || function(t, e, n, o) {
-var i, r = arguments.length, c = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (c = (r < 3 ? i(c) : r > 3 ? i(e, n, c) : i(e, n)) || c);
-return r > 3 && c && Object.defineProperty(e, n, c), c;
+}), c = this && this.__decorate || function(t, e, n, o) {
+var i, c = arguments.length, r = c < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(t, e, n, o); else for (var a = t.length - 1; a >= 0; a--) (i = t[a]) && (r = (c < 3 ? i(r) : c > 3 ? i(e, n, r) : i(e, n)) || r);
+return c > 3 && r && Object.defineProperty(e, n, r), r;
 };
 Object.defineProperty(n, "__esModule", {
 value: !0
 });
-var c = t("./utils/Lobby_MiniGameNavigator"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
+var r = t("./utils/Lobby_MiniGameNavigator"), a = cc._decorator, s = a.ccclass, p = a.property, l = function(t) {
 i(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -7205,7 +7374,7 @@ e.buttonMoved = cc.Vec2.ZERO;
 return e;
 }
 e.prototype.onClick = function() {
-lngui.UIPopupManager.instance.has(c.default) || lngui.UIPopupManager.instance.showPopupFromPrefab(this.prfPopupMinigame);
+lngui.UIPopupManager.instance.has(r.default) || lngui.UIPopupManager.instance.showPopupFromPrefab(this.prfPopupMinigame);
 };
 e.prototype.onLoad = function() {
 var t = this;
@@ -7222,8 +7391,8 @@ this.node.on(cc.Node.EventType.TOUCH_END, function() {
 t.buttonClicked && t.onClick();
 }, this);
 };
-r([ p(cc.Prefab) ], e.prototype, "prfPopupMinigame", void 0);
-return r([ s ], e);
+c([ p(cc.Prefab) ], e.prototype, "prfPopupMinigame", void 0);
+return c([ s ], e);
 }(cc.Component);
 n.default = l;
 cc._RF.pop();
