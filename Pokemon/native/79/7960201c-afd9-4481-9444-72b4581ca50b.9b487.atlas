@@ -1,0 +1,34 @@
+
+symbol_PKM_anim.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+meow 1
+  rotate: false
+  xy: 1562, 193
+  size: 90, 101
+  orig: 90, 101
+  offset: 0, 0
+  index: -1
+meow 1b
+  rotate: false
+  xy: 1141, 710
+  size: 123, 134
+  orig: 123, 134
+  offset: 0, 0
+  index: -1
+meow 2
+  rotate: false
+  xy: 1489, 400
+  size: 99, 105
+  orig: 99, 105
+  offset: 0, 0
+  index: -1
+meow2b
+  rotate: false
+  xy: 525, 2
+  size: 132, 138
+  orig: 132, 138
+  offset: 0, 0
+  index: -1

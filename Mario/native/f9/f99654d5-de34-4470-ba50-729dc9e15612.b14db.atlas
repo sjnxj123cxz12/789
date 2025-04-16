@@ -1,0 +1,20 @@
+
+Mario.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2 Flower
+  rotate: true
+  xy: 348, 405
+  size: 82, 85
+  orig: 82, 85
+  offset: 0, 0
+  index: -1
+2 Layer 24
+  rotate: true
+  xy: 243, 388
+  size: 99, 103
+  orig: 100, 103
+  offset: 1, 0
+  index: -1

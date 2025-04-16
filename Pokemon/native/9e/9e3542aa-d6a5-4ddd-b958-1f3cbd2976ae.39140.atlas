@@ -1,0 +1,48 @@
+
+symbol_PKM_anim.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 18_1_3
+  rotate: true
+  xy: 1704, 479
+  size: 59, 52
+  orig: 59, 52
+  offset: 0, 0
+  index: -1
+body_1_3
+  rotate: false
+  xy: 1483, 179
+  size: 77, 81
+  orig: 77, 81
+  offset: 0, 0
+  index: -1
+eye copy_1_3
+  rotate: false
+  xy: 483, 350
+  size: 26, 21
+  orig: 26, 21
+  offset: 0, 0
+  index: -1
+eye_1_3
+  rotate: true
+  xy: 952, 151
+  size: 26, 17
+  orig: 26, 17
+  offset: 0, 0
+  index: -1
+head_1_3
+  rotate: false
+  xy: 1705, 195
+  size: 54, 48
+  orig: 54, 48
+  offset: 0, 0
+  index: -1
+lighten_1_3
+  rotate: true
+  xy: 1277, 497
+  size: 123, 108
+  orig: 123, 109
+  offset: 0, 0
+  index: -1

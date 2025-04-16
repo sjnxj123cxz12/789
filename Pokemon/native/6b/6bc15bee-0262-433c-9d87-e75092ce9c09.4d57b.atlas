@@ -1,0 +1,104 @@
+
+symbol_PKM_anim.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eye 1_1_0
+  rotate: true
+  xy: 699, 799
+  size: 40, 19
+  orig: 40, 19
+  offset: 0, 0
+  index: -1
+eye 2_1_0
+  rotate: false
+  xy: 582, 351
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+f1 copy
+  rotate: false
+  xy: 1011, 184
+  size: 165, 168
+  orig: 165, 168
+  offset: 0, 0
+  index: -1
+f1 copy 2
+  rotate: false
+  xy: 1014, 846
+  size: 175, 176
+  orig: 175, 176
+  offset: 0, 0
+  index: -1
+f1 copy 3
+  rotate: true
+  xy: 256, 134
+  size: 214, 187
+  orig: 214, 187
+  offset: 0, 0
+  index: -1
+f1 copy 4
+  rotate: true
+  xy: 626, 375
+  size: 191, 189
+  orig: 191, 189
+  offset: 0, 0
+  index: -1
+f1_1_0
+  rotate: true
+  xy: 392, 3
+  size: 129, 131
+  orig: 129, 131
+  offset: 0, 0
+  index: -1
+f2 _1_0_copy
+  rotate: false
+  xy: 841, 179
+  size: 168, 172
+  orig: 168, 172
+  offset: 0, 0
+  index: -1
+f2 copy 2
+  rotate: false
+  xy: 447, 373
+  size: 177, 193
+  orig: 177, 193
+  offset: 0, 0
+  index: -1
+f2 copy 3
+  rotate: false
+  xy: 445, 142
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+f2 copy 4
+  rotate: false
+  xy: 448, 601
+  size: 190, 192
+  orig: 190, 192
+  offset: 0, 0
+  index: -1
+f2_1_0
+  rotate: true
+  xy: 256, 2
+  size: 130, 134
+  orig: 130, 134
+  offset: 0, 0
+  index: -1
+mouth 2
+  rotate: true
+  xy: 1025, 152
+  size: 30, 32
+  orig: 30, 32
+  offset: 0, 0
+  index: -1
+skeleton
+  rotate: true
+  xy: 2, 10
+  size: 1012, 252
+  orig: 1024, 256
+  offset: 2, 2
+  index: -1

@@ -1,0 +1,125 @@
+
+symbol_PKM_anim.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Pokeball_1_6
+  rotate: false
+  xy: 1328, 51
+  size: 115, 115
+  orig: 115, 115
+  offset: 0, 0
+  index: -1
+X10 copy
+  rotate: true
+  xy: 1431, 392
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 10
+  rotate: true
+  xy: 1492, 909
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 11
+  rotate: true
+  xy: 1512, 794
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 12
+  rotate: true
+  xy: 1550, 909
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 3
+  rotate: true
+  xy: 1318, 909
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 4
+  rotate: true
+  xy: 1338, 794
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 5
+  rotate: true
+  xy: 1376, 909
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 6
+  rotate: true
+  xy: 1396, 794
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 7
+  rotate: true
+  xy: 1434, 909
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 8
+  rotate: true
+  xy: 1460, 507
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+X10 copy 9
+  rotate: true
+  xy: 1454, 794
+  size: 113, 56
+  orig: 113, 56
+  offset: 0, 0
+  index: -1
+lighten 1_1_6
+  rotate: true
+  xy: 640, 614
+  size: 181, 175
+  orig: 181, 175
+  offset: 0, 0
+  index: -1
+lighten 2_1_6
+  rotate: true
+  xy: 837, 841
+  size: 181, 175
+  orig: 181, 175
+  offset: 0, 0
+  index: -1
+lighten 3_1_6
+  rotate: false
+  xy: 471, 841
+  size: 181, 181
+  orig: 181, 181
+  offset: 0, 0
+  index: -1
+lighten 4_1_6
+  rotate: false
+  xy: 654, 841
+  size: 181, 181
+  orig: 181, 181
+  offset: 0, 0
+  index: -1
+lighten_1_6
+  rotate: true
+  xy: 817, 619
+  size: 180, 175
+  orig: 180, 175
+  offset: 0, 0
+  index: -1

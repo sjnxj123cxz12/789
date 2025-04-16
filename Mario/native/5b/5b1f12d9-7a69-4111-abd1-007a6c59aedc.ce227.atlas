@@ -1,0 +1,48 @@
+
+Mario.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B
+  rotate: false
+  xy: 2, 45
+  size: 87, 91
+  orig: 87, 91
+  offset: 0, 0
+  index: -1
+G
+  rotate: false
+  xy: 95, 76
+  size: 89, 91
+  orig: 89, 91
+  offset: 0, 0
+  index: -1
+I
+  rotate: true
+  xy: 239, 213
+  size: 39, 87
+  orig: 39, 87
+  offset: 0, 0
+  index: -1
+I-1
+  rotate: true
+  xy: 2, 5
+  size: 38, 87
+  orig: 38, 87
+  offset: 0, 0
+  index: -1
+N
+  rotate: false
+  xy: 321, 120
+  size: 87, 91
+  orig: 87, 91
+  offset: 0, 0
+  index: -1
+W
+  rotate: true
+  xy: 2, 138
+  size: 112, 91
+  orig: 112, 91
+  offset: 0, 0
+  index: -1

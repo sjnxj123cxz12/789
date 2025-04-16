@@ -1,0 +1,48 @@
+
+symbol_PKM_anim.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Pokeball
+  rotate: false
+  xy: 1458, 622
+  size: 94, 95
+  orig: 94, 95
+  offset: 0, 0
+  index: -1
+Pokeball copy
+  rotate: true
+  xy: 256, 568
+  size: 225, 190
+  orig: 226, 190
+  offset: 0, 0
+  index: -1
+d
+  rotate: true
+  xy: 797, 801
+  size: 38, 53
+  orig: 38, 53
+  offset: 0, 0
+  index: -1
+i
+  rotate: true
+  xy: 971, 152
+  size: 25, 52
+  orig: 25, 52
+  offset: 0, 0
+  index: -1
+l
+  rotate: true
+  xy: 897, 151
+  size: 26, 53
+  orig: 26, 53
+  offset: 0, 0
+  index: -1
+w
+  rotate: false
+  xy: 1654, 193
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1

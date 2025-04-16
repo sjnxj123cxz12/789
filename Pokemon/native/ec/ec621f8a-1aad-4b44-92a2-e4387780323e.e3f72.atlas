@@ -1,0 +1,97 @@
+
+symbol_PKM_anim.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Pokeball_1_4
+  rotate: false
+  xy: 1391, 262
+  size: 114, 115
+  orig: 115, 115
+  offset: 1, 0
+  index: -1
+X3 copy
+  rotate: true
+  xy: 1729, 838
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 10
+  rotate: true
+  xy: 1787, 931
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 11
+  rotate: true
+  xy: 1654, 245
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 2
+  rotate: true
+  xy: 1730, 931
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 3
+  rotate: true
+  xy: 1590, 431
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 4
+  rotate: true
+  xy: 1602, 338
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 5
+  rotate: true
+  xy: 1647, 431
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 6
+  rotate: true
+  xy: 1672, 540
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 7
+  rotate: true
+  xy: 1721, 635
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 8
+  rotate: true
+  xy: 1752, 745
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+X3 copy 9
+  rotate: true
+  xy: 1786, 838
+  size: 91, 55
+  orig: 91, 55
+  offset: 0, 0
+  index: -1
+lighten_1_4
+  rotate: true
+  xy: 1554, 624
+  size: 95, 49
+  orig: 163, 163
+  offset: 64, 114
+  index: -1

@@ -1,0 +1,76 @@
+
+Mario.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0 Eye 1
+  rotate: true
+  xy: 211, 212
+  size: 53, 26
+  orig: 53, 26
+  offset: 0, 0
+  index: -1
+0 Eye 2
+  rotate: true
+  xy: 439, 326
+  size: 53, 32
+  orig: 53, 32
+  offset: 0, 0
+  index: -1
+0 Head
+  rotate: false
+  xy: 210, 31
+  size: 86, 99
+  orig: 86, 99
+  offset: 0, 0
+  index: -1
+0 Lighten
+  rotate: true
+  xy: 126, 386
+  size: 101, 115
+  orig: 102, 115
+  offset: 1, 0
+  index: -1
+fx/0 1
+  rotate: false
+  xy: 91, 39
+  size: 106, 35
+  orig: 106, 35
+  offset: 0, 0
+  index: -1
+fx/0 2
+  rotate: false
+  xy: 91, 2
+  size: 106, 35
+  orig: 106, 35
+  offset: 0, 0
+  index: -1
+fx/0 3
+  rotate: false
+  xy: 328, 217
+  size: 106, 35
+  orig: 106, 35
+  offset: 0, 0
+  index: -1
+fx/0 4
+  rotate: false
+  xy: 337, 267
+  size: 106, 35
+  orig: 106, 35
+  offset: 0, 0
+  index: -1
+fx/0 5
+  rotate: true
+  xy: 439, 381
+  size: 106, 35
+  orig: 106, 35
+  offset: 0, 0
+  index: -1
+fx/0 WILD
+  rotate: true
+  xy: 381, 12
+  size: 106, 35
+  orig: 106, 35
+  offset: 0, 0
+  index: -1
