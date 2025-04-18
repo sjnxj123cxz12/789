@@ -1,0 +1,97 @@
+
+anim_noti.png
+size: 1599,157
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+batdau
+  rotate: false
+  xy: 1278, 9
+  size: 197, 65
+  orig: 197, 71
+  offset: 0, 5
+  index: -1
+cho
+  rotate: true
+  xy: 1530, 49
+  size: 108, 57
+  orig: 108, 64
+  offset: 0, 6
+  index: -1
+datcuoc
+  rotate: false
+  xy: 722, 0
+  size: 277, 71
+  orig: 277, 80
+  offset: 0, 9
+  index: -1
+fast
+  rotate: true
+  xy: 1589, 31
+  size: 126, 10
+  orig: 126, 10
+  offset: 0, 0
+  index: -1
+flare1
+  rotate: false
+  xy: 722, 125
+  size: 564, 32
+  orig: 610, 32
+  offset: 23, 0
+  index: -1
+flare2
+  rotate: false
+  xy: 722, 91
+  size: 564, 32
+  orig: 610, 32
+  offset: 23, 0
+  index: -1
+ketqua
+  rotate: false
+  xy: 1288, 76
+  size: 240, 81
+  orig: 240, 81
+  offset: 0, 0
+  index: -1
+line1
+  rotate: false
+  xy: 722, 82
+  size: 554, 7
+  orig: 554, 7
+  offset: 0, 0
+  index: -1
+line2
+  rotate: false
+  xy: 722, 73
+  size: 554, 7
+  orig: 554, 7
+  offset: 0, 0
+  index: -1
+mobat
+  rotate: false
+  xy: 1001, 2
+  size: 222, 69
+  orig: 222, 76
+  offset: 0, 7
+  index: -1
+shadow
+  rotate: false
+  xy: 0, 0
+  size: 720, 157
+  orig: 720, 157
+  offset: 0, 0
+  index: -1
+tri1
+  rotate: false
+  xy: 1225, 11
+  size: 47, 60
+  orig: 47, 60
+  offset: 0, 0
+  index: -1
+tri2
+  rotate: false
+  xy: 1477, 17
+  size: 44, 57
+  orig: 44, 57
+  offset: 0, 0
+  index: -1

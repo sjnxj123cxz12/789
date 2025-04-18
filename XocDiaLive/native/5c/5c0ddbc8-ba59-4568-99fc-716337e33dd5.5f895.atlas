@@ -1,0 +1,55 @@
+
+loading count down 38.png
+size: 1344,228
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ellipse3
+  rotate: false
+  xy: 897, 4
+  size: 222, 221
+  orig: 222, 221
+  offset: 0, 0
+  index: -1
+ef-HL
+  rotate: false
+  xy: 1119, 0
+  size: 222, 225
+  orig: 222, 225
+  offset: 0, 0
+  index: -1
+glow-HL
+  rotate: false
+  xy: 0, 115
+  size: 583, 110
+  orig: 583, 110
+  offset: 0, 0
+  index: -1
+glowup-HL
+  rotate: false
+  xy: 583, 26
+  size: 314, 199
+  orig: 314, 199
+  offset: 0, 0
+  index: -1
+halopng-HL
+  rotate: false
+  xy: 0, 22
+  size: 346, 48
+  orig: 346, 48
+  offset: 0, 0
+  index: -1
+lighteffect-HL
+  rotate: false
+  xy: 451, 81
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 0, 70
+  size: 451, 45
+  orig: 451, 45
+  offset: 0, 0
+  index: -1
