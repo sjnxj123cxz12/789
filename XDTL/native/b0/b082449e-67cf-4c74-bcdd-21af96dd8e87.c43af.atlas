@@ -1,0 +1,173 @@
+XD dealer 38.png
+size: 776,278
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+WBIG
+  rotate: false
+  xy: 539, 23
+  size: 52, 42
+  orig: 52, 42
+  offset: 0, 0
+  index: -1
+YBIG
+  rotate: false
+  xy: 593, 19
+  size: 52, 42
+  orig: 52, 42
+  offset: 0, 0
+  index: -1
+as38
+  rotate: false
+  xy: 285, 152
+  size: 269, 126
+  orig: 269, 126
+  offset: 0, 0
+  index: -1
+bowlBIG
+  rotate: false
+  xy: 556, 127
+  size: 220, 151
+  orig: 220, 151
+  offset: 0, 0
+  index: -1
+diskBIG
+  rotate: false
+  xy: 0, 120
+  size: 283, 158
+  orig: 283, 158
+  offset: 0, 0
+  index: -1
+effect
+  rotate: false
+  xy: 0, 35
+  size: 152, 83
+  orig: 152, 83
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 615, 63
+  size: 56, 62
+  orig: 56, 62
+  offset: 0, 0
+  index: -1
+hand-gun
+  rotate: false
+  xy: 65, 1
+  size: 78, 32
+  orig: 78, 32
+  offset: 0, 0
+  index: -1
+hand-gun-sparkle
+  rotate: false
+  xy: 389, 39
+  size: 99, 45
+  orig: 99, 45
+  offset: 0, 0
+  index: -1
+hand-hold
+  rotate: false
+  xy: 517, 107
+  size: 26, 43
+  orig: 26, 43
+  offset: 0, 0
+  index: -1
+hand-phone1
+  rotate: false
+  xy: 647, 1
+  size: 54, 29
+  orig: 54, 29
+  offset: 0, 0
+  index: -1
+hand-phone2
+  rotate: false
+  xy: 710, 29
+  size: 52, 32
+  orig: 52, 32
+  offset: 0, 0
+  index: -1
+hand-please
+  rotate: false
+  xy: 647, 32
+  size: 61, 29
+  orig: 61, 29
+  offset: 0, 0
+  index: -1
+hand-relax
+  rotate: false
+  xy: 384, 3
+  size: 63, 34
+  orig: 63, 34
+  offset: 0, 0
+  index: -1
+hand-thinking
+  rotate: false
+  xy: 731, 67
+  size: 41, 58
+  orig: 41, 58
+  offset: 0, 0
+  index: -1
+hand-thinking-middle
+  rotate: false
+  xy: 0, 0
+  size: 63, 33
+  orig: 63, 33
+  offset: 0, 0
+  index: -1
+hook
+  rotate: false
+  xy: 297, 45
+  size: 90, 105
+  orig: 90, 105
+  offset: 0, 0
+  index: -1
+lightdown38
+  rotate: false
+  xy: 545, 67
+  size: 68, 58
+  orig: 68, 58
+  offset: 0, 0
+  index: -1
+lower arm
+  rotate: false
+  xy: 297, 6
+  size: 85, 37
+  orig: 85, 37
+  offset: 0, 0
+  index: -1
+mash
+  rotate: false
+  xy: 673, 63
+  size: 56, 62
+  orig: 56, 62
+  offset: 0, 0
+  index: -1
+plat-glowBIG
+  rotate: false
+  xy: 449, 11
+  size: 38, 26
+  orig: 38, 26
+  offset: 0, 0
+  index: -1
+table-BG
+  rotate: false
+  xy: 390, 85
+  size: 124, 64
+  orig: 126, 64
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 154, 24
+  size: 141, 94
+  orig: 141, 94
+  offset: 0, 0
+  index: -1
+upper arm
+  rotate: false
+  xy: 490, 0
+  size: 47, 84
+  orig: 47, 84
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,187 @@
+Dealer_Deadpool.png
+size: 251,271
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm_5
+  rotate: false
+  xy: 2, 87
+  size: 70, 31
+  orig: 70, 31
+  offset: 0, 0
+  index: -1
+Arm_52
+  rotate: false
+  xy: 122, 131
+  size: 70, 31
+  orig: 70, 31
+  offset: 0, 0
+  index: -1
+Arm_522
+  rotate: false
+  xy: 122, 98
+  size: 70, 31
+  orig: 70, 31
+  offset: 0, 0
+  index: -1
+Bell/Bell_Body
+  rotate: false
+  xy: 194, 69
+  size: 49, 36
+  orig: 49, 36
+  offset: 0, 0
+  index: -1
+Bell/Bell_Bot
+  rotate: true
+  xy: 168, 3
+  size: 64, 33
+  orig: 64, 33
+  offset: 0, 0
+  index: -1
+Bell/Bell_Head
+  rotate: true
+  xy: 71, 46
+  size: 14, 25
+  orig: 14, 25
+  offset: 0, 0
+  index: -1
+Body
+  rotate: true
+  xy: 2, 177
+  size: 92, 118
+  orig: 92, 118
+  offset: 0, 0
+  index: -1
+Hand_1
+  rotate: true
+  xy: 194, 133
+  size: 26, 55
+  orig: 26, 55
+  offset: 0, 0
+  index: -1
+Hand_10
+  rotate: true
+  xy: 203, 19
+  size: 48, 27
+  orig: 48, 27
+  offset: 0, 0
+  index: -1
+Hand_2
+  rotate: true
+  xy: 197, 161
+  size: 26, 52
+  orig: 26, 52
+  offset: 0, 0
+  index: -1
+Hand_3
+  rotate: false
+  xy: 214, 189
+  size: 35, 52
+  orig: 35, 52
+  offset: 0, 0
+  index: -1
+Hand_4
+  rotate: false
+  xy: 2, 2
+  size: 39, 38
+  orig: 39, 38
+  offset: 0, 0
+  index: -1
+Hand_5
+  rotate: false
+  xy: 115, 2
+  size: 39, 47
+  orig: 39, 47
+  offset: 0, 0
+  index: -1
+Hand_8
+  rotate: true
+  xy: 76, 111
+  size: 64, 44
+  orig: 64, 44
+  offset: 0, 0
+  index: -1
+Hand_9
+  rotate: true
+  xy: 80, 2
+  size: 42, 33
+  orig: 42, 33
+  offset: 0, 0
+  index: -1
+Hand_call
+  rotate: true
+  xy: 74, 62
+  size: 47, 46
+  orig: 47, 46
+  offset: 0, 0
+  index: -1
+Hand_main
+  rotate: false
+  xy: 194, 107
+  size: 52, 24
+  orig: 52, 24
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 2, 42
+  size: 43, 67
+  orig: 43, 67
+  offset: 0, 0
+  index: -1
+Strap
+  rotate: true
+  xy: 122, 243
+  size: 26, 118
+  orig: 26, 118
+  offset: 0, 0
+  index: -1
+Sword_R
+  rotate: true
+  xy: 98, 51
+  size: 9, 44
+  orig: 9, 44
+  offset: 0, 0
+  index: -1
+Upper_Arm_L
+  rotate: true
+  xy: 122, 205
+  size: 36, 90
+  orig: 36, 90
+  offset: 0, 0
+  index: -1
+hand_sicbo
+  rotate: false
+  xy: 43, 3
+  size: 35, 37
+  orig: 35, 37
+  offset: 0, 0
+  index: -1
+hand_sicbo_2
+  rotate: false
+  xy: 168, 75
+  size: 23, 21
+  orig: 23, 21
+  offset: 0, 0
+  index: -1
+heart
+  rotate: false
+  xy: 122, 62
+  size: 44, 34
+  orig: 44, 34
+  offset: 0, 0
+  index: -1
+sicbo1
+  rotate: false
+  xy: 122, 164
+  size: 73, 39
+  orig: 73, 39
+  offset: 0, 0
+  index: -1
+sicbo2
+  rotate: true
+  xy: 2, 120
+  size: 55, 72
+  orig: 55, 72
+  offset: 0, 0
+  index: -1

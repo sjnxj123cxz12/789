@@ -1,0 +1,19 @@
+Dice_Box.png
+size: 1008,803
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Lid
+  rotate: true
+  xy: 2, 2
+  size: 260, 342
+  orig: 260, 342
+  offset: 0, 0
+  index: -1
+Spotlight
+  rotate: true
+  xy: 2, 264
+  size: 537, 1004
+  orig: 537, 1004
+  offset: 0, 0
+  index: -1

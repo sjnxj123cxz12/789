@@ -1,0 +1,264 @@
+JpPig38.png
+size: 380,798
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+A
+  rotate: false
+  xy: 154, 100
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+C
+  rotate: false
+  xy: 347, 64
+  size: 28, 30
+  orig: 28, 30
+  offset: 0, 0
+  index: -1
+F1
+  rotate: false
+  xy: 279, 30
+  size: 26, 15
+  orig: 26, 15
+  offset: 0, 0
+  index: -1
+F2
+  rotate: false
+  xy: 251, 15
+  size: 26, 30
+  orig: 26, 30
+  offset: 0, 0
+  index: -1
+F3
+  rotate: false
+  xy: 307, 4
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+F3A
+  rotate: false
+  xy: 359, 776
+  size: 21, 22
+  orig: 21, 22
+  offset: 0, 0
+  index: -1
+F4
+  rotate: false
+  xy: 299, 621
+  size: 33, 11
+  orig: 33, 11
+  offset: 0, 0
+  index: -1
+J
+  rotate: false
+  xy: 250, 529
+  size: 23, 37
+  orig: 23, 37
+  offset: 0, 0
+  index: -1
+K
+  rotate: false
+  xy: 347, 32
+  size: 28, 30
+  orig: 28, 30
+  offset: 0, 0
+  index: -1
+Money
+  rotate: false
+  xy: 189, 96
+  size: 182, 85
+  orig: 182, 85
+  offset: 0, 0
+  index: -1
+MoneyPart
+  rotate: false
+  xy: 300, 726
+  size: 57, 24
+  orig: 57, 24
+  offset: 0, 0
+  index: -1
+O
+  rotate: false
+  xy: 154, 133
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+P
+  rotate: false
+  xy: 346, 0
+  size: 27, 30
+  orig: 27, 30
+  offset: 0, 0
+  index: -1
+PigEye
+  rotate: false
+  xy: 359, 757
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: -1
+PigLeg
+  rotate: false
+  xy: 141, 41
+  size: 38, 24
+  orig: 38, 24
+  offset: 0, 0
+  index: -1
+PigLeg1
+  rotate: false
+  xy: 154, 67
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+PigLeg2
+  rotate: false
+  xy: 316, 63
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+PigPart
+  rotate: false
+  xy: 359, 621
+  size: 17, 134
+  orig: 17, 134
+  offset: 0, 0
+  index: -1
+PigTrunk
+  rotate: false
+  xy: 0, 507
+  size: 187, 169
+  orig: 187, 169
+  offset: 0, 0
+  index: -1
+PigTrunk1
+  rotate: false
+  xy: 189, 354
+  size: 187, 169
+  orig: 187, 169
+  offset: 0, 0
+  index: -1
+PigTrunk2
+  rotate: false
+  xy: 0, 336
+  size: 187, 169
+  orig: 187, 169
+  offset: 0, 0
+  index: -1
+PigTrunk3
+  rotate: false
+  xy: 189, 183
+  size: 187, 169
+  orig: 187, 169
+  offset: 0, 0
+  index: -1
+PigTrunk4
+  rotate: false
+  xy: 0, 165
+  size: 187, 169
+  orig: 187, 169
+  offset: 0, 0
+  index: -1
+T
+  rotate: false
+  xy: 316, 31
+  size: 28, 30
+  orig: 28, 30
+  offset: 0, 0
+  index: -1
+blow38
+  rotate: false
+  xy: 189, 568
+  size: 108, 108
+  orig: 108, 108
+  offset: 0, 0
+  index: -1
+effect38
+  rotate: false
+  xy: 0, 80
+  size: 152, 83
+  orig: 152, 83
+  offset: 0, 0
+  index: -1
+khungJP
+  rotate: false
+  xy: 0, 678
+  size: 298, 72
+  orig: 298, 72
+  offset: 0, 0
+  index: -1
+khungJPpart
+  rotate: false
+  xy: 378, 629
+  size: 2, 126
+  orig: 2, 126
+  offset: 0, 0
+  index: -1
+lighJP38
+  rotate: false
+  xy: 0, 752
+  size: 357, 46
+  orig: 357, 46
+  offset: 0, 0
+  index: -1
+lightdown
+  rotate: false
+  xy: 71, 20
+  size: 68, 58
+  orig: 68, 58
+  offset: 0, 0
+  index: -1
+money1
+  rotate: false
+  xy: 0, 5
+  size: 69, 73
+  orig: 69, 73
+  offset: 0, 0
+  index: -1
+money2
+  rotate: false
+  xy: 300, 672
+  size: 49, 52
+  orig: 49, 52
+  offset: 0, 0
+  index: -1
+money3
+  rotate: false
+  xy: 299, 634
+  size: 39, 36
+  orig: 39, 36
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 185, 44
+  size: 64, 50
+  orig: 64, 50
+  offset: 0, 0
+  index: -1
+noseshadow
+  rotate: false
+  xy: 251, 47
+  size: 63, 47
+  orig: 63, 47
+  offset: 0, 0
+  index: -1
+sparkle
+  rotate: false
+  xy: 299, 525
+  size: 78, 94
+  orig: 78, 94
+  offset: 0, 0
+  index: -1
+tube
+  rotate: false
+  xy: 189, 527
+  size: 59, 39
+  orig: 59, 39
+  offset: 0, 0
+  index: -1
