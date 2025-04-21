@@ -1,0 +1,104 @@
+
+BONUSGAME_PACKED.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tomb_1
+  rotate: false
+  xy: 1266, 827
+  size: 147, 186
+  orig: 147, 186
+  offset: 0, 0
+  index: -1
+tomb_2
+  rotate: false
+  xy: 1266, 639
+  size: 147, 186
+  orig: 147, 186
+  offset: 0, 0
+  index: -1
+tomb_3
+  rotate: false
+  xy: 1266, 455
+  size: 141, 182
+  orig: 141, 182
+  offset: 0, 0
+  index: -1
+tomb_4
+  rotate: false
+  xy: 1415, 844
+  size: 137, 182
+  orig: 137, 182
+  offset: 0, 0
+  index: -1
+tomb_5
+  rotate: false
+  xy: 719, 212
+  size: 136, 149
+  orig: 136, 149
+  offset: 0, 0
+  index: -1
+tomb_break
+  rotate: true
+  xy: 655, 341
+  size: 89, 62
+  orig: 89, 62
+  offset: 0, 0
+  index: -1
+tomb_break_2
+  rotate: false
+  xy: 426, 187
+  size: 43, 57
+  orig: 43, 57
+  offset: 0, 0
+  index: -1
+tomb_break_3
+  rotate: true
+  xy: 1266, 1022
+  size: 61, 63
+  orig: 61, 63
+  offset: 0, 0
+  index: -1
+tomb_break_4
+  rotate: false
+  xy: 587, 181
+  size: 41, 60
+  orig: 41, 60
+  offset: 0, 0
+  index: -1
+x 1_
+  rotate: false
+  xy: 655, 432
+  size: 66, 70
+  orig: 66, 70
+  offset: 0, 0
+  index: -1
+x 2_
+  rotate: true
+  xy: 340, 161
+  size: 83, 84
+  orig: 83, 84
+  offset: 0, 0
+  index: -1
+x 3_
+  rotate: true
+  xy: 338, 31
+  size: 99, 92
+  orig: 99, 92
+  offset: 0, 0
+  index: -1
+x 4_
+  rotate: false
+  xy: 235, 24
+  size: 101, 106
+  orig: 101, 106
+  offset: 0, 0
+  index: -1
+x 5_
+  rotate: false
+  xy: 235, 132
+  size: 103, 112
+  orig: 103, 112
+  offset: 0, 0
+  index: -1

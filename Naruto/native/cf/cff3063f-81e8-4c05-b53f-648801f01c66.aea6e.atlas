@@ -1,0 +1,209 @@
+
+naruto_jackpot.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BONUS GAME/gold_coin
+  rotate: false
+  xy: 547, 384
+  size: 256, 261
+  orig: 257, 262
+  offset: 1, 0
+  index: -1
+JACKPOT/JACKPOT
+  rotate: true
+  xy: 1857, 51
+  size: 710, 174
+  orig: 710, 174
+  offset: 0, 0
+  index: -1
+JACKPOT/gold_cloud_1
+  rotate: true
+  xy: 1124, 101
+  size: 736, 255
+  orig: 736, 255
+  offset: 0, 0
+  index: -1
+JACKPOT/gold_cloud_2
+  rotate: false
+  xy: 547, 647
+  size: 575, 190
+  orig: 575, 190
+  offset: 0, 0
+  index: -1
+JACKPOT/golden_pig
+  rotate: false
+  xy: 2, 330
+  size: 543, 507
+  orig: 543, 507
+  offset: 0, 0
+  index: -1
+JACKPOT/golden_ribbon
+  rotate: true
+  xy: 1381, 186
+  size: 519, 240
+  orig: 519, 240
+  offset: 0, 0
+  index: -1
+JACKPOT/num_board
+  rotate: false
+  xy: 2, 839
+  size: 1560, 177
+  orig: 1560, 177
+  offset: 0, 0
+  index: -1
+KYUYBI/1
+  rotate: true
+  xy: 1636, 2
+  size: 47, 53
+  orig: 164, 157
+  offset: 57, 8
+  index: -1
+KYUYBI/10
+  rotate: true
+  xy: 925, 534
+  size: 111, 134
+  orig: 164, 157
+  offset: 23, 9
+  index: -1
+KYUYBI/11
+  rotate: true
+  xy: 805, 415
+  size: 113, 120
+  orig: 164, 157
+  offset: 21, 24
+  index: -1
+KYUYBI/12
+  rotate: true
+  xy: 805, 530
+  size: 115, 118
+  orig: 164, 157
+  offset: 20, 27
+  index: -1
+KYUYBI/13
+  rotate: true
+  xy: 1691, 74
+  size: 117, 116
+  orig: 164, 157
+  offset: 19, 30
+  index: -1
+KYUYBI/14
+  rotate: true
+  xy: 795, 262
+  size: 120, 115
+  orig: 164, 157
+  offset: 16, 32
+  index: -1
+KYUYBI/15
+  rotate: false
+  xy: 672, 267
+  size: 121, 115
+  orig: 164, 157
+  offset: 15, 33
+  index: -1
+KYUYBI/16
+  rotate: false
+  xy: 547, 267
+  size: 123, 115
+  orig: 164, 157
+  offset: 14, 34
+  index: -1
+KYUYBI/17
+  rotate: false
+  xy: 1381, 721
+  size: 124, 116
+  orig: 164, 157
+  offset: 13, 34
+  index: -1
+KYUYBI/2
+  rotate: false
+  xy: 1507, 754
+  size: 55, 83
+  orig: 164, 157
+  offset: 52, 7
+  index: -1
+KYUYBI/3
+  rotate: true
+  xy: 1740, 203
+  size: 67, 111
+  orig: 164, 157
+  offset: 44, 7
+  index: -1
+KYUYBI/4
+  rotate: true
+  xy: 1623, 193
+  size: 77, 115
+  orig: 164, 157
+  offset: 41, 7
+  index: -1
+KYUYBI/5
+  rotate: false
+  xy: 1005, 158
+  size: 86, 120
+  orig: 164, 157
+  offset: 38, 7
+  index: -1
+KYUYBI/6
+  rotate: false
+  xy: 912, 154
+  size: 91, 124
+  orig: 164, 157
+  offset: 35, 8
+  index: -1
+KYUYBI/7
+  rotate: false
+  xy: 1756, 353
+  size: 98, 130
+  orig: 164, 157
+  offset: 30, 8
+  index: -1
+KYUYBI/8
+  rotate: true
+  xy: 927, 430
+  size: 102, 132
+  orig: 164, 157
+  offset: 28, 8
+  index: -1
+KYUYBI/9
+  rotate: false
+  xy: 912, 280
+  size: 108, 133
+  orig: 164, 157
+  offset: 25, 9
+  index: -1
+KYUYBI/body_1
+  rotate: true
+  xy: 1564, 707
+  size: 309, 291
+  orig: 309, 291
+  offset: 0, 0
+  index: -1
+KYUYBI/tail_1
+  rotate: false
+  xy: 1623, 485
+  size: 213, 220
+  orig: 213, 220
+  offset: 0, 0
+  index: -1
+KYUYBI/tail_2
+  rotate: false
+  xy: 1857, 763
+  size: 178, 253
+  orig: 192, 253
+  offset: 0, 0
+  index: -1
+KYUYBI/tail_3
+  rotate: true
+  xy: 1381, 37
+  size: 147, 253
+  orig: 176, 255
+  offset: 0, 1
+  index: -1
+KYUYBI/tail_4
+  rotate: false
+  xy: 1623, 272
+  size: 131, 211
+  orig: 303, 308
+  offset: 0, 58
+  index: -1

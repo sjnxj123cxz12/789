@@ -1,0 +1,48 @@
+
+zoneFx0.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DEMO
+  rotate: false
+  xy: 320, 149
+  size: 91, 37
+  orig: 91, 37
+  offset: 0, 0
+  index: -1
+Group 26
+  rotate: false
+  xy: 2, 2
+  size: 327, 77
+  orig: 327, 77
+  offset: 0, 0
+  index: -1
+Layer 0
+  rotate: false
+  xy: 320, 188
+  size: 277, 317
+  orig: 277, 317
+  offset: 0, 0
+  index: -1
+Layer 1-2
+  rotate: false
+  xy: 2, 81
+  size: 316, 424
+  orig: 316, 424
+  offset: 0, 0
+  index: -1
+Peashooter_HD
+  rotate: false
+  xy: 331, 29
+  size: 130, 118
+  orig: 130, 118
+  offset: 0, 0
+  index: -1
+plants-vs-zombies-png-image-regular-zombie-png-plants-vs-zombies-wiki-fandom-powered-by-wikia-363
+  rotate: false
+  xy: 463, 25
+  size: 131, 161
+  orig: 131, 161
+  offset: 0, 0
+  index: -1

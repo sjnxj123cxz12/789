@@ -1,0 +1,76 @@
+
+SYMBOLS_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/win2
+  rotate: true
+  xy: 2, 785
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+effect/win_1
+  rotate: true
+  xy: 2, 369
+  size: 203, 190
+  orig: 203, 190
+  offset: 0, 0
+  index: -1
+mari_gold1
+  rotate: false
+  xy: 873, 212
+  size: 43, 23
+  orig: 197, 197
+  offset: 69, 40
+  index: -1
+mari_gold1_light
+  rotate: false
+  xy: 1488, 90
+  size: 43, 23
+  orig: 197, 197
+  offset: 69, 40
+  index: -1
+mari_gold2
+  rotate: false
+  xy: 194, 370
+  size: 14, 27
+  orig: 197, 197
+  offset: 87, 41
+  index: -1
+mari_gold2_light
+  rotate: false
+  xy: 210, 370
+  size: 14, 27
+  orig: 197, 197
+  offset: 87, 41
+  index: -1
+mari_gold3
+  rotate: false
+  xy: 226, 371
+  size: 66, 26
+  orig: 197, 197
+  offset: 65, 30
+  index: -1
+mari_gold3_light
+  rotate: false
+  xy: 294, 371
+  size: 66, 26
+  orig: 197, 197
+  offset: 65, 30
+  index: -1
+mari_gold4
+  rotate: true
+  xy: 1319, 2
+  size: 86, 87
+  orig: 197, 197
+  offset: 47, 56
+  index: -1
+mari_gold4_light
+  rotate: true
+  xy: 1408, 2
+  size: 86, 87
+  orig: 197, 197
+  offset: 47, 56
+  index: -1

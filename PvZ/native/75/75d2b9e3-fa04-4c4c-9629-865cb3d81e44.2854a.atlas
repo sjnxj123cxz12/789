@@ -1,0 +1,41 @@
+
+SYMBOLS_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 462, 867
+  size: 155, 124
+  orig: 155, 124
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 607, 452
+  size: 146, 134
+  orig: 146, 134
+  offset: 0, 0
+  index: -1
+JACKPOT
+  rotate: true
+  xy: 2, 174
+  size: 193, 61
+  orig: 194, 62
+  offset: 1, 0
+  index: -1
+effect/win2
+  rotate: true
+  xy: 2, 785
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+effect/win_1
+  rotate: true
+  xy: 2, 369
+  size: 203, 190
+  orig: 203, 190
+  offset: 0, 0
+  index: -1

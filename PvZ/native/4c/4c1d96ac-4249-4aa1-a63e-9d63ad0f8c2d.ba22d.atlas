@@ -1,0 +1,76 @@
+
+zoneFx3.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BikiniZombie
+  rotate: false
+  xy: 599, 137
+  size: 200, 371
+  orig: 200, 371
+  offset: 0, 0
+  index: -1
+Group 22
+  rotate: false
+  xy: 320, 130
+  size: 209, 59
+  orig: 209, 59
+  offset: 0, 0
+  index: -1
+Group 26
+  rotate: false
+  xy: 2, 8
+  size: 327, 77
+  orig: 327, 77
+  offset: 0, 0
+  index: -1
+Group 27
+  rotate: false
+  xy: 469, 72
+  size: 127, 56
+  orig: 127, 56
+  offset: 0, 0
+  index: -1
+Group 29
+  rotate: false
+  xy: 2, 87
+  size: 316, 421
+  orig: 316, 421
+  offset: 0, 0
+  index: -1
+Hdpowerlili
+  rotate: false
+  xy: 801, 183
+  size: 151, 125
+  orig: 151, 125
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 320, 191
+  size: 277, 317
+  orig: 277, 317
+  offset: 0, 0
+  index: -1
+PVZ2_BWB_Guacodile__00461.1435614126.1280.1280
+  rotate: false
+  xy: 331, 2
+  size: 136, 126
+  orig: 136, 126
+  offset: 0, 0
+  index: -1
+SurferZombieHD2_IT'SABOUTTIME
+  rotate: false
+  xy: 801, 310
+  size: 200, 198
+  orig: 200, 198
+  offset: 0, 0
+  index: -1
+Tangle_Kelp
+  rotate: false
+  xy: 801, 51
+  size: 135, 130
+  orig: 135, 130
+  offset: 0, 0
+  index: -1

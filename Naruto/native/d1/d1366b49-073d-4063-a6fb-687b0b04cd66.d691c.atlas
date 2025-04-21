@@ -1,0 +1,20 @@
+
+GAMEBONUS_PACKED.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+card
+  rotate: false
+  xy: 1823, 1226
+  size: 167, 262
+  orig: 167, 262
+  offset: 0, 0
+  index: -1
+card_back
+  rotate: false
+  xy: 1799, 749
+  size: 186, 275
+  orig: 186, 275
+  offset: 0, 0
+  index: -1

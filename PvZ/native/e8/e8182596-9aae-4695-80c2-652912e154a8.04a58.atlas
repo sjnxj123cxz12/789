@@ -1,0 +1,90 @@
+
+SYMBOLS_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/win2
+  rotate: true
+  xy: 2, 785
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+effect/win_1
+  rotate: true
+  xy: 2, 369
+  size: 203, 190
+  orig: 203, 190
+  offset: 0, 0
+  index: -1
+sun_flower1
+  rotate: false
+  xy: 675, 207
+  size: 66, 19
+  orig: 197, 197
+  offset: 54, 21
+  index: -1
+sun_flower1_light
+  rotate: false
+  xy: 743, 207
+  size: 66, 19
+  orig: 197, 197
+  offset: 54, 21
+  index: -1
+sun_flower2
+  rotate: false
+  xy: 1571, 489
+  size: 48, 50
+  orig: 197, 197
+  offset: 67, 23
+  index: -1
+sun_flower2_light
+  rotate: false
+  xy: 1593, 585
+  size: 48, 50
+  orig: 197, 197
+  offset: 67, 23
+  index: -1
+sun_flower3
+  rotate: false
+  xy: 918, 211
+  size: 90, 33
+  orig: 197, 197
+  offset: 48, 3
+  index: -1
+sun_flower3_light
+  rotate: false
+  xy: 1010, 211
+  size: 90, 33
+  orig: 197, 197
+  offset: 48, 3
+  index: -1
+sun_flower4
+  rotate: true
+  xy: 537, 206
+  size: 163, 136
+  orig: 197, 197
+  offset: 15, 52
+  index: -1
+sun_flower4_light
+  rotate: true
+  xy: 572, 41
+  size: 163, 136
+  orig: 197, 197
+  offset: 15, 52
+  index: -1
+sun_flower5
+  rotate: false
+  xy: 1201, 794
+  size: 112, 92
+  orig: 197, 197
+  offset: 44, 64
+  index: -1
+sun_flower5_light
+  rotate: true
+  xy: 1315, 779
+  size: 112, 92
+  orig: 197, 197
+  offset: 44, 64
+  index: -1

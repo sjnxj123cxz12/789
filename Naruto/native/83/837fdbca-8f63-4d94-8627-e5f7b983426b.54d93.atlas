@@ -1,0 +1,489 @@
+
+UI_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blowchaKra/blow_chakra_00002
+  rotate: true
+  xy: 733, 436
+  size: 50, 72
+  orig: 111, 111
+  offset: 32, 1
+  index: -1
+blowchaKra/blow_chakra_00003
+  rotate: false
+  xy: 740, 706
+  size: 62, 93
+  orig: 111, 111
+  offset: 26, 1
+  index: -1
+blowchaKra/blow_chakra_00004
+  rotate: false
+  xy: 380, 527
+  size: 64, 94
+  orig: 111, 111
+  offset: 25, 2
+  index: -1
+blowchaKra/blow_chakra_00005
+  rotate: false
+  xy: 311, 526
+  size: 67, 95
+  orig: 111, 111
+  offset: 23, 2
+  index: -1
+blowchaKra/blow_chakra_00006
+  rotate: true
+  xy: 758, 93
+  size: 67, 101
+  orig: 111, 111
+  offset: 23, 1
+  index: -1
+blowchaKra/blow_chakra_00007
+  rotate: false
+  xy: 750, 162
+  size: 68, 102
+  orig: 111, 111
+  offset: 23, 1
+  index: -1
+blowchaKra/blow_chakra_00008
+  rotate: false
+  xy: 678, 160
+  size: 70, 104
+  orig: 111, 111
+  offset: 22, 1
+  index: -1
+blowchaKra/blow_chakra_00009
+  rotate: false
+  xy: 690, 801
+  size: 71, 109
+  orig: 111, 111
+  offset: 20, 2
+  index: -1
+blowchaKra/blow_chakra_00010
+  rotate: false
+  xy: 701, 913
+  size: 71, 109
+  orig: 111, 111
+  offset: 19, 2
+  index: -1
+blowchaKra/blow_chakra_00011
+  rotate: false
+  xy: 629, 547
+  size: 71, 110
+  orig: 111, 111
+  offset: 19, 1
+  index: -1
+blowchaKra/blow_chakra_00012
+  rotate: false
+  xy: 627, 912
+  size: 72, 110
+  orig: 111, 111
+  offset: 19, 1
+  index: -1
+blowchaKra/blow_chakra_00013
+  rotate: false
+  xy: 593, 423
+  size: 72, 110
+  orig: 111, 111
+  offset: 19, 1
+  index: -1
+blowchaKra/blow_chakra_00014
+  rotate: false
+  xy: 616, 312
+  size: 71, 109
+  orig: 111, 111
+  offset: 19, 2
+  index: -1
+blowchaKra/blow_chakra_00015
+  rotate: true
+  xy: 231, 2
+  size: 69, 110
+  orig: 111, 111
+  offset: 21, 1
+  index: -1
+blowchaKra/blow_chakra_00016
+  rotate: false
+  xy: 671, 677
+  size: 67, 110
+  orig: 111, 111
+  offset: 22, 1
+  index: -1
+blowchaKra/blow_chakra_00017
+  rotate: false
+  xy: 667, 436
+  size: 64, 109
+  orig: 111, 111
+  offset: 24, 2
+  index: -1
+blowchaKra/blow_chakra_00018
+  rotate: false
+  xy: 689, 325
+  size: 59, 109
+  orig: 111, 111
+  offset: 26, 2
+  index: -1
+blowchaKra/blow_chakra_00019
+  rotate: false
+  xy: 626, 155
+  size: 50, 109
+  orig: 111, 111
+  offset: 30, 2
+  index: -1
+blowchaKra/blow_chakra_00020
+  rotate: true
+  xy: 616, 266
+  size: 44, 94
+  orig: 111, 111
+  offset: 31, 3
+  index: -1
+blowchaKra/blow_chakra_00021
+  rotate: false
+  xy: 774, 930
+  size: 40, 92
+  orig: 111, 111
+  offset: 33, 4
+  index: -1
+blowchaKra/blow_chakra_00022
+  rotate: false
+  xy: 809, 348
+  size: 37, 90
+  orig: 111, 111
+  offset: 35, 5
+  index: -1
+chakra /chakra_00000
+  rotate: false
+  xy: 1168, 938
+  size: 56, 84
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00001
+  rotate: false
+  xy: 1110, 937
+  size: 56, 85
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00002
+  rotate: false
+  xy: 996, 184
+  size: 56, 85
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00003
+  rotate: false
+  xy: 1025, 579
+  size: 56, 85
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00004
+  rotate: false
+  xy: 1096, 760
+  size: 56, 85
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00005
+  rotate: false
+  xy: 1003, 666
+  size: 56, 86
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00006
+  rotate: false
+  xy: 1033, 845
+  size: 56, 87
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00007
+  rotate: false
+  xy: 980, 754
+  size: 56, 88
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00008
+  rotate: false
+  xy: 938, 177
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00009
+  rotate: false
+  xy: 875, 932
+  size: 57, 90
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00010
+  rotate: false
+  xy: 816, 931
+  size: 57, 91
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00011
+  rotate: false
+  xy: 750, 343
+  size: 57, 91
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00012
+  rotate: false
+  xy: 879, 174
+  size: 57, 91
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00013
+  rotate: false
+  xy: 804, 725
+  size: 57, 91
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00014
+  rotate: false
+  xy: 913, 2
+  size: 57, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00015
+  rotate: false
+  xy: 885, 658
+  size: 58, 88
+  orig: 126, 126
+  offset: 33, 18
+  index: -1
+chakra /chakra_00016
+  rotate: false
+  xy: 974, 844
+  size: 57, 88
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00017
+  rotate: false
+  xy: 908, 568
+  size: 57, 88
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00018
+  rotate: false
+  xy: 1091, 847
+  size: 56, 86
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00019
+  rotate: false
+  xy: 955, 479
+  size: 55, 87
+  orig: 126, 126
+  offset: 35, 18
+  index: -1
+chakra /chakra_00020
+  rotate: false
+  xy: 1030, 8
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00021
+  rotate: false
+  xy: 850, 543
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00022
+  rotate: false
+  xy: 906, 361
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra /chakra_00023
+  rotate: false
+  xy: 792, 521
+  size: 56, 90
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00000
+  rotate: false
+  xy: 1149, 851
+  size: 56, 84
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00001
+  rotate: false
+  xy: 708, 2
+  size: 56, 85
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00002
+  rotate: false
+  xy: 964, 392
+  size: 56, 85
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00003
+  rotate: false
+  xy: 1012, 487
+  size: 56, 85
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00004
+  rotate: false
+  xy: 1061, 670
+  size: 56, 85
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00005
+  rotate: false
+  xy: 967, 574
+  size: 56, 86
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00006
+  rotate: false
+  xy: 441, 264
+  size: 56, 87
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00007
+  rotate: false
+  xy: 945, 662
+  size: 56, 88
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00008
+  rotate: false
+  xy: 848, 349
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00009
+  rotate: false
+  xy: 827, 839
+  size: 57, 90
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00010
+  rotate: true
+  xy: 712, 266
+  size: 57, 91
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00011
+  rotate: false
+  xy: 733, 488
+  size: 57, 91
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00012
+  rotate: false
+  xy: 820, 174
+  size: 57, 91
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00013
+  rotate: false
+  xy: 768, 613
+  size: 57, 91
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00014
+  rotate: false
+  xy: 854, 2
+  size: 57, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00015
+  rotate: false
+  xy: 934, 934
+  size: 58, 88
+  orig: 126, 126
+  offset: 33, 18
+  index: -1
+chakra_2/chakra_00016
+  rotate: false
+  xy: 921, 752
+  size: 57, 88
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00017
+  rotate: false
+  xy: 994, 934
+  size: 57, 88
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00018
+  rotate: false
+  xy: 1038, 757
+  size: 56, 86
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00019
+  rotate: false
+  xy: 1053, 935
+  size: 55, 87
+  orig: 126, 126
+  offset: 35, 18
+  index: -1
+chakra_2/chakra_00020
+  rotate: false
+  xy: 972, 8
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00021
+  rotate: false
+  xy: 827, 634
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00022
+  rotate: false
+  xy: 897, 452
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1
+chakra_2/chakra_00023
+  rotate: false
+  xy: 863, 748
+  size: 56, 89
+  orig: 126, 126
+  offset: 34, 18
+  index: -1

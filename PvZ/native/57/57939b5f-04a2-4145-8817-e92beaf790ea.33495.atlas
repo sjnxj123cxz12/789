@@ -1,0 +1,118 @@
+
+FREESYMBOLS_PACKED.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/bonus_1
+  rotate: false
+  xy: 229, 584
+  size: 165, 126
+  orig: 165, 126
+  offset: 0, 0
+  index: -1
+effect/bonus_2
+  rotate: false
+  xy: 2, 464
+  size: 165, 106
+  orig: 165, 106
+  offset: 0, 0
+  index: -1
+effect/bonus_3
+  rotate: false
+  xy: 425, 399
+  size: 111, 106
+  orig: 111, 106
+  offset: 0, 0
+  index: -1
+effect/win2
+  rotate: false
+  xy: 2, 724
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+effect/win_1
+  rotate: false
+  xy: 241, 712
+  size: 203, 190
+  orig: 203, 190
+  offset: 0, 0
+  index: -1
+pot
+  rotate: false
+  xy: 420, 297
+  size: 113, 100
+  orig: 197, 197
+  offset: 42, 11
+  index: -1
+wild_star_fruit1
+  rotate: false
+  xy: 634, 764
+  size: 187, 138
+  orig: 187, 138
+  offset: 0, 0
+  index: -1
+wild_star_fruit1_light
+  rotate: false
+  xy: 823, 764
+  size: 187, 138
+  orig: 187, 138
+  offset: 0, 0
+  index: -1
+wild_star_fruit2
+  rotate: false
+  xy: 170, 78
+  size: 66, 51
+  orig: 66, 51
+  offset: 0, 0
+  index: -1
+wild_star_fruit2_light
+  rotate: false
+  xy: 436, 118
+  size: 66, 51
+  orig: 66, 51
+  offset: 0, 0
+  index: -1
+wild_star_fruit3
+  rotate: false
+  xy: 2, 8
+  size: 84, 67
+  orig: 84, 67
+  offset: 0, 0
+  index: -1
+wild_star_fruit3_light
+  rotate: false
+  xy: 476, 228
+  size: 84, 67
+  orig: 84, 67
+  offset: 0, 0
+  index: -1
+wild_star_fruit4
+  rotate: false
+  xy: 229, 488
+  size: 130, 94
+  orig: 130, 94
+  offset: 0, 0
+  index: -1
+wild_star_fruit4_light
+  rotate: false
+  xy: 226, 392
+  size: 130, 94
+  orig: 130, 94
+  offset: 0, 0
+  index: -1
+wild_star_fruit5
+  rotate: true
+  xy: 173, 131
+  size: 79, 88
+  orig: 79, 88
+  offset: 0, 0
+  index: -1
+wild_star_fruit5_light
+  rotate: false
+  xy: 89, 66
+  size: 79, 88
+  orig: 79, 88
+  offset: 0, 0
+  index: -1

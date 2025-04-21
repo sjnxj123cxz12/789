@@ -1,0 +1,230 @@
+
+naruto_bigwin.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 18
+  size: 325, 114
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+10
+  rotate: true
+  xy: 616, 628
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 616, 446
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+12
+  rotate: true
+  xy: 798, 628
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+13
+  rotate: true
+  xy: 980, 628
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+15
+  rotate: false
+  xy: 1008, 446
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+16
+  rotate: true
+  xy: 1162, 628
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+17
+  rotate: true
+  xy: 1344, 628
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+18
+  rotate: true
+  xy: 1390, 54
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 1130, 13
+  size: 334, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+20
+  rotate: false
+  xy: 1400, 446
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 948, 9
+  size: 338, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 766, 3
+  size: 341, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 1526, 628
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+7
+  rotate: true
+  xy: 1708, 628
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+9
+  rotate: true
+  xy: 1572, 54
+  size: 390, 180
+  orig: 390, 180
+  offset: 0, 0
+  index: -1
+BIG WIN
+  rotate: true
+  xy: 444, 328
+  size: 690, 170
+  orig: 690, 170
+  offset: 0, 0
+  index: -1
+big_win_icon
+  rotate: false
+  xy: 503, 6
+  size: 261, 320
+  orig: 261, 320
+  offset: 0, 0
+  index: -1
+big_win_light
+  rotate: false
+  xy: 1312, 2
+  size: 390, 50
+  orig: 390, 50
+  offset: 0, 0
+  index: -1
+dde73si-27d4d12d-59a0-467d-9f60-9cbf76351c1a (1)
+  rotate: false
+  xy: 2, 134
+  size: 440, 884
+  orig: 500, 895
+  offset: 31, 2
+  index: -1
+rasengan_1
+  rotate: false
+  xy: 1307, 362
+  size: 81, 82
+  orig: 81, 82
+  offset: 0, 0
+  index: -1
+wind_10
+  rotate: true
+  xy: 1223, 354
+  size: 90, 82
+  orig: 100, 93
+  offset: 9, 1
+  index: -1
+wind_11
+  rotate: false
+  xy: 1890, 937
+  size: 82, 81
+  orig: 100, 93
+  offset: 17, 2
+  index: -1
+wind_13
+  rotate: true
+  xy: 1049, 349
+  size: 95, 82
+  orig: 100, 93
+  offset: 4, 3
+  index: -1
+wind_14
+  rotate: true
+  xy: 695, 346
+  size: 98, 80
+  orig: 100, 93
+  offset: 1, 5
+  index: -1
+wind_15
+  rotate: true
+  xy: 419, 33
+  size: 99, 82
+  orig: 100, 93
+  offset: 1, 11
+  index: -1
+wind_16
+  rotate: true
+  xy: 616, 345
+  size: 99, 77
+  orig: 100, 93
+  offset: 1, 16
+  index: -1
+wind_19
+  rotate: true
+  xy: 867, 349
+  size: 95, 91
+  orig: 100, 93
+  offset: 4, 1
+  index: -1
+wind_20
+  rotate: true
+  xy: 1133, 350
+  size: 94, 88
+  orig: 100, 93
+  offset: 6, 1
+  index: -1
+wind_4
+  rotate: true
+  xy: 329, 32
+  size: 100, 88
+  orig: 100, 93
+  offset: 0, 3
+  index: -1
+wind_7
+  rotate: true
+  xy: 777, 347
+  size: 97, 88
+  orig: 100, 93
+  offset: 2, 1
+  index: -1
+wind_8
+  rotate: true
+  xy: 960, 349
+  size: 95, 87
+  orig: 100, 93
+  offset: 4, 1
+  index: -1

@@ -1,0 +1,195 @@
+
+SYMBOLS_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+_0000_GOLDEN_BORDER
+  rotate: false
+  xy: 352, 873
+  size: 117, 149
+  orig: 187, 187
+  offset: 35, 0
+  index: -1
+_0002s_0015_NARUTO_3
+  rotate: true
+  xy: 948, 580
+  size: 104, 76
+  orig: 187, 187
+  offset: 34, 95
+  index: -1
+_0002s_0016_NARUTO_2
+  rotate: true
+  xy: 1087, 922
+  size: 100, 82
+  orig: 187, 187
+  offset: 42, 46
+  index: -1
+_0002s_0017_NARUTO_1
+  rotate: false
+  xy: 776, 199
+  size: 96, 90
+  orig: 187, 187
+  offset: 47, 12
+  index: -1
+effect/shinny_00001
+  rotate: false
+  xy: 652, 4
+  size: 60, 28
+  orig: 100, 100
+  offset: 20, 50
+  index: -1
+effect/shinny_00002
+  rotate: false
+  xy: 726, 164
+  size: 60, 33
+  orig: 100, 100
+  offset: 20, 45
+  index: -1
+effect/shinny_00003
+  rotate: false
+  xy: 1046, 364
+  size: 60, 39
+  orig: 100, 100
+  offset: 20, 39
+  index: -1
+effect/shinny_00004
+  rotate: false
+  xy: 1078, 484
+  size: 60, 45
+  orig: 100, 100
+  offset: 20, 33
+  index: -1
+effect/shinny_00005
+  rotate: false
+  xy: 1231, 374
+  size: 60, 60
+  orig: 100, 100
+  offset: 20, 18
+  index: -1
+effect/shinny_00006
+  rotate: false
+  xy: 1026, 609
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00007
+  rotate: false
+  xy: 1045, 726
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00008
+  rotate: false
+  xy: 1103, 844
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00009
+  rotate: false
+  xy: 1045, 282
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00010
+  rotate: false
+  xy: 1075, 137
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00011
+  rotate: false
+  xy: 1046, 405
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00012
+  rotate: false
+  xy: 1107, 286
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00013
+  rotate: false
+  xy: 1078, 531
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00014
+  rotate: false
+  xy: 1088, 648
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00015
+  rotate: false
+  xy: 1107, 766
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00016
+  rotate: false
+  xy: 1165, 844
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00017
+  rotate: false
+  xy: 1171, 946
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00018
+  rotate: false
+  xy: 1108, 406
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00019
+  rotate: false
+  xy: 1169, 328
+  size: 60, 76
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00020
+  rotate: false
+  xy: 1097, 60
+  size: 60, 75
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00021
+  rotate: false
+  xy: 1137, 140
+  size: 60, 73
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00022
+  rotate: false
+  xy: 656, 684
+  size: 60, 54
+  orig: 100, 100
+  offset: 20, 2
+  index: -1
+effect/shinny_00023
+  rotate: false
+  xy: 544, 161
+  size: 60, 34
+  orig: 100, 100
+  offset: 20, 2
+  index: -1

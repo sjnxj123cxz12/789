@@ -1,0 +1,27 @@
+
+pvz_x2_btn.png
+size: 256,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+back_card
+  rotate: false
+  xy: 2, 578
+  size: 180, 286
+  orig: 180, 286
+  offset: 0, 0
+  index: -1
+fail
+  rotate: false
+  xy: 2, 290
+  size: 179, 286
+  orig: 179, 286
+  offset: 0, 0
+  index: -1
+x2
+  rotate: false
+  xy: 2, 2
+  size: 179, 286
+  orig: 179, 286
+  offset: 0, 0
+  index: -1

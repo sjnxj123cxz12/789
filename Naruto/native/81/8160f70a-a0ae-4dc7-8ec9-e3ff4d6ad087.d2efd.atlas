@@ -1,0 +1,41 @@
+
+zoneFx_2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1.000K
+  rotate: true
+  xy: 913, 89
+  size: 120, 33
+  orig: 120, 33
+  offset: 0, 0
+  index: -1
+Screen Shot 2019-10-20 at 00.14.22 copy 2
+  rotate: true
+  xy: 829, 2
+  size: 207, 82
+  orig: 207, 82
+  offset: 0, 0
+  index: -1
+arm_bet_2
+  rotate: false
+  xy: 829, 211
+  size: 188, 201
+  orig: 189, 201
+  offset: 0, 0
+  index: -1
+bet_box_1
+  rotate: true
+  xy: 2, 3
+  size: 409, 480
+  orig: 409, 480
+  offset: 0, 0
+  index: -1
+naruto_bet_2
+  rotate: true
+  xy: 484, 99
+  size: 313, 343
+  orig: 313, 343
+  offset: 0, 0
+  index: -1

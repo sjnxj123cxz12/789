@@ -1,0 +1,55 @@
+
+pvz_jackpot.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 233
+  size: 176, 135
+  orig: 197, 197
+  offset: 4, 62
+  index: -1
+1 copy
+  rotate: false
+  xy: 180, 233
+  size: 173, 135
+  orig: 197, 197
+  offset: 9, 62
+  index: -1
+2
+  rotate: false
+  xy: 675, 222
+  size: 173, 146
+  orig: 197, 197
+  offset: 6, 0
+  index: -1
+2 copy
+  rotate: false
+  xy: 506, 224
+  size: 167, 144
+  orig: 197, 197
+  offset: 14, 0
+  index: -1
+Group 223
+  rotate: false
+  xy: 204, 2
+  size: 648, 218
+  orig: 648, 218
+  offset: 0, 0
+  index: -1
+SunPvZH
+  rotate: true
+  xy: 355, 225
+  size: 143, 149
+  orig: 143, 149
+  offset: 0, 0
+  index: -1
+win_1
+  rotate: false
+  xy: 2, 41
+  size: 200, 190
+  orig: 200, 190
+  offset: 0, 0
+  index: -1

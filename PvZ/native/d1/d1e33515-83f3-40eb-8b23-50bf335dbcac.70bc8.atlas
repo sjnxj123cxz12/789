@@ -1,0 +1,76 @@
+
+zoneFx2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10k
+  rotate: false
+  xy: 801, 190
+  size: 124, 56
+  orig: 124, 56
+  offset: 0, 0
+  index: -1
+Group 22-2
+  rotate: false
+  xy: 320, 108
+  size: 231, 64
+  orig: 231, 64
+  offset: 0, 0
+  index: -1
+Group 26
+  rotate: false
+  xy: 2, 2
+  size: 327, 77
+  orig: 327, 77
+  offset: 0, 0
+  index: -1
+Group 28
+  rotate: false
+  xy: 2, 81
+  size: 316, 418
+  orig: 316, 418
+  offset: 0, 0
+  index: -1
+HD_Buckethead_Zombie
+  rotate: false
+  xy: 320, 174
+  size: 200, 325
+  orig: 200, 325
+  offset: 0, 0
+  index: -1
+HD_Hypno_2
+  rotate: false
+  xy: 553, 33
+  size: 102, 147
+  orig: 102, 147
+  offset: 0, 0
+  index: -1
+Newspaperzombie2
+  rotate: false
+  xy: 801, 248
+  size: 200, 251
+  orig: 200, 251
+  offset: 0, 0
+  index: -1
+Summer_Parties_background
+  rotate: false
+  xy: 522, 182
+  size: 277, 317
+  orig: 277, 317
+  offset: 0, 0
+  index: -1
+Sun-Shroom_HD
+  rotate: false
+  xy: 804, 72
+  size: 102, 116
+  orig: 102, 116
+  offset: 0, 0
+  index: -1
+kisspng-plants-vs-zombies-2-it-s-about-time-plants-vs-z-5b1ee25e098d36.5879143915287506860391
+  rotate: false
+  xy: 657, 47
+  size: 145, 133
+  orig: 145, 133
+  offset: 0, 0
+  index: -1

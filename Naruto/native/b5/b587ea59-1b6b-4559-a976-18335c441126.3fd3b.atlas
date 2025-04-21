@@ -1,0 +1,41 @@
+
+zoneFx_3.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10.000K
+  rotate: false
+  xy: 770, 227
+  size: 142, 33
+  orig: 142, 33
+  offset: 0, 0
+  index: -1
+Screen Shot 2019-10-20 at 00.14.22 copy 2
+  rotate: false
+  xy: 413, 43
+  size: 207, 82
+  orig: 207, 82
+  offset: 0, 0
+  index: -1
+arm_bet_3
+  rotate: false
+  xy: 770, 262
+  size: 203, 220
+  orig: 212, 220
+  offset: 9, 0
+  index: -1
+bet_box_1
+  rotate: false
+  xy: 2, 2
+  size: 409, 480
+  orig: 409, 480
+  offset: 0, 0
+  index: -1
+naruto_bet_3
+  rotate: false
+  xy: 413, 127
+  size: 355, 355
+  orig: 410, 370
+  offset: 48, 0
+  index: -1

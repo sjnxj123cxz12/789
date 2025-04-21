@@ -1,0 +1,48 @@
+
+BONUSGAME_PACKED.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+VaseBreaker_logo
+  rotate: true
+  xy: 1564, 1015
+  size: 790, 294
+  orig: 794, 294
+  offset: 4, 0
+  index: -1
+b_1
+  rotate: false
+  xy: 724, 363
+  size: 540, 720
+  orig: 541, 720
+  offset: 0, 0
+  index: -1
+b_2
+  rotate: true
+  xy: 2, 504
+  size: 579, 720
+  orig: 579, 720
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 2, 1085
+  size: 1560, 720
+  orig: 1560, 720
+  offset: 0, 0
+  index: -1
+dark
+  rotate: true
+  xy: 2, 2
+  size: 500, 231
+  orig: 500, 231
+  offset: 0, 0
+  index: -1
+light_ray
+  rotate: true
+  xy: 235, 246
+  size: 256, 234
+  orig: 300, 288
+  offset: 21, 30
+  index: -1

@@ -1,0 +1,104 @@
+
+SYMBOLS_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/win2
+  rotate: true
+  xy: 2, 785
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+effect/win_1
+  rotate: true
+  xy: 2, 369
+  size: 203, 190
+  orig: 203, 190
+  offset: 0, 0
+  index: -1
+snow_pea1
+  rotate: true
+  xy: 1497, 725
+  size: 67, 30
+  orig: 197, 197
+  offset: 49, 21
+  index: -1
+snow_pea1_light
+  rotate: false
+  xy: 1497, 693
+  size: 67, 30
+  orig: 197, 197
+  offset: 49, 21
+  index: -1
+snow_pea2
+  rotate: true
+  xy: 662, 600
+  size: 34, 70
+  orig: 197, 197
+  offset: 70, 22
+  index: -1
+snow_pea2_light
+  rotate: true
+  xy: 734, 600
+  size: 34, 70
+  orig: 197, 197
+  offset: 70, 22
+  index: -1
+snow_pea3
+  rotate: true
+  xy: 1421, 692
+  size: 100, 36
+  orig: 197, 197
+  offset: 45, 4
+  index: -1
+snow_pea3_light
+  rotate: true
+  xy: 1459, 692
+  size: 100, 36
+  orig: 197, 197
+  offset: 45, 4
+  index: -1
+snow_pea4
+  rotate: true
+  xy: 1431, 401
+  size: 85, 104
+  orig: 197, 197
+  offset: 3, 82
+  index: -1
+snow_pea4_light
+  rotate: false
+  xy: 1500, 295
+  size: 85, 104
+  orig: 197, 197
+  offset: 3, 82
+  index: -1
+snow_pea5
+  rotate: true
+  xy: 1493, 922
+  size: 100, 91
+  orig: 197, 197
+  offset: 54, 80
+  index: -1
+snow_pea5_light
+  rotate: true
+  xy: 1409, 794
+  size: 101, 91
+  orig: 197, 197
+  offset: 54, 80
+  index: -1
+snow_pea6
+  rotate: false
+  xy: 1569, 854
+  size: 55, 66
+  orig: 197, 197
+  offset: 136, 91
+  index: -1
+snow_pea6_light
+  rotate: true
+  xy: 1586, 797
+  size: 55, 66
+  orig: 197, 197
+  offset: 136, 91
+  index: -1

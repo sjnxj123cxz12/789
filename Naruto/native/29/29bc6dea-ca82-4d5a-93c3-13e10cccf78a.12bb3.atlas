@@ -1,0 +1,20 @@
+
+zoneFx_0.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cloud
+  rotate: false
+  xy: 2, 2
+  size: 470, 104
+  orig: 470, 104
+  offset: 0, 0
+  index: -1
+play_free
+  rotate: false
+  xy: 2, 108
+  size: 413, 230
+  orig: 418, 230
+  offset: 5, 0
+  index: -1

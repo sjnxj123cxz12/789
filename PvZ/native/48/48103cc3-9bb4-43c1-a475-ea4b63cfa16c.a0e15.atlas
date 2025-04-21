@@ -1,0 +1,104 @@
+
+SYMBOLS_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/win2
+  rotate: true
+  xy: 2, 785
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+effect/win_1
+  rotate: true
+  xy: 2, 369
+  size: 203, 190
+  orig: 203, 190
+  offset: 0, 0
+  index: -1
+pea_shooter1
+  rotate: false
+  xy: 1597, 91
+  size: 67, 29
+  orig: 197, 197
+  offset: 49, 22
+  index: -1
+pea_shooter1_light
+  rotate: false
+  xy: 1666, 91
+  size: 67, 29
+  orig: 197, 197
+  offset: 49, 22
+  index: -1
+pea_shooter2
+  rotate: true
+  xy: 520, 600
+  size: 30, 69
+  orig: 197, 197
+  offset: 72, 22
+  index: -1
+pea_shooter2_light
+  rotate: true
+  xy: 591, 600
+  size: 30, 69
+  orig: 197, 197
+  offset: 72, 22
+  index: -1
+pea_shooter3
+  rotate: false
+  xy: 362, 371
+  size: 99, 37
+  orig: 197, 197
+  offset: 44, 4
+  index: -1
+pea_shooter3_light
+  rotate: false
+  xy: 463, 371
+  size: 99, 37
+  orig: 197, 197
+  offset: 44, 4
+  index: -1
+pea_shooter4
+  rotate: false
+  xy: 1596, 749
+  size: 38, 46
+  orig: 197, 197
+  offset: 26, 122
+  index: -1
+pea_shooter4_light
+  rotate: false
+  xy: 1596, 701
+  size: 38, 46
+  orig: 197, 197
+  offset: 26, 122
+  index: -1
+pea_shooter5
+  rotate: true
+  xy: 1488, 115
+  size: 102, 92
+  orig: 197, 197
+  offset: 52, 80
+  index: -1
+pea_shooter5_light
+  rotate: true
+  xy: 1582, 122
+  size: 102, 92
+  orig: 197, 197
+  offset: 52, 80
+  index: -1
+pea_shooter6
+  rotate: true
+  xy: 1035, 600
+  size: 53, 64
+  orig: 197, 197
+  offset: 136, 91
+  index: -1
+pea_shooter6_light
+  rotate: true
+  xy: 1101, 600
+  size: 53, 64
+  orig: 197, 197
+  offset: 136, 91
+  index: -1

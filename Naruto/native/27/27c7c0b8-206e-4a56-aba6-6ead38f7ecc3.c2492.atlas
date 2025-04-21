@@ -1,0 +1,90 @@
+
+GAMEBONUS_PACKED.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BONUS GAME
+  rotate: true
+  xy: 1150, 57
+  size: 1067, 180
+  orig: 1067, 180
+  offset: 0, 0
+  index: -1
+back_1
+  rotate: false
+  xy: 1564, 795
+  size: 233, 429
+  orig: 233, 429
+  offset: 0, 0
+  index: -1
+back_2
+  rotate: true
+  xy: 1332, 108
+  size: 639, 638
+  orig: 639, 638
+  offset: 0, 0
+  index: -1
+back_ground_bonus
+  rotate: false
+  xy: 2, 1126
+  size: 1560, 720
+  orig: 1560, 720
+  offset: 0, 0
+  index: -1
+buble_coin
+  rotate: true
+  xy: 1799, 1026
+  size: 198, 196
+  orig: 198, 196
+  offset: 0, 0
+  index: -1
+card_board
+  rotate: false
+  xy: 2, 244
+  size: 1146, 549
+  orig: 1146, 549
+  offset: 0, 0
+  index: -1
+cloud
+  rotate: false
+  xy: 1332, 2
+  size: 486, 104
+  orig: 486, 104
+  offset: 0, 0
+  index: -1
+frog_coin
+  rotate: true
+  xy: 1564, 1490
+  size: 356, 323
+  orig: 356, 323
+  offset: 0, 0
+  index: -1
+gold_coin
+  rotate: false
+  xy: 1564, 1226
+  size: 257, 262
+  orig: 257, 262
+  offset: 0, 0
+  index: -1
+jingle_1
+  rotate: false
+  xy: 1956, 1641
+  size: 51, 205
+  orig: 51, 205
+  offset: 0, 0
+  index: -1
+jingle_2
+  rotate: false
+  xy: 1889, 1511
+  size: 65, 335
+  orig: 65, 335
+  offset: 0, 0
+  index: -1
+jingle_3
+  rotate: false
+  xy: 1332, 813
+  size: 123, 311
+  orig: 123, 311
+  offset: 0, 0
+  index: -1

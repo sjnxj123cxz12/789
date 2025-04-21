@@ -1,0 +1,55 @@
+
+BONUSGAME_PACKED.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 1331, 1025
+  size: 76, 58
+  orig: 76, 58
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 1409, 1028
+  size: 55, 72
+  orig: 55, 72
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 471, 299
+  size: 203, 182
+  orig: 203, 182
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 587, 243
+  size: 54, 50
+  orig: 54, 50
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 1483, 1032
+  size: 51, 58
+  orig: 51, 58
+  offset: 0, 0
+  index: -1
+vase
+  rotate: false
+  xy: 471, 122
+  size: 114, 175
+  orig: 114, 175
+  offset: 0, 0
+  index: -1
+vase_broken
+  rotate: false
+  xy: 1266, 346
+  size: 233, 107
+  orig: 233, 107
+  offset: 0, 0
+  index: -1

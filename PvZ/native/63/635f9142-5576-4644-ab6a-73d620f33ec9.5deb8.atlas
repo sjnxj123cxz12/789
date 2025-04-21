@@ -1,0 +1,34 @@
+
+SYMBOLS_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/win2
+  rotate: true
+  xy: 2, 785
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+effect/win_1
+  rotate: true
+  xy: 2, 369
+  size: 203, 190
+  orig: 203, 190
+  offset: 0, 0
+  index: -1
+wall_nut1
+  rotate: false
+  xy: 334, 410
+  size: 150, 186
+  orig: 197, 197
+  offset: 24, 2
+  index: -1
+wall_nut1_light
+  rotate: false
+  xy: 368, 599
+  size: 150, 186
+  orig: 197, 197
+  offset: 24, 2
+  index: -1

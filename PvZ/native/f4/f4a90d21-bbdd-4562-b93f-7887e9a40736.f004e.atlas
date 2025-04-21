@@ -1,0 +1,41 @@
+
+pvz_freespin.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 22
+  rotate: false
+  xy: 398, 2
+  size: 346, 131
+  orig: 346, 131
+  offset: 0, 0
+  index: -1
+Group 22-2
+  rotate: false
+  xy: 2, 11
+  size: 394, 122
+  orig: 394, 122
+  offset: 0, 0
+  index: -1
+Group 26
+  rotate: false
+  xy: 2, 135
+  size: 1560, 720
+  orig: 1560, 720
+  offset: 0, 0
+  index: -1
+Layer 2 copy
+  rotate: false
+  xy: 1564, 382
+  size: 473, 473
+  orig: 473, 473
+  offset: 0, 0
+  index: -1
+Shape 1
+  rotate: true
+  xy: 1564, 116
+  size: 264, 394
+  orig: 264, 394
+  offset: 0, 0
+  index: -1

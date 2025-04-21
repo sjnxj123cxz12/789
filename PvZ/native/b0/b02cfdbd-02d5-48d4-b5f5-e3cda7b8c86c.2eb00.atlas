@@ -1,0 +1,76 @@
+
+SYMBOLS_PACKED.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+catapult_1
+  rotate: false
+  xy: 869, 881
+  size: 126, 141
+  orig: 197, 197
+  offset: 64, 13
+  index: -1
+catapult_1 copy
+  rotate: false
+  xy: 801, 647
+  size: 126, 141
+  orig: 197, 197
+  offset: 64, 13
+  index: -1
+catapult_2
+  rotate: false
+  xy: 922, 387
+  size: 104, 71
+  orig: 197, 197
+  offset: 8, 112
+  index: -1
+catapult_2 copy
+  rotate: false
+  xy: 1107, 6
+  size: 104, 71
+  orig: 197, 197
+  offset: 8, 112
+  index: -1
+catapult_3
+  rotate: true
+  xy: 1389, 602
+  size: 63, 67
+  orig: 197, 197
+  offset: 9, 116
+  index: -1
+catapult_3 copy
+  rotate: false
+  xy: 1522, 226
+  size: 63, 67
+  orig: 197, 197
+  offset: 9, 116
+  index: -1
+catapult_5
+  rotate: false
+  xy: 1001, 4
+  size: 104, 71
+  orig: 197, 197
+  offset: 8, 112
+  index: -1
+catapult_5 copy
+  rotate: false
+  xy: 1213, 7
+  size: 104, 71
+  orig: 197, 197
+  offset: 8, 112
+  index: -1
+effect/win2
+  rotate: true
+  xy: 2, 785
+  size: 237, 178
+  orig: 237, 178
+  offset: 0, 0
+  index: -1
+effect/win_1
+  rotate: true
+  xy: 2, 369
+  size: 203, 190
+  orig: 203, 190
+  offset: 0, 0
+  index: -1
